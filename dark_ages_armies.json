@@ -378,7 +378,7 @@
 
  { 
               "name": "Bow", 
-              "pointsModifier": , 
+              "pointsModifier": 0, 
               "rulesAdded": [], 
               "rulesRemoved": ["Shieldwall"],
               "defenceModifier": "+1",
