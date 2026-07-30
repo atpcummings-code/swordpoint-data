@@ -354,7 +354,7 @@
           "id": "skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers. May have shield (+1) and may exchange javelins for sling (free)",
-          "category": "Tenants",
+          "category": "Infantry",
           "type": "other",
           "defence": 7,
           "cohesion": 5,
@@ -378,54 +378,62 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
+            }
           ]
         },
 
 {
-          "id": "welsh_tenants_archers",
-          "name": "Foot Archers",
-          "description": "Foot Archers have a bow. Open Order. Warband. May be fielded as skirmishers at five points per base. May be Riding Horses (+1).",
-          "category": "Tenants",
+          "id": "rising_out",
+          "name": "Rising Out",
+          "description": "Rising Out have stones. Inferior Fighters. Inferior Shooters. Levies.",
+          "category": "Infantry",
           "type": "other",
           "defence": 7,
           "cohesion": 5,
-          "pointsPerBase": 8,
+          "pointsPerBase": 2,
           "minBases": 3,
           "maxBases": 12,
-          "specialRules": ["Open Order"],
+          "specialRules": ["Inferior Fighters, "Inferior Shooters","Levies", "Close Order"],
+          "optionalEquipment": []
+        },
+{
+          "id": "gallogIaich",
+          "name": "GallogIaich",
+          "description": "GallogIaich have double handed weapons and light armour. Superior Fighters. Veteran. May exchange double handed weapon for spear and shield +2 in which case they may form Shieldwall.  In later armies (after 1200AD) may have heavy armour (+2). May be Stubborn (+2)..",
+          "category": "Mercenaries",
+          "type": "other",
+          "defence": 6,
+          "cohesion":7,
+          "pointsPerBase": 22,
+          "minBases": 2,
+          "maxBases": 6,
+          "specialRules": ["Superior Fighters", "Veteran"],
           "optionalEquipment": [
             { 
-              "name": "Riding Horses", 
-              "pointsModifier": 1, 
-              "rulesAdded": ["Riding Horses"], 
+              "name": "Spear and Shield", 
+              "pointsModifier": 2, 
+              "rulesAdded": ["Shieldwall"], 
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
-{ 
-              "name": "Skirmishers", 
-              "pointsModifier": -3, 
-              "rulesAdded": ["Skirmishers"], 
-              "rulesRemoved": ["Open Order"],
+               { 
+              "name": "Heavy Armour", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            { 
+              "name": "Stubborn", 
+              "pointsModifier": 2, 
+              "rulesAdded": ["Stubborn"], 
+              "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
-        },
-{
-          "id": "welsh_skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have javelins. Skirmishers. Inferior Fighters.",
-          "category": "Skirmishers",
-          "type": "other",
-          "defence": 7,
-          "cohesion":5,
-          "pointsPerBase": 4,
-          "minBases": 2,
-          "maxBases": 6,
-          "specialRules": ["Inferior Fighters", "Skirmishers"],
-          "optionalEquipment": []
         }
       ]
     },
