@@ -101,8 +101,7 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-          ],
-[
+            },
             { 
               "name": "Throwing Spears", 
               "pointsModifier": 2, 
@@ -110,7 +109,7 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-
+            },
             { 
               "name": "Riding Horses", 
               "pointsModifier": 2, 
