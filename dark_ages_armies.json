@@ -116,9 +116,10 @@
               "rulesAdded": ["Riding Horses"], 
               "rulesRemoved": [],
               "defenceModifier": 0,
-              "cohesionModifier": 0
-     
-    },
+                 "cohesionModifier": 0
+      }
+    ]
+  },
 {
           "id": "welsh_tenants_cavalry",
           "name": "Cavalry",
