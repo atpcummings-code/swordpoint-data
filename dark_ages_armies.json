@@ -220,8 +220,7 @@
 
 
  {
-    "vikings": {
-      "armyName": "Vikings - (750 AD - 1100 AD)",
+       "armyName": "Vikings - (750 AD - 1100 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
         { "id": "Teulu", "name": "Teulu", "constraintType": "percentage", "min": 0, "max": 33 },
