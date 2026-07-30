@@ -393,7 +393,7 @@
           "pointsPerBase": 2,
           "minBases": 3,
           "maxBases": 12,
-          "specialRules": ["Inferior Fighters, "Inferior Shooters","Levies", "Close Order"],
+          "specialRules": ["Inferior Fighters", "Inferior Shooters","Levies", "Close Order"],
           "optionalEquipment": []
         },
 {
