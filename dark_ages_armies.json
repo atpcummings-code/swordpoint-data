@@ -223,14 +223,14 @@
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
         { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
        { 
-        "id": "Allies", 
+          "id": "Allies", 
           "name": "Allied Contingents", 
           "constraintType": "percentage", 
           "min": 0, 
           "max": 33, 
           "alliedArmyKeys": ["later_irish", "later_saxon_kingdoms"],
           "maxAlliedArmiesAllowed": 1 
-        }
+       }
       ],
       "units": [
         {
