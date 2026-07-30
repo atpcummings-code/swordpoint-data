@@ -223,7 +223,7 @@
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
         { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
        { 
-          "id": "SpecialTroopsandAllies", 
+        "id": "SpecialTroopsandAllies", 
           "name": "Special Troops and Allies", 
           "constraintType": "percentage", 
           "min": 0, 
