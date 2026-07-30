@@ -8,7 +8,7 @@
         { "id": "Tenants", "name": "Tenants", "constraintType": "percentage", "min": 0, "max": 80 },
  	{ "id": "Skirmishers", "name": "Skirmishers", "constraintType": "percentage", "min": 0, "max": 10 },
         { 
-          "id": "allies", 
+          "id": "Allies", 
           "name": "Allied Contingents", 
           "constraintType": "percentage", 
           "min": 0, 
@@ -221,79 +221,125 @@
       "armyName": "Vikings - (750 AD - 1100 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
-        { "id": "Teulu", "name": "Teulu", "constraintType": "percentage", "min": 0, "max": 33 },
-        { "id": "Tenants", "name": "Tenants", "constraintType": "percentage", "min": 0, "max": 80 },
- 	{ "id": "Skirmishers", "name": "Skirmishers", "constraintType": "percentage", "min": 0, "max": 10 },
-        { 
-          "id": "allies", 
-          "name": "Allied Contingents", 
+        { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
+        { "id": "SpecialTroopsandAllies", "name": "Special Troops and Allies", "constraintType": "percentage", "min": 0, "max": 33 },
+ 	        { 
+          "id": "Allies", 
+          "name": "Special Troops and Allies", 
           "constraintType": "percentage", 
           "min": 0, 
-          "max": 15, 
-          "alliedArmyKeys": ["vikings", "anglo-danish"],
+          "max": 33, 
+          "alliedArmyKeys": ["laterirish", "latersaxonkingdoms"],
           "maxAlliedArmiesAllowed": 1 
         }
       ],
       "units": [
         {
-          "id": "welsh_king",
-          "name": "Over King",
-          "description": "May ride a horse.",
+          "id": "king_or_jarl",
+          "name": "king or Jarl",
+          "description": "May ride a horse, or count as Riding Horses.",
          "category": "Commanders", 
          "type": "General",
-          "attacks": "+3",
-          "cohesion": 10,
-          "pointsPerBase": 50,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
-           "id": "welsh_king_or_prince",
-          "name": "King or Prince",
-          "description": "May ride a horse.",
-         "category": "Commanders",
-         "type": "General",
-          "attacks": "+3",
+          "attacks": "+2",
           "cohesion": 9,
           "pointsPerBase": 0,
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-          "optionalEquipment": []
+          "optionalEquipment": [{ 
+              "name": "Riding Horses", 
+              "pointsModifier": 0, 
+              "rulesAdded": [Riding Horses], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+]
         },
-       {
-      "id": "welsh_sub-king_or_local_prince",
-          "name": "Sub-King or Local Prince",
-          "description": "May ride a horse.",
-        "category": "Commanders",  
-        "type": "other",
+        {
+           "id": "noble(hersir)",
+          "name": "Noble (Hersir)",
+          "description": "May ride a horse, or count as Riding Horses.",
+         "category": "Commanders",
+         "type": "other",
           "attacks": "+2",
-          "cohesion": "+2",
+          "cohesion": "+2),
           "pointsPerBase": 20,
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
+          "optionalEquipment": [{ 
+              "name": "Riding Horses", 
+              "pointsModifier": 0, 
+              "rulesAdded": [Riding Horses], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }]
+        },
+       {
+      "id": "beserker",
+          "name": "Beserker",
+          "description": "May ride a horse, or count as Riding Horses. Up to four Hirdmen bases may be upgraded to inclue a Beserker. No more than one of these may be included in a single unit, and no more than oine commander in total may be present in a Viking unit.  I fthe unit containing the Beserker loses a roundof combat, or fails a Cohesion test, the additional attacks are lost.",
+        "category": "Commanders",  
+        "type": "other",
+          "attacks": "+3",
+          "cohesion": 0,
+          "pointsPerBase": 15,
+          "minBases": 0,
+          "maxBases": 4,
+          "specialRules": [],
           "optionalEquipment": []
         },
         {
-          "id": "welsh_teulu_cavalry",
-          "name": "Cavalry",
-          "description": "Teulu Cavalry have light armour, spear and shield. Superior Fighters. May have javelins (+1).",
-          "category": "Teulu",
+          "id": "hirdmen",
+          "name": "Hirdmen",
+          "description": "A Hirdmen has light armour, spear and shield. Superior Fighters. Shieldwall. May change to throwing spear (+2) or two-handed axe (+2). May be Veteran (+2). May count as Riding Horses (+1). Hirdmen and Bondi may be fielded in Open Order at a cost of 17 points and eleven points respectively.  All of the troops in a contingent must be of the same order.",
+          "category": "Infantry",
           "type": "other",
-          "defence": 4,
+          "defence": 5,
           "cohesion": 7,
-          "pointsPerBase": 20,
+          "pointsPerBase": 22,
           "minBases": 3,
           "maxBases": 8,
-          "specialRules": ["Superior Fighters", "Open Order"],
+          "specialRules": ["Superior Fighters", "Close Order", "Shieldwall"],
           "optionalEquipment": [
             { 
-              "name": "Javelins", 
-              "pointsModifier": 1, 
+              "name": "Throwing Spears", 
+              "pointsModifier": 2, 
               "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+ { 
+              "name": "Two-handed Axe", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{ 
+              "name": "Veteran", 
+              "pointsModifier": 2, 
+              "rulesAdded": ["Veteran"], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{ 
+              "name": "Open Order", 
+              "pointsModifier": -5, 
+              "rulesAdded": ["Open Order"], 
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{ 
+              "name": "Riding Horses", 
+              "pointsModifier": 1, 
+              "rulesAdded": ["Riding Horses"], 
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -301,26 +347,18 @@
           ]
         },
         {
-          "id": "welsh_teulu_foot",
-          "name": "Foot",
-          "description": "Teulu Infantry have spear and shield. Superior Fighters. Open Order. Warband. May have light armour (+2). May exchange Spear for throwing spear (+2). May be Riding Horses (+2).",
-          "category": "Teulu",
+          "id": "bondi",
+          "name": "Bondi",
+          "description": "Bondi have a hand weapon, spear and shield. Shieldwall. May change to throwing spear (+2) or exchange spear and shield for bow (free).  May count as Riding Horses (_1).  Bow armed Bondi may be fielded as skirmishers instead at six points per base. Hirdmen and Bondi may be fielded in Open Order at a cost of 17 points and eleven points respectively.  All of the troops in a contingent must be of the same order.",
+          "category": "Infantry",
           "type": "other",
           "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 15,
+          "cohesion": 6,
+          "pointsPerBase": 14,
           "minBases": 3,
-          "maxBases": 12,
-          "specialRules": ["Superior Fighters", "Open Order", "Warband"],
+          "maxBases": 8,
+          "specialRules": ["Close Order", "Shieldwall"],
           "optionalEquipment": [
-            { 
-              "name": "Light Armour", 
-              "pointsModifier": 2, 
-              "rulesAdded": [], 
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
             { 
               "name": "Throwing Spears", 
               "pointsModifier": 2, 
@@ -329,107 +367,71 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-            { 
+{ 
+              "name": "Open Order", 
+              "pointsModifier": -3, 
+              "rulesAdded": ["Open Order"], 
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
+ { 
+              "name": "Bow", 
+              "pointsModifier": , 
+              "rulesAdded": [], 
+              "rulesRemoved": ["Shieldwall"],
+              "defenceModifier": +1,
+              "cohesionModifier": 0
+            },
+{ 
+              "name": "Skirmishers (bow armed)", 
+              "pointsModifier": -8, 
+              "rulesAdded": ["Skirmishers"], 
+              "rulesRemoved": ["Shieldwall", "Close Order"],
+              "defenceModifier": +1,
+              "cohesionModifier": 0
+            },
+{ 
               "name": "Riding Horses", 
-              "pointsModifier": 2, 
+              "pointsModifier": 1, 
               "rulesAdded": ["Riding Horses"], 
               "rulesRemoved": [],
-              "defenceModifier": 0,
-                 "cohesionModifier": 0
-      }
-    ]
-  },
-{
-          "id": "welsh_tenants_cavalry",
-          "name": "Cavalry",
-          "description": "Cavalry have spear and shield. Evade. May be fielded as skirmishers, replacing spear with Javelins, at 16 points per base.",
-          "category": "Tenants",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 6,
-          "pointsPerBase": 18,
-          "minBases": 3,
-          "maxBases": 8,
-          "specialRules": ["Evade", "Open Order"],
-          "optionalEquipment": [
-            { 
-              "name": "Skirmishers", 
-              "pointsModifier": -2, 
-              "rulesAdded": ["Skirmishers"], 
-              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
-        },
+  },
 {
-          "id": "welsh_tenants_spearmen",
-          "name": "Foot Spearmen",
-          "description": "Foot Spearmen have spear and shield. Open Order. Warband. May be Riding Horses (+1).",
-          "category": "Tenants",
+          "id": "skirmishers_thralls",
+          "name": "Skirmishers (Thralls)",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May exchange javelins for sling or bow (free)",
+          "category": "SpecialTroopsandAllies",
           "type": "other",
           "defence": 6,
           "cohesion": 5,
-          "pointsPerBase": 9,
-          "minBases": 3,
-          "maxBases": 12,
-          "specialRules": ["Warband", "Open Order"],
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "specialRules": ["Skirmishers", "Evade"],
           "optionalEquipment": [
             { 
-              "name": "Riding Horses", 
-              "pointsModifier": 1, 
-              "rulesAdded": ["Riding Horses"], 
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-
-{
-          "id": "welsh_tenants_archers",
-          "name": "Foot Archers",
-          "description": "Foot Archers have a bow. Open Order. Warband. May be fielded as skirmishers at five points per base. May be Riding Horses (+1).",
-          "category": "Tenants",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 5,
-          "pointsPerBase": 8,
-          "minBases": 3,
-          "maxBases": 12,
-          "specialRules": ["Open Order"],
-          "optionalEquipment": [
-            { 
-              "name": "Riding Horses", 
-              "pointsModifier": 1, 
-              "rulesAdded": ["Riding Horses"], 
+              "name": "Bow", 
+              "pointsModifier": , 
+              "rulesAdded": [], 
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
 { 
-              "name": "Skirmishers", 
-              "pointsModifier": -3, 
-              "rulesAdded": ["Skirmishers"], 
-              "rulesRemoved": ["Open Order"],
+              "name": "Sling", 
+              "pointsModifier": , 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
-        },
-{
-          "id": "welsh_skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have javelins. Skirmishers. Inferior Fighters.",
-          "category": "Skirmishers",
-          "type": "other",
-          "defence": 7,
-          "cohesion":5,
-          "pointsPerBase": 4,
-          "minBases": 2,
-          "maxBases": 6,
-          "specialRules": ["Inferior Fighters", "Skirmishers"],
-          "optionalEquipment": []
         }
       ]
     }
