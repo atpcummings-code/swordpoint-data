@@ -443,7 +443,7 @@
           "constraintType": "percentage", 
           "min": 0, 
           "max": 15, 
-          "alliedArmyKeys": ["early_medieval_welsh", "anglo-danish"],
+          "alliedArmyKeys": ["later_irish", "later_saxon_kingdoms"],
           "maxAlliedArmiesAllowed": 1 
        }
       ],
