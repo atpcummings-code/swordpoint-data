@@ -45,6 +45,7 @@
           "specialRules": [],
           "optionalEquipment": []
         },
+       {
       "id": "welsh_sub-king_or_local_prince",
           "name": "Sub-King or Local Prince",
           "description": "May ride a horse.",
