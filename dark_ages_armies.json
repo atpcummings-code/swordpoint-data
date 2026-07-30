@@ -263,7 +263,7 @@
          "category": "Commanders",
          "type": "other",
           "attacks": "+2",
-          "cohesion": "+2"),
+          "cohesion": "+2",
           "pointsPerBase": 20,
           "minBases": 0,
           "maxBases": 1,
