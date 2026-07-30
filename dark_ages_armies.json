@@ -407,8 +407,8 @@
           "defence": 6,
           "cohesion":7,
           "pointsPerBase": 22,
-          "minBases": 2,
-          "maxBases": 6,
+          "minBases": 3,
+          "maxBases": 12,
           "specialRules": ["Superior Fighters", "Veteran"],
           "optionalEquipment": [
             { 
