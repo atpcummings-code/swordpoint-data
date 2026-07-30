@@ -11,6 +11,7 @@
         { 
           "id": "Allies", 
           "name": "Allied Contingents", 
+         "description": "The army may have allies from the Viking or Anglo_Danish lists, but not at the same time.",
           "constraintType": "percentage", 
           "min": 0, 
           "max": 15, 
@@ -229,6 +230,7 @@
         { 
           "id": "Allies", 
           "name": "Allied Contingents", 
+         "description": "An Irish Kingdoms army may have allies from the Medieval Scots list.  An early Irish Kingdoms army (before 1200AD) without gallogiaich may have allies from the Viking list.",
           "constraintType": "percentage", 
           "min": 0, 
           "max": 20, 
@@ -448,11 +450,12 @@
        { 
           "id": "Allies", 
           "name": "Special Troops and Allies", 
+           "description": "The army may have allies from the Later Irish or Later Saxon Kingdoms lists.",
           "constraintType": "percentage", 
           "min": 0, 
           "max": 33, 
           "alliedArmyKeys": ["later_irish", "later_saxon_kingdoms"],
-          "maxAlliedArmiesAllowed": 1 
+          "maxAlliedArmiesAllowed": 2 
        }
       ],
       "units": [
