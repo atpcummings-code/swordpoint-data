@@ -201,7 +201,7 @@
           "id": "welsh_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins. Skirmishers. Inferior Fighters.",
-          "category": "Skirmishers",
+          "category": "skirmishers",
           "type": "other",
           "defence": 7,
           "cohesion":5,
