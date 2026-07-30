@@ -20,10 +20,11 @@
       ],
       "units": [
         {
-          "id": "welsh_king",
+          "id": "welsh_king",E
           "name": "Over King",
           "description": "May ride a horse.",
-          "type": "General",
+         "category": "commanders", 
+         "type": "General",
           "attacks": "+3",
           "cohesion": 10,
           "pointsPerBase": 50,
@@ -36,7 +37,8 @@
            "id": "welsh_king_or_prince",
           "name": "King or Prince",
           "description": "May ride a horse.",
-          "type": "General",
+         "category": "commanders",
+         "type": "General",
           "attacks": "+3",
           "cohesion": 9,
           "pointsPerBase": 0,
@@ -49,7 +51,8 @@
       "id": "welsh_sub-king_or_local_prince",
           "name": "Sub-King or Local Prince",
           "description": "May ride a horse.",
-          "type": "other",
+        "category": "commanders",  
+        "type": "other",
           "attacks": "+2",
           "cohesion": "+2",
           "pointsPerBase": 20,
@@ -211,7 +214,7 @@
           "maxBases": 6,
           "specialRules": ["Inferior Fighters", "Skirmishers"],
           "optionalEquipment": []
-        },
+        }
       ]
     }
   }
