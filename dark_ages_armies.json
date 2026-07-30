@@ -220,7 +220,7 @@
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++later irish army+++++++++++++++++++++++++++++++++++++++++++++++++ */
    
    "later_irish": {
-      "armyName": "Later Irish - (800 AD - 1063 AD)",
+      "armyName": "Later Irish - (830 AD - 1500 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
         { "id": "Teulu", "name": "Teulu", "constraintType": "percentage", "min": 0, "max": 33 },
