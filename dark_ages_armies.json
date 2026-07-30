@@ -4,7 +4,7 @@
     "early_medieval_welsh": {
       "armyName": "Early Medieval Welsh (800 AD - 1063 AD)",
       "categories": [
-        { "id": "commanders", "name": "Commanders", "constraintType": "count", "min": 1, "max": 8 },
+        { "id": "commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
         { "id": "teulu", "name": "Teulu", "constraintType": "percentage", "min": 0, "max": 33 },
         { "id": "tenants", "name": "Tenants", "constraintType": "percentage", "min": 0, "max": 80 },
  	{ "id": "skirmishers", "name": "Skirmishers", "constraintType": "percentage", "min": 0, "max": 10 },
