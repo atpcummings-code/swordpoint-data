@@ -221,10 +221,9 @@
       "armyName": "Vikings - (750 AD - 1100 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
-        { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
-        { "id": "SpecialTroopsandAllies", "name": "Special Troops and Allies", "constraintType": "percentage", "min": 0, "max": 33 },
+        { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 }
  	        { 
-          "id": "Allies", 
+          "id": "SpecialTroopsandAllies", 
           "name": "Special Troops and Allies", 
           "constraintType": "percentage", 
           "min": 0, 
@@ -280,7 +279,7 @@
        {
       "id": "beserker",
           "name": "Beserker",
-          "description": "May ride a horse, or count as Riding Horses. Up to four Hirdmen bases may be upgraded to inclue a Beserker. No more than one of these may be included in a single unit, and no more than oine commander in total may be present in a Viking unit.  I fthe unit containing the Beserker loses a roundof combat, or fails a Cohesion test, the additional attacks are lost.",
+          "description": "May ride a horse, or count as Riding Horses. Up to four Hirdmen bases may be upgraded to include a Beserker. No more than one of these may be included in a single unit, and no more than one commander in total may be present in a Viking unit.  If the unit containing the Beserker loses a roundof combat, or fails a Cohesion test, the additional attacks are lost.",
         "category": "Commanders",  
         "type": "other",
           "attacks": "+3",
@@ -349,7 +348,7 @@
         {
           "id": "bondi",
           "name": "Bondi",
-          "description": "Bondi have a hand weapon, spear and shield. Shieldwall. May change to throwing spear (+2) or exchange spear and shield for bow (free).  May count as Riding Horses (_1).  Bow armed Bondi may be fielded as skirmishers instead at six points per base. Hirdmen and Bondi may be fielded in Open Order at a cost of 17 points and eleven points respectively.  All of the troops in a contingent must be of the same order.",
+          "description": "Bondi have a hand weapon, spear and shield. Shieldwall. May change to throwing spear (+2) or exchange spear and shield for bow (free).  May count as Riding Horses (+1).  Bow armed Bondi may be fielded as skirmishers instead at six points per base. Hirdmen and Bondi may be fielded in Open Order at a cost of 17 points and eleven points respectively.  All of the troops in a contingent must be of the same order.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
