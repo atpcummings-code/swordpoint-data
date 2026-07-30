@@ -224,11 +224,11 @@
         { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
        { 
         "id": "Allies", 
-          "name": "Special Troops and Allies", 
+          "name": "Allied Contingents", 
           "constraintType": "percentage", 
           "min": 0, 
           "max": 33, 
-          "alliedArmyKeys": ["laterirish", "latersaxonkingdoms"],
+          "alliedArmyKeys": ["later_irish", "later_saxon_kingdoms"],
           "maxAlliedArmiesAllowed": 1 
         }
       ],
