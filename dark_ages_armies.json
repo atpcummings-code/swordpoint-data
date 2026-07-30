@@ -1,6 +1,7 @@
  {
   "armies": {
-    "early_medieval_welsh": {
+   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++welsh army+++++++++++++++++++++++++++++++++++++++++++++++++ */ 
+   "early_medieval_welsh": {
       "armyName": "Early Medieval Welsh - (800 AD - 1063 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
@@ -216,7 +217,9 @@
         }
       ]
     },
-"later_irish": {
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++later irish army+++++++++++++++++++++++++++++++++++++++++++++++++ */
+   
+   "later_irish": {
       "armyName": "Later Irish - (800 AD - 1063 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
@@ -432,7 +435,10 @@
         }
       ]
     },
-    "vikings": {
+  
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++viking army+++++++++++++++++++++++++++++++++++++++++++++++++ */
+   
+   "vikings": {
       "armyName": "Vikings - (750 AD - 1100 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
