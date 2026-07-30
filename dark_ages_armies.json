@@ -221,8 +221,8 @@
       "armyName": "Vikings - (750 AD - 1100 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
-        { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 }
- 	        { 
+        { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
+       { 
           "id": "SpecialTroopsandAllies", 
           "name": "Special Troops and Allies", 
           "constraintType": "percentage", 
