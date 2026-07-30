@@ -445,7 +445,7 @@
         { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
        { 
           "id": "Allies", 
-          "name": "Allied Contingents", 
+          "name": "Special Troops and Allies", 
           "constraintType": "percentage", 
           "min": 0, 
           "max": 15, 
@@ -626,7 +626,7 @@
           "id": "skirmishers_thralls",
           "name": "Skirmishers (Thralls)",
           "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May exchange javelins for sling or bow (free)",
-          "category": "Infantry",
+          "category": "Allies",
           "type": "other",
           "defence": 6,
           "cohesion": 5,
