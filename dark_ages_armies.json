@@ -249,7 +249,7 @@
           "optionalEquipment": [{ 
               "name": "Riding Horses", 
               "pointsModifier": 0, 
-              "rulesAdded": [Riding Horses], 
+              "rulesAdded": ["Riding Horses"], 
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -263,7 +263,7 @@
          "category": "Commanders",
          "type": "other",
           "attacks": "+2",
-          "cohesion": "+2),
+          "cohesion": "+2"),
           "pointsPerBase": 20,
           "minBases": 0,
           "maxBases": 1,
@@ -381,7 +381,7 @@
               "pointsModifier": , 
               "rulesAdded": [], 
               "rulesRemoved": ["Shieldwall"],
-              "defenceModifier": +1,
+              "defenceModifier": "+1",
               "cohesionModifier": 0
             },
 { 
@@ -389,7 +389,7 @@
               "pointsModifier": "-8", 
               "rulesAdded": ["Skirmishers"], 
               "rulesRemoved": ["Shieldwall", "Close Order"],
-              "defenceModifier": +1,
+              "defenceModifier": "+1",
               "cohesionModifier": 0
             },
 { 
