@@ -405,7 +405,7 @@
           "id": "skirmishers_thralls",
           "name": "Skirmishers (Thralls)",
           "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May exchange javelins for sling or bow (free)",
-          "category": "Allies",
+          "category": "Infantry",
           "type": "other",
           "defence": 6,
           "cohesion": 5,
