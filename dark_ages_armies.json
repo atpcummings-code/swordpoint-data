@@ -139,8 +139,8 @@
             { 
               "name": "Skirmishers", 
               "pointsModifier": -2, 
-              "rulesAdded": [Skirmishers], 
-              "rulesRemoved": [Open Order],
+              "rulesAdded": ["Skirmishers"], 
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
@@ -162,7 +162,7 @@
             { 
               "name": "Riding Horses", 
               "pointsModifier": 1, 
-              "rulesAdded": [Riding Horses], 
+              "rulesAdded": ["Riding Horses"], 
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -186,7 +186,7 @@
             { 
               "name": "Riding Horses", 
               "pointsModifier": 1, 
-              "rulesAdded": [Riding Horses], 
+              "rulesAdded": ["Riding Horses"], 
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -194,8 +194,8 @@
 { 
               "name": "Skirmishers", 
               "pointsModifier": -3, 
-              "rulesAdded": [Skirmishers], 
-              "rulesRemoved": [Open Order],
+              "rulesAdded": ["Skirmishers"], 
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
