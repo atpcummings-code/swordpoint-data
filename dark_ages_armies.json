@@ -24,7 +24,7 @@
           "name": "Over King",
           "description": "May ride a horse.",
           "type": "General",
-          "attacks": +3,
+          "attacks": "+3",
           "cohesion": 10,
           "pointsPerBase": 50,
           "minBases": 0,
