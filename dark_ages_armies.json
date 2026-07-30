@@ -11,7 +11,7 @@
         { 
           "id": "Allies", 
           "name": "Allied Contingents", 
-         "description": "The army may have allies from the Viking or Anglo_Danish lists, but not at the same time.",
+         "description": "The army may have allies from the Viking or Anglo-Danish lists, but not at the same time.",
           "constraintType": "percentage", 
           "min": 0, 
           "max": 15, 
