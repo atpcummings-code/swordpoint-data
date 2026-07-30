@@ -286,7 +286,7 @@
           "cohesion": 0,
           "pointsPerBase": 15,
           "minBases": 0,
-          "maxBases": 4,
+          "maxBases": 1,
           "specialRules": [],
           "optionalEquipment": []
         },
