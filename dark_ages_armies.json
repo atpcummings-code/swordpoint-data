@@ -270,7 +270,7 @@
            {
           "id": "irish_cavalry",
           "name": "Irish Cavalry",
-          "description": "Irish Cavakry have javelins and shield. May be fielded as skirmishers..",
+          "description": "Irish Cavalry have javelins and shield. May be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
