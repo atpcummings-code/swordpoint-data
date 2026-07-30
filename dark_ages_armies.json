@@ -369,7 +369,7 @@
             },
 { 
               "name": "Open Order", 
-              "pointsModifier": "-3", 
+              "pointsModifier": -3, 
               "rulesAdded": ["Open Order"], 
               "rulesRemoved": ["Close Order"],
               "defenceModifier": 0,
@@ -386,7 +386,7 @@
             },
 { 
               "name": "Skirmishers (bow armed)", 
-              "pointsModifier": "-8", 
+              "pointsModifier": -8, 
               "rulesAdded": ["Skirmishers"], 
               "rulesRemoved": ["Shieldwall", "Close Order"],
               "defenceModifier": "+1",
