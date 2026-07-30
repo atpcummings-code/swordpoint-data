@@ -228,7 +228,7 @@
           "constraintType": "percentage", 
           "min": 0, 
           "max": 15, 
-          "alliedArmyKeys": ["vikings", "anglo-danish"],
+          "alliedArmyKeys": ["early_medieval_welsh", "anglo-danish"],
           "maxAlliedArmiesAllowed": 1 
        }
       ],
