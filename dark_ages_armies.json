@@ -448,7 +448,7 @@
           "name": "Special Troops and Allies", 
           "constraintType": "percentage", 
           "min": 0, 
-          "max": 15, 
+          "max": 33, 
           "alliedArmyKeys": ["later_irish", "later_saxon_kingdoms"],
           "maxAlliedArmiesAllowed": 1 
        }
