@@ -77,10 +77,8 @@
           "pointsPerBase": 9,
           "minBases": 3,
           "maxBases": 12,
-          "specialRules": [
-            "Open Order"
-          ],
-          "optionalEquipment": []
+          "specialRules": ["Open Order"], 
+         "optionalEquipment": []
         }
         
 ]
