@@ -41,7 +41,7 @@
 },
       "units": [
         {
-          "id": "genera;",
+          "id": "general",
           "name": "General",
           "description": "Rides a horse.",
           "category": "Commanders",
