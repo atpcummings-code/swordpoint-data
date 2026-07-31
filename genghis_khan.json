@@ -1,9 +1,9 @@
 {
   "armies": {
-     "sea_peoples": {
-      "armyName": "Sea Peoples - (1278 BC - 1175 BC)",
+  "tibetan": {
+      "armyName": "Tibetan - (620 AD - 1000 AD)",
       "categories": [
-        {
+  {
           "id": "Commanders",
           "name": "Commanders",
           "constraintType": "count",
