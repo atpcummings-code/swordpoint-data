@@ -294,7 +294,7 @@
           "cohesion": 6,
           "pointsPerBase": 20,
           "minBases": 3,
-          "maxBases": 8,
+          "maxBases": 12,
           "specialRules": ["Close Order", "Superior Fighters", "Shieldwall", "Warband"],
 
           "allowedSecondaryUnits": [
@@ -355,7 +355,7 @@
           "cohesion": 5,
           "pointsPerBase": 14,
           "minBases": 3,
-          "maxBases": 8,
+          "maxBases": 12,
           "specialRules": ["Close Order", "Shieldwall", "Warband"],
           "optionalEquipment": [
 {
@@ -535,7 +535,7 @@
           "cohesion": 7,
           "pointsPerBase": 22,
           "minBases": 3,
-          "maxBases": 8,
+          "maxBases": 12,
           "specialRules": ["Close Order", "Superior Fighters", "Shieldwall"],
 
           "allowedSecondaryUnits": [
@@ -596,7 +596,7 @@
           "cohesion": 5,
           "pointsPerBase": 14,
           "minBases": 3,
-          "maxBases": 8,
+          "maxBases": 12,
           "specialRules": ["Close Order", "Shieldwall", "Warband (1 and 2)"],
           "optionalEquipment": [
 {
@@ -1017,7 +1017,7 @@
           "cohesion": 7,
           "pointsPerBase": 22,
           "minBases": 3,
-          "maxBases": 8,
+          "maxBases": 12,
           "specialRules": ["Superior Fighters", "Close Order", "Shieldwall"],
           "optionalEquipment": [
             { 
@@ -1072,7 +1072,7 @@
           "cohesion": 6,
           "pointsPerBase": 14,
           "minBases": 3,
-          "maxBases": 8,
+          "maxBases": 12,
           "specialRules": ["Close Order", "Shieldwall"],
           "optionalEquipment": [
             { 
