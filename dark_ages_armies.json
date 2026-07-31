@@ -303,7 +303,7 @@
             "name": "Fyrd",     
             "pointsPerBase": 14,                 
             "minRatioPercent": 0,    
-            "maxRatioPercent": 75,      
+            "maxRatioPercent": 67,      
             "specialRules": ["Combined Units"]
                       }
 ],
