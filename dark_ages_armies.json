@@ -307,26 +307,7 @@
             "minRatioPercent": 50,    
             "maxRatioPercent": 67,      
             "specialRules": ["Close Order", "Shieldwall"],
-           "optionalEquipment": [
-{
-              "name": "Riding Horses",
-              "pointsModifier": 1,
-              "rulesAdded": ["Riding Horses"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-
-{ 
-              "name": "Rockse", 
-              "pointsModifier": 2, 
-              "rulesAdded": [], 
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-           }
+                      }
 ],
          
           "optionalEquipment": [
