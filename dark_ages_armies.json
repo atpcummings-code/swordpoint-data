@@ -306,7 +306,7 @@
             "pointsPerBase": 12,                 
             "minRatioPercent": 50,    
             "maxRatioPercent": 67,      
-            "specialRules": ["Close Order, "Shieldwall"]
+            "specialRules": ["Close Order", "Shieldwall"]
            },
 ],
          
