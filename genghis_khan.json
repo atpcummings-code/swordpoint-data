@@ -1,4 +1,5 @@
-
+{
+  "armies": {
   "tibetan": {
       "armyName": "Tibetan - (620 AD - 1000 AD)",
       "categories": [
@@ -242,5 +243,6 @@
              "optionalEquipment": []
 }
       ]
-    },
+    }
+}
 
