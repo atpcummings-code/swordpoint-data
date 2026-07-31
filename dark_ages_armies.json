@@ -1212,8 +1212,6 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-
-
 {
            "name": "Shield",
               "pointsModifier": 1,
@@ -1277,10 +1275,10 @@
       ]
     },
 		  
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++later saxon kingdoms+++++++++++++++++++++++++++++++++++++++++++++++++ */
-	
+
+   
 "later_saxon_kingdoms": {
-      "armyName": "Later Saxon Kingdoms - (800 AD - 1016 AD)",
+"armyName": "Later Saxon Kingdoms - (800 AD - 1016 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 6 },
         { "id": "Cavalry", "name": "Infantry", "constraintType": "percentage", "min": 0, "max": 10 },
