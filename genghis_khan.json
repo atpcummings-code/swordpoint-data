@@ -65,7 +65,46 @@
           "maxBases": 1,
           "specialRules": [],
           "optionalEquipment": []
-        }
+        },
+        {
+          "id": "lancers",
+          "name": "Lancers",
+          "description": "Lancers have heavy armour, bow and spear. Superior Fighters, Superior Shooters. May have Cataphract armour (+1) and Barding(+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "minBases": 3,
+          "maxBases": 8,
+          "specialRules": [
+            "Open Order",
+	        "Superior Shooters",
+            "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Cataphract Armour",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Barding",
+              "pointsModifier": 1,
+              "rulesAdded": [
+                "Close Order"
+              ],
+              "rulesRemoved": [
+                "Open Order"
+              ],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+                 }
+		  ]
+		}
 ]
             }
 }
