@@ -16,7 +16,7 @@
           "min": 0, 
           "max": 15, 
           "alliedArmyKeys": ["vikings", "anglo-danish"],
-          "maxAlliedArmiesAllowed": 1 
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
