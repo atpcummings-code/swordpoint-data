@@ -227,7 +227,7 @@
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 6 },
         { "id": "Cavalry", "name": "Infantry", "constraintType": "percentage", "min": 0, "max": 10 },
-	    { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
+	{ "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
 
          { 
           "id": "Allies", 
@@ -245,8 +245,8 @@
           "id": "king_or_eorl",
           "name": "King or Eorl",
           "description": "May ride a horse. Thegns and Fyrd ignore Warband rule two while within 12 of the Army General",
-          "category": "Commanders", 
-          "type": "General",
+         "category": "Commanders", 
+         "type": "General",
           "attacks": "+2",
           "cohesion": 9,
           "pointsPerBase": 0,
@@ -282,14 +282,12 @@
           "minBases": 3,
           "maxBases": 8,
           "specialRules": ["Open Order"]
-}
-          ]
         },
 
 {
           "id": "thegns",
           "name": "Thegns",
-          "description": "Thegns have spar and shield. Superior Fighters. Shieldwall. Warband. May exchange spear for throwing Spear(+2)". May have light armour (+2) and javelins (+2). May be Veteran (+2).  All spear armed Saxon troops in teh army should be armed with the same type of spear.",
+          "description": "Thegns have spar and shield. Superior Fighters. Shieldwall. Warband. May exchange spear for throwing Spear(+2). May have light armour (+2) and javelins (+2). May be Veteran (+2).  All spear armed Saxon troops in teh army should be armed with the same type of spear.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -350,7 +348,7 @@
 {
           "id": "fyrd",
           "name": "Fyrd",
-          "description": "Fyrd have a spear and shield. Shieldwall. Warband. may exchange spear for throwing spear (+2). May throw rocks or javelins (+2).  All spear armed Saxon troops in teh army should be armed with the same type of spear.",
+          "description": "Fyrd have a spear and shield. Shieldwall. Warband. may exchange spear for throwing spear (+2). May throw rocks or javelins (+2).  All spear armed Saxon troops in the army should be armed with the same type of spear.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -461,7 +459,6 @@
       ]
     },
    
-
    
     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++anglo-danish army+++++++++++++++++++++++++++++++++++++++++++++++++ */
    
