@@ -10,29 +10,29 @@
           "min": 0,
           "max": 6
         },
-        {
-          "id": "Chariots",
-          "name": "Chariots",
+ {
+          "id": "Cavalry",
+          "name": "Cavalry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 20
+          "max": 50
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 25,
-          "max": 100
+          "min": 0,
+          "max": 25
         },
-        {
-          "id": "Allies",
-          "name": "Allies and Mercenaries",
-          "description": "The army may take allies from the Libyan list.",
+{
+  "id": "Allies",
+          "name": "Allies",
+          "description": "The army may take allies from the Cuman List.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25,
+          "max": 33,
           "alliedArmyKeys": [
-            "libyan"
+            "cuman_or_kipchak"
           ],
           "maxAlliedArmiesAllowed": 1
         }
