@@ -298,37 +298,12 @@
           "minBases": 3,
           "maxBases": 8,
           "specialRules": ["Close Order", "Superior Fighters", "Shieldwall"],
-"allowedSecondaryUnits": [
+        "allowedSecondaryUnits": [
             { 
-              "minRatioPercent": 50,
+             "id": "Fyrd", 
+             "minRatioPercent": 50,
               "maxRatioPercent": 67,
-            "id": "fyrd",
-          "name": "Fyrd",
-          "description": "Fyrd have a spear and shield. Shieldwall. May throw rocks (+2). May count as Riding Horses (+1).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 5,
-          "pointsPerBase": 12,
-          "specialRules": ["Close Order", "Shieldwall"],
-          "optionalEquipment": [
-{
-              "name": "Rocks",
-              "pointsModifier": 2,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-{
-              "name": "Riding Horses",
-              "pointsModifier": 1,
-              "rulesAdded": ["Riding Horses"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ],
+            ],
             }
 ],
           "optionalEquipment": [
