@@ -65,8 +65,7 @@
           "maxBases": 1,
           "specialRules": [],
           "optionalEquipment": []
-        },
-        
+        },     
         {
           "id": "archers",
           "name": "Archers",
@@ -114,7 +113,7 @@
             "Open Order"
              ],
              "optionalEquipment": []
-                },
+},
         {
           "id": "spearmen",
           "name": "Spearmen",
