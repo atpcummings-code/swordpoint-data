@@ -297,7 +297,19 @@
           "pointsPerBase": 22,
           "minBases": 3,
           "maxBases": 8,
-          "specialRules": ["Close Order", "Superior Fighters", "Shieldwall"],   
+          "specialRules": ["Close Order", "Superior Fighters", "Shieldwall"],
+
+          "allowedSecondaryUnits": [
+          {      
+            "unitId": "Fyrd",   
+            "name": "Fyrd",     
+            "pointsPerBase": 12,                 
+            "minRatioPercent": 50,    
+            "maxRatioPercent": 67,      
+            "specialRules": ["Close Order, "Shieldwall"],
+           },
+],
+         
           "optionalEquipment": [
 {
               "name": "Veteran",
