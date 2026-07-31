@@ -39,7 +39,7 @@
       ],
       "units": [
         {
-          "id": "general",
+   		  "id": "general",
           "name": "General",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -55,7 +55,7 @@
         {
           "id": "commander",
           "name": "Commander",
-          "description": "",
+          "description": "Rides a horse.",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
@@ -79,7 +79,7 @@
           "maxBases": 8,
           "specialRules": [
             "Open Order",
-	    "Superior Shooters",
+	        "Superior Shooters",
             "Superior Fighters"
           ],
           "optionalEquipment": [
@@ -102,7 +102,9 @@
               ],
               "defenceModifier": -1,
               "cohesionModifier": 0
-                 },
+                 }
+		  ]
+		},
         {
           "id": "light_horse",
           "name": "Light Horse",
@@ -137,7 +139,8 @@
               ],
               "defenceModifier": 0,
               "cohesionModifier": 0
-           },
+				]
+			},
         {
           "id": "spearmen",
           "name": "Spearmen",
@@ -200,7 +203,8 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-            },
+	]
+},
    {
           "id": "nepalese_spearmen",
           "name": "Nepalese Spearmen",
