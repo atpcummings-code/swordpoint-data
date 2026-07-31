@@ -244,7 +244,7 @@
         {
           "id": "king_or_eorl",
           "name": "King or Eorl",
-          "description": "May ride a horse. Thegns and Fyrd ignore Warband rule two while within 12"""" of the Army General",
+          "description": "May ride a horse. Thegns and Fyrd ignore Warband rule two while within 12 of the Army General",
           "category": "Commanders", 
           "type": "General",
           "attacks": "+2",
