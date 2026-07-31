@@ -1252,12 +1252,11 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-      }
+            }
           ]
-        },
-           }
-}
-     
+        }
+      ]
+    },  
 "later_saxon_kingdoms": {
  "armyName": "Later Saxon Kingdoms - (800 AD - 1016 AD)",
       "categories": [
