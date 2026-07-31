@@ -974,7 +974,7 @@
 
  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++huns+++++++++++++++++++++++++++++++++++++++++++++++++ */
    
-   "korean": {
+   "huns": {
       "armyName": "Huns - (350 AD - 475 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 6 },
@@ -1276,9 +1276,10 @@
         }
       ]
     },
-     /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++later saxon kingdoms+++++++++++++++++++++++++++++++++++++++++++++++++ */
-   
-   "later_saxon_kingdoms": {
+		  
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++later saxon kingdoms+++++++++++++++++++++++++++++++++++++++++++++++++ */
+	
+"later_saxon_kingdoms": {
       "armyName": "Later Saxon Kingdoms - (800 AD - 1016 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 6 },
