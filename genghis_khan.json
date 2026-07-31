@@ -206,10 +206,45 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-                        }
-              ]
             }
           ]
-        }
-  }
+
+        },
+   {
+          "id": "nepalese_spearmen",
+          "name": "Nepalese Spearmen",
+          "description": "Nepalese Spearmen have a spear and shield. Open Order.",
+          "category": "Allies",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": [
+            "Open Order"
+             ],
+             "optionalEquipment": []
+   },
+{
+          "id": "nepalese_archers",
+          "name": "Nepalese Archers",
+          "description": "Nepalese Archrs have a bow. Open Order.",
+          "category": "Allies",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": [
+            "Open Order"
+             ],
+             "optionalEquipment": []
+                 }
+          ]
+                  }
+              ]
+            },
+          }
 }
