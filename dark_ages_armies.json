@@ -827,6 +827,20 @@
           "specialRules": ["Skirmishers", "Inferior Fighters", "Nomad Cavalry"],
 	  "optionalEquipment": []
         },
+		  {
+          "id": "manchurian_horse_archers",
+          "name": "Manchurian Horse Archers",
+          "description": "Horse Arches have a bow. Inferior Fighters, Skirmishers. Nomad Cavalry.",
+          "category": "Allies",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 2,
+          "maxBases": 6,
+          "specialRules": ["Skirmishers", "Inferior Fighters", "Nomad Cavalry"],
+	  "optionalEquipment": []
+        },
 
 {
           "id": "guards",
