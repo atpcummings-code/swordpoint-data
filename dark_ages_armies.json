@@ -391,7 +391,7 @@
           "pointsPerBase": 20,
           "minBases": 3,
           "maxBases": 12,
-          "specialRules": ["Superior Fighters", "Shieldwall", "Cloe Order"],
+          "specialRules": ["Superior Fighters", "Shieldwall", "Close Order"],
           "optionalEquipment": [
             { 
               "name": "Two Handed Axe", 
