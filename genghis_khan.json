@@ -37,7 +37,6 @@
           "maxAlliedArmiesAllowed": 1
         }
       ],
-},
       "units": [
         {
           "id": "general",
