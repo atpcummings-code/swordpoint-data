@@ -1273,5 +1273,934 @@
           ]
         }
       ]
+    },
+     
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++later_saxon_kingdoms+++++++++++++++++++++++++++++++++++++++++++++++++ */
+"later_saxon_kingdoms": {
+ "armyName": "Later Saxon Kingdoms - (800 AD - 1016 AD)",
+      "categories": [
+        { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 6 },
+        { "id": "Cavalry", "name": "Infantry", "constraintType": "percentage", "min": 0, "max": 10 },
+	{ "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
+
+         { 
+          "id": "Allies", 
+          "name": "Special Troops or Allies", 
+         "description": "The army may have allies from Wales (Early Medieval Wales), Scotland (Dark Age Britain and Ireland) or Ireland (Later Irish).",
+          "constraintType": "percentage", 
+          "min": 0, 
+          "max": 25, 
+          "alliedArmyKeys": ["early_medieval_wales", "dark_age_britain_and_ireland", "later_irish"],
+          "maxAlliedArmiesAllowed": 3 
+        }
+      ],
+      "units": [
+        {
+          "id": "king_or_eorl",
+          "name": "King or Eorl",
+          "description": "May ride a horse. Thegns and Fyrd ignore Warband rule two while within 12 of the Army General",
+         "category": "Commanders", 
+         "type": "General",
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+           "id": "ealdorman",
+          "name": "Ealdorman",
+          "description": "May ride a horse.",
+         "category": "Commanders",
+         "type": "other",
+          "attacks": "+1",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+
+{
+          "id": "thegns_cavalry",
+          "name": "Thegn Cavalry",
+          "description": "Thegn Cavalry have spear and shield. May have light armour (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "specialRules": ["Open Order"]
+        },
+
+{
+          "id": "thegns",
+          "name": "Thegns",
+          "description": "Thegns have spar and shield. Superior Fighters. Shieldwall. Warband. May exchange spear for throwing Spear(+2). May have light armour (+2) and javelins (+2). May be Veteran (+2).  All spear armed Saxon troops in teh army should be armed with the same type of spear.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Close Order", "Superior Fighters", "Shieldwall", "Warband"],
+
+          "allowedSecondaryUnits": [
+          {      
+            "unitId": "Fyrd",   
+            "name": "Fyrd",     
+            "pointsPerBase": 14,                 
+            "minRatioPercent": 0,    
+            "maxRatioPercent": 67,      
+            "specialRules": ["Combined Units"]
+                      }
+],
+         
+          "optionalEquipment": [
+{
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            
+{
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+
+{ 
+              "name": "Throwing Spear", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "fyrd",
+          "name": "Fyrd",
+          "description": "Fyrd have a spear and shield. Shieldwall. Warband. may exchange spear for throwing spear (+2). May throw rocks or javelins (+2).  All spear armed Saxon troops in the army should be armed with the same type of spear.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Close Order", "Shieldwall", "Warband"],
+          "optionalEquipment": [
+{
+              "name": "Rocks or Javelins",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+         ]
+        },
+        {
+          "id": "vikings",
+          "name": "Vikings",
+          "description": "Vikings have a shield. Close Order. Shieldwall. Superior Fighters. May be fieled in Open Order at a cost of  15 points per base. May have light armour (+2), throwing spear (+2), javelins (+2),  or two-handed axe (+2).",
+          "category": "Allies",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Superior Fighters", "Shieldwall", "Close Order"],
+          "optionalEquipment": [
+            { 
+              "name": "Two Handed Axe", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Throwing Spear",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Open Order",
+              "pointsModifier": -5,
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
+            { 
+              "name": "Light Armour", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+              ]
+  },
+{
+          "id": "skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Skirmishers. Inferior Fighters.  May exchange javelins for sling or bow (free) but there must be fewer skirmishers armed with bows than those armed with javelins and sling combined",
+          "category": "Allies",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+            { 
+              "name": "Sling", 
+              "pointsModifier": 0, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            { 
+              "name": "Bow", 
+              "pointsModifier": 0, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+          }
+          ]
+        }
+      ]
+    }, 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++anglo-danish army+++++++++++++++++++++++++++++++++++++++++++++++++ */
+"anglo_danish": {
+      "armyName": "Anglo-Danish - (1016 AD - 1066 AD)",
+      "categories": [
+        { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 6 },
+        { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
+         { 
+          "id": "Allies", 
+          "name": "Special Troops and Allies", 
+         "description": "The army may have allies from the Early Medieval Wales or Later Irish lists.",
+          "constraintType": "percentage", 
+          "min": 0, 
+          "max": 25, 
+          "alliedArmyKeys": ["early_medieval_wales", "later_irish"],
+          "maxAlliedArmiesAllowed": 2 
+        }
+      ],
+      "units": [
+        {
+          "id": "king_or_eorl",
+          "name": "King or Eorl",
+          "description": "May ride a horse, or count as Riding Horses.",
+         "category": "Commanders", 
+         "type": "General",
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+ {
+              "name": "Riding Horses",
+              "pointsModifier": 0,
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+]
+        },
+        {
+           "id": "ealdorman",
+          "name": "Ealdorman",
+          "description": "May ride a horse, or count as Riding Horses.",
+         "category": "Commanders",
+         "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+ {
+              "name": "Riding Horses",
+              "pointsModifier": 0,
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+],
+        },
+           {
+          "id": "huscarls",
+          "name": "Huscarls",
+          "description": "A Huscarl has light armour, spear and shield. Shieldwall. Superior Fighters. May exchange spear for two-handed axe (+2) and may have javelins (+2).  May be Stubborn (+2) and Veteran (+2). May count as Riding Horses (+1). Huscarls and Fyrd form Combined Units with 50%-67% (half to two thirds) being Fyrd.  ",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Close Order", "Superior Fighters", "Shieldwall"],
+
+          "allowedSecondaryUnits": [
+          {      
+            "unitId": "Fyrd",   
+            "name": "Fyrd",     
+            "pointsPerBase": 12,                 
+            "minRatioPercent": 50,    
+            "maxRatioPercent": 67,      
+            "specialRules": ["Combined Units"]
+                      }
+],
+         
+          "optionalEquipment": [
+{
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            
+{
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
+{ 
+              "name": "Two-handed Axe", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "fyrd",
+          "name": "Fyrd",
+          "description": "Fyrd have a spear and shield. Shieldwall. May throw rocks (+2). May count as Riding Horses (+1).  Fyrd may form units on their own costing 14 points per base and being Subject to Warband rules 1 and 2. No Commanders may be attached to such units.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Close Order", "Shieldwall", "Warband (1 and 2)"],
+          "optionalEquipment": [
+{
+              "name": "Rocks",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
+ 
+{
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "vikings",
+          "name": "Vikings",
+          "description": "Vikings have a shield. Close Order. Shieldwall. Superior Fighters. May be designated Open Order costing 15points per base. May have light armour (+2), javelins (+2), throwing spear (+2) or two-handed axe (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Superior Fighters", "Shieldwall", "Close Order"],
+          "optionalEquipment": [
+            { 
+              "name": "Two Handed Axe", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Throwing Spear",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Open Order",
+              "pointsModifier": -5,
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
+            { 
+              "name": "Light Armour", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+              ]
+  },
+{
+          "id": "skirmishers_ceorls",
+          "name": "Skirmishers (Ceorls)",
+          "description": "Skirmishers have javelins. Skirmishers. Inferior Fighters.  May exchange javelins for sling or bow (free) but there must be fewer skirmishers armed with bows than those armed with javelins and sling combined",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+            { 
+              "name": "Sling", 
+              "pointsModifier": 0, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            { 
+              "name": "Bow", 
+              "pointsModifier": 0, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+          }
+          ]
+        }
+      ]
+    },
+   
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++later irish army+++++++++++++++++++++++++++++++++++++++++++++++++ */
+   
+   "later_irish": {
+      "armyName": "Later Irish - (830 AD - 1500 AD)",
+      "categories": [
+        { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
+        { "id": "Cavalry", "name": "Cavalry", "constraintType": "percentage", "min": 0, "max": 25 },
+        { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
+       { "id": "Mercenaries", "name": "Mercenaries", "constraintType": "percentage", "min": 0, "max": 33 },
+        { 
+          "id": "Allies", 
+          "name": "Allied Contingents", 
+         "description": "An Irish Kingdoms army may have allies from the Medieval Scots list.  An early Irish Kingdoms army (before 1200AD) without gallogiaich may have allies from the Viking list.",
+          "constraintType": "percentage", 
+          "min": 0, 
+          "max": 20, 
+          "alliedArmyKeys": ["medieval_scots", "vikings"],
+          "maxAlliedArmiesAllowed": 1 
+        }
+      ],
+      "units": [
+        {
+          "id": "irish_king",
+          "name": "Irish King",
+          "description": "May ride a horse.",
+         "category": "Commanders", 
+         "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+           "id": "irish_chieftain",
+          "name": "Irish Chieftain",
+          "description": "May ride a horse.",
+         "category": "Commanders",
+         "type": "other",
+          "attacks": "+3",
+          "cohesion": 1,
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+           {
+          "id": "irish_cavalry",
+          "name": "Irish Cavalry",
+          "description": "Irish Cavalry have javelins and shield. May be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            { 
+              "name": "Skirmishers", 
+              "pointsModifier": 0, 
+              "rulesAdded": ["Skirmishers"], 
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "noble_warriors",
+          "name": "Noble Warriors",
+          "description": "Noble Warriors have light armour, throwing spear and shield. Superior Fighters. Warband. Open Order. They may exchange throwing spear for double handed weapon (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Superior Fighters", "Open Order", "Warband"],
+          "optionalEquipment": [
+            { 
+              "name": "Double Handed Weapon", 
+              "pointsModifier": 0, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            { 
+              "name": "Throwing Spears", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              ]
+  },
+{
+          "id": "kerns",
+          "name": "Kerns",
+          "description": "Kerns have javelins and shield. Open Order. Warband. They may exchange their javelins for throwing spears (free) or double handedweapons (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Open Order", "Warband"],
+          "optionalEquipment": [
+           { 
+           "name": "Double Handed Weapon", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+              { 
+           "name": "Throwing Spears", 
+              "pointsModifier": 0, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+{
+          "id": "skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers. May have shield (+1) and may exchange javelins for sling (free)",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 9,
+          "minBases": 2,
+          "maxBases": 6,
+          "specialRules": ["Skirmishers", "Inferiror Fighters"],
+          "optionalEquipment": [
+            { 
+              "name": "Shield", 
+              "pointsModifier": 1, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            { 
+              "name": "Sling", 
+              "pointsModifier": 0, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+{
+          "id": "rising_out",
+          "name": "Rising Out",
+          "description": "Rising Out have stones. Inferior Fighters. Inferior Shooters. Levies.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Inferior Fighters", "Inferior Shooters","Levies", "Close Order"],
+          "optionalEquipment": []
+        },
+{
+          "id": "gallogIaich",
+          "name": "GallogIaich",
+          "description": "GallogIaich have double handed weapons and light armour. Superior Fighters. Veteran. May exchange double handed weapon for spear and shield +2 in which case they may form Shieldwall.  In later armies (after 1200AD) may have heavy armour (+2). May be Stubborn (+2)..",
+          "category": "Mercenaries",
+          "type": "other",
+          "defence": 6,
+          "cohesion":7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Superior Fighters", "Veteran"],
+          "optionalEquipment": [
+            { 
+              "name": "Spear and Shield", 
+              "pointsModifier": 2, 
+              "rulesAdded": ["Shieldwall"], 
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+               { 
+              "name": "Heavy Armour", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            { 
+              "name": "Stubborn", 
+              "pointsModifier": 2, 
+              "rulesAdded": ["Stubborn"], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+      ]
+    },
+  
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++viking army+++++++++++++++++++++++++++++++++++++++++++++++++ */
+   
+   "vikings": {
+      "armyName": "Vikings - (750 AD - 1100 AD)",
+      "categories": [
+        { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
+        { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
+       { 
+          "id": "Allies", 
+          "name": "Special Troops and Allies", 
+           "description": "The army may have allies from the Later Irish or Later Saxon Kingdoms lists.",
+          "constraintType": "percentage", 
+          "min": 0, 
+          "max": 33, 
+          "alliedArmyKeys": ["later_irish", "later_saxon_kingdoms"],
+          "maxAlliedArmiesAllowed": 2 
+       }
+      ],
+      "units": [
+        {
+          "id": "king_or_jarl",
+          "name": "king or Jarl",
+          "description": "May ride a horse, or count as Riding Horses.",
+         "category": "Commanders", 
+         "type": "General",
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [{ 
+              "name": "Riding Horses", 
+              "pointsModifier": 0, 
+              "rulesAdded": ["Riding Horses"], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+]
+        },
+        {
+           "id": "noble(hersir)",
+          "name": "Noble (Hersir)",
+          "description": "May ride a horse, or count as Riding Horses.",
+         "category": "Commanders",
+         "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [{ 
+              "name": "Riding Horses", 
+              "pointsModifier": 0, 
+              "rulesAdded": ["Riding Horses"], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }]
+        },
+       {
+      "id": "beserker",
+          "name": "Beserker",
+          "description": "May ride a horse, or count as Riding Horses. Up to four Hirdmen bases may be upgraded to include a Beserker. No more than one of these may be included in a single unit, and no more than one commander in total may be present in a Viking unit.  If the unit containing the Beserker loses a roundof combat, or fails a Cohesion test, the additional attacks are lost.",
+        "category": "Commanders",  
+        "type": "other",
+          "attacks": "+3",
+          "cohesion": 0,
+          "pointsPerBase": 15,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hirdmen",
+          "name": "Hirdmen",
+          "description": "A Hirdmen has light armour, spear and shield. Superior Fighters. Shieldwall. May change to throwing spear (+2) or two-handed axe (+2). May be Veteran (+2). May count as Riding Horses (+1). Hirdmen and Bondi may be fielded in Open Order at a cost of 17 points and eleven points respectively.  All of the troops in a contingent must be of the same order.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Superior Fighters", "Close Order", "Shieldwall"],
+          "optionalEquipment": [
+            { 
+              "name": "Throwing Spears", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+ {
+              "name": "Two-handed Axe", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{ 
+              "name": "Veteran", 
+              "pointsModifier": 2, 
+              "rulesAdded": ["Veteran"], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{ 
+              "name": "Open Order", 
+              "pointsModifier": -5, 
+              "rulesAdded": ["Open Order"], 
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{ 
+              "name": "Riding Horses", 
+              "pointsModifier": 1, 
+              "rulesAdded": ["Riding Horses"], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "bondi",
+          "name": "Bondi",
+          "description": "Bondi have a hand weapon, spear and shield. Shieldwall. May change to throwing spear (+2) or exchange spear and shield for bow (free).  May count as Riding Horses (+1).  Bow armed Bondi may be fielded as skirmishers instead at six points per base. Hirdmen and Bondi may be fielded in Open Order at a cost of 17 points and eleven points respectively.  All of the troops in a contingent must be of the same order.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Close Order", "Shieldwall"],
+          "optionalEquipment": [
+            { 
+              "name": "Throwing Spears", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{ 
+              "name": "Open Order", 
+              "pointsModifier": -3, 
+              "rulesAdded": ["Open Order"], 
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
+ { 
+              "name": "Bow", 
+              "pointsModifier": 0, 
+              "rulesAdded": [], 
+              "rulesRemoved": ["Shieldwall"],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+{ 
+              "name": "Skirmishers (bow armed)", 
+              "pointsModifier": -8, 
+              "rulesAdded": ["Skirmishers"], 
+              "rulesRemoved": ["Shieldwall", "Close Order"],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+{ 
+              "name": "Riding Horses", 
+              "pointsModifier": 1, 
+              "rulesAdded": ["Riding Horses"], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+  },
+{
+          "id": "skirmishers_thralls",
+          "name": "Skirmishers (Thralls)",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May exchange javelins for sling or bow (free)",
+          "category": "Allies",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+            { 
+              "name": "Bow", 
+              "pointsModifier": 0, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{ 
+              "name": "Sling", 
+              "pointsModifier": 0, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+       ]
     }
-		  }
+  }
+ }
