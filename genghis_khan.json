@@ -65,6 +65,22 @@
           "maxBases": 1,
           "specialRules": [],
           "optionalEquipment": []
+        },
+        {
+          "id": "spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have a spear and shield. Open order",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
         }
         
 ]
