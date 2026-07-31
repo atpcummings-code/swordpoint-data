@@ -151,7 +151,7 @@
           "id": "skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have a bow or sling",
-          "category": "Skirmishers",
+          "category": "Infantry",
           "type": "other",
           "defence": 7,
           "cohesion": 5,
