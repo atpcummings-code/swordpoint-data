@@ -161,7 +161,24 @@
           "specialRules": [
           "Skirmishers"
           ],
-          "optionalEquipment": []
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+               {
+              "name": "Sling",
+              "pointsModifier": 0,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
                   }
               ]
             },
