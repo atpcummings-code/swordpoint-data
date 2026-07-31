@@ -309,7 +309,7 @@
           "defence": 6,
           "cohesion": 5,
           "pointsPerBase": 12,
-           "specialRules": ["Close Order", "Shieldwall"],
+          "specialRules": ["Close Order", "Shieldwall"],
           "optionalEquipment": [
 {
               "name": "Rocks",
@@ -319,8 +319,6 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-
- 
 {
               "name": "Riding Horses",
               "pointsModifier": 1,
