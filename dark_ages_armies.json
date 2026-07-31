@@ -227,7 +227,7 @@
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 6 },
         { "id": "Cavalry", "name": "Infantry", "constraintType": "percentage", "min": 0, "max": 10 },
-	{ "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
+	    { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
 
          { 
           "id": "Allies", 
@@ -244,9 +244,9 @@
         {
           "id": "king_or_eorl",
           "name": "King or Eorl",
-          "description": "May ride a horse. Thegns and Fyrd ignore Warband rule two while within 12" of the Army General",
-         "category": "Commanders", 
-         "type": "General",
+          "description": "May ride a horse. Thegns and Fyrd ignore Warband rule two while within 12"""of the Army General",
+          "category": "Commanders", 
+          "type": "General",
           "attacks": "+2",
           "cohesion": 9,
           "pointsPerBase": 0,
