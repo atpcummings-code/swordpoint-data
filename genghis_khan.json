@@ -1,7 +1,7 @@
 {
   "armies": {
-  "tibetan": {
-      "armyName": "Tibetan - (620 AD - 1000 AD)",
+    "sea_peoples": {
+      "armyName": "Sea Peoples - (1278 BC - 1175 BC)",
       "categories": [
         {
           "id": "Commanders",
@@ -10,40 +10,38 @@
           "min": 0,
           "max": 6
         },
- {
-          "id": "Cavalry",
-          "name": "Cavalry",
+        {
+          "id": "Chariots",
+          "name": "Chariots",
           "constraintType": "percentage",
           "min": 0,
-          "max": 50
+          "max": 20
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 0,
-          "max": 25
+          "min": 25,
+          "max": 100
         },
-{
-  "id": "Allies",
-          "name": "Allies",
-          "description": "The army may take allies from the Cuman List.",
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "description": "The army may take allies from the Libyan list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 33,
+          "max": 25,
           "alliedArmyKeys": [
-            "cuman_or_kipchak"
+            "libyan"
           ],
           "maxAlliedArmiesAllowed": 1
         }
-
-      ]
-},
+      ],
       "units": [
         {
-          "id": "general",
-          "name": "General",
-          "description": "Rides a horse.",
+          "id": "Warlord",
+          "name": "Over King",
+          "description": "May ride in a chariot.",
           "category": "Commanders",
           "type": "General",
           "attacks": "+3",
@@ -55,9 +53,9 @@
           "optionalEquipment": []
         },
         {
-          "id": "commander",
-          "name": "Commander",
-          "description": "",
+          "id": "chief",
+          "name": "Chief",
+          "description": "May ride in a chariot.",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
@@ -68,181 +66,121 @@
           "specialRules": [],
           "optionalEquipment": []
         },
-                {
-          "id": "lancers",
-          "name": "Lancers",
-          "description": "Lancers have heavy armour, bow and spear. Superior Fighters, Superior Shooters. May have Cataphract armour (+1) and Barding(+1).",
-          "category": "Cavalry",
+        {
+          "id": "chariots",
+          "name": "Chariots",
+          "description": "Chariots have a driver and one crewman armed with javelins, light armour and shield.  Superior Fighters. Superior Shooters. Light Chariots.",
+          "category": "Chariots",
           "type": "other",
-          "defence": 4,
+          "defence": 3,
           "cohesion": 8,
           "pointsPerBase": 25,
           "minBases": 3,
           "maxBases": 8,
           "specialRules": [
+            "Superior Fighters",
             "Open Order",
-	    "Superior Shooters",
-            "Superior Fighters"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Cataphract Armour",
-              "pointsModifier": 1,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Barding",
-              "pointsModifier": 1,
-              "rulesAdded": [
-                "Close Order"
-              ],
-              "rulesRemoved": [
-                "Open Order"
-              ],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "light_horse",
-          "name": "Light Horse",
-          "description": "Light Horse have a bow. Evade. May have spear (+1) and shield (+1). May be fielded as skirmishers at a cost of 15 points per base.",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 17,
-          "minBases": 3,
-          "maxBases": 8,
-          "specialRules": [
-            "Open Order"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Spear",
-              "pointsModifier": 1,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmisher",
-              "pointsModifier": -2,
-              "rulesAdded": [
-                "Skirmisher"
-              ],
-              "rulesRemoved": [
-                "Open Order"
-              ],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "spearmen",
-          "name": "Spearmen",
-          "description": "Spearmen have a spear and shield. Open order",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 9,
-          "minBases": 3,
-          "maxBases": 12,
-          "specialRules": [
-            "Open Order"
-          ],
-          "optionalEquipment": []
-        },
-   {
-          "id": "archers",
-          "name": "Archers",
-          "description": "Archers have a bow. Open order",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 9,
-          "minBases": 3,
-          "maxBases": 12,
-          "specialRules": [
-            "Open Order"
+            "Superior Shooters",
+            "Light Chariots"
           ],
           "optionalEquipment": []
         },
         {
-          "id": "nepalese_cavalry",
-          "name": "Nepalese Cavalry",
-          "description": "Nepalese Cavalry have a bow. Open Order. May have light armour (+1) and shield (+1).",
-          "category": "Allies",
+          "id": "sherden",
+          "name": "Sherden",
+          "description": "Sherden have javelins and shield.  Superior Fighters. Warband (not rule 3) / Up top three units may have light armour (+2). May be Stubborn (+2)",
+          "category": "Infantry",
           "type": "other",
           "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 16,
+          "cohesion": 6,
+          "pointsPerBase": 18,
           "minBases": 3,
-          "maxBases": 8,
+          "maxBases": 12,
           "specialRules": [
-            "Open Order"
-             ],
-             "optionalEquipment": [
+            "Superior Fighters",
+            "Close Order",
+            "Warband (not rule 3)"
+          ],
+          "optionalEquipment": [
             {
               "name": "Light Armour",
-              "pointsModifier": 1,
+              "pointsModifier": 2,
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
-{
-              "name": "Shield",
-              "pointsModifier": 1,
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "warriors",
+          "name": "Warriors",
+          "description": "Warriors have javelins and shield. Warband (not rule 3). Up to two units may have light armour (+2). At least one third of all formed infantry units must be Warriors.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": [
+            "Warband (not rule 3)",
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
             }
           ]
-
         },
-   {
-          "id": "nepalese_spearmen",
-          "name": "Nepalese Spearmen",
-          "description": "Nepalese Spearmen have a spear and shield. Open Order.",
-          "category": "Allies",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 9,
-          "minBases": 3,
-          "maxBases": 12,
-          "specialRules": [
-            "Open Order"
-             ],
-             "optionalEquipment": []
-   },
-{
-          "id": "nepalese_archers",
-          "name": "Nepalese Archers",
-          "description": "Nepalese Archrs have a bow. Open Order.",
-          "category": "Allies",
+        
+        {
+          "id": "skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have a bow or sling",
+          "category": "Infantry",
           "type": "other",
           "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 9,
-          "minBases": 3,
-          "maxBases": 12,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
           "specialRules": [
-            "Open Order"
-             ],
-             "optionalEquipment": []
+          "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+               {
+              "name": "Sling",
+              "pointsModifier": 0,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+                  }
+              ]
+            },
+          }
 }
-      ]
-    }
-}
-
