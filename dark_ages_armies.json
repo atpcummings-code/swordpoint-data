@@ -383,7 +383,7 @@
         {
           "id": "vikings",
           "name": "Vikings",
-          "description": "Vikings ahve a shield. Close Order. Shieldwall. Superior Fighters. May be designated Open Order costing 15points per base. May have light armour (+2), javelins (+2), throwing spear (+2) or two-handed axe (+2).",
+          "description": "Vikings have a shield. Close Order. Shieldwall. Superior Fighters. May be designated Open Order costing 15points per base. May have light armour (+2), javelins (+2), throwing spear (+2) or two-handed axe (+2).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
