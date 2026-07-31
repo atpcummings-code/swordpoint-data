@@ -566,7 +566,7 @@
           "id": "professional_warriors",
           "name": "Professional Warriors",
           "description": "Professional Warriors have a shield. Superior Fighters. May have light armour (+2) and atlatl (+2). May be Veteran (+2). May have the Ambush rule (+2).",
-          "category": "Infnatry",
+          "category": "Infantry",
           "type": "other",
           "defence": 6,
           "cohesion": 7,
