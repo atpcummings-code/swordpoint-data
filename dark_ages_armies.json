@@ -735,7 +735,228 @@
       ]
     },
 
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++later irish army+++++++++++++++++++++++++++++++++++++++++++++++++ */
+   
+   "korean": {
+      "armyName": "Korean - (313 AD - 1270 AD)",
+      "categories": [
+        { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 6 },
+        { "id": "Cavalry", "name": "Cavalry", "constraintType": "percentage", "min": 0, "max": 33 },
+        { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 33, "max": 100 },
+        { 
+          "id": "Allies", 
+          "name": "Allies & Mercenaries", 
+         "description": "The army may take allies from the T'ang Chinese list.  It may also employ Manchurian mercenaries by fielding additional Horse Archers from the Cavalry section and paying for them out of the allies & mercenaries allocation",
+          "constraintType": "percentage", 
+          "min": 0, 
+          "max": 25, 
+          "alliedArmyKeys": ["tang_chinese"],
+          "maxAlliedArmiesAllowed": 1 
+        }
+      ],
+      "units": [
+        {
+          "id": "general",
+          "name": "General",
+          "description": "May ride a horse.",
+         "category": "Commanders", 
+         "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+           "id": "noble",
+          "name": "noble",
+          "description": "May ride a horse.",
+         "category": "Commanders",
+         "type": "other",
+          "attacks": "+2",
+          "cohesion": +2,
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+           {
+          "id": "cataphracts",
+          "name": "Cataphracts",
+          "description": "Cataphracts have cataphracts armour, spear and barding. Superior Fighters. Massed Cavalry.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 2,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "specialRules": ["Close Order", "Massed Cavalry", "Superior Fighters"],
+	  "maxCountAllowed": 1,           
+	  "optionalEquipment": []
+        },
+           {
+          "id": "heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have light armour and spear.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "specialRules": ["Open Order"],
+	  "maxCountAllowed": 2,
+	  "optionalEquipment": []
+        },
+    {
+          "id": "horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Arches have a bow. Inferior Fighters, Skirmishers. Nomad Cavalry.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 2,
+          "maxBases": 6,
+          "specialRules": ["Skirmishers", "Inferior Fighters", "Nomad Cavalry"],
+	  "optionalEquipment": []
+        },
 
+{
+          "id": "guards",
+          "name": "Guards",
+          "description": "Guards have spear and shield. Superior Fighters. May have light armour (+2) and large shield (+2) and may exchange spear for halberd (+2). May be Stubborn (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Close Order", "Superior Fighters"],
+ 	  "maxCountAllowed": 1,          
+	  "optionalEquipment": [
+           { 
+           "name": "Light Armour", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+ {
+           "name": "Halberd",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+           "name": "Stubborn",
+              "pointsModifier": 2,
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
+
+              { 
+           "name": "Large Shield", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have a spear and shield. May have a large shield (+2) and may exchange spear for halberd (+2). May use Combined Formation where up to half of the figures exchange spear for bow (+2) and form the rear rows.  Alternatively may be a Mixed Unit where up to half of the figures exchange spear for crossbow (+4).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Close Order"],
+ 	  "maxCountAllowed": 1,
+	  "optionalEquipment": [
+       
+ {
+           "name": "Halberd",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
+
+              {
+           "name": "Large Shield",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+{
+          "id": "levy_spearmen",
+          "name": "Levy Spearmen",
+          "description": "Levy Spearmen have a spear and shield. Levies.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": ["Close Order", "Levies"],
+ 	  "maxCountAllowed": 1,
+	  "optionalEquipment": []
+        },
+
+
+
+{
+          "id": "skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have a bow. Inferior Fighters. Skirmishers. Every second unit may exchange bow for crossbow (+2). Such units may not be larger than the smallest bow unit",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "specialRules": ["Skirmishers", "Inferiror Fighters"],
+          "optionalEquipment": [
+            { 
+              "name": "Crossbow", 
+              "pointsModifier": 2, 
+              "rulesAdded": [], 
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+      ]
+    },
 	  
      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++later saxon kingdoms+++++++++++++++++++++++++++++++++++++++++++++++++ */
    
