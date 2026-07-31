@@ -1,8 +1,8 @@
  {
   "armies": {
    /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++welsh army+++++++++++++++++++++++++++++++++++++++++++++++++ */ 
-   "early_medieval_welsh": {
-      "armyName": "Early Medieval Welsh - (800 AD - 1063 AD)",
+   "early_medieval_wales": {
+      "armyName": "Early Medieval Wales - (800 AD - 1063 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
         { "id": "Teulu", "name": "Teulu", "constraintType": "percentage", "min": 0, "max": 33 },
@@ -217,17 +217,16 @@
           "optionalEquipment": []
         }
       ]
-    },
+    }E,
 
-    /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++anglo-danisharmy+++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++anglo-danish army+++++++++++++++++++++++++++++++++++++++++++++++++ */
    
    "anglo_danish": {
       "armyName": "Anglo-Danish - (1016 AD - 1066 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 6 },
         { "id": "Infantry", "name": "Infantry", "constraintType": "percentage", "min": 50, "max": 100 },
-       { "id": "Mercenaries", "name": "Mercenaries", "constraintType": "percentage", "min": 0, "max": 33 },
-        { 
+         { 
           "id": "Allies", 
           "name": "Special Troops and Allies", 
          "description": "The army may have allies from the Early Medieval Wales or Later Irish lists.",
