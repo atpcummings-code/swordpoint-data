@@ -55,7 +55,7 @@
         {
           "id": "chief",
           "name": "Chief",
-          "description": May ride in a chariot.",
+          "description": "May ride in a chariot.",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
