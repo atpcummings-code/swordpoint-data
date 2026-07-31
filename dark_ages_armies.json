@@ -1160,7 +1160,7 @@
         {
           "id": "Allies",
           "name": "Allies & Mercenaries",
-          "description": "The army may take allies from the T'ang Chinese list.  It may also employ Manchurian mercenaries by fielding additional Horse Archers from the Cavalry section and paying for them out of the allies & mercenaries allocation",
+          "description": "The army may take allies from the Tang Chinese list.  It may also employ Manchurian mercenaries by fielding additional Horse Archers from the Cavalry section and paying for them out of the allies & mercenaries allocation",
           "constraintType": "percentage",
           "min": 0,
           "max": 66,
@@ -1266,6 +1266,8 @@
               ],
               "defenceModifier": 0,
               "cohesionModifier": 0
+            }
+          ]
             },
             {
               "id": "alternate_nobles",
@@ -1760,9 +1762,7 @@
             }
           ]
         },
-        "anglo_danish",
-        ":",
-        {
+        "anglo_danish": {
           "armyName": "Anglo-Danish - (1016 AD - 1066 AD)",
           "categories": [
             {
@@ -2049,9 +2049,7 @@
             }
           ]
         },
-        "later_irish",
-        ":",
-        {
+        "later_irish": {
           "armyName": "Later Irish - (830 AD - 1500 AD)",
           "categories": [
             {
@@ -2324,9 +2322,7 @@
             }
           ]
         },
-        "vikings",
-        ":",
-        {
+        "vikings": {
           "armyName": "Vikings - (750 AD - 1100 AD)",
           "categories": [
             {
@@ -2596,7 +2592,5 @@
             }
           ]
         }
-      ]
-    }
   }
-}
+    }
