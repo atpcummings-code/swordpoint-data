@@ -1,7 +1,6 @@
 {
-  "armies": {
-   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++early medieval wales+++++++++++++++++++++++++++++++++++++++++++++++++ */ 
-   "early_medieval_wales": {
+  "armies":{
+       "early_medieval_wales": {
       "armyName": "Early Medieval Wales - (800 AD - 1063 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
@@ -218,10 +217,7 @@
         }
       ]
     },
-
-  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++franks+++++++++++++++++++++++++++++++++++++++++++++++++ */
-   
-   "franks": {
+"franks": {
       "armyName": "Franks - (300 AD - 750 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
@@ -508,9 +504,7 @@
       ]
     },
    
-  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++mayan+++++++++++++++++++++++++++++++++++++++++++++++++ */
-   
-   "mayan": {
+"mayan": {
       "armyName": "Mayan - (300 AD - 1530 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
@@ -734,10 +728,7 @@
         }
       ]
     },
-
- /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++korean+++++++++++++++++++++++++++++++++++++++++++++++++ */
-   
-   "korean": {
+"korean": {
       "armyName": "Korean - (313 AD - 1270 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 6 },
@@ -943,9 +934,6 @@
  	  "maxCountAllowed": 1,
 	  "optionalEquipment": []
         },
-
-
-
 {
           "id": "skirmishers",
           "name": "Skirmishers",
@@ -971,16 +959,12 @@
         }
       ]
     },
-
- /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++huns+++++++++++++++++++++++++++++++++++++++++++++++++ */
-   
-   "huns": {
+"huns": {
       "armyName": "Huns - (350 AD - 475 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 6 },
         { "id": "Cavalry", "name": "Cavalry", "constraintType": "percentage", "min": 0, "max": 100 },
 	{ "id": "SpecialUnits", "name": "Special Units", "constraintType": "percentage", "min": 0, "max": 15 },
-        
         { 
           "id": "Allies", 
           "name": "Allies & Mercenaries", 
@@ -1248,7 +1232,6 @@
             }
 ]
         },
-
 {
           "id": "wagons",
           "name": "Wagons",
@@ -1272,9 +1255,9 @@
       }
           ]
         },
-   
+           }
+}
      
-  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++later_saxon_kingdoms+++++++++++++++++++++++++++++++++++++++++++++++++ */
 "later_saxon_kingdoms": {
  "armyName": "Later Saxon Kingdoms - (800 AD - 1016 AD)",
       "categories": [
@@ -1511,7 +1494,6 @@
         }
       ]
     }, 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++anglo-danish army+++++++++++++++++++++++++++++++++++++++++++++++++ */
 "anglo_danish": {
       "armyName": "Anglo-Danish - (1016 AD - 1066 AD)",
       "categories": [
@@ -1573,7 +1555,7 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
-],
+]
         },
            {
           "id": "huscarls",
@@ -1859,7 +1841,7 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
+            }
               ]
   },
 {
@@ -1890,7 +1872,7 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-            },
+            }
           ]
         },
 {
@@ -1980,10 +1962,7 @@
         }
       ]
     },
-  
-    /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++viking army+++++++++++++++++++++++++++++++++++++++++++++++++ */
-   
-   "vikings": {
+  "vikings": {
       "armyName": "Vikings - (750 AD - 1100 AD)",
       "categories": [
         { "id": "Commanders", "name": "Commanders", "constraintType": "count", "min": 0, "max": 8 },
