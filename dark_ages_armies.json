@@ -1468,7 +1468,10 @@
               "pointsPerBase": 28,
               "minBases": 0,
               "maxBases": 5,
-              "specialRules": ["Wagon Tabor", "Inferior Fighters"],
+              "specialRules": [
+                "Wagon Tabor",
+                "Inferior Fighters"
+              ],
               "optionalEquipment": [
                 {
                   "name": "Bow",
@@ -2381,7 +2384,7 @@
               ]
             },
             {
-              "id": "noble(hersir)",
+              "id": "noble_hersir",
               "name": "Noble (Hersir)",
               "description": "May ride a horse, or count as Riding Horses.",
               "category": "Commanders",
