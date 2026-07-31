@@ -1,7 +1,7 @@
 {
   "armies": {
      "tibetan": {
-      "armyName": "3Tibetan - (620 AD - 1000 AD)",
+      "armyName": "4Tibetan - (620 AD - 1000 AD)",
       "categories": [
         {
           "id": "Commanders",
@@ -98,6 +98,37 @@
              ],
              "optionalEquipment": []
    },
+{
+          "id": "nepalese_cavalry",
+          "name": "Nepalese Cavalry",
+          "description": "Nepalese Cavalry have a bow. Open Order. May have light armour (+1) and shield (+1).",
+          "category": "Allies",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Shield",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+}
+	]
+},		  
 {
           "id": "nepalese_archers",
           "name": "Nepalese Archers",
