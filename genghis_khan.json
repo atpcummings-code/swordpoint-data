@@ -1,7 +1,7 @@
 {
   "armies": {
      "tibetan": {
-      "armyName": "2Tibetan - (620 AD - 1000 AD)",
+      "armyName": "3Tibetan - (620 AD - 1000 AD)",
       "categories": [
         {
           "id": "Commanders",
@@ -113,6 +113,37 @@
             "Open Order"
              ],
              "optionalEquipment": []
+},
+		  {
+          "id": "light_horse",
+          "name": "Light Horse",
+          "description": "Light Horse have a bow. Evade. May have spear (+1) and shield (+1). May be fielded as skirmishers at a cost of 15 points per base.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmisher",
+              "pointsModifier": -2,
+              "rulesAdded": ["Skirmisher"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+			}
+				]
 },
         {
           "id": "spearmen",
