@@ -67,6 +67,22 @@
           "optionalEquipment": []
         },
         {
+          "id": "archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Open order",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
           "id": "spearmen",
           "name": "Spearmen",
           "description": "Spearmen have a spear and shield. Open order",
