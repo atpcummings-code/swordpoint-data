@@ -236,8 +236,10 @@
             "Open Order"
              ],
              "optionalEquipment": []
-                 }
+                }
+          ]
+                  }
               ]
-            }
+            },
           }
 }
