@@ -3863,6 +3863,7 @@
               "optionalEquipment": [
                 {
                   "name": "Throwing Spear",
+					"disables": ["Two-handed Axe"],
                   "pointsModifier": 2,
 				  "equipmentAdded": ["Throwing Spear"], 
 			      "equipmentRemoved": ["Spear"],
@@ -3872,7 +3873,8 @@
                   "cohesionModifier": 0
                 },
                 {
-                  "name": "Two-handed Axe",
+                  "name": "Throwing Spear",
+					"disables": ["Two-handed Axe"],
                   "pointsModifier": 2,
 					"equipmentAdded": ["Two-handed Axe"], 
 			      "equipmentRemoved": ["Spear"],
@@ -3934,6 +3936,7 @@
               "optionalEquipment": [
                 {
                  "name": "Throwing Spear",
+					"disables": ["Bow"],
                   "pointsModifier": 2,
 				  "equipmentAdded": ["Throwing Spear"], 
 			      "equipmentRemoved": ["Spear"],
@@ -3944,6 +3947,7 @@
                 },
                 {
                   "name": "Open Order",
+					"disables": ["Skirmishers"],
                   "pointsModifier": -3,
                   "rulesAdded": [
                     "Open Order"
@@ -3956,6 +3960,7 @@
                 },
                 {
                   "name": "Bow",
+						"disables": ["Throwing Spear"],
                   "pointsModifier": 0,
 					 "equipmentAdded": ["Bow"], 
 			      "equipmentRemoved": ["Spear", "Shield"],
@@ -3968,6 +3973,7 @@
                 },
                 {
                   "name": "Skirmishers",
+					"disables": ["Open Order"],
                   "pointsModifier": -8,
 					 "equipmentAdded": ["Bow"], 
 			      "equipmentRemoved": ["Spear", "Shield"],
@@ -4012,6 +4018,7 @@
               "optionalEquipment": [
                 {
                   "name": "Bow",
+					"disables": ["Sling"],
                   "pointsModifier": 0,
 					 "equipmentAdded": ["Bow"], 
 			      "equipmentRemoved": ["Javelins", "Sling"],
@@ -4022,6 +4029,7 @@
                 },
                 {
                   "name": "Sling",
+					"disables": ["Bow"],
                   "pointsModifier": 0,
 					 "equipmentAdded": ["Sling"], 
 			      "equipmentRemoved": ["Javelins", "Bow"],
