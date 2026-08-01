@@ -498,10 +498,10 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Spear",
+              "name": "Spear (mandatory Post 700AD)",
               "pointsModifier": -2,
-				"equipmentAdded": ["Throwing Spear"], 
-			  "equipmentRemoved": ["Spear"],
+				"equipmentAdded": ["Spear"], 
+			  "equipmentRemoved": ["Throwing Spear"],
               "rulesAdded": [
                 "Shieldwall"
               ],
