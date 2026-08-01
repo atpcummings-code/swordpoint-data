@@ -1484,7 +1484,451 @@
             }
           ]
         },
-"avars": {
+"early_slav": {
+      "armyName": "Early Slav - (520 AD - 1000 AD)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 33,
+          "max": 100
+        },  
+      ],
+      "units": [
+        {
+          "id": "khan",
+          "name": "Khan",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "voevodo",
+          "name": "Voevodo",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "slav_noble_cavalry",
+          "name": "Slav Noble Cavalry",
+          "description": "Slav Noble Cavalry have javelins and shield. Evade. May have spear (+1) and light armour (+1). One formed unit may be upgraded to C8 (+2). May be fielded as skirmishers at a cost o 17 points per base.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "specialRules": [
+            "Open Order",
+            "Evade"
+          ],
+          "maxCountAllowed": 1,
+          "optionalEquipment": [
+              {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+,
+          {
+              "name": "Cohesion Upgrade",
+              "pointsModifier": 2,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            }
+          ]
+            },
+                        {
+              "id": "slav_cavalry",
+              "name": "Slav Cavalry",
+              "description": "Slav Cavalry have javelins and shield. Skirmishers. May have spear (+1). May be fielded as Formed cavalry with Spear and the Evade abilitty at a cost of 19 points per base. There must be at least one unit of Slav Cavalry if any Slav Noble Cavalry are taken.",
+              "category": "Cavalry",
+              "type": "other",
+              "defence": 5,
+              "cohesion": 6,
+              "pointsPerBase": 16,
+              "minBases": 3,
+              "maxBases": 8,
+              "specialRules": [
+                "Skirmishers"
+              ],
+              "optionalEquipment": [
+               {
+                  "name": "Spear",
+                  "pointsModifier": 1,
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+                {
+                  "name": "Formed Unit",
+                  "pointsModifier": 3,
+                  "rulesAdded": [
+                    "Open Order",
+                    "Evade"
+                  ],
+                  "rulesRemoved": [
+                    "Skirmishers"
+                  ],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+              ]
+            },
+        {
+          "id": "warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Open Order. Warband. May be fielded as skirmishers (no longer Warband) at a cost of six points per base.  Every second unit of warriors may replace throwing spear with bow (free0.  Two formed units of Slavs may replace throwing spear with two-handed axe (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": [
+            "Open Order",
+            "Warband"
+          ],
+          "optionalEquipment": [
+             {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Two-handed Axe",
+              "pointsModifier": 0,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order", "Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "slav_brigands",
+          "name": "Slav Brigands",
+          "description": "Slav Brigands have throwing spear and shield. Open Order. Inferior Fighters. Warband. May be fielded as skirmishers (no longer Warband) at a cost of four points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 4,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": [
+            "Open Order",
+            "Inferior Fighters",
+            "Warband"
+          ],
+          "optionalEquipment": [
+          {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order", "Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+                  }
+              ]
+            },
+  "later_slav": {
+      "armyName": "Later Slav - (520 AD - 1000 AD)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "The army may have allies from Pecheneg list",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 15,
+          "alliedArmyKeys": [
+            "pecheneg"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
+    
+      ],
+      "units": [
+        {
+          "id": "khan",
+          "name": "Khan",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "voevodo",
+          "name": "Voevodo",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "slav_noble_cavalry",
+          "name": "Slav Noble Cavalry",
+          "description": "Slav Noble Cavalry have javelins and shield. Evade. May have spear (+1) and light armour (+1). One formed unit may be upgraded to C8 (+2). May be fielded as skirmishers at a cost o 17 points per base.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "specialRules": [
+            "Open Order",
+            "Evade"
+          ],
+          "maxCountAllowed": 3,
+          "optionalEquipment": [
+              {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Cohesion Upgrade",
+              "pointsModifier": 2,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            }
+          ]
+            },
+                        {
+              "id": "slav_cavalry",
+              "name": "Slav Cavalry",
+              "description": "Slav Cavalry have javelins and shield. Skirmishers. May have spear (+1). May be fielded as Formed cavalry with Spear and the Evade abilitty at a cost of 19 points per base. There must be at least one unit of Slav Cavalry if any Slav Noble Cavalry are taken.",
+              "category": "Cavalry",
+              "type": "other",
+              "defence": 5,
+              "cohesion": 6,
+              "pointsPerBase": 16,
+              "minBases": 3,
+              "maxBases": 8,
+              "specialRules": [
+                "Skirmishers"
+              ],
+              "optionalEquipment": [
+               {
+                  "name": "Spear",
+                  "pointsModifier": 1,
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+                {
+                  "name": "Formed Unit",
+                  "pointsModifier": 3,
+                  "rulesAdded": [
+                    "Open Order",
+                    "Evade"
+                  ],
+                  "rulesRemoved": [
+                    "Skirmishers"
+                  ],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+              ]
+            },
+        
+         {
+          "id": "warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Open Order. Warband. May be fielded as skirmishers (no longer Warband) at a cost of six points per base.  Every second unit of warriors may replace throwing spear with bow (free0.  Two formed units of Slavs may replace throwing spear with two-handed axe (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": [
+            "Open Order",
+            "Warband"
+          ],
+          "optionalEquipment": [
+             {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Two-handed Axe",
+              "pointsModifier": 0,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order", "Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "slav_brigands",
+          "name": "Slav Brigands",
+          "description": "Slav Brigands have throwing spear and shield. Open Order. Inferior Fighters. Warband. May be fielded as skirmishers (no longer Warband) at a cost of four points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 4,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": [
+            "Open Order",
+            "Inferior Fighters",
+            "Warband"
+          ],
+          "optionalEquipment": [
+          {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order", "Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+                  }
+              ]
+            }
+	  
+	  "avars": {
       "armyName": "Avars - (557 AD - 804 AD)",
       "categories": [
         {
