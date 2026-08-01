@@ -1694,6 +1694,7 @@
 ,
           {
               "name": "Cohesion Upgrade",
+			  "maxUnits": 1, 
 			  "disables": ["Skirmishers"],
               "pointsModifier": 2,
               "rulesAdded": [],
@@ -1944,6 +1945,7 @@
             },
              {
               "name": "Cohesion Upgrade",
+				 "maxUnits": 1, 
 				 "disables": ["Skirmishers"],
               "pointsModifier": 2,
               "rulesAdded": [],
