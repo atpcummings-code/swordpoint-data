@@ -146,9 +146,9 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Throwing Spears",
+              "name": "Throwing Spear",
               "pointsModifier": 2,
-				"equipmentAdded": ["Throwing Spears"], 
+				"equipmentAdded": ["Throwing Spear"], 
 			  "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -2569,9 +2569,9 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Skirmisher",
+              "name": "Skirmishers",
               "pointsModifier": -2,
-              "rulesAdded": ["Skirmisher"],
+              "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -3351,7 +3351,7 @@
                   "name": "Double-handed Weapon",
                   "pointsModifier": 0,
 						"equipmentAdded": ["Double-handed Weapon"], 
-			      "equipmentRemoved": ["Throwing Spears"],
+			      "equipmentRemoved": ["Throwing Spear"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -3387,9 +3387,9 @@
                   "cohesionModifier": 0
                 },
                 {
-                  "name": "Throwing Spears",
+                  "name": "Throwing Spear",
                   "pointsModifier": 0,
-					"equipmentAdded": ["Throwing Spears"], 
+					"equipmentAdded": ["Throwing Spear"], 
 			      "equipmentRemoved": ["Javelins"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
@@ -3828,9 +3828,9 @@
               ],
               "optionalEquipment": [
                 {
-                  "name": "Throwing Spears",
+                  "name": "Throwing Spear",
                   "pointsModifier": 2,
-				  "equipmentAdded": ["Throwing Spears"], 
+				  "equipmentAdded": ["Throwing Spear"], 
 			      "equipmentRemoved": ["Spear"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
@@ -3899,9 +3899,9 @@
               ],
               "optionalEquipment": [
                 {
-                 "name": "Throwing Spears",
+                 "name": "Throwing Spear",
                   "pointsModifier": 2,
-				  "equipmentAdded": ["Throwing Spears"], 
+				  "equipmentAdded": ["Throwing Spear"], 
 			      "equipmentRemoved": ["Spear"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
