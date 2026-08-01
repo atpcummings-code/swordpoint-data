@@ -385,6 +385,7 @@
           "pointsPerBase": 23,
           "minBases": 3,
           "maxBases": 8,
+			"baseEquipment": ["Light Armour", "Spear", "Javelins", "Shield"],
           "specialRules": [
             "Open Order",
             "Superior Fighters"
@@ -427,6 +428,7 @@
           "pointsPerBase": 17,
           "minBases": 3,
           "maxBases": 8,
+			"baseEquipment": [ "Spear"],
           "specialRules": [
             "Open Order"
           ],
@@ -456,6 +458,7 @@
           "pointsPerBase": 20,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Throwing Spear", "Shield"],
           "specialRules": [
             "Close Order",
             "Superior Fighters",
@@ -523,6 +526,7 @@
           "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Throwing Spear", "Shield"],
           "specialRules": [
             "Close Order",
             "Warband"
@@ -569,6 +573,7 @@
           "pointsPerBase": 14,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Throwing Spear", "Shield"],
           "specialRules": [
             "Warband",
             "Close Order"
@@ -586,6 +591,7 @@
           "pointsPerBase": 5,
           "minBases": 2,
           "maxBases": 6,
+			"baseEquipment": [],
           "specialRules": [
             "Skirmishers"
           ],
@@ -690,6 +696,7 @@
           "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Shield"],
           "specialRules": [
             "Close Order",
             "Superior Fighters"
@@ -757,6 +764,7 @@
           "pointsPerBase": 12,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Shield"],
           "specialRules": [
             "Close Order"
           ],
@@ -812,6 +820,7 @@
           "pointsPerBase": 11,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Bow", "Shield"],
           "specialRules": [
             "Open Order"
           ],
@@ -851,6 +860,7 @@
           "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Shield"],
           "specialRules": [
             "Open Order",
             "Warband"
@@ -950,6 +960,7 @@
           "pointsPerBase": 24,
           "minBases": 3,
           "maxBases": 8,
+			"baseEquipment": ["Cataphract Armour", "Spear", "Barding"],
           "specialRules": [
             "Close Order",
             "Massed Cavalry",
@@ -969,6 +980,7 @@
           "pointsPerBase": 17,
           "minBases": 3,
           "maxBases": 8,
+			"baseEquipment": ["Light Armour", "Spear"],
           "specialRules": [
             "Open Order"
           ],
@@ -986,6 +998,7 @@
           "pointsPerBase": 18,
           "minBases": 2,
           "maxBases": 6,
+			"baseEquipment": ["Bow"],
           "specialRules": [
             "Skirmishers",
             "Inferior Fighters",
@@ -1004,6 +1017,7 @@
           "pointsPerBase": 18,
           "minBases": 2,
           "maxBases": 6,
+			"baseEquipment": ["Bow"],
           "specialRules": [
             "Skirmishers",
             "Inferior Fighters",
@@ -1022,6 +1036,7 @@
           "pointsPerBase": 12,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Spear", "Shield"],
           "specialRules": [
             "Close Order",
             "Superior Fighters"
@@ -1075,6 +1090,7 @@
           "pointsPerBase": 14,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Spear", "Shield"],
           "specialRules": [
             "Close Order"
           ],
@@ -1109,6 +1125,7 @@
           "pointsPerBase": 8,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Spear", "Shield"],
           "specialRules": [
             "Close Order",
             "Levies"
@@ -1127,6 +1144,7 @@
           "pointsPerBase": 4,
           "minBases": 2,
           "maxBases": 6,
+			"baseEquipment": ["Bow"],
           "specialRules": [
             "Skirmishers",
             "Inferiror Fighters"
@@ -1234,6 +1252,7 @@
           "pointsPerBase": 27,
           "minBases": 3,
           "maxBases": 8,
+			"baseEquipment": ["Light Armour", "Bow"],
           "specialRules": [
             "Open Order",
             "Superior Shooters",
@@ -1280,26 +1299,7 @@
             }
           ]
             },
-            {
-              "id": "alternate_nobles",
-              "name": "Nobles (Alternate Deployment)",
-              "description": "Alternate Noble cavalry deployed with heavy armour, bow, shield and spear. Superior Fighters. Superior Shooters.",
-              "category": "Cavalry",
-              "type": "other",
-              "defence": 3,
-              "cohesion": 8,
-              "pointsPerBase": 26,
-              "minBases": 3,
-              "maxBases": 8,
-              "specialRules": [
-                "Open Order",
-                "Superior Shooters",
-                "Superior Fighters"
-              ],
-              "maxCountAllowed": 2,
-              "optionalEquipment": []
-            },
-            {
+                   {
               "id": "subject_nobles",
               "name": "Subject Nobles",
               "description": "Subject Nobles have light armour and spear. May have heavy armour (+1) and shield (+1).",
@@ -1307,6 +1307,7 @@
               "type": "other",
               "defence": 5,
               "cohesion": 7,
+					   "baseEquipment": ["Light Armour", "Speear"],
               "pointsPerBase": 17,
               "minBases": 3,
               "maxBases": 8,
@@ -1344,6 +1345,7 @@
               "pointsPerBase": 22,
               "minBases": 3,
               "maxBases": 8,
+				"baseEquipment": ["Bow"],
               "specialRules": [
                 "Open Order",
                 "Superior Shooters",
@@ -1399,6 +1401,7 @@
               "pointsPerBase": 20,
               "minBases": 3,
               "maxBases": 8,
+				"baseEquipment": ["Bow"],
               "specialRules": [
                 "Open Order",
                 "Nomad Cavalry"
@@ -1454,6 +1457,7 @@
               "pointsPerBase": 19,
               "minBases": 1,
               "maxBases": 6,
+				"baseEquipment": ["Bow"],
               "specialRules": [
                 "Skirmishers",
                 "Nomad Cavalry"
@@ -1481,6 +1485,7 @@
               "pointsPerBase": 28,
               "minBases": 0,
               "maxBases": 5,
+				"baseEquipment": ["Javelins", "Shield"],
               "specialRules": [
                 "Wagon Tabor",
                 "Inferior Fighters"
@@ -1563,6 +1568,7 @@
           "pointsPerBase": 19,
           "minBases": 3,
           "maxBases": 8,
+			"baseEquipment": ["Javelins", "Shield"],
           "specialRules": [
             "Open Order",
             "Evade"
@@ -1615,6 +1621,7 @@
               "pointsPerBase": 16,
               "minBases": 3,
               "maxBases": 8,
+			"baseEquipment": ["Javelins", "Shield"],
               "specialRules": [
                 "Skirmishers"
               ],
@@ -1653,6 +1660,7 @@
           "pointsPerBase": 11,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Throwing Spear", "Shield"],
           "specialRules": [
             "Open Order",
             "Warband"
@@ -1695,6 +1703,7 @@
           "pointsPerBase": 8,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Throwing Spear", "Shield"],
           "specialRules": [
             "Open Order",
             "Inferior Fighters",
@@ -1790,6 +1799,7 @@
           "cohesion": 7,
           "pointsPerBase": 19,
           "minBases": 3,
+			"baseEquipment": ["Javelins", "Shield"],
           "maxBases": 8,
           "specialRules": [
             "Open Order",
@@ -1842,6 +1852,7 @@
               "pointsPerBase": 16,
               "minBases": 3,
               "maxBases": 8,
+				"baseEquipment": ["Javelins", "Shield"],
               "specialRules": [
                 "Skirmishers"
               ],
@@ -1881,6 +1892,7 @@
           "pointsPerBase": 11,
           "minBases": 3,
           "maxBases": 12,
+			 "baseEquipment": ["Throwing Spear", "Shield"],
           "specialRules": [
             "Open Order",
             "Warband"
@@ -2017,6 +2029,7 @@
           "pointsPerBase": 26,
           "minBases": 3,
           "maxBases": 8,
+			"baseEquipment": ["Bow"],
           "specialRules": [
             "Open Order",
             "Superior Shooters",
@@ -2080,6 +2093,7 @@
               "pointsPerBase": 22,
               "minBases": 3,
               "maxBases": 8,
+				"baseEquipment": ["Bow"],
               "specialRules": [
                 "Open Order",
                 "Superior Shooters",
@@ -2151,6 +2165,7 @@
               "pointsPerBase": 20,
               "minBases": 3,
               "maxBases": 8,
+				"baseEquipment": ["Bow"],
               "specialRules": [
                 "Open Order",
                 "Nomad Cavalry"
@@ -2190,6 +2205,7 @@
               "pointsPerBase": 28,
               "minBases": 0,
               "maxBases": 5,
+			"baseEquipment": ["Javelins", "Shield"],
               "specialRules": [
                 "Wagon Tabor",
                 "Inferior Fighters"
@@ -2285,6 +2301,7 @@
           "pointsPerBase": 25,
           "minBases": 3,
           "maxBases": 8,
+	"baseEquipment": ["Heavy Armour", "Bow", "Spear"],
           "specialRules": ["Open Order", "Superior Shooters", "Superior Fighters"],
           "optionalEquipment": [
             {
@@ -2316,6 +2333,7 @@
           "pointsPerBase": 9,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Bow"],
           "specialRules": [
             "Open Order"
           ],
@@ -2332,6 +2350,7 @@
           "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 8,
+	"baseEquipment": ["Bow"],
           "specialRules": ["Open Order"],
            "optionalEquipment": [
             {
@@ -2363,6 +2382,7 @@
           "pointsPerBase": 9,
           "minBases": 3,
           "maxBases": 12,
+			  "baseEquipment": ["Spear", "Shield"],
           "specialRules": [
             "Open Order"
              ],
@@ -2371,7 +2391,7 @@
 {
           "id": "nepalese_archers",
           "name": "Nepalese Archers",
-          "description": "Nepalese Archrs have a bow. Open Order.",
+          "description": "Nepalese Archers have a bow. Open Order.",
           "category": "Allies",
           "type": "other",
           "defence": 7,
@@ -2379,6 +2399,7 @@
           "pointsPerBase": 9,
           "minBases": 3,
           "maxBases": 12,
+	"baseEquipment": ["Bow"],
           "specialRules": [
             "Open Order"
              ],
@@ -2426,6 +2447,7 @@
           "pointsPerBase": 9,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Spear", "Shield"],
           "specialRules": ["Open Order"], 
          "optionalEquipment": []
         }
@@ -2511,6 +2533,7 @@
               "pointsPerBase": 17,
               "minBases": 3,
               "maxBases": 8,
+				"baseEquipment": ["Spear", "Shield"],
               "specialRules": [
                 "Open Order"
               ]
@@ -2518,7 +2541,7 @@
             {
               "id": "thegns",
               "name": "Thegns",
-              "description": "Thegns have spar and shield. Superior Fighters. Shieldwall. Warband. May exchange spear for throwing Spear(+2). May have light armour (+2) and javelins (+2). May be Veteran (+2).  All spear armed Saxon troops in teh army should be armed with the same type of spear.",
+              "description": "Thegns have spear and shield. Superior Fighters. Shieldwall. Warband. May exchange spear for throwing Spear(+2). May have light armour (+2) and javelins (+2). May be Veteran (+2).  All spear armed Saxon troops in teh army should be armed with the same type of spear.",
               "category": "Infantry",
               "type": "other",
               "defence": 6,
@@ -2526,6 +2549,7 @@
               "pointsPerBase": 20,
               "minBases": 3,
               "maxBases": 12,
+				"baseEquipment": ["Spear", "Shield"],
               "specialRules": [
                 "Close Order",
                 "Superior Fighters",
@@ -2592,6 +2616,7 @@
               "pointsPerBase": 14,
               "minBases": 3,
               "maxBases": 12,
+				"baseEquipment": ["Spear", "Shield"],
               "specialRules": [
                 "Close Order",
                 "Shieldwall",
@@ -2619,6 +2644,7 @@
               "pointsPerBase": 20,
               "minBases": 3,
               "maxBases": 12,
+				"baseEquipment": ["Shield"],
               "specialRules": [
                 "Superior Fighters",
                 "Shieldwall",
@@ -2682,6 +2708,7 @@
               "pointsPerBase": 4,
               "minBases": 2,
               "maxBases": 6,
+				"baseEquipment": ["Javelins"],
               "specialRules": [
                 "Skirmishers",
                 "Inferior Fighters"
@@ -2800,6 +2827,7 @@
               "pointsPerBase": 22,
               "minBases": 3,
               "maxBases": 12,
+				"baseEquipment": ["Light Armour", "Spear", "Shield"],
               "specialRules": [
                 "Close Order",
                 "Superior Fighters",
@@ -2869,6 +2897,7 @@
               "pointsPerBase": 14,
               "minBases": 3,
               "maxBases": 12,
+				"baseEquipment": ["Spear", "Shield"],
               "specialRules": [
                 "Close Order",
                 "Shieldwall",
@@ -2906,6 +2935,7 @@
               "pointsPerBase": 20,
               "minBases": 3,
               "maxBases": 12,
+				"baseEquipment": ["Shield"],
               "specialRules": [
                 "Superior Fighters",
                 "Shieldwall",
@@ -2969,6 +2999,7 @@
               "pointsPerBase": 4,
               "minBases": 2,
               "maxBases": 6,
+				"baseEquipment": ["Javelins"],
               "specialRules": [
                 "Skirmishers",
                 "Inferior Fighters"
@@ -3079,6 +3110,7 @@
               "pointsPerBase": 16,
               "minBases": 3,
               "maxBases": 8,
+				"baseEquipment": ["Javelins", "Shield"],
               "specialRules": [
                 "Open Order"
               ],
@@ -3108,6 +3140,7 @@
               "pointsPerBase": 17,
               "minBases": 3,
               "maxBases": 12,
+				"baseEquipment": ["Light Armour", "Throwing Spear", "Shield"],
               "specialRules": [
                 "Superior Fighters",
                 "Open Order",
@@ -3143,6 +3176,7 @@
               "pointsPerBase": 11,
               "minBases": 3,
               "maxBases": 12,
+				"baseEquipment": ["Javelins", "Shield"],
               "specialRules": [
                 "Open Order",
                 "Warband"
@@ -3177,6 +3211,7 @@
               "pointsPerBase": 9,
               "minBases": 2,
               "maxBases": 6,
+				"baseEquipment": ["Shield"],
               "specialRules": [
                 "Skirmishers",
                 "Inferiror Fighters"
@@ -3211,6 +3246,7 @@
               "pointsPerBase": 2,
               "minBases": 3,
               "maxBases": 12,
+				"baseEquipment": ["Stones"],
               "specialRules": [
                 "Inferior Fighters",
                 "Inferior Shooters",
@@ -3222,7 +3258,7 @@
             {
               "id": "gallogIaich",
               "name": "GallogIaich",
-              "description": "GallogIaich have double handed weapons and light armour. Superior Fighters. Veteran. May exchange double handed weapon for spear and shield +2 in which case they may form Shieldwall.  In later armies (after 1200AD) may have heavy armour (+2). May be Stubborn (+2)..",
+              "description": "GallogIaich have double-handed weapons and light armour. Superior Fighters. Veteran. May exchange double handed weapon for spear and shield +2 in which case they may form Shieldwall.  In later armies (after 1200AD) may have heavy armour (+2). May be Stubborn (+2)..",
               "category": "Mercenaries",
               "type": "other",
               "defence": 6,
@@ -3230,6 +3266,7 @@
               "pointsPerBase": 22,
               "minBases": 3,
               "maxBases": 12,
+				"baseEquipment": ["Double-handed Weapon", "Light Armour"],
               "specialRules": [
                 "Superior Fighters",
                 "Veteran"
@@ -3333,6 +3370,7 @@
           "pointsPerBase": 22,
           "minBases": 3,
           "maxBases": 8,
+	"baseEquipment": ["Light Armour", "Spear", "Shield"],
           "specialRules": ["Open Order", "Superior Fighters"],
           "optionalEquipment": [
             {
@@ -3356,6 +3394,7 @@
           "pointsPerBase": 12,
           "minBases": 3,
           "maxBases": 12,
+			"baseEquipment": ["Spear", "Shield"],
           "specialRules": [
             "Close Order"
           ],
@@ -3381,7 +3420,7 @@
 		  {
           "id": "freemen_archers",
           "name": "Freemen Archers",
-          "description": "Freemen Archer shave a bow. Open Order. May be fielded as skirmishers at a cost of six points per base.",
+          "description": "Freemen Archers have a bow. Open Order. May be fielded as skirmishers at a cost of six points per base.",
           "category": "Infantry",
           "type": "other",
           "defence": 7,
@@ -3389,6 +3428,7 @@
           "pointsPerBase": 9,
           "minBases": 3,
           "maxBases": 12,
+			  "baseEquipment": ["Bow"],
           "specialRules": [
             "Open Order"
              ],
@@ -3414,6 +3454,7 @@
           "pointsPerBase": 2,
           "minBases": 3,
           "maxBases": 12,
+	"baseEquipment": ["Spear"],
           "specialRules": [
             "Close Order",
 			"Inferior Fighters",
@@ -3432,6 +3473,7 @@
           "pointsPerBase": 4,
           "minBases": 2,
           "maxBases": 6,
+			   "baseEquipment": [],
           "specialRules": ["Skirmishers", "Inferior Fighters"], 
          "optionalEquipment": []
         }
@@ -3545,6 +3587,7 @@
               "pointsPerBase": 22,
               "minBases": 3,
               "maxBases": 12,
+				"baseEquipment": ["Light Armour", "Spear", "Shield"],
               "specialRules": [
                 "Superior Fighters",
                 "Close Order",
@@ -3612,6 +3655,7 @@
               "pointsPerBase": 14,
               "minBases": 3,
               "maxBases": 12,
+				"baseEquipment": ["Hand Weapon", "Spear", "Shield"],
               "specialRules": [
                 "Close Order",
                 "Shieldwall"
@@ -3683,6 +3727,7 @@
               "pointsPerBase": 5,
               "minBases": 2,
               "maxBases": 6,
+				"baseEquipment": ["Javelins", "Shield"],
               "specialRules": [
                 "Skirmishers",
                 "Inferior Fighters"
