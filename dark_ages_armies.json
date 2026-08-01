@@ -1332,7 +1332,8 @@
             },
 			   {
               "name": "Noble Alternate Deployment",
-              "pointsModifier": -1,
+              "disables": ["Spear", "Skirmishers", "Javelins", "Heavy Armour"],
+				   "pointsModifier": -1,
 				"equipmentAdded": ["Heavy Armour", "Shield", "Spear"], 
 			  "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
