@@ -2305,7 +2305,7 @@
                 {
                   "name": "Shield",
                   "pointsModifier": 1,
-					"equipmentAdded": ["Bow"], 
+					"equipmentAdded": ["Shield"], 
 			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
