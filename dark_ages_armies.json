@@ -1770,6 +1770,7 @@
           "optionalEquipment": [
              {
               "name": "Bow",
+				 "enabledEvery": 2,
 				 "disables": ["Two-handed Axe"],
               "pointsModifier": 0,
 				 "equipmentAdded": ["Bow"], 
@@ -2022,6 +2023,7 @@
           "optionalEquipment": [
              {
               "name": "Bow",
+				 "enabledEvery": 2,
 				 "disables": ["Two-handed Axe"],
               "pointsModifier": 0,
 				 "equipmentAdded": ["Bow"], 
