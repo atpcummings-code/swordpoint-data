@@ -148,7 +148,7 @@
             {
               "name": "Throwing Spears",
               "pointsModifier": 2,
-				"equipmentAdded": ["throwing Spears"], 
+				"equipmentAdded": ["Throwing Spears"], 
 			  "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
