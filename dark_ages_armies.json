@@ -554,6 +554,7 @@
             },
             {
               "name": "Spear (mandatory Post 700AD)",
+				"disables": ["Heavy Throwing Spear"],
               "pointsModifier": -2,
 				"equipmentAdded": ["Spear"], 
 			  "equipmentRemoved": ["Throwing Spear"],
@@ -568,6 +569,7 @@
             },
             {
               "name": "Heavy Throwing Spear",
+				"disables": ["Spear (mandatory Post 700AD)"],
               "pointsModifier": 2,
 				"equipmentAdded": ["Heavy Throwing Spear"], 
 			  "equipmentRemoved": ["Throwing Spear"],
