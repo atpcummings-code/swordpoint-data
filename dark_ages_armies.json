@@ -1277,7 +1277,7 @@
                 "Stratagem"
               ],
               "rulesRemoved": [],
-              "defenceModifier": -1,
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
@@ -2137,7 +2137,7 @@
                 "Stratagem"
               ],
               "rulesRemoved": [],
-              "defenceModifier": -1,
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
