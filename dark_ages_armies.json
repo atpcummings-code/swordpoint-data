@@ -1693,6 +1693,7 @@
 ,
           {
               "name": "Cohesion Upgrade",
+			  "disables": ["Skirmishers"],
               "pointsModifier": 2,
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -1934,6 +1935,7 @@
             },
             {
               "name": "Skirmishers",
+				"disables": ["Cohesion Upgrade"],
               "pointsModifier": -2,
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order"],
@@ -1942,6 +1944,7 @@
             },
              {
               "name": "Cohesion Upgrade",
+				 "disables": ["Skirmishers"],
               "pointsModifier": 2,
               "rulesAdded": [],
               "rulesRemoved": [],
