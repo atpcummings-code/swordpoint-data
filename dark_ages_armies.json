@@ -110,7 +110,8 @@
               "pointsModifier": 1,
               "rulesAdded": [],
               "rulesRemoved": [],
-			  "equipmentAdded":["Javelins"],
+			  "equipmentAdded": ["Javelins"], 
+			  "equipmentRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
