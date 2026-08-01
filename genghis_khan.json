@@ -17,7 +17,7 @@
           "min": 0,
           "max": 50
  },
-       {
+        {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
@@ -30,7 +30,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 10
-        }, 
+        } 
       ],
       "units": [
         {
