@@ -1684,6 +1684,7 @@
             },
             {
               "name": "Skirmishers",
+				"disables": ["Cohesion Upgrade"],
               "pointsModifier": -2,
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order"],
@@ -1917,7 +1918,6 @@
               "pointsModifier": 1,
 				  "equipmentAdded": ["Light Armour"], 
 			      "equipmentRemoved": [],
-				  
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
