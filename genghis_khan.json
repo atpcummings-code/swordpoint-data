@@ -413,35 +413,8 @@
               "cohesionModifier": 0
             }
           ]
-        },
-        {
-          "id": "slav_brigands",
-          "name": "Slav Brigands",
-          "description": "Slav Brigands have throwing spear and shield. Open Order. Inferior Fighters. Warband. May be fielded as skirmishers (no longer Warband) at a cost of four points per base.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 4,
-          "pointsPerBase": 8,
-          "minBases": 3,
-          "maxBases": 12,
-          "specialRules": [
-            "Open Order",
-            "Inferior Fighters",
-            "Warband"
-          ],
-          "optionalEquipment": [
-          {
-              "name": "Skirmishers",
-              "pointsModifier": -4,
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order", "Warband"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-                  }
-              ]
+        }
+                      ]
             }
   
   }
