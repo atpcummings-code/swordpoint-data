@@ -181,7 +181,33 @@
                   "cohesionModifier": 0
                 }
               ]
+            },
+         {
+          "id": "warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Open Order. Warband. May be fielded as skirmishers (no longer Warband) at a cost of six points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": [
+            "Warband (not rule 3)",
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
             }
+          ]
+        },
                         
               ]
             },
