@@ -45,7 +45,18 @@
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-          "optionalEquipment": []
+           "optionalEquipment": [
+            {
+              "name": "Strategem",
+              "pointsModifier": 50,
+              "rulesAdded": [
+                "Stratagem"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
         },
         {
           "id": "chieftain",
