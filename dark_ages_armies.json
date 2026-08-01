@@ -1663,7 +1663,7 @@
             {
               "name": "Spear",
               "pointsModifier": 1,
-				"equipmentAdded": ["Shield"], 
+				"equipmentAdded": ["Spear"], 
 			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
