@@ -1,6 +1,7 @@
 {
   "armies": {
-     "dabai_irish_and_scots": {
+    "exclusiveGroups": [["noble_cavalry", "elite_warriors"]],
+    "dabai_irish_and_scots": {
       "armyName": "Dark Age Britain and Ireland (Irish and Scots) - (300 AD-800 AD)",
       "categories": [
         {
@@ -97,7 +98,6 @@
           "pointsPerBase": 20,
           "minBases": 3,
           "maxBases": 8,
-          "requires": { "unitId": "elite_warriors", "count": 0, "name": "Elite Warriors" },
           "maxCountAllowed": 1,
           "baseEquipment": ["Spear", "Shield", "Light Armour"],
           "specialRules": [
@@ -164,7 +164,6 @@
           "minBases": 3,
           "maxBases": 12,
           "maxCountAllowed": 1,
-          "requires": { "unitId": "noble_cavalry", "count": 0, "name": "Noble Cavalry" },
           "baseEquipment": ["Throwing Spear", "Shield"],
           "specialRules": [
             "Open Order",
