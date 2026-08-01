@@ -77,6 +77,7 @@
           "pointsPerBase": 25,
           "minBases": 3,
           "maxBases": 8,
+          "baseEquipment": ["Javelins", "Shield", "Light Armour"],
           "specialRules": [
             "Superior Fighters",
             "Open Order",
@@ -96,6 +97,7 @@
           "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 12,
+          "baseEquipment": ["Javelins", "Shield"],
           "specialRules": [
             "Superior Fighters",
             "Close Order",
@@ -131,6 +133,7 @@
           "pointsPerBase": 12,
           "minBases": 3,
           "maxBases": 12,
+          "baseEquipment": ["Javelins", "Shield"],
           "specialRules": [
             "Warband (not rule 3)",
             "Close Order"
@@ -139,6 +142,7 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"], 
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -158,6 +162,7 @@
           "pointsPerBase": 5,
           "minBases": 2,
           "maxBases": 6,
+          "baseEquipment": [],
           "specialRules": [
           "Skirmishers"
           ],
@@ -165,6 +170,7 @@
             {
               "name": "Bow",
               "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -173,6 +179,7 @@
                {
               "name": "Sling",
               "pointsModifier": 0,
+                 "equipmentAdded": ["Sling"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
