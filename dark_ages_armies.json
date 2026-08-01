@@ -138,6 +138,8 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -146,6 +148,8 @@
             {
               "name": "Throwing Spears",
               "pointsModifier": 2,
+				"equipmentAdded": ["throwing Spears"], 
+			  "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -180,6 +184,8 @@
             {
               "name": "Skirmishers",
               "pointsModifier": -2,
+				"equipmentAdded": ["Javelins"], 
+			  "equipmentRemoved": ["Spear"],
               "rulesAdded": [
                 "Skirmishers"
               ],
