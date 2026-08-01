@@ -78,7 +78,7 @@
         {
           "id": "noble_cavalry",
           "name": "Noble Cavalry",
-          "description": "Noble Cavalry have ligt armour, spear and shield. Superior Fighters..",
+          "description": "Noble Cavalry have ligt armour, spear and shield. Superior Fighters.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -86,89 +86,81 @@
           "pointsPerBase": 20,
           "minBases": 3,
           "maxBases": 8,
+          "baseEquipment": ["Spear", "Shield", "Light Armour"],
           "specialRules": [
             "Open Order",
             "Superior Fighters"
           ],
-          "maxCountAllowed": 1,
-          "optionalEquipment": [
-              {
-              "name": "Light Armour",
-              "pointsModifier": 1,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
+          "optionalEquipment": []
             },
-            {
-              "name": "Spear",
-              "pointsModifier": 1,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "pointsModifier": -2,
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-,
-          {
-              "name": "Cohesion Upgrade",
-              "pointsModifier": 2,
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 1
-            }
-          ]
+        {
+          "id": "noble_chariots",
+          "name": "Noble Chariots",
+          "description": "Chariots have a driver and one warrior crewman with javelins, light armour and shield. Light Chariots. Superior Fighters.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 27,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins", "Shield", "Light Armour"],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters", "Light Chariots"
+          ],
+          "optionalEquipment": []
             },
                         {
-              "id": "slav_cavalry",
-              "name": "Slav Cavalry",
-              "description": "Slav Cavalry have javelins and shield. Skirmishers. May have spear (+1). May be fielded as Formed cavalry with Spear and the Evade abilitty at a cost of 19 points per base. There must be at least one unit of Slav Cavalry if any Slav Noble Cavalry are taken.",
+              "id": "light_cavalry",
+              "name": "Light Cavalry",
+              "description": "Light Cavalry have spear and shield. Evade. May be fielded as skirmishers at 16 points per base, in which may repalce spears with javelins.",
               "category": "Cavalry",
               "type": "other",
               "defence": 5,
               "cohesion": 6,
-              "pointsPerBase": 16,
+              "pointsPerBase": 18,
               "minBases": 3,
               "maxBases": 8,
+              "baseEquipment": ["Spear", "Shield"],
               "specialRules": [
-                "Skirmishers"
+                "Open Order", "Evade"
               ],
               "optionalEquipment": [
                {
-                  "name": "Spear",
-                  "pointsModifier": 1,
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
+                  "name": "Skirimshers",
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": ["Spear"],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
-                },
-                {
-                  "name": "Formed Unit",
-                  "pointsModifier": 3,
-                  "rulesAdded": [
-                    "Open Order",
-                    "Evade"
-                  ],
-                  "rulesRemoved": [
-                    "Skirmishers"
-                  ],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
+                }
               ]
             },
         {
+          "id": "elite_warriors",
+          "name": "Elite Warriors",
+          "description": "Elite Warriors have throwing spear and shield. Open Order. Warband. Superior Fighters.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": [
+            "Open Order",
+            "Warband", "Superior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
           "id": "warriors",
           "name": "Warriors",
-          "description": "Warriors have throwing spear and shield. Open Order. Warband. May be fielded as skirmishers (no longer Warband) at a cost of six points per base.  Every second unit of warriors may replace throwing spear with bow (free0.  Two formed units of Slavs may replace throwing spear with two-handed axe (free).",
+          "description": " Warriors have throwing spear and shield. Open Order. Warband.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -176,36 +168,37 @@
           "pointsPerBase": 11,
           "minBases": 3,
           "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
           "specialRules": [
             "Open Order",
             "Warband"
           ],
-          "optionalEquipment": [
-             {
-              "name": "Bow",
-              "pointsModifier": 0,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Two-handed Axe",
-              "pointsModifier": 0,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
+          "optionalEquipment": [{
               "name": "Skirmishers",
               "pointsModifier": -5,
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order", "Warband"],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }
-          ]
+            }]
+        },
+         {
+          "id": "fanatics",
+          "name": "Fanatics",
+          "description": " Fanatics have throwing spear and shield. Open Order. Warband. Stubborn.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": [
+            "Open Order",
+            "Warband", "Stubborn"
+          ],
+          "optionalEquipment": []
         },
         {
           "id": "slav_brigands",
