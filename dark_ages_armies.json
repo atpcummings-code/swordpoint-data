@@ -1674,7 +1674,7 @@
             },
             {
               "name": "Spear",
-              "pointsModifier": 1,
+				"pointsModifier": 1,
 				"equipmentAdded": ["Spear"], 
 			      "equipmentRemoved": [],
               "rulesAdded": [],
@@ -1719,6 +1719,7 @@
               "optionalEquipment": [
                {
                   "name": "Spear",
+				   "disables": ["Formed Unit"],
                   "pointsModifier": 1,
 				   "equipmentAdded": ["Spear"], 
 			      "equipmentRemoved": [],
@@ -1964,6 +1965,7 @@
               "optionalEquipment": [
                {
                   "name": "Spear",
+				   "disables": ["Formed Unit"],
                   "pointsModifier": 1,
 				   "equipmentAdded": ["Spear"], 
 			      "equipmentRemoved": [],
@@ -1974,6 +1976,7 @@
                 },
                 {
                   "name": "Formed Unit",
+					"disables": ["Spear"],
                   "pointsModifier": 3,
                   "rulesAdded": [
                     "Open Order",
