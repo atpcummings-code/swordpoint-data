@@ -3679,7 +3679,7 @@
              "optionalEquipment": [
 				 {
               "name": "Skirmishers",
-              "pointsModifier": 0,
+              "pointsModifier": -3,
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Close Order", "Open Order"],
               "defenceModifier": 0,
