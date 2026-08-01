@@ -99,6 +99,7 @@
           "pointsPerBase": 20,
           "minBases": 3,
           "maxBases": 8,
+		  "baseEquipment": ["Spear", "Shield", "Light Armour"],
           "specialRules": [
             "Superior Fighters",
             "Open Order"
@@ -109,6 +110,7 @@
               "pointsModifier": 1,
               "rulesAdded": [],
               "rulesRemoved": [],
+			  "equipmentAdded":["Javelins"}'
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
