@@ -3873,8 +3873,8 @@
                   "cohesionModifier": 0
                 },
                 {
-                  "name": "Throwing Spear",
-					"disables": ["Two-handed Axe"],
+                  "name": "Two-handed Axe",
+					"disables": ["Throwing Spear"],
                   "pointsModifier": 2,
 					"equipmentAdded": ["Two-handed Axe"], 
 			      "equipmentRemoved": ["Spear"],
