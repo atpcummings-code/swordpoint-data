@@ -2498,7 +2498,7 @@
             {
               "name": "Light Armour",
               "pointsModifier": 1,
-				"equipmentAdded": ["light Armour"], 
+				"equipmentAdded": ["Light Armour"], 
 			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -2563,6 +2563,7 @@
           "minBases": 3,
           "maxBases": 8,
           "specialRules": ["Open Order", "Evade"],
+			  "baseEquipment": ["Bow"],
           "optionalEquipment": [
             {
               "name": "Spear",
