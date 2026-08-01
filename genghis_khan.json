@@ -210,7 +210,7 @@
          {
           "id": "skirmishers",
           "name": "Skirmishers",
-          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than teh smallllest javelin unit in the army..",
+          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army..",
           "category": "Skirmishers",
           "type": "other",
           "defence": 7,
@@ -399,7 +399,7 @@
         {
           "id": "skirmishers",
           "name": "Skirmishers",
-          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than teh smallllest javelin unit in the army..",
+          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army..",
           "category": "Skirmishers",
           "type": "other",
           "defence": 7,
@@ -627,7 +627,7 @@
          {
           "id": "skirmishers",
           "name": "Skirmishers",
-          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than teh smallllest javelin unit in the army..",
+          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army..",
           "category": "Skirmishers",
           "type": "other",
           "defence": 7,
