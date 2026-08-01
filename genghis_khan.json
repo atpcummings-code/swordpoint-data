@@ -86,6 +86,7 @@
           "pointsPerBase": 20,
           "minBases": 3,
           "maxBases": 8,
+          "maxCountAllowed": 1,
           "baseEquipment": ["Spear", "Shield", "Light Armour"],
           "specialRules": [
             "Open Order",
@@ -150,6 +151,7 @@
           "pointsPerBase": 15,
           "minBases": 3,
           "maxBases": 12,
+          "maxCountAllowed": 1,
           "baseEquipment": ["Throwing Spear", "Shield"],
           "specialRules": [
             "Open Order",
