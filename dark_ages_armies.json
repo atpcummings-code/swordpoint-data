@@ -2938,7 +2938,7 @@
                 {
                   "name": "Bow",
 					"disables":["Sling"],
-					"basesComparison": { "expression": lessThan, "compareWith": ["Slings"]},
+					
                   "pointsModifier": 0,
 					"equipmentAdded": ["Bow"], 
 			      "equipmentRemoved": ["Javelins"],
