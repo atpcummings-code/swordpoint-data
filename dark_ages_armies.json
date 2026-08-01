@@ -1650,7 +1650,7 @@
           "description": "Slav Noble Cavalry have javelins and shield. Evade. May have spear (+1) and light armour (+1). One formed unit may be upgraded to C8 (+2). May be fielded as skirmishers at a cost o 17 points per base.",
           "category": "Cavalry",
           "type": "other",
-			"requires": { unitId: "slav_cavalry", count: 1, name: "Slav Cavalry" },
+			"requires": [{ unitId: "slav_cavalry", count: 1, name: "Slav Cavalry" }],
           "defence": 5,
           "cohesion": 7,
           "pointsPerBase": 19,
