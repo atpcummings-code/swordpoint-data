@@ -1196,6 +1196,7 @@
           "optionalEquipment": [
             {
               "name": "Crossbow",
+				"enabledEvery": 2,
               "pointsModifier": 2,
 				"equipmentAdded": ["Crossbow"], 
 			  "equipmentRemoved": ["Bow"],
