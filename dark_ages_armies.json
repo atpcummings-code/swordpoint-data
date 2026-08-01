@@ -807,7 +807,7 @@
 			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
             {
@@ -922,7 +922,7 @@
       "categories": [
         {
           "id": "Commanders",
-          "name": "Commanders",
+          "name": "CommEanders",
           "constraintType": "count",
           "min": 0,
           "max": 6
@@ -1309,6 +1309,7 @@
           "optionalEquipment": [
             {
               "name": "Heavy Armour",
+					"disables": ["Noble Alternate Deployment"],
               "pointsModifier": 1,
 				"equipmentAdded": ["Heavy Armour"], 
 			  "equipmentRemoved": ["Light Armour"],
@@ -1319,6 +1320,7 @@
             },
             {
               "name": "Javelins",
+					"disables": ["Noble Alternate Deployment"],
               "pointsModifier": 1,
 				"equipmentAdded": ["Javelins"], 
 			  "equipmentRemoved": [],
@@ -1329,6 +1331,7 @@
             },
             {
               "name": "Spear",
+					"disables": ["Noble Alternate Deployment"],
               "pointsModifier": 1,
 				"equipmentAdded": ["Spear"], 
 			  "equipmentRemoved": [],
@@ -1350,6 +1353,7 @@
             },
             {
               "name": "Skirmishers",
+				"disables": ["Noble Alternate Deployment"],
               "pointsModifier": 0,
               "rulesAdded": [
                 "Skirmishers"
