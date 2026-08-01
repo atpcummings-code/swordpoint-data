@@ -144,46 +144,7 @@
                 },
               ]
             },
-            {
-              "id": "horse_archers",
-              "name": "Horse Archers",
-              "description": "Horse Arches have a bow. Nomad Cavalry. May have shield (+1). May be fielded as skirmishers.",
-              "category": "Cavalry",
-              "type": "other",
-              "defence": 6,
-              "cohesion": 7,
-              "pointsPerBase": 20,
-              "minBases": 3,
-              "maxBases": 8,
-              "specialRules": [
-                "Open Order",
-                "Nomad Cavalry"
-              ],
-              "minCountAllowed": 2,
-              "optionalEquipment": [
-                               {
-                  "name": "Skirmishers",
-                  "pointsModifier": 0,
-                  "rulesAdded": [
-                    "Skirmishers"
-                  ],
-                  "rulesRemoved": [
-                    "Open Order"
-                  ],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-                {
-                  "name": "Shield",
-                  "pointsModifier": 1,
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                }
-              ]
-            },
-         {
+        {
           "id": "warriors",
           "name": "Warriors",
           "description": "Warriors have throwing spear and shield. Open Order. Warband. May be fielded as skirmishers (no longer Warband) at a cost of six points per base.  Every second unit of warriors may replace throwing spear with bow (free0.  Two formed units of Slavs may replace throwing spear with two-handed axe (free).",
@@ -410,45 +371,7 @@
                 },
               ]
             },
-            {
-              "id": "horse_archers",
-              "name": "Horse Archers",
-              "description": "Horse Arches have a bow. Nomad Cavalry. May have shield (+1). May be fielded as skirmishers.",
-              "category": "Cavalry",
-              "type": "other",
-              "defence": 6,
-              "cohesion": 7,
-              "pointsPerBase": 20,
-              "minBases": 3,
-              "maxBases": 8,
-              "specialRules": [
-                "Open Order",
-                "Nomad Cavalry"
-              ],
-              "minCountAllowed": 2,
-              "optionalEquipment": [
-                               {
-                  "name": "Skirmishers",
-                  "pointsModifier": 0,
-                  "rulesAdded": [
-                    "Skirmishers"
-                  ],
-                  "rulesRemoved": [
-                    "Open Order"
-                  ],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-                {
-                  "name": "Shield",
-                  "pointsModifier": 1,
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                }
-              ]
-            },
+        
          {
           "id": "warriors",
           "name": "Warriors",
