@@ -2079,7 +2079,7 @@
       "units": [
         {
           "id": "high_chieftain",
-          "name": "High chieftain",
+          "name": "High Chieftain",
           "description": "Rides a horse. The High Chieftain may have Stratagem (+50)",
           "category": "Commanders",
           "type": "General",
