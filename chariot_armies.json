@@ -107,6 +107,7 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
