@@ -205,27 +205,38 @@
           "optionalEquipment": []
         },
         {
-          "id": "slav_brigands",
-          "name": "Slav Brigands",
-          "description": "Slav Brigands have throwing spear and shield. Open Order. Inferior Fighters. Warband. May be fielded as skirmishers (no longer Warband) at a cost of four points per base.",
-          "category": "Infantry",
+          "id": "skirmishers",
+          "name": "Skirmishers",
+          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than teh smallllest javelin unit in the army..",
+          "category": "Skirmishers",
           "type": "other",
-          "defence": 6,
-          "cohesion": 4,
-          "pointsPerBase": 8,
-          "minBases": 3,
-          "maxBases": 12,
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
           "specialRules": [
-            "Open Order",
-            "Inferior Fighters",
-            "Warband"
+            "Skirmishers",
+            "Inferior Fighters"
           ],
           "optionalEquipment": [
           {
-              "name": "Skirmishers",
-              "pointsModifier": -4,
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order", "Warband"],
+              "name": "Shield",
+              "pointsModifier": 1,
+            "equipmentAdded": ["Shield"], 
+"equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Sling",
+              "pointsModifier": 01,
+              "equipmentAdded": ["Sling"], 
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
