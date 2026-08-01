@@ -480,6 +480,8 @@
             {
               "name": "Javelins",
               "pointsModifier": 2,
+				"equipmentAdded": ["Javelins"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -488,6 +490,8 @@
             {
               "name": "Heavy Throwing Spear",
               "pointsModifier": 2,
+				"equipmentAdded": ["Heavy Throwing Spear"], 
+			  "equipmentRemoved": ["Throwing Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -496,6 +500,8 @@
             {
               "name": "Spear",
               "pointsModifier": -2,
+				"equipmentAdded": ["Throwing Spear"], 
+			  "equipmentRemoved": ["Spear"],
               "rulesAdded": [
                 "Shieldwall"
               ],
@@ -508,6 +514,8 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -535,6 +543,8 @@
             {
               "name": "Javelins",
               "pointsModifier": 2,
+				"equipmentAdded": ["Javelins"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -543,6 +553,8 @@
             {
               "name": "Spear",
               "pointsModifier": -2,
+				"equipmentAdded": ["Spear"], 
+			  "equipmentRemoved": ["Throwing Spear"],
               "rulesAdded": [
                 "Shieldwall"
               ],
@@ -555,6 +567,8 @@
             {
               "name": "Heavy Throwing Spear",
               "pointsModifier": 2,
+				"equipmentAdded": ["Heavy Throwing Spear"], 
+			  "equipmentRemoved": ["Throwing Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -599,6 +613,8 @@
             {
               "name": "Javelins",
               "pointsModifier": 0,
+				"equipmentAdded": ["Javelins"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -607,6 +623,8 @@
             {
               "name": "Bow",
               "pointsModifier": 0,
+				"equipmentAdded": ["Bow"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -615,6 +633,8 @@
             {
               "name": "Sling",
               "pointsModifier": 0,
+				"equipmentAdded": ["Sling"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -706,6 +726,8 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -726,6 +748,8 @@
             {
               "name": "Atlatl",
               "pointsModifier": 2,
+				"equipmentAdded": ["Atlatl"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -772,6 +796,8 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -792,6 +818,8 @@
             {
               "name": "Atlatl",
               "pointsModifier": 2,
+				"equipmentAdded": ["Atlatl"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -862,8 +890,7 @@
           "maxBases": 12,
 			"baseEquipment": ["Shield"],
           "specialRules": [
-            "Open Order",
-            "Warband"
+            "Open Order"
           ],
           "maxCountAllowed": 2,
           "optionalEquipment": [
@@ -1046,6 +1073,8 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -1054,6 +1083,8 @@
             {
               "name": "Halberd",
               "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"], 
+			  "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1072,6 +1103,8 @@
             {
               "name": "Large Shield",
               "pointsModifier": 2,
+				"equipmentAdded": ["Large Shield"], 
+			  "equipmentRemoved": ["Shield"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -1099,6 +1132,8 @@
             {
               "name": "Halberd",
               "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"], 
+			  "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1107,6 +1142,8 @@
             {
               "name": "Large Shield",
               "pointsModifier": 2,
+				"equipmentAdded": ["Large Shield"], 
+			  "equipmentRemoved": ["Shield"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -1153,6 +1190,8 @@
             {
               "name": "Crossbow",
               "pointsModifier": 2,
+				"equipmentAdded": ["Crossbow"], 
+			  "equipmentRemoved": ["Bow"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1264,6 +1303,8 @@
             {
               "name": "Heavy Armour",
               "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"], 
+			  "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -1272,6 +1313,8 @@
             {
               "name": "Javelins",
               "pointsModifier": 1,
+				"equipmentAdded": ["Javelins"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1280,9 +1323,21 @@
             {
               "name": "Spear",
               "pointsModifier": 1,
+				"equipmentAdded": ["Spear"], 
+			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Noble Alternate Deployment",
+              "pointsModifier": -1,
+				"equipmentAdded": ["Heavy Armour", "Shield", "Spear"], 
+			  "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": ["Nomad Cavalry"],
+              "defenceModifier": -2,
               "cohesionModifier": 0
             },
             {
@@ -1319,6 +1374,8 @@
                 {
                   "name": "Heavy Armour",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Heavy Armour"], 
+			  "equipmentRemoved": ["Light Armour"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -1327,6 +1384,8 @@
                 {
                   "name": "Shield",
                   "pointsModifier": 1,
+				  "equipmentAdded": ["Shield"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -1355,6 +1414,8 @@
                 {
                   "name": "Javelins",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Javelins"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -1363,6 +1424,8 @@
                 {
                   "name": "Spear",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Spear"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -1383,6 +1446,8 @@
                 {
                   "name": "Shield",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Shield"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -1411,6 +1476,8 @@
                 {
                   "name": "Javelins",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Javelins"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -1419,6 +1486,8 @@
                 {
                   "name": "Spear",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Spear"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -1439,6 +1508,8 @@
                 {
                   "name": "Shield",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Shield"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -1467,6 +1538,8 @@
                 {
                   "name": "Shield",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Shield"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -1494,6 +1567,8 @@
                 {
                   "name": "Bow",
                   "pointsModifier": 0,
+					"equipmentAdded": ["Bow"], 
+			      "equipmentRemoved": ["Javelins"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -1578,6 +1653,8 @@
               {
               "name": "Light Armour",
               "pointsModifier": 1,
+				  "equipmentAdded": ["Light Armour"], 
+			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -1586,6 +1663,8 @@
             {
               "name": "Spear",
               "pointsModifier": 1,
+				"equipmentAdded": ["Shield"], 
+			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1613,7 +1692,7 @@
                         {
               "id": "slav_cavalry",
               "name": "Slav Cavalry",
-              "description": "Slav Cavalry have javelins and shield. Skirmishers. May have spear (+1). May be fielded as Formed cavalry with Spear and the Evade abilitty at a cost of 19 points per base. There must be at least one unit of Slav Cavalry if any Slav Noble Cavalry are taken.",
+              "description": "Slav Cavalry have javelins and shield. Skirmishers. May have spear (+1). May be fielded as Formed cavalry with Spear and the Evade ability at a cost of 19 points per base. There must be at least one unit of Slav Cavalry if any Slav Noble Cavalry are taken.",
               "category": "Cavalry",
               "type": "other",
               "defence": 5,
@@ -1629,6 +1708,8 @@
                {
                   "name": "Spear",
                   "pointsModifier": 1,
+				   "equipmentAdded": ["Spear"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -1637,6 +1718,8 @@
                 {
                   "name": "Formed Unit",
                   "pointsModifier": 3,
+					"equipmentAdded": ["Spear"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [
                     "Open Order",
                     "Evade"
@@ -1669,6 +1752,8 @@
              {
               "name": "Bow",
               "pointsModifier": 0,
+				 "equipmentAdded": ["Bow"], 
+			      "equipmentRemoved": ["Throwing Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1677,6 +1762,8 @@
              {
               "name": "Two-handed Axe",
               "pointsModifier": 0,
+				 "equipmentAdded": ["Two-handed Axe"], 
+			      "equipmentRemoved": ["Throwing Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1810,6 +1897,9 @@
               {
               "name": "Light Armour",
               "pointsModifier": 1,
+				  "equipmentAdded": ["Light Armour"], 
+			      "equipmentRemoved": [],
+				  
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -1818,6 +1908,8 @@
             {
               "name": "Spear",
               "pointsModifier": 1,
+				"equipmentAdded": ["Spear"], 
+			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1860,6 +1952,8 @@
                {
                   "name": "Spear",
                   "pointsModifier": 1,
+				   "equipmentAdded": ["Spear"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -1901,6 +1995,8 @@
              {
               "name": "Bow",
               "pointsModifier": 0,
+				 "equipmentAdded": ["Bow"], 
+			      "equipmentRemoved": ["Throwing Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1909,6 +2005,8 @@
              {
               "name": "Two-handed Axe",
               "pointsModifier": 0,
+				 "equipmentAdded": ["two-handed Axe"], 
+			      "equipmentRemoved": ["Throwing Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -2041,6 +2139,8 @@
               {
               "name": "Light Armour",
               "pointsModifier": 1,
+				  "equipmentAdded": ["Light Armour"], 
+			      "equipmentRemoved": ["Heavy Armour"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -2049,6 +2149,8 @@
             {
               "name": "Heavy Armour",
               "pointsModifier": 2,
+				 "equipmentAdded": ["Heavy Armour"], 
+			      "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -2,
@@ -2057,6 +2159,8 @@
             {
               "name": "Shield",
               "pointsModifier": 1,
+				 "equipmentAdded": ["Shield"], 
+			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -2065,6 +2169,8 @@
             {
               "name": "Spear",
               "pointsModifier": 1,
+				 "equipmentAdded": ["Spear"], 
+			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -2073,6 +2179,8 @@
             {
               "name": "Half Barding",
               "pointsModifier": 0,
+				 "equipmentAdded": ["Half Barding"], 
+			      "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
               "rulesRemoved": [
                 "Open Order"
@@ -2103,6 +2211,8 @@
                  {
               "name": "Light Armour",
               "pointsModifier": 1,
+					  "equipmentAdded": ["Light Armour"], 
+			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -2111,6 +2221,8 @@
             {
               "name": "Shield",
               "pointsModifier": 1,
+				"equipmentAdded": ["Shield"], 
+			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -2119,6 +2231,8 @@
                 {
                   "name": "Javelins",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Javelins"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2127,6 +2241,8 @@
                 {
                   "name": "Spear",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Spear"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2147,6 +2263,8 @@
                 {
                   "name": "Shield",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Shield"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -2187,6 +2305,8 @@
                 {
                   "name": "Shield",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Bow"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -2214,6 +2334,8 @@
                 {
                   "name": "Bow",
                   "pointsModifier": 0,
+					"equipmentAdded": ["Bow"], 
+			      "equipmentRemoved": ["Javelins"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2307,6 +2429,8 @@
             {
               "name": "Cataphract Armour",
               "pointsModifier": 1,
+				"equipmentAdded": ["Cataphract Armour"], 
+			      "equipmentRemoved": ["Heavy Armour"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -2315,6 +2439,8 @@
             {
               "name": "Barding",
               "pointsModifier": 1,
+				"equipmentAdded": ["Barding"], 
+			      "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
               "rulesRemoved": ["Open Order"],
               "defenceModifier": -1,
@@ -2356,6 +2482,8 @@
             {
               "name": "Light Armour",
               "pointsModifier": 1,
+				"equipmentAdded": ["light Armour"], 
+			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -2364,6 +2492,8 @@
 {
               "name": "Shield",
               "pointsModifier": 1,
+	"equipmentAdded": ["Shield"], 
+			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -2416,14 +2546,26 @@
           "pointsPerBase": 17,
           "minBases": 3,
           "maxBases": 8,
-          "specialRules": ["Open Order"],
+          "specialRules": ["Open Order", "Evade"],
           "optionalEquipment": [
             {
               "name": "Spear",
               "pointsModifier": 1,
+				"equipmentAdded": ["Spear"], 
+			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Shield",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Shield"], 
+			      "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
             {
@@ -2536,12 +2678,24 @@
 				"baseEquipment": ["Spear", "Shield"],
               "specialRules": [
                 "Open Order"
-              ]
-            },
+              ],
+			"optionalEquipment": [
             {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["light Armour"], 
+			      "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+	]
+			},
+			  {
               "id": "thegns",
               "name": "Thegns",
-              "description": "Thegns have spear and shield. Superior Fighters. Shieldwall. Warband. May exchange spear for throwing Spear(+2). May have light armour (+2) and javelins (+2). May be Veteran (+2).  All spear armed Saxon troops in teh army should be armed with the same type of spear.",
+              "description": "Thegns have spear and shield. Superior Fighters. Shieldwall. Warband. May exchange spear for throwing Spear(+2). May have light armour (+2) and javelins (+2). May be Veteran (+2).  All spear armed Saxon troops in the army should be armed with the same type of spear.",
               "category": "Infantry",
               "type": "other",
               "defence": 6,
@@ -2582,6 +2736,8 @@
                 {
                   "name": "Javelins",
                   "pointsModifier": 2,
+					"equipmentAdded": ["Javelins"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2590,6 +2746,8 @@
                 {
                   "name": "Light Armour",
                   "pointsModifier": 2,
+					"equipmentAdded": ["Light Armour"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -2598,6 +2756,8 @@
                 {
                   "name": "Throwing Spear",
                   "pointsModifier": 2,
+					"equipmentAdded": ["Throwing Spear"], 
+			      "equipmentRemoved": ["Spear"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2624,8 +2784,20 @@
               ],
               "optionalEquipment": [
                 {
-                  "name": "Rocks or Javelins",
+                  "name": "Javelins",
                   "pointsModifier": 2,
+					"equipmentAdded": ["Javelins"], 
+			      "equipmentRemoved": ["Rocks"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+				  {
+                  "name": "Rocks",
+                  "pointsModifier": 2,
+					"equipmentAdded": ["Rocks"], 
+			      "equipmentRemoved": ["Javelins"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2652,8 +2824,10 @@
               ],
               "optionalEquipment": [
                 {
-                  "name": "Two Handed Axe",
+                  "name": "Two-handed Axe",
                   "pointsModifier": 2,
+					"equipmentAdded": ["Two-handed Axe"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2662,6 +2836,8 @@
                 {
                   "name": "Throwing Spear",
                   "pointsModifier": 2,
+					"equipmentAdded": ["Throwing Spear"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2670,6 +2846,8 @@
                 {
                   "name": "Javelins",
                   "pointsModifier": 2,
+					"equipmentAdded": ["Javelins"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2690,6 +2868,8 @@
                 {
                   "name": "Light Armour",
                   "pointsModifier": 2,
+					"equipmentAdded": ["Light Armour"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -2717,6 +2897,8 @@
                 {
                   "name": "Sling",
                   "pointsModifier": 0,
+					"equipmentAdded": ["Sling"], 
+			      "equipmentRemoved": ["Javelins"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2725,6 +2907,8 @@
                 {
                   "name": "Bow",
                   "pointsModifier": 0,
+					"equipmentAdded": ["Bow"], 
+			      "equipmentRemoved": ["Javelins"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2879,6 +3063,8 @@
                 {
                   "name": "Two-handed Axe",
                   "pointsModifier": 2,
+					"equipmentAdded": ["Two-handed Axe"], 
+			      "equipmentRemoved": ["Spear"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2907,6 +3093,8 @@
                 {
                   "name": "Rocks",
                   "pointsModifier": 2,
+						"equipmentAdded": ["Rocks"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2927,7 +3115,7 @@
             {
               "id": "vikings",
               "name": "Vikings",
-              "description": "Vikings have a shield. Close Order. Shieldwall. Superior Fighters. May be designated Open Order costing 15points per base. May have light armour (+2), javelins (+2), throwing spear (+2) or two-handed axe (+2).",
+              "description": "Vikings have a shield. Close Order. Shieldwall. Superior Fighters. May be designated Open Order costing 15 points per base. May have light armour (+2), javelins (+2), throwing spear (+2) or two-handed axe (+2).",
               "category": "Infantry",
               "type": "other",
               "defence": 6,
@@ -2945,6 +3133,8 @@
                 {
                   "name": "Two Handed Axe",
                   "pointsModifier": 2,
+						"equipmentAdded": ["Two-handed Axe"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2953,6 +3143,8 @@
                 {
                   "name": "Throwing Spear",
                   "pointsModifier": 2,
+						"equipmentAdded": ["Throwing Spear"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2961,6 +3153,8 @@
                 {
                   "name": "Javelins",
                   "pointsModifier": 2,
+						"equipmentAdded": ["Javelins"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -2981,6 +3175,8 @@
                 {
                   "name": "Light Armour",
                   "pointsModifier": 2,
+						"equipmentAdded": ["Light Armour"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -3008,6 +3204,8 @@
                 {
                   "name": "Sling",
                   "pointsModifier": 0,
+						"equipmentAdded": ["Sling"], 
+			      "equipmentRemoved": ["Javelins", "Bow"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -3016,6 +3214,8 @@
                 {
                   "name": "Bow",
                   "pointsModifier": 0,
+						"equipmentAdded": ["Bow"], 
+			      "equipmentRemoved": ["Javelins", "Sling"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -3148,19 +3348,13 @@
               ],
               "optionalEquipment": [
                 {
-                  "name": "Double Handed Weapon",
+                  "name": "Double-handed Weapon",
                   "pointsModifier": 0,
+						"equipmentAdded": ["Double-handed Weapon"], 
+			      "equipmentRemoved": ["Throwing Spears"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
-                  "cohesionModifier": 0
-                },
-                {
-                  "name": "Throwing Spears",
-                  "pointsModifier": 2,
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
                   "cohesionModifier": 0
                 }
               ]
@@ -3183,8 +3377,10 @@
               ],
               "optionalEquipment": [
                 {
-                  "name": "Double Handed Weapon",
+                  "name": "Double-handed Weapon",
                   "pointsModifier": 2,
+						"equipmentAdded": ["Double-handed Weapon"], 
+			      "equipmentRemoved": ["Javelins"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -3193,6 +3389,8 @@
                 {
                   "name": "Throwing Spears",
                   "pointsModifier": 0,
+					"equipmentAdded": ["Throwing Spears"], 
+			      "equipmentRemoved": ["Javelins"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -3220,6 +3418,8 @@
                 {
                   "name": "Shield",
                   "pointsModifier": 1,
+					"equipmentAdded": ["Shield"], 
+			      "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -3228,6 +3428,8 @@
                 {
                   "name": "Sling",
                   "pointsModifier": 0,
+					"equipmentAdded": ["Sling"], 
+			      "equipmentRemoved": ["Javelins"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -3275,6 +3477,8 @@
                 {
                   "name": "Spear and Shield",
                   "pointsModifier": 2,
+					"equipmentAdded": ["Spear", "Shield"], 
+			      "equipmentRemoved": ["Double-handed Weapon"],
                   "rulesAdded": [
                     "Shieldwall"
                   ],
@@ -3285,6 +3489,8 @@
                 {
                   "name": "Heavy Armour",
                   "pointsModifier": 2,
+						"equipmentAdded": ["Heavy Armour"], 
+			      "equipmentRemoved": ["Light Armour"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -3362,7 +3568,7 @@
 {
           "id": "druzhina",
           "name": "Druzhina",
-          "description": "Druzhina have spear, shield and light armour. Superior Fighters. They may have heavy armour.",
+          "description": "Druzhina have spear, shield and light armour. Superior Fighters. They may have heavy armour (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -3376,6 +3582,8 @@
             {
               "name": "Heavy Armour",
               "pointsModifier": 1,
+					"equipmentAdded": ["Heavy Armour"], 
+			      "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -3402,6 +3610,8 @@
 			 {
               "name": "Light Armour",
               "pointsModifier": 2,
+				 	"equipmentAdded": ["Light Armour"], 
+			      "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -3410,6 +3620,8 @@
 			  	 {
               "name": "Double-handed Weapon",
               "pointsModifier": -3,
+					 	"equipmentAdded": ["Double-handed Weapon"], 
+			      "equipmentRemoved": ["Spear", "Shield"],
               "rulesAdded": ["Open Order"],
               "rulesRemoved": ["Close Order"],
               "defenceModifier": 1,
@@ -3475,7 +3687,28 @@
           "maxBases": 6,
 			   "baseEquipment": [],
           "specialRules": ["Skirmishers", "Inferior Fighters"], 
-         "optionalEquipment": []
+         "optionalEquipment": [
+			  {
+                  "name": "Sling",
+                  "pointsModifier": 0,
+					"equipmentAdded": ["Sling"], 
+			      "equipmentRemoved": ["Bow"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+			  {
+                  "name": "Bow",
+                  "pointsModifier": 0,
+					"equipmentAdded": ["Bow"], 
+			      "equipmentRemoved": ["Sling"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+		 ]
         }
         
 ]
@@ -3597,6 +3830,8 @@
                 {
                   "name": "Throwing Spears",
                   "pointsModifier": 2,
+				  "equipmentAdded": ["Throwing Spears"], 
+			      "equipmentRemoved": ["Spear"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -3605,6 +3840,8 @@
                 {
                   "name": "Two-handed Axe",
                   "pointsModifier": 2,
+					"equipmentAdded": ["Two-handed Axe"], 
+			      "equipmentRemoved": ["Spear"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -3662,8 +3899,10 @@
               ],
               "optionalEquipment": [
                 {
-                  "name": "Throwing Spears",
+                 "name": "Throwing Spears",
                   "pointsModifier": 2,
+				  "equipmentAdded": ["Throwing Spears"], 
+			      "equipmentRemoved": ["Spear"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -3684,6 +3923,8 @@
                 {
                   "name": "Bow",
                   "pointsModifier": 0,
+					 "equipmentAdded": ["Bow"], 
+			      "equipmentRemoved": ["Spear", "Shield"],
                   "rulesAdded": [],
                   "rulesRemoved": [
                     "Shieldwall"
@@ -3692,8 +3933,10 @@
                   "cohesionModifier": 0
                 },
                 {
-                  "name": "Skirmishers (bow armed)",
+                  "name": "Skirmishers",
                   "pointsModifier": -8,
+					 "equipmentAdded": ["Bow"], 
+			      "equipmentRemoved": ["Spear", "Shield"],
                   "rulesAdded": [
                     "Skirmishers"
                   ],
@@ -3736,6 +3979,8 @@
                 {
                   "name": "Bow",
                   "pointsModifier": 0,
+					 "equipmentAdded": ["Bow"], 
+			      "equipmentRemoved": ["Javelins", "Sling"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -3744,6 +3989,8 @@
                 {
                   "name": "Sling",
                   "pointsModifier": 0,
+					 "equipmentAdded": ["Sling"], 
+			      "equipmentRemoved": ["Javelins", "Bow"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
