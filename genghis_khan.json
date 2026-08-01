@@ -1,8 +1,8 @@
 {
   "armies": {
      "dabai_irish_and_scots": {
-      "armyName": "Dark Age Britain & Ireland (Irish and Scots) - (300 AD-800 AD)",
-      "categories": [
+      "armyName": "Dark Age Britain & Ireland (Irish and Scots) - (300AD-800AD)",
+      "categories": 
         {
           "id": "Commanders",
           "name": "Commanders",
@@ -12,24 +12,31 @@
         },
         {
           "id": "Cavalry",
-          "name": "Cavalry",
+          "name": "Cavalry and Chariots",
           "constraintType": "percentage",
           "min": 0,
-          "max": 33
+          "max": 50
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 33,
+          "min": 50,
           "max": 100
         },  
+           {
+          "id": "Skirmishers",
+          "name": "Skirmishers",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        }, 
       ],
       "units": [
         {
-          "id": "khan",
-          "name": "Khan",
-          "description": "May ride a horse.",
+          "id": "high_cheiftain",
+          "name": "high Chieftain",
+          "description": "May ride a horse, or a chariot.",
           "category": "Commanders",
           "type": "General",
           "attacks": "+3",
@@ -41,9 +48,9 @@
           "optionalEquipment": []
         },
         {
-          "id": "voevodo",
-          "name": "Voevodo",
-          "description": "May ride a horse.",
+          "id": "chieftain",
+          "name": "Chieftain",
+          "description": "May ride a horse, or a chariot.",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
@@ -55,19 +62,33 @@
           "optionalEquipment": []
         },
         {
-          "id": "slav_noble_cavalry",
-          "name": "Slav Noble Cavalry",
-          "description": "Slav Noble Cavalry have javelins and shield. Evade. May have spear (+1) and light armour (+1). One formed unit may be upgraded to C8 (+2). May be fielded as skirmishers at a cost o 17 points per base.",
+          "id": "minor_chieftain",
+          "name": "Minor Chieftain",
+          "description": "May ride a horse, or a chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "noble_cavalry",
+          "name": "Noble Cavalry",
+          "description": "Noble Cavalry have ligt armour, spear and shield. Superior Fighters..",
           "category": "Cavalry",
           "type": "other",
-          "defence": 5,
+          "defence": 4,
           "cohesion": 7,
-          "pointsPerBase": 19,
+          "pointsPerBase": 20,
           "minBases": 3,
           "maxBases": 8,
           "specialRules": [
             "Open Order",
-            "Evade"
+            "Superior Fighters"
           ],
           "maxCountAllowed": 1,
           "optionalEquipment": [
