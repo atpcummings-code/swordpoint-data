@@ -1,8 +1,9 @@
 {
   "armies": {
-    "exclusiveGroups": [["noble_cavalry", "elite_warriors"]],
+    
     "dabai_irish_and_scots": {
       "armyName": "Dark Age Britain and Ireland (Irish and Scots) - (300 AD-800 AD)",
+      "exclusiveGroups": [["noble_cavalry", "elite_warriors"]],
       "categories": [
         {
           "id": "Commanders",
