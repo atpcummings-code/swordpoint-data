@@ -46,7 +46,7 @@
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-           "optionalEquipment": [
+        "optionalEquipment": [
             {
               "name": "Strategem",
               "pointsModifier": 50,
