@@ -1,20 +1,27 @@
 {
   "armies": {
-     "avars": {
-      "armyName": "Avars - (557 AD - 804 AD)",
+     "early_slav": {
+      "armyName": "Early Slav - (520 AD - 1000 AD)",
       "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 6
+          "max": 8
         },
         {
           "id": "Cavalry",
           "name": "Cavalry",
           "constraintType": "percentage",
           "min": 0,
+          "max": 33
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 33,
           "max": 100
         },
         {
@@ -23,38 +30,14 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 15
-        },
-        {
-          "id": "SubjectUnits",
-          "name": "Subject Units",
-          "description": "At least 25% taken from the Early Slav or Bulgar List.",
-          "constraintType": "percentage",
-          "min": 25,
-          "max": 100,
-          "alliedArmyKeys": [
-            "early_slav",
-            "bulgar"
-          ],
-          "maxAlliedArmiesAllowed": 2
-        },
-        {
-          "id": "Allies",
-          "name": "Allies",
-          "description": "The army may have allies from the Lombard (Gothic and Vandal Kingdoms) list.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25,
-          "alliedArmyKeys": [
-            "lombards"
-          ],
-          "maxAlliedArmiesAllowed": 1
         }
+    
       ],
       "units": [
         {
-          "id": "high_chieftain",
-          "name": "High chieftain",
-          "description": "Rides a horse. The High Chieftain may have Stratagem (+50)",
+          "id": "khan",
+          "name": "Khan",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
           "attacks": "+3",
@@ -63,22 +46,11 @@
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-          "optionalEquipment": [
-            {
-              "name": "Strategem",
-              "pointsModifier": 50,
-              "rulesAdded": [
-                "Stratagem"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
+          "optionalEquipment": []
         },
         {
-          "id": "chieftain",
-          "name": "Chieftain",
+          "id": "voevodo",
+          "name": "Voevodo",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "other",
@@ -91,42 +63,24 @@
           "optionalEquipment": []
         },
         {
-          "id": "nobles",
-          "name": "Nobles",
-          "description": "Noble Cavalry have a bow. Superior Fighters. Superior Shooters. Nomad Cavalry. May have light armour (+1), heavy armour (+2), shield (+1), spear (+1) and half barding (+1`).",
+          "id": "slav_noble_cavalry",
+          "name": "Slav Noble Cavalry",
+          "description": "Slav Noble Cavalry have javelins and shield. Evade. May have spear (+1) and light armour (+1). One formed unit may be upgraded to C8 (+2). May be fielded as skirmishers at a cost o 17 points per base.",
           "category": "Cavalry",
           "type": "other",
-          "defence": 6,
-          "cohesion": 8,
-          "pointsPerBase": 26,
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
           "minBases": 3,
           "maxBases": 8,
           "specialRules": [
             "Open Order",
-            "Superior Shooters",
-            "Superior Fighters",
-            "Nomad Cavalry"
+            "Evade"
           ],
-          "maxCountAllowed": 2,
+          "maxCountAllowed": 1,
           "optionalEquipment": [
               {
               "name": "Light Armour",
-              "pointsModifier": 1,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Heavy Armour",
-              "pointsModifier": 2,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -2,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Shield",
               "pointsModifier": 1,
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -142,59 +96,31 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Half Barding",
-              "pointsModifier": 0,
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": [
-                "Open Order"
-              ],
-              "defenceModifier": -1,
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
               "cohesionModifier": 0
-            }
+            },
           ]
             },
                         {
-              "id": "elite_horse_archers",
-              "name": "Elite Horse Archers",
-              "description": "Elite Horse Arches have a bow. Superior Shooters. Nomad Cavalry. May have light armour (+1) and shield (+1) and either javelins (+1) or spear (+1). May be fielded as skirmishers if unarmoured.",
+              "id": "slav_cavalry",
+              "name": "Slav Cavalry",
+              "description": "Slav Cavalry have javelins and shield. Skirmishers. May have spear (+1). May be fielded as Formed cavalry with Spear and the Evade abilitty at a cost of 19 points per base. There must be at least one unit of Slav Cavalry if any Slav Noble Cavalry are taken.",
               "category": "Cavalry",
               "type": "other",
-              "defence": 6,
-              "cohesion": 7,
-              "pointsPerBase": 22,
+              "defence": 5,
+              "cohesion": 6,
+              "pointsPerBase": 16,
               "minBases": 3,
               "maxBases": 8,
               "specialRules": [
-                "Open Order",
-                "Superior Shooters",
-                "Nomad Cavalry"
+                "Skirmishers"
               ],
               "optionalEquipment": [
-                 {
-              "name": "Light Armour",
-              "pointsModifier": 1,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Shield",
-              "pointsModifier": 1,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-                {
-                  "name": "Javelins",
-                  "pointsModifier": 1,
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-                {
+               {
                   "name": "Spear",
                   "pointsModifier": 1,
                   "rulesAdded": [],
@@ -203,25 +129,18 @@
                   "cohesionModifier": 0
                 },
                 {
-                  "name": "Skirmishers",
-                  "pointsModifier": 0,
+                  "name": "Formed Unit",
+                  "pointsModifier": 3,
                   "rulesAdded": [
-                    "Skirmishers"
+                    "Open Order",
+                    "Evade"
                   ],
                   "rulesRemoved": [
-                    "Open Order"
+                    "Skirmishers"
                   ],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
-                {
-                  "name": "Shield",
-                  "pointsModifier": 1,
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                }
               ]
             },
             {
@@ -262,33 +181,8 @@
                   "cohesionModifier": 0
                 }
               ]
-            },
-                        {
-              "id": "wagons",
-              "name": "Wagons",
-              "description": "Wagons form a Wagon Tabor. There is one base of defenders per wagon on the Tabor.  Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
-              "category": "SpecialUnits",
-              "type": "other",
-              "defence": 4,
-              "cohesion": 7,
-              "pointsPerBase": 28,
-              "minBases": 0,
-              "maxBases": 5,
-              "specialRules": [
-                "Wagon Tabor",
-                "Inferior Fighters"
-              ],
-              "optionalEquipment": [
-                {
-                  "name": "Bow",
-                  "pointsModifier": 0,
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                      }
-          ]
-                  }
+            }
+                        
               ]
             },
           }
