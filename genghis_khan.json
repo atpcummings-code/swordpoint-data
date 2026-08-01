@@ -232,7 +232,7 @@
             },
              {
               "name": "Sling",
-              "pointsModifier": 01,
+              "pointsModifier": 1,
               "equipmentAdded": ["Sling"], 
               "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
