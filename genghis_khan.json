@@ -208,24 +208,6 @@
             }]
         },
          {
-          "id": "fanatics",
-          "name": "Fanatics",
-          "description": " Fanatics have throwing spear and shield. Open Order. Warband. Stubborn.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 5,
-          "pointsPerBase": 12,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Throwing Spear", "Shield"],
-          "specialRules": [
-            "Open Order",
-            "Warband", "Stubborn"
-          ],
-          "optionalEquipment": []
-        },
-        {
           "id": "skirmishers",
           "name": "Skirmishers",
           "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than teh smallllest javelin unit in the army..",
@@ -267,7 +249,6 @@
             },
     "dabai_caledonians": {
       "armyName": "Dark Age Britain and Ireland (Caledonians) - (300 AD-800 AD)",
-      "exclusiveGroups": [["noble_cavalry", "elite_warriors"]],
       "categories": [
         {
           "id": "Commanders",
@@ -281,7 +262,7 @@
           "name": "Cavalry and Chariots",
           "constraintType": "percentage",
           "min": 0,
-          "max": 50
+          "max": 25
         },
         {
           "id": "Infantry",
@@ -353,25 +334,6 @@
           "optionalEquipment": []
         },
         {
-          "id": "noble_cavalry",
-          "name": "Noble Cavalry",
-          "description": "Noble Cavalry have ligt armour, spear and shield. Superior Fighters.",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 4,
-          "cohesion": 7,
-          "pointsPerBase": 20,
-          "minBases": 3,
-          "maxBases": 8,
-          "maxCountAllowed": 1,
-          "baseEquipment": ["Spear", "Shield", "Light Armour"],
-          "specialRules": [
-            "Open Order",
-            "Superior Fighters"
-          ],
-          "optionalEquipment": []
-            },
-        {
           "id": "noble_chariots",
           "name": "Noble Chariots",
           "description": "Chariots have a driver and one warrior crewman with javelins, light armour and shield. Light Chariots. Superior Fighters.",
@@ -389,53 +351,7 @@
           ],
           "optionalEquipment": []
             },
-                        {
-              "id": "light_cavalry",
-              "name": "Light Cavalry",
-              "description": "Light Cavalry have spear and shield. Evade. May be fielded as skirmishers at 16 points per base, in which may repalce spears with javelins.",
-              "category": "Cavalry",
-              "type": "other",
-              "defence": 5,
-              "cohesion": 6,
-              "pointsPerBase": 18,
-              "minBases": 3,
-              "maxBases": 8,
-              "baseEquipment": ["Spear", "Shield"],
-              "specialRules": [
-                "Open Order", "Evade"
-              ],
-              "optionalEquipment": [
-               {
-                  "name": "Skirimshers",
-                  "pointsModifier": 0,
-                 "equipmentAdded": ["Javelins"], 
-                 "equipmentRemoved": ["Spear"],
-                  "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order"],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }
-              ]
-            },
-        {
-          "id": "elite_warriors",
-          "name": "Elite Warriors",
-          "description": "Elite Warriors have throwing spear and shield. Open Order. Warband. Superior Fighters.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 15,
-          "minBases": 3,
-          "maxBases": 12,
-          "maxCountAllowed": 1,
-          "baseEquipment": ["Throwing Spear", "Shield"],
-          "specialRules": [
-            "Open Order",
-            "Warband", "Superior Fighters"
-          ],
-          "optionalEquipment": []
-        },
+               
         {
           "id": "warriors",
           "name": "Warriors",
