@@ -616,7 +616,7 @@
           "optionalEquipment": [
             {
               "name": "Javelins",
-				"disables!:["Sling", "Bow"],
+				"disables":["Sling", "Bow"],
               "pointsModifier": 0,
 				"equipmentAdded": ["Javelins"], 
 			  "equipmentRemoved": [],
@@ -627,7 +627,7 @@
             },
             {
               "name": "Bow",
-				"disables!:["Javelins", "Sling"],
+				"disables":["Javelins", "Sling"],
               "pointsModifier": 0,
 				"equipmentAdded": ["Bow"], 
 			  "equipmentRemoved": [],
@@ -638,7 +638,7 @@
             },
             {
               "name": "Sling",
-	  "disables!:["Javelins", "Bow"],
+	  "disables":["Javelins", "Bow"],
               "pointsModifier": 0,
 				"equipmentAdded": ["Sling"], 
 			  "equipmentRemoved": [],
