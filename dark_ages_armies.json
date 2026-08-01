@@ -3407,6 +3407,7 @@
               "optionalEquipment": [
                 {
                   "name": "Double-handed Weapon",
+					"disables": ["Throwing Spear"],
                   "pointsModifier": 2,
 						"equipmentAdded": ["Double-handed Weapon"], 
 			      "equipmentRemoved": ["Javelins"],
@@ -3417,6 +3418,7 @@
                 },
                 {
                   "name": "Throwing Spear",
+					"disables": ["Double-handed Weapon"],
                   "pointsModifier": 0,
 					"equipmentAdded": ["Throwing Spear"], 
 			      "equipmentRemoved": ["Javelins"],
@@ -3438,7 +3440,7 @@
               "pointsPerBase": 9,
               "minBases": 2,
               "maxBases": 6,
-				"baseEquipment": ["Shield"],
+				"baseEquipment": ["Javelins"],
               "specialRules": [
                 "Skirmishers",
                 "Inferiror Fighters"
@@ -3456,6 +3458,7 @@
                 },
                 {
                   "name": "Sling",
+					"disables": ["Javelins"],
                   "pointsModifier": 0,
 					"equipmentAdded": ["Sling"], 
 			      "equipmentRemoved": ["Javelins"],
