@@ -93,12 +93,12 @@
         {
           "id": "nobles",
           "name": "Nobles",
-          "description": "Noble Cavalry have light armour and bow. Superior Fighters. Superior Shooters. Nomad Cavalry. May have heavy armour (+1), javelins (+1), shield (+1) and spear (+1). Nobles without upgrades may be fielded as Skirmishers.",
+          "description": "Noble Cavalry have a bow. Superior Fighters. Superior Shooters. Nomad Cavalry. May have light armour (+1), heavy armour (+2), shield (+1), spear (+1) and half barding (+1`).",
           "category": "Cavalry",
           "type": "other",
-          "defence": 5,
+          "defence": 6,
           "cohesion": 8,
-          "pointsPerBase": 27,
+          "pointsPerBase": 26,
           "minBases": 3,
           "maxBases": 8,
           "specialRules": [
@@ -109,8 +109,8 @@
           ],
           "maxCountAllowed": 2,
           "optionalEquipment": [
-            {
-              "name": "Heavy Armour",
+              {
+              "name": "Light Armour",
               "pointsModifier": 1,
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -118,11 +118,19 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Javelins",
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
               "pointsModifier": 1,
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
             {
@@ -134,76 +142,21 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Skirmishers",
+              "name": "Half Barding",
               "pointsModifier": 0,
-              "rulesAdded": [
-                "Skirmishers"
-              ],
+              "rulesAdded": ["Close Order"],
               "rulesRemoved": [
                 "Open Order"
               ],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             }
           ]
             },
-            {
-              "id": "alternate_nobles",
-              "name": "Nobles (Alternate Deployment)",
-              "description": "Alternate Noble cavalry deployed with heavy armour, bow, shield and spear. Superior Fighters. Superior Shooters.",
-              "category": "Cavalry",
-              "type": "other",
-              "defence": 3,
-              "cohesion": 8,
-              "pointsPerBase": 26,
-              "minBases": 3,
-              "maxBases": 8,
-              "specialRules": [
-                "Open Order",
-                "Superior Shooters",
-                "Superior Fighters"
-              ],
-              "maxCountAllowed": 2,
-              "optionalEquipment": []
-            },
-            {
-              "id": "subject_nobles",
-              "name": "Subject Nobles",
-              "description": "Subject Nobles have light armour and spear. May have heavy armour (+1) and shield (+1).",
-              "category": "Cavalry",
-              "type": "other",
-              "defence": 5,
-              "cohesion": 7,
-              "pointsPerBase": 17,
-              "minBases": 3,
-              "maxBases": 8,
-              "specialRules": [
-                "Open Order"
-              ],
-              "maxCountAllowed": 2,
-              "optionalEquipment": [
-                {
-                  "name": "Heavy Armour",
-                  "pointsModifier": 1,
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                },
-                {
-                  "name": "Shield",
-                  "pointsModifier": 1,
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                }
-              ]
-            },
-            {
+                        {
               "id": "elite_horse_archers",
               "name": "Elite Horse Archers",
-              "description": "Elite Horse Arches have a bow. Superior Shooters. Nomad Cavalry. May have javelins (+1), shield (+1) and spear (+1). May be fielded as skirmishers.",
+              "description": "Elite Horse Arches have a bow. Superior Shooters. Nomad Cavalry. May have light armour (+1) and shield (+1) and either javelins (+1) or spear (+1). May be fielded as skirmishers if unarmoured.,
               "category": "Cavalry",
               "type": "other",
               "defence": 6,
@@ -217,6 +170,22 @@
                 "Nomad Cavalry"
               ],
               "optionalEquipment": [
+                 {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
                 {
                   "name": "Javelins",
                   "pointsModifier": 1,
@@ -258,7 +227,7 @@
             {
               "id": "horse_archers",
               "name": "Horse Archers",
-              "description": "Horse Arches have a bow. Nomad Cavalry. May have javelins (+1), shield (+1) and spear (+1). May be fielded as skirmishers.",
+              "description": "Horse Arches have a bow. Nomad Cavalry. May have shield (+1). May be fielded as skirmishers.",
               "category": "Cavalry",
               "type": "other",
               "defence": 6,
@@ -272,23 +241,7 @@
               ],
               "minCountAllowed": 2,
               "optionalEquipment": [
-                {
-                  "name": "Javelins",
-                  "pointsModifier": 1,
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-                {
-                  "name": "Spear",
-                  "pointsModifier": 1,
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-                {
+                               {
                   "name": "Skirmishers",
                   "pointsModifier": 0,
                   "rulesAdded": [
@@ -310,37 +263,10 @@
                 }
               ]
             },
-            {
-              "id": "subject_horse_archers",
-              "name": "Subject Horse Archers",
-              "description": "Subject Horse Arches have a bow. Skirmishers. Nomad Cavalry. May have shield (+1).",
-              "category": "Cavalry",
-              "type": "other",
-              "defence": 6,
-              "cohesion": 6,
-              "pointsPerBase": 19,
-              "minBases": 1,
-              "maxBases": 6,
-              "specialRules": [
-                "Skirmishers",
-                "Nomad Cavalry"
-              ],
-              "minCountAllowed": 2,
-              "optionalEquipment": [
-                {
-                  "name": "Shield",
-                  "pointsModifier": 1,
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                }
-              ]
-            },
-            {
+                        {
               "id": "wagons",
               "name": "Wagons",
-              "description": "Wagons form a Wagon Tabor. There is one base of defenders per wagon on teh table.  Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
+              "description": "Wagons form a Wagon Tabor. There is one base of defenders per wagon on the Tabor.  Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
               "category": "SpecialUnits",
               "type": "other",
               "defence": 4,
