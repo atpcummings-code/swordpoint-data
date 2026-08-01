@@ -2625,7 +2625,7 @@
             },
             {
               "id": "Cavalry",
-              "name": "Infantry",
+              "name": "Cavalry",
               "constraintType": "percentage",
               "min": 0,
               "max": 10
@@ -2802,6 +2802,7 @@
               "optionalEquipment": [
                 {
                   "name": "Javelins",
+					"disables": ["Rocks"],
                   "pointsModifier": 2,
 					"equipmentAdded": ["Javelins"], 
 			      "equipmentRemoved": ["Rocks"],
@@ -2812,6 +2813,7 @@
                 },
 				  {
                   "name": "Rocks",
+					  "disables": ["Javelins"],
                   "pointsModifier": 2,
 					"equipmentAdded": ["Rocks"], 
 			      "equipmentRemoved": ["Javelins"],
@@ -2842,6 +2844,7 @@
               "optionalEquipment": [
                 {
                   "name": "Two-handed Axe",
+					"disables": ["Throwing Spear", "Javelins"],
                   "pointsModifier": 2,
 					"equipmentAdded": ["Two-handed Axe"], 
 			      "equipmentRemoved": [],
@@ -2852,6 +2855,7 @@
                 },
                 {
                   "name": "Throwing Spear",
+					"disables": ["Two-handed Axe", "Javelins"],
                   "pointsModifier": 2,
 					"equipmentAdded": ["Throwing Spear"], 
 			      "equipmentRemoved": [],
@@ -2862,6 +2866,7 @@
                 },
                 {
                   "name": "Javelins",
+					"disables": ["Two-handed Axe", "Throwing Spear"],
                   "pointsModifier": 2,
 					"equipmentAdded": ["Javelins"], 
 			      "equipmentRemoved": [],
@@ -2913,6 +2918,7 @@
               "optionalEquipment": [
                 {
                   "name": "Sling",
+					"disables":["Bow"],
                   "pointsModifier": 0,
 					"equipmentAdded": ["Sling"], 
 			      "equipmentRemoved": ["Javelins"],
@@ -2923,6 +2929,7 @@
                 },
                 {
                   "name": "Bow",
+					"disables":["Sling"],
                   "pointsModifier": 0,
 					"equipmentAdded": ["Bow"], 
 			      "equipmentRemoved": ["Javelins"],
