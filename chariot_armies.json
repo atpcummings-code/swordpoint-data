@@ -107,6 +107,7 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
+              "maxUnits": 3, 
               "equipmentAdded": ["Light Armour"],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -143,6 +144,7 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
+              "maxUnits": 2, 
               "equipmentAdded": ["Light Armour"], 
               "rulesAdded": [],
               "rulesRemoved": [],
