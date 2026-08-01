@@ -737,7 +737,7 @@
 			  "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
             {
