@@ -1,7 +1,7 @@
 {
   "armies": {
-     "tibetan": {
-      "armyName": "Tibetan - (620 AD - 1000 AD)",
+     "early_polish": {
+      "armyName": "Early Polish - (966 AD - 1150 AD)",
       "categories": [
         {
           "id": "Commanders",
@@ -21,21 +21,10 @@
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 0,
-          "max": 25
+          "min": 25,
+          "max": 100
         },
-{
-  "id": "Allies",
-          "name": "Allies",
-          "description": "The army may take allies from the Cuman List.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 33,
-          "alliedArmyKeys": [
-            "cuman_or_kipchak"
-          ],
-          "maxAlliedArmiesAllowed": 1
-        }
+
       ],
       "units": [
         {
@@ -53,8 +42,8 @@
           "optionalEquipment": []
         },
         {
-          "id": "commander",
-          "name": "Commander",
+          "id": "captain",
+          "name": "Captainr",
           "description": "Rides a horse.",
           "category": "Commanders",
           "type": "other",
@@ -67,40 +56,65 @@
           "optionalEquipment": []
         }, 
 {
-          "id": "lancers",
-          "name": "Lancers",
-          "description": "Lancers have heavy armour, bow and spear. Superior Fighters, Superior Shooters. May have Cataphract armour (+1) and Barding(+1).",
+          "id": "druzhina",
+          "name": "Druzhina",
+          "description": "Druzhina have spear, shield and light armour. Superior Fighters. They may have heavy armour.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
           "cohesion": 8,
-          "pointsPerBase": 25,
+          "pointsPerBase": 22,
           "minBases": 3,
           "maxBases": 8,
-          "specialRules": ["Open Order", "Superior Shooters", "Superior Fighters"],
+          "specialRules": ["Open Order", "Superior Fighters"],
           "optionalEquipment": [
             {
-              "name": "Cataphract Armour",
+              "name": "Heavy Armour",
               "pointsModifier": 1,
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
-            {
-              "name": "Barding",
-              "pointsModifier": 1,
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-                 }
-		  ]
+            ]
 		},
         {
-          "id": "archers",
-          "name": "Archers",
-          "description": "Archers have a bow. Open order",
+          "id": "freemen",
+          "name": "Freemen",
+          "description": "Freemen have spear and shield. They may have light armour (+2). Spear and shield may be exchanged for double-handed weapon (-3) in which case they become Open Order.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+			 {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }, 
+			  	 {
+              "name": "Double-handed Weapon",
+              "pointsModifier": -3,
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+		  ]
+        }, 
+		  {
+          "id": "freemen_archers",
+          "name": "Freemen Archers",
+          "description": "Freemen Archer shave a bow. Open Order. May be fielded as skirmishers at a cost of six points per base.",
           "category": "Infantry",
           "type": "other",
           "defence": 7,
@@ -110,115 +124,48 @@
           "maxBases": 12,
           "specialRules": [
             "Open Order"
-          ],
-          "optionalEquipment": []
-        }, 
-{
-          "id": "nepalese_cavalry",
-          "name": "Nepalese Cavalry",
-          "description": "Nepalese Cavalry have a bow. Open Order. May have light armour (+1) and shield (+1).",
-          "category": "Allies",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 16,
-          "minBases": 3,
-          "maxBases": 8,
-          "specialRules": ["Open Order"],
-           "optionalEquipment": [
-            {
-              "name": "Light Armour",
-              "pointsModifier": 1,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-{
-              "name": "Shield",
-              "pointsModifier": 1,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-}
-	]
-},	
-		  {
-          "id": "nepalese_spearmen",
-          "name": "Nepalese Spearmen",
-          "description": "Nepalese Spearmen have a spear and shield. Open Order.",
-          "category": "Allies",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 9,
-          "minBases": 3,
-          "maxBases": 12,
-          "specialRules": [
-            "Open Order"
              ],
-             "optionalEquipment": []
+             "optionalEquipment": [
+				 {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Close Order", "Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+			 ]
    },
 {
-          "id": "nepalese_archers",
-          "name": "Nepalese Archers",
-          "description": "Nepalese Archrs have a bow. Open Order.",
-          "category": "Allies",
+          "id": "levies",
+          "name": "Levies",
+          "description": "Levies have spears. Inferior Fighters. Levies.",
+          "category": "Infantry",
           "type": "other",
           "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 9,
+          "cohesion": 4,
+          "pointsPerBase": 2,
           "minBases": 3,
           "maxBases": 12,
           "specialRules": [
-            "Open Order"
+            "Close Order",
+			"Inferior Fighters",
+			"Levies"
              ],
              "optionalEquipment": []
 },
-		  {
-          "id": "light_horse",
-          "name": "Light Horse",
-          "description": "Light Horse have a bow. Evade. May have spear (+1) and shield (+1). May be fielded as skirmishers at a cost of 15 points per base.",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 17,
-          "minBases": 3,
-          "maxBases": 8,
-          "specialRules": ["Open Order"],
-          "optionalEquipment": [
-            {
-              "name": "Spear",
-              "pointsModifier": 1,
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmisher",
-              "pointsModifier": -2,
-              "rulesAdded": ["Skirmisher"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-			}
-				]
-},
-        {
-          "id": "spearmen",
-          "name": "Spearmen",
-          "description": "Spearmen have a spear and shield. Open order",
+		   {
+          "id": "skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have either bow or sling. Inferior Fighters. Skirmishers.",
           "category": "Infantry",
           "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 9,
-          "minBases": 3,
-          "maxBases": 12,
-          "specialRules": ["Open Order"], 
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "specialRules": ["Skirmishers", "Inferior Fighters"], 
          "optionalEquipment": []
         }
         
