@@ -1729,6 +1729,7 @@
                 },
                 {
                   "name": "Formed Unit",
+					"disables": ["Spear"],
                   "pointsModifier": 3,
 					"equipmentAdded": ["Spear"], 
 			      "equipmentRemoved": [],
