@@ -1765,6 +1765,7 @@
           "optionalEquipment": [
              {
               "name": "Bow",
+				 "disables": ["Two-handed Axe"],
               "pointsModifier": 0,
 				 "equipmentAdded": ["Bow"], 
 			      "equipmentRemoved": ["Throwing Spear"],
@@ -1775,6 +1776,7 @@
             },
              {
               "name": "Two-handed Axe",
+				 "disables": ["Bow", "Skirmishers"],
               "pointsModifier": 0,
 				 "equipmentAdded": ["Two-handed Axe"], 
 			      "equipmentRemoved": ["Throwing Spear"],
@@ -1785,6 +1787,7 @@
             },
             {
               "name": "Skirmishers",
+				"disables": ["Two-handed Axe"],
               "pointsModifier": -5,
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order", "Warband"],
