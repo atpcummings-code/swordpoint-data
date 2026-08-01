@@ -653,6 +653,14 @@
     },
     "mayan": {
       "armyName": "Mayan - (300 AD - 1530 AD)",
+		"armyValidation": [
+  {
+    "unitId": "archers",                       
+    "compareWith": ["professional_warriors", "warriors"], 
+    "expression": "lessThanOrEqual",                     
+    "ratio": 2
+  }
+],
       "categories": [
         {
           "id": "Commanders",
