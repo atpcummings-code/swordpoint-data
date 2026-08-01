@@ -1779,6 +1779,7 @@
             },
              {
               "name": "Two-handed Axe",
+				 "maxUnits": 2, 
 				 "disables": ["Bow", "Skirmishers"],
               "pointsModifier": 0,
 				 "equipmentAdded": ["Two-handed Axe"], 
@@ -3521,7 +3522,7 @@
                   "cohesionModifier": 0
                 },
                 {
-                  "name": "Heavy Armour",
+                  "name": "Heavy Armour (Post 1200 AD)",
                   "pointsModifier": 2,
 						"equipmentAdded": ["Heavy Armour"], 
 			      "equipmentRemoved": ["Light Armour"],
@@ -3531,7 +3532,7 @@
                   "cohesionModifier": 0
                 },
                 {
-                  "name": "Stubborn",
+                  "name": "Stubborn (Post 1200 AD)",
                   "pointsModifier": 2,
                   "rulesAdded": [
                     "Stubborn"
