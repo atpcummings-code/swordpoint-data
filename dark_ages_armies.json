@@ -1484,7 +1484,299 @@
             }
           ]
         },
-"tibetan": {
+"avars": {
+      "armyName": "Avars - (557 AD - 804 AD)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "SpecialUnits",
+          "name": "Special Units",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 15
+        },
+        {
+          "id": "SubjectUnits",
+          "name": "Subject Units",
+          "description": "At least 25% taken from the Early Slav or Bulgar List.",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100,
+          "alliedArmyKeys": [
+            "early_slav",
+            "bulgar"
+          ],
+          "maxAlliedArmiesAllowed": 2
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "The army may have allies from the Lombard (Gothic and Vandal Kingdoms) list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+            "lombards"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
+      ],
+      "units": [
+        {
+          "id": "high_chieftain",
+          "name": "High chieftain",
+          "description": "Rides a horse. The High Chieftain may have Stratagem (+50)",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Strategem",
+              "pointsModifier": 50,
+              "rulesAdded": [
+                "Stratagem"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "chieftain",
+          "name": "Chieftain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nobles",
+          "name": "Nobles",
+          "description": "Noble Cavalry have a bow. Superior Fighters. Superior Shooters. Nomad Cavalry. May have light armour (+1), heavy armour (+2), shield (+1), spear (+1) and half barding (+1`).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "specialRules": [
+            "Open Order",
+            "Superior Shooters",
+            "Superior Fighters",
+            "Nomad Cavalry"
+          ],
+          "maxCountAllowed": 2,
+          "optionalEquipment": [
+              {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half Barding",
+              "pointsModifier": 0,
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": [
+                "Open Order"
+              ],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+            },
+                        {
+              "id": "elite_horse_archers",
+              "name": "Elite Horse Archers",
+              "description": "Elite Horse Arches have a bow. Superior Shooters. Nomad Cavalry. May have light armour (+1) and shield (+1) and either javelins (+1) or spear (+1). May be fielded as skirmishers if unarmoured.",
+              "category": "Cavalry",
+              "type": "other",
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 22,
+              "minBases": 3,
+              "maxBases": 8,
+              "specialRules": [
+                "Open Order",
+                "Superior Shooters",
+                "Nomad Cavalry"
+              ],
+              "optionalEquipment": [
+                 {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+                {
+                  "name": "Javelins",
+                  "pointsModifier": 1,
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+                {
+                  "name": "Spear",
+                  "pointsModifier": 1,
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+                {
+                  "name": "Skirmishers",
+                  "pointsModifier": 0,
+                  "rulesAdded": [
+                    "Skirmishers"
+                  ],
+                  "rulesRemoved": [
+                    "Open Order"
+                  ],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+                {
+                  "name": "Shield",
+                  "pointsModifier": 1,
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+              ]
+            },
+            {
+              "id": "horse_archers",
+              "name": "Horse Archers",
+              "description": "Horse Arches have a bow. Nomad Cavalry. May have shield (+1). May be fielded as skirmishers.",
+              "category": "Cavalry",
+              "type": "other",
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 20,
+              "minBases": 3,
+              "maxBases": 8,
+              "specialRules": [
+                "Open Order",
+                "Nomad Cavalry"
+              ],
+              "minCountAllowed": 2,
+              "optionalEquipment": [
+                               {
+                  "name": "Skirmishers",
+                  "pointsModifier": 0,
+                  "rulesAdded": [
+                    "Skirmishers"
+                  ],
+                  "rulesRemoved": [
+                    "Open Order"
+                  ],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+                {
+                  "name": "Shield",
+                  "pointsModifier": 1,
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+              ]
+            },
+                        {
+              "id": "wagons",
+              "name": "Wagons",
+              "description": "Wagons form a Wagon Tabor. There is one base of defenders per wagon on the Tabor.  Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
+              "category": "SpecialUnits",
+              "type": "other",
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 28,
+              "minBases": 0,
+              "maxBases": 5,
+              "specialRules": [
+                "Wagon Tabor",
+                "Inferior Fighters"
+              ],
+              "optionalEquipment": [
+                {
+                  "name": "Bow",
+                  "pointsModifier": 0,
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                      }
+          ]
+                  }
+              ]
+            },
+	  
+	  "tibetan": {
       "armyName": "Tibetan - (620 AD - 1000 AD)",
       "categories": [
         {
