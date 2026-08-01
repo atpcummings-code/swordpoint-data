@@ -1,7 +1,7 @@
 {
   "armies": {
-     "huns": {
-      "armyName": "Huns - (350 AD - 475 AD)",
+     "avars": {
+      "armyName": "Avars - (557 AD - 804 AD)",
       "categories": [
         {
           "id": "Commanders",
@@ -25,18 +25,29 @@
           "max": 15
         },
         {
+          "id": "SubjectUnits",
+          "name": "Subject Units",
+          "description": "At least 25% taken from the Early Slav or Bulgar List.",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100,
+          "alliedArmyKeys": [
+            "early_slav",
+            "bulgar"
+          ],
+          "maxAlliedArmiesAllowed": 2
+        },
+        {
           "id": "Allies",
-          "name": "Allies & Mercenaries",
-          "description": "The army may take allies from the Tang Chinese list.  It may also employ Manchurian mercenaries by fielding additional Horse Archers from the Cavalry section and paying for them out of the allies & mercenaries allocation",
+          "name": "Allies",
+          "description": "The army may have allies from the Lombard (Gothic and Vandal Kingdoms) list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 66,
+          "max": 25,
           "alliedArmyKeys": [
-            "alans",
-            "franks",
-            "goths"
+            "lombards"
           ],
-          "maxAlliedArmiesAllowed": 3
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
