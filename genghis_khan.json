@@ -665,7 +665,7 @@
             {
               "name": "Light Crossbow",
               "pointsModifier": 0,
-              "disables": ["Light Crossbow", "Sling"],
+              "disables": ["Bow", "Sling"],
                "enabledEvery": 2,
               "equipmentAdded": ["Light Crossbow"], 
               "equipmentRemoved": ["Javelins", "Sling"],
