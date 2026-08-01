@@ -2162,6 +2162,7 @@
           "optionalEquipment": [
               {
               "name": "Light Armour",
+				  "disables": ["Heavy Armour"],
               "pointsModifier": 1,
 				  "equipmentAdded": ["Light Armour"], 
 			      "equipmentRemoved": ["Heavy Armour"],
@@ -2172,6 +2173,7 @@
             },
             {
               "name": "Heavy Armour",
+					  "disables": ["Light Armour"],
               "pointsModifier": 2,
 				 "equipmentAdded": ["Heavy Armour"], 
 			      "equipmentRemoved": ["Light Armour"],
@@ -2282,16 +2284,6 @@
                     "Open Order"
                   ],
                   "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-                {
-                  "name": "Shield",
-                  "pointsModifier": 1,
-					"equipmentAdded": ["Shield"], 
-			      "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": -1,
                   "cohesionModifier": 0
                 }
               ]
