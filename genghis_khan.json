@@ -1026,8 +1026,11 @@
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 }
-              ]
-            },
+
+          ]
+            }
+           ]
+        },
 
         "gavk_ostrogoth": {
       "armyName": "Gothic and Vandal Kingdoms (Ostrogoth Armies) 380 AD - 550 AD)",
