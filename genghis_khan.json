@@ -1016,17 +1016,7 @@
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": ["Wagon Tabor", "Inferior Fighters"],
           "optionalEquipment": [
-            {
-                  "name": "Riding Horses",
-                  "pointsModifier": 1,
-                 "equipmentAdded": [], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Riding Horses"],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-                       {
+                 {
                   "name": "Bow",
                   "pointsModifier": 0,
                  "equipmentAdded": ["Bow"], 
