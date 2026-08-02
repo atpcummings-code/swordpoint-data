@@ -1,43 +1,47 @@
 {
   "armies": {
-    "dabai_irish_and_scots": {
-      "armyName": "Dark Age Britain and Ireland (Irish and Scots) - (300 AD-800 AD)",
-      "exclusiveGroups": [["noble_cavalry", "elite_warriors"]],
+    "gavk_vandal_armies": {
+      "armyName": "Gothic and Vandal Kingdoms (Vandal Armies) 439 AD - 534 AD)",
       "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 8
+          "max": 6
         },
        {       
           "id": "Cavalry",
           "name": "Cavalry and Chariots",
           "constraintType": "percentage",
-          "min": 0,
-          "max": 50
+          "min": 50,
+          "max": 100
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 50,
-          "max": 100
+          "min": 0,
+          "max": 20
         },  
-           {
-          "id": "Skirmishers",
-          "name": "Skirmishers",
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "Alans (use Hun list) and/or up to two units of Berber Cavalry from the Early Byzantine list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 10
-        } 
-      ],
+          "max": 25,
+          "alliedArmyKeys": [
+            "huns"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
+           ],
       "units": [
         {
-          "id": "high_cheiftain",
-          "name": "high Chieftain",
-          "description": "May ride a horse, or a chariot.",
+          "id": "king",
+          "name": "King",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
           "attacks": "+3",
@@ -46,41 +50,16 @@
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-        "optionalEquipment": [
-            {
-              "name": "Strategem",
-              "pointsModifier": 50,
-              "rulesAdded": [
-                "Stratagem"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
+        "optionalEquipment": []
         },
         {
-          "id": "chieftain",
-          "name": "Chieftain",
-          "description": "May ride a horse, or a chariot.",
+          "id": "noble",
+          "name": "Noble",
+          "description": "May ride a horse,",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
           "cohesion": "+2",
-          "pointsPerBase": 20,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
-          "id": "minor_chieftain",
-          "name": "Minor Chieftain",
-          "description": "May ride a horse, or a chariot.",
-          "category": "Commanders",
-          "type": "other",
-          "attacks": "+2",
-          "cohesion": "+1",
           "pointsPerBase": 20,
           "minBases": 0,
           "maxBases": 1,
