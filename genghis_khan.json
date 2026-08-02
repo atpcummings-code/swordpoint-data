@@ -368,10 +368,8 @@
 
           ]
             }
-        
-          ]
-        }
- "gavk_vandal_armies": {
+,        
+"gavk_vandal_armies": {
       "armyName": "Gothic and Vandal Kingdoms (Vandal Armie - No Allies) 439 AD - 534 AD)",
       "exclusiveGroups": [["comitatus_foot", "comitatus_mounted"]],
       "categories": [
