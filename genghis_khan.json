@@ -299,23 +299,7 @@
                 } 
           ]
         },
-        {
-          "id": "berber_cavalry",
-          "name": "Berber Cavalry",
-          "description": "Berbers have javelins and shield. Skirmishers.",
-          "category": "Allies",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 17,
-          "minBases": 2,
-          "maxBases": 6,
-           "baseEquipment": ["Javelins", "Shield"],
-          "specialRules": [
-            "Skirmishers",
-                   ],
-          "optionalEquipment": []
-        },
+        
         {
           "id": "warriors",
           "name": "Warriors",
