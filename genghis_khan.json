@@ -327,7 +327,7 @@
                 },
              {
                   "name": "Open Order",
-               "enableHidden": ["Warhorse Barding"],
+               "enableHidden": ["Bow"],
                   "enabledEvery": 2,
                   "pointsModifier": -3,
                  "equipmentAdded": [], 
