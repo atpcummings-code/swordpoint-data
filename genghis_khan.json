@@ -305,33 +305,14 @@
           "min": 0,
           "max": 6
         },
-       {       
-          "id": "Cavalry",
-          "name": "Cavalry",
-          "constraintType": "percentage",
-          "min": 50,
-          "max": 100
-        },
-        {
+          {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 20
+          "max": 100
         },  
-        {
-          "id": "Allies",
-          "name": "Allies",
-          "description": "Alans (use Hun list) and/or up to two units of Berber Cavalry from the Early Byzantine list.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25,
-          "alliedArmyKeys": [
-            "alans"
-          ],
-          "maxAlliedArmiesAllowed": 1
-        }
-           ],
+        
       "units": [
         {
           "id": "king",
