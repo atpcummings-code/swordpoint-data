@@ -108,7 +108,7 @@
                 },
             {
                   "name": "Kontos",
-                "disables": "Javelins"
+                "disables": "Javelins",
                   "pointsModifier": 1,
                  "equipmentAdded": ["Kontos"], 
                  "equipmentRemoved": ["Spear"],
