@@ -63,8 +63,8 @@
           "cohesion": "+2",
           "pointsPerBase": 20,
           "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
+          "maxBases": 1,E
+          "specialRules": [],E
           "optionalEquipment": []
         },
         {
@@ -83,7 +83,7 @@
           "specialRules": [
             "Open Order",
             "Superior Fighters"
-          ],
+          ], 
           "optionalEquipment": [
             {
                   "name": "Heavy Armour",
@@ -311,7 +311,8 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 100
-        },  
+        }
+      ],
         
       "units": [
         {
