@@ -272,6 +272,7 @@
           "pointsPerBase": 17,
           "minBases": 2,
           "maxBases": 6,
+          "maxCountAllowed": 2,
            "baseEquipment": ["Javelins", "Shield"],
           "specialRules": [
             "Skirmishers"
