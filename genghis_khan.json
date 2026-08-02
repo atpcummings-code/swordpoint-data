@@ -1428,7 +1428,7 @@
            "baseEquipment": ["Light Amrour", "Spear", "Bow", "Shield"],
           "specialRules": ["Open Order, "Superior Fighters"],
           "optionalEquipment": [
-{
+              {
                   "name": "Heavy Armour",
                   "pointsModifier": 1,
                  "equipmentAdded": ["Heavy Armour"], 
