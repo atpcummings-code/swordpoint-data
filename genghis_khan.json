@@ -252,7 +252,7 @@
                 },
             {
               "name": "Skirmishers",
-              "disables": "Light Armour",
+              "disables": ["Light Armour", "Evade"],
               "pointsModifier": 0,
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order"],
