@@ -330,7 +330,18 @@
           "maxBases": 12,
           "baseEquipment": ["Throwing Spear", "Shield"],
           "specialRules": ["Close Order", "Warband Rule 1"],
-          "optionalEquipment": []
+          "optionalEquipment": [
+            {
+                  "name": "Riding Horses",
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Riding Horses"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+          ]
             }
         
         
