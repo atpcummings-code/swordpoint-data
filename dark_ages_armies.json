@@ -2462,7 +2462,7 @@
         {
           "id": "Allies",
           "name": "Allies & Mercenaries",
-          "description": "The army may take allies from the Tang Chinese list.  It may also employ Manchurian mercenaries by fielding additional Horse Archers from the Cavalry section and paying for them out of the allies & mercenaries allocation",
+          "description": "As Allies the army may have up to 66% of its points total, comprising Alans and/or Frank or Goth infantry,",
           "constraintType": "percentage",
           "min": 0,
           "max": 66,
@@ -3438,12 +3438,12 @@
             },
             {
               "name": "Half Barding",
-              "pointsModifier": 0,
+              "pointsModifier": -3,
 				 "equipmentAdded": ["Half Barding"], 
 			      "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
               "rulesRemoved": [
-                "Open Order"
+                "Open Order", "Nomad Cavalry"
               ],
               "defenceModifier": -1,
               "cohesionModifier": 0
@@ -3907,7 +3907,7 @@
               "description": "May ride a horse.",
               "category": "Commanders",
               "type": "other",
-              "attacks": "+1",
+              "attacks": "+2",
               "cohesion": "+2",
               "pointsPerBase": 20,
               "minBases": 0,
@@ -4566,22 +4566,33 @@
             {
               "id": "irish_cavalry",
               "name": "Irish Cavalry",
-              "description": "Irish Cavalry have javelins and shield. May be fielded as skirmishers.",
+              "description": "Irish Cavalry have javelins and shield. Evade. May be fielded as skirmishers.Every second Irish cavalry unit may be upgraded to Nobles (+2); they are Superior Fighters and may have Light Armour (+1).",
               "category": "Cavalry",
               "type": "other",
               "defence": 5,
               "cohesion": 6,
-              "pointsPerBase": 16,
+              "pointsPerBase": 18,
               "minBases": 3,
               "maxBases": 8,
 				"baseEquipment": ["Javelins", "Shield"],
               "specialRules": [
-                "Open Order"
+                "Open Order", "Evade"
               ],
               "optionalEquipment": [
-                {
+                  {
+                  "name": "Noble Upgrade",
+                  "pointsModifier": 2,
+					  "enabledEvery": 2,
+						"equipmentAdded": [], 
+			      "equipmentRemoved": [],
+                  "rulesAdded": ["Superior Fighters"],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+				  {
                   "name": "Skirmishers",
-                  "pointsModifier": 0,
+                  "pointsModifier": -2,
                   "rulesAdded": [
                     "Skirmishers"
                   ],
@@ -5183,7 +5194,7 @@
                 {
                   "name": "Open Order",
 					"disables": ["Skirmishers"],
-                  "pointsModifier": -3,
+                  "pointsModifier": -5,
                   "rulesAdded": [
                     "Open Order"
                   ],
