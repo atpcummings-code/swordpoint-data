@@ -343,7 +343,7 @@
                 },
             {
                   "name": "Open Order",
-                   "enableHidden": ["Bow"],
+                   
                   "enabledEvery": 2,
                   "pointsModifier": -3,
                  "equipmentAdded": [], 
@@ -355,7 +355,6 @@
                 },
             {
                   "name": "Bow",
-                  "hiddenUntilEnabled": "hidden",
                   "enabledEvery": 4,
                   "pointsModifier": ,
                  "equipmentAdded": ["Bow"], 
