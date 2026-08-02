@@ -89,7 +89,7 @@
                   "name": "Heavy Armour",
                   "pointsModifier": 1,
                  "equipmentAdded": ["Heavy Armour"], 
-                 "equipmentRemoved": ["Ligt Armour"],
+                 "equipmentRemoved": ["Light Armour"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -97,7 +97,7 @@
                 },
             {
                   "name": "Javelins",
-                "disables": "Kontos"
+                "disables": "Kontos",
                   "pointsModifier": 1,
                  "equipmentAdded": ["Javelins"], 
                  "equipmentRemoved": [],
@@ -122,16 +122,55 @@
          {
           "id": "comitatus_foot",
           "name": "Comitatus Foot",
-          "description": "Foot Comitatus have spear, light armour and shield. Superir Fighters. May exchange spear for throwing spear (+2).  The comitatus must be led by the Army General.",
-          "category": "Cavalry",
+          "description": "Foot Comitatus have spear, light armour and shield. Superir Fighters. May exchange spear for throwing spear (+2).  May be Riding Horses (+2). The comitatus must be led by the Army General.",
+          "category": "Infantry",
           "type": "other",
           "defence": 5,
           "cohesion": 8,
           "pointsPerBase": 24,
           "minBases": 3,
-          "maxBases": 8,
+          "maxBases": 12,
           "maxCountAllowed": 1,
           "baseEquipment": ["Spear", "Shield", "Light Armour"],
+          "specialRules": [
+            "Close Order",
+            "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Throwing Spear",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Throwing Spear"], 
+                 "equipmentRemoved": ["Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Riding Horses",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Riding Horses"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }           
+          ]
+            },
+        {
+          "id": "elite_cavalry",
+          "name": "Elite Cavalry",
+          "description": "Elite Cavalry have light armour, spear and shield. Superior Fighters. May have heavy armour (+1) and may either have javelins (+1) or exchange spear for kontos (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Spear", "Shield", "Light Armour"],
           "specialRules": [
             "Open Order",
             "Superior Fighters"
@@ -141,7 +180,7 @@
                   "name": "Heavy Armour",
                   "pointsModifier": 1,
                  "equipmentAdded": ["Heavy Armour"], 
-                 "equipmentRemoved": ["Ligt Armour"],
+                 "equipmentRemoved": ["Light Armour"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
@@ -149,7 +188,7 @@
                 },
             {
                   "name": "Javelins",
-                "disables": "Kontos"
+                "disables": "Kontos",
                   "pointsModifier": 1,
                  "equipmentAdded": ["Javelins"], 
                  "equipmentRemoved": [],
@@ -172,145 +211,110 @@
           ]
             },
         {
-          "id": "noble_chariots",
-          "name": "Noble Chariots",
-          "description": "Chariots have a driver and one warrior crewman with javelins, light armour and shield. Light Chariots. Superior Fighters.",
+          "id": "cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have spear and shield. Every second unit may have light armour (+1). Unarmoured cavarly may be field as Skirmishers.",
           "category": "Cavalry",
           "type": "other",
-          "defence": 3,
-          "cohesion": 7,
-          "pointsPerBase": 27,
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": ["Javelins", "Shield", "Light Armour"],
+           "baseEquipment": ["Spear", "Shield"],
           "specialRules": [
             "Open Order",
-            "Superior Fighters", "Light Chariots"
-          ],
-          "optionalEquipment": []
-            },
-                        {
-              "id": "light_cavalry",
-              "name": "Light Cavalry",
-              "description": "Light Cavalry have spear and shield. Evade. May be fielded as skirmishers at 16 points per base, in which may repalce spears with javelins.",
-              "category": "Cavalry",
-              "type": "other",
-              "defence": 5,
-              "cohesion": 6,
-              "pointsPerBase": 18,
-              "minBases": 3,
-              "maxBases": 8,
-              "baseEquipment": ["Spear", "Shield"],
-              "specialRules": [
-                "Open Order", "Evade"
-              ],
-              "optionalEquipment": [
-               {
-                  "name": "Skirimshers",
-                  "pointsModifier": 0,
-                 "equipmentAdded": ["Javelins"], 
-                 "equipmentRemoved": ["Spear"],
-                  "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order"],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }
-              ]
-            },
-        {
-          "id": "elite_warriors",
-          "name": "Elite Warriors",
-          "description": "Elite Warriors have throwing spear and shield. Open Order. Warband. Superior Fighters.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 15,
-          "minBases": 3,
-          "maxBases": 12,
-          "maxCountAllowed": 1,
-          "baseEquipment": ["Throwing Spear", "Shield"],
-          "specialRules": [
-            "Open Order",
-            "Warband", "Superior Fighters"
-          ],
+                   ],
           "optionalEquipment": [
             {
               "name": "Light Armour",
+              "enabledEvery": 2,
+              "disables": "Skirmishers",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"], 
-"equipmentRemoved": [],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Light Armour",
+              "pointsModifier": 0,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
         },
         {
+          "id": "elite_warriors",
+          "name": "Elite Warriors",
+          "description": "Elite Warriors have light armour, spear and shield. Superior Fighters. May exchange spear for throwing spear (+2) and may be Riding Horses (+1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield", "Light Armour"],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+    {
+                  "name": "Throwing Spear",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Throwing Spear"], 
+                 "equipmentRemoved": ["Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+             {
+                  "name": "Riding Horses",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Riding Horses"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                } 
+          ]
+        },
+        {
           "id": "warriors",
           "name": "Warriors",
-          "description": " Warriors have throwing spear and shield. Open Order. Warband.",
+          "description": "Warriors have throwing spear and shield. Warband Rule 1. May be Riding Horses (+1).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
-          "cohesion": 5,
-          "pointsPerBase": 11,
+          "cohesion": 6,
+          "pointsPerBase": 14,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Throwing Spear", "Shield"],
           "specialRules": [
-            "Open Order",
-            "Warband"
-          ],
-          "optionalEquipment": [{
-              "name": "Skirmishers",
-              "pointsModifier": -5,
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order", "Warband"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }]
-        },
-         {
-          "id": "skirmishers",
-          "name": "Skirmishers",
-          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army..",
-          "category": "Skirmishers",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 5,
-          "pointsPerBase": 4,
-          "minBases": 2,
-          "maxBases": 6,
-          "specialRules": [
-            "Skirmishers",
-            "Inferior Fighters"
+            "Close Order", "Warband Rule 1"
           ],
           "optionalEquipment": [
-          {
-              "name": "Shield",
-              "pointsModifier": 1,
-            "equipmentAdded": ["Shield"], 
-"equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Sling",
-              "pointsModifier": 1,
-               "enabledEvery": 2,
-              "equipmentAdded": ["Sling"], 
-              "equipmentRemoved": ["Javelins"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-             }
+                 {
+                  "name": "Riding Horses",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Riding Horses"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                } 
           ]
-                  }
+        }
               ]
             },
     "dabai_caledonians": {
