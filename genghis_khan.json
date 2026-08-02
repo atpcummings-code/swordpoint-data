@@ -855,7 +855,7 @@
             {
               "name": "Close Order",
               "pointsModifier": 0,
-              "equipmentAdded": ["], 
+              "equipmentAdded": [], 
 "equipmentRemoved": [],
               "rulesAdded": ["Close Order],
               "rulesRemoved": ["Open Order"],
