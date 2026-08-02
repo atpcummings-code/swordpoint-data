@@ -857,7 +857,7 @@
               "pointsModifier": 0,
               "equipmentAdded": [], 
 "equipmentRemoved": [],
-              "rulesAdded": ["Close Order],
+              "rulesAdded": ["Close Order"],
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -906,7 +906,7 @@
               "pointsModifier": 0,
               "equipmentAdded": [], 
             "equipmentRemoved": [],
-              "rulesAdded": ["Close Order],
+              "rulesAdded": ["Close Order"],
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
