@@ -70,7 +70,7 @@
         {
           "id": "comitatus_mounted",
           "name": "Comitatus Mounted",
-          "description": "Mounted Comitatus have spear, light armour and shield. Superir Fighters. May have heavy armour (+1) and may either have javelins (+1) or exchange spear for kontos (+1).  The comitatus must be led by the Army General.",
+          "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May exchange spear for kontos (+1). The comitatus must be led by the Army General. May be fielded as skirmishers, or as formed cavalry with Evade (+2). They may not take Javelins.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
@@ -96,12 +96,23 @@
                   "cohesionModifier": 0
                 },
             {
-                  "name": "Javelins",
-                "disables": "Kontos",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Javelins"], 
+                  "name": "Evade",
+                "disables": "Skirmishers",
+                  "pointsModifier": 2,
+                 "equipmentAdded": [], 
                  "equipmentRemoved": [],
-                  "rulesAdded": [],
+                  "rulesAdded": ["Evade"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                "disables": "Evade",
+                  "pointsModifier": 0,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
@@ -197,9 +208,8 @@
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
-            {
+                  {
                   "name": "Kontos",
-                "disables": "Javelins"
                   "pointsModifier": 1,
                  "equipmentAdded": ["Kontos"], 
                  "equipmentRemoved": ["Spear"],
@@ -278,9 +288,9 @@
              {
                   "name": "Riding Horses",
                   "pointsModifier": 1,
-                 "equipmentAdded": ["Riding Horses"], 
+                 "equipmentAdded": [], 
                  "equipmentRemoved": [],
-                  "rulesAdded": [],
+                  "rulesAdded": ["Riding Horses"],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
@@ -306,9 +316,9 @@
                  {
                   "name": "Riding Horses",
                   "pointsModifier": 1,
-                 "equipmentAdded": ["Riding Horses"], 
+                 "equipmentAdded": [], 
                  "equipmentRemoved": [],
-                  "rulesAdded": [],
+                  "rulesAdded": ["Riding Horses"],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
