@@ -262,6 +262,23 @@
           ]
         },
         {
+          "id": "berber_cavalry",
+          "name": "Berber Cavalry",
+          "description": "Berbers have javelins and shield. Skirmishers.",
+          "category": "Allies",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 2,
+          "maxBases": 6,
+           "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+            "Skirmishers"
+                   ],
+          "optionalEquipment": []
+        },
+        {
           "id": "elite_warriors",
           "name": "Elite Warriors",
           "description": "Elite Warriors have light armour, spear and shield. Superior Fighters. May exchange spear for throwing spear (+2) and may be Riding Horses (+1).",
