@@ -24,7 +24,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 20
-        },  
+        },
         {
           "id": "Allies",
           "name": "Allies",
@@ -63,8 +63,8 @@
           "cohesion": "+2",
           "pointsPerBase": 20,
           "minBases": 0,
-          "maxBases": 1,E
-          "specialRules": [],E
+          "maxBases": 1,
+          "specialRules": [],
           "optionalEquipment": []
         },
         {
