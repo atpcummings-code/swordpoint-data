@@ -317,6 +317,58 @@
                 } 
           ]
         }, 
+        {
+          "id": "warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Warband Rule 1. May be Riding Horses (+1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": [
+            "Close Order", "Warband Rule 1"
+          ],
+          "optionalEquipment": [
+                 {
+                  "name": "Riding Horses",
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Riding Horses"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+             {
+                  "name": "Open Order",
+               "enableHidden": ["Bow"],
+                  "enabledEvery": 2,
+                  "pointsModifier": -3,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Open Order"],
+                  "rulesRemoved": ["Close Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Bow",
+                  "hiddenUntilEnabled": "hidden",
+                  "enabledEvery": 4,
+                  "pointsModifier": ,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+              ]
+            }
         
         
           ]
