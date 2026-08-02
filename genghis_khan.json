@@ -357,7 +357,7 @@
                 },
             {
                   "name": "Bow",
-                  "hiddenUntilEnabled": "hidden",
+                  "hiddenUntilEnabled": ["hidden"],
                   "enabledEvery": 4,
                   "pointsModifier": ,
                  "equipmentAdded": ["Bow"], 
