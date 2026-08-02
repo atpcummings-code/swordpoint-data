@@ -1025,14 +1025,13 @@
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
-                }
+                 }
 
           ]
             }
-           ]
+          ]
         },
-
-        "gavk_ostrogoth": {
+"gavk_ostrogoth": {
       "armyName": "Gothic and Vandal Kingdoms (Ostrogoth Armies) 380 AD - 550 AD)",
       "exclusiveGroups": [["comitatus_foot", "comitatus_mounted"]],
           "exclusiveGroups": [["byzantine_light_cavalry", "byzantine_cavalry", "berber_cavalry"]],
