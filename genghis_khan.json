@@ -1,7 +1,8 @@
 {
   "armies": {
-     "sea_peoples": {
-      "armyName": "Sea Peoples - (1278 BC - 1175 BC)",
+     "gavk_vandal_armies": {
+      "armyName": "Gothic and Vandal Kingdoms (Vandal Armies) 439 AD - 534 AD)",
+      "exclusiveGroups": [["comitatus_foot", "comitatus_mounted"]],
       "categories": [
         {
           "id": "Commanders",
@@ -10,33 +11,33 @@
           "min": 0,
           "max": 6
         },
-        {
-          "id": "Chariots",
-          "name": "Chariots",
+       {       
+          "id": "Cavalry",
+          "name": "Cavalry",
           "constraintType": "percentage",
-          "min": 0,
-          "max": 20
+          "min": 50,
+          "max": 100
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 25,
-          "max": 100
-        },
+          "min": 0,
+          "max": 20
+        },  
         {
           "id": "Allies",
-          "name": "Allies and Mercenaries",
-          "description": "The army may take allies from the Libyan list.",
+          "name": "Allies",
+          "description": "Alans (use Hun list) and/or up to two units of Berber Cavalry from the Early Byzantine list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "libyan"
+            "alans"
           ],
           "maxAlliedArmiesAllowed": 1
         }
-      ],
+           ],
       "units": [
         {
           "id": "over_king",
