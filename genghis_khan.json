@@ -355,7 +355,7 @@
             {
                   "name": "Bow",
                   "enabledEvery": 4,
-                  "pointsModifier": ,
+                  "pointsModifier": 0,
                  "equipmentAdded": ["Bow"], 
                  "equipmentRemoved": ["Spear"],
                   "rulesAdded": [],
