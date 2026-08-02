@@ -720,7 +720,19 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 10
-        } 
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "The army may have allies from the Dark Age Britain and AIreland (Saxons) list..",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+            "dabai_saxons"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
       ],
       "units": [
         {
@@ -735,18 +747,7 @@
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-        "optionalEquipment": [
-            {
-              "name": "Strategem",
-              "pointsModifier": 50,
-              "rulesAdded": [
-                "Stratagem"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
+        "optionalEquipment": []
         },
         {
           "id": "chieftain",
@@ -795,25 +796,7 @@
           ],
           "optionalEquipment": []
             },
-        {
-          "id": "noble_chariots",
-          "name": "Noble Chariots",
-          "description": "Chariots have a driver and one warrior crewman with javelins, light armour and shield. Light Chariots. Superior Fighters.",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 3,
-          "cohesion": 7,
-          "pointsPerBase": 27,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": ["Javelins", "Shield", "Light Armour"],
-          "specialRules": [
-            "Open Order",
-            "Superior Fighters", "Light Chariots"
-          ],
-          "optionalEquipment": []
-            },
-                        {
+          {
               "id": "light_cavalry",
               "name": "Light Cavalry",
               "description": "Light Cavalry have spear and shield. Evade. May be fielded as skirmishers at 16 points per base, in which may repalce spears with javelins.",
@@ -868,6 +851,26 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
+            },
+            {
+              "name": "Close Order",
+              "pointsModifier": 0,
+              "equipmentAdded": ["], 
+"equipmentRemoved": [],
+              "rulesAdded": ["Close Order],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
           ]
         },
@@ -887,7 +890,28 @@
             "Open Order",
             "Warband"
           ],
-          "optionalEquipment": [{
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Close Order",
+              "pointsModifier": 0,
+              "equipmentAdded": ["], 
+            "equipmentRemoved": [],
+              "rulesAdded": ["Close Order],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
               "name": "Skirmishers",
               "pointsModifier": -5,
               "rulesAdded": ["Skirmishers"],
