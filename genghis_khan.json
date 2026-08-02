@@ -13,7 +13,7 @@
         },
        {       
           "id": "Cavalry",
-          "name": "Cavalry and Chariots",
+          "name": "Cavalry",
           "constraintType": "percentage",
           "min": 50,
           "max": 100
