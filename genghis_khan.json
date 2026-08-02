@@ -329,9 +329,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Throwing Spear", "Shield"],
-          "specialRules": [
-            "Close Order", "Warband Rule 1"
-          ],
+          "specialRules": ["Close Order", "Warband Rule 1"],
           "optionalEquipment": []
             }
         
