@@ -332,42 +332,7 @@
           "specialRules": [
             "Close Order", "Warband Rule 1"
           ],
-          "optionalEquipment": [
-                 {
-                  "name": "Riding Horses",
-                  "pointsModifier": 1,
-                 "equipmentAdded": [], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Riding Horses"],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-             {
-                  "name": "Open Order",
-               "enableHidden": ["Bow"],
-                  "enabledEvery": 2,
-                  "pointsModifier": -3,
-                 "equipmentAdded": [], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Open Order"],
-                  "rulesRemoved": ["Close Order"],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
-                  "name": "Bow",
-                  "hiddenUntilEnabled": ["hidden"],
-                  "enabledEvery": 4,
-                  "pointsModifier": ,
-                 "equipmentAdded": ["Bow"], 
-                 "equipmentRemoved": ["Spear"],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }
-              ]
+          "optionalEquipment": []
             }
         
         
