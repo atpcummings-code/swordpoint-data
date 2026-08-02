@@ -120,46 +120,6 @@
                 }
           ]
             },
-         {
-          "id": "comitatus_foot",
-          "name": "Comitatus Foot",
-          "description": "Foot Comitatus have spear, light armour and shield. Superir Fighters. May exchange spear for throwing spear (+2).  May be Riding Horses (+2). The comitatus must be led by the Army General.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 8,
-          "pointsPerBase": 24,
-          "minBases": 3,
-          "maxBases": 12,
-          "maxCountAllowed": 1,
-          "baseEquipment": ["Spear", "Shield", "Light Armour"],
-          "specialRules": [
-            "Close Order",
-            "Superior Fighters"
-          ],
-          "optionalEquipment": [
-            {
-                  "name": "Throwing Spear",
-                  "pointsModifier": 2,
-                 "equipmentAdded": ["Throwing Spear"], 
-                 "equipmentRemoved": ["Spear"],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
-                  "name": "Riding Horses",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Riding Horses"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }           
-          ]
-            },
         {
           "id": "elite_cavalry",
           "name": "Elite Cavalry",
@@ -279,45 +239,7 @@
                    ],
           "optionalEquipment": []
         },
-        {
-          "id": "elite_warriors",
-          "name": "Elite Warriors",
-          "description": "Elite Warriors have light armour, spear and shield. Superior Fighters. May exchange spear for throwing spear (+2) and may be Riding Horses (+1).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 20,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Spear", "Shield", "Light Armour"],
-          "specialRules": [
-            "Close Order"
-          ],
-          "optionalEquipment": [
-    {
-                  "name": "Throwing Spear",
-                  "pointsModifier": 2,
-                 "equipmentAdded": ["Throwing Spear"], 
-                 "equipmentRemoved": ["Spear"],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-             {
-                  "name": "Riding Horses",
-                  "pointsModifier": 1,
-                 "equipmentAdded": [], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Riding Horses"],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                } 
-          ]
-        }, 
-        {
+               {
           "id": "warriors",
           "name": "Warriors",
           "description": "Warriors have throwing spear and shield. Warband Rule 1. May be Riding Horses (+1).",
