@@ -343,7 +343,6 @@
                 },
             {
                   "name": "Open Order",
-                   
                   "enabledEvery": 2,
                   "pointsModifier": -3,
                  "equipmentAdded": [], 
