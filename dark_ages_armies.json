@@ -900,7 +900,7 @@
           "type": "other",
           "defence": 6,
           "cohesion": 6,
-          "pointsPerBase": 16,
+          "pointsPerBase": 11,
           "minBases": 3,
           "maxBases": 12,
 			"baseEquipment": ["Shield"],
@@ -911,7 +911,7 @@
           "optionalEquipment": [
             {
               "name": "Skirmishers",
-              "pointsModifier": -9,
+              "pointsModifier": -4,
               "rulesAdded": [
                 "Skirmishers"
               ],
