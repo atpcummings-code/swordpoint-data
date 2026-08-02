@@ -324,7 +324,31 @@
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
-                } 
+                },
+             {
+                  "name": "Open Order",
+               "enableHidden": ["Warhorse Barding"],
+                  "enabledEvery": 2,
+                  "pointsModifier": -3,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Open Order"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Bow",
+                  "hiddenUntilEnabled": "hidden",
+                  "enabledEvery": 4,
+                  "pointsModifier": -3,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Open Order"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
           ]
         }
               ]
