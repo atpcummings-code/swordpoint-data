@@ -1426,9 +1426,7 @@
           "maxBases": 8,
           "maxCountAllowed": 2,
            "baseEquipment": ["Light Amrour", "Spear", "Bow", "Shield"],
-          "specialRules": [
-            "Open Order, "Superior Fighters"
-                   ],
+          "specialRules": ["Open Order, "Superior Fighters"],
           "optionalEquipment": [
 {
                   "name": "Heavy Armour",
