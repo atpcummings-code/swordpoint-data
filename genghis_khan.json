@@ -33,7 +33,7 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "huns"
+            "alans"
           ],
           "maxAlliedArmiesAllowed": 1
         }
@@ -300,6 +300,23 @@
           ]
         },
         {
+          "id": "berber_cavalry",
+          "name": "Berber Cavalry",
+          "description": "Berbers have javelins and shield. Skirmishers.",
+          "category": "Allies",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 2,
+          "maxBases": 6,
+           "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+            "Skirmishers",
+                   ],
+          "optionalEquipment": []
+        },
+        {
           "id": "warriors",
           "name": "Warriors",
           "description": "Warriors have throwing spear and shield. Warband Rule 1. May be Riding Horses (+1).",
@@ -353,5 +370,5 @@
         }
               ]
             },
-          }
+                   }
 }
