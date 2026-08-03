@@ -2144,7 +2144,7 @@
               ]
             },
 	  "gavk_vandal_armies": {
-      "armyName": "Gothic and Vandal Kingdoms (Vandal Armies) 439 AD - 534 AD)",
+      "armyName": "Gothic and Vandal Kingdoms (Vandal Armies) 439 AD - 534 AD",
       "exclusiveGroups": [["comitatus_foot", "comitatus_mounted"]],
       "categories": [
         {
@@ -2438,7 +2438,7 @@
           ]
         },
 "gavk_vandal_armies_no_allies": {
-      "armyName": "Gothic and Vandal Kingdoms (Vandal Armies - No Allies) 439 AD - 534 AD)",
+      "armyName": "Gothic and Vandal Kingdoms (Vandal Armies - No Allies) 439 AD - 534 AD",
       "exclusiveGroups": [["comitatus_foot", "comitatus_mounted"]],
       "categories": [
         {
@@ -2790,7 +2790,7 @@
            ]
         },
 "gavk_visigoth": {
-      "armyName": "Gothic and Vandal Kingdoms (Visigoth Armies) 300 AD - 710 AD)",
+      "armyName": "Gothic and Vandal Kingdoms (Visigoth Armies) 300 AD - 710 AD),
       "exclusiveGroups": [["comitatus_foot", "comitatus_mounted"]],
       "categories": [
         {
@@ -3175,7 +3175,7 @@
           ]
         },
 "gavk_ostrogoth": {
-      "armyName": "Gothic and Vandal Kingdoms (Ostrogoth Armies) 380 AD - 550 AD)",
+      "armyName": "Gothic and Vandal Kingdoms (Ostrogoth Armies) 380 AD - 550 AD",
       "exclusiveGroups": [["comitatus_foot", "comitatus_mounted"]],
           "exclusiveGroups": [["byzantine_light_cavalry", "byzantine_cavalry", "berber_cavalry"]],
       "categories": [
@@ -3682,7 +3682,7 @@
           ]
         },
     "gavk_Lombard": {
-      "armyName": "Gothic and Vandal Kingdoms (Lombard Armies) 400 AD - 1018 AD)",
+      "armyName": "Gothic and Vandal Kingdoms (Lombard Armies) 400 AD - 1018 AD",
       "exclusiveGroups": [["comitatus_foot", "comitatus_mounted"]],
       "categories": [
         {
