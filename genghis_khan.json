@@ -2,7 +2,6 @@
   "armies": {
      "lir_borders_garrison": {
       "armyName": "Late Imperial Roman (Borders Garrison) - 350 AD - 493 AD",
-      "exclusiveGroups": [["comitatus_foot", "comitatus_mounted"]],
       "categories": [
         {
           "id": "Commanders",
