@@ -1,7 +1,7 @@
 {
   "armies": {
-     "gavk_vandal_armies": {
-      "armyName": "Gothic and Vandal Kingdoms (Vandal Armies) 439 AD - 534 AD)",
+     "lir_borders_garrison": {
+      "armyName": "Late Imperial Roman (Borders Garrison) 350 AD - 493 AD",
       "exclusiveGroups": [["comitatus_foot", "comitatus_mounted"]],
       "categories": [
         {
