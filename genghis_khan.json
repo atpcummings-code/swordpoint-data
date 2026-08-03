@@ -898,7 +898,7 @@
                  "pointsModifier": 4,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
-                  "rulesAdded": ["Stubborn"],
+                  "rulesAdded": ["Stubborn", "test"],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 1
