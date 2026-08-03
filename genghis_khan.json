@@ -1567,7 +1567,7 @@
         },
 "lir_romano_british": {
       "armyName": "Late Imperial Roman (Romano British) 350 AD - 493 AD",
-  { "id": "legionaries", "requires": { "unitId": "limitanei", "count": 1, "name": "Limitanei" } } ,
+   "id": "legionaries", "requires": { "unitId": "limitanei", "count": 1, "name": "Limitanei" },
 "categories": [
         {
           "id": "Commanders",
