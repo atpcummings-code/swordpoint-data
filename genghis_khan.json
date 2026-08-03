@@ -96,9 +96,10 @@
           "minBases": 3,
           "maxBases": 8,
           "maxCountAllowed": 1,
+          "requires": { "unitId": "equites", "count": 2, "name": "Equites" },
           "baseEquipment": ["Cataphract Armour"],
           "specialRules": [
-            "Open Order",
+            "Open Order"
           ], 
           "optionalEquipment": [
             {
@@ -144,20 +145,19 @@
           ]
             },
         {
-          "id": "elite_cavalry",
-          "name": "Elite Cavalry",
-          "description": "Elite Cavalry have light armour, spear and shield. Superior Fighters. May have heavy armour (+1) and may either have javelins (+1) or exchange spear for kontos (+1).",
+          "id": "equites",
+          "name": "Equites",
+          "description": "Equites have a spear, light  armour and shield. Light armour may be exchanged for heavy armour (+1). May have javelins (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
           "cohesion": 7,
-          "pointsPerBase": 20,
+          "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 8,
            "baseEquipment": ["Spear", "Shield", "Light Armour"],
           "specialRules": [
-            "Open Order",
-            "Superior Fighters"
+            "Open Order"
           ],
           "optionalEquipment": [
             {
@@ -172,7 +172,6 @@
                 },
                  {
                   "name": "Javelins",
-                 "disables": "Kontos",
                  "pointsModifier": 1,
                  "equipmentAdded": ["Javelins"], 
                  "equipmentRemoved": [],
@@ -182,13 +181,60 @@
                   "cohesionModifier": 0
                 },
             {
-                  "name": "Kontos",
-                "disables": "Javelins",
+                  "name": "Skirmishers",
+                  "pointsModifier": -2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+         {
+          "id": "illyricani_sagittarii",
+          "name": "Illyricani Sagittarii",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri.. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Javelins", "Shield""],
+          "specialRules": [
+            "Open Order", "Evade", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Spear",
                   "pointsModifier": 1,
-                 "equipmentAdded": ["Kontos"], 
-                 "equipmentRemoved": ["Spear"],
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Bow",
+                 "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 }
