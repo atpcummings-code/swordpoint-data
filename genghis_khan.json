@@ -449,7 +449,7 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "alans"
+          "gavk_vandal_armies", "gavk_visigoth", "gavk_vandal_armies_no_allies", "gavk_ostrogoth", "gavk_Lombard"
           ],
           "maxAlliedArmiesAllowed": 5
         }
