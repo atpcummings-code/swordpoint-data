@@ -859,6 +859,7 @@
           "id": "heavy_cavalry",
           "name": "Heavy Cavalry",
           "description": "Heavy Cavalry have a spear and shield. Superior Fighters. May have light armour (+1) and javelins (+1).",
+          "requires": [ "unitId": "light_cavalry", "count": 2, "name": "light Cavalry", "perUnit": true ],
           "category": "Foederati",
           "type": "other",
           "defence": 5,
@@ -903,9 +904,9 @@
                   "cohesionModifier": 1
                 },
              {
-                  "name": "Steppe Nobles",
+            "name": "Steppe Nobles",
              "maxCountAllowed": 1,
-               "requires": { "unitId": "light_cavalry", "count": 2, "name": "light Cavalry", "perUnit": true },
+               
                  "pointsModifier": 1,
                  "equipmentAdded": ["Bow"], 
                  "equipmentRemoved": [],
