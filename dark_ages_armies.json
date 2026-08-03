@@ -4076,7 +4076,7 @@
       "categories": [
         {
           "id": "Commanders",
-          "name": "CommEanders",
+          "name": "Commanders",
           "constraintType": "count",
           "min": 0,
           "max": 6
