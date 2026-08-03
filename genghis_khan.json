@@ -220,7 +220,7 @@
                 },
                  {
                   "name": "Bow",
-                  "enableHidden": ["light Armour", "Skirmishers"],
+                  "enableHidden": ["Light Armour", "Skirmishers"],
                  "pointsModifier": 0,
                  "equipmentAdded": ["Bow"], 
                  "equipmentRemoved": ["Javelins"],
