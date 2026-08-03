@@ -468,8 +468,8 @@
         "optionalEquipment": []
         },
         {
-          "id": "Warlord",
-          "name": "Emperor",
+          "id": "warlord",
+          "name": "Warlord",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
