@@ -203,7 +203,7 @@
           "pointsPerBase": 17,
           "minBases": 3,
           "maxBases": 8,
-           "baseEquipment": ["Javelins", "Shield""],
+           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": [
             "Open Order", "Evade", "Inferior Fighters"
           ],
