@@ -894,7 +894,7 @@
                 },
             {
                   "name": "Bucellarii",
-              "maxEquipmentCount": 1,
+                "maxEquipmentCount": 1,
                  "pointsModifier": 4,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
