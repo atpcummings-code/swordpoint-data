@@ -1,7 +1,7 @@
 {
   "armies": {
      "lir_borders_garrison": {
-      "armyName": "Late Imperial Roman (Borders Garrison) 350 AD - 493 AD",
+      "armyName": "Late Imperial Roman (Borders Garrison) - 350 AD - 493 AD",
       "exclusiveGroups": [["comitatus_foot", "comitatus_mounted"]],
       "categories": [
         {
@@ -9,39 +9,27 @@
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 6
+          "max": 4
         },
        {       
           "id": "Cavalry",
           "name": "Cavalry",
           "constraintType": "percentage",
-          "min": 50,
-          "max": 100
+          "min": 0,
+          "max": 25
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 0,
-          "max": 20
-        },
-        {
-          "id": "Allies",
-          "name": "Allies",
-          "description": "Alans (use Hun list) and/or up to two units of Berber Cavalry from the Early Byzantine list.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25,
-          "alliedArmyKeys": [
-            "alans"
-          ],
-          "maxAlliedArmiesAllowed": 1
+          "min": 50,
+          "max": 100
         }
            ],
       "units": [
         {
-          "id": "king",
-          "name": "King",
+          "id": "magister",
+          "name": "Magister",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
@@ -54,8 +42,22 @@
         "optionalEquipment": []
         },
         {
-          "id": "noble",
-          "name": "Noble",
+          "id": "legate",
+          "name": "Legate",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+1",
+          "cohesion": "+2",
+          "pointsPerBase": 15,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+          {
+          "id": "legate_extra_attack",
+          "name": "Legate",
           "description": "May ride a horse,",
           "category": "Commanders",
           "type": "other",
@@ -67,52 +69,73 @@
           "specialRules": [],
           "optionalEquipment": []
         },
+           {
+          "id": "foederati ",
+          "name": "Foederati ",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+3",
+          "cohesion": "+2",
+          "pointsPerBase": 25,
+          "minBases": 0,
+          "maxBases": 1,
+          "maxCountAllowed": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
         {
-          "id": "comitatus_mounted",
-          "name": "Comitatus Mounted",
-          "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May exchange spear for kontos (+1). The comitatus must be led by the Army General. ",
+          "id": "catafractii_clibanarii",
+          "name": "Catafractii/Clibanarii",
+          "description": "Catafractii and Clibanarii have cataphract armour. May be Massed Cavalry (+1) May have kontos (+2) and bow (+1). Their horses may have full metal barding (+1). You may have one Catafractii Clibanarii unit for every two Eq units fielde in your army.uites",
           "category": "Cavalry",
           "type": "other",
-          "defence": 4,
-          "cohesion": 8,
-          "pointsPerBase": 22,
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 8,
           "maxCountAllowed": 1,
-          "baseEquipment": ["Spear", "Shield", "Light Armour"],
+          "baseEquipment": ["Cataphract Armour"],
           "specialRules": [
             "Open Order",
-            "Superior Fighters"
           ], 
           "optionalEquipment": [
             {
-                  "name": "Heavy Armour",
+                  "name": "Massed Cavalry",
                   "pointsModifier": 1,
-                 "equipmentAdded": ["Heavy Armour"], 
-                 "equipmentRemoved": ["Light Armour"],
-                  "rulesAdded": [],
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Massed Cavalry"],
                   "rulesRemoved": [],
-                  "defenceModifier": -1,
+                  "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
-               {
-                  "name": "Javelins",
-                 "disables": "Kontos",
-                 "pointsModifier": 1,
-                 "equipmentAdded": ["Javelins"], 
+            {
+                  "name": "Kontos",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Kontos"], 
                  "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
-                },
-             
+                },  
             {
-                  "name": "Kontos",
-                "disables": "Javelins",
+                  "name": "Full Metal Barding",
                   "pointsModifier": 1,
-                 "equipmentAdded": ["Kontos"], 
-                 "equipmentRemoved": ["Spear"],
+                 "equipmentAdded": ["Full Metal Barding"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Close Order"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },  
+            {
+                  "name": "Bow",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -294,7 +317,7 @@
         
           ]
         },
-"gavk_vandal_armies_no_allies": {
+"lir_imperial_field_army": {
      "armyName": "Late Imperial Roman (Imperial Field Army) 350 AD - 493 AD",
       "categories": [
         {
@@ -645,7 +668,7 @@
             }
            ]
         },
-"gavk_visigoth": {
+"lir_romanised_warlord": {
       "armyName": "Late Imperial Roman (Romanised Warlord) 350 AD - 493 AD",
       "categories": [
         {
@@ -1029,7 +1052,7 @@
             }
           ]
         },
-"gavk_ostrogoth": {
+"lir_romano_british": {
       "armyName": "Late Imperial Roman (Romano British) 350 AD - 493 AD",
 
       "categories": [
