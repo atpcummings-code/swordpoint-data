@@ -79,7 +79,6 @@
           "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 8,
-          "maxCountAllowed": 1,
           "requires": { "unitId": "equites", "count": 2, "name": "Equites" },
           "baseEquipment": ["Cataphract Armour"],
           "specialRules": [
@@ -536,8 +535,7 @@
           "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 8,
-          "maxCountAllowed": 1,
-          "requires": { "unitId": "equites", "count": 2, "name": "Equites" },
+           "requires": { "unitId": "equites", "count": 2, "name": "Equites" },
           "baseEquipment": ["Cataphract Armour"],
           "specialRules": [
             "Open Order"
