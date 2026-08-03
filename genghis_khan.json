@@ -972,7 +972,7 @@
           "optionalEquipment": [
             {
                   "name": "Heavy Throwing Spear",
-              "disables": "Javelins",
+                  "disables": "Javelins",
                   "pointsModifier": 2,
                  "equipmentAdded": ["Heavy Throwing Spear"], 
                  "equipmentRemoved": ["Throwing Spear"],
@@ -1538,7 +1538,7 @@
           "optionalEquipment": [
             {
                   "name": "Heavy Throwing Spear",
-              "disables: "Javelins",
+              "disables": "Javelins",
                   "pointsModifier": 2,
                  "equipmentAdded": ["Heavy Throwing Spear"], 
                  "equipmentRemoved": ["Throwing Spear"],
@@ -1549,7 +1549,7 @@
                 },
             {
                   "name": "Javelins",
-              "disables: "Heavy Throwing Spear",
+              "disables": "Heavy Throwing Spear",
                   "pointsModifier": 2,
                  "equipmentAdded": ["Javelins"], 
                  "equipmentRemoved": [],
@@ -2005,7 +2005,7 @@
           "optionalEquipment": [
             {
                   "name": "Heavy Throwing Spear",
-              "disables: "Javelins",
+              "disables": "Javelins",
                   "pointsModifier": 2,
                  "equipmentAdded": ["Heavy Throwing Spear"], 
                  "equipmentRemoved": ["Throwing Spear"],
@@ -2016,7 +2016,7 @@
                 },
             {
                   "name": "Javelins",
-              "disables: "Heavy Throwing Spear",
+              "disables": "Heavy Throwing Spear",
                   "pointsModifier": 2,
                  "equipmentAdded": ["Javelins"], 
                  "equipmentRemoved": [],
