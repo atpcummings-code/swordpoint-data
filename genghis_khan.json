@@ -535,7 +535,7 @@
           "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 8,
-           "requires": { "unitId": "equites", "count": 2, "name": "Equites"  "perUnit": true},
+           "requires": { "unitId": "equites", "count": 2, "name": "Equites",  "perUnit": true},
           "baseEquipment": ["Cataphract Armour"],
           "specialRules": [
             "Open Order"
