@@ -418,21 +418,40 @@
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 4
+          "max": 6
         },
        {       
           "id": "Cavalry",
           "name": "Cavalry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 50
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 50,
+          "min": 25,
           "max": 100
+        },
+        {
+          "id": "Foederati",
+          "name": "Foederati",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+        {
+          "id": "Allies",
+          "name": "Allies & Mercenaries",
+          "description": "alans",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+            "alans"
+          ],
+          "maxAlliedArmiesAllowed": 5
         }
            ],
       "units": [
@@ -854,7 +873,7 @@
        {
           "id": "Allies",
           "name": "Allies",
-          "description": "Alans.",
+          "description": "alans",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
