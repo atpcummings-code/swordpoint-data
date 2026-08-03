@@ -289,7 +289,7 @@
                   "defenceModifier": -1,
                   "cohesionModifier": 0
                 },
-                       {
+                 {
                   "name": "Heavy Throwing Spear",
                   "pointsModifier": 2,
                  "equipmentAdded": ["Heavy Throwing Spear"], 
