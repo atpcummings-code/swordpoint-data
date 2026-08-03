@@ -220,6 +220,7 @@
                 },
                  {
                   "name": "Bow",
+                  "enableHidden": ["light Armour", "Skirmishers"],
                  "pointsModifier": 0,
                  "equipmentAdded": ["Bow"], 
                  "equipmentRemoved": ["Javelins"],
@@ -228,9 +229,23 @@
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
+             {
+                  "name": "Light Armour",
+               "hiddenUntilEnabled": "hidden",  
+                  "disables": ["Skirmishers"],
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
             {
                   "name": "Skirmishers",
-                  "pointsModifier": -2,
+              "hiddenUntilEnabled": "hidden", 
+              "disables": ["Light Armour"],
+                  "pointsModifier": 0,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
                   "rulesAdded": ["Skirmishers"],
@@ -240,117 +255,55 @@
                 }
           ]
             },
-        {
-          "id": "cavalry",
-          "name": "Cavalry",
-          "description": "Cavalry have spear and shield. Every second unit may have light armour (+1). Unarmoured cavarly may be field as Skirmishers.",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 6,
-          "pointsPerBase": 16,
-          "minBases": 3,
-          "maxBases": 8,
-           "baseEquipment": ["Spear", "Shield"],
-          "specialRules": [
-            "Open Order",
-                   ],
-          "optionalEquipment": [
-            {
-              "name": "Light Armour",
-              "enabledEvery": 2,
-              "disables": "Skirmishers",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Light Armour"], 
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-                  "name": "Evade",
-                "disables": "Skirmishers",
-                  "pointsModifier": 2,
-                 "equipmentAdded": [], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Evade"],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
-              "name": "Skirmishers",
-              "disables": ["Light Armour", "Evade"],
-              "pointsModifier": 0,
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "berber_cavalry",
-          "name": "Berber Cavalry",
-          "description": "Berbers have javelins and shield. Skirmishers.",
-          "category": "Allies",
+               {
+          "id": "legionaries",
+          "name": "Legionaries",
+          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Legionary units may use Combined Formation with a quarter or half of the units figures exchnaging throwing spear, large shield and darts for bow and shield (-4) and forming the rear of thh unit. They may not take any other quipment. Veteran (+2)",
+          "category": "Infantry",
           "type": "other",
           "defence": 5,
           "cohesion": 7,
-          "pointsPerBase": 17,
-          "minBases": 2,
-          "maxBases": 6,
-          "maxCountAllowed": 2,
-           "baseEquipment": ["Javelins", "Shield"],
-          "specialRules": [
-            "Skirmishers"
-                   ],
-          "optionalEquipment": []
-        },
-               {
-          "id": "warriors",
-          "name": "Warriors",
-          "description": "Warriors have throwing spear and shield. Warband Rule 1. May be Riding Horses (+1).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 14,
+          "pointsPerBase": 22,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Throwing Spear", "Shield"],
-          "specialRules": ["Close Order", "Warband Rule 1"],
+          "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+          "specialRules": ["Close Order", "Shieldwall"],
           "optionalEquipment": [
             {
-                  "name": "Riding Horses",
+                  "name": "Light Armour",
                   "pointsModifier": 1,
-                 "equipmentAdded": [], 
+                 "equipmentAdded": ["Light Armour"], 
                  "equipmentRemoved": [],
-                  "rulesAdded": ["Riding Horses"],
+                  "rulesAdded": [],
                   "rulesRemoved": [],
-                  "defenceModifier": 0,
+                  "defenceModifier": -1,
                   "cohesionModifier": 0
                 },
             {
-                  "name": "Open Order",
-              "enableHidden": ["Bow"],
-                  "enabledEvery": 2,
-                  "pointsModifier": -3,
+                  "name": "Veteran",
+                  "pointsModifier": 2,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
-                  "rulesAdded": ["Open Order"],
-                  "rulesRemoved": ["Close Order"],
-                  "defenceModifier": 0,
+                  "rulesAdded": ["Veteran"],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+             {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
                   "cohesionModifier": 0
                 },
             {
-                  "name": "Bow",
-              "hiddenUntilEnabled": "hidden",    
-              "enabledEvery": 4,
-                  "pointsModifier": 0,
-                 "equipmentAdded": ["Bow"], 
-                 "equipmentRemoved": ["Spear"],
+                  "name": "Heavy Throwing Spear",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Heavy Throwing Spear"], 
+                 "equipmentRemoved": ["Throwing Spear"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
@@ -358,8 +311,113 @@
                 }
 
           ]
+            },
+        {
+          "id": "limitanei",
+          "name": "Limitanei",
+          "description": "Legionaries have a spear and large shield.  Inferior Fighters. Shieldwall. The may have darts (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield", "Shieldwall"],
+          "specialRules": ["Close Order", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Darts",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Darts"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+{
+          "id": "auxillia",
+          "name": "Auxillia",
+          "description": "Auxillia have a throwing spear, large shield and darts. Open Order. Auxillia units may use Combined Formation with  a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shiled (-4 for each archer only bases) and forming the rear of the unit. Auxillia may be fielded as skirmishers at a points reduction of 33%.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -5,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+        {
+          "id": "archers",
+          "name": "Archers",
+          "description": "Archers have bows and shields. Inferior Fighters. Open Order. Every second unit may exchange their bows for sling or javelins (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Open Order", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Sling",
+              "disables": "Javelins"
+                 "enabledEvery": 2,
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Sling"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Javelins",
+              "disables": "Sling"
+                 "enabledEvery": 2,
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -3,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
             }
-
+            
         
           ]
         },
