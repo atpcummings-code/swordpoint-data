@@ -983,7 +983,7 @@
                 },
             {
                   "name": "Javelins",
-              "disables: "Heavy Throwing Spear",
+              "disables": "Heavy Throwing Spear",
                   "pointsModifier": 2,
                  "equipmentAdded": ["Javelins"], 
                  "equipmentRemoved": [],
