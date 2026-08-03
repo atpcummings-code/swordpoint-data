@@ -906,6 +906,7 @@
                 },
              {
                   "name": "Steppe Nobles",
+             "maxCountAllowed": 1,
                "requires": { "unitId": "light_cavalry", "count": 2, "name": "light Cavalry" },
                  "pointsModifier": 1,
                  "equipmentAdded": ["Bow"], 
