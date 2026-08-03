@@ -74,12 +74,12 @@
           "description": "Catafractii and Clibanarii have cataphract armour. May be Massed Cavalry (+1) May have kontos (+2) and bow (+1). Their horses may have full metal barding (+1). You may have one Catafractii Clibanarii unit for every two Eq units fielde in your army.uites",
           "category": "Cavalry",
           "type": "other",
-          "defence": 3,
+          "defenceE": 3,
           "cohesion": 7,
           "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 8,
-          "requires": { "unitId": "equites", "count": 2, "name": "Equites" },
+          "requires": { "unitId": "equites", "count": 2, "name": "Equites", "perUnit": true },
           "baseEquipment": ["Cataphract Armour"],
           "specialRules": [
             "Open Order"
@@ -535,7 +535,7 @@
           "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 8,
-           "requires": { "unitId": "equites", "count": 2, "name": "Equites" },
+           "requires": { "unitId": "equites", "count": 2, "name": "Equites"  "perUnit": true},
           "baseEquipment": ["Cataphract Armour"],
           "specialRules": [
             "Open Order"
