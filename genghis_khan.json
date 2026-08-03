@@ -857,7 +857,106 @@
                 }
             
           ]
-            }
+            },
+        {
+          "id": "heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have a spear and shield. Superior Fighters. May have light armour (+1) and javelins (+1).",
+          "category": "Foederati",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Spear", "Shield"],
+          "specialRules": [
+            "Open Order", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Javelins",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Bucellarii",
+                 "pointsModifier": 4,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Stubborn"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 1
+                },
+             {
+                  "name": "Steppe Nobles",
+               "requires": { "unitId": "light_cavalry", "count": 2, "name": "light Cavalry" },
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+
+            
+          ]
+            },
+        {
+          "id": "light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have bows. Nomad Cavalry. They may have shield (+1) and spear (+1). The may be fielded as skirmishers. For every two light cavalry units present one foederat Heavy Cavalry unit may be upgraded to Seppe Nobles (+2). Steppe Nobles Have bows.",
+          "category": "Foederati",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": [
+            "Open Order", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Javelins",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
             
         
           ]
