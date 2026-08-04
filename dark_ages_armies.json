@@ -4745,6 +4745,2045 @@
             }
           ]
         },
+	  "lir_borders_garrison": {
+      "armyName": "Late Imperial Roman (Borders Garrison) - 350 AD - 493 AD",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 4
+        },
+       {       
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        }
+           ],
+      "units": [
+        {
+          "id": "magister",
+          "name": "Magister",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+        {
+          "id": "legate",
+          "name": "Legate",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+1",
+          "cohesion": "+2",
+          "pointsPerBase": 15,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+          {
+          "id": "legate_extra_attack",
+          "name": "Legate",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "catafractii_clibanarii",
+          "name": "Catafractii/Clibanarii",
+          "description": "Britannia Only: Catafractii and Clibanarii have cataphract armour. May be Massed Cavalry (+1) May have kontos (+2) and bow (+1). Their horses may have full metal barding (+1). You may have one Catafractii Clibanarii unit for every two Eq units fielde in your army.uites",
+          "category": "Cavalry",
+          "type": "other",
+          "defenceE": 3,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "requires": { "unitId": "equites", "count": 2, "name": "Equites", "perUnit": true },
+          "baseEquipment": ["Cataphract Armour"],
+          "specialRules": [
+            "Open Order"
+          ], 
+          "optionalEquipment": [
+            {
+                  "name": "Massed Cavalry",
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Massed Cavalry"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Kontos",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Kontos"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },  
+            {
+                  "name": "Full Metal Barding",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Full Metal Barding"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Close Order"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },  
+            {
+                  "name": "Bow",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "equites",
+          "name": "Equites",
+          "description": "Equites have a spear, light  armour and shield. Light armour may be exchanged for heavy armour (+1). May have javelins (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Spear", "Shield", "Light Armour"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Heavy Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Heavy Armour"], 
+                 "equipmentRemoved": ["Light Armour"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Javelins",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+         {
+          "id": "illyricani_sagittarii",
+          "name": "Illyricani Sagittarii",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri.. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+            "Open Order", "Evade", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Spear",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Bow",
+                  "enableHidden": ["Light Armour", "Skirmishers"],
+                 "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+             {
+                  "name": "Light Armour",
+               "hiddenUntilEnabled": "hidden",  
+                  "disables": ["Skirmishers"],
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+              "hiddenUntilEnabled": "hidden", 
+              "disables": ["Light Armour"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+               {
+          "id": "legionaries",
+          "name": "Legionaries",
+          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Legionary units may use Combined Formation with a quarter or half of the units figures exchnaging throwing spear, large shield and darts for bow and shield (-4) and forming the rear of thh unit. They may not take any other quipment. Veteran (+2)",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+          "specialRules": ["Close Order", "Shieldwall"],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Veteran",
+                  "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Veteran"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Heavy Throwing Spear",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Heavy Throwing Spear"], 
+                 "equipmentRemoved": ["Throwing Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+
+          ]
+            },
+        {
+          "id": "limitanei",
+          "name": "Limitanei",
+          "description": "Legionaries have a spear and large shield.  Inferior Fighters. Shieldwall. The may have darts (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield", "Shieldwall"],
+          "specialRules": ["Close Order", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Darts",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Darts"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+{
+          "id": "auxillia",
+          "name": "Auxillia",
+          "description": "Auxillia have a throwing spear, large shield and darts. Open Order. Auxillia units may use Combined Formation with  a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4 for each archer only bases) and forming the rear of the unit. Auxillia may be fielded as skirmishers at a points reduction of 33%.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -5,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+        {
+          "id": "archers",
+          "name": "Archers",
+          "description": "Archers have bows and shields. Inferior Fighters. Open Order. Every second unit may exchange their bows for sling or javelins (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Open Order", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Sling",
+              "disables": "Javelins",
+                 "enabledEvery": 2,
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Sling"], 
+                 "equipmentRemoved": ["Bow"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Javelins",
+              "disables": "Sling",
+                 "enabledEvery": 2,
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": ["Bow"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -3,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            }
+            
+        
+          ]
+        },
+"lir_imperial_field_army": {
+     "armyName": "Late Imperial Roman (Imperial Field Army) 350 AD - 493 AD",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {       
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Foederati",
+          "name": "Foederati",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+        {
+          "id": "Allies",
+          "name": "Allies & Mercenaries",
+          "description": "May take allies from the Gothic and Vandal Kingdoms list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20,
+          "alliedArmyKeys": [
+          "gavk_vandal_armies", "gavk_visigoth", "gavk_vandal_armies_no_allies", "gavk_ostrogoth", "gavk_Lombard"
+          ],
+          "maxAlliedArmiesAllowed": 5
+        }
+           ],
+      "units": [
+        {
+          "id": "magister",
+          "name": "Magister",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+           {
+          "id": "emperor",
+          "name": "Emperor",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+1",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+        {
+          "id": "warlord",
+          "name": "Warlord",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+        {
+          "id": "legate",
+          "name": "Legate",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+1",
+          "cohesion": "+2",
+          "pointsPerBase": 15,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+          {
+          "id": "legate_extra_attack",
+          "name": "Legate",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+           {
+          "id": "foederati ",
+          "name": "Foederati ",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+3",
+          "cohesion": "+2",
+          "pointsPerBase": 25,
+          "minBases": 0,
+          "maxBases": 1,
+          "maxCountAllowed": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "catafractii_clibanarii",
+          "name": "Catafractii/Clibanarii",
+          "description": "Catafractii and Clibanarii have cataphract armour. May be Massed Cavalry (+1) May have kontos (+2) and bow (+1). Their horses may have full metal barding (+1). You may have one Catafractii Clibanarii unit for every two Eq units fielde in your army.uites",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+           "requires": { "unitId": "equites", "count": 2, "name": "Equites",  "perUnit": true},
+          "baseEquipment": ["Cataphract Armour"],
+          "specialRules": [
+            "Open Order"
+          ], 
+          "optionalEquipment": [
+            {
+                  "name": "Massed Cavalry",
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Massed Cavalry"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Upgrade to Clibanarii",
+                  "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Superior Fighters"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Kontos",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Kontos"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },  
+            {
+                  "name": "Full Metal Barding",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Full Metal Barding"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Close Order"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },  
+            {
+                  "name": "Bow",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "equites",
+          "name": "Equites",
+          "description": "Equites have a spear, light  armour and shield. Light armour may be exchanged for heavy armour (+1). May have javelins (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Spear", "Shield", "Light Armour"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Heavy Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Heavy Armour"], 
+                 "equipmentRemoved": ["Light Armour"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Javelins",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+         {
+          "id": "illyricani_sagittarii",
+          "name": "Illyricani Sagittarii",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri.. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+            "Open Order", "Evade", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Spear",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Bow",
+                  "enableHidden": ["Light Armour", "Skirmishers"],
+                 "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+             {
+                  "name": "Light Armour",
+               "hiddenUntilEnabled": "hidden",  
+                  "disables": ["Skirmishers"],
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+              "hiddenUntilEnabled": "hidden", 
+              "disables": ["Light Armour"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+               {
+          "id": "legionaries",
+          "name": "Legionaries",
+          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Legionary units may use Combined Formation with a quarter or half of the units figures exchnaging throwing spear, large shield and darts for bow and shield (-4) and forming the rear of thh unit. They may not take any other quipment. Veteran (+2)",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+          "specialRules": ["Close Order", "Shieldwall"],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Veteran",
+                  "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Veteran"],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Heavy Throwing Spear",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Heavy Throwing Spear"], 
+                 "equipmentRemoved": ["Throwing Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+
+          ]
+            },
+        {
+          "id": "limitanei",
+          "name": "Limitanei",
+          "description": "Legionaries have a spear and large shield.  Inferior Fighters. Shieldwall. The may have darts (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield", "Shieldwall"],
+          "specialRules": ["Close Order", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Darts",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Darts"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+{
+          "id": "auxillia",
+          "name": "Auxillia",
+          "description": "Auxillia have a throwing spear, large shield and darts. Open Order. Auxillia units may use Combined Formation with  a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4 for each archer only bases) and forming the rear of the unit. Auxillia may be fielded as skirmishers at a points reduction of 33%.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -5,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+        {
+          "id": "archers",
+          "name": "Archers",
+          "description": "Archers have bows and shields. Inferior Fighters. Open Order. Every second unit may exchange their bows for sling or javelins (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Open Order", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Sling",
+              "disables": "Javelins",
+                 "enabledEvery": 2,
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Sling"], 
+                 "equipmentRemoved": ["Bow"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Javelins",
+              "disables": "Sling",
+                 "enabledEvery": 2,
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": ["Bow"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -3,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+        {
+          "id": "heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have a spear and shield. Superior Fighters. May have light armour (+1) and javelins (+1).",
+          "category": "Foederati",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Spear", "Shield"],
+          "specialRules": [
+            "Open Order", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Javelins",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Bucellarii",
+                "maxEquipmentCount": 1,
+                 "pointsModifier": 4,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Stubborn"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 1
+                },
+             {
+            "name": "Steppe Nobles",
+             "maxCountAllowed": 1,
+               
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+
+            
+          ]
+            },
+        {
+          "id": "light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have bows. Nomad Cavalry. They may have shield (+1) and spear (+1). The may be fielded as skirmishers. For every two light cavalry units present one foederat Heavy Cavalry unit may be upgraded to Seppe Nobles (+2). Steppe Nobles Have bows.",
+          "category": "Foederati",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Javelins",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "federate_infantry",
+          "name": "Federate Infantry",
+          "description": "Foederati Infantry have a throwing spear and shield. Warband. They may have heavy throwing spear (+2) or javelins(+2).",
+          "category": "Foederati",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Close Order", "Warband"],
+          "optionalEquipment": [
+            {
+                  "name": "Heavy Throwing Spear",
+                  "disables": "Javelins",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Heavy Throwing Spear"], 
+                 "equipmentRemoved": ["Throwing Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Javelins",
+              "disables": "Heavy Throwing Spear",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },  
+          ]
+        },
+"lir_romanised_warlord": {
+      "armyName": "Late Imperial Roman (Romanised Warlord) 350 AD - 493 AD",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {       
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Foederati",
+          "name": "Foederati",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+        ],
+      "units": [
+                {
+          "id": "warlord",
+          "name": "Warlord",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+        {
+          "id": "legate",
+          "name": "Legate",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+1",
+          "cohesion": "+2",
+          "pointsPerBase": 15,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+          {
+          "id": "legate_extra_attack",
+          "name": "Legate",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+           {
+          "id": "foederati ",
+          "name": "Foederati ",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+3",
+          "cohesion": "+2",
+          "pointsPerBase": 25,
+          "minBases": 0,
+          "maxBases": 1,
+          "maxCountAllowed": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "catafractii_clibanarii",
+          "name": "Catafractii/Clibanarii",
+          "description": "Catafractii and Clibanarii have cataphract armour. May be Massed Cavalry (+1) May have kontos (+2) and bow (+1). Their horses may have full metal barding (+1). You may have one Catafractii Clibanarii unit for every two Eq units fielde in your army.uites",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+           "requires": { "unitId": "equites", "count": 2, "name": "Equites",  "perUnit": true},
+          "baseEquipment": ["Cataphract Armour"],
+          "specialRules": [
+            "Open Order"
+          ], 
+          "optionalEquipment": [
+            {
+                  "name": "Massed Cavalry",
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Massed Cavalry"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Superior Fighters",
+                  "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Superior Fighters"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Kontos",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Kontos"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },  
+            {
+                  "name": "Full Metal Barding",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Full Metal Barding"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Close Order"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },  
+            {
+                  "name": "Bow",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "equites",
+          "name": "Equites",
+          "description": "Equites have a spear, light  armour and shield. Light armour may be exchanged for heavy armour (+1). May have javelins (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Spear", "Shield", "Light Armour"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Heavy Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Heavy Armour"], 
+                 "equipmentRemoved": ["Light Armour"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Javelins",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+         {
+          "id": "illyricani_sagittarii",
+          "name": "Illyricani Sagittarii",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri.. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+            "Open Order", "Evade", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Spear",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Bow",
+                  "enableHidden": ["Light Armour", "Skirmishers"],
+                 "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+             {
+                  "name": "Light Armour",
+               "hiddenUntilEnabled": "hidden",  
+                  "disables": ["Skirmishers"],
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+              "hiddenUntilEnabled": "hidden", 
+              "disables": ["Light Armour"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+               {
+          "id": "legionaries",
+          "name": "Legionaries",
+          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Legionary units may use Combined Formation with a quarter or half of the units figures exchnaging throwing spear, large shield and darts for bow and shield (-4) and forming the rear of thh unit. They may not take any other quipment. Veteran (+2)",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+          "specialRules": ["Close Order", "Shieldwall"],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Veteran",
+                  "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Veteran"],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Heavy Throwing Spear",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Heavy Throwing Spear"], 
+                 "equipmentRemoved": ["Throwing Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+
+          ]
+            },
+        {
+          "id": "limitanei",
+          "name": "Limitanei",
+          "description": "Legionaries have a spear and large shield.  Inferior Fighters. Shieldwall. The may have darts (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield", "Shieldwall"],
+          "specialRules": ["Close Order", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Darts",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Darts"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+{
+          "id": "auxillia",
+          "name": "Auxillia",
+          "description": "Auxillia have a throwing spear, large shield and darts. Open Order. Auxillia units may use Combined Formation with  a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4 for each archer only bases) and forming the rear of the unit. Auxillia may be fielded as skirmishers at a points reduction of 33%.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -5,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+        {
+          "id": "archers",
+          "name": "Archers",
+          "description": "Archers have bows and shields. Inferior Fighters. Open Order. Every second unit may exchange their bows for sling or javelins (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Open Order", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Sling",
+              "disables": "Javelins",
+                 "enabledEvery": 2,
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Sling"], 
+                 "equipmentRemoved": ["Bow"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Javelins",
+              "disables": "Sling",
+                 "enabledEvery": 2,
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": ["Bow"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -3,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+        {
+          "id": "heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have a spear and shield. Superior Fighters. May have light armour (+1) and javelins (+1).",
+          "category": "Foederati",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Spear", "Shield"],
+          "specialRules": [
+            "Open Order", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Javelins",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Bucellarii",
+                "maxEquipmentCount": 1,
+                 "pointsModifier": 4,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Stubborn"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 1
+                },
+             {
+                  "name": "Steppe Nobles",
+             "maxCountAllowed": 1,
+               "enabledWhenUnitsPresent": { "unitId": "light_cavalry", "count": 2, "perUnit": true },
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+
+            
+          ]
+            },
+        {
+          "id": "light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have bows. Nomad Cavalry. They may have shield (+1) and spear (+1). The may be fielded as skirmishers. For every two light cavalry units present one foederat Heavy Cavalry unit may be upgraded to Seppe Nobles (+2). Steppe Nobles Have bows.",
+          "category": "Foederati",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Javelins",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "federate_infantry",
+          "name": "Federate Infantry",
+          "description": "Foederati Infantry have a throwing spear and shield. Warband. They may have heavy throwing spear (+2) or javelins(+2).",
+          "category": "Foederati",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Close Order", "Warband"],
+          "optionalEquipment": [
+            {
+                  "name": "Heavy Throwing Spear",
+              "disables": "Javelins",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Heavy Throwing Spear"], 
+                 "equipmentRemoved": ["Throwing Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Javelins",
+              "disables": "Heavy Throwing Spear",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+ }
+            
+          ]
+            },  
+          ]
+        },
+"lir_romano_british": {
+      "armyName": "Late Imperial Roman (Romano British) 350 AD - 493 AD",
+   "id": "legionaries", "requires": { "unitId": "limitanei", "count": 1, "name": "Limitanei" },
+"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {       
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 33,
+          "max": 100
+        },
+        {
+          "id": "Foederati",
+          "name": "Foederati",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+        ],
+      "units": [
+                {
+          "id": "warlord",
+          "name": "Warlord",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+        {
+          "id": "legate",
+          "name": "Legate",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+1",
+          "cohesion": "+2",
+          "pointsPerBase": 15,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+          {
+          "id": "legate_extra_attack",
+          "name": "Legate",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+           {
+          "id": "foederati ",
+          "name": "Foederati ",
+          "description": "May ride a horse,",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+3",
+          "cohesion": "+2",
+          "pointsPerBase": 25,
+          "minBases": 0,
+          "maxBases": 1,
+          "maxCountAllowed": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "catafractii_clibanarii",
+          "name": "Catafractii/Clibanarii",
+          "description": "Catafractii and Clibanarii have cataphract armour. May be Massed Cavalry (+1) May have kontos (+2) and bow (+1). Their horses may have full metal barding (+1). You may have one Catafractii Clibanarii unit for every two Eq units fielde in your army.uites",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+           "requires": { "unitId": "equites", "count": 2, "name": "Equites",  "perUnit": true},
+          "baseEquipment": ["Cataphract Armour"],
+          "specialRules": [
+            "Open Order"
+          ], 
+          "optionalEquipment": [
+            {
+                  "name": "Massed Cavalry",
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Massed Cavalry"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Superior Fighters",
+                  "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Superior Fighters"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Kontos",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Kontos"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },  
+            {
+                  "name": "Full Metal Barding",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Full Metal Barding"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Close Order"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },  
+            {
+                  "name": "Bow",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "equites",
+          "name": "Equites",
+          "description": "Equites have a spear, light  armour and shield. Light armour may be exchanged for heavy armour (+1). May have javelins (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Spear", "Shield", "Light Armour"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Heavy Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Heavy Armour"], 
+                 "equipmentRemoved": ["Light Armour"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Javelins",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+         {
+          "id": "illyricani_sagittarii",
+          "name": "Illyricani Sagittarii",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri.. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+            "Open Order", "Evade", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Spear",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Bow",
+                  "enableHidden": ["Light Armour", "Skirmishers"],
+                 "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+             {
+                  "name": "Light Armour",
+               "hiddenUntilEnabled": "hidden",  
+                  "disables": ["Skirmishers"],
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+              "hiddenUntilEnabled": "hidden", 
+              "disables": ["Light Armour"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+               {
+          "id": "legionaries",
+          "name": "Legionaries",
+          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Legionary units may use Combined Formation with a quarter or half of the units figures exchnaging throwing spear, large shield and darts for bow and shield (-4) and forming the rear of thh unit. They may not take any other quipment. Veteran (+2)",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "requires": { "unitId": "limitanei", "count": 1, "name": "Limitanei",  "perUnit": true},
+          "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+          "specialRules": ["Close Order", "Shieldwall"],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Veteran",
+                  "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Veteran"],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                 {
+                  "name": "Heavy Throwing Spear",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Heavy Throwing Spear"], 
+                 "equipmentRemoved": ["Throwing Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+
+          ]
+            },
+        {
+          "id": "limitanei",
+          "name": "Limitanei",
+          "description": "Legionaries have a spear and large shield.  Inferior Fighters. Shieldwall. The may have darts (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield", "Shieldwall"],
+          "specialRules": ["Close Order", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Darts",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Darts"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+{
+          "id": "auxillia",
+          "name": "Auxillia",
+          "description": "Auxillia have a throwing spear, large shield and darts. Open Order. Auxillia units may use Combined Formation with  a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4 for each archer only bases) and forming the rear of the unit. Auxillia may be fielded as skirmishers at a points reduction of 33%.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -5,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+        {
+          "id": "archers",
+          "name": "Archers",
+          "description": "Archers have bows and shields. Inferior Fighters. Open Order. Every second unit may exchange their bows for sling or javelins (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Open Order", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Sling",
+              "disables": "Javelins",
+                 "enabledEvery": 2,
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Sling"], 
+                 "equipmentRemoved": ["Bow"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Javelins",
+              "disables": "Sling",
+                 "enabledEvery": 2,
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": ["Bow"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -3,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+        
+        {
+          "id": "federate_infantry",
+          "name": "Federate Infantry",
+          "description": "Foederati Infantry have a throwing spear and shield. Warband. They may have heavy throwing spear (+2) or javelins(+2).",
+          "category": "Foederati",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Close Order", "Warband"],
+          "optionalEquipment": [
+            {
+                  "name": "Heavy Throwing Spear",
+              "disables": "Javelins",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Heavy Throwing Spear"], 
+                 "equipmentRemoved": ["Throwing Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Javelins",
+              "disables": "Heavy Throwing Spear",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Open Order",
+                  "pointsModifier": -3,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Open Order"],
+                  "rulesRemoved": ["Close Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },
+            
+        
+          ]
+        },
 "early_slav": {
       "armyName": "Early Slav - (520 AD - 1000 AD)",
       "categories": [
