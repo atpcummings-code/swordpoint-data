@@ -4745,8 +4745,8 @@
             }
           ]
         },
-	  "lir_borders_garrison": {
-      "armyName": "Late Imperial Roman (Borders Garrison) - 350 AD - 493 AD",
+	  "lir_border_garrison": {
+      "armyName": "Late Imperial Roman (Border Garrison) - 350 AD - 493 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -5650,7 +5650,7 @@
              {
             "name": "Steppe Nobles",
              "maxCountAllowed": 1,
-               
+                     "enabledWhenUnitsPresent": { "unitId": "light_cavalry", "count": 2, "perUnit": true },
                  "pointsModifier": 1,
                  "equipmentAdded": ["Bow"], 
                  "equipmentRemoved": [],
