@@ -245,23 +245,35 @@
           ]
         },
 
-        {
-          "id": "levies",
-          "name": "Levies",
-          "description": "Levies have spear and shield. Inferior Fighters. Open Order. Levies.",
-          "category": "Infantry",
+        {{
+          "id": "Wagons",
+          "name": "Wagons",
+          "description": "Wagons form a Wagon Tabor. There is one base of defenders per wagon in the Tabor.  Defenders have javelins amd shield. Inferior Fighters. May exchange javelins for bows (free). Every second defender base may exchange javelins and shield for crossbow (+2). They form one single unit.",
+          "category": "SpecialUnits",
           "type": "other",
-          "defence": 6,
-          "cohesion": 4,
-          "pointsPerBase": 3,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Spear", "Shield"],
-          "specialRules": ["Open Order", "Inferior Fighters", "Levies"],
-          "optionalEquipment": [],
-               },  
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 28,
+          "minBases": 0,
+          "maxBases": 5,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Wagon Tabor", "Inferior Fighters"],
+          "optionalEquipment": [
+                 {
+                  "name": "Bow",
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
           ]
-        },  
+            },  
+          ]
+        },
 "lir_imperial_field_army": {
      "armyName": "Late Imperial Roman (Imperial Field Army) 350 AD - 493 AD",
       "categories": [
