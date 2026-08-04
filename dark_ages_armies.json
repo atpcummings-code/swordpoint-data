@@ -9838,6 +9838,373 @@
       ]
     },
 
+"khmer_empire": {
+      "armyName": "Khmer Empire - 802 AD - 1431 AD",
+       "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {       
+          "id": "Cavalry",
+          "name": "Cavalry & Chariots",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+         {       
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 60,
+          "max": 100
+        },
+           { 
+         "id": "Elephants", 
+         "name": "Elephants", 
+         "constraintType": "pointsRatio", 
+         "pointsThreshold": 250, 
+         "countPerThreshold": 1, 
+         "rounding": "down"
+       } 
+           ],
+      "units": [
+        {
+          "id": "general",
+          "name": "General",
+          "description": "May ride on a horse or Elephant.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+        {
+          "id": "commander",
+          "name": "Commander",
+          "description": "May ride on a horse or Elephant.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have ligt armour spear and shield. May be Used to Elepants (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Spear", "Shield"],
+          "specialRules": [
+            "open Order"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Used to Elephants",
+                 "pointsModifier": 1,
+                 "equipmentAdded": [ ], 
+                 "equipmentRemoved": [ ],
+                  "rulesAdded": ["Used to Elephants"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "light_horse",
+          "name": "Light Horse",
+          "description": "Light Horse have javelins and shield. Skirmishers. May be Used to Elepants (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+             "Skirmishers"
+          ],
+          "optionalEquipment": [
+            { 
+                  "name": "Used to Elephants",
+                 "pointsModifier": 1,
+                 "equipmentAdded": [ ], 
+                 "equipmentRemoved": [ ],
+                  "rulesAdded": ["Used to Elephants"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "chariots",
+          "name": "Chariots",
+          "description": "Chariots have a driver and one crewman with javelins or bow. Superior Fighters. Superior Shooters. Light chariots.May be Used to Elepants (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 27,
+          "minBases": 3,
+          "maxBases": 8,
+          "maxCountAllowed": 1,
+          "baseEquipment": [],
+          "specialRules": [
+             "Light Chariots", "Superior Fighters", "Superior Shooters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Used to Elephants",
+                 "pointsModifier": 1,
+                 "equipmentAdded": [ ], 
+                 "equipmentRemoved": [ ],
+                  "rulesAdded": ["Used to Elephants"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Javelins",
+                  "disables": "Bow",
+                 "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [ ],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Bow",
+                  "disables": "Javelins",
+                 "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [ ],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+{
+          "id": "spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have spear and large shield. Open Order. May have light armour (+2). Up to two units may upgrade to C7 (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+    {
+                  "name": "Light Armour",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Upgrade Cohesion",
+                "maxEquipmentCount": 2,
+                 "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 1
+                }
+            
+          ]
+            },
+           {
+          "id": "archers",
+          "name": "Archers",
+          "description": "Archer shave a bow and shield. Open Order.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "crossbowmen",
+          "name": "Crossbowmen",
+          "description": "Crossbowmen have a crossbow. Open Order",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "maxCountAllowed": 1,
+          "baseEquipment": ["Crossbow"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []        
+            },
+        {
+          "id": "conscript_spearmen",
+          "name": "Conscript Spearmen",
+          "description": "Conscript Spearmen have spear and shield. Open Order. Inferior Fighters.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": [
+             "Open Order", "Inferior Fighters"
+          ],
+          "optionalEquipment": []
+            },
+        {
+          "id": "subject_spearmen",
+          "name": "Subject Spearmen",
+          "description": "Subject Spearmen have spear and shield. Open Order. Inferior Fighters. Levies.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 4,
+          "pointsPerBase": 4,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": [
+             "Open Order", "Inferior Fighters", "Levies"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "subject_archers",
+          "name": "Subject Archers",
+          "description": "Subject Archer shave a bow. Inferior Fighters. Levies. may be fiedled as skirmishers at a cost of two points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 4,
+          "pointsPerBase": 4,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Close Order", "Inferior Fighters", "Levies"],
+          "optionalEquipment": [
+            {
+                  "name": "Skirmishers",
+                 "pointsModifier": -2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Close Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+        },
+        {
+          "id": "skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins or bow. Skirmishers. Inferior Fighters.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Javelins",
+                  "disables": "Bow",
+                 "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Bow",
+                  "disables": "Javelins",
+                 "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+        },
+        {
+          "id": "elephant",
+          "name": "Elephant",
+          "description": "The elephant has a driver and one crewman with javelins. There must be at least one elephant in the army.",
+          "category": "Elephants",
+          "minCountAllowed": 1,
+          "type": "other",
+          "defence": 3,
+          "cohesion": 4,
+          "pointsPerBase": 55,
+          "minBases": 1,
+          "maxBases": 1,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Terror"],
+          "optionalEquipment": [
+            {
+                  "name": "Howdah",
+                 "pointsModifier": 4,
+                 "equipmentAdded": ["Howdah"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },  
+          ]
+        },
+	  
 	   "later_irish": {
           "armyName": "Later Irish - (830 AD - 1500 AD)",
           "categories": [
