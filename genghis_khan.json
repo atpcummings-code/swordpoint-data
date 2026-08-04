@@ -168,7 +168,7 @@
           "optionalEquipment": [
             {
                   "name": "Light Crossbow",
-                 "pointsModifier": 1,
+                 "pointsModifier": 0,
                  "equipmentAdded": ["Light Crossbow"], 
                  "equipmentRemoved": ["Bow"],
                   "rulesAdded": [],
