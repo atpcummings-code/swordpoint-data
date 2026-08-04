@@ -290,7 +290,7 @@
           "id": "elephant",
           "name": "Elephant",
           "description": "The elephant has a driver and one crewman with javelins. There must be at least one elephant in the army.",
-          "category": "Elephant",
+          "category": "Elephants",
           "type": "other",
           "defence": 3,
           "cohesion": 4,
