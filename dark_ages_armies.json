@@ -8497,7 +8497,7 @@
         {
           "id": "Allies",
           "name": "Allies",
-          "description": "The army may draw allies from teh Rus and Christian Crusader lists.",
+          "description": "The army may draw allies from the Rus and Christian Crusader lists.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
