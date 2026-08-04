@@ -130,7 +130,7 @@
                  "equipmentAdded": ["Spear"], 
                  "equipmentRemoved": [],
                   "rulesAdded": [],
-                  "rulesRemoved": ["],
+                  "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 }
@@ -245,7 +245,7 @@
           ]
         },
 
-        {{
+        {
           "id": "Wagons",
           "name": "Wagons",
           "description": "Wagons form a Wagon Tabor. There is one base of defenders per wagon in the Tabor.  Defenders have javelins amd shield. Inferior Fighters. May exchange javelins for bows (free). Every second defender base may exchange javelins and shield for crossbow (+2). They form one single unit.",
