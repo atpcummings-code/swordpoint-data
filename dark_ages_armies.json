@@ -9284,7 +9284,218 @@
         }
         
 ]
-            },	  
+            },
+
+"ethiopian": {
+      "armyName": "Ethiopian - 650 AD - 1520 AD",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {       
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 15,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 75
+        } 
+           ],
+      "units": [
+        {
+          "id": "king",
+          "name": "King",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+        {
+          "id": "chieftain",
+          "name": "Chieftain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "noble_cavalry",
+          "name": "Noble Cavalry",
+          "description": "Noble Cavalry have light armour, spear and shield. Superior Fighters. One unit may have barding (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "maxCountAllowed": 2,
+           "baseEquipment": ["Light Armour", "Spear", "Shield"],
+          "specialRules": [
+            "Open Order", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Barding",
+                   "pointsModifier": 1,
+              "maxEquipmentCount": 1,
+                 "equipmentAdded": ["Barding"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have javelins and shield. May have light armour (+1) and spear (+1). May become C7 (+1. Cavalry without any upgrades may be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Spear",
+              "disables": "Skirmishers",
+                    "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Light Armour",
+              "disables": "Skirmishers",
+                   "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Upgrade Cohesion C7",
+              "disables": "Skirmishers",
+                   "pointsModifier": 1,
+              "maxEquipmentCount": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 1
+                },
+            {
+                  "name": "Skirmishers",
+              "disables": ["Spear", "Light Armour", "Upgrade Cohesion C7"],
+                   "pointsModifier": 0,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+         {
+          "id": "tribesmen",
+          "name": "Tribesmen",
+           "minCountAllowed": 1,
+          "description": "Tribesmen have throwing spear and shield. Open Order. Warband.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Open Order", "Warband"],
+          "optionalEquipment": []
+            },
+        {
+          "id": "archers",
+          "name": "Archers",
+          "minCountAllowed": 1,
+          "description": "Archers have a bow. Open Order.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+            },
+  {
+          "id": "skirmishers",
+          "name": "Sirmishers",
+    "minCountAllowed": 1,
+          "description": "Skirmishers have a bow. Skirmishers. May exchange bow for javelins and shield (+1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": [
+            {
+                  "name": "Javelins & Shield",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Javelins", "Shield"], 
+                 "equipmentRemoved": ["Bow"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },  
+          ]
+        },
+	  
         "vikings": {
           "armyName": "Vikings - (750 AD - 1100 AD)",
           "categories": [
