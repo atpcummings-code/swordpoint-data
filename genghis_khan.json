@@ -121,7 +121,7 @@
         {
           "id": "chariots",
           "name": "Chariots",
-          "description": "Chariots have a driver and one crewman with javelins or bow. Superior Fighters. Superior Shooters. Light chariots.May be "Used to Elepants" (+1). ",
+          "description": "Chariots have a driver and one crewman with javelins or bow. Superior Fighters. Superior Shooters. Light chariots.May be Used to Elepants (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
