@@ -65,7 +65,7 @@
         {
           "id": "cavalry",
           "name": "Cavalry",
-          "description": "Cavalry have ligt armour spear and shield. May be "Used to Elepants" (+1).",
+          "description": "Cavalry have ligt armour spear and shield. May be Used to Elepants (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
