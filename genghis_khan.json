@@ -1,7 +1,7 @@
 {
   "armies": {
-     "georgian": {
-      "armyName": "Georgian - 975 AD - 1238 AD",
+     "early_medieval_hungarian": {
+      "armyName": "Early Medieval Hungarian - 1000 AD - 1301 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -11,17 +11,24 @@
           "max": 6
         },
        {       
-          "id": "Cavalry",
-          "name": "Cavalry",
+          "id": "HeavyCavalry",
+          "name": "Heavy Cavalry",
           "constraintType": "percentage",
-          "min": 25,
-          "max": 75
+          "min": 0,
+          "max": 33
+        },
+           {       
+          "id": "LightCavalry",
+          "name": "Light Cavalry",
+          "constraintType": "percentage",
+          "min": 33,
+          "max": 100
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 10,
+          "min": 0,
           "max": 25
         },
         {
