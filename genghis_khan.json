@@ -34,12 +34,12 @@
               {
           "id": "Allies",
           "name": "Allies",
-          "description": "The army may take allies from the Cuman and Kipchak list or from the Tobetan list if the army does not include lancers.",
+          "description": "The army may take allies from the Lombard (Gothic and Vandal Kingdoms) list or the Later Slave list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
           "alliedArmyKeys": [
-          "pecheneg"
+          "gavk_Lombard", "later_slave"
           ],
           "maxAlliedArmiesAllowed": 1
         }
@@ -48,7 +48,7 @@
         {
           "id": "general",
           "name": "General",
-          "description": "May ride a horse.",
+          "description": "Rides a horse.",
           "category": "Commanders",
           "type": "General",
           "attacks": "+3",
@@ -62,7 +62,7 @@
         {
           "id": "commander",
           "name": "Commander",
-          "description": "May ride a horse.",
+          "description": "Rides a horse.",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
@@ -74,61 +74,40 @@
           "optionalEquipment": []
         },
         {
-          "id": "lancers",
-          "name": "Lancers",
-          "description": "lancers have heavy armour and spear. Superior Fighters. May have cataphract armour (+1) and barding (+1).",
+          "id": "imperial_household",
+          "name": "Imperial Household",
+          "description": "Imperial Household have heavy armour, spear and shield. Superior Fighters. Drilled. Shock Cavalry.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 30,
+          "minBases": 3,
+          "maxBases": 8,
+          "maxCountAllowed": 1,
+          "baseEquipment": ["Heavy Armour", "Spear", "Shield"],
+          "specialRules": [
+            "Open Order", "Superior Fighters", "Drilled", "Shock Cavalry"
+          ],
+          "optionalEquipment": []
+            },
+        {
+          "id": "heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have light armour, spear and shield. Superior Fighters. Shock Cavalry. They may have heavy armour (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
           "cohesion": 8,
-          "pointsPerBase": 23,
+          "pointsPerBase": 26,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": ["Heavy Armour", "Spear"],
+          "baseEquipment": ["Light Armour", "Spear", "Shield"],
           "specialRules": [
-            "Open Order", "Superior Fighters"
+            "Open Order", "Superior Fighters", "Shock Cavalry"
           ],
           "optionalEquipment": [
-               {
-                  "name": "Cataphract Armour",
-                 "pointsModifier": 1,
-                 "equipmentAdded": ["Cataphract Armour"], 
-                 "equipmentRemoved": ["Heavy Armour"],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                },
             {
-                  "name": "Barding",
-                 "pointsModifier": 1,
-                 "equipmentAdded": ["Barding"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Close Order"],
-                  "rulesRemoved": ["Open Order"],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                }
-            
-          ]
-            },
-        {
-          "id": "cavalry",
-          "name": "Cavalry",
-          "description": "Cavalry have light armour and bow. May have heavy armour (+1) and spear (+1).",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 17,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": ["Light Armour", "Bow"],
-          "specialRules": [
-            "Open Order"
-          ],
-          "optionalEquipment": [
-          {
                   "name": "Heavy Armour",
                  "pointsModifier": 1,
                  "equipmentAdded": ["Heavy Armour"], 
@@ -137,64 +116,152 @@
                   "rulesRemoved": [],
                   "defenceModifier": -1,
                   "cohesionModifier": 0
-                },
-            {
-                  "name": "Spear",
-                 "pointsModifier": 1,
-                 "equipmentAdded": ["Spear"], 
-                 "equipmentRemoved": [],
+                }
+          ]
+            }
+        {
+          "id": "dismounted_cavalry",
+          "name": "Dismounted Cavalry",
+          "description": "Dismounted Cavalry light armour, spear and shield. Superior Fighters. They may have heavy armour (+2). Units of dismouned cavalry may use combined formation where up to 50% of figures exchange spear and shield for bow (free) and form the rear ranks.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour", "Spear", "Shield"],
+          "specialRules": [
+            "Close Order", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+          {
+                  "name": "Heavy Armour",
+                 "pointsModifier": 2,
+                 "equipmentAdded": ["Heavy Armour"], 
+                 "equipmentRemoved": ["Light Armour"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
-                  "defenceModifier": 0,
+                  "defenceModifier": -1,
                   "cohesionModifier": 0
                 }
          ]
             },
         {
-          "id": "horse_archers",
-          "name": "Horse Archers",
-          "description": "Horse Archers have a bow. May exchange bow for light crossbow (free). May be fielded as Skirmishers.",
+          "id": "light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins, spear and shield. Inferior Fighters. May exchange javelins, spear and shield for bow (-2).",
           "category": "Cavalry",
           "type": "other",
-          "defence": 6,
-          "cohesion": 7,
+          "defence": 5,
+          "cohesion": 6,
           "pointsPerBase": 16,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": ["Bow"],
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins", "Spear", "Shield"],
           "specialRules": [
-             "Skirmishers"
+             "Open Order", "Inferior Fighters"
           ],
           "optionalEquipment": [
             {
-                  "name": "Light Crossbow",
-                 "pointsModifier": 0,
-                 "equipmentAdded": ["Light Crossbow"], 
-                 "equipmentRemoved": ["Bow"],
+                  "name": "Bow",
+                 "pointsModifier": -2,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins", "Spear", "Shield"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
-                  "defenceModifier": 0,
+                  "defenceModifier": 1,
                   "cohesionModifier": 0
                 }
           ]
             },
 {
-          "id": "regular_spearmen",
-          "name": "Regular Spearmen",
-          "description": "Regular Spearmen have a spear and shield. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
+          "id": "spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have a spear and shield. Shieldwall/.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
-          "cohesion": 7,
+          "cohesion": 6,
           "pointsPerBase": 14,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Spear", "Shield"],
-          "specialRules": ["Close Order"],
+          "specialRules": ["Close Order", "Shieldwall"],
+          "optionalEquipment": []
+            },
+           {
+          "id": "archers",
+          "name": "Archers",
+          "description": "Archer shave a bow. Open Order. M<ay be fielded as skirmishers at a cost of seven points per base. The numbe rof bases equiped with bows may not outnumber the number of bases equipped with spears.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["open Order"],
+          "optionalEquipment": [
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+        },
+        {
+          "id": "gascon_or_basque_javelinmen",
+          "name": "Gascon or Basque Javelinmen",
+          "description": "Gascon or Basque Javelinmen have javelins. Inferior Fighters. Superior Shooters. Skirmishers. They may have shields (+1).",
+          "category": "Vassals",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Skirmishers", "Inferior Fighters", "Superior Shooters"],
+          "optionalEquipment": [
+            {
+                  "name": "Shield",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Shield"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+            
+          ]        
+            },
+        {
+          "id": "breton_cavalry",
+          "name": "Breton Cavalry",
+          "description": "Breton Cavalry have javelins, spear and shield. Superior Fighters. Evade. They may have light armour (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins", "Spear", "Shield"],
+          "specialRules": [
+             "Open Order", "Superior Fighters", "Evade"
+          ],
           "optionalEquipment": [
             {
                   "name": "Light Armour",
-                  "pointsModifier": 2,
+                 "pointsModifier": 1,
                  "equipmentAdded": ["Light Armour"], 
                  "equipmentRemoved": [],
                   "rulesAdded": [],
@@ -204,48 +271,44 @@
                 }
           ]
             },
-           {
-          "id": "levy_spearmen",
-          "name": "Levy Spearmen",
-          "description": "Levy Spearmen have a spear and shield. Levies. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 10,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Spear", "Shield"],
-          "specialRules": ["Close Order"],
-          "optionalEquipment": []
-        },
         {
-    "id": "skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have a bow. Inferior Fighters. Skirmishers. May exchange bow for crossbow (+2).",
-          "category": "Infantry",
+          "id": "vassal_light_cavalry",
+          "name": "Vassal Light Cavalry",
+          "description": "Vassal Light Cavalry have javelins and shield. Inferior Fighters. Evade. They may have spear (+1). May be fielded as skirmishers at a cost of 15 points per base.",
+          "category": "Cavalry",
           "type": "other",
-          "defence": 7,
-          "cohesion": 5,
-          "pointsPerBase": 6,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": ["Bow"],
-          "specialRules": ["Skirmishers"],
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+             "Open Order", "Inferior Fighters", "Evade"
+          ],
           "optionalEquipment": [
             {
-                  "name": "Crossbow",
-                  "pointsModifier": 2,
-                 "equipmentAdded": ["Crossbow"], 
-                 "equipmentRemoved": ["Bow"],
+                  "name": "Spear",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                 "pointsModifier": 0,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
                 }
-            
           ]
-            },  
+            }
           ]
         },
 "lir_imperial_field_army": {
