@@ -198,7 +198,7 @@
                   "name": "Javelins & Shield",
                   "pointsModifier": 1,
                  "equipmentAdded": ["Javelins", "Shield"], 
-                 "equipmentRemoved": ["bow"],
+                 "equipmentRemoved": ["Bow"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
