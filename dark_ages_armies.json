@@ -8716,6 +8716,367 @@
             },
           ]
             },  
+
+"early_medieval_hungarian": {
+      "armyName": "Early Medieval Hungarian - 1000 AD - 1301 AD",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {       
+          "id": "HeavyCavalry",
+          "name": "Heavy Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+           {       
+          "id": "LightCavalry",
+          "name": "Light Cavalry",
+          "constraintType": "percentage",
+          "min": 33,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "The army may have Early Polish Allies",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+          "early_polish"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
+           ],
+      "units": [
+        {
+          "id": "general",
+          "name": "General",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+        {
+          "id": "captain",
+          "name": "Captain",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "knights_and_nobles",
+          "name": "Knights and Nobles",
+          "description": "Knight and Noble shave heavy armour, spear and shield. Superior Fighters. Shock Cavalry. May have cloth barding (+1) and lance (+1).",
+          "category": "HeavyCavalry",
+          "type": "other",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 27,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Heavy Armour", "Spear", "Shield"],
+          "specialRules": [
+            "Open Order", "Superior Fighters", "Shock Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Cloth Barding",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Cloth Barding"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Close Order"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+                {
+                  "name": "Lance",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Lance"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "german_or_bohemian_mercenary_knights",
+          "name": "German or Bohemian Mercenary Knights",
+          "description": "German or Bohemian Mercenary Knights have light armour, spear and shield.  Massed Cavalry. My have cloth barding (+1) and heavy armour (+1).",
+          "category": "HeavyCavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Light Armour", "Spear", "Shield"],
+          "specialRules": [
+             "Open Order", "Massed Cavalry"
+          ],
+          "optionalEquipment": [
+         {
+                  "name": "Cloth Barding",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Cloth Barding"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Close Order"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+             {
+                  "name": "Heavy Armour",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Heavy Armour"], 
+                 "equipmentRemoved": ["Light Armour"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+         ]
+            },
+        {
+          "id": "horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Archers have a bow. Inferior Fighters. Superior Shooters. Skirmishers. Nomad Cavalry. May have shield (+1).",
+          "category": "LightCavalry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 20,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow"],
+          "specialRules": [
+             "Skirmishers", "Superior Shooters", "Inferior Fighters", "Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Shield",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Shield"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "szekler",
+          "name": "Szeklers",
+          "description": "Szekler have bow and shield. Evade. May have spear (+1) and light armour (+1).",
+          "category": "LightCavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": [
+             "Open Order", "Evade"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Spear",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "szekler_skirmishers",
+          "name": "Szeklers Skirmishers",
+          "description": "Szekler Skirmishers have a bow. Skirmishers. Nomad Cavalry. May have spear (+1) and shield (+1).",
+          "category": "LightCavalry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow"],
+          "specialRules": [
+             "Skirmishers", "Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Shield",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Shield"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Spear",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+       {
+          "id": "archer",
+          "name": "Archer",
+          "description": "Archers have a bow. Inferior Fighters. Open Order. May be fielded as skirmishers at a cost of five points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -3,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "armati",
+          "name": "Armati",
+          "description": "Armati have halberd and light armour. May have heavy armour (+1). May replace halberd with spear and shield (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Halberd", "Light Armour"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": [
+            {
+                  "name": "Spear & Shield",
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Spear", "Shield"], 
+                 "equipmentRemoved": ["Halberd"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+             {
+                  "name": "Heavy Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Heavy Armour"], 
+                 "equipmentRemoved": ["Light Armour"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+          ],
+        },
+        {
+          "id": "crossbowmen",
+          "name": "Crossbowmen",
+          "description": "Crossbowmen have light amrour and crossbow. Open Order. May be fielded as skirmishers at a cost of nine points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "maxCountAllowed": 2,
+          "baseEquipment": ["Crossbow", "Light Armour"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+                  "name": "Skirmishers",
+                  "pointsModifier": -5,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ],
+        },
+        {
+          "id": "levies",
+          "name": "Levies",
+          "description": "Levies have spear and shield. Inferior Fighters. Open Order. Levies.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 4,
+          "pointsPerBase": 3,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Open Order", "Inferior Fighters", "Levies"],
+          "optionalEquipment": [],
+               },  
+          ]
+        },  
+
 	  
         "anglo_danish": {
           "armyName": "Anglo-Danish - (1016 AD - 1066 AD)",
