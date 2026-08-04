@@ -136,17 +136,7 @@
                   "defenceModifier": -1,
                   "cohesionModifier": 0
                 },
-            {
-                  "name": "Veteran",
-                  "pointsModifier": 2,
-                 "equipmentAdded": [], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Veteran"],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-                 {
+                {
                   "name": "Upgrade Cohesion to C7",
                    "maxEquipmentCount": 2,
                   "pointsModifier": 2,
@@ -161,36 +151,24 @@
           ]
             },
         {
-          "id": "limitanei",
-          "name": "Limitanei",
-          "description": "Legionaries have a spear and large shield.  Inferior Fighters. Shieldwall. The may have darts (+2).",
+          "id": "archers",
+          "name": "Archers",
+          "description": "Archers have a bow and shield. Open Order. Ambush.",
           "category": "Infantry",
           "type": "other",
-          "defence": 5,
+          "defence": 6,
           "cohesion": 6,
-          "pointsPerBase": 14,
+          "pointsPerBase": 13,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Spear", "Large Shield", "Shieldwall"],
-          "specialRules": ["Close Order", "Inferior Fighters"],
-          "optionalEquipment": [
-            {
-                  "name": "Darts",
-                  "pointsModifier": 2,
-                 "equipmentAdded": ["Darts"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }
-            
-          ]
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Open Order", "Ambush"],
+          "optionalEquipment": []
             },
 {
-          "id": "auxillia",
-          "name": "Auxillia",
-          "description": "Auxillia have a throwing spear, large shield and darts. Open Order. Auxillia units may use Combined Formation with  a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4 for each archer only bases) and forming the rear of the unit. Auxillia may be fielded as skirmishers at a points reduction of 33%.",
+          "id": "crossbowmen",
+          "name": "Crossbowmen",
+          "description": "Crossbowmen have a crossbow. Open Order. Ambush.",
           "category": "Infantry",
           "type": "other",
           "defence": 5,
@@ -198,21 +176,9 @@
           "pointsPerBase": 15,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
-          "specialRules": ["Open Order"],
-          "optionalEquipment": [
-            {
-                  "name": "Skirmishers",
-                  "pointsModifier": -5,
-                 "equipmentAdded": [], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order"],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }
-            
-          ]
+         "baseEquipment": ["Crossbow"],
+          "specialRules": ["Open Order", "Ambush"],
+          "optionalEquipment": []
             },
         {
           "id": "archers",
