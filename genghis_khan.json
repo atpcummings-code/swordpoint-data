@@ -93,7 +93,7 @@
                   "name": "Light Crossbow",
                    "disables": "Bow",
                  "pointsModifier": 1,
-                 "equipmentAdded": ["Light Crossbow"], 
+                   "equipmentAdded": ["Light Crossbow"], 
                  "equipmentRemoved": ["Javelins", "Shield"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
@@ -171,70 +171,142 @@
           "description": "Crossbowmen have a crossbow. Open Order. Ambush.",
           "category": "Infantry",
           "type": "other",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 15,
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 10,
           "minBases": 3,
           "maxBases": 12,
+          "maxCountAllowed": 1,
          "baseEquipment": ["Crossbow"],
           "specialRules": ["Open Order", "Ambush"],
           "optionalEquipment": []
             },
         {
-          "id": "archers",
-          "name": "Archers",
-          "description": "Archers have bows and shields. Inferior Fighters. Open Order. Every second unit may exchange their bows for sling or javelins (free).",
+          "id": "conscript_spearmen",
+          "name": "Conscript Spearmen",
+          "description": "Conscript Spearmen have spear and shield. Open Order. Inferior Fighters.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 9,
+          "cohesion": 5,
+          "pointsPerBase": 6,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Bow", "Shield"],
+          "baseEquipment": ["Spear", "Shield"],
           "specialRules": ["Open Order", "Inferior Fighters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "subject_spearmen",
+          "name": "Subject Spearmen",
+          "description": "Subject Spearmen have spear and shield. Close Order. Inferior Fighters. Levies.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 4,
+          "pointsPerBase": 4,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order", "Inferior Fighters", "Levies"],
+          "optionalEquipment": []
+        },
+{
+          "id": "subject_archers",
+          "name": "Subject Archers",
+          "description": "Subject Archers have bow. Close Order. Inferior Fighters. Levies. May be fielded as skirmishers at a cost of 2 points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 4,
+          "pointsPerBase": 4,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Close Order", "Inferior Fighters", "Levies"],
           "optionalEquipment": [
             {
-                  "name": "Sling",
-              "disables": "Javelins",
-                 "enabledEvery": 2,
-                  "pointsModifier": 0,
-                 "equipmentAdded": ["Sling"], 
-                 "equipmentRemoved": ["Bow"],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
-                  "name": "Javelins",
-              "disables": "Sling",
-                 "enabledEvery": 2,
-                  "pointsModifier": 0,
-                 "equipmentAdded": ["Javelins"], 
-                 "equipmentRemoved": ["Bow"],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
                   "name": "Skirmishers",
-                  "pointsModifier": -3,
+                  "pointsModifier": -2,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
                   "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order"],
+                  "rulesRemoved": ["Close Order"],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 }
-            
-          ]
-            }
-            
-        
+          ],
+}
+  {
+          "id": "skirmishers",
+          "name": "Sirmishers",
+          "description": "Skirmishers have javelins or bow. Skirmishers. Inferior Fighters. May exchange javelins or bow for crossbow (+1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Javelins",
+                "disables": "Bow",
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+             {
+                  "name": "Bow",
+                "disables": "Javelins",
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Crossbow",
+                "disables": ["Javelins", "Bow"],
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Crossbow"], 
+                 "equipmentRemoved": ["Bow", "Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
           ]
         },
+        {
+          "id": "elephant",
+          "name": "Elephant",
+          "description": "The elephant has a driver and one crewman with javelins. There must be at least one elephant in the army.",
+          "category": "Elephant",
+          "type": "other",
+          "defence": 3,
+          "cohesion": 4,
+          "pointsPerBase": 55,
+          "minBases": 1,
+          "maxBases": 1,
+          "baseEquipment": [],
+          "specialRules": ["Terror"],
+          "optionalEquipment": []
+      }
+            
+          ]
+            },  
+          ]
+        },
+        
 "lir_imperial_field_army": {
      "armyName": "Late Imperial Roman (Imperial Field Army) 350 AD - 493 AD",
       "categories": [
