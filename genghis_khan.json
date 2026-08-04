@@ -1,7 +1,7 @@
 {
   "armies": {
-     "champa": {
-      "armyName": "Champa - 550 AD - 1445 AD",
+     "thiopian": {
+      "armyName": "Ethiopian - 650 AD - 1520 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -14,30 +14,22 @@
           "id": "Cavalry",
           "name": "Cavalry",
           "constraintType": "percentage",
-          "min": 0,
-          "max": 20
+          "min": 15,
+          "max": 50
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 60,
-          "max": 100
-        },
-       { 
-         "id": "Elephants", 
-         "name": "Elephants", 
-         "constraintType": "pointsRatio", 
-         "pointsThreshold": 250, 
-         "countPerThreshold": 1, 
-         "rounding": "down"
-       } 
+          "min": 25,
+          "max": 75
+        } 
            ],
       "units": [
         {
-          "id": "general",
-          "name": "General",
-          "description": "May ride a horse or elephant.",
+          "id": "king",
+          "name": "King",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
           "attacks": "+3",
@@ -49,9 +41,9 @@
         "optionalEquipment": []
         },
         {
-          "id": "Commander",
-          "name": "Commander",
-          "description": "May ride a horse or elephant.",
+          "id": "chieftain",
+          "name": "Chieftain",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
@@ -63,51 +55,31 @@
           "optionalEquipment": []
         },
         {
-          "id": "light_horse",
-          "name": "Light Horse",
-          "description": "Light Horse have javelins and shield. May exchange javelins and shield for bow or light crossbow (-1). May be fielded as skirmishers.",
+          "id": "noble_cavalry",
+          "name": "Noble Cavalry",
+          "description": "Noble Cavalry have light armour, spear and shield. Superior Fighters. One unit may have barding (+1).",
           "category": "Cavalry",
           "type": "other",
-          "defence": 5,
-          "cohesion": 6,
-          "pointsPerBase": 16,
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 22,
           "minBases": 3,
           "maxBases": 8,
-           "baseEquipment": ["Javelins", "Shield"],
+          "maxCountAllowed": 2,
+           "baseEquipment": ["Light Armour", "Spear", "Shield"],
           "specialRules": [
-            "Open Order"
+            "Open Order", "Superior Fighters"
           ],
           "optionalEquipment": [
             {
-                  "name": "Bow",
-                "disables": "Light Crossbow",
-                  "pointsModifier": -1,
-                 "equipmentAdded": ["Bow"], 
-                 "equipmentRemoved": ["Javelins", "Shield"],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-                 {
-                  "name": "Light Crossbow",
-                   "disables": "Bow",
-                 "pointsModifier": 1,
-                   "equipmentAdded": ["Light Crossbow"], 
-                 "equipmentRemoved": ["Javelins", "Shield"],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
-                  "name": "Skirmishers",
-                  "pointsModifier": 0,
-                 "equipmentAdded": [], 
+                  "name": "Barding",
+                   "pointsModifier": 1,
+              "maxEquipmentCount": 1,
+                 "equipmentAdded": ["Barding"], 
                  "equipmentRemoved": [],
-                  "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order"],
-                  "defenceModifier": 0,
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
                   "cohesionModifier": 0
                 }
           ]
