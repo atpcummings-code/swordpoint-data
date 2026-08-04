@@ -95,7 +95,7 @@
                  "equipmentAdded": ["Cloth Barding"], 
                  "equipmentRemoved": [],
                   "rulesAdded": ["Close Order"],
-                  "rulesRemoved": []"Open Order",
+                  "rulesRemoved": ["Open Order"],
                   "defenceModifier": -1,
                   "cohesionModifier": 0
                 },
@@ -132,8 +132,8 @@
                  "pointsModifier": 1,
                  "equipmentAdded": ["Cloth Barding"], 
                  "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
+                  "rulesAdded": ["Close Order"],
+                  "rulesRemoved": ["Open Order"],
                   "defenceModifier": -1,
                   "cohesionModifier": 0
                 },
