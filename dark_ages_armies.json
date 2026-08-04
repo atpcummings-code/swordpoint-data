@@ -5689,6 +5689,16 @@
                   "defenceModifier": -1,
                   "cohesionModifier": 0
                 },
+			  {
+                  "name": "Skirmishers",
+                  "pointsModifier": 0,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
                  {
                   "name": "Javelins",
                  "pointsModifier": 1,
@@ -6251,6 +6261,16 @@
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+			  {
+                  "name": "Skirmishers",
+                  "pointsModifier": 0,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
                  {
