@@ -220,94 +220,103 @@
           "maxBases": 12,
           "baseEquipment": ["Bow", "Shield"],
           "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "crossbowmen",
+          "name": "Crossbowmen",
+          "description": "Crossbowmen have a crossbow. Open Order",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "maxCountAllowed": 1,
+          "baseEquipment": ["Crossbow"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []        
+            },
+        {
+          "id": "conscript_spearmen",
+          "name": "Conscript Spearmen",
+          "description": "Conscript Spearmen have spear and shield. Open Order. Inferior Fighters.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": [
+             "Open Order", "Inferior Fighters"
+          ],
+          "optionalEquipment": []
+            },
+        {
+          "id": "subject_spearmen",
+          "name": "Subject Spearmen",
+          "description": "Subject Spearmen have spear and shield. Open Order. Inferior Fighters. Levies.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 4,
+          "pointsPerBase": 4,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": [
+             "Open Order", "Inferior Fighters", "Levies"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "subject_archers",
+          "name": "Subject Archers",
+          "description": "Subject Archer shave a bow. Inferior Fighters. Levies. may be fiedled as skirmishers at a cost of two points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 4,
+          "pointsPerBase": 4,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Close Order", "Inferior Fighters", "Levies"],
           "optionalEquipment": [
             {
                   "name": "Skirmishers",
-                  "pointsModifier": -2,
+                 "pointsModifier": -2,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
                   "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order"],
+                  "rulesRemoved": ["Close Order"],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 }
           ]
         },
         {
-          "id": "gascon_or_basque_javelinmen",
-          "name": "Gascon or Basque Javelinmen",
-          "description": "Gascon or Basque Javelinmen have javelins. Inferior Fighters. Superior Shooters. Skirmishers. They may have shields (+1).",
-          "category": "Vassals",
+          "id": "skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins or bow. Skirmishers. Inferior Fighters.",
+          "category": "Infantry",
           "type": "other",
           "defence": 7,
-          "cohesion": 5,
-          "pointsPerBase": 6,
+          "cohesion": 6,
+          "pointsPerBase": 5,
           "minBases": 2,
           "maxBases": 6,
-          "baseEquipment": ["Javelins"],
-          "specialRules": ["Skirmishers", "Inferior Fighters", "Superior Shooters"],
+          "baseEquipment": [],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
           "optionalEquipment": [
             {
-                  "name": "Shield",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Shield"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                }
-            
-          ]        
-            },
-        {
-          "id": "breton_cavalry",
-          "name": "Breton Cavalry",
-          "description": "Breton Cavalry have javelins, spear and shield. Superior Fighters. Evade. They may have light armour (+1).",
-          "category": "Vassals",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 22,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": ["Javelins", "Spear", "Shield"],
-          "specialRules": [
-             "Open Order", "Superior Fighters", "Evade"
-          ],
-          "optionalEquipment": [
-            {
-                  "name": "Light Armour",
-                 "pointsModifier": 1,
-                 "equipmentAdded": ["Light Armour"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                }
-          ]
-            },
-        {
-          "id": "vassal_light_cavalry",
-          "name": "Vassal Light Cavalry",
-          "description": "Vassal Light Cavalry have javelins and shield. Inferior Fighters. Evade. They may have spear (+1). May be fielded as skirmishers at a cost of 15 points per base.",
-          "category": "Vassals",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 6,
-          "pointsPerBase": 17,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": ["Javelins", "Shield"],
-          "specialRules": [
-             "Open Order", "Inferior Fighters", "Evade"
-          ],
-          "optionalEquipment": [
-            {
-                  "name": "Spear",
-                 "pointsModifier": 1,
-                 "equipmentAdded": ["Spear"], 
+                  "name": "Javelins",
+                  "disables": "Bow",
+                 "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
                  "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
@@ -315,17 +324,46 @@
                   "cohesionModifier": 0
                 },
             {
-                  "name": "Skirmishers",
+                  "name": "Bow",
+                  "disables": "Javelins",
                  "pointsModifier": 0,
-                 "equipmentAdded": [], 
+                 "equipmentAdded": ["Bow"], 
                  "equipmentRemoved": [],
-                  "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 }
           ]
-            }
+        },
+        {
+          "id": "elephant",
+          "name": "Elephant",
+          "description": "The elephant has a driver and one crewman with javelins. There must be at least one elephant in the army.",
+          "category": "Elephants",
+          "minCountAllowed": 1,
+          "type": "other",
+          "defence": 3,
+          "cohesion": 4,
+          "pointsPerBase": 55,
+          "minBases": 1,
+          "maxBases": 1,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Terror"],
+          "optionalEquipment": [
+            {
+                  "name": "Howdah",
+                 "pointsModifier": 4,
+                 "equipmentAdded": ["Howdah"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+            
+          ]
+            },  
           ]
         },
 "lir_imperial_field_army": {
