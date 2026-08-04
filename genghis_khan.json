@@ -77,6 +77,7 @@
           "pointsPerBase": 26,
           "minBases": 3,
           "maxBases": 8,
+            "maxCountAllowed": 1,
            "baseEquipment": ["Heavy Armour", "Spear", "Bow", "Shield"],
           "specialRules": [
             "Open Order", "Superior Fighters"
