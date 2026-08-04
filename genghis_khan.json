@@ -35,9 +35,9 @@
            ],
       "units": [
         {
-          "id": "magister",
-          "name": "Magister",
-          "description": "May ride a horse.",
+          "id": "general",
+          "name": "General",
+          "description": "May ride a horse or elephant.",
           "category": "Commanders",
           "type": "General",
           "attacks": "+3",
@@ -49,23 +49,9 @@
         "optionalEquipment": []
         },
         {
-          "id": "legate",
-          "name": "Legate",
-          "description": "May ride a horse,",
-          "category": "Commanders",
-          "type": "other",
-          "attacks": "+1",
-          "cohesion": "+2",
-          "pointsPerBase": 15,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-          {
-          "id": "legate_extra_attack",
-          "name": "Legate",
-          "description": "May ride a horse,",
+          "id": "Commander",
+          "name": "Commander",
+          "description": "May ride a horse or elephant.",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
@@ -77,165 +63,45 @@
           "optionalEquipment": []
         },
         {
-          "id": "catafractii_clibanarii",
-          "name": "Catafractii/Clibanarii",
-          "description": "Britannia Only: Catafractii and Clibanarii have cataphract armour. May be Massed Cavalry (+1) May have kontos (+2) and bow (+1). Their horses may have full metal barding (+1). You may have one Catafractii Clibanarii unit for every two Eq units fielde in your army.uites",
-          "category": "Cavalry",
-          "type": "other",
-          "defenceE": 3,
-          "cohesion": 7,
-          "pointsPerBase": 18,
-          "minBases": 3,
-          "maxBases": 8,
-          "requires": { "unitId": "equites", "count": 2, "name": "Equites", "perUnit": true },
-          "baseEquipment": ["Cataphract Armour"],
-          "specialRules": [
-            "Open Order"
-          ], 
-          "optionalEquipment": [
-            {
-                  "name": "Massed Cavalry",
-                  "pointsModifier": 1,
-                 "equipmentAdded": [], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Massed Cavalry"],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
-                  "name": "Kontos",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Kontos"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },  
-            {
-                  "name": "Full Metal Barding",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Full Metal Barding"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Close Order"],
-                  "rulesRemoved": ["Open Order"],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                },  
-            {
-                  "name": "Bow",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Bow"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }
-          ]
-            },
-        {
-          "id": "equites",
-          "name": "Equites",
-          "description": "Equites have a spear, light  armour and shield. Light armour may be exchanged for heavy armour (+1). May have javelins (+1).",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 4,
-          "cohesion": 7,
-          "pointsPerBase": 18,
-          "minBases": 3,
-          "maxBases": 8,
-           "baseEquipment": ["Spear", "Shield", "Light Armour"],
-          "specialRules": [
-            "Open Order"
-          ],
-          "optionalEquipment": [
-            {
-                  "name": "Heavy Armour",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Heavy Armour"], 
-                 "equipmentRemoved": ["Light Armour"],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                },
-                 {
-                  "name": "Javelins",
-                 "pointsModifier": 1,
-                 "equipmentAdded": ["Javelins"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
-                  "name": "Skirmishers",
-                  "pointsModifier": -2,
-                 "equipmentAdded": [], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order"],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }
-          ]
-            },
-         {
-          "id": "illyricani_sagittarii",
-          "name": "Illyricani Sagittarii",
-          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri.. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "id": "light_horse",
+          "name": "Light Horse",
+          "description": "Light Horse have javelins and shield. May exchange javelins and shield for bow or light crossbow (-1). May be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
           "cohesion": 6,
-          "pointsPerBase": 17,
+          "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 8,
            "baseEquipment": ["Javelins", "Shield"],
           "specialRules": [
-            "Open Order", "Evade", "Inferior Fighters"
+            "Open Order"
           ],
           "optionalEquipment": [
             {
-                  "name": "Spear",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Spear"], 
-                 "equipmentRemoved": [],
+                  "name": "Bow",
+                "disables": "Light Crossbow"
+                  "pointsModifier": -1,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins", "Shield"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
                  {
-                  "name": "Bow",
-                  "enableHidden": ["Light Armour", "Skirmishers"],
-                 "pointsModifier": 0,
-                 "equipmentAdded": ["Bow"], 
-                 "equipmentRemoved": ["Javelins"],
+                  "name": "Light Crossbow",
+                   "disables": "Bow"
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Light Crossbow"], 
+                 "equipmentRemoved": ["Javelins", "Shield"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
-             {
-                  "name": "Light Armour",
-               "hiddenUntilEnabled": "hidden",  
-                  "disables": ["Skirmishers"],
-                  "pointsModifier": 1,
-                 "equipmentAdded": [], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order"],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
             {
                   "name": "Skirmishers",
-              "hiddenUntilEnabled": "hidden", 
-              "disables": ["Light Armour"],
                   "pointsModifier": 0,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
@@ -246,19 +112,19 @@
                 }
           ]
             },
-               {
-          "id": "legionaries",
-          "name": "Legionaries",
-          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Legionary units may use Combined Formation with a quarter or half of the units figures exchnaging throwing spear, large shield and darts for bow and shield (-4) and forming the rear of thh unit. They may not take any other quipment. Veteran (+2)",
+         {
+          "id": "spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have throwing spear and large shield. Open Order. Warband. Ambush. Up to two units may upgrade to C7 (+2).",
           "category": "Infantry",
           "type": "other",
           "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 22,
+          "cohesion": 6,
+          "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
-          "specialRules": ["Close Order", "Shieldwall"],
+          "baseEquipment": ["Throwing Spear", "Large Shield"],
+          "specialRules": ["Open Order", "Warband", "Ambush"],
           "optionalEquipment": [
             {
                   "name": "Light Armour",
@@ -281,14 +147,15 @@
                   "cohesionModifier": 0
                 },
                  {
-                  "name": "Heavy Throwing Spear",
+                  "name": "Upgrade Cohesion to C7",
+                   "maxEquipmentCount": 2,
                   "pointsModifier": 2,
-                 "equipmentAdded": ["Heavy Throwing Spear"], 
-                 "equipmentRemoved": ["Throwing Spear"],
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
-                  "cohesionModifier": 0
+                  "cohesionModifier": 1
                 }
 
           ]
