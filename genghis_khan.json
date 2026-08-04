@@ -1,7 +1,7 @@
 {
   "armies": {
-     "tang_china": {
-      "armyName": "Tang China - 618 AD - 907 AD",
+     "carolingian": {
+      "armyName": "Carolingian - 768 AD - 814 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -15,21 +15,21 @@
           "name": "Cavalry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 33
+          "max": 50
         },
          {       
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 33,
-          "max": 100
+          "min": 0,
+          "max": 33
         },
            {       
-          "id": "Skirmishers",
-          "name": "Skirmishers",
+          "id": "Vassals",
+          "name": "Vassals",
           "constraintType": "percentage",
           "min": 0,
-          "max": 10
+          "max": 25
         },
               {
           "id": "Allies",
@@ -37,7 +37,7 @@
           "description": "The army may take allies from the Cuman and Kipchak list or from the Tobetan list if the army does not include lancers.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25,
+          "max": 50,
           "alliedArmyKeys": [
           "pecheneg"
           ],
