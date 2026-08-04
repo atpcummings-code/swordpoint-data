@@ -24,25 +24,14 @@
           "min": 60,
           "max": 100
         },
-           {       
-          "id": "Vassals",
-          "name": "Vassals",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25
-        },
-              {
-          "id": "Allies",
-          "name": "Allies",
-          "description": "The army may take allies from the Lombard (Gothic and Vandal Kingdoms) list or the Later Slave list.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 50,
-          "alliedArmyKeys": [
-          "gavk_Lombard", "later_slave"
-          ],
-          "maxAlliedArmiesAllowed": 1
-        }
+           { 
+         "id": "Elephants", 
+         "name": "Elephants", 
+         "constraintType": "pointsRatio", 
+         "pointsThreshold": 250, 
+         "countPerThreshold": 1, 
+         "rounding": "down"
+       } 
            ],
       "units": [
         {
