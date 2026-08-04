@@ -1560,7 +1560,6 @@
                 }
             
           ]
-            },
             
         
           ]
@@ -1847,6 +1846,7 @@
           "pointsPerBase": 22,
           "minBases": 3,
           "maxBases": 12,
+          "requires": { "unitId": "limitanei", "count": 1, "name": "Limitanei",  "perUnit": true},
           "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
           "specialRules": ["Close Order", "Shieldwall"],
           "optionalEquipment": [
