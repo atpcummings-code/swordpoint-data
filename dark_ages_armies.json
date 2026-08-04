@@ -9110,7 +9110,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Bow"],
-          "specialRules": ["open Order"],
+          "specialRules": ["Open Order"],
           "optionalEquipment": [
             {
                   "name": "Skirmishers",
