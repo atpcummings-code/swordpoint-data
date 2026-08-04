@@ -8469,6 +8469,254 @@
             }
           ]
         },
+
+"georgian": {
+      "armyName": "Georgian - 975 AD - 1238 AD",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {       
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 75
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 10,
+          "max": 25
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "The army may draw allies from teh Rus and Christian Crusader lists.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+          "rus", "christian_crusader"
+          ],
+          "maxAlliedArmiesAllowed": 2
+        }
+           ],
+      "units": [
+        {
+          "id": "spasalar",
+          "name": "Spasalar",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+        {
+          "id": "sub_general",
+          "name": "Sub General",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "royal_guard",
+          "name": "Royal Guard",
+          "description": "Royal Guard have heavy armour, spear, bow and shield. Superior Fighters. Maybe Stubborn (+2).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 3,
+          "cohesion": 9,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+            "maxCountAllowed": 1,
+           "baseEquipment": ["Heavy Armour", "Spear", "Bow", "Shield"],
+          "specialRules": [
+            "Open Order", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Stubborn",
+                 "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Stubborn"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "aznauri",
+          "name": "Aznauri",
+          "description": "Aznauri have light armour, spear, bow and shield. Superior Fighters. They may have heavy armour (+1) and may be Stubborn (+2).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Light Armour", "Spear", "Bow", "Shield"],
+          "specialRules": [
+             "Open Order", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+     {
+                  "name": "Stubborn",
+                 "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Stubborn"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+             {
+                  "name": "Heavy Armour",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Heavy Armour"], 
+                 "equipmentRemoved": ["Light Armour"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+         ]
+            },
+        {
+          "id": "kipchak_nobles",
+          "name": "Kipchak Nobles",
+          "description": "Kipchak Nobles have light armour, spear, bow and shield. Superior Fighters. Evade.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 8,
+          "maxCountAllowed": 1,
+           "baseEquipment": ["Light Armour", "Spear", "Bow", "Shield"],
+          "specialRules": [
+             "Open Order", "Superior Fighters", "Evade"
+          ],
+          "optionalEquipment": []
+            },
+           {
+          "id": "kipchaks",
+          "name": "Kipchaks",
+          "description": "Kipchaks have bow and shield. Nomad Cavalry. May have spear (+1). May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Bow", "Shield"],
+          "specialRules": [
+             "Open Order", "Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Spear",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                 "pointsModifier": 0,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "turcomen",
+          "name": "Turcomen",
+          "description": "Turcomen have bow and shield. Skirmishers. Nomad Cavalry. May have spear (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 20,
+          "minBases": 2,
+          "maxBases": 6,
+          "maxCountAllowed": 1,
+           "baseEquipment": ["Bow", "Shield"],
+          "specialRules": [
+             "Skirmishers", "Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Spear",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+       {
+          "id": "qmani",
+          "name": "Qmani",
+          "description": "Qmani have a bow. Inferior Fighters. Skirmishers. May have shield (+1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Shield",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Sheild"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+          ]
+            },  
+	  
         "anglo_danish": {
           "armyName": "Anglo-Danish - (1016 AD - 1066 AD)",
           "categories": [
