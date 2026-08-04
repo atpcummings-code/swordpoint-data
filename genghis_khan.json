@@ -1,7 +1,7 @@
 {
   "armies": {
-     "khitan_empire": {
-      "armyName": "Khitan Empire - 907 AD - 1125 AD",
+     "song_china": {
+      "armyName": "Song China - 960 AD - 1279 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -15,16 +15,27 @@
           "name": "Cavalry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 100
+          "max": 20
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 100
         }
-        
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "Between 1115 AD -1123 AD only, the army make take allies from the Khitan Empire list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20,
+          "alliedArmyKeys": [
+          "khitan_empire"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
            ],
       "units": [
         {
