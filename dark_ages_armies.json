@@ -9333,7 +9333,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Crossbow"],
-          "specialRules": ["Close Orer"],
+          "specialRules": ["Close Order"],
           "optionalEquipment": []
             },  
 {
@@ -9354,7 +9354,218 @@
             
           ]
             },  
-	  
+	  "song_china": {
+      "armyName": "Song China - 960 AD - 1279 AD",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {       
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "Between 1115 AD -1123 AD only, the army make take allies from the Khitan Empire list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20,
+          "alliedArmyKeys": [
+          "khitan_empir"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
+           ],
+      "units": [
+        {
+          "id": "general",
+          "name": "General",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+        {
+          "id": "commander",
+          "name": "Commander",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have light armour and spear.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 30,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Light Armour", "Spear"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+            },
+        {
+          "id": "horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Archers have a bow. May be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Bow"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Skirmishers",
+                 "pointsModifier": 0,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+         ]
+            },
+       {
+          "id": "guard_spearmen",
+          "name": "Guard Spearmen",
+          "description": "Guard Spearmen have spear and shield. May have light armour (+2) and may exchange spear for halberd (+2). They may be Drilled (+3).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+              {
+                  "name": "Halberd",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Halberd"], 
+                 "equipmentRemoved": ["Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+              {
+                  "name": "Drilled",
+                  "pointsModifier": 3,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Drilled"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have spear and shield. May use Mixed Order in which up to a quarter of teh figurs in the unit exchange spear and shield for crossbow (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": []
+            },
+            {
+          "id": "levy_spearmen",
+          "name": "Levy Spearmen",
+          "description": "Spearmen have spear and shield. May use Mixed Order in which up to a quarter of teh figurs in the unit exchange spear and shield for crossbow (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order", "Inferior Fighters", "Levies"],
+          "optionalEquipment": [
+            {
+                  "name": "Bow",
+                  "disables": "Crossbow",
+                  "pointsModifier": -1,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins", "Shield"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 1,
+                  "cohesionModifier": 0
+                },
+             {
+                  "name": "Crossbow",
+                  "disables": "Bow",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Crossbow"], 
+                 "equipmentRemoved": ["Javelins", "Shield"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 1,
+                  "cohesionModifier": 0
+                }
+          ]
+            },        
+          ]
+            },
  "early_polish": {
       "armyName": "Early Polish - (966 AD - 1150 AD)",
       "categories": [
