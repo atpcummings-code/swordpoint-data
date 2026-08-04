@@ -80,7 +80,7 @@
           "optionalEquipment": [
             {
                   "name": "Bow",
-                "disables": "Light Crossbow"
+                "disables": "Light Crossbow",
                   "pointsModifier": -1,
                  "equipmentAdded": ["Bow"], 
                  "equipmentRemoved": ["Javelins", "Shield"],
@@ -91,7 +91,7 @@
                 },
                  {
                   "name": "Light Crossbow",
-                   "disables": "Bow"
+                   "disables": "Bow",
                  "pointsModifier": 1,
                  "equipmentAdded": ["Light Crossbow"], 
                  "equipmentRemoved": ["Javelins", "Shield"],
