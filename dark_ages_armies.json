@@ -5666,7 +5666,7 @@
         {
           "id": "light_cavalry",
           "name": "Light Cavalry",
-          "description": "Light Cavalry have bows. Nomad Cavalry. They may have shield (+1) and spear (+1). The may be fielded as skirmishers. For every two light cavalry units present one foederat Heavy Cavalry unit may be upgraded to Seppe Nobles (+2). Steppe Nobles Have bows.",
+          "description": "Light Cavalry have bows. Nomad Cavalry. They may have shield (+1) and spear (+1). The may be fielded as skirmishers. For every two light cavalry units present one foederat Heavy Cavalry unit may be upgraded to Steppe Nobles (+2). Steppe Nobles Have bows.",
           "category": "Foederati",
           "type": "other",
           "defence": 5,
@@ -6230,7 +6230,7 @@
         {
           "id": "light_cavalry",
           "name": "Light Cavalry",
-          "description": "Light Cavalry have bows. Nomad Cavalry. They may have shield (+1) and spear (+1). The may be fielded as skirmishers. For every two light cavalry units present one foederat Heavy Cavalry unit may be upgraded to Seppe Nobles (+2). Steppe Nobles Have bows.",
+          "description": "Light Cavalry have bows. Nomad Cavalry. They may have shield (+1) and spear (+1). The may be fielded as skirmishers. For every two light cavalry units present one foederat Heavy Cavalry unit may be upgraded to Steppe Nobles (+2). Steppe Nobles Have bows.",
           "category": "Foederati",
           "type": "other",
           "defence": 5,
