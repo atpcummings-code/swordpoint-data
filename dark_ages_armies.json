@@ -9286,6 +9286,298 @@
 ]
             },
 
+"magyar": {
+      "armyName": "Magyar - 650 AD - 997 AD",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {       
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 15
+        },
+        {
+          "id": "SpecialUnits",
+          "name": "Special Units",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 15
+        }
+        
+           ],
+      "units": [
+        {
+          "id": "high_chieftain",
+          "name": "High Chieftain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+        {
+          "id": "chieftain",
+          "name": "Chieftain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "noble_cavalry",
+          "name": "Noble Cavalry",
+          "description": "Noble Cavalry have a bow. Superior Fighters. Superior Shooters. May have light armour (+1) or heavy armour (+2), shield (+1) and spear (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "maxCountAllowed": 2,
+           "baseEquipment": ["Bow"],
+          "specialRules": [
+            "Open Order", "Superior Fighters", "Superior Shooters"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Light Armour",
+              "disables": "Heavy Armour",
+                   "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Heavy Armour",
+              "disables": "Light Armour",
+                   "pointsModifier": 1,
+                 "equipmentAdded": ["Heavy Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -2,
+                  "cohesionModifier": 0
+                },
+              {
+                  "name": "Shield",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Shield"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+              {
+                  "name": "Spear",
+                   "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "elite_horse_archers",
+          "name": "Elite Horse Archers",
+          "description": "Elite Horse Archers have a bow. Superior Shooters. Nomad Cavalry. May have shield (+1), light armour (+1) and spear (+1). May be fielded as skirmishers.",
+          "category": "Cavalry",
+           "maxCountAllowed": 2,
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["Bow"],
+          "specialRules": [
+            "Open Order", "Superior Shooters", "Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+                  "name": "Spear",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Light Armour",
+                   "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Shield",
+                   "pointsModifier": 1,
+                 "equipmentAdded": ["Shield"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                 "pointsModifier": 0,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Archers have a bow. Nomad Cavalry. Skirmishers. May have shield (+1).",
+          "category": "Cavalry",
+           "minCountAllowed": 2,
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 2,
+          "maxBases": 6,
+           "baseEquipment": ["Bow"],
+          "specialRules": [
+            "Skirmishers", "Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+                        {
+                  "name": "Shield",
+                   "pointsModifier": 1,
+                 "equipmentAdded": ["Shield"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+          ]
+            },
+        {
+          "id": "szekely",
+          "name": "Szekely",
+          "description": "Szekely have light armour, spear, bow and shield. Superior Fighters. Evade.",
+          "category": "Cavalry",
+           "maxCountAllowed": 1,
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 8,
+           "baseEquipment": ["light Armour", "Spear", "Bow", "Shield"],
+          "specialRules": [
+            "Superior Fighters", "Evade"
+          ],
+          "optionalEquipment": []
+            },
+         {
+          "id": "slav_infantry",
+          "name": "Slav Infantry",
+           "maxCountAllowed": 2,
+          "description": "Slav Infantry have throwing spear and shield. Open Order. Warband.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Open Order", "Warband"],
+          "optionalEquipment": []
+            },
+  {
+          "id": "slav_skirmishers",
+          "name": "Slav Skirmishers",
+          "maxCountAllowed": 2,
+          "description": "Slav Skirmishers have a bow. Skirmishers. Inferior Fighters.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": []
+            },  
+{
+          "id": "wagons",
+          "name": "Wagons",
+          "description": "Wagons form a Wagon Tabor. There may be one base of defenders per wagon in the tabor. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit.",
+          "category": "SpecialUnits",
+          "maxCountAllowed": 1,
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 28,
+          "minBases": 0,
+          "maxBases": 5,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Wagon Tabor"],
+          "optionalEquipment": [
+            {
+                  "name": "Bow",
+                   "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+           }
+            
+          ]
+            },  
+          ]
+        },
+	  
 "ethiopian": {
       "armyName": "Ethiopian - 650 AD - 1520 AD",
       "categories": [
