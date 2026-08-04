@@ -1,7 +1,7 @@
 {
   "armies": {
      "carolingian": {
-      "armyName": "Carolingian - 768 AD - 814 AD",
+      "armyName": "Carolingian - 768 AD - 814 ADX",
       "unitCountValidation": [ 
         { "ids": ["gascon_or_basque_javelinmen","breton_cavalry","vassal_light_cavalry"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["imperial_household", "dismounted_cavalry", "heavy_cavalry", 
 "light_cavalry", "spearmen"
