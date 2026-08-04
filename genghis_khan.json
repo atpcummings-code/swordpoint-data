@@ -291,6 +291,7 @@
           "name": "Elephant",
           "description": "The elephant has a driver and one crewman with javelins. There must be at least one elephant in the army.",
           "category": "Elephants",
+          "requires": { self: true, count: 2 },
           "type": "other",
           "defence": 3,
           "cohesion": 4,
@@ -449,7 +450,7 @@
           "baseEquipment": ["Cataphract Armour"],
           "specialRules": [
             "Open Order"
-          ], 
+          ], E
           "optionalEquipment": [
             {
                   "name": "Massed Cavalry",
