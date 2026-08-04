@@ -93,7 +93,7 @@
         {
           "id": "light_horse",
           "name": "Light Horse",
-          "description": "Light Horse have javelins and shield. Skirmishers. May be "Used to Elepants" (+1).",
+          "description": "Light Horse have javelins and shield. Skirmishers. May be Used to Elepants (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
