@@ -7637,12 +7637,12 @@
               {
           "id": "Allies",
           "name": "Allies",
-          "description": "The army may take allies from the Cuman and Kipchak list or from the Tobetan list if the army does not include lancers.",
+          "description": "The army may take allies from the Cuman or Kipchak list or from the Tobetan list if the army does not include lancers.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-          "pecheneg"
+          "cuman_or_kipchak"
           ],
           "maxAlliedArmiesAllowed": 1
         }
