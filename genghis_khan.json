@@ -190,7 +190,7 @@
           "maxBases": 8,
           "baseEquipment": ["Bow", "Shield"],
           "specialRules": [
-             "Open Order", "Evade""
+             "Open Order", "Evade"
           ],
           "optionalEquipment": [
             {
