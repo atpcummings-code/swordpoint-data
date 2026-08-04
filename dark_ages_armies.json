@@ -9386,7 +9386,7 @@
           "min": 0,
           "max": 20,
           "alliedArmyKeys": [
-          "khitan_empir"
+          "khitan_empire"
           ],
           "maxAlliedArmiesAllowed": 1
         }
