@@ -1,29 +1,37 @@
 {
   "armies": {
-     "lir_borders_garrison": {
-      "armyName": "Late Imperial Roman (Borders Garrison) - 350 AD - 493 AD",
+     "champa": {
+      "armyName": "Champa - 550 AD - 1445 AD",
       "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 4
+          "max": 6
         },
        {       
           "id": "Cavalry",
           "name": "Cavalry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 20
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 50,
+          "min": 60,
           "max": 100
-        }
+        },
+       { 
+         "id": "Elephants", 
+         "name": "Elephants", 
+         "constraintType": "pointsRatio", 
+         "pointsThreshold": 250, 
+         "countPerThreshold": 1, 
+         "rounding": "down"
+       } 
            ],
       "units": [
         {
