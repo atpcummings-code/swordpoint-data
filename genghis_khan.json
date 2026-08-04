@@ -931,7 +931,7 @@
           "maxBases": 8,
           "baseEquipment": ["Spear", "Shield"],
           "specialRules": [
-            "Open Order", "Superior Fighters"
+            "Open Order"
           ],
           "optionalEquipment": [
             {
@@ -1469,7 +1469,7 @@
              {
                   "name": "Steppe Nobles",
              "maxCountAllowed": 1,
-               "requires": { "unitId": "light_cavalry", "count": 2, "name": "light Cavalry", "perUnit": true },
+               "enabledWhenUnitsPresent": { "unitId": "light_cavalry", "count": 2, "perUnit": true },
                  "pointsModifier": 1,
                  "equipmentAdded": ["Bow"], 
                  "equipmentRemoved": [],
@@ -1495,7 +1495,7 @@
           "maxBases": 8,
           "baseEquipment": ["Spear", "Shield"],
           "specialRules": [
-            "Open Order", "Superior Fighters"
+            "Open Order"
           ],
           "optionalEquipment": [
             {
