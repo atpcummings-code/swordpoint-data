@@ -192,6 +192,17 @@
                   "rulesRemoved": [],
                   "defenceModifier": -1,
                   "cohesionModifier": 0
+                },
+            {
+                  "name": "Upgrade Cohesion",
+                "maxEquipmentCount": 2,
+                 "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 1
                 }
             
           ]
@@ -199,16 +210,16 @@
            {
           "id": "archers",
           "name": "Archers",
-          "description": "Archer shave a bow. Open Order. May be fielded as skirmishers at a cost of seven points per base. The number of bases equiped with bows may not outnumber the number of bases equipped with spears.",
+          "description": "Archer shave a bow and shield. Open Order.",
           "category": "Infantry",
           "type": "other",
-          "defence": 7,
+          "defence": 6,
           "cohesion": 6,
-          "pointsPerBase": 9,
+          "pointsPerBase": 11,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Bow"],
-          "specialRules": ["open Order"],
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Open Order"],
           "optionalEquipment": [
             {
                   "name": "Skirmishers",
