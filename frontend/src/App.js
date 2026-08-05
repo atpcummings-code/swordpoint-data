@@ -1544,20 +1544,27 @@ function App() {
                 <label htmlFor="supplement-select" className="font-cond uppercase text-xs tracking-widest text-slate-500">
                   Supplement
                 </label>
-                <select
-                  id="supplement-select"
-                  data-testid="supplement-select"
-                  value={selectedSupplementUrl}
-                  onChange={(e) => handleSupplementChange(e.target.value)}
-                  className="bg-slate-900 border border-slate-700 rounded-md px-4 py-2 font-cond text-base text-slate-100 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 min-w-[260px] cursor-pointer"
-                >
-                  <option value="">— Select a supplement —</option>
-                  {SUPPLEMENTS.map((s) => (
-                    <option key={s.url} value={s.url}>
-                      {s.name}
-                    </option>
-                  ))}
-                </select>
+                <Select value={selectedSupplementUrl || undefined} onValueChange={handleSupplementChange}>
+                  <SelectTrigger
+                    id="supplement-select"
+                    data-testid="supplement-select"
+                    className="h-auto bg-slate-900 border border-slate-700 rounded-md px-4 py-2 font-cond text-base text-slate-100 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 min-w-[260px] cursor-pointer"
+                  >
+                    <SelectValue placeholder="— Select a supplement —" />
+                  </SelectTrigger>
+                  <SelectContent className="max-h-[66vh] overflow-y-auto bg-slate-900 border-slate-700 text-slate-100">
+                    {SUPPLEMENTS.map((s) => (
+                      <SelectItem
+                        key={s.url}
+                        value={s.url}
+                        data-testid={`supplement-option-${s.file}`}
+                        className="font-cond text-base text-slate-200 focus:bg-slate-800 focus:text-emerald-300 cursor-pointer"
+                      >
+                        {s.name}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
 
               {data && (
