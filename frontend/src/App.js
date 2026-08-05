@@ -1402,14 +1402,15 @@ function App() {
       return all.find((u) => u.id === id)?.name || id;
     };
     (army.armyValidation || []).forEach((rule) => {
-      if (!rule || !rule.unitId || !rule.expression) return;
+      const targetId = rule && (rule.unitId ?? rule.id);
+      if (!targetId || !rule.expression) return;
       const ratio = rule.ratio != null ? rule.ratio : 1;
       const compareWith = Array.isArray(rule.compareWith)
         ? rule.compareWith
         : rule.compareWith
         ? [rule.compareWith]
         : [];
-      const leftTotal = basesByUnit[rule.unitId] || 0;
+      const leftTotal = basesByUnit[targetId] || 0;
       const rightSum = compareWith.reduce((s, id) => s + (basesByUnit[id] || 0), 0);
       if (leftTotal === 0 && rightSum === 0) return;
       const threshold = rightSum * ratio;
@@ -1417,7 +1418,7 @@ function App() {
       if (expr && !expr.test(leftTotal, threshold)) {
         w.push({
           level: "warning",
-          msg: `${nameOf(rule.unitId)} bases (${leftTotal}) must be ${expr.label} ${ratio}× the bases of ${compareWith
+          msg: `${nameOf(targetId)} bases (${leftTotal}) must be ${expr.label} ${ratio}× the bases of ${compareWith
             .map((id) => nameOf(id))
             .join(" + ")} (${rightSum}) = ${threshold}.`,
         });
