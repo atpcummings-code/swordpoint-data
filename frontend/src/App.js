@@ -76,8 +76,8 @@ const MOCK_DATA = {
           max: 15,
           description:
             "You may include one allied contingent. Check an army below to add its non-General units. Allied units count toward this category's points limit.",
-          alliedArmyKeys: ["vikings", "anglo_danish"],
-          maxAlliedArmiesAllowed: 1,
+          alliedArmyKeys: [{ key: "vikings", disables: ["anglo_danish"] }, "anglo_danish"],
+          maxAlliedArmiesAllowed: 2,
         },
       ],
       units: [
@@ -615,6 +615,22 @@ function normalizeData(data) {
       c.min = num(c.min);
       c.max = num(c.max);
       if (c.maxAlliedArmiesAllowed != null) c.maxAlliedArmiesAllowed = num(c.maxAlliedArmiesAllowed);
+      if (Array.isArray(c.alliedArmyKeys)) {
+        army._allyDisables = army._allyDisables || {};
+        c.alliedArmyKeys = c.alliedArmyKeys.map((entry) => {
+          if (entry && typeof entry === "object") {
+            const key = entry.key ?? entry.armyKey ?? entry.id;
+            const dis = Array.isArray(entry.disables)
+              ? entry.disables
+              : entry.disables
+              ? [entry.disables]
+              : [];
+            if (key && dis.length) army._allyDisables[key] = dis;
+            return key;
+          }
+          return entry;
+        });
+      }
     });
     (army.units || []).forEach((u) => {
       ["attacks", "defence", "cohesion", "pointsPerBase", "minBases", "maxBases"].forEach((k) => {
@@ -976,6 +992,15 @@ function App() {
   const alliesCategory = army?.categories?.find((c) => Array.isArray(c.alliedArmyKeys));
   const maxAllies = alliesCategory?.maxAlliedArmiesAllowed ?? 0;
 
+  /* Army keys disabled because a currently-selected ally lists them in its
+     "disables" field (applies across every category). */
+  const disabledAllies = useMemo(() => {
+    const set = new Set();
+    const map = army?._allyDisables || {};
+    checkedAllies.forEach((k) => (map[k] || []).forEach((d) => set.add(d)));
+    return set;
+  }, [army, checkedAllies]);
+
   const toggleAlly = (allyKey) => {
     setCheckedAllies((prev) => {
       if (prev.includes(allyKey)) {
@@ -983,6 +1008,7 @@ function App() {
         setRoster((r) => r.filter((i) => i.sourceArmyKey !== allyKey));
         return prev.filter((k) => k !== allyKey);
       }
+      if (disabledAllies.has(allyKey)) return prev; // blocked by another selection
       return [...prev, allyKey];
     });
   };
@@ -1654,6 +1680,7 @@ function App() {
                 armies={armies}
                 checkedAllies={checkedAllies}
                 maxAllies={maxAllies}
+                disabledAllies={disabledAllies}
                 onToggleAlly={toggleAlly}
                 onAdd={addUnit}
                 blockedAddIds={blockedAddIds}
@@ -1797,7 +1824,7 @@ function ValidationPanel({ warnings, isValid, empty }) {
   );
 }
 
-function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies, onToggleAlly, onAdd, blockedAddIds, maxPoints, catFull }) {
+function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies, disabledAllies, onToggleAlly, onAdd, blockedAddIds, maxPoints, catFull }) {
   const homeUnits = (army?.units || []).filter((u) => u.category === cat.id);
   const isAllies = Array.isArray(cat.alliedArmyKeys);
 
@@ -1839,7 +1866,9 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
                 const ally = armies[ak];
                 if (!ally) return null;
                 const checked = checkedAllies.includes(ak);
-                const disabled = !checked && checkedAllies.length >= maxAllies;
+                const blockedByDisable = !checked && disabledAllies?.has(ak);
+                const disabled =
+                  (!checked && checkedAllies.length >= maxAllies) || blockedByDisable;
                 return (
                   <label
                     key={ak}
