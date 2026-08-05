@@ -1509,23 +1509,26 @@ function App() {
             </h1>
           </div>
 
-          {data && (
-            <p className="font-cond text-slate-400 text-sm -mt-1 flex items-center gap-2 flex-wrap justify-center">
-              <span>{data.supplement || "Army Supplement"}</span>
-              <span>·</span>
-              <span className={source === "remote" ? "text-emerald-400" : "text-amber-400"}>
-                {source === "remote" ? "Live data" : "Offline sample data"}
-              </span>
-              <button
-                data-testid="reload-json-btn"
-                onClick={() => loadData(selectedSupplementUrl, { keepSelection: true })}
-                disabled={reloading || !selectedSupplementUrl}
-                className="inline-flex items-center gap-1 rounded-full border border-slate-700 bg-slate-900 hover:border-emerald-600 hover:text-emerald-300 text-slate-300 px-2.5 py-0.5 text-xs disabled:opacity-40"
-              >
-                <RefreshCw size={12} className={reloading ? "animate-spin" : ""} /> Reload JSON
-              </button>
-            </p>
-          )}
+          {/* Supplement info line — fixed-height slot so header height is stable */}
+          <div className="min-h-[24px] flex items-center justify-center">
+            {data && (
+              <p className="font-cond text-slate-400 text-sm flex items-center gap-2 flex-wrap justify-center">
+                <span>{data.supplement || "Army Supplement"}</span>
+                <span>·</span>
+                <span className={source === "remote" ? "text-emerald-400" : "text-amber-400"}>
+                  {source === "remote" ? "Live data" : "Offline sample data"}
+                </span>
+                <button
+                  data-testid="reload-json-btn"
+                  onClick={() => loadData(selectedSupplementUrl, { keepSelection: true })}
+                  disabled={reloading || !selectedSupplementUrl}
+                  className="inline-flex items-center gap-1 rounded-full border border-slate-700 bg-slate-900 hover:border-emerald-600 hover:text-emerald-300 text-slate-300 px-2.5 py-0.5 text-xs disabled:opacity-40"
+                >
+                  <RefreshCw size={12} className={reloading ? "animate-spin" : ""} /> Reload JSON
+                </button>
+              </p>
+            )}
+          </div>
 
           {loadError && (
             <div
@@ -1538,7 +1541,7 @@ function App() {
           )}
 
           {/* Supplement + Army dropdowns (left) · Roster summary (right) */}
-          <div className="flex items-end justify-between gap-6 mt-1 w-full flex-wrap">
+          <div className="flex items-center justify-between gap-6 mt-1 w-full flex-wrap min-h-[92px]">
             <div className="flex items-end gap-6 flex-wrap">
               <div className="flex flex-col items-start gap-1">
                 <label htmlFor="supplement-select" className="font-cond uppercase text-xs tracking-widest text-slate-500">
