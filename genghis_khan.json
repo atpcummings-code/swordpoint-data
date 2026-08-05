@@ -2,6 +2,7 @@
   "armies": {
      "pagan_rus": {
       "armyName": "Pagan Rus - 750 AD - 1250 AD",
+       "armyValidation": [ { "id": "militia", "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["rus_skirmishers"] } ],
        "categories": [
         {
           "id": "Commanders",
@@ -287,7 +288,18 @@
           "specialRules": [
              "Skirmishers", "Inferior Fighters"
           ],
-          "optionalEquipment": []
+          "optionalEquipment": [
+            {
+                  "name": "Javelins & Shield",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Shield", "Javelins"], 
+                 "equipmentRemoved": ["Bow"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+          ]
         },
         {
           "id": "steppe_archers",
@@ -350,7 +362,8 @@
 
     "christian_rus": {
       "armyName": "Christian Rus - 750 AD - 1250 AD",
-       "categories": [
+      "armyValidation": [ { "id": "militia", "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["rus_skirmishers"] } ], 
+      "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
@@ -673,7 +686,18 @@
           "specialRules": [
              "Skirmishers", "Inferior Fighters"
           ],
-          "optionalEquipment": []
+          "optionalEquipment": [
+             {
+                  "name": "Javelins & Shield",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Shield", "Javelins"], 
+                 "equipmentRemoved": ["Bow"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+          ]
         },
         {
           "id": "steppe_archers",
