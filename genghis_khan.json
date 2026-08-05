@@ -1,43 +1,50 @@
 {
   "armies": {
-     "khmer_empire": {
-      "armyName": "Khmer Empire - 802 AD - 1431 AD",
+     "pagan_rus": {
+      "armyName": "Pagan Rus - 750 AD - 1250 AD",
        "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 6
+          "max": 8
         },
-       {       
-          "id": "Cavalry",
-          "name": "Cavalry & Chariots",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25
-        },
-         {       
+            {       
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 60,
+          "min": 25,
           "max": 100
         },
-           { 
-         "id": "Elephants", 
-         "name": "Elephants", 
-         "constraintType": "pointsRatio", 
-         "pointsThreshold": 250, 
-         "countPerThreshold": 1, 
-         "rounding": "down"
-       } 
+             {       
+          "id": "Mercenaries",
+          "name": "Mercenaries",
+          "description": "Pecheneg, Magyar and Khazar troops may be fielded as mercenaries instead of allies, but not both.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+          "pecheneg", "magyar", "Khazar"
+          ],
+          "maxAlliedArmiesAllowed": 5
+        }, 
+         {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "May take allies from the Vikings, Early Slavs, Pecheng, Magyar, or Khazar.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20,
+        "alliedArmyKeys": [ { "key": "vikings" }, { "key": "early_slav" },{ "key": "pecheneg", "disables": ["pecheneg"] }, { "key": "early_slav", "disables": ["early_slav"] },{ "key": "magyar", "disables": ["magyar"] }  ],
+          "maxAlliedArmiesAllowed": 5
+        }
            ],
       "units": [
         {
-          "id": "general",
-          "name": "General",
-          "description": "May ride on a horse or Elephant.",
+          "id": "warlord",
+          "name": "Warlord",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
           "attacks": "+3",
@@ -49,9 +56,9 @@
         "optionalEquipment": []
         },
         {
-          "id": "commander",
-          "name": "Commander",
-          "description": "May ride on a horse or Elephant.",
+          "id": "noble",
+          "name": "Noble",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
@@ -63,130 +70,153 @@
           "optionalEquipment": []
         },
         {
-          "id": "cavalry",
-          "name": "Cavalry",
-          "description": "Cavalry have ligt armour spear and shield. May be Used to Elepants (+1).",
+          "id": "beserker",
+          "name": "Beserker",
+          "description": "Up to four Varjazi bases may be upgraded to include a Beserker. No more than one of these may be included in a single unit and no more than on Commander in total may be preent in a unit.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+3",
+          "cohesion": "0",
+          "pointsPerBase": 15,
+          "maxCountAllowed": 4,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "druzhina",
+          "name": "Druzhina",
+          "description": "druzhina have spear, light armour and shield. Superior Fighters.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
-          "cohesion": 7,
-          "pointsPerBase": 18,
+          "cohesion": 8,
+          "pointsPerBase": 22,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": ["Light Armour", "Spear", "Shield"],
           "specialRules": [
-            "open Order"
+            "Open Order", "Superior Fighters"
           ],
-          "optionalEquipment": [
-            {
-                  "name": "Used to Elephants",
-                 "pointsModifier": 1,
-                 "equipmentAdded": [ ], 
-                 "equipmentRemoved": [ ],
-                  "rulesAdded": ["Used to Elephants"],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }
-          ]
+          "optionalEquipment": []
             },
         {
-          "id": "light_horse",
-          "name": "Light Horse",
-          "description": "Light Horse have javelins and shield. Skirmishers. May be Used to Elepants (+1).",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 6,
-          "pointsPerBase": 16,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": ["Javelins", "Shield"],
-          "specialRules": [
-             "Skirmishers"
-          ],
-          "optionalEquipment": [
-            { 
-                  "name": "Used to Elephants",
-                 "pointsModifier": 1,
-                 "equipmentAdded": [ ], 
-                 "equipmentRemoved": [ ],
-                  "rulesAdded": ["Used to Elephants"],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }
-          ]
-            },
-        {
-          "id": "chariots",
-          "name": "Chariots",
-          "description": "Chariots have a driver and one crewman with javelins or bow. Superior Fighters. Superior Shooters. Light chariots.May be Used to Elepants (+1).",
+          "id": "black_hoods",
+          "name": "Black Hoods",
+          "description": "Black Hoods have a bow and shield. Skirmishers. Parthian Shot.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
           "cohesion": 7,
-          "pointsPerBase": 27,
-          "minBases": 3,
-          "maxBases": 8,
-          "maxCountAllowed": 1,
-          "baseEquipment": [],
+          "pointsPerBase": 19,
+          "minBases": 2,
+          "maxBases": 6,
+          "minCountAllowed": 1,
+          "baseEquipment": ["Bow", "Shield"],
           "specialRules": [
-             "Light Chariots", "Superior Fighters", "Superior Shooters"
+             "Skirmishers", "Parthian Shot"
           ],
+          "optionalEquipment": []
+            },
+{
+          "id": "varjazi",
+          "name": "Varjazi",
+          "description": "Varjazi have light armour, spear and shield. Superior Fighters. Shieldwall. May be Riding Horses (+1) and may exchange spear for throwing spear (+2), halberd (+2) or two-handed weapon (+2) and javelins(+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield", "Light Armour"],
+          "specialRules": ["Close Order", "Superior Fighters", "Shieldwall"],
           "optionalEquipment": [
-            {
-                  "name": "Used to Elephants",
-                 "pointsModifier": 1,
-                 "equipmentAdded": [ ], 
-                 "equipmentRemoved": [ ],
-                  "rulesAdded": ["Used to Elephants"],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
+    {
                   "name": "Javelins",
-                  "disables": "Bow",
-                 "pointsModifier": 0,
+                  "pointsModifier": 2,
                  "equipmentAdded": ["Javelins"], 
-                 "equipmentRemoved": [ ],
+                 "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
             {
-                  "name": "Bow",
-                  "disables": "Javelins",
-                 "pointsModifier": 0,
-                 "equipmentAdded": ["Bow"], 
-                 "equipmentRemoved": [ ],
+                  "name": "Cohesion Upgrade",
+                  "pointsModifier": 4,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 1
+                },
+            {
+                  "name": "Riding Horses",
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Riding Horses"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Halberd",
+                  "disables": ["Throwing Spear", "Two-handed Weapon"],    
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Halberd"], 
+                 "equipmentRemoved": ["Spear],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Throwing Spear",
+                  "disables": ["Halberd", "Two-handed Weapon"],    
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Throwing Spear"], 
+                 "equipmentRemoved": ["Spear],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Two-handed Weapon",
+                  "disables": ["Halberd", "Throwing Spear"],    
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Two-handed Weapon"], 
+                 "equipmentRemoved": ["Spear],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 }
+            
           ]
             },
-{
-          "id": "spearmen",
-          "name": "Spearmen",
-          "description": "Spearmen have spear and large shield. Open Order. May have light armour (+2). Up to two units may upgrade to C7 (+2).",
+           {
+          "id": "militia",
+          "name": "Militia",
+          "description": "Militia have a spear and shield. Shieldwall. May have light armour (+2) and javelins (+2). Up to 25% of a unit may exchange spear and shield for bow (free) and forma cobined fomration with teh spearmen.",
           "category": "Infantry",
           "type": "other",
-          "defence": 5,
-          "cohesion": 6,
-          "pointsPerBase": 11,
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Spear", "Large Shield"],
-          "specialRules": ["Open Order"],
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order", "Shieldwall"],
           "optionalEquipment": [
-    {
+            {
                   "name": "Light Armour",
                   "pointsModifier": 2,
-                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentAdded": ["Light Armour]", 
                  "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
@@ -194,54 +224,57 @@
                   "cohesionModifier": 0
                 },
             {
-                  "name": "Upgrade Cohesion",
-                "maxEquipmentCount": 2,
-                 "pointsModifier": 2,
-                 "equipmentAdded": [], 
+                  "name": "Javelins",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Javelins"], 
                  "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
-                  "cohesionModifier": 1
+                  "cohesionModifier": 0
                 }
-            
           ]
-            },
-           {
-          "id": "archers",
-          "name": "Archers",
-          "description": "Archer shave a bow and shield. Open Order.",
+        },
+        {
+          "id": "tribal_warriors",
+          "name": "Tribal Warriors",
+          "description": "Tribal Warriors have throwing spear, javelins and shield. Warband. Levies. Any Tribal Warrior unit may be designated as Open Order (-4). Tribal Warriors units may be fielded as skirmishers at acost of 7 points per base.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
           "cohesion": 6,
-          "pointsPerBase": 11,
+          "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Bow", "Shield"],
-          "specialRules": ["Open Order"],
-          "optionalEquipment": []
-        },
-        {
-          "id": "crossbowmen",
-          "name": "Crossbowmen",
-          "description": "Crossbowmen have a crossbow. Open Order",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 11,
-          "minBases": 3,
-          "maxBases": 12,
-          "maxCountAllowed": 1,
-          "baseEquipment": ["Crossbow"],
-          "specialRules": ["Open Order"],
-          "optionalEquipment": []        
+          "baseEquipment": ["Throwing Spear", "javelins", "Shield"],
+          "specialRules": ["Close Order","Warband", "Levies"],
+          "optionalEquipment": [
+            {
+                  "name": "Open Order",
+                 "pointsModifier": -4,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Open Order"],
+                  "rulesRemoved": ["Close Order"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Skirmishers",
+                 "pointsModifier": -9,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Close Order", "Warband"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]        
             },
         {
-          "id": "conscript_spearmen",
-          "name": "Conscript Spearmen",
-          "description": "Conscript Spearmen have spear and shield. Open Order. Inferior Fighters.",
+          "id": "smerd_levies",
+          "name": "Smerd Levies",
+          "description": "Smerd Levies have spear and shield. Inferior Fighters. Leveis.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -251,119 +284,100 @@
           "maxBases": 12,
           "baseEquipment": ["Spear", "Shield"],
           "specialRules": [
-             "Open Order", "Inferior Fighters"
+             "Close Order", "Inferior Fighters", "Levies"
           ],
           "optionalEquipment": []
             },
         {
-          "id": "subject_spearmen",
-          "name": "Subject Spearmen",
-          "description": "Subject Spearmen have spear and shield. Open Order. Inferior Fighters. Levies.",
+          "id": "rus_skirmishers",
+          "name": "Rus Skirmishers",
+          "description": "Rus Skirmishers have a bow. Skirmishers. Inferior Fighters. May exchange bow for javelins and shield (+1). There mmust be at least twice as many formed Militia bases in the army as there are Rus Skirmisher bases.",
           "category": "Infantry",
           "type": "other",
-          "defence": 6,
-          "cohesion": 4,
-          "pointsPerBase": 4,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Spear", "Shield"],
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow"],
           "specialRules": [
-             "Open Order", "Inferior Fighters", "Levies"
+             "Skirmishers", "Inferior Fighters"
           ],
           "optionalEquipment": []
         },
         {
-          "id": "subject_archers",
-          "name": "Subject Archers",
-          "description": "Subject Archer shave a bow. Inferior Fighters. Levies. may be fiedled as skirmishers at a cost of two points per base.",
+          "id": "slav_skirmishers",
+          "name": "Slav Skirmishers",
+          "description": "Slav Skirmishers have a bow. Skirmishers. Inferior Fighters. May exchange bow for javelins and shield (+1).",
           "category": "Infantry",
           "type": "other",
           "defence": 7,
-          "cohesion": 4,
-          "pointsPerBase": 4,
-          "minBases": 3,
-          "maxBases": 12,
+          "cohesion": 7,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
           "baseEquipment": ["Bow"],
-          "specialRules": ["Close Order", "Inferior Fighters", "Levies"],
+          "specialRules": [
+             "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "steppe_archers",
+          "name": "Steppe Archers",
+          "description": "Steppe Archers have a bow. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order", "Superior Shooters", "Nomad Cavalry"],
           "optionalEquipment": [
             {
                   "name": "Skirmishers",
-                 "pointsModifier": -2,
+                 "pointsModifier": 0,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
                   "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Close Order"],
+                  "rulesRemoved": ["Open Order"],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
-                }
-          ]
-        },
-        {
-          "id": "skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have javelins or bow. Skirmishers. Inferior Fighters.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 5,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [],
-          "specialRules": ["Skirmishers", "Inferior Fighters"],
-          "optionalEquipment": [
+                },
+             {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
             {
-                  "name": "Javelins",
-                  "disables": "Bow",
-                 "pointsModifier": 0,
-                 "equipmentAdded": ["Javelins"], 
+                  "name": "Shield",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Shieldr"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Spear",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
                  "equipmentRemoved": [],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
-            {
-                  "name": "Bow",
-                  "disables": "Javelins",
-                 "pointsModifier": 0,
-                 "equipmentAdded": ["Bow"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }
           ]
-        },
-        {
-          "id": "elephant",
-          "name": "Elephant",
-          "description": "The elephant has a driver and one crewman with javelins. There must be at least one elephant in the army.",
-          "category": "Elephants",
-          "minCountAllowed": 1,
-          "type": "other",
-          "defence": 3,
-          "cohesion": 4,
-          "pointsPerBase": 55,
-          "minBases": 1,
-          "maxBases": 1,
-          "baseEquipment": ["Javelins"],
-          "specialRules": ["Terror"],
-          "optionalEquipment": [
-            {
-                  "name": "Howdah",
-                 "pointsModifier": 4,
-                 "equipmentAdded": ["Howdah"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }
-            
-          ]
-            },  
+        }, 
           ]
         },
 "lir_imperial_field_army": {
