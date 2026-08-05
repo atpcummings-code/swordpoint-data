@@ -168,7 +168,7 @@
                   "disables": ["Throwing Spear", "Two-handed Weapon"],    
                   "pointsModifier": 2,
                  "equipmentAdded": ["Halberd"], 
-                 "equipmentRemoved": ["Spear],
+                 "equipmentRemoved": ["Spear"],
                   "rulesAdded": [],
                   "rulesRemoved": [],
                   "defenceModifier": 0,
