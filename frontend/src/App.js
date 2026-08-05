@@ -1544,14 +1544,14 @@ function App() {
           <div className="flex items-end justify-between gap-6 mt-1 w-full flex-wrap">
             <div className="flex items-end gap-6 flex-wrap">
               <div className="flex flex-col items-start gap-1">
-                <label htmlFor="supplement-select" className="font-cond uppercase text-xs tracking-widest text-slate-500">
+                <label htmlFor="supplement-select" className="font-cond uppercase text-xs tracking-widest text-slate-300">
                   Supplement
                 </label>
                 <Select value={selectedSupplementUrl || undefined} onValueChange={handleSupplementChange}>
                   <SelectTrigger
                     id="supplement-select"
                     data-testid="supplement-select"
-                    className="h-auto bg-slate-900 border border-slate-700 rounded-md px-4 py-2 font-cond text-base text-slate-100 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 min-w-[260px] cursor-pointer"
+                    className="h-auto bg-slate-900 border border-slate-300 rounded-md px-4 py-2 font-cond text-base text-slate-100 data-[placeholder]:text-slate-300 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 min-w-[260px] cursor-pointer"
                   >
                     <SelectValue placeholder="— Select a supplement —" />
                   </SelectTrigger>
@@ -1572,7 +1572,7 @@ function App() {
 
               {data && (
                 <div className="flex flex-col items-start gap-1">
-                  <label htmlFor="army-select" className="font-cond uppercase text-xs tracking-widest text-slate-500">
+                  <label htmlFor="army-select" className="font-cond uppercase text-xs tracking-widest text-slate-300">
                     Army
                   </label>
                   <Select value={selectedArmyKey || undefined} onValueChange={handleArmyChange}>
@@ -1610,7 +1610,7 @@ function App() {
               }`}
             >
                 <div className="flex items-center justify-between gap-3 flex-wrap">
-                  <span className="font-cond uppercase text-[11px] tracking-widest text-slate-500">
+                  <span className="font-cond uppercase text-[11px] tracking-widest text-slate-300">
                     Roster Summary
                   </span>
                   <StatusBadge isValid={isValid} empty={roster.length === 0} />
@@ -1620,7 +1620,7 @@ function App() {
                   <div className="flex flex-col">
                     <label
                       htmlFor="max-points"
-                      className="font-cond uppercase text-[11px] tracking-widest text-slate-500 mb-1"
+                      className="font-cond uppercase text-[11px] tracking-widest text-slate-300 mb-1"
                     >
                       Max Points Limit
                     </label>
@@ -1636,7 +1636,7 @@ function App() {
                   </div>
 
                   <div className="text-right">
-                    <div className="font-cond uppercase text-[11px] tracking-widest text-slate-500">
+                    <div className="font-cond uppercase text-[11px] tracking-widest text-slate-300">
                       Total / Limit
                     </div>
                     <div
@@ -1739,7 +1739,7 @@ function App() {
           {roster.length === 0 ? (
             <div
               data-testid="empty-roster"
-              className="rounded-xl border border-dashed border-slate-800 p-10 text-center font-cond text-slate-500"
+              className="rounded-xl border border-dashed border-slate-800 p-10 text-center font-cond text-slate-300"
             >
               No units added yet. Pick troops from the catalog to build your army.
             </div>
