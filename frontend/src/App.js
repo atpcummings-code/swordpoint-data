@@ -1593,26 +1593,6 @@ function App() {
           </div>
 
           {/* Supplement info line — fixed-height slot so header height is stable */}
-          <div className="min-h-[24px] flex items-center justify-center">
-            {data && (
-              <p className="font-cond text-slate-400 text-sm flex items-center gap-2 flex-wrap justify-center">
-                <span>{data.supplement || "Army Supplement"}</span>
-                <span>·</span>
-                <span className={source === "remote" ? "text-emerald-400" : "text-amber-400"}>
-                  {source === "remote" ? "Live data" : "Offline sample data"}
-                </span>
-                <button
-                  data-testid="reload-json-btn"
-                  onClick={() => loadData(selectedSupplementUrl, { keepSelection: true })}
-                  disabled={reloading || !selectedSupplementUrl}
-                  className="inline-flex items-center gap-1 rounded-full border border-slate-700 bg-slate-900 hover:border-emerald-600 hover:text-emerald-300 text-slate-300 px-2.5 py-0.5 text-xs disabled:opacity-40"
-                >
-                  <RefreshCw size={12} className={reloading ? "animate-spin" : ""} /> Reload JSON
-                </button>
-              </p>
-            )}
-          </div>
-
           {loadError && (
             <div
               data-testid="load-error"
@@ -1623,45 +1603,42 @@ function App() {
             </div>
           )}
 
-          {/* Save / Load army file box — left-aligned, above the dropdowns */}
-          <div className="w-full flex justify-start">
-            <div
-              data-testid="army-file-box"
-              className="rounded-xl border-2 border-emerald-400 p-3 backdrop-blur bg-slate-950/90 w-fit"
-            >
-              <span className="font-cond uppercase text-[11px] tracking-widest text-slate-300 block mb-2">
-                Army File
-              </span>
-              <div className="flex items-center gap-3">
-                <button
-                  data-testid="save-army-btn"
-                  onClick={handleSaveArmy}
-                  className="inline-flex items-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-cond font-semibold px-4 py-2 transition-colors"
-                >
-                  <Save size={16} /> Save Army
-                </button>
-                <button
-                  data-testid="load-army-btn"
-                  onClick={handleLoadClick}
-                  className="inline-flex items-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-cond font-semibold px-4 py-2 transition-colors"
-                >
-                  <Upload size={16} /> Load Army
-                </button>
-                <input
-                  ref={fileInputRef}
-                  data-testid="load-army-input"
-                  type="file"
-                  accept="application/json,.json"
-                  onChange={handleLoadFile}
-                  className="hidden"
-                />
+          {/* Left stack (Save/Load + dropdowns) · Roster summary (right) — equal height */}
+          <div className="w-full flex items-stretch justify-between gap-6 flex-wrap">
+            <div className="flex flex-col gap-2">
+              {/* Save / Load army file box */}
+              <div
+                data-testid="army-file-box"
+                className="rounded-xl border-2 border-emerald-400 p-3 backdrop-blur bg-slate-950/90 w-fit"
+              >
+                <div className="flex items-center gap-3">
+                  <button
+                    data-testid="save-army-btn"
+                    onClick={handleSaveArmy}
+                    className="inline-flex items-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-cond font-semibold px-4 py-2 transition-colors"
+                  >
+                    <Save size={16} /> Save Army
+                  </button>
+                  <button
+                    data-testid="load-army-btn"
+                    onClick={handleLoadClick}
+                    className="inline-flex items-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-cond font-semibold px-4 py-2 transition-colors"
+                  >
+                    <Upload size={16} /> Load Army
+                  </button>
+                  <input
+                    ref={fileInputRef}
+                    data-testid="load-army-input"
+                    type="file"
+                    accept="application/json,.json"
+                    onChange={handleLoadFile}
+                    className="hidden"
+                  />
+                </div>
               </div>
-            </div>
-          </div>
 
-          {/* Supplement + Army dropdowns (left) · Roster summary (right) */}
-          <div className="flex items-end justify-between gap-6 mt-1 w-full flex-wrap">
-            <div className="flex items-end gap-6 flex-wrap">
+              {/* Supplement + Army dropdowns */}
+              <div className="flex items-end gap-6 flex-wrap">
               <div className="flex flex-col items-start gap-1">
                 <label htmlFor="supplement-select" className="font-cond uppercase text-xs tracking-widest text-slate-300">
                   Supplement
@@ -1718,13 +1695,14 @@ function App() {
                 </div>
               )}
             </div>
+            </div>
 
             {/* Roster summary box — always rendered (hidden until an army is
                selected) so the header height never changes. */}
             <div
               data-testid="header-roster-summary"
               aria-hidden={!army}
-              className={`rounded-xl border-2 border-emerald-400 p-3 backdrop-blur bg-slate-950/90 w-[520px] shrink-0 ${
+              className={`rounded-xl border-2 border-emerald-400 p-3 backdrop-blur bg-slate-950/90 w-[520px] shrink-0 flex flex-col justify-between ${
                 army ? "" : "invisible pointer-events-none"
               }`}
             >
