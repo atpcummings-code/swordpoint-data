@@ -16,6 +16,13 @@ import {
   Flag,
   RefreshCw,
 } from "lucide-react";
+import {
+  Select,
+  SelectTrigger,
+  SelectValue,
+  SelectContent,
+  SelectItem,
+} from "@/components/ui/select";
 
 /* ------------------------------------------------------------------ */
 /*  DATA SOURCE                                                        */
@@ -1558,20 +1565,27 @@ function App() {
                   <label htmlFor="army-select" className="font-cond uppercase text-xs tracking-widest text-slate-500">
                     Army
                   </label>
-                  <select
-                    id="army-select"
-                    data-testid="army-select"
-                    value={selectedArmyKey}
-                    onChange={(e) => handleArmyChange(e.target.value)}
-                    className="bg-slate-900 border border-slate-700 rounded-md px-4 py-2 font-cond text-base text-slate-100 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 min-w-[280px] cursor-pointer"
-                  >
-                    <option value="">— Select an army —</option>
-                    {armyKeys.map((k) => (
-                      <option key={k} value={k}>
-                        {armies[k].armyName}
-                      </option>
-                    ))}
-                  </select>
+                  <Select value={selectedArmyKey || undefined} onValueChange={handleArmyChange}>
+                    <SelectTrigger
+                      id="army-select"
+                      data-testid="army-select"
+                      className="h-auto bg-slate-900 border border-slate-700 rounded-md px-4 py-2 font-cond text-base text-slate-100 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 min-w-[280px] cursor-pointer"
+                    >
+                      <SelectValue placeholder="— Select an army —" />
+                    </SelectTrigger>
+                    <SelectContent className="max-h-[66vh] overflow-y-auto bg-slate-900 border-slate-700 text-slate-100">
+                      {armyKeys.map((k) => (
+                        <SelectItem
+                          key={k}
+                          value={k}
+                          data-testid={`army-option-${k}`}
+                          className="font-cond text-base text-slate-200 focus:bg-slate-800 focus:text-emerald-300 cursor-pointer"
+                        >
+                          {armies[k].armyName}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 </div>
               )}
             </div>
