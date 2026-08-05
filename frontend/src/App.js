@@ -1541,7 +1541,7 @@ function App() {
           )}
 
           {/* Supplement + Army dropdowns (left) · Roster summary (right) */}
-          <div className="flex items-center justify-between gap-6 mt-1 w-full flex-wrap min-h-[92px]">
+          <div className="flex items-end justify-between gap-6 mt-1 w-full flex-wrap">
             <div className="flex items-end gap-6 flex-wrap">
               <div className="flex flex-col items-start gap-1">
                 <label htmlFor="supplement-select" className="font-cond uppercase text-xs tracking-widest text-slate-500">
@@ -1600,12 +1600,15 @@ function App() {
               )}
             </div>
 
-            {/* Roster summary box (moved from the roster column) */}
-            {army && (
-              <div
-                data-testid="header-roster-summary"
-                className="rounded-xl border-2 border-emerald-400 p-3 backdrop-blur bg-slate-950/90 w-[520px] shrink-0"
-              >
+            {/* Roster summary box — always rendered (hidden until an army is
+               selected) so the header height never changes. */}
+            <div
+              data-testid="header-roster-summary"
+              aria-hidden={!army}
+              className={`rounded-xl border-2 border-emerald-400 p-3 backdrop-blur bg-slate-950/90 w-[520px] shrink-0 ${
+                army ? "" : "invisible pointer-events-none"
+              }`}
+            >
                 <div className="flex items-center justify-between gap-3 flex-wrap">
                   <span className="font-cond uppercase text-[11px] tracking-widest text-slate-500">
                     Roster Summary
@@ -1656,7 +1659,6 @@ function App() {
                   </button>
                 </div>
               </div>
-            )}
           </div>
         </div>
       </header>
