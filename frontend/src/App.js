@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState, useRef } from "react";
 import "@/App.css";
 import {
   Plus,
@@ -15,6 +15,8 @@ import {
   Users,
   Flag,
   RefreshCw,
+  Save,
+  Upload,
 } from "lucide-react";
 import {
   Select,
@@ -852,7 +854,13 @@ function App() {
       setData(parsed);
       setSource("remote");
       setLoadError("");
-      if (opts.keepSelection && parsed.armies[selectedArmyKey]) {
+      if (opts.restore) {
+        const s = opts.restore;
+        setSelectedArmyKey(parsed.armies[s.armyKey] ? s.armyKey : "");
+        setCheckedAllies(s.checkedAllies || []);
+        setRoster(s.roster || []);
+        if (s.maxPoints != null) setMaxPoints(s.maxPoints);
+      } else if (opts.keepSelection && parsed.armies[selectedArmyKey]) {
         // keep current army selection on reload
       } else {
         // require an explicit army choice after loading a supplement
@@ -864,9 +872,17 @@ function App() {
       setData(normalizeData(JSON.parse(JSON.stringify(MOCK_DATA))));
       setSource("mock");
       setLoadError(e.message || "Failed to load remote data.");
-      setSelectedArmyKey("");
-      setRoster([]);
-      setCheckedAllies([]);
+      if (opts.restore) {
+        const s = opts.restore;
+        setSelectedArmyKey(s.armyKey || "");
+        setCheckedAllies(s.checkedAllies || []);
+        setRoster(s.roster || []);
+        if (s.maxPoints != null) setMaxPoints(s.maxPoints);
+      } else {
+        setSelectedArmyKey("");
+        setRoster([]);
+        setCheckedAllies([]);
+      }
     } finally {
       setReloading(false);
     }
@@ -891,6 +907,73 @@ function App() {
     setSelectedArmyKey(key);
     setRoster([]);
     setCheckedAllies([]);
+  };
+
+  /* --- Save the current roster to a JSON file on the user's device --- */
+  const handleSaveArmy = () => {
+    if (!army) {
+      window.alert("Select an army first before saving.");
+      return;
+    }
+    const name = window.prompt("Enter a name for this army:", data?.armyName || "My Army");
+    if (!name) return;
+    const payload = {
+      _type: "swordpoint-army",
+      name,
+      supplementUrl: selectedSupplementUrl,
+      supplementName: data?.supplement || "",
+      armyKey: selectedArmyKey,
+      maxPoints,
+      checkedAllies,
+      roster,
+      savedAt: new Date().toISOString(),
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `${name.replace(/[^a-z0-9-_ ]/gi, "_").trim() || "army"}.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  };
+
+  /* --- Load a saved army JSON file: restores supplement, army, roster --- */
+  const fileInputRef = useRef(null);
+  const handleLoadClick = () => fileInputRef.current?.click();
+  const handleLoadFile = (e) => {
+    const file = e.target.files?.[0];
+    e.target.value = ""; // allow re-selecting the same file later
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      let saved;
+      try {
+        saved = JSON.parse(reader.result);
+      } catch {
+        window.alert("Invalid army file — could not parse JSON.");
+        return;
+      }
+      if (!saved || !Array.isArray(saved.roster)) {
+        window.alert("This file does not look like a saved Swordpoint army.");
+        return;
+      }
+      setSelectedSupplementUrl(saved.supplementUrl || "");
+      if (saved.supplementUrl) {
+        setData(null);
+        loadData(saved.supplementUrl, { restore: saved });
+      } else {
+        // no supplement recorded — restore against fallback data
+        setData(normalizeData(JSON.parse(JSON.stringify(MOCK_DATA))));
+        setSource("mock");
+        setSelectedArmyKey(saved.armyKey || "");
+        setCheckedAllies(saved.checkedAllies || []);
+        setRoster(saved.roster || []);
+        if (saved.maxPoints != null) setMaxPoints(saved.maxPoints);
+      }
+    };
+    reader.readAsText(file);
   };
 
   /* --- roster mutations --- */
@@ -1539,6 +1622,42 @@ function App() {
               <span>Remote data unavailable — using sample data. {loadError}</span>
             </div>
           )}
+
+          {/* Save / Load army file box — left-aligned, above the dropdowns */}
+          <div className="w-full flex justify-start">
+            <div
+              data-testid="army-file-box"
+              className="rounded-xl border-2 border-emerald-400 p-3 backdrop-blur bg-slate-950/90 w-fit"
+            >
+              <span className="font-cond uppercase text-[11px] tracking-widest text-slate-300 block mb-2">
+                Army File
+              </span>
+              <div className="flex items-center gap-3">
+                <button
+                  data-testid="save-army-btn"
+                  onClick={handleSaveArmy}
+                  className="inline-flex items-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-cond font-semibold px-4 py-2 transition-colors"
+                >
+                  <Save size={16} /> Save Army
+                </button>
+                <button
+                  data-testid="load-army-btn"
+                  onClick={handleLoadClick}
+                  className="inline-flex items-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-cond font-semibold px-4 py-2 transition-colors"
+                >
+                  <Upload size={16} /> Load Army
+                </button>
+                <input
+                  ref={fileInputRef}
+                  data-testid="load-army-input"
+                  type="file"
+                  accept="application/json,.json"
+                  onChange={handleLoadFile}
+                  className="hidden"
+                />
+              </div>
+            </div>
+          </div>
 
           {/* Supplement + Army dropdowns (left) · Roster summary (right) */}
           <div className="flex items-end justify-between gap-6 mt-1 w-full flex-wrap">
