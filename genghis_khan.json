@@ -96,6 +96,7 @@
           "pointsPerBase": 22,
           "minBases": 3,
           "maxBases": 12,
+          "minCountAllowed": 1,
           "baseEquipment": ["Spear", "Shield", "Light Armour"],
           "specialRules": ["Close Order", "Superior Fighters", "Shieldwall"],
           "optionalEquipment": [
@@ -476,7 +477,7 @@
           "pointsPerBase": 19,
           "minBases": 2,
           "maxBases": 6,
-          "minCountAllowed": 1,
+          "mmaxCountAllowed": 2,
           "baseEquipment": ["Bow", "Shield"],
           "specialRules": [
              "Skirmishers", "Parthian Shot"
