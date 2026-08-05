@@ -15,6 +15,16 @@
   min-height: 100vh;
 }
 
+/* Force dropdown border + placeholder colour (overrides shadcn/tailwind-merge) */
+[data-testid="supplement-select"],
+[data-testid="army-select"] {
+  border-color: rgb(203, 213, 225) !important;
+}
+[data-testid="supplement-select"][data-placeholder],
+[data-testid="army-select"][data-placeholder] {
+  color: rgb(203, 213, 225) !important;
+}
+
 
 /* subtle scrollbar for panels */
 .sp-scroll::-webkit-scrollbar { width: 8px; }

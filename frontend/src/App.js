@@ -1798,7 +1798,7 @@ function StatusBadge({ isValid, empty }) {
     return (
       <span
         data-testid="status-badge"
-        className="inline-flex items-center gap-1.5 rounded-full bg-slate-800 text-slate-400 px-3 py-1 font-cond text-sm"
+        className="inline-flex items-center gap-1.5 rounded-full bg-slate-800 text-slate-300 px-3 py-1 font-cond text-sm"
       >
         Empty roster
       </span>
