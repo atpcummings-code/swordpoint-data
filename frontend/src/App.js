@@ -1626,6 +1626,13 @@ function App() {
                   >
                     <Upload size={16} /> Load Army
                   </button>
+                  <button
+                    data-testid="export-pdf-btn"
+                    onClick={() => window.print()}
+                    className="inline-flex items-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-cond font-semibold px-4 py-2 transition-colors"
+                  >
+                    <Printer size={16} /> Export PDF
+                  </button>
                   <input
                     ref={fileInputRef}
                     data-testid="load-army-input"
@@ -1702,7 +1709,7 @@ function App() {
             <div
               data-testid="header-roster-summary"
               aria-hidden={!army}
-              className={`rounded-xl border-2 border-emerald-400 p-3 backdrop-blur bg-slate-950/90 w-[520px] shrink-0 flex flex-col justify-between ${
+              className={`rounded-xl border-2 border-emerald-400 p-3 backdrop-blur bg-slate-950/90 w-[360px] shrink-0 flex flex-col justify-between ${
                 army ? "" : "invisible pointer-events-none"
               }`}
             >
@@ -1714,10 +1721,10 @@ function App() {
                 </div>
 
                 <div className="mt-2 flex items-end justify-between gap-4 flex-wrap">
-                  <div className="flex flex-col">
+                  <div className="flex flex-col items-center">
                     <label
                       htmlFor="max-points"
-                      className="font-cond uppercase text-[11px] tracking-widest text-slate-300 mb-1"
+                      className="font-cond uppercase text-[11px] tracking-widest text-slate-300 mb-1 text-center"
                     >
                       Max Points Limit
                     </label>
@@ -1728,17 +1735,17 @@ function App() {
                       min={0}
                       value={maxPoints}
                       onChange={(e) => setMaxPoints(Math.max(0, Number(e.target.value) || 0))}
-                      className="bg-slate-900 border border-slate-700 rounded-md px-3 py-1.5 w-28 font-cond text-lg text-slate-100 focus:outline-none focus:border-emerald-500"
+                      className="bg-slate-900 border border-slate-700 rounded-md px-3 py-1.5 w-28 font-cond text-lg text-slate-100 text-center focus:outline-none focus:border-emerald-500"
                     />
                   </div>
 
-                  <div className="text-right">
-                    <div className="font-cond uppercase text-[11px] tracking-widest text-slate-300">
+                  <div className="flex flex-col items-center">
+                    <div className="font-cond uppercase text-[11px] tracking-widest text-slate-300 text-center">
                       Total / Limit
                     </div>
                     <div
                       data-testid="total-points"
-                      className={`font-display text-2xl font-extrabold leading-none ${
+                      className={`font-display text-2xl font-extrabold leading-none text-center ${
                         totalPoints > maxPoints ? "text-amber-400" : "text-emerald-400"
                       }`}
                     >
@@ -1746,14 +1753,6 @@ function App() {
                       <span className="text-slate-500 text-lg font-semibold"> / {maxPoints}</span>
                     </div>
                   </div>
-
-                  <button
-                    data-testid="export-pdf-btn"
-                    onClick={() => window.print()}
-                    className="inline-flex items-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-cond font-semibold px-4 py-2 transition-colors"
-                  >
-                    <Printer size={16} /> Export PDF
-                  </button>
                 </div>
               </div>
           </div>
