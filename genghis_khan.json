@@ -108,7 +108,8 @@
                   "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
-                },
+                }]
+        }
             {
           "id": "subject_nobles",
           "name": "Subject Nobles",
