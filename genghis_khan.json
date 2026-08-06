@@ -213,7 +213,7 @@
             {
                   "name": "Bow",
                    "disables": "Two-handed Axe",
-                "maxCountAllowed": 1,
+                 "maxEquipmentCount": 2,
                   "pointsModifier": 0,
                   "enabledEvery": 2,
                  "equipmentAdded": ["Bow"], 
