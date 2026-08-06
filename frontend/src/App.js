@@ -92,7 +92,18 @@ const MOCK_DATA = {
           max: 15,
           description:
             "You may include one allied contingent. Check an army below to add its non-General units. Allied units count toward this category's points limit.",
-          alliedArmyKeys: [{ key: "vikings", disables: ["anglo_danish"] }, "anglo_danish"],
+          alliedArmyKeys: [{ key: "vikings", disables: ["vikings"] }, "anglo_danish"],
+          maxAlliedArmiesAllowed: 2,
+        },
+        {
+          id: "mercenaries",
+          name: "Mercenary Contingents",
+          constraintType: "percentage",
+          min: 0,
+          max: 15,
+          description:
+            "Hire the same armies as mercenaries. Selecting an army here (or as an ally) locks it in the other category.",
+          alliedArmyKeys: ["vikings", "anglo_danish"],
           maxAlliedArmiesAllowed: 2,
         },
       ],
@@ -1096,24 +1107,35 @@ function App() {
   const alliesCategory = army?.categories?.find((c) => Array.isArray(c.alliedArmyKeys));
   const maxAllies = alliesCategory?.maxAlliedArmiesAllowed ?? 0;
 
-  /* Army keys disabled because a currently-selected ally lists them in its
-     "disables" field (applies across every category). */
+  /* Ally selection is tracked per-category as composite keys "categoryId::armyKey"
+     so the same army can be offered in multiple categories independently. */
+  const splitAlly = (composite) => {
+    const idx = composite.indexOf("::");
+    return idx === -1 ? { categoryId: "", key: composite } : { categoryId: composite.slice(0, idx), key: composite.slice(idx + 2) };
+  };
+
+  /* Army keys disabled because a currently-selected ally (in ANY category) lists
+     them in its "disables" field — greys them out in every other category. */
   const disabledAllies = useMemo(() => {
     const set = new Set();
     const map = army?._allyDisables || {};
-    checkedAllies.forEach((k) => (map[k] || []).forEach((d) => set.add(d)));
+    checkedAllies.forEach((c) => {
+      const { key } = splitAlly(c);
+      (map[key] || []).forEach((d) => set.add(d));
+    });
     return set;
   }, [army, checkedAllies]);
 
-  const toggleAlly = (allyKey) => {
+  const toggleAlly = (categoryId, allyKey) => {
+    const composite = `${categoryId}::${allyKey}`;
     setCheckedAllies((prev) => {
-      if (prev.includes(allyKey)) {
-        // uncheck -> purge every roster instance sourced from this ally
-        setRoster((r) => r.filter((i) => i.sourceArmyKey !== allyKey));
-        return prev.filter((k) => k !== allyKey);
+      if (prev.includes(composite)) {
+        // uncheck -> purge roster instances sourced from this ally in this category
+        setRoster((r) => r.filter((i) => !(i.sourceArmyKey === allyKey && i.categoryId === categoryId)));
+        return prev.filter((k) => k !== composite);
       }
       if (disabledAllies.has(allyKey)) return prev; // blocked by another selection
-      return [...prev, allyKey];
+      return [...prev, composite];
     });
   };
 
@@ -1406,7 +1428,7 @@ function App() {
     (army.categories || []).forEach((cat) => {
       if (Array.isArray(cat.alliedArmyKeys)) {
         cat.alliedArmyKeys.forEach((ak) => {
-          if (checkedAllies.includes(ak) && armies[ak]) {
+          if (checkedAllies.includes(`${cat.id}::${ak}`) && armies[ak]) {
             availableUnits.push(...(armies[ak].units || []));
           }
         });
@@ -2043,7 +2065,7 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
               {cat.alliedArmyKeys.map((ak) => {
                 const ally = armies[ak];
                 if (!ally) return null;
-                const checked = checkedAllies.includes(ak);
+                const checked = checkedAllies.includes(`${cat.id}::${ak}`);
                 const blockedByDisable = !checked && disabledAllies?.has(ak);
                 const disabled =
                   (!checked && checkedAllies.length >= maxAllies) || blockedByDisable;
@@ -2056,10 +2078,10 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
                   >
                     <input
                       type="checkbox"
-                      data-testid={`ally-checkbox-${ak}`}
+                      data-testid={`ally-checkbox-${cat.id}-${ak}`}
                       checked={checked}
                       disabled={disabled}
-                      onChange={() => onToggleAlly(ak)}
+                      onChange={() => onToggleAlly(cat.id, ak)}
                       className="w-4 h-4 accent-emerald-500"
                     />
                     <span className={checked ? "text-emerald-300" : "text-slate-300"}>
@@ -2072,7 +2094,7 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
 
             {/* Active allied units (non-General only) */}
             {cat.alliedArmyKeys
-              .filter((ak) => checkedAllies.includes(ak) && armies[ak])
+              .filter((ak) => checkedAllies.includes(`${cat.id}::${ak}`) && armies[ak])
               .map((ak) => (
                 <div key={ak} className="rounded-lg border border-emerald-800/40 bg-emerald-950/20 p-2 space-y-2">
                   <div className="font-cond text-xs uppercase tracking-widest text-emerald-400 px-1">
