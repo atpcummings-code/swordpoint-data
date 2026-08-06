@@ -213,7 +213,6 @@
             {
                   "name": "Bow",
                    "disables": "Two-handed Axe",
-                 "maxEquipmentCount": 2,
                   "pointsModifier": 0,
                   "enabledEvery": 2,
                  "equipmentAdded": ["Bow"], 
@@ -227,7 +226,7 @@
                   "name": "Two-handed Axe",
                  "disables": ["Bow", "Skirmishers"],
                   "pointsModifier": 0,
-             "maxCountAllowed": 2,
+             "maxEquipmentCount": 2,
                  "equipmentAdded": ["Two-handed Axe"], 
                  "equipmentRemoved": ["Throwing Spear"],
                   "rulesAdded": [],
