@@ -367,9 +367,9 @@ const MOCK_DATA = {
           minBases: 2,
           maxBases: 6,
           requires: {
-            unitId: "welsh_teulu_foot",
+            unitId: ["welsh_teulu_foot", "welsh_teulu_cavalry"],
             count: 2,
-            name: "Teulu Foot",
+            name: "Teulu (Foot or Cavalry)",
             perUnit: true,
           },
           specialRules: ["Inferior Fighters", "Skirmishers"],
@@ -744,13 +744,20 @@ function normalizeRequires(req, selfId) {
   const arr = Array.isArray(req) ? req : [req];
   return arr
     .filter((r) => r && (r.unitId || r.self))
-    .map((r) => ({
-      unitId: r.self ? selfId : r.unitId,
-      count: r.count ?? 1,
-      name: r.name || (r.self ? "this unit" : r.unitId),
-      perUnit: !!r.perUnit,
-      self: !!r.self,
-    }));
+    .map((r) => {
+      const unitIds = r.self
+        ? [selfId]
+        : Array.isArray(r.unitId)
+        ? r.unitId
+        : [r.unitId];
+      return {
+        unitIds,
+        count: r.count ?? 1,
+        name: r.name || (r.self ? "this unit" : unitIds.join(", ")),
+        perUnit: !!r.perUnit,
+        self: !!r.self,
+      };
+    });
 }
 
 const GLOBAL_RATIOS = [25, 33, 50, 67, 75];
@@ -2097,7 +2104,7 @@ function RosterRow({
   const requireWarnings = [];
   (inst.requires || []).forEach((r) => {
     if (r.self) return; // self-requirement is shown in army-wide validation
-    const have = rosterCounts?.[r.unitId] || 0;
+    const have = (r.unitIds || []).reduce((s, id) => s + (rosterCounts?.[id] || 0), 0);
     if (r.perUnit) {
       const permitted = Math.floor(have / r.count);
       const thisCount = rosterCounts?.[inst.unitId] || 0;
