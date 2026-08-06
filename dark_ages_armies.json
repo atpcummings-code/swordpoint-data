@@ -13714,7 +13714,14 @@
 
 "early_turcoman": {
        "armyName": "Early Turcoman - 971 AD - 1504 AD",
-       "armyValidation": [ { "ids": ["elite_horse_archers", "horse_archers"], "expression": "greaterThanOrEqualTo", "ratio": 2, "compareWith": ["nobles"] } ],   
+       "armyValidation": [
+  {
+    "ids": ["elite_horse_archers", "horse_archers"],
+    "compareWith": ["nobles"],
+    "expression": "greaterThanOrEqual",
+    "ratio": 2
+  }
+],   
         "categories": [
         {
           "id": "Commanders",
@@ -13984,8 +13991,16 @@
 
 "later_turcoman": {
       "armyName": "Later Turcoman - 971 AD - 1504 AD",
-  "armyValidation": [ { "ids": ["elite_horse_archers", "horse_archers"], "expression": "greaterThanOrEqualTo", "ratio": 2, "compareWith": ["nobles"] } ],   
-  "categories": [
+ "armyValidation": [
+  {
+    "ids": ["elite_horse_archers", "horse_archers"],
+    "compareWith": ["nobles"],
+    "expression": "greaterThanOrEqual",
+    "ratio": 2
+  }
+],   
+	
+	"categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
