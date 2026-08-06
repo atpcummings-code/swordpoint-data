@@ -150,7 +150,7 @@
                   "pointsModifier": 1,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
-                  "rulesAdded": []"Open Order",
+                  "rulesAdded": ["Open Order"],
                   "rulesRemoved": ["Skirmishers"],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
