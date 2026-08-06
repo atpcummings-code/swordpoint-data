@@ -9859,7 +9859,7 @@
           "min": 0,
           "max": 33,
           "alliedArmyKeys": [
-          "pecheneg", "magyar", "Khazar"
+          "pecheneg", "magyar", "khazar"
           ],
           "maxAlliedArmiesAllowed": 5
         }, 
