@@ -2,8 +2,7 @@
   "armies": {
      "pecheng": {
       "armyName": "Pecheneg - 850 AD - 1122 AD",
-     "id": "warriors", "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
-       "categories": [
+      "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
@@ -221,6 +220,7 @@
           "pointsPerBase": 14,
           "minBases": 3,
           "maxBases": 12,
+          "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
           "baseEquipment": ["Bow"],
           "specialRules": ["Close Order"],
           "optionalEquipment": [
