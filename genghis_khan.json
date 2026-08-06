@@ -1,8 +1,8 @@
 {
   "armies": {
      "pecheng": {
-      "armyName": "Early Bulgar - 643 AD - 1014 AD",
-      "pointsPercentageValidation": [ { "ids": ["slav_nobles", "slav_cavalry"], "expression": "lessThanOrEqual", "percentage": 25 } ],
+      "armyName": "Pecheneg - 850 AD - 1122 AD",
+      "id": "warriors", "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
        "categories": [
         {
           "id": "Commanders",
