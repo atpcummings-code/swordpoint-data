@@ -520,7 +520,7 @@
           "pointsPerBase": 6,
           "minBases": 2,
           "maxBases": 6,
-          "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" } 
+          "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
           "maxCountAllowed": 2,
           "baseEquipment": ["Handgun"],
           "specialRules": ["Skirmishers"],
