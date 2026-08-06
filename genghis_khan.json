@@ -477,7 +477,7 @@
           "optionalEquipment": [
             {
                   "name": "Skirmishers",
-              "disables": "Two-handed Axe",
+              "disables": ["Two-handed Axe", "Light Armour", "Large Shield"],
                   "pointsModifier": -5,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
@@ -500,7 +500,7 @@
                 },
             {
                   "name": "Light Armour",
-                   "disables": "light Armour",
+                   "disables": "Skirmishers",
                   "pointsModifier": 0,
                  "equipmentAdded": ["Light Armour"], 
                  "equipmentRemoved": [],
@@ -511,7 +511,7 @@
                 },
               {
                   "name": "Large Shield",
-                   "disables": "light Armour",
+                   "disables": "Skirmishers",
                   "pointsModifier": 0,
                  "equipmentAdded": ["Large Shield"], 
                  "equipmentRemoved": [],
