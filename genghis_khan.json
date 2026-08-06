@@ -478,7 +478,7 @@
             {
                   "name": "Skirmishers",
               "disables": ["Two-handed Axe", "Light Armour", "Large Shield"],
-                  "pointsModifier": -5,
+                  "pointsModifier": -4,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
                   "rulesAdded": ["Skirmishers"],
