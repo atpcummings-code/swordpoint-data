@@ -7841,7 +7841,7 @@
             {
           "id": "warriors",
           "name": "Warriors",
-          "description": "Warrios have a bow. Open Order. May have a shield (+2), spear (free) or throwing spear (+2) and light armour (+2).  Every second unit may be Riding Camels (+1). Warrios without upgrades may be fielded as skirmishers at a cost of sevenpoints per base.",
+          "description": "Warriors have a bow. Open Order. May have a shield (+2), spear (free) or throwing spear (+2) and light armour (+2).  Every second unit may be Riding Camels (+1). Warriors without upgrades may be fielded as skirmishers at a cost of sevenpoints per base.",
           "category": "Infantry",
           "type": "other",
           "defence": 7,
@@ -8158,7 +8158,7 @@
             {
           "id": "warriors",
           "name": "Warriors",
-          "description": "Warrios have a bow. Open Order. May have a shield (+2), spear (free) or throwing spear (+2) and light armour (+2).  Every second unit may be Riding Camels (+1). Warrios without upgrades may be fielded as skirmishers at a cost of sevenpoints per base.",
+          "description": "Warriors have a bow. Open Order. May have a shield (+2), spear (free) or throwing spear (+2) and light armour (+2).  Every second unit may be Riding Camels (+1). Warriors without upgrades may be fielded as skirmishers at a cost of sevenpoints per base.",
           "category": "Infantry",
           "type": "other",
           "defence": 7,
@@ -8956,7 +8956,7 @@
            {
           "id": "slav_warriors",
           "name": "Slav Warriors",
-          "description": "Slav Warrios have throwing spear and shield. Open order. Warband. May be fielded as skirmishers at a cost of six points per base. Every second unitof warriors may replace throwing spar with bow (free). Two formed units of Slav Warrios may replace throwing spear with two-handed axe (free).",
+          "description": "Slav Warriors have throwing spear and shield. Open order. Warband. May be fielded as skirmishers at a cost of six points per base. Every second unitof warriors may replace throwing spar with bow (free). Two formed units of Slav Warriors may replace throwing spear with two-handed axe (free).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -9233,7 +9233,7 @@
            {
           "id": "slav_warriors",
           "name": "Slav Warriors",
-          "description": "Slav Warriors have throwing spear and shield. Close order. Warband. May be fielded as skirmishers at a cost of six points per base. Every second unitof warriors may replace throwing spar with bow (free). Two formed units of Slav Warrios may replace throwing spear with two-handed axe (free). If armed with throwing spear may have light armour (+2) and large shield (+2).",
+          "description": "Slav Warriors have throwing spear and shield. Close order. Warband. May be fielded as skirmishers at a cost of six points per base. Every second unitof warriors may replace throwing spar with bow (free). Two formed units of Slav Warriors may replace throwing spear with two-handed axe (free). If armed with throwing spear may have light armour (+2) and large shield (+2).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
