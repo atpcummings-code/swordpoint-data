@@ -235,7 +235,7 @@
           "cohesion": 5,
           "pointsPerBase": 11,
           "minBases": 3,
-          "maxBases": `12,
+          "maxBases": 12,
           "baseEquipment": ["Halberd", "Shield"],
           "specialRules": ["Close Order", "Warband"],
           "optionalEquipment": []
