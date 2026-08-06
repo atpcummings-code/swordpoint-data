@@ -1,7 +1,7 @@
 {
   "armies": {
      "turcoman": {
-      "armyName": "Early Khazar - 568 AD - 969 AD",
+      "armyName": "Early Turcoman - 971 AD - 1504 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -15,13 +15,13 @@
           "name": "Infantry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 20
+          "max": 30
         },
             {       
           "id": "Cavalry",
           "name": "Cavalry",
           "constraintType": "percentage",
-          "min": 0,
+          "min": 50,
           "max": 100
         },
          {       
@@ -34,20 +34,16 @@
        {
           "id": "Allies",
           "name": "Allies",
-          "description": "May take allies from the Alans list.",
+          "description": "The army may take allies from the Timurid (Afghan Infantry only) list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25,
-          "alliedArmyKeys": [
-          "alans"
-          ],
-          "maxAlliedArmiesAllowed": 5
+          "max": 25
         }
                  ],
       "units": [
         {
-          "id": "khagan",
-          "name": "Khagan",
+          "id": "khan",
+          "name": "Khan",
           "description": "Rides a horse.",
           "category": "Commanders",
           "type": "General",
@@ -76,19 +72,46 @@
         {
           "id": "nobles",
           "name": "Nobles",
-          "description": "Noble Cavalry have bow and shield. Superior Fighters. Superior Shooters. Nomad Cavalry. May have light armour (+1) and spear (+1) or javelin (+1).",             
+          "description": "Noble Cavalry have light armour, Shield, bow and shield. Superior Fighters. Superior Shooters. One unit may be vetran (+1).",             
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow", "Light Armour", "Spear", "Shield"],
+          "specialRules": ["Open Order", "Superior Fighters", "Superior Shooters"],
+          "optionalEquipment": [        
+    {
+                  "name": "Veteran",
+                  "pointsModifier": 1,
+                "maxEquipmentCount": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Veteran"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+          ]
+        },
+            
+        {
+          "id": "elite_horse_archers",
+          "name": "Elite Horse Archers",
+          "description": "Elite Horse Archers have a bow and shield. Superior Shooters. Evade. May have light armour. (+1). May be fielded as skirmishers if wearing no armour/light armour, Superio Shooters. Nomad Cavalry at 23/24 points per base..",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
-          "cohesion": 8,
-          "pointsPerBase": 27,
+          "cohesion": 7,
+          "pointsPerBase": 21,
           "minBases": 3,
           "maxBases": 8,
-          "maxCountAllowed": 2,
           "baseEquipment": ["Bow", "Shield"],
-          "specialRules": ["Open Order", "Superior Fighters", "Superior Shooters", "Nomad Cavalry"],
-          "optionalEquipment": [        
-    {
+          "specialRules": ["Open Order", "Superior Shooters", "Evade"],
+          "optionalEquipment": [
+            {
                   "name": "Light Armour",
                   "pointsModifier": 1,
                  "equipmentAdded": ["Light Armour"], 
@@ -98,89 +121,13 @@
                   "defenceModifier": -1,
                   "cohesionModifier": 0
                 },
-            {
-                  "name": "Javelins",
-              "disables": "Spear",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Javelins"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                }]
-        },
-            {
-          "id": "subject_nobles",
-          "name": "Subject Nobles",
-          "description": "Subject Noble Cavalry have light armour, bow and shield. May have spear (+1).",             
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 4,
-          "cohesion": 7,
-          "pointsPerBase": 18,
-          "minBases": 3,
-          "maxBases": 8,
-          "maxCountAllowed": 2,
-          "baseEquipment": ["Bow", "Shield", "Light Armour"],
-          "specialRules": ["Open Order"],
-          "optionalEquipment": [
-    {
-                 "name": "Spear",
-              "disables": "Javelins",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Spear"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                } 
-          ]
-            },
-        {
-          "id": "elite_horse_archers",
-          "name": "Elite Horse Archers",
-          "description": "Elite Horse Archers have a bow and shield. Superior Shooters. Nomad Cavalry. May have either javelins or spear (+1). May be fielded as skirmishers.",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 23,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": ["Bow", "Shield"],
-          "specialRules": ["Open Order", "Superior Shooters", "Nomad Cavalry"],
-          "optionalEquipment": [
-            {
-                  "name": "Javelins",
-              "disables": "Spear",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Javelins"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
-                  "name": "Spear",
-              "disables": "Javelins",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Spear"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
+                        {
                   "name": "Skirmishers",
-                  "pointsModifier": 0,
+                  "pointsModifier": 2,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
                   "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order"],
+                  "rulesRemoved": ["Open Order", "Superior Shooters"],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
