@@ -136,7 +136,7 @@
         {
           "id": "horse_archers",
           "name": "Horse Archers",
-          "description": "Horse Archers have a bow and shield. Skirmishers. Nomad Cavalry.",
+          "description": "Horse Archers have a bow and shield. Skirmishers. Nomad Cavalry. May have ligt armour (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
@@ -147,44 +147,24 @@
           "minCountAllowed": 2,
           "baseEquipment": ["Bow", "Shield"],
           "specialRules": ["Skirmishers", "Nomad Cavalry"],
-          "optionalEquipment": []
-        },
+          "optionalEquipment": [
             {
-          "id": "subject_horse_archers",
-          "name": "Subject Horse Archers",
-          "description": "Subject Horse Archers have a bow and shield. Skirmishers. Nomad Cavalry.",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 6,
-          "pointsPerBase": 20,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": ["Bow", "Shield"],
-          "specialRules": ["Skirmishers", "Nomad Cavalry"],
-          "optionalEquipment": []
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }
+          ]
         },
+            
         {
-          "id": "guards",
-          "name": "Guards",
-          "description": "Guard Infantry have light armour, spear and shield.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 8,
-          "pointsPerBase": 20,
-          "minBases": 3,
-          "maxBases": 12,
-          "maxCountAllowed": 1,
-           "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
-          "baseEquipment": ["Light Armour", "Spear", "Shield"],
-          "specialRules": ["Close Order"],
-          "optionalEquipment": []
-        },
-            {
           "id": "warriors",
           "name": "Warriors",
-          "description": "Warrios have a bow. Open Order. May have a shield (+2), spear (free) or throwing spear (+2) and light armour (+2).  Every second unit may be Riding Camels (+1). Warrios without upgrades may be fielded as skirmishers at a cost of sevenpoints per base.",
+          "description": "Warriors have a bow. Open Order. May have a shield (+2), spear (free) or throwing spear (+2) and light armour (+2).  Every second unit may be Riding Camels (+1). Warrios without upgrades may be fielded as skirmishers at a cost of sevenpoints per base.",
           "category": "Infantry",
           "type": "other",
           "defence": 7,
@@ -263,7 +243,24 @@
                   "defenceModifier": -1,
                   "cohesionModifier": 0
               }
-                ]},     
+                ]},  
+        {
+          "id": "guards",
+          "name": "Guards",
+          "description": "Guard Infantry have light armour, spear and shield.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "maxCountAllowed": 1,
+           "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
+          "baseEquipment": ["Light Armour", "Spear", "Shield"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": []
+        },
 {
           "id": "wagons",
           "name": "Wagons",
