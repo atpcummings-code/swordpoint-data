@@ -210,7 +210,7 @@
         {
           "id": "afghan_archers",
           "name": "Afghan Archers",
-          "excludes": ["wagons"]  
+          "excludes": ["wagons"], 
           "description": "Afghan Archers have a bow. Skirmishers. Superior Shooters. Inferior Fighters",
           "category": "Allies",
           "type": "other",
@@ -227,7 +227,7 @@
           {
           "id": "afghan_Infantry",
           "name": "Afghan Infantry",
-            "excludes": ["wagons"]  
+            "excludes": ["wagons"],  
           "description": "Afghan Infantry have a halberd and shield. Open Order. Warband.",
           "category": "Allies",
           "type": "other",
