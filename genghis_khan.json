@@ -116,7 +116,7 @@
         {
           "id": "slav_nobles",
           "name": "Slav Nobles",
-          "description": "Slav Nobles have javelins and sheild. Skirmishers. May have spear (+1). May have light armour (+1). There must be at least one unit of Slav Cavalery if any Slab Nobl Cavalr are taken. Slav Noble Cavalry May form in Open Order.",             
+          "description": "Slav Nobles have javelins and sheild. Skirmishers. May have spear (+1). May have light armour (+1). There must be at least one unit of Slav Cavalery if any Slab Nobl Cavalr are taken. Slav Noble Cavalry May form in Open Order. Up to 25% may be spent on all Slav Cavalry.",             
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
@@ -162,7 +162,7 @@
             },{
           "id": "slav_cavalry",
           "name": "Slav Cavalry",
-          "description": "Slav Nobles have javelins and sheild. Skirmishers. May have spear (+1). There must be at least one unit of Slav Cavalery if any Slab Nobl Cavalr are taken. Slav Noble Cavalry May form in Open Order.",             
+          "description": "Slav Nobles have javelins and sheild. Skirmishers. May have spear (+1). There must be at least one unit of Slav Cavalery if any Slab Nobl Cavalr are taken. Slav Noble Cavalry May form in Open Order. Up to 25% may be spent on all Slav Cavalry.",             
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
