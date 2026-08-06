@@ -2871,6 +2871,7 @@
           "pointsPerBase": 28,
           "minBases": 0,
           "maxBases": 4,
+			"maxCountAllowed": 1,
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": ["Wagon Tabor", "Inferior Fighters"],
           "optionalEquipment": [
@@ -4440,6 +4441,7 @@
               "pointsPerBase": 28,
               "minBases": 0,
               "maxBases": 5,
+				"maxCountAllowed": 1,
 				"baseEquipment": ["Javelins", "Shield"],
               "specialRules": [
                 "Wagon Tabor",
@@ -7582,6 +7584,7 @@
               "pointsPerBase": 28,
               "minBases": 0,
               "maxBases": 5,
+			"maxCountAllowed": 1,
 			"baseEquipment": ["Javelins", "Shield"],
               "specialRules": [
                 "Wagon Tabor",
@@ -7932,6 +7935,7 @@
           "pointsPerBase": 28,
           "minBases": 0,
           "maxBases": 5,
+	"maxCountAllowed": 1,
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": ["Wagon Tabor", "Inferior Fighters"],
           "optionalEquipment": [
@@ -8249,6 +8253,7 @@
           "pointsPerBase": 28,
           "minBases": 0,
           "maxBases": 5,
+	"maxCountAllowed": 1,
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": ["Wagon Tabor", "Inferior Fighters"],
           "optionalEquipment": [
@@ -9604,6 +9609,7 @@
           "pointsPerBase": 28,
           "minBases": 0,
           "maxBases": 5,
+	"maxCountAllowed": 1,
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": ["Wagon Tabor"],
           "optionalEquipment": [
@@ -12748,6 +12754,7 @@
           "pointsPerBase": 28,
           "minBases": 0,
           "maxBases": 5,
+	"maxCountAllowed": 1,
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": ["Wagon Tabor", "Inferior Fighters"],
           "optionalEquipment": [
@@ -14633,6 +14640,7 @@
           "pointsPerBase": 28,
           "minBases": 0,
           "maxBases": 5,
+			"maxCountAllowed": 1,
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": ["Wagon Tabor", "Inferior Fighters"],
           "optionalEquipment": [
