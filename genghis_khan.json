@@ -164,7 +164,7 @@
         {
           "id": "warriors",
           "name": "Warriors",
-          "description": "Warriors have a bow. Open Order. May have a shield (+2), spear (free) or throwing spear (+2) and light armour (+2).  Every second unit may be Riding Camels (+1). Warrios without upgrades may be fielded as skirmishers at a cost of sevenpoints per base.",
+          "description": "Warriors have a bow. Open Order. May have a light armour (+2) and shield (+2) Every second unit may be fielded as Skirmishers at a cost of seven points per base.",
           "category": "Infantry",
           "type": "other",
           "defence": 7,
@@ -172,14 +172,13 @@
           "pointsPerBase": 11,
           "minBases": 3,
           "maxBases": 12,
-              "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
           "baseEquipment": ["Bow"],
           "specialRules": ["Open Order"],
           "optionalEquipment": [
             {
                   "name": "Skirmishers",
-              "disables": ["Shield", "Spear", "Throwing Spear", "Light Armour", "Riding Camels"],
-                  "pointsModifier": -4,
+                 "pointsModifier": -4,
+                  "enabledEvery": 2,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
                   "rulesAdded": ["Skirmishers"],
@@ -187,43 +186,8 @@
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
-                        {
-                  "name": "Spear",
-                   "disables": ["Skirmishers", "Throwing Spear"],
-                  "pointsModifier": 0,
-                 "equipmentAdded": ["Spear"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
-                  "name": "Riding Camels",
-                "enabledEvery": 2,
-                   "disables": ["Skirmishers"],
-                  "pointsModifier": 0,
-                 "equipmentAdded": [], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Riding Camels"],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-                    {
-                  "name": "Throwing Spear",
-                   "disables": ["Skirmishers", "Spear"],
-                  "pointsModifier": 2,
-                 "equipmentAdded": ["Spear"], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-            {
+              {
                   "name": "Light Armour",
-                   "disables": ["Skirmishers"],
                   "pointsModifier": 2,
                  "equipmentAdded": ["Light Armour"], 
                  "equipmentRemoved": [],
@@ -234,7 +198,6 @@
                 },
               {
                   "name": "Shield",
-                 "disables": ["Skirmishers"],
                   "pointsModifier": 2,
                  "equipmentAdded": ["Shield"], 
                  "equipmentRemoved": [],
@@ -245,20 +208,36 @@
               }
                 ]},  
         {
-          "id": "guards",
-          "name": "Guards",
-          "description": "Guard Infantry have light armour, spear and shield.",
-          "category": "Infantry",
+          "id": "afghan_archers",
+          "name": "Afghan Archers",
+          "excludes": ["wagons"]  
+          "description": "Afghan Archers have a bow. Skirmishers. Superior Shooters. Inferior Fighters",
+          "category": "Allies",
           "type": "other",
-          "defence": 5,
-          "cohesion": 8,
-          "pointsPerBase": 20,
-          "minBases": 3,
-          "maxBases": 12,
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
           "maxCountAllowed": 1,
-           "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
-          "baseEquipment": ["Light Armour", "Spear", "Shield"],
-          "specialRules": ["Close Order"],
+          "baseEquipment": ["Bow", "Superior Shooters", "Inferior Fighters"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": []
+        },
+          {
+          "id": "afghan_Infantry",
+          "name": "Afghan Infantry",
+            "excludes": ["wagons"]  
+          "description": "Afghan Infantry have a halberd and shield. Open Order. Warband.",
+          "category": "Allies",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": `12,
+          "baseEquipment": ["Halberd", "Shield"],
+          "specialRules": ["Close Order", "Warband"],
           "optionalEquipment": []
         },
 {
