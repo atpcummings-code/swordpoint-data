@@ -206,7 +206,7 @@
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
                   "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order"],
+                  "rulesRemoved": ["Open Order", "Warband"],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
