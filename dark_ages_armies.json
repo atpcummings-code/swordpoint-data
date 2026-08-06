@@ -8396,11 +8396,13 @@
          {
           "id": "Allies",
           "name": "Allies",
-          "description": "May take allies from the Pecheng list.",
+          "description": "May take allies from the Pecheneg list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 20,
-        "alliedArmyKeys": [ { "key": "pecheneg" }  ],
+        "alliedArmyKeys": [
+            "pecheneg"
+          ],
           "maxAlliedArmiesAllowed": 1
         }
            ],
