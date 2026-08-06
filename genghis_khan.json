@@ -30,8 +30,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 15
-        }
-           ],
+        },
        {
           "id": "Allies",
           "name": "Allies",
@@ -44,7 +43,7 @@
           ],
           "maxAlliedArmiesAllowed": 5
         }
-      
+                 ],
       "units": [
         {
           "id": "khagan",
