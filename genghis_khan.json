@@ -66,7 +66,7 @@
           "minBases": 3,
           "maxBases": 8,
           "maxCountAllowed": 1,
-          "requires": { "unitId": ["elite_bulgar_horse_archers", "bulgar_horse_archers"], "count": 1, "name": "Elite Bulgar Horse Archers or Bulgar Horse Archers" },
+          "requires": { "unitId": ["elite_bulgar_horse_archers", "bulgar_horse_archers"], "count": 2, "name": "Elite Bulgar Horse Archers or Bulgar Horse Archers" },
           "baseEquipment": ["Bow", "Shield", "Light Armour"],
           "specialRules": ["Open Order", "Evade"],
           "optionalEquipment": [
