@@ -213,7 +213,6 @@
           "pointsPerBase": 20,
           "minBases": 2,
           "maxBases": 6,
-          "minCountAllowed": 2,
           "baseEquipment": ["Bow", "Shield"],
           "specialRules": ["Skirmishers", "Nomad Cavalry"],
           "optionalEquipment": []
@@ -229,6 +228,7 @@
           "pointsPerBase": 20,
           "minBases": 3,
           "maxBases": 12,
+          "maxCountAllowed": 1,
           "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
           "baseEquipment": ["Light Armour", "Spear", "Shield"],
           "specialRules": ["Close Order"],
