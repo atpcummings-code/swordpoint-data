@@ -159,6 +159,7 @@ const MOCK_DATA = {
             "Light armour, spear and shield. Superior Fighters. May have javelins (+1).",
           category: "teulu",
           type: "other",
+          excludes: ["welsh_skirmishers"],
           defence: 4,
           cohesion: 7,
           pointsPerBase: 20,
@@ -1168,6 +1169,31 @@ function App() {
 
   /* Army-level mutually exclusive unit groups: once any unit in a group is in
      the roster, the +Add button for the other units in that group is disabled. */
+  /* All unit definitions available (home + allied armies) and a map of their
+     "excludes" lists, used for mutual-exclusion blocking and warnings. */
+  const allUnitDefs = useMemo(() => {
+    if (!army) return [];
+    const defs = [...(army.units || [])];
+    (army.categories || []).forEach((cat) => {
+      if (Array.isArray(cat.alliedArmyKeys)) {
+        cat.alliedArmyKeys.forEach((ak) => {
+          if (armies[ak]) defs.push(...(armies[ak].units || []));
+        });
+      }
+    });
+    return defs;
+  }, [army, armies]);
+
+  const excludesByUnitId = useMemo(() => {
+    const asArr = (v) => (Array.isArray(v) ? v : v ? [v] : []);
+    const map = {};
+    allUnitDefs.forEach((u) => {
+      const ex = asArr(u.excludes);
+      if (ex.length) map[u.id] = ex;
+    });
+    return map;
+  }, [allUnitDefs]);
+
   const blockedAddIds = useMemo(() => {
     const blocked = new Set();
     (army?.exclusiveGroups || []).forEach((group) => {
@@ -1179,8 +1205,40 @@ function App() {
         });
       }
     });
+    // mutual "excludes": if a unit is in the roster, every id it excludes is
+    // blocked; conversely, any unit that excludes a roster unit is blocked too.
+    const rosterIds = new Set(roster.map((i) => i.unitId));
+    Object.entries(excludesByUnitId).forEach(([uid, ex]) => {
+      const uidInRoster = rosterIds.has(uid);
+      ex.forEach((x) => {
+        if (uidInRoster) blocked.add(x); // uid present -> block what it excludes
+        if (rosterIds.has(x)) blocked.add(uid); // excluded unit present -> block uid
+      });
+    });
     return blocked;
-  }, [army, rosterCounts]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [army, rosterCounts, roster, excludesByUnitId]);
+
+  /* Warnings when two mutually-exclusive units are both in the roster:
+     unitId -> [names of conflicting units present in the roster]. */
+  const excludeConflicts = useMemo(() => {
+    const rosterIds = new Set(roster.map((i) => i.unitId));
+    const nameOf = (id) => allUnitDefs.find((u) => u.id === id)?.name || id;
+    const out = {};
+    rosterIds.forEach((uid) => {
+      const conflicts = new Set();
+      (excludesByUnitId[uid] || []).forEach((x) => {
+        if (rosterIds.has(x)) conflicts.add(nameOf(x));
+      });
+      Object.entries(excludesByUnitId).forEach(([otherId, ex]) => {
+        if (otherId !== uid && rosterIds.has(otherId) && ex.includes(uid)) conflicts.add(nameOf(otherId));
+      });
+      if (conflicts.size) out[uid] = [...conflicts];
+    });
+    return out;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [roster, excludesByUnitId, allUnitDefs]);
+
 
   /* Category ids that have reached their "pointsRatio" max unit count — used to
      hard-block the +Add button for every unit in that category. */
@@ -1928,6 +1986,7 @@ function App() {
                   total={roster.length}
                   equipUsage={equipUsage}
                   rosterCounts={rosterCounts}
+                  excludeConflict={excludeConflicts[inst.unitId]}
                   enabledEveryLocked={equipLocks[inst.instanceId]}
                   onChangeBases={changeBases}
                   onToggleEquip={toggleEquipment}
@@ -2155,6 +2214,7 @@ function RosterRow({
   total,
   equipUsage,
   rosterCounts,
+  excludeConflict,
   enabledEveryLocked,
   onChangeBases,
   onToggleEquip,
@@ -2189,6 +2249,12 @@ function RosterRow({
       );
     }
   });
+
+  if (excludeConflict && excludeConflict.length > 0) {
+    requireWarnings.push(
+      `Cannot be fielded alongside ${excludeConflict.join(", ")} — remove one of these units.`
+    );
+  }
 
   return (
     <div
