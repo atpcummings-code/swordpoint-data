@@ -125,8 +125,7 @@
           "specialRules": ["Open Order"],
           "optionalEquipment": [
     {
-            {
-                  "name": "Spear",
+                 "name": "Spear",
               "disables": "Javelins",
                   "pointsModifier": 1,
                  "equipmentAdded": ["Spear"], 
