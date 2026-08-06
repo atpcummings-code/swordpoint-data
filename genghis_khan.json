@@ -246,6 +246,35 @@
                 },
           ]
         },
+{
+          "id": "wagons",
+          "name": "Wagons",
+          "description": "Wagons form a Wagon Tabor. There may be one base of defenders per wagon in the Tabor.  Defenders have javelins amd shield. Inferior Fighters. May exchange javelins for bows (free). They form one single unit.",
+          "category": "SpecialUnits",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 28,
+          "minBases": 0,
+          "maxBases": 5,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Wagon Tabor", "Inferior Fighters"],
+          "optionalEquipment": [
+                 {
+                  "name": "Bow",
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                 }
+
+          ]
+            }
+
+        
         {
           "id": "slav_brigands",
           "name": "Slav Brigands",
