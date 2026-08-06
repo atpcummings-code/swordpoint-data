@@ -1529,24 +1529,41 @@ function App() {
       }
     });
 
-    /* --- unitCountValidation: compare the total unit count of the left ids
-       against a ratio of the total unit count of the right ids --- */
+    /* --- unitCountValidation: compare the combined unit count of the "ids"
+       either against a fixed "count", or against a ratio of the "compareWith"
+       units when no "count" is provided. --- */
     const asArr = (v) => (Array.isArray(v) ? v : v ? [v] : []);
     (army.unitCountValidation || []).forEach((rule) => {
       if (!rule) return;
       const leftIds = asArr(rule.ids ?? rule.left ?? rule.leftUnitIds ?? rule.leftIds);
-      const rightIds = asArr(rule.compareWith ?? rule.right ?? rule.rightUnitIds ?? rule.rightIds);
-      if (leftIds.length === 0 && rightIds.length === 0) return;
-      const ratio = rule.ratio != null ? rule.ratio : 1;
+      if (leftIds.length === 0) return;
       const leftCount = leftIds.reduce((s, id) => s + (counts[id] || 0), 0);
+      const expr = EXPR[rule.expression] || EXPR.lessThanOrEqual;
+      const leftLabel = leftIds.map((id) => nameOf(id)).join(" + ");
+
+      if (rule.count != null) {
+        // fixed comparison against a number
+        if (leftCount === 0) return;
+        if (!expr.test(leftCount, rule.count)) {
+          w.push({
+            level: "warning",
+            msg: `Unit count for ${leftLabel} (${leftCount}) must be ${expr.label} ${rule.count}.`,
+          });
+        }
+        return;
+      }
+
+      // ratio comparison against the compareWith units
+      const rightIds = asArr(rule.compareWith ?? rule.right ?? rule.rightUnitIds ?? rule.rightIds);
+      if (rightIds.length === 0) return;
+      const ratio = rule.ratio != null ? rule.ratio : 1;
       const rightCount = rightIds.reduce((s, id) => s + (counts[id] || 0), 0);
       if (leftCount === 0 && rightCount === 0) return;
       const threshold = rightCount * ratio;
-      const expr = EXPR[rule.expression] || EXPR.lessThanOrEqual;
       if (!expr.test(leftCount, threshold)) {
         w.push({
           level: "warning",
-          msg: `Unit count for ${leftIds.map((id) => nameOf(id)).join(" + ")} (${leftCount}) must be ${expr.label} ${ratio}× the count of ${rightIds
+          msg: `Unit count for ${leftLabel} (${leftCount}) must be ${expr.label} ${ratio}× the count of ${rightIds
             .map((id) => nameOf(id))
             .join(" + ")} (${rightCount}) = ${threshold}.`,
         });
