@@ -2,7 +2,7 @@
   "armies": {
      "pecheng": {
       "armyName": "Pecheneg - 850 AD - 1122 AD",
-      "id": "warriors", "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
+     
        "categories": [
         {
           "id": "Commanders",
