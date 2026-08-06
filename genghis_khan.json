@@ -265,7 +265,305 @@
         }, 
           ]
         },
-
+"Later_bulgar": {
+      "armyName": "Later Bulgar - 643 AD - 1014 AD",
+    "unitCountValidation": [ { "ids": ["slav_nobles", "slav_cavalry"], "expression": "lessThanOrEqual", "count": 2 } ], 
+       "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {       
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+            {       
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+         {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "May take allies from the Pecheng list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20,
+        "alliedArmyKeys": [ { "key": "pecheneg" }  ],
+          "maxAlliedArmiesAllowed": 1
+        }
+           ],
+      "units": [
+        {
+          "id": "bulgar_khan",
+          "name": "Bulgar Khan",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": []
+        },
+        {
+          "id": "turkhan",
+          "name": "Turkhan",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "bulgar_nobles",
+          "name": "Bulgar Nobles",
+          "description": "Bulgar Nobles have light armour, sheild and bow. Evade. May have half barding (+1).",             
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "maxCountAllowed": 1,
+          "requires": { "unitId": ["elite_bulgar_horse_archers", "bulgar_horse_archers"], "count": 2, "name": "Elite Bulgar Horse Archers or Bulgar Horse Archers" },
+          "baseEquipment": ["Bow", "Shield", "Light Armour"],
+          "specialRules": ["Open Order", "Evade"],
+          "optionalEquipment": [
+    {
+                  "name": "Half Barding",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Half Barding"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                }     
+          ]
+            },
+        {
+          "id": "elite_bulgar_horse_archers",
+          "name": "Elite Bulgar Horse Archers",
+          "description": "Elite Bulgar Horse Archers have a light armour, bow and shield. Nomad Cavalry. There must be at least on unit of Horse Archers if ther are any Bulgar noble cavalry in the army.. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 6,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Bow", "Shield"],
+          "specialRules": ["Open Order", "Nomad Cavalry"],
+          "optionalEquipment": []
+        },
+          {
+          "id": "bulgar_horse_archers",
+          "name": "Bulgar Horse Archers",
+          "description": "Bulgar Horse Archers have a bow and shield. Nomad Cavalry. There must be at least on unit of Horse Archers if ther are any Bulgar noble cavalry in the army.. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Open Order", "Nomad Cavalry"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "slav_nobles",
+          "name": "Slav Nobles",
+          "description": "Slav Nobles have javelins and sheild. Skirmishers. May have spear (+1). May have light armour (+1). There must be at least one unit of Slav Cavalery if any Slab Nobl Cavalr are taken. Slav Noble Cavalry May form in Open Order. Up to 25% may be spent on all Slav Cavalry.",             
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "requires": { "unitId": ["slav_cavalry"], "count": 1, "name": "Slav Cavalry" },
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": [
+    {
+                  "name": "Light Armour",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },   
+            {
+                  "name": "Spear",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },   
+            {
+                  "name": "Open Order",
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Open Order"],
+                  "rulesRemoved": ["Skirmishers"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }   
+          ]
+            },{
+          "id": "slav_cavalry",
+          "name": "Slav Cavalry",
+          "description": "Slav Nobles have javelins and sheild. Skirmishers. May have spear (+1). There must be at least one unit of Slav Cavalery if any Slab Nobl Cavalr are taken. Slav Noble Cavalry May form in Open Order. Up to 25% may be spent on all Slav Cavalry.",             
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": [
+    
+            {
+                  "name": "Spear",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                } 
+          ]
+            },
+           {
+          "id": "slav_warriors",
+          "name": "Slav Warriors",
+          "description": "Slav Warriors have throwing spear and shield. Close order. Warband. May be fielded as skirmishers at a cost of six points per base. Every second unitof warriors may replace throwing spar with bow (free). Two formed units of Slav Warrios may replace throwing spear with two-handed axe (free). If armed with throwing spear may have light armour (+2) and large shield (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Close Order", "Warband rule 1 only"],
+          "optionalEquipment": [
+            {
+                  "name": "Skirmishers",
+              "disables": "Two-handed Axe",
+                  "pointsModifier": -5,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order", "Warband rule 1 only"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Bow",
+                   "disables": ["Two-handed Axe", "Light Armour","Large Shield"],
+                  "pointsModifier": 0,
+                  "enabledEvery": 2,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Throwing Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Light Armour",
+                   "disables": "light Armour",
+                  "pointsModifier": 0,
+                  "enabledEvery": 2,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+              {
+                  "name": "Large Shield",
+                   "disables": "light Armour",
+                  "pointsModifier": 0,
+                  "enabledEvery": 2,
+                 "equipmentAdded": ["Large Shield"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Two-handed Axe",
+                 "disables": ["Bow", "Skirmishers", "Light Armour","Large Shield"],
+                  "pointsModifier": 0,
+             "maxEquipmentCount": 2,
+                 "equipmentAdded": ["Two-handed Axe"], 
+                 "equipmentRemoved": ["Throwing Spear"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+          ]
+        },
+        {
+          "id": "slav_brigands",
+          "name": "Slav Brigands",
+          "description": "Slav Brigands have throwing spear and shield. Open Order. Inferior Fighters. Warband. May be fielded as skirmishers at a cost of four points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 4,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Open Order","Warband", "Inferior Fighters"],
+          "optionalEquipment": [
+                        {
+                  "name": "Skirmishers",
+                 "pointsModifier": -4,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order", "Warband"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+             },
+          ]
+        }, 
+          ]
+        },
     "christian_rus": {
       "armyName": "Christian Rus - 750 AD - 1250 AD",
       "armyValidation": [ { "id": "militia", "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["rus_skirmishers"] } ], 
