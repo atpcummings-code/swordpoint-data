@@ -229,7 +229,7 @@
           "minBases": 3,
           "maxBases": 12,
           "maxCountAllowed": 1,
-          "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
+           "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
           "baseEquipment": ["Light Armour", "Spear", "Shield"],
           "specialRules": ["Close Order"],
           "optionalEquipment": []
@@ -245,6 +245,7 @@
           "pointsPerBase": 11,
           "minBases": 3,
           "maxBases": 12,
+              "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
           "baseEquipment": ["Bow"],
           "specialRules": ["Open Order"],
           "optionalEquipment": [
