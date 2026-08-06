@@ -1,7 +1,7 @@
 {
   "armies": {
-     "pecheng": {
-      "armyName": "Pecheneg - 850 AD - 1122 AD",
+     "early_khazar": {
+      "armyName": "Early Khazar - 568 AD - 969 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -15,7 +15,7 @@
           "name": "Infantry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 33
+          "max": 20
         },
             {       
           "id": "Cavalry",
@@ -32,10 +32,23 @@
           "max": 15
         }
            ],
+       {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "May take allies from the Alans list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+          "alans", "gavk_visigoth"
+          ],
+          "maxAlliedArmiesAllowed": 5
+        }
+      
       "units": [
         {
-          "id": "high_chieftain",
-          "name": "High Chieftain",
+          "id": "khagan",
+          "name": "Khagan",
           "description": "Rides a horse.",
           "category": "Commanders",
           "type": "General",
@@ -64,18 +77,18 @@
         {
           "id": "nobles",
           "name": "Nobles",
-          "description": "Noble Cavalry have bow and shield. Superior Fighters. Superior Shooters. Massed Cavalry. Nomad Cavalry. May have light armour (+1) and either javelins (+1) or spear (+1).",             
+          "description": "Noble Cavalry have bow and shield. Superior Fighters. Superior Shooters. Nomad Cavalry. May have light armour (+1) and spear (+1) or javelin (+1).",             
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
           "cohesion": 8,
-          "pointsPerBase": 28,
+          "pointsPerBase": 27,
           "minBases": 3,
           "maxBases": 8,
           "maxCountAllowed": 2,
           "baseEquipment": ["Bow", "Shield"],
-          "specialRules": ["Open Order", "Massed Cavalry", "Superior Fighters", "Superior Shooters", "Nomad Cavalry"],
-          "optionalEquipment": [
+          "specialRules": ["Open Order", "Superior Fighters", "Superior Shooters", "Nomad Cavalry"],
+          "optionalEquipment": [        
     {
                   "name": "Light Armour",
                   "pointsModifier": 1,
@@ -98,6 +111,22 @@
                   "cohesionModifier": 0
                 },
             {
+          "id": "subject_nobles",
+          "name": "Subject Nobles",
+          "description": "Subject Noble Cavalry have light armour, bow and shield. May have spear (+1).",             
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "maxCountAllowed": 2,
+          "baseEquipment": ["Bow", "Shield", "Light Armour"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+    {
+            {
                   "name": "Spear",
               "disables": "Javelins",
                   "pointsModifier": 1,
@@ -113,16 +142,16 @@
         {
           "id": "elite_horse_archers",
           "name": "Elite Horse Archers",
-          "description": "Elite Horse Archers have a bow and shield. Superior Shooters. Massed Cavalry. Nomad Cavalry. Warband. May have either javelins or spear (+1). May alternatively be fieled as Superior Shooters, Nomad Cavalry, Skirmishers, without upgrades at a cost of 22 points per base.",
+          "description": "Elite Horse Archers have a bow and shield. Superior Shooters. Nomad Cavalry. May have either javelins or spear (+1). May be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
-          "cohesion": 6,
-          "pointsPerBase": 24,
+          "cohesion": 7,
+          "pointsPerBase": 23,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": ["Bow", "Shield"],
-          "specialRules": ["Open Order", "Superior Shooters", "Nomad Cavalry", "Warband"],
+          "specialRules": ["Open Order", "Superior Shooters", "Nomad Cavalry"],
           "optionalEquipment": [
             {
                   "name": "Javelins",
@@ -147,13 +176,12 @@
                   "cohesionModifier": 0
                 },
             {
-                  "name": "Alternate Deployment",
-              "disables": ["Javelins", "Spear"],
-                  "pointsModifier": -2,
+                  "name": "Skirmishers",
+                  "pointsModifier": 0,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
                   "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order", "Warband"],
+                  "rulesRemoved": ["Open Order"],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
@@ -162,33 +190,80 @@
         {
           "id": "horse_archers",
           "name": "Horse Archers",
-          "description": "Horse Archers have a bow and shield. Massed Cavalry. Nomad Cavalry. Warband. May have either javelins or spear (+1). May alternatively be fieled as Nomad Cavalry,  Skirmishers, without upgrades at a cost of 20 points per base.",
+          "description": "Horse Archers have a bow and shield. Skirmishers. Nomad Cavalry.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 2,
+          "maxBases": 6,
+          "minCountAllowed": 2,
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Skirmishers", "Nomad Cavalry"],
+          "optionalEquipment": []
+        },
+            {
+          "id": "subject_horse_archers",
+          "name": "Subject Horse Archers",
+          "description": "Subject Horse Archers have a bow and shield. Skirmishers. Nomad Cavalry.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
           "cohesion": 6,
-          "pointsPerBase": 22,
-          "minBases": 3,
-          "maxBases": 8,
+          "pointsPerBase": 20,
+          "minBases": 2,
+          "maxBases": 6,
           "minCountAllowed": 2,
           "baseEquipment": ["Bow", "Shield"],
-          "specialRules": ["Open Order", "Nomad Cavalry", "Warband"],
+          "specialRules": ["Skirmishers", "Nomad Cavalry"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "guards",
+          "name": "Guards",
+          "description": "Guard Infantry have light armour, spear and shield.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
+          "baseEquipment": ["Light Armour", "Spear", "Shield"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": []
+        },
+            {
+          "id": "warriors",
+          "name": "Warriors",
+          "description": "Warrios have a bow. Open Order. May have a shield (+2), spear (free) or throwing spear (+2) and light armour (+2).  Every second unit may be Riding Camels (+1). Warrios without upgrades may be fielded as skirmishers at a cost of sevenpoints per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order"],
           "optionalEquipment": [
             {
-                  "name": "Javelins",
-              "disables": "Spear",
-                  "pointsModifier": 1,
-                 "equipmentAdded": ["Javelins"], 
+                  "name": "Skirmishers",
+              "disables": ["Shield", "Spear", "Throwing Spear", "Light Armour", "Riding Camels"],
+                  "pointsModifier": -4,
+                 "equipmentAdded": [], 
                  "equipmentRemoved": [],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order"],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
-            {
+                        {
                   "name": "Spear",
-              "disables": "Javelins",
-                  "pointsModifier": 1,
+                   "disables": ["Skirmishers", "Throwing Spear"],
+                  "pointsModifier": 0,
                  "equipmentAdded": ["Spear"], 
                  "equipmentRemoved": [],
                   "rulesAdded": [],
@@ -197,35 +272,42 @@
                   "cohesionModifier": 0
                 },
             {
-                  "name": "Alternate Deployment",
-              "disables": ["Javelins", "Spear"],
-                  "pointsModifier": -2,
+                  "name": "Riding Camels",
+                "enabledEvery": 2,
+                   "disables": ["Skirmishers"],
+                  "pointsModifier": 0,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
-                  "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order", "Warband"],
+                  "rulesAdded": ["Riding Camels"],
+                  "rulesRemoved": [],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
-          ]
-        },
-        {
-          "id": "warriors",
-          "name": "Warriors",
-          "description": "Warriors have a bow. Warband. May have shield (+2) and may replace bow with throwing spear (free).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 14,
-          "minBases": 3,
-          "maxBases": 12,
-          "requires": { "unitId": "wagons", "count": 1, "name": "Wagons" },
-          "baseEquipment": ["Bow"],
-          "specialRules": ["Close Order"],
-          "optionalEquipment": [
+                    {
+                  "name": "Throwing Spear",
+                   "disables": ["Skirmishers", "Spear"],
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
             {
+                  "name": "Light Armour",
+                   "disables": ["Skirmishers"],
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+              {
                   "name": "Shield",
+                 "disables": ["Skirmishers"],
                   "pointsModifier": 2,
                  "equipmentAdded": ["Shield"], 
                  "equipmentRemoved": [],
@@ -234,18 +316,6 @@
                   "defenceModifier": -1,
                   "cohesionModifier": 0
                 },
-            {
-                  "name": "Throwing Spear",
-                  "pointsModifier": 0,
-                 "equipmentAdded": ["Throwing Spear"], 
-                 "equipmentRemoved": ["Bow"],
-                  "rulesAdded": [],
-                  "rulesRemoved": [],
-                  "defenceModifier": 0,
-                  "cohesionModifier": 0
-                },
-          ]
-        },
 {
           "id": "wagons",
           "name": "Wagons",
