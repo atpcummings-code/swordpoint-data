@@ -482,7 +482,7 @@
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
                   "rulesAdded": ["Skirmishers"],
-                  "rulesRemoved": ["Open Order", "Warband rule 1 only"],
+                  "rulesRemoved": ["Close Order", "Warband rule 1 only"],
                   "defenceModifier": 0,
                   "cohesionModifier": 0
                 },
