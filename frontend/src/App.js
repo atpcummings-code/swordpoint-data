@@ -72,6 +72,13 @@ const MOCK_DATA = {
           ratio: 1,
         },
       ],
+      pointsPercentageValidation: [
+        {
+          unitId: ["welsh_skirmishers"],
+          percentage: 25,
+          expression: "lessThanOrEqual",
+        },
+      ],
       categories: [
         { id: "commanders", name: "Commanders", constraintType: "count", min: 1, max: 8 },
         { id: "teulu", name: "Teulu", constraintType: "percentage", min: 0, max: 33 },
@@ -1542,6 +1549,30 @@ function App() {
           msg: `Unit count for ${leftIds.map((id) => nameOf(id)).join(" + ")} (${leftCount}) must be ${expr.label} ${ratio}× the count of ${rightIds
             .map((id) => nameOf(id))
             .join(" + ")} (${rightCount}) = ${threshold}.`,
+        });
+      }
+    });
+
+    /* --- pointsPercentageValidation: compare the combined points of the listed
+       unit ids against a percentage of the army points limit --- */
+    const pointsByUnit = {};
+    computed.forEach(({ inst, calc }) => {
+      pointsByUnit[inst.unitId] = (pointsByUnit[inst.unitId] || 0) + calc.total;
+    });
+    (army.pointsPercentageValidation || []).forEach((rule) => {
+      if (!rule) return;
+      const ids = asArr(rule.unitId ?? rule.ids ?? rule.unitIds);
+      if (ids.length === 0 || rule.percentage == null) return;
+      const unitsPts = ids.reduce((s, id) => s + (pointsByUnit[id] || 0), 0);
+      if (unitsPts === 0) return;
+      const limitPts = (rule.percentage / 100) * maxPoints;
+      const expr = EXPR[rule.expression] || EXPR.lessThanOrEqual;
+      if (!expr.test(unitsPts, limitPts)) {
+        w.push({
+          level: "warning",
+          msg: `${ids.map((id) => nameOf(id)).join(" + ")} points (${unitsPts}) must be ${expr.label} ${rule.percentage}% of ${maxPoints} pts (${Math.round(
+            limitPts
+          )}).`,
         });
       }
     });
