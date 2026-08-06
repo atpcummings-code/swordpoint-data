@@ -1586,15 +1586,21 @@ function App() {
       return all.find((u) => u.id === id)?.name || id;
     };
     (army.armyValidation || []).forEach((rule) => {
-      const targetId = rule && (rule.unitId ?? rule.id);
-      if (!targetId || !rule.expression) return;
+      if (!rule || !rule.expression) return;
+      // left side: an array of ids ("ids") whose bases are summed, or a single id.
+      const leftIds = Array.isArray(rule.ids)
+        ? rule.ids
+        : rule.ids
+        ? [rule.ids]
+        : [rule.unitId ?? rule.id].filter(Boolean);
+      if (leftIds.length === 0) return;
       const ratio = rule.ratio != null ? rule.ratio : 1;
       const compareWith = Array.isArray(rule.compareWith)
         ? rule.compareWith
         : rule.compareWith
         ? [rule.compareWith]
         : [];
-      const leftTotal = basesByUnit[targetId] || 0;
+      const leftTotal = leftIds.reduce((s, id) => s + (basesByUnit[id] || 0), 0);
       const rightSum = compareWith.reduce((s, id) => s + (basesByUnit[id] || 0), 0);
       if (leftTotal === 0 && rightSum === 0) return;
       const threshold = rightSum * ratio;
@@ -1602,7 +1608,7 @@ function App() {
       if (expr && !expr.test(leftTotal, threshold)) {
         w.push({
           level: "warning",
-          msg: `${nameOf(targetId)} bases (${leftTotal}) must be ${expr.label} ${ratio}× the bases of ${compareWith
+          msg: `${leftIds.map((id) => nameOf(id)).join(" + ")} bases (${leftTotal}) must be ${expr.label} ${ratio}× the bases of ${compareWith
             .map((id) => nameOf(id))
             .join(" + ")} (${rightSum}) = ${threshold}.`,
         });
