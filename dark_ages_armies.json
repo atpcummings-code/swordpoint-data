@@ -7984,7 +7984,7 @@
        {
           "id": "Allies",
           "name": "Allies",
-          "description": "May take allies from the Alans Magyars and Turcomen lists.",
+          "description": "May take allies from the Alans Magyars and Turcoman lists.",
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
