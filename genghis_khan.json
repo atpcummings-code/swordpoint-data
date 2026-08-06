@@ -2,7 +2,8 @@
   "armies": {
      "early_bulgar": {
       "armyName": "Early Bulgar - 643 AD - 1014 AD",
-      "categories": [
+      "pointsPercentageValidation": [ { "ids": ["slav_nobles", "slav_cavalry"], "expression": "lessThanOrEqual", "percentage": 25 } ],
+       "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
