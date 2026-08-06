@@ -270,7 +270,7 @@
         },
 
 "later_turcoman": {
-      "armyName": "LaterE Turcoman - 971 AD - 1504 AD",
+      "armyName": "Later Turcoman - 971 AD - 1504 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -511,7 +511,6 @@
         {
           "id": "handgunners",
           "name": "Handgunners",
-          "excludes": ["wagons"], 
           "description": "Handgunners have a handgun. Skirmishers. May have light armour (+1) and shield (+1). Handgunners are only allowed of the army has a Wagon Tabor.",
           "category": "Infantry",
           "type": "other",
