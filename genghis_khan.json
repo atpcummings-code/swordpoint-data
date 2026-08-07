@@ -418,7 +418,7 @@
                   },
              {
                   "name": "Sling",
-                   "disables": ["Bow", "Sling"],
+                   "disables": ["Bow", "Javelins"],
                   "pointsModifier": 0,
                  "equipmentAdded": ["Sling"], 
                  "equipmentRemoved": [],
