@@ -383,7 +383,7 @@
 {
           "id": "tribal_skirmishers",
           "name": "Tribal Skirmishers",
-          "description": "Skirmishers have a shield and either sling, javelins or bow. Inferior Fighters. Skirmishers. May have Throwing spear (+1)",
+          "description": "Skirmishers have a shield and either sling, javelins or bow. Inferior Fighters. Skirmishers. May have Throwing spear (+1).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -439,6 +439,55 @@
                   }
           ]
             },  
+        [
+          "id": "militia_skirmishers",
+          "name": "Militia Skirmishers",
+          "description": "Skirmishers have a shield and either sling, javelins or bow. Inferior Fighters. Skirmishers. ",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Shield"],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+                 {
+                  "name": "Javelins",
+                   "disables": ["Bow", "Sling"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                  },
+            {
+                  "name": "Bow",
+                   "disables": ["Javelins", "Sling"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                  },
+             {
+                  "name": "Sling",
+                   "disables": ["Bow", "Sling"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Sling"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                  }
+          ]
+            }
           ]
         },
 
