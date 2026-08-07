@@ -289,7 +289,6 @@
                   "name": "Skirmishers",
               "disables": "Light Armour",
                  "pointsModifier": -10,
-                  "enabledEvery": 2,
                  "equipmentAdded": [], 
                  "equipmentRemoved": [],
                   "rulesAdded": ["Skirmishers"],
