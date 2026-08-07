@@ -5190,16 +5190,6 @@
                   "defenceModifier": -1,
                   "cohesionModifier": 0
                 },
-            {
-                  "name": "Veteran",
-                  "pointsModifier": 2,
-                 "equipmentAdded": [], 
-                 "equipmentRemoved": [],
-                  "rulesAdded": ["Veteran"],
-                  "rulesRemoved": [],
-                  "defenceModifier": -1,
-                  "cohesionModifier": 0
-                },
 			  {
                   "name": "Elite Palatini",
                   "pointsModifier": 7,
@@ -5210,6 +5200,17 @@
                   "defenceModifier": 0,
                   "cohesionModifier": 1
                 },
+            {
+                  "name": "Veteran",
+                  "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Veteran"],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+			  
                  {
                   "name": "Heavy Throwing Spear",
                   "pointsModifier": 2,
