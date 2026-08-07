@@ -491,6 +491,497 @@
           ]
         },
 
+ "umayyad_caliphate_arab_conquest": {
+       "armyName": "Umayyad Caliphate Arab Conquest - 632 AD - 750 AD",
+       "armyValidation": [
+ ],   
+       "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+        {       
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 1000
+        },
+            {       
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        }
+                 ],
+      "units": [
+        {
+          "id": "companion_of_the-prophet",
+          "name": "Companion of the Prophet",
+          "description": "May ride a horse. May have Strategem (+50). May upgrade to C10 (+50).",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": [
+          {
+                  "name": "Strategem",
+                  "pointsModifier": 50,
+                "maxEquipmentCount": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Strategem"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+          {
+                  "name": "Upgrade to C10 Cohesion",
+                  "pointsModifier": 50,
+                "maxEquipmentCount": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 1
+            }
+        ]
+        },
+        {
+          "id": "sheikh_or_vizier",
+          "name": "Sheikh or Vizier",
+          "description": "May ride a horse. May have Strategem (+50).",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+        "optionalEquipment": [
+          {
+                  "name": "Strategem",
+                  "pointsModifier": 50,
+                "maxEquipmentCount": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Strategem"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                }
+        ]
+        },
+         {
+          "id": "companion",
+          "name": "Companion",
+          "description": "May Ride a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+3",
+          "pointsPerBase": 25,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "maxCountAllowed": 4,
+          "optionalEquipment": []
+        },
+        {
+          "id": "minor_shiekh",
+          "name": "Minor Shiekh",
+          "description": "May Ride a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have light armour, spear and shield.",             
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Spear", "Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "tribal_cavalry",
+          "name": "Tribal Cavalry",
+          "description": "Tribal Cavalry have javelins and shield. May exchange javelins for bow (free) or spear (+1).",             
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+{
+                  "name": "Bow",
+                  "disables": "Spear", 
+                 "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Spear",
+                  "disables": "Bow", 
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            
+          ]
+        },
+        {
+          "id": "militia_cavalry",
+          "name": "Militia Cavalry",
+          "description": "Militia Cavalry have javelins and shield. Inferior Fighters. Evade. May exchange javelins for bow or spear (+1).",             
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Open Order", "Evade", "Inferior Fighters"],
+          "optionalEquipment": [
+{
+                  "name": "Bow",
+                  "disables": "Spear", 
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Spear",
+                  "disables": "Bow", 
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            
+          ]
+        },
+            {
+          "id": "camelry",
+          "name": "Camelry",
+          "description": "Camelry have javelins. May have spear (+1) and shield (+1) or large shield (+2). May exchange javelins for bow (free).",             
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+{
+                  "name": "Bow",
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": ["Javelins"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+            {
+                  "name": "Spear",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+              {
+                  "name": "Shield",
+                "disables": "Large Shield",
+                 "pointsModifier": 1,
+                 "equipmentAdded": ["Shield"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+              {
+                  "name": "Large Shield",
+                "disables": "Shield",
+                 "pointsModifier": 2,
+                 "equipmentAdded": ["Large Shield"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -2,
+                  "cohesionModifier": 0
+                }
+          ]
+        },          
+        {
+          "id": "religious_volunteers",
+          "name": "Religious Volunteers",
+          "description": "Religious Volunteers have throwing spear and shield. Warband. May have large shield (+2) and be Riding Camels (_1). May be stubborn (+2). Every second Religious Volunteers unit may have light armour (+2). Unarmoured units may instead be fielded with Throwing spear and shiled. Skirmishers. (no longer Warband) at a cost of eight points per base",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Close Order", "Warband"],
+          "optionalEquipment": [
+            {
+                  "name": "Skirmishers",
+              "disables": "Light Armour",
+                 "pointsModifier": -10,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Skirmishers"],
+                  "rulesRemoved": ["Open Order", "Warband"],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                },
+              {
+                  "name": "Light Armour",
+                "disables": "Skirmishers",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Light Armour"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                 "enabledEvery": 2,
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+                },
+              {
+                  "name": "Large Shield",
+                  "pointsModifier": 2,
+                 "equipmentAdded": ["Large Shield"], 
+                 "equipmentRemoved": ["Shield"],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": -1,
+                  "cohesionModifier": 0
+              },
+            {
+                  "name": "Riding Camels",
+                  "pointsModifier": 1,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Riding Camels"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+              },
+             {
+                  "name": "Stubborn",
+                  "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Stubborn"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+              }
+                ]},  
+        {
+          "id": "tribal_infantry",
+          "name": "Tribal Infantry",
+           "description": "Tribal Infantry have throwing spear and shield. Inferior Fighetrs. Warband. May be Stubborn (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Close Order", "Warband", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+                  "name": "Stubborn",
+                  "pointsModifier": 2,
+                 "equipmentAdded": [], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": ["Stubborn"],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+              }
+          ]
+        },
+          {
+          "id": "militia",
+          "name": "Militia",
+           "description": "Militia have spear and shield. Inferior Fighetrs.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order", "Inferior Fighters"],
+          "optionalEquipment": []
+        },
+{
+          "id": "tribal_skirmishers",
+          "name": "Tribal Skirmishers",
+          "description": "Skirmishers have a shield and either sling, javelins or bow. Inferior Fighters. Skirmishers. May have Throwing spear (+1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Shield"],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+                 {
+                  "name": "Javelins",
+                   "disables": ["Bow", "Sling"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                  },
+            {
+                  "name": "Bow",
+                   "disables": ["Javelins", "Sling"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                  },
+             {
+                  "name": "Sling",
+                   "disables": ["Bow", "Javelins"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Sling"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                  },
+             {
+                  "name": "Throwing Spear",
+                  "pointsModifier": 1,
+                 "equipmentAdded": ["Throwing Spear"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                  }
+          ]
+            },  
+       {
+          "id": "militia_skirmishers",
+          "name": "Militia Skirmishers",
+          "description": "Skirmishers have a shield and either sling, javelins or bow. Inferior Fighters. Skirmishers. ",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Shield"],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+                 {
+                  "name": "Javelins",
+                   "disables": ["Bow", "Sling"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Javelins"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                  },
+            {
+                  "name": "Bow",
+                   "disables": ["Javelins", "Sling"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Bow"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                  },
+             {
+                  "name": "Sling",
+                   "disables": ["Bow", "Javelins"],
+                  "pointsModifier": 0,
+                 "equipmentAdded": ["Sling"], 
+                 "equipmentRemoved": [],
+                  "rulesAdded": [],
+                  "rulesRemoved": [],
+                  "defenceModifier": 0,
+                  "cohesionModifier": 0
+                  }
+          ]
+            }
+          ]
+        },
+    
 "later_turcoman": {
       "armyName": "Later Turcoman - 971 AD - 1504 AD",
  "armyValidation": [
