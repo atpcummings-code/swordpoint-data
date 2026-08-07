@@ -477,7 +477,7 @@
                   },
              {
                   "name": "Sling",
-                   "disables": ["Bow", "Sling"],
+                   "disables": ["Bow", "Javelins"],
                   "pointsModifier": 0,
                  "equipmentAdded": ["Sling"], 
                  "equipmentRemoved": [],
@@ -497,11 +497,11 @@
   {
     "ids": ["elite_horse_archers", "horse_archers"],
     "compareWith": ["nobles"],
-    "expression": "greaterThanOrEqual",
+    "expression": "greEaterThanOrEqual",
     "ratio": 2
   }
 ],   
-  "categories": [
+  "categories": [ 
         {
           "id": "Commanders",
           "name": "Commanders",
