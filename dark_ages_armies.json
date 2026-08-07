@@ -13939,8 +13939,8 @@
           "pointsPerBase": 6,
           "minBases": 2,
           "maxBases": 6,
-          "baseEquipment": ["Bow", "Superior Shooters", "Inferior Fighters"],
-          "specialRules": ["Skirmishers"],
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Skirmishers", "Superior Shooters", "Inferior Fighters"],
           "optionalEquipment": []
         },
           {
