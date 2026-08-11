@@ -769,6 +769,17 @@ function effectiveMaxCount(base, maxPoints) {
   return base + extra;
 }
 
+/* Category max-count scaling: the "Commanders" category gets +50% (rounded) to
+   its base max when the army points limit is between 2001 and 3000. */
+function effectiveCatMax(cat, maxPoints) {
+  if (cat.max == null) return cat.max;
+  if (isCommanderCat(cat.id) && maxPoints >= 2001 && maxPoints <= 3000) {
+    return Math.round(cat.max * 1.5);
+  }
+  return cat.max;
+}
+
+
 
 function makeInstance(unit, sourceArmyKey, categoryOverride) {
   return {
@@ -1575,15 +1586,16 @@ function App() {
       const inCat = computed.filter((c) => c.inst.categoryId === cat.id);
       if (cat.constraintType === "count") {
         const n = inCat.length;
+        const catMax = effectiveCatMax(cat, maxPoints);
         if (n < (cat.min ?? 0))
           w.push({
             level: "warning",
             msg: `${cat.name}: requires at least ${cat.min} unit choice(s) — currently ${n}.`,
           });
-        if (cat.max != null && n > cat.max)
+        if (catMax != null && n > catMax)
           w.push({
             level: "warning",
-            msg: `${cat.name}: allows at most ${cat.max} unit choice(s) — currently ${n}.`,
+            msg: `${cat.name}: allows at most ${catMax} unit choice(s) — currently ${n}.`,
           });
       } else if (cat.constraintType === "percentage") {
         const pts = inCat.reduce((s, c) => s + c.calc.total, 0);
@@ -1852,13 +1864,14 @@ function App() {
       const inCat = computed.filter((c) => c.inst.categoryId === cat.id);
       if (cat.constraintType === "count") {
         const n = inCat.length;
-        const ok = n >= (cat.min ?? 0) && (cat.max == null || n <= cat.max);
+        const catMax = effectiveCatMax(cat, maxPoints);
+        const ok = n >= (cat.min ?? 0) && (catMax == null || n <= catMax);
         return {
           id: cat.id,
           name: cat.name,
           ok,
           current: `${n} choice${n === 1 ? "" : "s"}`,
-          allowed: `${cat.min}–${cat.max} choices`,
+          allowed: `${cat.min}–${catMax} choices`,
         };
       }
       const pts = inCat.reduce((s, c) => s + c.calc.total, 0);
@@ -2265,7 +2278,7 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
             ? `${cat.min}–${cat.max}%`
             : cat.constraintType === "pointsRatio"
             ? `max ${pointsRatioMax(cat, maxPoints)} choices`
-            : `${cat.min}–${cat.max} choices`}
+            : `${cat.min}–${effectiveCatMax(cat, maxPoints)} choices`}
         </span>
       </div>
 
@@ -2818,7 +2831,7 @@ function ConstraintsTable({ categories, maxPoints }) {
                   )} pts)`
                 : cat.constraintType === "pointsRatio"
                 ? `max ${pointsRatioMax(cat, maxPoints)} choices (${cat.countPerThreshold ?? 1} per ${cat.pointsThreshold} pts)`
-                : `${cat.min}–${cat.max} choices`;
+                : `${cat.min}–${effectiveCatMax(cat, maxPoints)} choices`;
             return (
               <tr key={cat.id} className="border-b border-slate-800/60 last:border-0">
                 <td className="px-4 py-2 text-slate-200 font-semibold">{cat.name}</td>

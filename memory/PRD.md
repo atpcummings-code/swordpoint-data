@@ -81,6 +81,10 @@ Rule-engine + structure additions (App.js, verified via node logic tests):
 - Catalog `CatalogUnit` shows a dynamic limit badge right after the unit name: `(Max: X of Y)` where X = current roster count and Y = points-scaled `effectiveMaxCount`; or `(Min: Y+)` for min-only units; nothing when neither is set (max takes priority when both exist). Styled `font-cond text-sm text-slate-400` (slightly smaller than the name, same colour as the bottom stats). Updates in real time via `rosterCounts` + `maxPoints` props threaded through `CatalogCategory`.
 - Verified live: Teulu Cavalry `(Max: 0 of 2)` → `(Max: 1 of 2)` on add → `(Max: 1 of 3)` at 2000 pts; Over King `(Max: 0 of 1)`.
 
+## Implemented (2026-06 session, Commanders category scaling)
+- `effectiveCatMax(cat, maxPoints)`: the "Commanders" count category gets +50% to its base max (rounded to nearest whole) when the army points limit is 2001–3000; unchanged otherwise and for other categories. Applied to the catalog category header, the top Army-Composition constraints table, the over-max validation warning, and the category validation report — all reactive to MAX POINTS LIMIT.
+- Verified live: Welsh Commanders 1–8 → 1–12 at 2500 pts (8×1.5), back to 1–8 at 3001.
+
 ## Backlog / Future
 - P1: If remote JSON gets fixed, verify live-data path renders correctly.
 - P2: Save/load rosters to localStorage.
