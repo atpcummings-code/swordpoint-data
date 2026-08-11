@@ -193,7 +193,39 @@ const MOCK_DATA = {
           maxBases: 8,
           specialRules: ["Superior Fighters", "Open Order", "Warband"],
           baseEquipment: ["Spear", "Shield"],
+          subProfiles: [
+            {
+              name: "Warriors",
+              A: 2,
+              C: 4,
+              D: 6,
+              Coh: 7,
+              baseEquipment: ["Spear", "Shield"],
+              specialRules: ["Superior Fighters", "Warband"],
+            },
+            {
+              name: "Champion",
+              A: 3,
+              C: 5,
+              D: 6,
+              Coh: 8,
+              baseEquipment: ["Spear", "Shield"],
+              specialRules: ["Superior Fighters", "Hero"],
+            },
+          ],
           optionalEquipment: [
+            {
+              name: "Champion's Great Weapon",
+              pointsModifier: 5,
+              targetProfile: "Champion",
+              rulesAdded: ["Great Weapon"],
+              rulesRemoved: [],
+              equipmentAdded: ["Great Weapon"],
+              equipmentRemoved: ["Spear"],
+              attacksModifier: 1,
+              defenceModifier: 0,
+              cohesionModifier: 0,
+            },
             {
               name: "Light Armour",
               pointsModifier: 2,
@@ -746,6 +778,7 @@ function makeInstance(unit, sourceArmyKey, categoryOverride) {
     specialRules: Array.isArray(unit.specialRules) ? [...unit.specialRules] : [],
     baseEquipment: Array.isArray(unit.baseEquipment) ? [...unit.baseEquipment] : [],
     optionalEquipment: Array.isArray(unit.optionalEquipment) ? unit.optionalEquipment : [],
+    subProfiles: Array.isArray(unit.subProfiles) ? unit.subProfiles.map(readSubProfile) : [],
     equipped: [],
     allowedSecondaryUnits: Array.isArray(unit.allowedSecondaryUnits) ? unit.allowedSecondaryUnits : [],
     secondaryUnitId: null,
@@ -780,6 +813,25 @@ function normalizeRequires(req, selfId) {
 }
 
 const GLOBAL_RATIOS = [25, 33, 50, 67, 75];
+
+/* Read a sub-profile's stats, tolerating several key spellings (A/attacks,
+   C/combat, D/defence, Coh/cohesion). */
+const pickStat = (obj, keys) => {
+  for (const k of keys) if (obj[k] != null) return obj[k];
+  return null;
+};
+function readSubProfile(sp) {
+  const arr = (v) => (Array.isArray(v) ? [...v] : v ? [v] : []);
+  return {
+    name: sp.name || "Profile",
+    a: pickStat(sp, ["attacks", "a", "A"]),
+    c: pickStat(sp, ["combat", "c", "C"]),
+    d: pickStat(sp, ["defence", "d", "D"]),
+    coh: pickStat(sp, ["cohesion", "coh", "Coh"]),
+    baseEquipment: arr(sp.baseEquipment),
+    specialRules: arr(sp.specialRules),
+  };
+}
 
 /* Valid ratio options for a secondary unit, inclusive of its min/max bounds */
 const ratiosFor = (su) =>
@@ -822,8 +874,31 @@ function computeUnit(inst) {
   });
 
   const isSkirm = rules.some(isSkirmRule);
-  const effMax = isSkirm ? Math.min(inst.maxBases, 6) : inst.maxBases;
-  const effMin = isSkirm ? 2 : inst.minBases;
+
+  /* Per-sub-profile rows. Untargeted (general) active options apply to every
+     profile; options with a matching targetProfile apply only to that row.
+     Points from every active option are still summed into the unit total. */
+  const profiles = (inst.subProfiles || []).map((sp) => {
+    const applies = active.filter((e) => !e.targetProfile || e.targetProfile === sp.name);
+    const sum = (key) => applies.reduce((s, e) => s + (e[key] || 0), 0);
+    const a = sp.a != null ? sp.a + sum("attacksModifier") : null;
+    const c = sp.c != null ? sp.c + sum("combatModifier") : null;
+    const d = sp.d != null ? sp.d + sum("defenceModifier") : null;
+    const coh = sp.coh != null ? sp.coh + sum("cohesionModifier") : null;
+    let pRules = [...sp.specialRules];
+    let pEquip = [...sp.baseEquipment];
+    applies.forEach((e) => {
+      (e.rulesRemoved || []).forEach((r) => (pRules = pRules.filter((x) => x !== r)));
+      (e.rulesAdded || []).forEach((r) => !pRules.includes(r) && pRules.push(r));
+      (e.equipmentRemoved || []).forEach((x) => (pEquip = pEquip.filter((i) => i !== x)));
+      (e.equipmentAdded || []).forEach((x) => !pEquip.includes(x) && pEquip.push(x));
+    });
+    return { name: sp.name, a, c, d, coh, rules: pRules, equipment: pEquip };
+  });
+  const skirmFromProfiles = profiles.some((p) => p.rules.some(isSkirmRule));
+  const isSkirmAll = isSkirm || skirmFromProfiles;
+  const effMax = isSkirmAll ? Math.min(inst.maxBases, 6) : inst.maxBases;
+  const effMin = isSkirmAll ? 2 : inst.minBases;
 
   // Secondary attachment
   let secondary = null;
@@ -843,7 +918,7 @@ function computeUnit(inst) {
   }
 
   const total = ppb * inst.bases + (secondary ? secondary.points : 0);
-  return { ppb, defence, cohesion, rules, equipment, isSkirm, effMax, effMin, total, active, secondary };
+  return { ppb, defence, cohesion, rules, equipment, isSkirm: isSkirmAll, effMax, effMin, total, active, secondary, profiles };
 }
 
 /* ------------------------------------------------------------------ */
@@ -2366,18 +2441,67 @@ function RosterRow({
         </div>
 
         <div className="flex items-center gap-5 font-cond text-sm">
-          {isCommanderCat(inst.categoryId) || inst.type === "General" ? (
+          {!calc.profiles?.length && (isCommanderCat(inst.categoryId) || inst.type === "General" ? (
             <Stat label="A" value={inst.attacks ?? "-"} testid={`unit-attacks-${inst.instanceId}`} />
           ) : (
             <Stat label="D" value={calc.defence ?? "-"} testid={`unit-defence-${inst.instanceId}`} />
+          ))}
+          {!calc.profiles?.length && (
+            <Stat label="C" value={calc.cohesion ?? "-"} testid={`unit-cohesion-${inst.instanceId}`} />
           )}
-          <Stat label="C" value={calc.cohesion ?? "-"} testid={`unit-cohesion-${inst.instanceId}`} />
           <Stat label="Pts/Unit" value={calc.total} big testid={`unit-total-${inst.instanceId}`} />
         </div>
       </div>
 
-      {/* base equipment + special rules — two columns */}
-      {(calc.equipment.length > 0 || calc.rules.length > 0) && (
+      {/* sub-profile rows — each profile renders as a distinct row */}
+      {calc.profiles?.length > 0 && (
+        <div className="mt-3 pt-3 border-t border-slate-800 space-y-2" data-testid={`unit-subprofiles-${inst.instanceId}`}>
+          {calc.profiles.map((p) => (
+            <div
+              key={p.name}
+              data-testid={`subprofile-${inst.instanceId}-${p.name}`}
+              className="rounded-lg border border-slate-800 bg-slate-900/40 px-3 py-2"
+            >
+              <div className="flex items-center justify-between gap-3 flex-wrap">
+                <span className="font-body font-semibold text-slate-100">{p.name}</span>
+                <div className="flex items-center gap-4 font-cond text-sm">
+                  {p.a != null && <Stat label="A" value={p.a} />}
+                  {p.c != null && <Stat label="C" value={p.c} />}
+                  {p.d != null && <Stat label="D" value={p.d} />}
+                  {p.coh != null && <Stat label="Coh" value={p.coh} />}
+                </div>
+              </div>
+              {(p.equipment.length > 0 || p.rules.length > 0) && (
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  {p.equipment.map((item) => (
+                    <span
+                      key={`eq-${item}`}
+                      className="font-cond text-[11px] rounded px-2 py-0.5 border border-slate-700 bg-slate-800/60 text-slate-200"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                  {p.rules.map((r) => (
+                    <span
+                      key={`rl-${r}`}
+                      className={`font-cond text-[11px] rounded px-2 py-0.5 border ${
+                        isSkirmRule(r)
+                          ? "border-amber-700/50 bg-amber-500/10 text-amber-300"
+                          : "border-slate-700 bg-slate-800/60 text-slate-300"
+                      }`}
+                    >
+                      {r}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* base equipment + special rules — two columns (hidden when sub-profiles exist) */}
+      {!calc.profiles?.length && (calc.equipment.length > 0 || calc.rules.length > 0) && (
         <div className="mt-3 pt-3 border-t border-slate-800 grid grid-cols-2 gap-4">
           <div>
             <div className="font-cond text-[11px] uppercase tracking-widest text-slate-500 mb-2">
@@ -2686,15 +2810,16 @@ function PrintSummary({ army, computed, totalPoints, maxPoints, isValid, warning
           {computed.map(({ inst, calc }) => {
             const isCommander = isCommanderCat(inst.categoryId) || inst.type === "General";
             const combinedEquipment = calc.equipment;
+            const hasProfiles = calc.profiles?.length > 0;
             return (
               <React.Fragment key={inst.instanceId}>
                 <tr style={{ verticalAlign: "top" }}>
                   <td style={{ padding: "4px 4px 1px", fontWeight: 600 }}>{inst.name}</td>
                   <td style={{ padding: "4px 4px 1px" }}>{inst.categoryId}</td>
                   <td style={{ padding: "4px 4px 1px" }}>{inst.bases}</td>
-                  <td style={{ padding: "4px 4px 1px" }}>{isCommander ? inst.attacks ?? "-" : "-"}</td>
-                  <td style={{ padding: "4px 4px 1px" }}>{calc.defence ?? "-"}</td>
-                  <td style={{ padding: "4px 4px 1px" }}>{calc.cohesion ?? "-"}</td>
+                  <td style={{ padding: "4px 4px 1px" }}>{hasProfiles ? "-" : isCommander ? inst.attacks ?? "-" : "-"}</td>
+                  <td style={{ padding: "4px 4px 1px" }}>{hasProfiles ? "-" : calc.defence ?? "-"}</td>
+                  <td style={{ padding: "4px 4px 1px" }}>{hasProfiles ? "-" : calc.cohesion ?? "-"}</td>
                   <td style={{ padding: "4px 4px 1px" }}>{inst.basePointsPerBase}</td>
                   <td style={{ padding: "4px 4px 1px" }}>{calc.ppb - inst.basePointsPerBase}</td>
                   <td style={{ padding: "4px 4px 1px" }}>{calc.ppb}</td>
@@ -2705,14 +2830,32 @@ function PrintSummary({ army, computed, totalPoints, maxPoints, isValid, warning
                     {inst.description || "-"}
                   </td>
                 </tr>
-                {calc.rules.length > 0 && (
+                {hasProfiles &&
+                  calc.profiles.map((p) => (
+                    <tr key={`pdf-${inst.instanceId}-${p.name}`}>
+                      <td colSpan={10} style={{ padding: "0 4px 3px", fontSize: "11px", color: "#0f172a" }}>
+                        <strong>{p.name}:</strong>{" "}
+                        {[
+                          p.a != null ? `A ${p.a}` : null,
+                          p.c != null ? `C ${p.c}` : null,
+                          p.d != null ? `D ${p.d}` : null,
+                          p.coh != null ? `Coh ${p.coh}` : null,
+                        ]
+                          .filter(Boolean)
+                          .join(" · ")}
+                        {p.equipment.length > 0 ? ` — ${p.equipment.join(", ")}` : ""}
+                        {p.rules.length > 0 ? ` [${p.rules.join(", ")}]` : ""}
+                      </td>
+                    </tr>
+                  ))}
+                {!hasProfiles && calc.rules.length > 0 && (
                   <tr>
                     <td colSpan={10} style={{ padding: "0 4px 3px", fontSize: "11px", color: "#0f172a" }}>
                       <strong>Special Rules:</strong> {calc.rules.join(", ")}
                     </td>
                   </tr>
                 )}
-                {combinedEquipment.length > 0 && (
+                {!hasProfiles && combinedEquipment.length > 0 && (
                   <tr>
                     <td colSpan={10} style={{ padding: "0 4px 5px", fontSize: "11px", color: "#0f172a" }}>
                       <strong>Equipment:</strong> {combinedEquipment.join(", ")}

@@ -37,8 +37,20 @@ Advanced rule engine + UI polish (all in App.js, verified via logic unit tests):
 - UI: dropdowns moved to header-left; emerald Roster Summary box moved into header-right (fixed w-[520px]); header z-50 + solid bg; column headings restyled (rounded border, transparent outer wrapper, solid inner box, page-bg); scrollbar-gutter + pr-3 on both columns; pronounced catalog hover (emerald border/glow, no shift, no bg change); unit-name font Barlow; category/Army-Composition headings 1.25rem; constraints table header 0.9rem Barlow; brighter unit description (slate-300).
 - Both Supplement + Army dropdowns converted to Radix shadcn Select with max-h-[66vh] scrollable menu.
 
+## Implemented (2026-06 session, continued)
+Rule-engine + structure additions (App.js, verified via node logic tests):
+- `requires.unitId` now accepts an array (combined total of listed ids) for both fixed and ratio modes.
+- Army-level `pointsPercentageValidation` (combined unit points vs % of maxPoints, any expression).
+- `unitCountValidation` now supports a fixed `count` comparison (falls back to compareWith/ratio when absent).
+- Allied `disables` fixed to work across categories via per-category selection state (`checkedAllies` now stores "categoryId::armyKey" composites); handles the pecheneg/magyar cross-category self-disable pattern in real data.
+- Unit `excludes` field — mutual exclusion: blocks excluded ids in catalog (and reverse), per-unit warning when both present.
+- `armyValidation` left side now accepts `ids` array (combined bases) in addition to single `id`/`unitId`.
+- Save/Load Army: JSON download (prompt for name) + import restoring supplement (async loadData restore path), army, roster, allies, maxPoints. Save/Load/Export PDF buttons in left header box.
+- Unit `subProfiles` array: each has name + A/C/D/Coh stats (flexible key spellings) + baseEquipment + specialRules; renders as distinct rows in the unit box + PDF (replaces the main stat row). `optionalEquipment.targetProfile` routes an option's stat/rule/equipment changes to the matching sub-profile row while its points still count to the unit total; untargeted options apply to all profiles.
+- Header layout overhaul: left stack (Save/Load/Export box + dropdowns) and right Roster Summary box are equal-height (items-stretch); MAX POINTS LIMIT and TOTAL/LIMIT centered over their content; fixed header height; solid column heading boxes flush to top.
+
 ## Backlog / Future
 - P1: If remote JSON gets fixed, verify live-data path renders correctly.
 - P2: Save/load rosters to localStorage.
 - P2: Search/filter within catalog.
-- Note: advanced rules verified via node logic tests; demo entries seeded in MOCK_DATA (Welsh) since remote data is the primary source.
+- Note: advanced rules verified via node logic tests; demo entries seeded in MOCK_DATA (Welsh, incl. Teulu Foot subProfiles) since remote data is the primary source. Sub-profile UI/PDF rendering not yet visually verified (demo only reachable via fallback data).
