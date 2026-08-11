@@ -775,7 +775,7 @@ function makeInstance(unit, sourceArmyKey, categoryOverride) {
     bases: Math.max(unit.minBases ?? 0, 1),
     specialRules: Array.isArray(unit.specialRules) ? [...unit.specialRules] : [],
     baseEquipment: Array.isArray(unit.baseEquipment) ? [...unit.baseEquipment] : [],
-    optionalEquipment: Array.isArray(unit.optionalEquipment) ? unit.optionalEquipment : [],
+    optionalEquipment: Array.isArray(unit.optionalEquipment) ? unit.optionalEquipment.map(readOption) : [],
     subProfiles: Array.isArray(unit.subProfiles) ? unit.subProfiles.map(readSubProfile) : [],
     equipped: [],
     allowedSecondaryUnits: Array.isArray(unit.allowedSecondaryUnits) ? unit.allowedSecondaryUnits : [],
@@ -820,13 +820,38 @@ const pickStat = (obj, keys) => {
 };
 function readSubProfile(sp) {
   const arr = (v) => (Array.isArray(v) ? [...v] : v ? [v] : []);
+  const src = sp.stats && typeof sp.stats === "object" ? { ...sp, ...sp.stats } : sp;
   return {
     name: sp.name || sp.profileName || "Profile",
-    attacks: pickStat(sp, ["attacks", "A", "a"]),
-    defence: pickStat(sp, ["defence", "defense", "D", "d"]),
-    cohesion: pickStat(sp, ["cohesion", "C", "c", "Coh", "coh", "combat"]),
+    pointsPerBase: pickStat(sp, ["pointsPerBase", "ppb", "points", "pts"]),
+    attacks: pickStat(src, ["attacks", "A", "a"]),
+    defence: pickStat(src, ["defence", "defense", "D", "d"]),
+    cohesion: pickStat(src, ["cohesion", "C", "c", "Coh", "coh", "combat"]),
     baseEquipment: arr(sp.baseEquipment ?? sp.equipment ?? sp.weapons),
     specialRules: arr(sp.specialRules ?? sp.rules ?? sp.specialRule),
+  };
+}
+
+/* Normalize an optional-equipment entry, tolerating both the flat schema
+   (pointsModifier / defenceModifier / cohesionModifier / attacksModifier) and
+   the nested schema (pointsPerBase for cost + statChanges: { defence, ... }). */
+function readOption(e) {
+  const sc = e.statChanges && typeof e.statChanges === "object" ? e.statChanges : {};
+  const g = (obj, keys) => {
+    for (const k of keys) if (obj[k] != null) return Number(obj[k]);
+    return undefined;
+  };
+  return {
+    ...e,
+    pointsModifier:
+      e.pointsModifier != null
+        ? Number(e.pointsModifier)
+        : e.pointsPerBase != null
+        ? Number(e.pointsPerBase)
+        : 0,
+    attacksModifier: e.attacksModifier != null ? Number(e.attacksModifier) : g(sc, ["attacks", "A", "a"]),
+    defenceModifier: e.defenceModifier != null ? Number(e.defenceModifier) : g(sc, ["defence", "defense", "D", "d"]),
+    cohesionModifier: e.cohesionModifier != null ? Number(e.cohesionModifier) : g(sc, ["cohesion", "C", "c", "Coh", "coh"]),
   };
 }
 
@@ -881,6 +906,12 @@ function computeUnit(inst) {
     const attacks = sp.attacks != null ? sp.attacks + sum("attacksModifier") : null;
     const defence = sp.defence != null ? sp.defence + sum("defenceModifier") : null;
     const cohesion = sp.cohesion != null ? sp.cohesion + sum("cohesionModifier") : null;
+    /* per-profile points: own pts/base (fallback to unit's) + targeted option pts */
+    const ptsBase = sp.pointsPerBase != null ? sp.pointsPerBase : inst.basePointsPerBase;
+    const ownPts = sp.pointsPerBase != null;
+    const ptsOptions = sum("pointsModifier");
+    const totalPer = ptsBase + ptsOptions;
+    const ptsUnit = totalPer * inst.bases;
     let pRules = [...sp.specialRules];
     let pEquip = [...sp.baseEquipment];
     applies.forEach((e) => {
@@ -889,7 +920,7 @@ function computeUnit(inst) {
       (e.equipmentRemoved || []).forEach((x) => (pEquip = pEquip.filter((i) => i !== x)));
       (e.equipmentAdded || []).forEach((x) => !pEquip.includes(x) && pEquip.push(x));
     });
-    return { name: sp.name, attacks, defence, cohesion, rules: pRules, equipment: pEquip };
+    return { name: sp.name, attacks, defence, cohesion, ptsBase, ownPts, ptsOptions, total: totalPer, ptsUnit, rules: pRules, equipment: pEquip };
   });
   const skirmFromProfiles = profiles.some((p) => p.rules.some(isSkirmRule));
   const isSkirmAll = isSkirm || skirmFromProfiles;
@@ -913,8 +944,21 @@ function computeUnit(inst) {
     }
   }
 
-  const total = ppb * inst.bases + (secondary ? secondary.points : 0);
-  return { ppb, defence, cohesion, rules, equipment, isSkirm: isSkirmAll, effMax, effMin, total, active, secondary, profiles };
+  /* Unit cumulative per-base points. When sub-profiles carry their OWN
+     pointsPerBase they are stacked components of one base (e.g. elephant +
+     mahout + crew) → sum them. Otherwise (alternative stat-lines that fall back
+     to the unit's pts/base) keep the unit-level figure. */
+  const subHasOwn = profiles.length > 0 && profiles.some((p) => p.ownPts);
+  let ppbBase = inst.basePointsPerBase;
+  let ppbOptions = ppb - inst.basePointsPerBase;
+  if (subHasOwn) {
+    ppbBase = profiles.reduce((s, p) => s + p.ptsBase, 0);
+    ppbOptions = profiles.reduce((s, p) => s + p.ptsOptions, 0);
+  }
+  const ppbTotal = ppbBase + ppbOptions;
+
+  const total = ppbTotal * inst.bases + (secondary ? secondary.points : 0);
+  return { ppb, ppbBase, ppbOptions, ppbTotal, defence, cohesion, rules, equipment, isSkirm: isSkirmAll, effMax, effMin, total, active, secondary, profiles };
 }
 
 /* ------------------------------------------------------------------ */
@@ -2425,34 +2469,33 @@ function RosterRow({
           </button>
         </div>
 
-        {/* per-base points breakdown — centred immediately after the bases controls */}
-        <div className="flex items-center gap-6 font-cond text-sm">
-          <Stat label="Pts/Base" value={inst.basePointsPerBase} testid={`unit-pts-base-${inst.instanceId}`} />
+        {/* unified stat columns — same fixed-width grid used by sub-profile rows
+            so every column vertically aligns with the header. */}
+        <div className="flex items-center gap-2 font-cond text-sm ml-auto">
+          <Stat label="Pts/Base" value={calc.ppbBase} w testid={`unit-pts-base-${inst.instanceId}`} />
           <Stat
             label="Pts/Options"
-            value={calc.ppb - inst.basePointsPerBase}
+            value={calc.ppbOptions}
+            w
             testid={`unit-pts-options-${inst.instanceId}`}
           />
-          <Stat label="Total" value={calc.ppb} testid={`unit-pts-total-${inst.instanceId}`} />
-        </div>
-
-        <div className="flex items-center gap-5 font-cond text-sm">
+          <Stat label="Total" value={calc.ppbTotal} w testid={`unit-pts-total-${inst.instanceId}`} />
           {calc.profiles?.length ? (
             <>
-              <Stat label="D" value={"\u00A0"} testid={`unit-defence-${inst.instanceId}`} />
-              <Stat label="C" value={"\u00A0"} testid={`unit-cohesion-${inst.instanceId}`} />
+              <Stat label={isCommanderCat(inst.categoryId) || inst.type === "General" ? "A" : "D"} value={"\u00A0"} w testid={`unit-defence-${inst.instanceId}`} />
+              <Stat label="C" value={"\u00A0"} w testid={`unit-cohesion-${inst.instanceId}`} />
             </>
           ) : (
             <>
               {isCommanderCat(inst.categoryId) || inst.type === "General" ? (
-                <Stat label="A" value={inst.attacks ?? "-"} testid={`unit-attacks-${inst.instanceId}`} />
+                <Stat label="A" value={inst.attacks ?? "-"} w testid={`unit-attacks-${inst.instanceId}`} />
               ) : (
-                <Stat label="D" value={calc.defence ?? "-"} testid={`unit-defence-${inst.instanceId}`} />
+                <Stat label="D" value={calc.defence ?? "-"} w testid={`unit-defence-${inst.instanceId}`} />
               )}
-              <Stat label="C" value={calc.cohesion ?? "-"} testid={`unit-cohesion-${inst.instanceId}`} />
+              <Stat label="C" value={calc.cohesion ?? "-"} w testid={`unit-cohesion-${inst.instanceId}`} />
             </>
           )}
-          <Stat label="Pts/Unit" value={calc.total} big testid={`unit-total-${inst.instanceId}`} />
+          <Stat label="Pts/Unit" value={calc.total} big w testid={`unit-total-${inst.instanceId}`} />
         </div>
       </div>
 
@@ -2465,15 +2508,19 @@ function RosterRow({
               data-testid={`subprofile-${inst.instanceId}-${p.name}`}
               className="rounded-lg border border-slate-800 bg-slate-900/40 px-3 py-2"
             >
-              <div className="flex items-center justify-between gap-3 flex-wrap">
+              <div className="flex items-center justify-between gap-3">
                 <span className="font-body font-semibold text-slate-100">{p.name}</span>
-                <div className="flex items-center gap-4 font-cond text-sm">
+                <div className="flex items-center gap-2 font-cond text-sm ml-auto">
+                  <Stat label="Pts/Base" value={p.ptsBase} w testid={`subprofile-pts-base-${inst.instanceId}-${p.name}`} />
+                  <Stat label="Pts/Options" value={p.ptsOptions} w testid={`subprofile-pts-options-${inst.instanceId}-${p.name}`} />
+                  <Stat label="Total" value={p.total} w testid={`subprofile-pts-total-${inst.instanceId}-${p.name}`} />
                   {isCommanderCat(inst.categoryId) || inst.type === "General" ? (
-                    <Stat label="A" value={p.attacks ?? "-"} />
+                    <Stat label="A" value={p.attacks ?? "-"} w testid={`subprofile-attacks-${inst.instanceId}-${p.name}`} />
                   ) : (
-                    <Stat label="D" value={p.defence ?? "-"} />
+                    <Stat label="D" value={p.defence ?? "-"} w testid={`subprofile-defence-${inst.instanceId}-${p.name}`} />
                   )}
-                  <Stat label="C" value={p.cohesion ?? "-"} />
+                  <Stat label="C" value={p.cohesion ?? "-"} w testid={`subprofile-cohesion-${inst.instanceId}-${p.name}`} />
+                  <Stat label="Pts/Unit" value={p.ptsUnit} big w testid={`subprofile-pts-unit-${inst.instanceId}-${p.name}`} />
                 </div>
               </div>
               {(p.equipment.length > 0 || p.rules.length > 0) && (
@@ -2749,9 +2796,9 @@ function CategoryReport({ report }) {
   );
 }
 
-function Stat({ label, value, big, testid }) {
+function Stat({ label, value, big, testid, w }) {
   return (
-    <div className="text-center">
+    <div className={`text-center ${w ? "w-[68px] shrink-0" : ""}`}>
       <div className="font-cond text-[10px] uppercase tracking-widest text-slate-500 mb-0.5">{label}</div>
       <div
         data-testid={testid}
@@ -2825,9 +2872,9 @@ function PrintSummary({ army, computed, totalPoints, maxPoints, isValid, warning
                   <td style={{ padding: "4px 4px 1px" }}>{hasProfiles ? "-" : isCommander ? inst.attacks ?? "-" : "-"}</td>
                   <td style={{ padding: "4px 4px 1px" }}>{hasProfiles ? "-" : calc.defence ?? "-"}</td>
                   <td style={{ padding: "4px 4px 1px" }}>{hasProfiles ? "-" : calc.cohesion ?? "-"}</td>
-                  <td style={{ padding: "4px 4px 1px" }}>{inst.basePointsPerBase}</td>
-                  <td style={{ padding: "4px 4px 1px" }}>{calc.ppb - inst.basePointsPerBase}</td>
-                  <td style={{ padding: "4px 4px 1px" }}>{calc.ppb}</td>
+                  <td style={{ padding: "4px 4px 1px" }}>{calc.ppbBase}</td>
+                  <td style={{ padding: "4px 4px 1px" }}>{calc.ppbOptions}</td>
+                  <td style={{ padding: "4px 4px 1px" }}>{calc.ppbTotal}</td>
                   <td style={{ padding: "4px 4px 1px", textAlign: "right", fontWeight: 600 }}>{calc.total}</td>
                 </tr>
                 <tr>
@@ -2844,6 +2891,10 @@ function PrintSummary({ army, computed, totalPoints, maxPoints, isValid, warning
                           p.attacks != null ? `A ${p.attacks}` : null,
                           p.defence != null ? `D ${p.defence}` : null,
                           p.cohesion != null ? `C ${p.cohesion}` : null,
+                          `Pts/Base ${p.ptsBase}`,
+                          `Pts/Options ${p.ptsOptions}`,
+                          `Total ${p.total}`,
+                          `Points ${p.ptsUnit}`,
                         ]
                           .filter(Boolean)
                           .join(" · ")}

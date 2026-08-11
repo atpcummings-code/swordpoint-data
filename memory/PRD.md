@@ -49,6 +49,14 @@ Rule-engine + structure additions (App.js, verified via node logic tests):
 - Unit `subProfiles` array: each has name + A/C/D/Coh stats (flexible key spellings) + baseEquipment + specialRules; renders as distinct rows in the unit box + PDF (replaces the main stat row). `optionalEquipment.targetProfile` routes an option's stat/rule/equipment changes to the matching sub-profile row while its points still count to the unit total; untargeted options apply to all profiles.
 - Header layout overhaul: left stack (Save/Load/Export box + dropdowns) and right Roster Summary box are equal-height (items-stretch); MAX POINTS LIMIT and TOTAL/LIMIT centered over their content; fixed header height; solid column heading boxes flush to top.
 
+## Implemented (2026-06 session, sub-profile layout)
+- Sub-profile rows now share an identical fixed-width column grid with the main unit header: `[PTS/BASE] [PTS/OPTIONS] [TOTAL] [D or A] [C] [PTS/UNIT]` (68px columns, right-anchored so columns vertically align). `Stat` gained a `w` prop for the fixed width.
+- Per-sub-profile points: each row shows its own PTS/BASE (`sp.pointsPerBase`, else falls back to the unit's pts/base), PTS/OPTIONS (sum of options applying to that profile), TOTAL (base+options per base), and PTS/UNIT (total × bases) — per user's confirmed choices.
+- Main header keeps D/C blank for sub-profile units and shows cumulative points. When sub-profiles carry their OWN `pointsPerBase` (stacked components, e.g. elephant+mahout+crew) the unit's cumulative pts/base = SUM of profile pts/base; otherwise (alternative stat-lines falling back to unit pts) it stays the unit-level figure. `computeUnit` now returns `ppbBase/ppbOptions/ppbTotal` and `total` derives from `ppbTotal`.
+- Schema tolerance: `readSubProfile` reads stats from a nested `stats: {}` object (remote schema) as well as flat keys; new `readOption` normalizes optional-equipment so both flat (`pointsModifier`, `defenceModifier`) and nested (`pointsPerBase`, `statChanges: {defence}`) schemas work. Applied via `makeInstance`.
+- PrintSummary/PDF updated to use cumulative points and list per-profile PTS/BASE/OPTIONS/TOTAL/Points.
+- Verified end-to-end on live remote data: Genghis Khan → Early Thematic Byzantine → "War ElephantX" (Elephant 20 / Mahout 5 / Crew 2 → header 27; toggling Howdah → Crew updates Pts/Options 4, D 5→3, header total 31). Column alignment exact.
+
 ## Backlog / Future
 - P1: If remote JSON gets fixed, verify live-data path renders correctly.
 - P2: Save/load rosters to localStorage.
