@@ -2511,16 +2511,16 @@ function RosterRow({
               <div className="flex items-center justify-between gap-3">
                 <span className="font-body font-semibold text-slate-100">{p.name}</span>
                 <div className="flex items-center gap-2 font-cond text-sm ml-auto">
-                  <Stat label="Pts/Base" value={p.ptsBase} w testid={`subprofile-pts-base-${inst.instanceId}-${p.name}`} />
-                  <Stat label="Pts/Options" value={p.ptsOptions} w testid={`subprofile-pts-options-${inst.instanceId}-${p.name}`} />
-                  <Stat label="Total" value={p.total} w testid={`subprofile-pts-total-${inst.instanceId}-${p.name}`} />
+                  <Stat label="Pts/Base" value={p.ptsBase} w sm testid={`subprofile-pts-base-${inst.instanceId}-${p.name}`} />
+                  <Stat label="Pts/Options" value={p.ptsOptions} w sm testid={`subprofile-pts-options-${inst.instanceId}-${p.name}`} />
+                  <Stat label="Total" value={p.total} w sm testid={`subprofile-pts-total-${inst.instanceId}-${p.name}`} />
                   {isCommanderCat(inst.categoryId) || inst.type === "General" ? (
-                    <Stat label="A" value={p.attacks ?? "-"} w testid={`subprofile-attacks-${inst.instanceId}-${p.name}`} />
+                    <Stat label="A" value={p.attacks ?? "-"} w sm testid={`subprofile-attacks-${inst.instanceId}-${p.name}`} />
                   ) : (
-                    <Stat label="D" value={p.defence ?? "-"} w testid={`subprofile-defence-${inst.instanceId}-${p.name}`} />
+                    <Stat label="D" value={p.defence ?? "-"} w sm testid={`subprofile-defence-${inst.instanceId}-${p.name}`} />
                   )}
-                  <Stat label="C" value={p.cohesion ?? "-"} w testid={`subprofile-cohesion-${inst.instanceId}-${p.name}`} />
-                  <Stat label="Pts/Unit" value={p.ptsUnit} big w testid={`subprofile-pts-unit-${inst.instanceId}-${p.name}`} />
+                  <Stat label="C" value={p.cohesion ?? "-"} w sm testid={`subprofile-cohesion-${inst.instanceId}-${p.name}`} />
+                  <Stat label="Pts/Unit" value={p.ptsUnit} big w sm testid={`subprofile-pts-unit-${inst.instanceId}-${p.name}`} />
                 </div>
               </div>
               {(p.equipment.length > 0 || p.rules.length > 0) && (
@@ -2796,15 +2796,15 @@ function CategoryReport({ report }) {
   );
 }
 
-function Stat({ label, value, big, testid, w }) {
+function Stat({ label, value, big, testid, w, sm }) {
+  const sizeCls = sm ? "text-[0.9rem]" : big ? "text-2xl" : "text-lg";
+  const styleCls = big ? "font-extrabold text-emerald-400" : "font-bold text-slate-200";
   return (
     <div className={`text-center ${w ? "w-[68px] shrink-0" : ""}`}>
       <div className="font-cond text-[10px] uppercase tracking-widest text-slate-500 mb-0.5">{label}</div>
       <div
         data-testid={testid}
-        className={`font-display leading-none ${
-          big ? "text-2xl font-extrabold text-emerald-400" : "text-lg font-bold text-slate-200"
-        }`}
+        className={`font-display leading-none ${sizeCls} ${styleCls}`}
       >
         {value}
       </div>
