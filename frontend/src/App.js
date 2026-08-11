@@ -196,19 +196,17 @@ const MOCK_DATA = {
           subProfiles: [
             {
               name: "Warriors",
-              A: 2,
-              C: 4,
-              D: 6,
-              Coh: 7,
+              attacks: 2,
+              defence: 6,
+              cohesion: 7,
               baseEquipment: ["Spear", "Shield"],
               specialRules: ["Superior Fighters", "Warband"],
             },
             {
               name: "Champion",
-              A: 3,
-              C: 5,
-              D: 6,
-              Coh: 8,
+              attacks: 3,
+              defence: 6,
+              cohesion: 8,
               baseEquipment: ["Spear", "Shield"],
               specialRules: ["Superior Fighters", "Hero"],
             },
@@ -823,13 +821,12 @@ const pickStat = (obj, keys) => {
 function readSubProfile(sp) {
   const arr = (v) => (Array.isArray(v) ? [...v] : v ? [v] : []);
   return {
-    name: sp.name || "Profile",
-    a: pickStat(sp, ["attacks", "a", "A"]),
-    c: pickStat(sp, ["combat", "c", "C"]),
-    d: pickStat(sp, ["defence", "d", "D"]),
-    coh: pickStat(sp, ["cohesion", "coh", "Coh"]),
-    baseEquipment: arr(sp.baseEquipment),
-    specialRules: arr(sp.specialRules),
+    name: sp.name || sp.profileName || "Profile",
+    attacks: pickStat(sp, ["attacks", "A", "a"]),
+    defence: pickStat(sp, ["defence", "defense", "D", "d"]),
+    cohesion: pickStat(sp, ["cohesion", "C", "c", "Coh", "coh", "combat"]),
+    baseEquipment: arr(sp.baseEquipment ?? sp.equipment ?? sp.weapons),
+    specialRules: arr(sp.specialRules ?? sp.rules ?? sp.specialRule),
   };
 }
 
@@ -881,10 +878,9 @@ function computeUnit(inst) {
   const profiles = (inst.subProfiles || []).map((sp) => {
     const applies = active.filter((e) => !e.targetProfile || e.targetProfile === sp.name);
     const sum = (key) => applies.reduce((s, e) => s + (e[key] || 0), 0);
-    const a = sp.a != null ? sp.a + sum("attacksModifier") : null;
-    const c = sp.c != null ? sp.c + sum("combatModifier") : null;
-    const d = sp.d != null ? sp.d + sum("defenceModifier") : null;
-    const coh = sp.coh != null ? sp.coh + sum("cohesionModifier") : null;
+    const attacks = sp.attacks != null ? sp.attacks + sum("attacksModifier") : null;
+    const defence = sp.defence != null ? sp.defence + sum("defenceModifier") : null;
+    const cohesion = sp.cohesion != null ? sp.cohesion + sum("cohesionModifier") : null;
     let pRules = [...sp.specialRules];
     let pEquip = [...sp.baseEquipment];
     applies.forEach((e) => {
@@ -893,7 +889,7 @@ function computeUnit(inst) {
       (e.equipmentRemoved || []).forEach((x) => (pEquip = pEquip.filter((i) => i !== x)));
       (e.equipmentAdded || []).forEach((x) => !pEquip.includes(x) && pEquip.push(x));
     });
-    return { name: sp.name, a, c, d, coh, rules: pRules, equipment: pEquip };
+    return { name: sp.name, attacks, defence, cohesion, rules: pRules, equipment: pEquip };
   });
   const skirmFromProfiles = profiles.some((p) => p.rules.some(isSkirmRule));
   const isSkirmAll = isSkirm || skirmFromProfiles;
@@ -2472,10 +2468,12 @@ function RosterRow({
               <div className="flex items-center justify-between gap-3 flex-wrap">
                 <span className="font-body font-semibold text-slate-100">{p.name}</span>
                 <div className="flex items-center gap-4 font-cond text-sm">
-                  {p.a != null && <Stat label="A" value={p.a} />}
-                  {p.d != null && <Stat label="D" value={p.d} />}
-                  {p.c != null && <Stat label="C" value={p.c} />}
-                  {p.coh != null && <Stat label="Coh" value={p.coh} />}
+                  {isCommanderCat(inst.categoryId) || inst.type === "General" ? (
+                    <Stat label="A" value={p.attacks ?? "-"} />
+                  ) : (
+                    <Stat label="D" value={p.defence ?? "-"} />
+                  )}
+                  <Stat label="C" value={p.cohesion ?? "-"} />
                 </div>
               </div>
               {(p.equipment.length > 0 || p.rules.length > 0) && (
@@ -2843,10 +2841,9 @@ function PrintSummary({ army, computed, totalPoints, maxPoints, isValid, warning
                       <td colSpan={10} style={{ padding: "0 4px 3px", fontSize: "11px", color: "#0f172a" }}>
                         <strong>{p.name}:</strong>{" "}
                         {[
-                          p.a != null ? `A ${p.a}` : null,
-                          p.c != null ? `C ${p.c}` : null,
-                          p.d != null ? `D ${p.d}` : null,
-                          p.coh != null ? `Coh ${p.coh}` : null,
+                          p.attacks != null ? `A ${p.attacks}` : null,
+                          p.defence != null ? `D ${p.defence}` : null,
+                          p.cohesion != null ? `C ${p.cohesion}` : null,
                         ]
                           .filter(Boolean)
                           .join(" · ")}
