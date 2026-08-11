@@ -69,6 +69,10 @@ Rule-engine + structure additions (App.js, verified via node logic tests):
 - Catalog `CatalogUnit` now shows the summed sub-profile `pointsPerBase` for units that have sub-profiles carrying their own points (mirrors the roster header's cumulative base); units without sub-profiles (or whose sub-profiles have no own points) keep the top-level `pointsPerBase`. Computed at render time via `readSubProfile`.
 - Verified live: Genghis Khan → Ghaznavid → "Elephant" catalog card shows 60 pts/base (60+0+0); other units unchanged.
 
+## Implemented (2026-06 session, maxCountAllowed enforcement)
+- `maxCountAllowed` now disables a unit's catalog +Add button once its roster count reaches the cap (added to `blockedAddIds` for both home and allied unit defs). The existing army-level validation warning still fires when the cap is exceeded via duplication/other roster changes.
+- Verified live: Teulu Cavalry (max 2) and Over King (max 1) Add buttons grey out at the cap; duplicating a 3rd Teulu Cavalry shows "…maximum of 2 is allowed" and flips the status badge to Warnings.
+
 ## Backlog / Future
 - P1: If remote JSON gets fixed, verify live-data path renders correctly.
 - P2: Save/load rosters to localStorage.

@@ -1356,9 +1356,15 @@ function App() {
         if (rosterIds.has(x)) blocked.add(uid); // excluded unit present -> block uid
       });
     });
+    // maxCountAllowed: block +Add once a unit's roster count reaches its cap.
+    allUnitDefs.forEach((u) => {
+      if (u.maxCountAllowed != null && (rosterCounts[u.id] || 0) >= u.maxCountAllowed) {
+        blocked.add(u.id);
+      }
+    });
     return blocked;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [army, rosterCounts, roster, excludesByUnitId]);
+  }, [army, rosterCounts, roster, excludesByUnitId, allUnitDefs]);
 
   /* Warnings when two mutually-exclusive units are both in the roster:
      unitId -> [names of conflicting units present in the roster]. */
