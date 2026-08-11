@@ -2506,7 +2506,7 @@ function RosterRow({
             <div
               key={p.name}
               data-testid={`subprofile-${inst.instanceId}-${p.name}`}
-              className="rounded-lg border border-slate-800 bg-slate-900/40 px-3 py-2"
+              className="rounded-lg border-l-2 border-slate-700 bg-slate-900/40 py-2 pl-3"
             >
               <div className="flex items-center justify-between gap-3">
                 <span className="font-body font-semibold text-slate-100">{p.name}</span>
