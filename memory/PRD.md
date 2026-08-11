@@ -77,6 +77,10 @@ Rule-engine + structure additions (App.js, verified via node logic tests):
 - `effectiveMaxCount(base, maxPoints)` scales a unit's cap: base ≥ 2 gains +1 for every full or partial 1000 pts above the first 1000 (1001–2000 → +1, 2001–3000 → +2, …); base of 1 (or null) never scales. Applied to both the catalog +Add gating (`blockedAddIds`) and the army-level over-limit validation warning; both react to the MAX POINTS LIMIT field.
 - Verified live: at 2000 pts Teulu Cavalry (base 2) caps at 3 while Over King (base 1) stays 1; at 2001 the cap rises to 4; dropping back to 1000 re-disables Add and shows the "maximum of 2" warning.
 
+## Implemented (2026-06 session, catalog limit badges)
+- Catalog `CatalogUnit` shows a dynamic limit badge right after the unit name: `(Max: X of Y)` where X = current roster count and Y = points-scaled `effectiveMaxCount`; or `(Min: Y+)` for min-only units; nothing when neither is set (max takes priority when both exist). Styled `font-cond text-sm text-slate-400` (slightly smaller than the name, same colour as the bottom stats). Updates in real time via `rosterCounts` + `maxPoints` props threaded through `CatalogCategory`.
+- Verified live: Teulu Cavalry `(Max: 0 of 2)` → `(Max: 1 of 2)` on add → `(Max: 1 of 3)` at 2000 pts; Over King `(Max: 0 of 1)`.
+
 ## Backlog / Future
 - P1: If remote JSON gets fixed, verify live-data path renders correctly.
 - P2: Save/load rosters to localStorage.

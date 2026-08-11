@@ -2109,6 +2109,7 @@ function App() {
                 onAdd={addUnit}
                 blockedAddIds={blockedAddIds}
                 maxPoints={maxPoints}
+                rosterCounts={rosterCounts}
                 catFull={catFullIds.has(cat.id)}
               />
             ))}
@@ -2249,7 +2250,7 @@ function ValidationPanel({ warnings, isValid, empty }) {
   );
 }
 
-function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies, disabledAllies, onToggleAlly, onAdd, blockedAddIds, maxPoints, catFull }) {
+function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies, disabledAllies, onToggleAlly, onAdd, blockedAddIds, maxPoints, rosterCounts, catFull }) {
   const homeUnits = (army?.units || []).filter((u) => u.category === cat.id);
   const isAllies = Array.isArray(cat.alliedArmyKeys);
 
@@ -2280,7 +2281,7 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
       <div className="p-3 space-y-2">
         {/* Home army units */}
         {homeUnits.map((u) => (
-          <CatalogUnit key={u.id} unit={u} onAddUnit={onAdd} armyKey={homeKey} blocked={blockedAddIds?.has(u.id) || catFull} />
+          <CatalogUnit key={u.id} unit={u} onAddUnit={onAdd} armyKey={homeKey} blocked={blockedAddIds?.has(u.id) || catFull} rosterCounts={rosterCounts} maxPoints={maxPoints} />
         ))}
 
         {/* Allied selection */}
@@ -2337,7 +2338,7 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
                   {(armies[ak].units || [])
                     .filter((u) => u.type !== "General")
                     .map((u) => (
-                      <CatalogUnit key={ak + u.id} unit={u} onAddUnit={onAdd} armyKey={ak} categoryOverride={cat.id} blocked={blockedAddIds?.has(u.id) || catFull || isRestricted(u.id)} />
+                      <CatalogUnit key={ak + u.id} unit={u} onAddUnit={onAdd} armyKey={ak} categoryOverride={cat.id} blocked={blockedAddIds?.has(u.id) || catFull || isRestricted(u.id)} rosterCounts={rosterCounts} maxPoints={maxPoints} />
                     ))}
                 </div>
                 );
@@ -2353,7 +2354,7 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
   );
 }
 
-function CatalogUnit({ unit, onAddUnit, armyKey, categoryOverride, blocked }) {
+function CatalogUnit({ unit, onAddUnit, armyKey, categoryOverride, blocked, rosterCounts, maxPoints }) {
   // Units with sub-profiles show the summed sub-profile pts/base when the
   // sub-profiles carry their own points; otherwise the top-level pts/base.
   const subs = Array.isArray(unit.subProfiles) ? unit.subProfiles.map(readSubProfile) : [];
@@ -2361,12 +2362,25 @@ function CatalogUnit({ unit, onAddUnit, armyKey, categoryOverride, blocked }) {
     subs.length && subs.some((s) => s.pointsPerBase != null)
       ? subs.reduce((sum, s) => sum + (s.pointsPerBase != null ? s.pointsPerBase : unit.pointsPerBase || 0), 0)
       : unit.pointsPerBase;
+  // dynamic count-limit badge shown after the unit name
+  let limitBadge = null;
+  if (unit.maxCountAllowed != null) {
+    const have = rosterCounts?.[unit.id] || 0;
+    limitBadge = `(Max: ${have} of ${effectiveMaxCount(unit.maxCountAllowed, maxPoints)})`;
+  } else if (unit.minCountAllowed != null && unit.minCountAllowed > 0) {
+    limitBadge = `(Min: ${unit.minCountAllowed}+)`;
+  }
   return (
     <div className={`rounded-lg border border-slate-800 bg-slate-950/50 px-3 py-2.5 flex items-start justify-between gap-3 transition-all duration-150 ${blocked ? "opacity-50" : "hover:border-emerald-500/70 hover:shadow-lg hover:shadow-emerald-500/10"}`}>
       <div className="min-w-0">
         <div className="flex items-center gap-2">
           {unit.type === "General" && <Crown size={14} className="text-amber-400 shrink-0" />}
           <span className="font-body font-semibold text-slate-100 truncate">{unit.name}</span>
+          {limitBadge && (
+            <span data-testid={`unit-limit-badge-${unit.id}`} className="font-cond text-sm text-slate-400 shrink-0">
+              {limitBadge}
+            </span>
+          )}
         </div>
         <p className="font-body text-xs text-slate-300 mt-0.5 line-clamp-2">{unit.description}</p>
         <div className="flex flex-wrap gap-2 mt-1.5 font-cond text-[11px] text-slate-400">
