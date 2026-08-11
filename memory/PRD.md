@@ -57,6 +57,10 @@ Rule-engine + structure additions (App.js, verified via node logic tests):
 - PrintSummary/PDF updated to use cumulative points and list per-profile PTS/BASE/OPTIONS/TOTAL/Points.
 - Verified end-to-end on live remote data: Genghis Khan → Early Thematic Byzantine → "War ElephantX" (Elephant 20 / Mahout 5 / Crew 2 → header 27; toggling Howdah → Crew updates Pts/Options 4, D 5→3, header total 31). Column alignment exact.
 
+## Implemented (2026-06 session, applyToAllUnits)
+- New `optionalEquipment.applyToAllUnits` flag. When an option with this flag is toggled on/off on any unit, `toggleEquipment` forces the same equipped state across every roster instance of the same `unitId` that offers the option — points and stat changes update roster-wide simultaneously (bidirectional: select syncs on, deselect syncs off). Per-unit disables / hidden-pruning / skirmisher clamps still applied to each affected instance. Preserved through `readOption` (spread). Demo flag added to Welsh "Teulu Foot → Throwing Spears" in MOCK_DATA.
+- Verified via UI automation: two Teulu Foot units → enabling on one checks both (90→102 pts), disabling on the other unchecks both (→90 pts).
+
 ## Backlog / Future
 - P1: If remote JSON gets fixed, verify live-data path renders correctly.
 - P2: Save/load rosters to localStorage.

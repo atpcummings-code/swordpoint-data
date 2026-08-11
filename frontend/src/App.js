@@ -243,11 +243,7 @@ const MOCK_DATA = {
               equipmentAdded: ["Throwing Spears"],
               equipmentRemoved: ["Spear"],
               disables: ["Riding Horses"],
-              basesComparison: {
-                expression: "lessThanOrEqual",
-                compareWith: ["Light Armour"],
-                ratio: 1,
-              },
+              applyToAllUnits: true,
               defenceModifier: 0,
               cohesionModifier: 0,
             },
@@ -1138,26 +1134,48 @@ function App() {
   };
 
   const toggleEquipment = (instanceId, equipName) => {
-    updateInst(instanceId, (i) => {
-      const has = i.equipped.includes(equipName);
-      let equipped;
-      if (has) {
-        equipped = i.equipped.filter((n) => n !== equipName);
-      } else {
-        // selecting this item: drop any currently-equipped items it disables
-        const item = i.optionalEquipment.find((e) => e.name === equipName);
-        const disables = item?.disables || [];
-        equipped = [...i.equipped.filter((n) => !disables.includes(n)), equipName];
-      }
-      // prune any now-hidden items (their reveal source was deselected)
-      equipped = pruneHidden(i.optionalEquipment, equipped);
-      let next = { ...i, equipped };
-      // Skirmisher rule override — clamp bases into [2, 6] when activated
-      const { isSkirm, effMax, effMin } = computeUnit(next);
-      if (isSkirm && next.bases > 6) next = { ...next, bases: 6 };
-      if (next.bases > effMax) next = { ...next, bases: effMax };
-      if (next.bases < effMin) next = { ...next, bases: effMin };
-      return next;
+    setRoster((prev) => {
+      const target = prev.find((i) => i.instanceId === instanceId);
+      if (!target) return prev;
+      const nextOn = !target.equipped.includes(equipName); // desired state after this click
+      const def = target.optionalEquipment.find((e) => e.name === equipName);
+      const applyAll = !!def?.applyToAllUnits;
+
+      /* Force a single instance into the desired equipped state for equipName,
+         reapplying per-unit disables / hidden-pruning / skirmisher clamps. */
+      const setState = (i) => {
+        const has = i.equipped.includes(equipName);
+        let equipped;
+        if (nextOn && !has) {
+          const item = i.optionalEquipment.find((e) => e.name === equipName);
+          const disables = item?.disables || [];
+          equipped = [...i.equipped.filter((n) => !disables.includes(n)), equipName];
+        } else if (!nextOn && has) {
+          equipped = i.equipped.filter((n) => n !== equipName);
+        } else {
+          return i; // already in desired state
+        }
+        equipped = pruneHidden(i.optionalEquipment, equipped);
+        let next = { ...i, equipped };
+        const { isSkirm, effMax, effMin } = computeUnit(next);
+        if (isSkirm && next.bases > 6) next = { ...next, bases: 6 };
+        if (next.bases > effMax) next = { ...next, bases: effMax };
+        if (next.bases < effMin) next = { ...next, bases: effMin };
+        return next;
+      };
+
+      return prev.map((i) => {
+        if (i.instanceId === instanceId) return setState(i);
+        // roster-wide sync for options flagged applyToAllUnits
+        if (
+          applyAll &&
+          i.unitId === target.unitId &&
+          i.optionalEquipment.some((e) => e.name === equipName)
+        ) {
+          return setState(i);
+        }
+        return i;
+      });
     });
   };
 
