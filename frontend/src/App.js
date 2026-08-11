@@ -2441,13 +2441,20 @@ function RosterRow({
         </div>
 
         <div className="flex items-center gap-5 font-cond text-sm">
-          {!calc.profiles?.length && (isCommanderCat(inst.categoryId) || inst.type === "General" ? (
-            <Stat label="A" value={inst.attacks ?? "-"} testid={`unit-attacks-${inst.instanceId}`} />
+          {calc.profiles?.length ? (
+            <>
+              <Stat label="D" value={"\u00A0"} testid={`unit-defence-${inst.instanceId}`} />
+              <Stat label="C" value={"\u00A0"} testid={`unit-cohesion-${inst.instanceId}`} />
+            </>
           ) : (
-            <Stat label="D" value={calc.defence ?? "-"} testid={`unit-defence-${inst.instanceId}`} />
-          ))}
-          {!calc.profiles?.length && (
-            <Stat label="C" value={calc.cohesion ?? "-"} testid={`unit-cohesion-${inst.instanceId}`} />
+            <>
+              {isCommanderCat(inst.categoryId) || inst.type === "General" ? (
+                <Stat label="A" value={inst.attacks ?? "-"} testid={`unit-attacks-${inst.instanceId}`} />
+              ) : (
+                <Stat label="D" value={calc.defence ?? "-"} testid={`unit-defence-${inst.instanceId}`} />
+              )}
+              <Stat label="C" value={calc.cohesion ?? "-"} testid={`unit-cohesion-${inst.instanceId}`} />
+            </>
           )}
           <Stat label="Pts/Unit" value={calc.total} big testid={`unit-total-${inst.instanceId}`} />
         </div>
@@ -2466,8 +2473,8 @@ function RosterRow({
                 <span className="font-body font-semibold text-slate-100">{p.name}</span>
                 <div className="flex items-center gap-4 font-cond text-sm">
                   {p.a != null && <Stat label="A" value={p.a} />}
-                  {p.c != null && <Stat label="C" value={p.c} />}
                   {p.d != null && <Stat label="D" value={p.d} />}
+                  {p.c != null && <Stat label="C" value={p.c} />}
                   {p.coh != null && <Stat label="Coh" value={p.coh} />}
                 </div>
               </div>
