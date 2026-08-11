@@ -92,7 +92,7 @@ const MOCK_DATA = {
           max: 15,
           description:
             "You may include one allied contingent. Check an army below to add its non-General units. Allied units count toward this category's points limit.",
-          alliedArmyKeys: [{ key: "vikings", disables: ["vikings"] }, "anglo_danish"],
+          alliedArmyKeys: [{ key: "vikings", disables: ["vikings"], onlyUnits: ["viking_hirdmen", "viking_bondi"] }, { key: "anglo_danish", excludesUnits: ["ad_slingers"] }],
           maxAlliedArmiesAllowed: 2,
         },
         {
@@ -680,6 +680,14 @@ function normalizeData(data) {
               ? [entry.disables]
               : [];
             if (key && dis.length) army._allyDisables[key] = dis;
+            // capture per-ally unit availability filters (onlyUnits / excludesUnits)
+            const toArr = (v) => (Array.isArray(v) ? v : v ? [v] : []);
+            const only = toArr(entry.onlyUnits);
+            const excl = toArr(entry.excludesUnits);
+            if (key && (only.length || excl.length)) {
+              c._allyUnitFilter = c._allyUnitFilter || {};
+              c._allyUnitFilter[key] = { onlyUnits: only, excludesUnits: excl };
+            }
             return key;
           }
           return entry;
@@ -2293,7 +2301,16 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
             {/* Active allied units (non-General only) */}
             {cat.alliedArmyKeys
               .filter((ak) => checkedAllies.includes(`${cat.id}::${ak}`) && armies[ak])
-              .map((ak) => (
+              .map((ak) => {
+                const filter = cat._allyUnitFilter?.[ak];
+                // onlyUnits takes precedence; else excludesUnits; else all available
+                const isRestricted = (uid) => {
+                  if (!filter) return false;
+                  if (filter.onlyUnits?.length) return !filter.onlyUnits.includes(uid);
+                  if (filter.excludesUnits?.length) return filter.excludesUnits.includes(uid);
+                  return false;
+                };
+                return (
                 <div key={ak} className="rounded-lg border border-emerald-800/40 bg-emerald-950/20 p-2 space-y-2">
                   <div className="font-cond text-xs uppercase tracking-widest text-emerald-400 px-1">
                     {armies[ak].armyName}
@@ -2301,10 +2318,11 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
                   {(armies[ak].units || [])
                     .filter((u) => u.type !== "General")
                     .map((u) => (
-                      <CatalogUnit key={ak + u.id} unit={u} onAddUnit={onAdd} armyKey={ak} categoryOverride={cat.id} blocked={blockedAddIds?.has(u.id) || catFull} />
+                      <CatalogUnit key={ak + u.id} unit={u} onAddUnit={onAdd} armyKey={ak} categoryOverride={cat.id} blocked={blockedAddIds?.has(u.id) || catFull || isRestricted(u.id)} />
                     ))}
                 </div>
-              ))}
+                );
+              })}
           </div>
         )}
 

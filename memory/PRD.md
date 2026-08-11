@@ -61,6 +61,10 @@ Rule-engine + structure additions (App.js, verified via node logic tests):
 - New `optionalEquipment.applyToAllUnits` flag. When an option with this flag is toggled on/off on any unit, `toggleEquipment` forces the same equipped state across every roster instance of the same `unitId` that offers the option — points and stat changes update roster-wide simultaneously (bidirectional: select syncs on, deselect syncs off). Per-unit disables / hidden-pruning / skirmisher clamps still applied to each affected instance. Preserved through `readOption` (spread). Demo flag added to Welsh "Teulu Foot → Throwing Spears" in MOCK_DATA.
 - Verified via UI automation: two Teulu Foot units → enabling on one checks both (90→102 pts), disabling on the other unchecks both (→90 pts).
 
+## Implemented (2026-06 session, allied unit filters)
+- `alliedArmyKeys` entries (object form) now support `onlyUnits` and `excludesUnits` arrays. `normalizeData` captures them into `cat._allyUnitFilter[key]`; the catalog disables (greys out, blocks Add) the affected allied units the moment the ally is selected. `onlyUnits` takes precedence over `excludesUnits`; neither present → all units available. Demo seeded on Welsh allies: Vikings `onlyUnits: [viking_hirdmen, viking_bondi]`, Anglo-Danish `excludesUnits: [ad_slingers]`.
+- Verified via UI automation: Vikings → only Hirdmen/Bondi enabled (Hersir/Bowmen disabled); Anglo-Danish → only Slingers disabled.
+
 ## Backlog / Future
 - P1: If remote JSON gets fixed, verify live-data path renders correctly.
 - P2: Save/load rosters to localStorage.
