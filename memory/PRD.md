@@ -65,6 +65,10 @@ Rule-engine + structure additions (App.js, verified via node logic tests):
 - `alliedArmyKeys` entries (object form) now support `onlyUnits` and `excludesUnits` arrays. `normalizeData` captures them into `cat._allyUnitFilter[key]`; the catalog disables (greys out, blocks Add) the affected allied units the moment the ally is selected. `onlyUnits` takes precedence over `excludesUnits`; neither present → all units available. Demo seeded on Welsh allies: Vikings `onlyUnits: [viking_hirdmen, viking_bondi]`, Anglo-Danish `excludesUnits: [ad_slingers]`.
 - Verified via UI automation: Vikings → only Hirdmen/Bondi enabled (Hersir/Bowmen disabled); Anglo-Danish → only Slingers disabled.
 
+## Implemented (2026-06 session, catalog pts/base for sub-profiles)
+- Catalog `CatalogUnit` now shows the summed sub-profile `pointsPerBase` for units that have sub-profiles carrying their own points (mirrors the roster header's cumulative base); units without sub-profiles (or whose sub-profiles have no own points) keep the top-level `pointsPerBase`. Computed at render time via `readSubProfile`.
+- Verified live: Genghis Khan → Ghaznavid → "Elephant" catalog card shows 60 pts/base (60+0+0); other units unchanged.
+
 ## Backlog / Future
 - P1: If remote JSON gets fixed, verify live-data path renders correctly.
 - P2: Save/load rosters to localStorage.

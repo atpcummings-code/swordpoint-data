@@ -2335,6 +2335,13 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
 }
 
 function CatalogUnit({ unit, onAddUnit, armyKey, categoryOverride, blocked }) {
+  // Units with sub-profiles show the summed sub-profile pts/base when the
+  // sub-profiles carry their own points; otherwise the top-level pts/base.
+  const subs = Array.isArray(unit.subProfiles) ? unit.subProfiles.map(readSubProfile) : [];
+  const displayPtsBase =
+    subs.length && subs.some((s) => s.pointsPerBase != null)
+      ? subs.reduce((sum, s) => sum + (s.pointsPerBase != null ? s.pointsPerBase : unit.pointsPerBase || 0), 0)
+      : unit.pointsPerBase;
   return (
     <div className={`rounded-lg border border-slate-800 bg-slate-950/50 px-3 py-2.5 flex items-start justify-between gap-3 transition-all duration-150 ${blocked ? "opacity-50" : "hover:border-emerald-500/70 hover:shadow-lg hover:shadow-emerald-500/10"}`}>
       <div className="min-w-0">
@@ -2344,7 +2351,7 @@ function CatalogUnit({ unit, onAddUnit, armyKey, categoryOverride, blocked }) {
         </div>
         <p className="font-body text-xs text-slate-300 mt-0.5 line-clamp-2">{unit.description}</p>
         <div className="flex flex-wrap gap-2 mt-1.5 font-cond text-[11px] text-slate-400">
-          <span className="text-emerald-400 font-semibold">{unit.pointsPerBase} pts/base</span>
+          <span className="text-emerald-400 font-semibold">{displayPtsBase} pts/base</span>
           <span>· {unit.minBases}–{unit.maxBases} bases</span>
           {unit.defence != null && <span>· Def {unit.defence}</span>}
           {unit.attacks != null && <span>· Atk {unit.attacks}</span>}
