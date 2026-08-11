@@ -73,6 +73,10 @@ Rule-engine + structure additions (App.js, verified via node logic tests):
 - `maxCountAllowed` now disables a unit's catalog +Add button once its roster count reaches the cap (added to `blockedAddIds` for both home and allied unit defs). The existing army-level validation warning still fires when the cap is exceeded via duplication/other roster changes.
 - Verified live: Teulu Cavalry (max 2) and Over King (max 1) Add buttons grey out at the cap; duplicating a 3rd Teulu Cavalry shows "…maximum of 2 is allowed" and flips the status badge to Warnings.
 
+## Implemented (2026-06 session, maxCountAllowed points scaling)
+- `effectiveMaxCount(base, maxPoints)` scales a unit's cap: base ≥ 2 gains +1 for every full or partial 1000 pts above the first 1000 (1001–2000 → +1, 2001–3000 → +2, …); base of 1 (or null) never scales. Applied to both the catalog +Add gating (`blockedAddIds`) and the army-level over-limit validation warning; both react to the MAX POINTS LIMIT field.
+- Verified live: at 2000 pts Teulu Cavalry (base 2) caps at 3 while Over King (base 1) stays 1; at 2001 the cap rises to 4; dropping back to 1000 re-disables Add and shows the "maximum of 2" warning.
+
 ## Backlog / Future
 - P1: If remote JSON gets fixed, verify live-data path renders correctly.
 - P2: Save/load rosters to localStorage.

@@ -760,6 +760,15 @@ function pointsRatioMax(cat, maxPoints) {
   return Math.max(1, n);
 }
 
+/* Scale a unit's maxCountAllowed with the army points limit: a base of 2+ gains
+   +1 for every full or partial 1000 pts above the initial 1000. A base of 1 (or
+   null) never scales. */
+function effectiveMaxCount(base, maxPoints) {
+  if (base == null || base <= 1) return base;
+  const extra = maxPoints > 1000 ? Math.ceil((maxPoints - 1000) / 1000) : 0;
+  return base + extra;
+}
+
 
 function makeInstance(unit, sourceArmyKey, categoryOverride) {
   return {
@@ -1356,15 +1365,16 @@ function App() {
         if (rosterIds.has(x)) blocked.add(uid); // excluded unit present -> block uid
       });
     });
-    // maxCountAllowed: block +Add once a unit's roster count reaches its cap.
+    // maxCountAllowed: block +Add once a unit's roster count reaches its cap
+    // (cap scales with the army points limit; base of 1 stays fixed).
     allUnitDefs.forEach((u) => {
-      if (u.maxCountAllowed != null && (rosterCounts[u.id] || 0) >= u.maxCountAllowed) {
+      if (u.maxCountAllowed != null && (rosterCounts[u.id] || 0) >= effectiveMaxCount(u.maxCountAllowed, maxPoints)) {
         blocked.add(u.id);
       }
     });
     return blocked;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [army, rosterCounts, roster, excludesByUnitId, allUnitDefs]);
+  }, [army, rosterCounts, roster, excludesByUnitId, allUnitDefs, maxPoints]);
 
   /* Warnings when two mutually-exclusive units are both in the roster:
      unitId -> [names of conflicting units present in the roster]. */
@@ -1620,11 +1630,14 @@ function App() {
     roster.forEach((i) => {
       if (seenMax.has(i.unitId)) return;
       seenMax.add(i.unitId);
-      if (i.maxCountAllowed != null && counts[i.unitId] > i.maxCountAllowed) {
-        w.push({
-          level: "critical",
-          msg: `Validation Error: You have added ${counts[i.unitId]} units of '${i.name}', but a maximum of ${i.maxCountAllowed} is allowed.`,
-        });
+      if (i.maxCountAllowed != null) {
+        const cap = effectiveMaxCount(i.maxCountAllowed, maxPoints);
+        if (counts[i.unitId] > cap) {
+          w.push({
+            level: "critical",
+            msg: `Validation Error: You have added ${counts[i.unitId]} units of '${i.name}', but a maximum of ${cap} is allowed.`,
+          });
+        }
       }
     });
 
