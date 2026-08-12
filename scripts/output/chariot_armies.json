@@ -1,0 +1,215 @@
+{
+  "armies": {
+    "sea_peoples": {
+      "armyName": "Sea Peoples - (1278 BC - 1175 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Chariots",
+          "name": "Chariots",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "description": "The army may take allies from the Libyan list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+            "libyan"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
+      ],
+      "units": [
+        {
+          "id": "sea_peoples_over_king",
+          "name": "Over King",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "sea_peoples_chief",
+          "name": "Chief",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "sea_peoples_chariots",
+          "name": "Chariots",
+          "description": "Chariots have a driver and one crewman armed with javelins, light armour and shield.  Superior Fighters. Superior Shooters. Light Chariots.",
+          "category": "Chariots",
+          "type": "other",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Superior Fighters",
+            "Open Order",
+            "Superior Shooters",
+            "Light Chariots"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "sea_peoples_sherden",
+          "name": "Sherden",
+          "description": "Sherden have javelins and shield.  Superior Fighters. Warband (not rule 3) / Up top three units may have light armour (+2). May be Stubborn (+2)",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": [
+            "Superior Fighters",
+            "Close Order",
+            "Warband (not rule 3)"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "maxUnits": 3,
+              "equipmentAdded": [
+                "Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "rulesAdded": [
+                "Stubborn"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "sea_peoples_warriors",
+          "name": "Warriors",
+          "description": "Warriors have javelins and shield. Warband (not rule 3). Up to two units may have light armour (+2). At least one third of all formed infantry units must be Warriors.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": [
+            "Warband (not rule 3)",
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "maxUnits": 2,
+              "equipmentAdded": [
+                "Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "sea_peoples_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have a bow or sling",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
