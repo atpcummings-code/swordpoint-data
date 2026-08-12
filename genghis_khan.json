@@ -92,7 +92,6 @@
         {
           "id": "later_byzantine_macedonian_dynasty_guard_cavalry",
           "name": "Guard Cavalry",
-          "excludes": ["later_byzantine_macedonian_dynasty_dismounted_bucellarii"],
           "description": "Guard Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1).",
           "category": "Cavalry",
           "type": "other",
@@ -806,9 +805,9 @@
       ],
       "units": [
         {
-          "id": "later_byzantine_macedonian_dynasty_general",
+          "id": "later_byzantine_comnenian_dynasty_general",
           "name": "General",
-          "excludes": ["later_byzantine_macedonian_dynasty_emperor"],
+          "excludes": ["later_byzantine_comnenian_dynasty_emperor"],
           "maxCountAllowed": 1,
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -822,9 +821,9 @@
           "optionalEquipment": []
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_emperor",
+          "id": "later_byzantine_comnenian_dynasty_emperor",
           "name": "Emperor",
-          "excludes": ["later_byzantine_macedonian_dynasty_general"],
+          "excludes": ["later_byzantine_comnenian_dynasty_general"],
           "maxCountAllowed": 1,
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -838,7 +837,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_commander",
+          "id": "later_byzantine_comnenian_dynasty_commander",
           "name": "Commander",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -852,9 +851,9 @@
           "optionalEquipment": []
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_guard_cavalry",
+          "id": "later_byzantine_comnenian_dynasty_guard_cavalry",
           "name": "Guard Cavalry",
-          "excludes": ["later_byzantine_macedonian_dynasty_dismounted_bucellarii"],
+          "requires": { "unitId": "unit_b", "count": 1, "name": "Unit B" }, 
           "description": "Guard Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1).",
           "category": "Cavalry",
           "type": "other",
@@ -890,7 +889,7 @@
               
             },
         {
-          "id": "later_byzantine_macedonian_dynasty_regular_cavalry",
+          "id": "later_byzantine_comnenian_dynasty_regular_cavalry",
           "name": "Regular Cavalry",
           "description": "Regular Cavalry have light armour, spear and shield. They may have heavy armour (+1). ",
           "category": "Cavalry",
@@ -940,7 +939,7 @@
           ]
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_irregular_cavalry",
+          "id": "later_byzantine_comnenian_dynasty_irregular_cavalry",
           "name": "Irregular Cavalry",
           "description": "Irregular Cavalry have spear and shield. May have light armour(+1).",
           "category": "Cavalry",
@@ -985,7 +984,7 @@
           ]
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_turkopoloi",
+          "id": "later_byzantine_comnenian_dynasty_turkopoloi",
           "name": "Turkopoloi",
           "description": "Turkopoloi have bow and shield. Superior Shooters. Nomad Cavalry. They may have javelins (+1) and spear (+1).",
           "category": "Cavalry",
@@ -1031,7 +1030,7 @@
           ]
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_guard",
+          "id": "later_byzantine_comnenian_dynasty_guard",
           "name": "Guard",
           "description": "Guard have light armour and shield. Open Order. May have either javelins(+2), sling (+2) or throwing spear (+2)/ May be fielded as skirmishers at a cost of eight points per base.",
           "category": "Infantry",
@@ -1108,7 +1107,7 @@
           ]
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_regular_spearmen",
+          "id": "later_byzantine_comnenian_dynasty_regular_spearmen",
           "name": "Regular Spearmen",
           "description": "Regular Spearmen have spear and shield. Shieldwall. They may instead exchange spear for throwing spear and form Open Order without the Shieldwall rule at a cost of twelve points per base. They may have light armour (+2) and darts (+2).",
           "category": "Infantry",
@@ -1166,7 +1165,7 @@
           ]
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_irregular_spearmen",
+          "id": "later_byzantine_comnenian_dynasty_irregular_spearmen",
           "name": "Irregular Spearmen",
           "description": "Irregular Spearmen have spear and shield. Inferior Fighters. Levies.",
           "category": "Infantry",
@@ -1187,7 +1186,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_regular_skirmishers",
+          "id": "later_byzantine_comnenian_dynasty_regular_skirmishers",
           "name": "Regular Skirmishers",
           "description": "Regular Skirmishers have sling or javelins and shield. Skirmishers. May replace sling or javelins with bow (free).",
           "category": "Infantry",
@@ -1250,7 +1249,7 @@
           ]
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_irregular_skirmishers",
+          "id": "later_byzantine_comnenian_dynasty_irregular_skirmishers",
           "name": "Irregular Skirmishers",
           "description": "Irregular Skirmishers have sling or javelins and shield. Inferior Fighters. Skirmishers. May replace sling or javelins with bow (free).",
           "category": "Infantry",
@@ -1313,7 +1312,7 @@
           ]
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_varangian_guard",
+          "id": "later_byzantine_comnenian_dynasty_varangian_guard",
           "name": "Varangian Guard",
           "description": "Varangian Guard have light armour, spear and shield. Superior Fighters. Shieldwall. Riding Horses. May be Stubborn (+2). May have heavy armour (+2), javelins (+2) and may exchange spear for two-handed axe (+2).",
           "category": "SpecialUnits",
@@ -1375,7 +1374,7 @@
           ]
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_latin_mercenary_knights",
+          "id": "later_byzantine_comnenian_dynasty_latin_mercenary_knights",
           "name": "Latin Mercenary Knights",
           "description": "Latin Mercenary Knights have light armour, lance and shield. Superior Fighters. Shock Cavalry. May have heavy armour (1).",
           "category": "SpecialUnits",
@@ -1412,7 +1411,7 @@
               
             },
         {
-          "id": "later_byzantine_macedonian_dynasty_latin_mercenary_infantry",
+          "id": "later_byzantine_comnenian_dynasty_latin_mercenary_infantry",
           "name": "Latin Mercenary Infantry",
           "description": "Latin Mercenary Infantry have a spear and shield. May have light armour (+2).  Up to two units may instead exchange spear and shield for bow (free) or crossbow (+2) and then become Open order.",
           "category": "SpecialUnits",
@@ -1470,9 +1469,9 @@
           ]
         },
 {
-          "id": "later_byzantine_macedonian_dynasty_emperors_guard_cavalry",
+          "id": "later_byzantine_comnenian_dynasty_emperors_guard_cavalry",
           "name": "Emperors Guard Cavalry",
-          "requires": { "unitId": "later_byzantine_macedonian_dynasty_emperor", "count": 1, "name": "Emperor" },
+          "requires": { "unitId": "later_byzantine_comnenian_dynasty_emperor", "count": 1, "name": "Emperor" },
           "description": "Emperors Guard Cavalry have heavy armour and shield. Superior Fighters. May have half barding or barding (+1). ",
           "category": "SpecialUnits",
           "type": "other",
