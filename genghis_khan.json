@@ -615,7 +615,7 @@
           "id": "later_byzantine_macedonian_dynasty_latin_mercenary_knights",
           "name": "Latin Mercenary Knights",
           "description": "Latin Mercenary Knights have light armour, lance and shield. Superior Fighters. Shock Cavalry. May have heavy armour (1).",
-          "category": "Cavalry",
+          "category": "SpecialUnits",
           "type": "other",
           "defence": 4,
           "cohesion": 8,
