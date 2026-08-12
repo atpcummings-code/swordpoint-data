@@ -1472,52 +1472,23 @@
           "id": "later_byzantine_comnenian_dynasty_emperors_guard_cavalry",
           "name": "Emperors Guard Cavalry",
           "requires": { "unitId": "later_byzantine_comnenian_dynasty_emperor", "count": 1, "name": "Emperor" },
-          "description": "Emperors Guard Cavalry have heavy armour and shield. Superior Fighters. May have half barding or barding (+1). ",
+          "description": "Emperors Guard Cavalry have heavy armour, Spear and shield. Superior Fighters. ",
           "category": "SpecialUnits",
           "type": "other",
           "defence": 3,
           "cohesion": 8,
-          "pointsPerBase": 22,
+          "pointsPerBase": 23,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "Shield",
+            "Shield", "Spear"
             "Heavy Armour"
           ],
           "specialRules": [
             "Open Order",
             "Superior Fighters"
           ],
-          "optionalEquipment": [
-            {
-              "name": "Half Barding",
-              "disables": "Barding",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Half Barding"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-          {
-              "name": "Barding",
-              "disables": "Half Barding",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Barding"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
+          "optionalEquipment": []
         }
       ]
     }
