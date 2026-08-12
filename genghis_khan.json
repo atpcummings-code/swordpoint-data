@@ -592,7 +592,7 @@
               {
               "name": "Two-handed Axe",
               "pointsModifier": 2,
-              "equipmentAdded": ["Two-handed Axe""],
+              "equipmentAdded": ["Two-handed Axe"],
               "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
