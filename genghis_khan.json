@@ -44,10 +44,10 @@
       ],
       "units": [
         {
-          "id": "later_byzantine_macedonian_dynasty_magister",
-          "name": "Magister",
+          "id": "later_byzantine_macedonian_dynasty_general",
+          "name": "General",
           "maxCountAllowed": 1,
-          "description": "may ride a horse.",
+          "description": "Rides a horse.",
           "category": "Commanders",
           "type": "General",
           "attacks": "+3",
@@ -59,9 +59,24 @@
           "optionalEquipment": []
         },
         {
+          "id": "later_byzantine_macedonian_dynasty_emperor",
+          "name": "Emperor",
+          "maxCountAllowed": 1,
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
           "id": "later_byzantine_macedonian_dynasty_commander",
           "name": "Commander",
-          "description": "may ride a horse.",
+          "description": "Rides a horse.",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
