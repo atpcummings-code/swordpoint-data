@@ -43,6 +43,22 @@
         }
       ],
       "units": [
+                {
+          "id": "later_byzantine_macedonian_dynasty_emperor",
+          "name": "Emperor",
+          "excludes": ["later_byzantine_macedonian_dynasty_general"],
+          "maxCountAllowed": 1,
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
         {
           "id": "later_byzantine_macedonian_dynasty_general",
           "name": "General",
@@ -54,22 +70,6 @@
           "attacks": "+3",
           "cohesion": 9,
           "pointsPerBase": 0,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
-          "id": "later_byzantine_macedonian_dynasty_emperor",
-          "name": "Emperor",
-          "excludes": ["later_byzantine_macedonian_dynasty_general"],
-          "maxCountAllowed": 1,
-          "description": "Rides a horse.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+3",
-          "cohesion": 10,
-          "pointsPerBase": 50,
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
@@ -804,22 +804,7 @@
         }
       ],
       "units": [
-        {
-          "id": "later_byzantine_comnenian_dynasty_general",
-          "name": "General",
-          "excludes": ["later_byzantine_comnenian_dynasty_emperor"],
-          "maxCountAllowed": 1,
-          "description": "Rides a horse.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+3",
-          "cohesion": 9,
-          "pointsPerBase": 0,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
+        
         {
           "id": "later_byzantine_comnenian_dynasty_emperor",
           "name": "Emperor",
@@ -831,6 +816,22 @@
           "attacks": "+3",
           "cohesion": 10,
           "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_byzantine_comnenian_dynasty_general",
+          "name": "General",
+          "excludes": ["later_byzantine_comnenian_dynasty_emperor"],
+          "maxCountAllowed": 1,
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
