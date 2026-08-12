@@ -345,189 +345,19 @@
           ]
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_dismounted_cavalry",
-          "name": "Dismounted Cavalry",
-          "description": "Dismounted Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+2).",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 20,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Spear",
-            "Shield",
-            "Light Armour"
-          ],
-          "specialRules": [
-            "Close Order",
-            "Superior Fighters"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Heavy Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Heavy Armour"
-              ],
-              "equipmentRemoved": [
-                "Light Armour"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "later_byzantine_macedonian_dynasty_dismounted_light_cavalry",
-          "name": "Dismounted Light Cavalry",
-          "description": "Dismounted Light Cavalry have light armour. May have bow or javelins. (+2), spear (free) or throwing spear (+2) and shield (+2). May be fielded as skirmishers at a cost of eight points per base with bow or javelins.",
-          "category": "Cavalry",
+          "id": "later_byzantine_macedonian_dynasty_regular_spearmen",
+          "name": "Regular Spearmen",
+          "description": "Regular Spearmen have spear and shield. Shieldwall. They may instead exchange spear for throwing spear and form Open Order without the Shieldwall rule at a cost of twelve points per base. They may have light armour (+2) and darts (+2).",
+          "category": "Infantry",
           "type": "other",
           "defence": 6,
           "cohesion": 7,
-          "pointsPerBase": 14,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Light Armour"
-          ],
-          "specialRules": [
-            "Close Order"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Spear",
-              "pointsModifier": 0,
-              "equipmentAdded": [
-                "Spear"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Throwing Spear",
-              "disables": "Spear",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Throwing Spear"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Shield",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Shield"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "disables": [
-                "Bow",
-                "Javelins"
-              ],
-              "enableHidden": [
-                "Skirmishers Bow",
-                "Skirmishers Javelins"
-              ],
-              "pointsModifier": 0,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": [
-                "Skirmishers"
-              ],
-              "rulesRemoved": [
-                "Close Order"
-              ],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers Bow",
-              "hiddenUntilEnabled": "hidden",
-              "disables": "Skirmishers Javelins",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Skirmishers Bow"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers Javelins",
-              "hiddenUntilEnabled": "hidden",
-              "disables": "Skirmishers Bow",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Skirmishers Javelins"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Bow",
-              "disables": "Javelins",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Bow"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Javelins",
-              "disables": "Bow",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Javelins"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "later_byzantine_macedonian_dynasty_regular_infantry",
-          "name": "Regular Infantry",
-          "description": "Regular Infantry have spear and large shield. Shieldwall. They may have darts (+2) and up to two units may have light armour (+2).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 6,
           "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": [
             "Spear",
-            "Large Shield"
+            "Shield"
           ],
           "specialRules": [
             "Close Order",
@@ -535,6 +365,18 @@
           ],
           "optionalEquipment": [
             {
+              "name": "Open Order",
+              "pointsModifier": -4,
+              "equipmentAdded": [
+              "Throwing Spear"
+              ],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Shieldwall", "Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
               "name": "Darts",
               "pointsModifier": 2,
               "equipmentAdded": [
@@ -547,9 +389,8 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Light Armour",
+              "name": "light Armour",
               "pointsModifier": 2,
-              "maxEquipmentCount": 2,
               "equipmentAdded": [
                 "Light Armour"
               ],
@@ -562,37 +403,210 @@
           ]
         },
         {
-          "id": "later_byzantine_macedonian_dynasty_levy_infantry",
-          "name": "Levy Infantry",
-          "description": "Levy Infantry have spear and large shield. Inferior Fighters. Shieldwall. Levies.  They may have darts (+2).",
+          "id": "later_byzantine_macedonian_dynasty_irregular_spearmen",
+          "name": "Irregular Spearmen",
+          "description": "Irregular Spearmen have spear and shield. Inferior Fighters. Levies.",
           "category": "Infantry",
           "type": "other",
-          "defence": 5,
-          "cohesion": 5,
-          "pointsPerBase": 10,
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 8,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": [
             "Spear",
-            "Large Shield"
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Inferior Fighters", "Levies"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_regular_skirmishers",
+          "name": "Regular Skirmishers",
+          "description": "Regular Skirmishers have sling or javelins and shield. Skirmishers. May replace sling or javelins with bow (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+{
+              "name": "Javelins",
+              "disables": ["Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": ["Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": ["Javelins", "Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_irregular_skirmishers",
+          "name": "Regular Skirmishers",
+          "description": "Irregular Skirmishers have sling or javelins and shield. Inferior Fighters. Skirmishers. May replace sling or javelins with bow (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+{
+              "name": "Javelins",
+              "disables": ["Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": ["Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": ["Javelins", "Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_varangian_guard",
+          "name": "Varangian Guard",
+          "description": "Varangian Guard have light armour, spear and shield. Superior Fighters. Shieldwall. Riding Horses. May be Stubborn (+2). May have heavy armour (+2), javelins (+2) and may exchange spear for two-handed axe (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 9,
+          "pointsPerBase": 31,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear", "Light Armour", "Shield"
           ],
           "specialRules": [
             "Close Order",
             "Shieldwall",
-            "Inferior Fighters",
-            "Levies"
+            "Superior Fighters", "Riding Horses"
           ],
           "optionalEquipment": [
             {
-              "name": "Darts",
+              "name": "Stubborn",
               "pointsModifier": 2,
-              "equipmentAdded": [
-                "Darts"
-              ],
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Two-handed Axe",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Two-handed Axe""],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
               "cohesionModifier": 0
             }
           ]
