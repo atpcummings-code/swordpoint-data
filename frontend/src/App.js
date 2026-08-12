@@ -56,6 +56,13 @@ const MOCK_DATA = {
     early_medieval_welsh: {
       armyName: "Early Medieval Welsh (800 AD - 1063 AD)",
       exclusiveGroups: [["welsh_tenants_spearmen", "welsh_tenants_archers"]],
+      unitPoolRatio: [
+        {
+          sourceIds: ["welsh_teulu_cavalry", "welsh_teulu_foot"],
+          targetIds: ["welsh_skirmishers"],
+          ratio: 1,
+        },
+      ],
       armyValidation: [
         {
           unitId: "welsh_skirmishers",
@@ -1383,6 +1390,18 @@ function App() {
         blocked.add(u.id);
       }
     });
+    // unitPoolRatio: target units are blocked once no unlock slots remain
+    // (target count >= floor(source count / ratio)).
+    const asArr = (v) => (Array.isArray(v) ? v : v ? [v] : []);
+    (army?.unitPoolRatio || []).forEach((rule) => {
+      const src = asArr(rule.sourceIds ?? rule.sources ?? rule.source);
+      const tgt = asArr(rule.targetIds ?? rule.targets ?? rule.target);
+      const ratio = rule.ratio || 1;
+      const srcCount = src.reduce((s, id) => s + (rosterCounts[id] || 0), 0);
+      const tgtCount = tgt.reduce((s, id) => s + (rosterCounts[id] || 0), 0);
+      const allowed = Math.floor(srcCount / ratio);
+      if (tgtCount >= allowed) tgt.forEach((id) => blocked.add(id));
+    });
     return blocked;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [army, rosterCounts, roster, excludesByUnitId, allUnitDefs, maxPoints]);
@@ -1650,6 +1669,34 @@ function App() {
             msg: `Validation Error: You have added ${counts[i.unitId]} units of '${i.name}', but a maximum of ${cap} is allowed.`,
           });
         }
+      }
+    });
+
+    /* --- unitPoolRatio: target units cannot exceed floor(source count / ratio) --- */
+    const poolArr = (v) => (Array.isArray(v) ? v : v ? [v] : []);
+    const nameById = {};
+    (army.units || []).forEach((u) => (nameById[u.id] = u.name));
+    (army.categories || []).forEach((cat) => {
+      if (Array.isArray(cat.alliedArmyKeys)) {
+        cat.alliedArmyKeys.forEach((ak) => {
+          if (armies[ak]) (armies[ak].units || []).forEach((u) => (nameById[u.id] = u.name));
+        });
+      }
+    });
+    (army.unitPoolRatio || []).forEach((rule) => {
+      const src = poolArr(rule.sourceIds ?? rule.sources ?? rule.source);
+      const tgt = poolArr(rule.targetIds ?? rule.targets ?? rule.target);
+      const ratio = rule.ratio || 1;
+      const srcCount = src.reduce((s, id) => s + (counts[id] || 0), 0);
+      const tgtCount = tgt.reduce((s, id) => s + (counts[id] || 0), 0);
+      const allowed = Math.floor(srcCount / ratio);
+      if (tgtCount > allowed) {
+        const tgtNames = tgt.map((id) => nameById[id] || id).join(", ");
+        const srcNames = src.map((id) => nameById[id] || id).join(", ");
+        w.push({
+          level: "critical",
+          msg: `Validation Error: ${tgtNames} (${tgtCount}) exceeds the ${allowed} slot(s) unlocked by ${srcNames} (${srcCount}) at a ${ratio}:1 ratio.`,
+        });
       }
     });
 

@@ -85,6 +85,10 @@ Rule-engine + structure additions (App.js, verified via node logic tests):
 - `effectiveCatMax(cat, maxPoints)`: the "Commanders" count category gets +50% to its base max (rounded to nearest whole) when the army points limit is 2001–3000; unchanged otherwise and for other categories. Applied to the catalog category header, the top Army-Composition constraints table, the over-max validation warning, and the category validation report — all reactive to MAX POINTS LIMIT.
 - Verified live: Welsh Commanders 1–8 → 1–12 at 2500 pts (8×1.5), back to 1–8 at 3001.
 
+## Implemented (2026-06 session, unitPoolRatio)
+- Army-level `unitPoolRatio: [{ sourceIds, targetIds, ratio }]`. Target units unlock at `floor(total source count / ratio)`. When no slots remain (targetCount ≥ allowed) every target unit's catalog +Add is disabled (`blockedAddIds`); exceeding the allowance surfaces a critical army-validation warning ("… exceeds the N slot(s) unlocked by … at a R:1 ratio"). Field names flexible (sourceIds/sources/source, targetIds/targets/target). Demo seeded on Welsh: Teulu Cavalry+Foot unlock Skirmishers 1:1.
+- Verified live: Skirmishers Add disabled at 0 source, enabled after +1 Teulu, disabled once the slot is used; duplicating to 2 Skirmishers with 1 Teulu produced the exceed warning.
+
 ## Backlog / Future
 - P1: If remote JSON gets fixed, verify live-data path renders correctly.
 - P2: Save/load rosters to localStorage.
