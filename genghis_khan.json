@@ -1,7 +1,7 @@
 {
   "armies": {
-    "heraclian_byzantine": {
-      "armyName": "Heraclian Byzantine - 612 AD to 660 AD)",
+    "later_byzantine_macedonian_dynasty": {
+      "armyName": "Later Byzantine Macedonian Dynasty - 1041 AD to 1081 AD)",
       "categories": [
         {
           "id": "Commanders",
@@ -14,32 +14,32 @@
           "id": "Cavalry",
           "name": "Cavalry",
           "constraintType": "percentage",
-          "min": 0,
-          "max": 75
+          "min": 25,
+          "max": 100
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 0,
-          "max": 50
+          "min": 10,
+          "max": 100
         },
         {
-          "id": "Skirmishers",
-          "name": "Skirmishers",
+          "id": "SpecialUnits",
+          "name": "Special Units",
           "constraintType": "percentage",
           "min": 0,
-          "max": 10
+          "max": 25
         },
         {
           "id": "Allies",
           "name": "Allies",
-          "description": "Allies may be taken from the thw Khazar List.",
+          "description": "Allies may be taken from Alans, Pecheneg or Bulgar (bulgar cavalry only) lists.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25,
+          "max": 33,
           "alliedArmyKeys": [
-            "early_khazar"
+            "alans", "pecheneg",
           ],
           "maxAlliedArmiesAllowed": 3
         }
