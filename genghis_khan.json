@@ -798,7 +798,7 @@
           "min": 0,
           "max": 33,
           "alliedArmyKeys": [
-            "alans", "pecheneg", "cuman_and_kipchak", "first_crusade", "later_crusades"
+            "alans", "pecheneg", "cuman_or_kipchak", "first_crusade", "later_crusades"
           ],
           "maxAlliedArmiesAllowed": 5
         }
