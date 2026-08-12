@@ -44,7 +44,7 @@
       ],
       "units": [
         {
-          "id": "heraclian_byzantine_magister",
+          "id": "later_byzantine_macedonian_dynasty_magister",
           "name": "Magister",
           "maxCountAllowed": 1,
           "description": "may ride a horse.",
@@ -59,7 +59,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "heraclian_byzantine_commander",
+          "id": "later_byzantine_macedonian_dynasty_commander",
           "name": "Commander",
           "description": "may ride a horse.",
           "category": "Commanders",
@@ -73,10 +73,10 @@
           "optionalEquipment": []
         },
         {
-          "id": "heraclian_byzantine_bucellarii",
+          "id": "later_byzantine_macedonian_dynasty_bucellarii",
           "name": "Bucellarii",
           "excludes": [
-            "heraclian_byzantine_dismounted_bucellarii"
+            "later_byzantine_macedonian_dynasty_dismounted_bucellarii"
           ],
           "description": "Bucellarii have light armour, spear, bow and shield. Superior Fighters. They may have heavy armour (+1) and may have either half-barding or barding (+1). Must be led by the Magister or Basileus at all times.",
           "category": "Cavalry",
@@ -149,7 +149,7 @@
           ]
         },
         {
-          "id": "heraclian_byzantine_cavalry",
+          "id": "later_byzantine_macedonian_dynasty_cavalry",
           "name": "Cavalry",
           "description": "Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1). ",
           "category": "Cavalry",
@@ -186,7 +186,7 @@
           ]
         },
         {
-          "id": "heraclian_byzantine_light_cavalry",
+          "id": "later_byzantine_macedonian_dynasty_light_cavalry",
           "name": "Light Cavalry",
           "description": "Light Cavalry have light armour. May have heavy armour(+1). bow or javelns (+1), spear (+1) and shield (+1). Troops without Heavy Armour may be fielded as skirmishers",
           "category": "Cavalry",
@@ -281,9 +281,9 @@
           ]
         },
         {
-          "id": "heraclian_byzantine_dismounted_bucellarii",
+          "id": "later_byzantine_macedonian_dynasty_dismounted_bucellarii",
           "excludes": [
-            "heraclian_byzantine_bucellarii"
+            "later_byzantine_macedonian_dynasty_bucellarii"
           ],
           "name": "Dismounted Bucellarii",
           "description": "Dismounted Bucellarii have light armour, spear, bow and shield. Superior Fighters. Shieldwall. They may have heavy armour (+2). Must be led by the Magister or Basileus at all times.",
@@ -324,7 +324,7 @@
           ]
         },
         {
-          "id": "heraclian_byzantine_dismounted_cavalry",
+          "id": "later_byzantine_macedonian_dynasty_dismounted_cavalry",
           "name": "Dismounted Cavalry",
           "description": "Dismounted Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+2).",
           "category": "Cavalry",
@@ -361,7 +361,7 @@
           ]
         },
         {
-          "id": "heraclian_byzantine_dismounted_light_cavalry",
+          "id": "later_byzantine_macedonian_dynasty_dismounted_light_cavalry",
           "name": "Dismounted Light Cavalry",
           "description": "Dismounted Light Cavalry have light armour. May have bow or javelins. (+2), spear (free) or throwing spear (+2) and shield (+2). May be fielded as skirmishers at a cost of eight points per base with bow or javelins.",
           "category": "Cavalry",
@@ -494,7 +494,7 @@
           ]
         },
         {
-          "id": "heraclian_byzantine_regular_infantry",
+          "id": "later_byzantine_macedonian_dynasty_regular_infantry",
           "name": "Regular Infantry",
           "description": "Regular Infantry have spear and large shield. Shieldwall. They may have darts (+2) and up to two units may have light armour (+2).",
           "category": "Infantry",
@@ -541,7 +541,7 @@
           ]
         },
         {
-          "id": "heraclian_byzantine_levy_infantry",
+          "id": "later_byzantine_macedonian_dynasty_levy_infantry",
           "name": "Levy Infantry",
           "description": "Levy Infantry have spear and large shield. Inferior Fighters. Shieldwall. Levies.  They may have darts (+2).",
           "category": "Infantry",
@@ -577,7 +577,7 @@
           ]
         },
         {
-          "id": "heraclian_byzantine_isaurians",
+          "id": "later_byzantine_macedonian_dynasty_isaurians",
           "name": "Isaurians",
           "description": "Isaurians have sling or javelins and shield. Open Order. Mayhave throwing spear (+2). Maybe fielded without throwing spears as skirmishers at a cost of eight points per base.",
           "category": "Infantry",
@@ -653,7 +653,7 @@
           ]
         },
         {
-          "id": "heraclian_byzantine_skirmishers",
+          "id": "later_byzantine_macedonian_dynasty_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have sling, javelins or bow, and shield. Skirmishers",
           "category": "Skirmishers",
@@ -721,7 +721,7 @@
           ]
         },
         {
-          "id": "heraclian_byzantine_ghassanid_arab_cavalry",
+          "id": "later_byzantine_macedonian_dynasty_ghassanid_arab_cavalry",
           "name": "Ghassanid Arab Cavalry",
           "description": "Ghassanid Arab Cavalry have javelins and shield. Evade. May have throwing spear (+1) and one unit may have light armour (+1).  May be fielded as skirmishers at a  cost of 16 points per base.",
           "category": "Allies",
@@ -782,9 +782,9 @@
           ]
         },
         {
-          "id": "heraclian_byzantine_ghassanid_arab_infantry",
+          "id": "later_byzantine_macedonian_dynasty_ghassanid_arab_infantry",
           "requires": {
-            "unitId": "heraclian_byzantine_ghassanid_arab_cavalry",
+            "unitId": "later_byzantine_macedonian_dynasty_ghassanid_arab_cavalry",
             "count": 1,
             "name": "Ghassanid Arab_Cavalry"
           },
