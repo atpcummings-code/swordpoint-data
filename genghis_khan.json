@@ -46,6 +46,7 @@
         {
           "id": "later_byzantine_macedonian_dynasty_general",
           "name": "General",
+          "excludes": ["later_byzantine_macedonian_dynasty_emperor"],
           "maxCountAllowed": 1,
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -61,6 +62,7 @@
         {
           "id": "later_byzantine_macedonian_dynasty_emperor",
           "name": "Emperor",
+          "excludes": ["later_byzantine_macedonian_dynasty_general"],
           "maxCountAllowed": 1,
           "description": "Rides a horse.",
           "category": "Commanders",
