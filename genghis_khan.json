@@ -149,7 +149,7 @@
           "optionalEquipment": [
             {
               "name": "Heavy Armour",
-              "disables": "skirmishers",
+              "disables": "Skirmishers",
               "pointsModifier": 1,
               "equipmentAdded": [
                 "Heavy Armour"
@@ -164,6 +164,7 @@
             },
             {
               "name": "Skirmishers",
+                  "disables": "Heay Armour",
               "pointsModifier": 0,
               "equipmentAdded": [
               ],
