@@ -93,6 +93,10 @@ Rule-engine + structure additions (App.js, verified via node logic tests):
 - A unit's `requires` rule now also disables its catalog +Add while unmet (added to `blockedAddIds`). Fixed mode: blocked until the roster holds ≥ `count` of the required id(s). Ratio (`perUnit`) mode: blocked unless adding one more stays within `floor(have / count)`. `self` requirements never block (army-wide min only). Uses `normalizeRequires` on the raw unit def.
 - Verified live: Teulu Cavalry (requires 1× Over King) Add disabled until Over King present; Skirmishers (1 per 2 Teulu) disabled at 0–1 Teulu, enabled at 2; Tenants Spearmen (self-requires) not blocked. (Note: Teulu Cavalry also `excludes` Skirmishers, so a foot+cavalry mix disables Skirmishers via the exclusion rule — expected.)
 
+## Implemented (2026-06 session, requirement hints)
+- Disabled catalog units now show a small amber hint (with warning icon) beneath the description explaining the unmet `requires`: fixed → "Needs N× Name in the roster first (have H)"; ratio → "Needs N× Name for each <Unit> (have H)". Also set as a hover `title` tooltip on the card. Computed in a `requireHints` memo and threaded through `CatalogCategory`; disappears the instant the requirement is satisfied.
+- Verified live: Teulu Cavalry shows "Needs 1× Over King …" and clears after an Over King is added; Skirmishers shows "Needs 2× Teulu (Foot or Cavalry) …".
+
 ## Backlog / Future
 - P1: If remote JSON gets fixed, verify live-data path renders correctly.
 - P2: Save/load rosters to localStorage.

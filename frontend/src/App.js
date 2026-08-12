@@ -1422,6 +1422,30 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [army, rosterCounts, roster, excludesByUnitId, allUnitDefs, maxPoints]);
 
+  /* Human hint for units whose `requires` is currently unmet — used as a
+     tooltip on the disabled +Add button so players know what to field first. */
+  const requireHints = useMemo(() => {
+    const hints = {};
+    allUnitDefs.forEach((u) => {
+      if (!u.requires) return;
+      const msgs = [];
+      normalizeRequires(u.requires, u.id).forEach((r) => {
+        if (r.self) return;
+        const have = r.unitIds.reduce((s, id) => s + (rosterCounts[id] || 0), 0);
+        if (r.perUnit) {
+          const permitted = Math.floor(have / r.count);
+          if ((rosterCounts[u.id] || 0) + 1 > permitted) {
+            msgs.push(`Needs ${r.count}× ${r.name} for each ${u.name} (have ${have})`);
+          }
+        } else if (have < r.count) {
+          msgs.push(`Needs ${r.count}× ${r.name} in the roster first (have ${have})`);
+        }
+      });
+      if (msgs.length) hints[u.id] = msgs.join("; ");
+    });
+    return hints;
+  }, [allUnitDefs, rosterCounts]);
+
   /* Warnings when two mutually-exclusive units are both in the roster:
      unitId -> [names of conflicting units present in the roster]. */
   const excludeConflicts = useMemo(() => {
@@ -2186,6 +2210,7 @@ function App() {
                 blockedAddIds={blockedAddIds}
                 maxPoints={maxPoints}
                 rosterCounts={rosterCounts}
+                requireHints={requireHints}
                 catFull={catFullIds.has(cat.id)}
               />
             ))}
@@ -2326,7 +2351,7 @@ function ValidationPanel({ warnings, isValid, empty }) {
   );
 }
 
-function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies, disabledAllies, onToggleAlly, onAdd, blockedAddIds, maxPoints, rosterCounts, catFull }) {
+function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies, disabledAllies, onToggleAlly, onAdd, blockedAddIds, maxPoints, rosterCounts, requireHints, catFull }) {
   const homeUnits = (army?.units || []).filter((u) => u.category === cat.id);
   const isAllies = Array.isArray(cat.alliedArmyKeys);
 
@@ -2357,7 +2382,7 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
       <div className="p-3 space-y-2">
         {/* Home army units */}
         {homeUnits.map((u) => (
-          <CatalogUnit key={u.id} unit={u} onAddUnit={onAdd} armyKey={homeKey} blocked={blockedAddIds?.has(u.id) || catFull} rosterCounts={rosterCounts} maxPoints={maxPoints} />
+          <CatalogUnit key={u.id} unit={u} onAddUnit={onAdd} armyKey={homeKey} blocked={blockedAddIds?.has(u.id) || catFull} rosterCounts={rosterCounts} maxPoints={maxPoints} requireHint={requireHints?.[u.id]} />
         ))}
 
         {/* Allied selection */}
@@ -2414,7 +2439,7 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
                   {(armies[ak].units || [])
                     .filter((u) => u.type !== "General")
                     .map((u) => (
-                      <CatalogUnit key={ak + u.id} unit={u} onAddUnit={onAdd} armyKey={ak} categoryOverride={cat.id} blocked={blockedAddIds?.has(u.id) || catFull || isRestricted(u.id)} rosterCounts={rosterCounts} maxPoints={maxPoints} />
+                      <CatalogUnit key={ak + u.id} unit={u} onAddUnit={onAdd} armyKey={ak} categoryOverride={cat.id} blocked={blockedAddIds?.has(u.id) || catFull || isRestricted(u.id)} rosterCounts={rosterCounts} maxPoints={maxPoints} requireHint={requireHints?.[u.id]} />
                     ))}
                 </div>
                 );
@@ -2430,7 +2455,7 @@ function CatalogCategory({ cat, army, homeKey, armies, checkedAllies, maxAllies,
   );
 }
 
-function CatalogUnit({ unit, onAddUnit, armyKey, categoryOverride, blocked, rosterCounts, maxPoints }) {
+function CatalogUnit({ unit, onAddUnit, armyKey, categoryOverride, blocked, rosterCounts, maxPoints, requireHint }) {
   // Units with sub-profiles show the summed sub-profile pts/base when the
   // sub-profiles carry their own points; otherwise the top-level pts/base.
   const subs = Array.isArray(unit.subProfiles) ? unit.subProfiles.map(readSubProfile) : [];
@@ -2447,7 +2472,7 @@ function CatalogUnit({ unit, onAddUnit, armyKey, categoryOverride, blocked, rost
     limitBadge = `(Min: ${unit.minCountAllowed}+)`;
   }
   return (
-    <div className={`rounded-lg border border-slate-800 bg-slate-950/50 px-3 py-2.5 flex items-start justify-between gap-3 transition-all duration-150 ${blocked ? "opacity-50" : "hover:border-emerald-500/70 hover:shadow-lg hover:shadow-emerald-500/10"}`}>
+    <div title={requireHint || undefined} className={`rounded-lg border border-slate-800 bg-slate-950/50 px-3 py-2.5 flex items-start justify-between gap-3 transition-all duration-150 ${blocked ? "opacity-50" : "hover:border-emerald-500/70 hover:shadow-lg hover:shadow-emerald-500/10"}`}>
       <div className="min-w-0">
         <div className="flex items-center gap-2">
           {unit.type === "General" && <Crown size={14} className="text-amber-400 shrink-0" />}
@@ -2459,6 +2484,16 @@ function CatalogUnit({ unit, onAddUnit, armyKey, categoryOverride, blocked, rost
           )}
         </div>
         <p className="font-body text-xs text-slate-300 mt-0.5 line-clamp-2">{unit.description}</p>
+        {requireHint && (
+          <div
+            data-testid={`unit-require-hint-${unit.id}`}
+            title={requireHint}
+            className="mt-1 inline-flex items-center gap-1 font-cond text-[11px] text-amber-300"
+          >
+            <AlertTriangle size={12} className="shrink-0" />
+            <span>{requireHint}</span>
+          </div>
+        )}
         <div className="flex flex-wrap gap-2 mt-1.5 font-cond text-[11px] text-slate-400">
           <span className="text-emerald-400 font-semibold">{displayPtsBase} pts/base</span>
           <span>· {unit.minBases}–{unit.maxBases} bases</span>
