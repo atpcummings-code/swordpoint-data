@@ -759,6 +759,766 @@
           ]
         }
       ]
+    },
+     "later_byzantine_comnenian_dynasty": {
+      "armyName": "Later Byzantine Comnenian Dynasty - 1081AD to 1185 AD)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 75
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "SpecialUnits",
+          "name": "Special Units",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "Allies may be taken from Alans, Pecheneg, Cuman, First Crusade or Later Crusades lists.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33,
+          "categories": [ { "id": "Allies", "alliedArmyKeys": [ {"key": "later_bulgar", "onlyUnits": ["Later_bulgar_bulgar_nobles", "Later_bulgar_elite_bulgar_horse_archers", "Later_bulgar_elite_bulgar_horse_archers"]}, { "key": "pecheneg"},{ "key": "alans"} ] } ],
+          "maxAlliedArmiesAllowed": 3
+        }
+      ],
+      "units": [
+        {
+          "id": "later_byzantine_macedonian_dynasty_general",
+          "name": "General",
+          "excludes": ["later_byzantine_macedonian_dynasty_emperor"],
+          "maxCountAllowed": 1,
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_emperor",
+          "name": "Emperor",
+          "excludes": ["later_byzantine_macedonian_dynasty_general"],
+          "maxCountAllowed": 1,
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_commander",
+          "name": "Commander",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_guard_cavalry",
+          "name": "Guard Cavalry",
+          "excludes": ["later_byzantine_macedonian_dynasty_dismounted_bucellarii"],
+          "description": "Guard Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": [
+                "Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }],
+              
+            },
+        {
+          "id": "later_byzantine_macedonian_dynasty_regular_cavalry",
+          "name": "Regular Cavalry",
+          "description": "Regular Cavalry have light armour, spear and shield. They may have heavy armour (+1). ",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "disables": "Skirmishers",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": [
+                "Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+                  "disables": "Heay Armour",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_irregular_cavalry",
+          "name": "Irregular Cavalry",
+          "description": "Irregular Cavalry have spear and shield. May have light armour(+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear", "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Light Armour"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_turkopoloi",
+          "name": "Turkopoloi",
+          "description": "Turkopoloi have bow and shield. Superior Shooters. Nomad Cavalry. They may have javelins (+1) and spear (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow", "Shield"
+          ],
+          "specialRules": [
+            "Open Order", "Superior Shooters", "Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_guard",
+          "name": "Guard",
+          "description": "Guard have light armour and shield. Open Order. May have either javelins(+2), sling (+2) or throwing spear (+2)/ May be fielded as skirmishers at a cost of eight points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "maxCountAllowed": 1,
+          "baseEquipment": [
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "disables": ["Sling", "Throwing Spear"],
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": ["Javelins", "Throwing Spear"],
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear",
+              "disables": ["Javelins", "Sling"],
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Throwing Spear"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -8,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_regular_spearmen",
+          "name": "Regular Spearmen",
+          "description": "Regular Spearmen have spear and shield. Shieldwall. They may instead exchange spear for throwing spear and form Open Order without the Shieldwall rule at a cost of twelve points per base. They may have light armour (+2) and darts (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Shieldwall"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Open Order",
+              "pointsModifier": -4,
+              "equipmentAdded": [
+              "Throwing Spear"
+              ],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Shieldwall", "Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Darts",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Darts"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Light Armour"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_irregular_spearmen",
+          "name": "Irregular Spearmen",
+          "description": "Irregular Spearmen have spear and shield. Inferior Fighters. Levies.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Inferior Fighters", "Levies"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_regular_skirmishers",
+          "name": "Regular Skirmishers",
+          "description": "Regular Skirmishers have sling or javelins and shield. Skirmishers. May replace sling or javelins with bow (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+{
+              "name": "Javelins",
+              "disables": ["Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": ["Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": ["Javelins", "Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_irregular_skirmishers",
+          "name": "Irregular Skirmishers",
+          "description": "Irregular Skirmishers have sling or javelins and shield. Inferior Fighters. Skirmishers. May replace sling or javelins with bow (free).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+{
+              "name": "Javelins",
+              "disables": ["Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": ["Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": ["Javelins", "Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_varangian_guard",
+          "name": "Varangian Guard",
+          "description": "Varangian Guard have light armour, spear and shield. Superior Fighters. Shieldwall. Riding Horses. May be Stubborn (+2). May have heavy armour (+2), javelins (+2) and may exchange spear for two-handed axe (+2).",
+          "category": "SpecialUnits",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 9,
+          "pointsPerBase": 31,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear", "Light Armour", "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Shieldwall",
+            "Superior Fighters", "Riding Horses"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Two-handed Axe",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Two-handed Axe"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_byzantine_macedonian_dynasty_latin_mercenary_knights",
+          "name": "Latin Mercenary Knights",
+          "description": "Latin Mercenary Knights have light armour, lance and shield. Superior Fighters. Shock Cavalry. May have heavy armour (1).",
+          "category": "SpecialUnits",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 27,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Lance",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters", "Shock Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": [
+                "Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }]
+              
+            },
+        {
+          "id": "later_byzantine_macedonian_dynasty_latin_mercenary_infantry",
+          "name": "Latin Mercenary Infantry",
+          "description": "Latin Mercenary Infantry have a spear and shield. May have light armour (+2).  Up to two units may instead exchange spear and shield for bow (free) or crossbow (+2) and then become Open order.",
+          "category": "SpecialUnits",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear", "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Light Armour"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Crossbow",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Spear", "Shield"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Crossbow",
+              "disables": "Bow",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": ["Spear", "Shield"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "later_byzantine_macedonian_dynasty_emperors_guard_cavalry",
+          "name": "Emperors Guard Cavalry",
+          "requires": { "unitId": "later_byzantine_macedonian_dynasty_emperor", "count": 1, "name": "Emperor" },
+          "description": "Emperors Guard Cavalry have heavy armour and shield. Superior Fighters. May have half barding or barding (+1). ",
+          "category": "SpecialUnits",
+          "type": "other",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Shield",
+            "Heavy Armour"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Half Barding",
+              "disables": "Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Half Barding"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Barding",
+              "disables": "Half Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Barding"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+      ]
     }
   }
 }
