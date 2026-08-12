@@ -89,6 +89,10 @@ Rule-engine + structure additions (App.js, verified via node logic tests):
 - Army-level `unitPoolRatio: [{ sourceIds, targetIds, ratio }]`. Target units unlock at `floor(total source count / ratio)`. When no slots remain (targetCount ≥ allowed) every target unit's catalog +Add is disabled (`blockedAddIds`); exceeding the allowance surfaces a critical army-validation warning ("… exceeds the N slot(s) unlocked by … at a R:1 ratio"). Field names flexible (sourceIds/sources/source, targetIds/targets/target). Demo seeded on Welsh: Teulu Cavalry+Foot unlock Skirmishers 1:1.
 - Verified live: Skirmishers Add disabled at 0 source, enabled after +1 Teulu, disabled once the slot is used; duplicating to 2 Skirmishers with 1 Teulu produced the exceed warning.
 
+## Implemented (2026-06 session, requires gates catalog Add)
+- A unit's `requires` rule now also disables its catalog +Add while unmet (added to `blockedAddIds`). Fixed mode: blocked until the roster holds ≥ `count` of the required id(s). Ratio (`perUnit`) mode: blocked unless adding one more stays within `floor(have / count)`. `self` requirements never block (army-wide min only). Uses `normalizeRequires` on the raw unit def.
+- Verified live: Teulu Cavalry (requires 1× Over King) Add disabled until Over King present; Skirmishers (1 per 2 Teulu) disabled at 0–1 Teulu, enabled at 2; Tenants Spearmen (self-requires) not blocked. (Note: Teulu Cavalry also `excludes` Skirmishers, so a foot+cavalry mix disables Skirmishers via the exclusion rule — expected.)
+
 ## Backlog / Future
 - P1: If remote JSON gets fixed, verify live-data path renders correctly.
 - P2: Save/load rosters to localStorage.

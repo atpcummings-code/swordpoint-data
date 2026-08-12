@@ -1390,6 +1390,22 @@ function App() {
         blocked.add(u.id);
       }
     });
+    // requires: block +Add while a unit's prerequisite is unmet in the roster.
+    // fixed -> need >= count of the required ids; ratio (perUnit) -> adding one
+    // more must stay within floor(have / count). "self" rules never block.
+    allUnitDefs.forEach((u) => {
+      if (!u.requires) return;
+      normalizeRequires(u.requires, u.id).forEach((r) => {
+        if (r.self) return;
+        const have = r.unitIds.reduce((s, id) => s + (rosterCounts[id] || 0), 0);
+        if (r.perUnit) {
+          const permitted = Math.floor(have / r.count);
+          if ((rosterCounts[u.id] || 0) + 1 > permitted) blocked.add(u.id);
+        } else if (have < r.count) {
+          blocked.add(u.id);
+        }
+      });
+    });
     // unitPoolRatio: target units are blocked once no unlock slots remain
     // (target count >= floor(source count / ratio)).
     const asArr = (v) => (Array.isArray(v) ? v : v ? [v] : []);
