@@ -38,9 +38,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 33,
-          "alliedArmyKeys": [
-            "alans", "pecheneg",
-          ],
+          "categories": [ { "id": "Allies", "alliedArmyKeys": [ {"key": "later_bulgar", "onlyUnits": ["Later_bulgar_bulgar_nobles", "Later_bulgar_elite_bulgar_horse_archers", "Later_bulgar_elite_bulgar_horse_archers"]}, { "key": "pecheneg"},{ "key": "alans"} ] } ] 
           "maxAlliedArmiesAllowed": 3
         }
       ],
