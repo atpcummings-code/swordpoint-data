@@ -709,6 +709,7 @@
 {
           "id": "later_byzantine_macedonian_dynasty_emperors_guard_cavalry",
           "name": "Emperors Guard Cavalry",
+          "requires": { "unitId": "later_byzantine_macedonian_dynasty_emperor", "count": 1, "name": "Emperor" },
           "description": "Emperors Guard Cavalry have heavy armour and shield. Superior Fighters. May have half barding or barding (+1). ",
           "category": "SpecialUnits",
           "type": "other",
