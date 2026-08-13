@@ -31,36 +31,21 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 33,
-          "categories": [ { "id": "Allies", "alliedArmyKeys": [ {"key": "later_bulgar", "onlyUnits": ["Later_bulgar_bulgar_nobles", "Later_bulgar_elite_bulgar_horse_archers", "Later_bulgar_elite_bulgar_horse_archers"]}, { "key": "pecheneg"},{ "key": "alans"} ] } ],
-          "maxAlliedArmiesAllowed": 3
+          "alliedArmyKeys": [
+            "italo_norman"
+          ],
+          "maxAlliedArmiesAllowed": 2
         }
       ],
       "units": [
                 {
-          "id": "early_italian_city_states_emperor",
-          "name": "Emperor",
-          "excludes": ["early_italian_city_states_general"],
-          "maxCountAllowed": 1,
-          "description": "Rides a horse.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+3",
-          "cohesion": 10,
-          "pointsPerBase": 50,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
           "id": "early_italian_city_states_general",
           "name": "General",
-          "excludes": ["early_italian_city_states_emperor"],
           "maxCountAllowed": 1,
           "description": "Rides a horse.",
           "category": "Commanders",
           "type": "General",
-          "attacks": "+3",
+          "attacks": "+2",
           "cohesion": 9,
           "pointsPerBase": 0,
           "minBases": 0,
@@ -69,8 +54,8 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_italian_city_states_commander",
-          "name": "Commander",
+          "id": "early_italian_city_states_captain",
+          "name": "Captain",
           "description": "Rides a horse.",
           "category": "Commanders",
           "type": "other",
@@ -83,34 +68,69 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_italian_city_states_guard_cavalry",
-          "name": "Guard Cavalry",
-          "description": "Guard Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1).",
+          "id": "early_italian_city_states_italian_knights",
+          "name": "Italian Knights",
+          "description": "Italian Knights heavy armour, lance and shield. Superior Fighters. Shock Cavalry. Impetuous. May have cloth brding (+1).",
           "category": "Cavalry",
           "type": "other",
-          "defence": 4,
+          "defence": 3,
           "cohesion": 7,
-          "pointsPerBase": 20,
+          "pointsPerBase": 26,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "Spear",
+            "Lance",
             "Shield",
-            "Light Armour"
+            "Heavy Armour"
           ],
           "specialRules": [
             "Open Order",
-            "Superior Fighters"
+            "Superior Fighters", "Impetuous", Shock Cavalry"
           ],
           "optionalEquipment": [
             {
-              "name": "Heavy Armour",
+              "name": "Cloth Barding",
               "pointsModifier": 1,
               "equipmentAdded": [
-                "Heavy Armour"
+                "Cloth Barding"
               ],
               "equipmentRemoved": [
-                "Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }],
+              
+            },
+        {
+          "id": "early_italian_city_states_mercenary_knights",
+          "name": "Mercenary Knights",
+          "description": "Mercenary Knights a lance, heavy armour and shield. Superior Fighters. Shock Cavalry. Veteran. May have cloth brding (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Lance",
+            "Shield",
+            "Heavy Armour"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters", "Impetuous", Shock Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Cloth Barding"
+              ],
+              "equipmentRemoved": [
               ],
               "rulesAdded": [],
               "rulesRemoved": [],
