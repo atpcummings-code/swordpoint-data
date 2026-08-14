@@ -29765,7 +29765,7 @@
           "min": 0,
           "max": 20,
           "alliedArmyKeys": [
-            "italo_norman"
+            "nab_italo_norman"
           ],
           "maxAlliedArmiesAllowed": 2
         }
