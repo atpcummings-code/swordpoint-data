@@ -116,10 +116,7 @@
             "Shield",
             "Heavy Armour"
           ],
-          "specialRules": [
-            "Open Order",
-            "Superior Fighters", "Impetuous", "Shock Cavalry"
-          ],
+          "specialRules": ["Open Order","Superior Fighters", "Impetuous", "Shock Cavalry"],
           "optionalEquipment": [
             {
               "name": "Cloth Barding",
