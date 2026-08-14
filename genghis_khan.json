@@ -261,12 +261,12 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Light Armour",
+              "name": "Heavy Armour",
               "pointsModifier": 1,
               "equipmentAdded": [
-                "Light Armour"
+                "Heavy Armour"
               ],
-              "equipmentRemoved": [
+              "equipmentRemoved": ["Light Armour"
               ],
               "rulesAdded": [],
               "rulesRemoved": [],
