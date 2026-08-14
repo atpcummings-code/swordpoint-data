@@ -23813,6 +23813,1850 @@
         }
       ]
     },
+
+"nab_norman": {
+      "armyName": "Norman and Breton (Norman) - 911 AD to 1189 AD)",
+       "armyValidation": [ { "ids": ["nab_norman_breton_knights", "nab_norman_breton_retainers", "nab_norman_breton_retainers_infantry"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["nab_norman_norman_knights", "nab_norman_norman_retainers", "nab_norman_norman_spearmen", "nab_norman_norman_archers"] } ],
+
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 33,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        }
+      ],
+      "units": [
+                {
+          "id": "nab_norman_king_or_duke",
+          "name": "King or Duke",
+          "maxCountAllowed": 1,
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nab_norman_noble",
+          "name": "Noble",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nab_norman_norman_knights",
+          "name": "Norman Knights",
+          "description": "A Norman Knight has light armour, spear and shield. Shock Cavalry. Superior Fighters. May have heavy armour (+1) and lance (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipEment": [
+            "Spear",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": ["Open Order", "Superior Fighters", "Shock Cavalry"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Lance",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Lance"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+        {
+          "id": "nab_norman_norman_retainers",
+          "name": "Norman Retainers",
+          "description": "A Norman Retainer has javelins and shield. May exchange javelins for spear (free). May be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": ["Javelins"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+{
+          "id": "nab_norman_breton_knights",
+          "name": "Breton Knights",
+          "description": "A Breton Knight has light armour, spear and shield. Superior Fighters. Superior Shooters. Evade. May have heavy armour (+1) and javelins (+1). Models in light amour carrying javelins may be fielded as skirmishers at a cost of 25 points per base.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipEment": [
+            "Spear",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": ["Open Order", "Superior Fighters", "Superior Shooters", "Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Skirmishers",
+                "disables": ["Javelins", "Heavy Armour"],
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": ["Spear", "Shield"
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+        {
+          "id": "nab_norman_breton_retainers",
+          "name": "Breton Retainers",
+          "description": "A Breton Retainer has javelins and shield. Evade. May exchange javelins for spear (free). May be fielded as skirmishers at a cost of 17 points per base.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": ["Open Order", "Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": ["Javelins"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+        
+        
+          {
+          "id": "nab_norman_dismounted_knights",
+          "name": "Dismounted Knights",
+          "description": "Dismounted Knights have spear, light armour and shield. Superior Fighters. May exchange spear for throwing spear (+2) or two-handed weapon (+2). May have heavy armour (+2) and javelins(+2).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 12,
+
+          "baseEquipment": [
+            "Shield", "Spear",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Close Order", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Throwing Spear",
+              "disables": "Two-handed Weapon",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"
+
+              ],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Two-handed Weapon",
+              "disables": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Two-handed Weapon"
+
+              ],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }  
+          ]
+        },
+        {
+          "id": "nab_norman_norman_spearmen",
+          "name": "Norman Spearmen",
+          "description": "Norman Spearmen have spear and shield.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+          ],
+          "optionalEquipment": []
+        },
+            {
+          "id": "nab_norman_french_or_flemish_spearmen",
+          "name": "French or Flemish Spearmen",
+          "description": "French or Flemish Spearmen have spear and shield.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nab_norman_norman_archers",
+          "name": "Norman Archers",
+          "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order",
+          ],
+          "optionalEquipment": [
+          {
+              "name": "Crossbow",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [],
+               "enableHidden": ["Skirmishers Crossbow"],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers Crossbow",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "nab_norman_french_or_flemish_archers",
+          "name": "French or Flemish Archers",
+          "description": "French or Flemish Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order",
+          ],
+          "optionalEquipment": [
+          {
+              "name": "Crossbow",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [],
+               "enableHidden": ["Skirmishers Crossbow"],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers Crossbow",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+               
+        {
+          "id": "nab_norman_breton_retainers_infantry",
+          "name": "Breton Retainers (Infantry)",
+          "description": "Breton Retainers have throwing spear and shield. Open Order.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear", "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nab_norman_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Skirmishers. May exchange javelins and shield for sling or bow (-1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins", "Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+                 "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+      ]
+    },
+
+"nab_breton": {
+      "armyName": "Norman and Breton (Breton) - 911 AD to 1189 AD)",
+       "armyValidation": [ { "ids": ["nab_breton_norman_knights", "nab_breton_norman_retainers", "nab_breton_norman_spearmen", "nab_breton_norman_archers"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["nab_breton_breton_knights", "nab_breton_breton_retainers", "nab_breton_breton_retainers_infantry"] } ],
+
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        }
+      ],
+      "units": [
+                {
+          "id": "nab_breton_king_or_duke",
+          "name": "King or Duke",
+          "maxCountAllowed": 1,
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nab_breton_noble",
+          "name": "Noble",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nab_breton_norman_knights",
+          "name": "Norman Knights",
+          "description": "A Norman Knight has light armour, spear and shield. Shock Cavalry. Superior Fighters. May have heavy armour (+1) and lance (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipEment": [
+            "Spear",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": ["Open Order", "Superior Fighters", "Shock Cavalry"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Lance",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Lance"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+        {
+          "id": "nab_breton_norman_retainers",
+          "name": "Norman Retainers",
+          "description": "A Norman Retainer has javelins and shield. May exchange javelins for spear (free). May be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": ["Javelins"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+{
+          "id": "nab_breton_breton_knights",
+          "name": "Breton Knights",
+          "description": "A Breton Knight has light armour, spear and shield. Superior Fighters. Superior Shooters. Evade. May have heavy armour (+1) and javelins (+1). Models in light amour carrying javelins may be fielded as skirmishers at a cost of 25 points per base.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipEment": [
+            "Spear",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": ["Open Order", "Superior Fighters", "Superior Shooters", "Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Skirmishers",
+                "disables": ["Javelins", "Heavy Armour"],
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": ["Spear", "Shield"
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+        {
+          "id": "nab_breton_breton_retainers",
+          "name": "Breton Retainers",
+          "description": "A Breton Retainer has javelins and shield. Evade. May exchange javelins for spear (free). May be fielded as skirmishers at a cost of 17 points per base.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": ["Open Order", "Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": ["Javelins"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+        
+        
+          {
+          "id": "nab_breton_dismounted_knights",
+          "name": "Dismounted Knights",
+          "description": "Dismounted Knights have spear, light armour and shield. Superior Fighters. May exchange spear for throwing spear (+2) or two-handed weapon (+2). May have heavy armour (+2) and javelins(+2).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 12,
+
+          "baseEquipment": [
+            "Shield", "Spear",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Close Order", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Throwing Spear",
+              "disables": "Two-handed Weapon",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"
+
+              ],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Two-handed Weapon",
+              "disables": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Two-handed Weapon"
+
+              ],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }  
+          ]
+        },
+        {
+          "id": "nab_breton_norman_spearmen",
+          "name": "Norman Spearmen",
+          "description": "Norman Spearmen have spear and shield.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+          ],
+          "optionalEquipment": []
+        },
+            {
+          "id": "nab_breton_french_or_flemish_spearmen",
+          "name": "French or Flemish Spearmen",
+          "description": "French or Flemish Spearmen have spear and shield.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nab_breton_norman_archers",
+          "name": "Norman Archers",
+          "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order",
+          ],
+          "optionalEquipment": [
+          {
+              "name": "Crossbow",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [],
+               "enableHidden": ["Skirmishers Crossbow"],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers Crossbow",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "nab_breton_french_or_flemish_archers",
+          "name": "French or Flemish Archers",
+          "description": "French or Flemish Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order",
+          ],
+          "optionalEquipment": [
+          {
+              "name": "Crossbow",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [],
+               "enableHidden": ["Skirmishers Crossbow"],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers Crossbow",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+               
+        {
+          "id": "nab_breton_breton_retainers_infantry",
+          "name": "Breton Retainers (Infantry)",
+          "description": "Breton Retainers have throwing spear and shield. Open Order.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear", "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nab_breton_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Skirmishers. May exchange javelins and shield for sling or bow (-1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins", "Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+                 "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+      ]
+    },
+
+    "nab_italo_norman": {
+      "armyName": "Norman and Breton (Italo-Norman) - 911 AD to 1189 AD)",
+       
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 33,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+          {
+          "id": "Sicilians",
+          "name": "Sicilians",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        }
+      ],
+      "units": [
+                {
+          "id": "nab_italo_norman_king_or_duke",
+          "name": "King or Duke",
+          "maxCountAllowed": 1,
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nab_italo_norman_noble",
+          "name": "Noble",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nab_italo_norman_norman_knights",
+          "name": "Norman Knights",
+          "description": "A Norman Knight has light armour, spear and shield. Shock Cavalry. Superior Fighters. May have heavy armour (+1) and lance (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipEment": [
+            "Spear",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": ["Open Order", "Superior Fighters", "Shock Cavalry"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Lance",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Lance"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+        {
+          "id": "nab_italo_norman_norman_retainers",
+          "name": "Norman Retainers",
+          "description": "A Norman Retainer has javelins and shield. May exchange javelins for spear (free). May be fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": ["Javelins"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+{
+          "id": "nab_italo_norman_breton_knights",
+          "name": "Breton Knights",
+          "description": "A Breton Knight has light armour, spear and shield. Superior Fighters. Superior Shooters. Evade. May have heavy armour (+1) and javelins (+1). Models in light amour carrying javelins may be fielded as skirmishers at a cost of 25 points per base.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipEment": [
+            "Spear",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": ["Open Order", "Superior Fighters", "Superior Shooters", "Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Skirmishers",
+                "disables": ["Javelins", "Heavy Armour"],
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": ["Spear", "Shield"
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+        {
+          "id": "nab_italo_norman_breton_retainers",
+          "name": "Breton Retainers",
+          "description": "A Breton Retainer has javelins and shield. Evade. May exchange javelins for spear (free). May be fielded as skirmishers at a cost of 17 points per base.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": ["Open Order", "Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": ["Javelins"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+        
+        
+          {
+          "id": "nab_italo_norman_dismounted_knights",
+          "name": "Dismounted Knights",
+          "description": "Dismounted Knights have spear, light armour and shield. Superior Fighters. May exchange spear for throwing spear (+2) or two-handed weapon (+2). May have heavy armour (+2) and javelins(+2).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 12,
+
+          "baseEquipment": [
+            "Shield", "Spear",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Close Order", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Throwing Spear",
+              "disables": "Two-handed Weapon",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"
+
+              ],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Two-handed Weapon",
+              "disables": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Two-handed Weapon"
+
+              ],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }  
+          ]
+        },
+        {
+          "id": "nab_italo_norman_norman_spearmen",
+          "name": "Norman Spearmen",
+          "description": "Norman Spearmen have spear and shield.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+          ],
+          "optionalEquipment": []
+        },
+            {
+          "id": "nab_italo_norman_french_or_flemish_spearmen",
+          "name": "French or Flemish Spearmen",
+          "description": "French or Flemish Spearmen have spear and shield.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nab_italo_norman_norman_archers",
+          "name": "Norman Archers",
+          "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order",
+          ],
+          "optionalEquipment": [
+          {
+              "name": "Crossbow",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [],
+               "enableHidden": ["Skirmishers Crossbow"],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers Crossbow",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "nab_italo_norman_french_or_flemish_archers",
+          "name": "French or Flemish Archers",
+          "description": "French or Flemish Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order",
+          ],
+          "optionalEquipment": [
+          {
+              "name": "Crossbow",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [],
+               "enableHidden": ["Skirmishers Crossbow"],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers Crossbow",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+               
+        {
+          "id": "nab_italo_norman_breton_retainers_infantry",
+          "name": "Breton Retainers (Infantry)",
+          "description": "Breton Retainers have throwing spear and shield. Open Order.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear", "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "nab_italo_norman_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Skirmishers. May exchange javelins and shield for sling or bow (-1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins", "Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+                 "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "nab_italo_norman_saracen_infantry",
+          "name": "Saracen Infantry",
+          "description": "Saracen Infantry have a shield. Open Order. They may have throwing spear (+2) and light amour (+2)",
+          "category": "Sicilians",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+           "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+                 "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+               "name": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": [],
+                 "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "nab_italo_norman_saracen_archers",
+          "name": "Saracen Archers",
+          "description": "Saracen Archers have a bow . Open Order. They may be fielded as skirmishers at a cost of six points per base.",
+          "category": "Sicilians",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+          "Bow"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+             
+          ]
+        },
+        {
+          "id": "nab_italo_norman_saracen_cavalry",
+          "name": "Saracen Cavalry",
+          "description": "Saracen Cavalry have a spear, javelins and shield. Open Order. Evade. They may have light armour (+1). They may be fielded as skirmishers at a cost of 18 points per base.",
+          "category": "Sicilians",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Spear", "Shield", "Javelins"
+          ],
+          "specialRules": [
+            "Open Order", "Evade"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+               "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+                 "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "nab_italo_norman_saracen_lancers",
+          "name": "Saracen Lancers",
+          "description": "Saracen Lancers have a light armour, spear and shield. Superior Fighters. They may have heavy armour (+1). They may have light armour (+1). They may be fielded as skirmishers at a cost of 18 points per base.",
+          "category": "Sicilians",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Spear", "Shield", "Light Armour"
+          ],
+          "specialRules": [
+            "Open Order", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+             {
+               "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+                 "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "nab_italo_norman_saracen_greek_infantry",
+          "name": "Saracen Greek Infantry",
+          "description": "Saracen Greek Infantry have throwing spear, javelins and shield. Open Order.",
+          "category": "Sicilians",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+           "Shield", "Javelins", "Throwing Spear"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        }
+      ]
+    },
+    
     "seljuk_turks": {
       "armyName": "Seljuk Turks - 950 to 1230 AD",
       "armyValidation": [
