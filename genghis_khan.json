@@ -78,15 +78,12 @@
           "pointsPerBase": 26,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": [
+          "baseEquipEment": [
             "Lance",
             "Shield",
             "Heavy Armour"
           ],
-          "specialRules": [
-            "Open Order",
-            "Superior Fighters", "Impetuous", "Shock Cavalry"
-          ],
+          "specialRules": ["Open Order", "Superior Fighters", "Impetuous", "Shock Cavalry"],
           "optionalEquipment": [
             {
               "name": "Cloth Barding",
@@ -121,7 +118,7 @@
           ],
           "specialRules": [
             "Open Order",
-            "Superior Fighters", "Impetuous", Shock Cavalry"
+            "Superior Fighters", "Impetuous", "Shock Cavalry"
           ],
           "optionalEquipment": [
             {
