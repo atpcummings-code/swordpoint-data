@@ -561,7 +561,7 @@
 
 "nab_breton": {
       "armyName": "Norman and Breton (Breton) - 911 AD to 1189 AD)",
-       "armyValidation": [ { "ids": ["nab_breton_norman_knights", "nab_breton_norman_retainers", "nab_breton_norman_spearmen", "nab_breton_norman_archers"] "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["nab_breton_breton_knights", "nab_breton_breton_retainers", "nab_breton_breton_retainers_infantry"], } ],
+       "armyValidation": [ { "ids": ["nab_breton_norman_knights", "nab_breton_norman_retainers", "nab_breton_norman_spearmen", "nab_breton_norman_archers"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["nab_breton_breton_knights", "nab_breton_breton_retainers", "nab_breton_breton_retainers_infantry"] } ],
 
       "categories": [
         {
