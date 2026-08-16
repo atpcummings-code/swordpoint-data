@@ -429,7 +429,7 @@
           "type": "other",
           "defence": 7,
           "cohesion": 6,
-          "pointsPerBase": 9,
+          "pointsPerBase": 8,
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": [
