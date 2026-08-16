@@ -1,9 +1,7 @@
-{
+E{
   "armies": {
-    "nab_norman": {
-      "armyName": "Norman and Breton (Norman) - 911 AD to 1189 AD)",
-       "armyValidation": [ { "ids": ["nab_norman_breton_knights", "nab_norman_breton_retainers", "nab_norman_breton_retainers_infantry"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["nab_norman_norman_knights", "nab_norman_norman_retainers", "nab_norman_norman_spearmen", "nab_norman_norman_archers"] } ],
-
+    "early_christian_spanish": {
+      "armyName": "Early Christian Spanish - 711 AD to 1039 AD)",
       "categories": [
         {
           "id": "Commanders",
@@ -16,8 +14,8 @@
           "id": "Cavalry",
           "name": "Cavalry",
           "constraintType": "percentage",
-          "min": 33,
-          "max": 100
+          "min": 0,
+          "max": 50
         },
         {
           "id": "Infantry",
