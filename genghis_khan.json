@@ -245,7 +245,7 @@
             },
           {
               "name": "Stubborn",
-              "pointsModifier": -2,
+              "pointsModifier": 2,
               "equipmentAdded": [
               ],
               "equipmentRemoved": [
