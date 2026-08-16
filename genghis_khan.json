@@ -184,6 +184,7 @@
           "id": "early_christian_spanish_cabelleros_villanos",
           "name": "Cabelleros Villanos",
           "description": "Cabelleros Villanos have a spear and shield. May have light amrour (+1).",
+    "category": "Cavalry",
           "type": "other",
           "defence": 5,
           "cohesion": 7,
