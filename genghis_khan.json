@@ -54,9 +54,8 @@
           "specialRules": [],
           "optionalEquipment": []
         },
-        "units": [
-                {
-          "id": "early_christian_spanish_el_cid",
+{
+        "id": "early_christian_spanish_el_cid",
           "name": "El Cid",
           "maxCountAllowed": 1,
           "description": "May ride a horse.",
