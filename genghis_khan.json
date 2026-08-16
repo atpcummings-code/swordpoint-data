@@ -221,7 +221,7 @@
             "Javelins", "Spear",
             "Shield"
           ],
-          "specialRules": ["Close Order", "Superior Fighters", "Superior Shooters".],
+          "specialRules": ["Close Order", "Superior Fighters", "Superior Shooters"],
           "optionalEquipment": [
             {
               "name": "Light Armour",
