@@ -422,9 +422,9 @@
           ]
         },
         {
-          "id": "early_christian_spanish_basque_javelinmen_skirimishers",
-          "name": "Basque Javelinmen Skirimishers",
-          "description": "Basque Javelinmen Skirimishers have javelins. Skirmishers. Superior Shooters. May have shield (+1) and throwing spar (+1).",
+          "id": "early_christian_spanish_basque_javelinmen_skirmishers",
+          "name": "Basque Javelinmen Skirmishers",
+          "description": "Basque Javelinmen Skirmishers have javelins. Skirmishers. Superior Shooters. May have shield (+1) and throwing spar (+1).",
           "category": "Allies",
           "type": "other",
           "defence": 7,
