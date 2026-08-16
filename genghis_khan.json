@@ -394,7 +394,7 @@
         },
         {
           "id": "early_christian_spanish_militia_crossbowmen",
-          "name": "militia_crossbowmen",
+          "name": "Militia Crossbowmen",
           "description": "Militia Crossbowmen have a crossbow. Inferior Shooters. Open Order. May have light armour (+2) and shield (+2). May be fiedled as skirmishers at a cost of seven points per base. There may not be more units of crossbowmen than there are units of Prones in the army.",
           "category": "Infantry",
           "type": "other",
