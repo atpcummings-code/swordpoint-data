@@ -2,6 +2,7 @@
   "armies": {
     "early_christian_spanish": {
       "armyName": "Early Christian Spanish - 711 AD to 1039 AD)",
+       "unitCountValidation": [ { "unitId": "early_christian_spanish_militia_crossbowmen", "maxRatio": 1, "perUnitId": "uearly_christian_spanish_prones" } ],
       "categories": [
         {
           "id": "Commanders",
@@ -205,44 +206,45 @@
           ],     
             },
         {
-          "id": "early_christian_spanish_breton_retainers",
-          "name": "Breton Retainers",
-          "description": "A Breton Retainer has javelins and shield. Evade. May exchange javelins for spear (free). May be fielded as skirmishers at a cost of 17 points per base.",
-          "category": "Cavalry",
+          "id": "early_christian_spanish_guards",
+          "name": "Guards",
+          "description": "Guards have a spear, javelins and shield. Superior Fighters. Superior Shooters. May have ligHt armour (+2) and Stubboorn (+2).",
+          "category": "Infantry",
+          "maxCountAllowed": 1,
           "type": "other",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 19,
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 28,
           "minBases": 3,
-          "maxBases": 8,
+          "maxBases": 12,
           "baseEquipment": [
-            "Javelins",
+            "Javelins", "Spear",
             "Shield"
           ],
-          "specialRules": ["Open Order", "Evade"],
+          "specialRules": ["Close Order", "Superior Fighters", "Superior Shooters".],
           "optionalEquipment": [
             {
-              "name": "Spear",
-              "pointsModifier": 0,
+              "name": "Light Armour",
+              "pointsModifier": 2,
               "equipmentAdded": [
-                "Spear"
+               "Light Armour"
               ],
-              "equipmentRemoved": ["Javelins"
+              "equipmentRemoved": [
               ],
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
           {
-              "name": "Skirmishers",
+              "name": "Stubborn",
               "pointsModifier": -2,
               "equipmentAdded": [
               ],
               "equipmentRemoved": [
               ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
@@ -252,303 +254,313 @@
         
         
           {
-          "id": "early_christian_spanish_dismounted_knights",
-          "name": "Dismounted Knights",
-          "description": "Dismounted Knights have spear, light armour and shield. Superior Fighters. May exchange spear for throwing spear (+2) or two-handed weapon (+2). May have heavy armour (+2) and javelins(+2).",
-          "category": "Cavalry",
+          "id": "early_christian_spanish_prones",
+          "name": "Prones",
+          "description": "Prones spear, javelins and shield. May be declared as Open Order (-4) in which case may exchange spear for throwing spear (+2). If Close ORder may use combine dFormation by including50% Close Order Arqueros (14 points per base) an the rear rows.",
+          "category": "Infantry",
           "type": "other",
-          "defence": 5,
-          "cohesion": 8,
-          "pointsPerBase": 26,
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
 
           "baseEquipment": [
             "Shield", "Spear",
-            "Light Armour"
+            "Javelins"
           ],
           "specialRules": [
             "Close Order", "Superior Fighters"
           ],
           "optionalEquipment": [
             {
+              "name": "Open Order",
+              "enableHidden": ["Throwing Spear"],
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
               "name": "Throwing Spear",
-              "disables": "Two-handed Weapon",
+              "hiddenUntilEnabled": "hidden",
               "pointsModifier": 2,
-              "equipmentAdded": ["Throwing Spear"
-
-              ],
+              "equipmentAdded": ["Throwing Spear"],
               "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
+            }
+          ]
+        },
+        {
+          "id": "early_christian_spanish_arqueros",
+          "name": "Arqueros",
+          "description": "Arqueros have a bow. Open Order. May have shield (+1). May be fielded as skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
             {
-              "name": "Two-handed Weapon",
-              "disables": "Throwing Spear",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Two-handed Weapon"
-
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+               "Shield"
               ],
-              "equipmentRemoved": ["Spear"],
+              "equipmentRemoved": [
+              ],
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
-            },
+            }, 
             {
-              "name": "Heavy Armour",
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+            {
+          "id": "early_christian_spanish_ballesteros",
+          "name": "Ballesteros",
+          "description": "Ballesteros have light amrour and crossbow. Open Order. May have shields (+2). May be fielded as skirmishers at a cost of eight points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Light Armour",
+            "Crossbow"
+          ],
+          "specialRules": [
+            "Open Order",
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
               "pointsModifier": 2,
               "equipmentAdded": [
-                "Heavy Armour"
+               "Shield"
               ],
-              "equipmentRemoved": ["Light Armour"
+              "equipmentRemoved": [
               ],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
-             {
-              "name": "Javelins",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Javelins"
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [
               ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
               "cohesionModifier": 0
-            }  
+            }
           ]
         },
         {
-          "id": "early_christian_spanish_norman_spearmen",
-          "name": "Norman Spearmen",
-          "description": "Norman Spearmen have spear and shield.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 12,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order",
-          ],
-          "optionalEquipment": []
-        },
-            {
-          "id": "early_christian_spanish_french_or_flemish_spearmen",
-          "name": "French or Flemish Spearmen",
-          "description": "French or Flemish Spearmen have spear and shield.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 12,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order",
-          ],
-          "optionalEquipment": []
-        },
-        {
-          "id": "early_christian_spanish_norman_archers",
-          "name": "Norman Archers",
-          "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "id": "early_christian_spanish_militia_crossbowmen",
+          "name": "militia_crossbowmen",
+          "description": "Militia Crossbowmen have a crossbow. Inferior Shooters. Open Order. May have light armour (+2) and shield (+2). May be fiedled as skirmishers at a cost of seven points per base. There may not be more units of crossbowmen than there are units of Prones in the army.",
           "category": "Infantry",
           "type": "other",
           "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 9,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Bow"
-          ],
-          "specialRules": [
-            "Open Order",
-          ],
-          "optionalEquipment": [
-          {
-              "name": "Crossbow",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Crossbow"
-              ],
-              "equipmentRemoved": ["Bow"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Skirmishers",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Bow"
-              ],
-              "equipmentRemoved": [],
-               "enableHidden": ["Skirmishers Crossbow"],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers Crossbow",
-              "hiddenUntilEnabled": "hidden",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Crossbow"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-            
-          ]
-        },
-        {
-          "id": "early_christian_spanish_french_or_flemish_archers",
-          "name": "French or Flemish Archers",
-          "description": "French or Flemish Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 9,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Bow"
-          ],
-          "specialRules": [
-            "Open Order",
-          ],
-          "optionalEquipment": [
-          {
-              "name": "Crossbow",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Crossbow"
-              ],
-              "equipmentRemoved": ["Bow"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Skirmishers",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Bow"
-              ],
-              "equipmentRemoved": [],
-               "enableHidden": ["Skirmishers Crossbow"],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers Crossbow",
-              "hiddenUntilEnabled": "hidden",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Crossbow"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-            
-          ]
-        },
-               
-        {
-          "id": "early_christian_spanish_breton_retainers_infantry",
-          "name": "Breton Retainers (Infantry)",
-          "description": "Breton Retainers have throwing spear and shield. Open Order.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
+          "cohesion": 7,
           "pointsPerBase": 11,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": [
-            "Throwing Spear", "Shield"
+            "Crossbow"
           ],
           "specialRules": [
-            "Open Order"
+            "Open Order", "Inferior Shooters"
           ],
-          "optionalEquipment": []
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+               "Shield"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+               "Light Armour"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
         },
         {
           "id": "early_christian_spanish_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelins and shield. Skirmishers. May exchange javelins and shield for sling or bow (-1).",
+          "description": "Skirmishers have javelisn and shield. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
           "cohesion": 5,
-          "pointsPerBase": 6,
+          "pointsPerBase": 5,
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": [
             "Javelins", "Shield"
           ],
           "specialRules": [
-            "Skirmishers"
+            "Skirmishers","Inferior Fighers"
           ],
           "optionalEquipment": [
-            {
-              "name": "Sling",
-              "disables": "Bow",
-              "pointsModifier": -1,
-              "equipmentAdded": [
-                "Sling"
-              ],
-              "equipmentRemoved": ["Javelins", "Shield"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 1,
-              "cohesionModifier": 0
-            },
-            {
+          {
               "name": "Bow",
-              "disables": "Sling",
-              "pointsModifier": -1,
+            "disables": "Sling",
+              "pointsModifier": 1,
               "equipmentAdded": [
                 "Bow"
               ],
-              "equipmentRemoved": ["Javelins", "Shield"],
-                 "rulesAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 1,
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+            "disables": "Bow",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Throwing Spear",
+               "disables": ["Bow", "Sling"],
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Throwing Spear"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers Crossbow",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
+            
           ]
-        }
-      ]
+        },
+        {
+          "id": "early_christian_spanish_basque_javelinmen_skirimishers",
+          "name": "Basque Javelinmen Skirimishers",
+          "description": "Basque Javelinmen Skirimishers have javelins. Skirmishers. Superior Shooters. May have shield (+1) and throwing spar (+1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Skirmishers","Superior Shooters"
+          ],
+          "optionalEquipment": [
+          {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Throwing Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Throwing Spear"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },       
+        ]
     },
 
 "nab_breton": {
