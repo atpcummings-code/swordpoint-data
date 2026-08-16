@@ -2,7 +2,7 @@
   "armies": {
     "early_christian_spanish": {
       "armyName": "Early Christian Spanish - 711 AD to 1039 AD)",
-       "unitCountValidation": [ { "unitId": "early_christian_spanish_militia_crossbowmen", "maxRatio": 1, "perUnitId": "uearly_christian_spanish_prones" } ],
+       
       "categories": [
         {
           "id": "Commanders",
@@ -347,108 +347,7 @@
             }
           ]
         },
-            {
-          "id": "early_christian_spanish_ballesteros",
-          "name": "Ballesteros",
-          "description": "Ballesteros have light amrour and crossbow. Open Order. May have shields (+2). May be fielded as skirmishers at a cost of eight points per base.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 12,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Light Armour",
-            "Crossbow"
-          ],
-          "specialRules": [
-            "Open Order",
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Shield",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-               "Shield"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "pointsModifier": -4,
-              "equipmentAdded": [],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "early_christian_spanish_militia_crossbowmen",
-          "name": "Militia Crossbowmen",
-          "description": "Militia Crossbowmen have a crossbow. Inferior Shooters. Open Order. May have light armour (+2) and shield (+2). May be fiedled as skirmishers at a cost of seven points per base. There may not be more units of crossbowmen than there are units of Prones in the army.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 7,
-          "pointsPerBase": 11,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Crossbow"
-          ],
-          "specialRules": [
-            "Open Order", "Inferior Shooters"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Shield",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-               "Shield"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Light Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-               "Light Armour"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "pointsModifier": -4,
-              "equipmentAdded": [],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
-        },
+            
         {
           "id": "early_christian_spanish_skirmishers",
           "name": "Skirmishers",
