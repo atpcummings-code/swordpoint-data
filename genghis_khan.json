@@ -23,14 +23,27 @@ E{
           "constraintType": "percentage",
           "min": 0,
           "max": 50
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "description": "The army may have allies from the relevant period of teh Al-Andalus and Grenada list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+            "al_andalus_and_grenada_al_andalus",
+            "al_andalus_and_grenada_taifa_kingdom"
+          ],
+          "maxAlliedArmiesAllowed": 2
         }
       ],
       "units": [
                 {
-          "id": "nab_norman_king_or_duke",
-          "name": "King or Duke",
+          "id": "early_christian_spanish_king",
+          "name": "King",
           "maxCountAllowed": 1,
-          "description": "Rides a horse.",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
           "attacks": "+3",
@@ -41,9 +54,25 @@ E{
           "specialRules": [],
           "optionalEquipment": []
         },
+        "units": [
+                {
+          "id": "early_christian_spanish_el_cid",
+          "name": "El Cid",
+          "maxCountAllowed": 1,
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
         {
-          "id": "nab_norman_noble",
-          "name": "Noble",
+          "id": "early_christian_spanish_captain",
+          "name": "Captain",
           "description": "Rides a horse.",
           "category": "Commanders",
           "type": "other",
@@ -56,46 +85,55 @@ E{
           "optionalEquipment": []
         },
         {
-          "id": "nab_norman_norman_knights",
-          "name": "Norman Knights",
-          "description": "A Norman Knight has light armour, spear and shield. Shock Cavalry. Superior Fighters. May have heavy armour (+1) and lance (+1).",
+          "id": "early_christian_spanish_jinetes",
+          "name": "Jinetes",
+          "description": "Jinetes have javelins. Evade. May have shield (+1) and spear (+1). May be fielded as skirmishers at a cost of 16 points points per base.",
           "category": "Cavalry",
           "type": "other",
-          "defence": 4,
-          "cohesion": 8,
-          "pointsPerBase": 26,
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipEment": [
-            "Spear",
-            "Shield",
-            "Light Armour"
+            "Javelins"
           ],
-          "specialRules": ["Open Order", "Superior Fighters", "Shock Cavalry"],
+          "specialRules": ["Open Order", "Evade"],
           "optionalEquipment": [
             {
-              "name": "Heavy Armour",
+              "name": "Shield",
               "pointsModifier": 1,
               "equipmentAdded": [
-                "Heavy Armour"
+                "Shield"
               ],
-              "equipmentRemoved": ["Light Armour"
-              ],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
             {
-              "name": "Lance",
+              "name": "Spear",
               "pointsModifier": 1,
               "equipmentAdded": [
-                "Lance"
+                "Spear"
               ],
               "equipmentRemoved": [
               ],
               "rulesAdded": [],
               "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
@@ -104,7 +142,7 @@ E{
               
             },
         {
-          "id": "nab_norman_norman_retainers",
+          "id": "early_christian_spanish_norman_retainers",
           "name": "Norman Retainers",
           "description": "A Norman Retainer has javelins and shield. May exchange javelins for spear (free). May be fielded as skirmishers.",
           "category": "Cavalry",
@@ -149,7 +187,7 @@ E{
               
             },
 {
-          "id": "nab_norman_breton_knights",
+          "id": "early_christian_spanish_breton_knights",
           "name": "Breton Knights",
           "description": "A Breton Knight has light armour, spear and shield. Superior Fighters. Superior Shooters. Evade. May have heavy armour (+1) and javelins (+1). Models in light amour carrying javelins may be fielded as skirmishers at a cost of 25 points per base.",
           "category": "Cavalry",
@@ -211,7 +249,7 @@ E{
               
             },
         {
-          "id": "nab_norman_breton_retainers",
+          "id": "early_christian_spanish_breton_retainers",
           "name": "Breton Retainers",
           "description": "A Breton Retainer has javelins and shield. Evade. May exchange javelins for spear (free). May be fielded as skirmishers at a cost of 17 points per base.",
           "category": "Cavalry",
@@ -258,7 +296,7 @@ E{
         
         
           {
-          "id": "nab_norman_dismounted_knights",
+          "id": "early_christian_spanish_dismounted_knights",
           "name": "Dismounted Knights",
           "description": "Dismounted Knights have spear, light armour and shield. Superior Fighters. May exchange spear for throwing spear (+2) or two-handed weapon (+2). May have heavy armour (+2) and javelins(+2).",
           "category": "Cavalry",
@@ -331,7 +369,7 @@ E{
           ]
         },
         {
-          "id": "nab_norman_norman_spearmen",
+          "id": "early_christian_spanish_norman_spearmen",
           "name": "Norman Spearmen",
           "description": "Norman Spearmen have spear and shield.",
           "category": "Infantry",
@@ -351,7 +389,7 @@ E{
           "optionalEquipment": []
         },
             {
-          "id": "nab_norman_french_or_flemish_spearmen",
+          "id": "early_christian_spanish_french_or_flemish_spearmen",
           "name": "French or Flemish Spearmen",
           "description": "French or Flemish Spearmen have spear and shield.",
           "category": "Infantry",
@@ -371,7 +409,7 @@ E{
           "optionalEquipment": []
         },
         {
-          "id": "nab_norman_norman_archers",
+          "id": "early_christian_spanish_norman_archers",
           "name": "Norman Archers",
           "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
           "category": "Infantry",
@@ -430,7 +468,7 @@ E{
           ]
         },
         {
-          "id": "nab_norman_french_or_flemish_archers",
+          "id": "early_christian_spanish_french_or_flemish_archers",
           "name": "French or Flemish Archers",
           "description": "French or Flemish Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
           "category": "Infantry",
@@ -490,7 +528,7 @@ E{
         },
                
         {
-          "id": "nab_norman_breton_retainers_infantry",
+          "id": "early_christian_spanish_breton_retainers_infantry",
           "name": "Breton Retainers (Infantry)",
           "description": "Breton Retainers have throwing spear and shield. Open Order.",
           "category": "Infantry",
@@ -509,7 +547,7 @@ E{
           "optionalEquipment": []
         },
         {
-          "id": "nab_norman_skirmishers",
+          "id": "early_christian_spanish_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins and shield. Skirmishers. May exchange javelins and shield for sling or bow (-1).",
           "category": "Infantry",
