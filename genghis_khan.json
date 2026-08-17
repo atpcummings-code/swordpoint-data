@@ -56,7 +56,7 @@
                 {
           "id": "arab_caliphate_abbasid_caliphate_caliph",
           "name": "Caliph",
-          "excludes": ["arab_caliphate_abbasid_amir"],
+          "excludes": ["arab_caliphate_abbasid_caliphate_amir"],
           "maxCountAllowed": 1,
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -72,7 +72,7 @@
         {
           "id": "arab_caliphate_abbasid_caliphate_amir",
           "name": "Amir",
-          "excludes": ["arab_caliphate_abbasid_caliph"],
+          "excludes": ["arab_caliphate_abbasid_caliphate_caliph"],
           "maxCountAllowed": 1,
           "description": "May ride a horse.",
           "category": "Commanders",
