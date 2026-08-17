@@ -633,7 +633,7 @@
               "pointsModifier": 0,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Skirmishers". "Parthian Shot"],
+              "rulesAdded": ["Skirmishers", "Parthian Shot"],
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
