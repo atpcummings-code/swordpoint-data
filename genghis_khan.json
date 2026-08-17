@@ -943,7 +943,7 @@
           "minBases": 2,
           "maxBases": 6,
           "baseEquipEment": [
-          "Incendiary Bomb""
+          "Incendiary Bomb"
           ],
           "specialRules": ["Skirmishers", "Inferior Fighters"],
           "optionalEquipment": [],
