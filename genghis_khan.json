@@ -1,7 +1,7 @@
 {
   "armies": {
-    "al_andalus_and_granada_al_andalus": {
-      "armyName": "Al-Andalus and Granada (Al-Andalus) - 755 AD to 1008 AD)",
+    "arab_caliphate_abbasid_caliphate": {
+      "armyName": "Arab Caliphate (Abbasid Caliphate) - 750 AD to 1055 AD)",
        
       "categories": [
         {
@@ -10,6 +10,13 @@
           "constraintType": "count",
           "min": 0,
           "max": 6
+        },
+        {
+          "id": "Ghulams",
+          "name": "Ghulams",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 40
         },
         {
           "id": "Cavalry",
@@ -23,19 +30,19 @@
           "name": "Infantry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 50
+          "max": 75
         },
         {
           "id": "Allies",
           "name": "Allies and Mercenaries",
-          "description": "The army may have allies from the relevant period of the Al-Andalus and Granada list.",
+          "description": "Tibetan or Utrighur (Use Cuman or Kipchak list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
             "early_christian_spanish_"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
