@@ -951,6 +951,7 @@
           "pointsPerBase": 7,
           "minBases": 2,
           "maxBases": 6,
+          "maxAlliedArmiesAllowed": 1
           "baseEquipment": [
           "Incendiary Bomb"
           ],
@@ -1050,10 +1051,829 @@
             }
           ]
         },
-
+ "arab_caliphate_fatimid_caliphate": {
+      "armyName": "Arab Caliphate (Fatimid Caliphate) - 750 AD to 1055 AD)",
+       
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Ghulams",
+          "name": "Ghulams",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+        {
+          "id": "CavalryAndInfantry",
+          "name": "Cavalry and Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 66
+        },
+                 {
+          "id": "SpecialUnits",
+          "name": "Special Units",
+          "constraintType": "count",
+          "min": 0,
+          "max": 1
+        }
+      ],
+      "units": [
+                {
+          "id": "arab_caliphate_fatimid_caliphate_caliph",
+          "name": "Caliph",
+          "excludes": ["arab_caliphate_fatimid_caliphate_amir"],
+          "maxCountAllowed": 1,
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "arab_caliphate_fatimid_caliphate_amir",
+          "name": "Amir",
+          "excludes": ["arab_caliphate_fatimid_caliphate_caliph"],
+          "maxCountAllowed": 1,
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "arab_caliphate_fatimid_caliphate_sheikh",
+          "name": "Sheikh",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
           
+        {
+          "id": "arab_caliphate_fatimid_caliphate_turkish_senior_ghulams",
+          "name": "Turkish Senior Ghulams",
+          "description": "Turkish Senior Ghulams have light armour, bow and shield. Superior Fighters. Superior Shooters. May have spear (+1). heavy armour (+1) and half barding or barding (+1).  Must be lked by the army general at all times.",
+          "category": "Ghulams",
+            "maxCountAllowed": 1,
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour", "Bow", "Shield"
+          ],
+          "specialRules": ["Open Order", "Superior Fighters", "Superior Shooters"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half-barding",
+              "disables": "Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half-barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Barding",
+              "disables": "Half-barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+        {
+          "id": "arab_caliphate_fatimid_caliphate_turkish_ghulams",
+          "name": "Turkish Ghulams",
+          "description": "Turkish Ghulams have light armour, bow and shield. Superior Shooters. May have spear (+1). heavy armour (+1) and half barding or barding (+1).",
+          "category": "Ghulams",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour", "Bow", "Shield"
+          ],
+          "specialRules": ["Open Order", "Superior Shooters"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half-barding",
+              "disables": "Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half-barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Barding",
+              "disables": "Half-barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+        {
+          "id": "arab_caliphate_fatimid_caliphate_armenian_ghulams",
+          "name": "Armenian Ghulams",
+          "description": "Armenian Ghulams have light armour, spear and shield. Superior Fighters. May have heavy armour (+1).",
+          "category": "Ghulams",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour", "Spear", "Shield"
+          ],
+          "specialRules": ["Open Order", "Superior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+        {
+          "id": "arab_caliphate_fatimid_caliphate_turkish_dismounted_ghulams",
+          "name": "Turkish Dismounted Ghulams",
+          "description": "Turkish Dismounted Ghulams have light armour, bow and shield. Superior Shooters. May be Riding Horses (+1) or Riding Camels (+1).May have spear (free0. May have heavy armour (+2)",
+          "category": "Ghulams",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Light Armour", "Bow", "Shield"
+          ],
+          "specialRules": ["Close Order", "Superior Shooters"],
+          "optionalEquipment": [
+            {
+              "name": "Riding Horses",
+              "disables": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Riding Camels",
+              "disables": "Riding Horses",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+        {
+          "id": "arab_caliphate_fatimid_caliphate_greek_ghulams",
+          "name": "Greek Ghulams",
+          "description": "Greek (Byzantine) Ghulams have light armour, spear and shield. May use combined formation where up to half the  figures in the unit exchange spear for bow (free) and form the rear ranks.",
+          "category": "Ghulams",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Spear", "Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+              
+            },
+
+        {
+          "id": "arab_caliphate_fatimid_caliphate_daylami_infantry",
+          "name": "Daylami Infantry",
+          "description": "Daylami Infantry have a spear and shield. Shieldwall. Warband. May be designated Open Order costing 17 points per base. May have light armour (+2) and be Riding Camels (+1). May exchange spear for throwing spea (+2). May be Stubborn (+2). They may be fielded as skirmishers at a cost of ten points per base (no longer Warband).",
+          "category": "Ghulams",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Close Order", "Shieldwall", "Warband"],
+          "optionalEquipment": [
+            {
+              "name": "Open Order",
+              "disables": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Open Order",
+              "pointsModifier": -12,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Close Order", "Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+        {
+          "id": "arab_caliphate_fatimid_caliphate_daylami_archers",
+          "name": "Daylami Archers",
+          "description": "Daylami Archers have a bow and shield. Open Order. May be fielded as skirmishers at a cost of ten points per base.",
+          "category": "Ghulams",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ],
+        },
+            
+        {
+          "id": "arab_caliphate_fatimid_caliphate_heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have light armour, Spear and shield.",
+          "category": "CavalryAndInfantry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour", "Spear", "Shield"
+          ],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [],
+              
+            },
+        {
+          "id": "arab_caliphate_fatimid_caliphate_tribal_cavalry",
+          "name": "Tribal Cavalry",
+          "description": "Tribal Cavalry have javelins and shield. Evade. May exchange javelins for bow or spear (free). May be fielded as skirmihsers at a cost of 16 points per base.",
+          "category": "CavalryAndInfantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins", "Shield"
+          ],
+          "specialRules": ["Open Order", "Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+        {
+          "id": "arab_caliphate_fatimid_caliphate_camelry",
+          "name": "Camelry",
+          "description": "Camelry have javelins. May have a spear (+1) and shield (+1) or large shield (+2)/ May exchange javelins for bow (free). ",
+          "category": "CavalryAndInfantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+               "disables": "Large Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Large Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Large Shield",
+               "disables": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+        {
+          "id": "arab_caliphate_fatimid_caliphate_abbasiya",
+          "name": "Abbasiya",
+          "description": "Abbasiya have a bow and shield. Superior Shooters. Evade. May have light armmour (+1) and spear (+1). May be fiedled as skirmishers with Parthian Shot. My not be used by Fatmid or Umayyad armies.",
+          "category": "CavalryAndInfantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow", "Shield"
+          ],
+          "specialRules": ["Open Order", "Evade", "Superior Shooters"], 
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+                       {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers", "Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+          {
+          "id": "arab_caliphate_fatimid_caliphate_arab_or_berber_infantry",
+          "name": "Arab or Berber Infantry",
+          "description": "Arab or Berber Infantry have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2).",
+          "category": "CavalryAndInfantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+
+          "baseEquipment": [
+            "Spear", "Shield"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "disables": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }, 
+        {
+          "id": "arab_caliphate_fatimid_caliphate_militia",
+          "name": "Militia",
+          "description": "Militia have spear and shield. Inferior Fighters. May have large shield (+2) and be Riding Camels (+1).",
+          "category": "CavalryAndInfantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+
+          "baseEquipment": [
+            "Spear", "Shield"
+          ],
+          "specialRules": [
+            "Close Order", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+                       {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "arab_caliphate_fatimid_caliphate_militia_skirmishers",
+          "name": "Militia Skirmishers",
+          "description": "Militia Skirmishers have a shield and either sling, javelins or bow. Inferior Fighters. Skirmishers. All may be Riding Camels",
+          "category": "CavalryAndInfantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighers"
+          ],
+          "optionalEquipment": [
+          {
+              "name": "Bow",
+            "disables": ["Sling", "Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+            "disables": ["Bow", "Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+            "disables": ["Bow", "Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "arab_caliphate_fatimid_caliphate_naffatun",
+          "name": "Naffatun",
+          "description": "Naffatun have a shield and Incendiary 'Bombs'. Inferior Fighters. Skirmishers. Treat their bombs as javelins with no armour save. Any unit that suffers at least one casualty from one of these incediary bomb must take a cohesion test even if it did not suffer 25% casualties.",
+          "category": "SpecialUnits",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+"maxAlliedArmiesAllowed": 1
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+          "Incendiary Bomb"
+          ],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [],
+              
+            },       
         ]
     },
     
   }
+}
 }
