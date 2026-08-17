@@ -559,13 +559,23 @@
             },
             {
               "name": "Spear",
-              "disables": "Large Shield",
               "pointsModifier": 1,
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+               "disables": "Large Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Large Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
              {
