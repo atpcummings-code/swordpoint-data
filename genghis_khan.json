@@ -361,8 +361,8 @@
           
         ]
     },
-"middle_christian_spanish": {
-      "armyName": "Al-Andalus and Granada (Taifa Kingdoms) - 1009 AD to 1110 AD)",
+"al_andalus_and_grenada_taifa_kingdoms": {
+      "armyName": "Al-Andalus and Grenada (Taifa Kingdoms) - 1009 AD to 1110 AD)",
        
       "categories": [
         {
@@ -394,18 +394,15 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "al_andalus_and_grenada_taifa_kingdom"
+            "early_christian_spanish_"
           ],
           "maxAlliedArmiesAllowed": 2
         }
       ],
       "units": [
                 {
-          "id": "al_andalus_and_grenada_taifa_kingdoms_king",
-          "excludes": [
-            "al_andalus_and_grenada_taifa_kingdoms_el_cid"
-          ],
-          "name": "King",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_caliph_vizier_general",
+          "name": "Caliph Vizier General",
           "maxCountAllowed": 1,
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -418,30 +415,28 @@
           "specialRules": [],
           "optionalEquipment": []
         },
-{
-        "id": "al_andalus_and_grenada_taifa_kingdoms_el_cid",
-  "excludes": ["al_andalus_and_grenada_taifa_kingdoms_king"],
-          "name": "El Cid",
-          "maxCountAllowed": 1,
+        {
+          "id": "al_andalus_and_grenada_taifa_kingdoms_amir",
+          "name": "Amir",
           "description": "May ride a horse.",
           "category": "Commanders",
-          "type": "General",
-          "attacks": "+3",
-          "cohesion": 10,
-          "pointsPerBase": 50,
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
           "optionalEquipment": []
         },
-        {
-          "id": "al_andalus_and_grenada_taifa_kingdoms_captain",
-          "name": "Captain",
-          "description": "Rides a horse.",
+          {
+          "id": "al_andalus_and_grenada_taifa_kingdoms_christian_captain",
+          "name": "Christian Captain",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "other",
-          "attacks": "+2",
-          "cohesion": "+2",
+          "attacks": "+3",
+          "cohesion": "+1",
           "pointsPerBase": 20,
           "minBases": 0,
           "maxBases": 1,
@@ -451,7 +446,7 @@
         {
           "id": "al_andalus_and_grenada_taifa_kingdoms_jinetes",
           "name": "Jinetes",
-          "description": "Jinetes have javelins. Evade. May have shield (+1) and spear (+1). May be fielded as skirmishers at a cost of 16 points points per base.",
+          "description": "Jinetes have javelins. Evade. May have spear (+1) and shield (+1). Up to half of jinete units may have bow in place of javelins (+2), in which case they may not take spears. Jinetes may be fielded as skirmishers at a cost of 16 points points per base.",
           "category": "Cavalry",
           "type": "other",
           "defence": 6,
@@ -500,15 +495,30 @@
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }
+            },
+            {
+              "name": "Bow",
+              "enabledEvery": 2,
+              "disables": "Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
           
           ],
               
             },
         {
-          "id": "al_andalus_and_grenada_taifa_kingdoms_cabelleros",
-          "name": "Cabelleros",
-          "description": "Cabelleros have light armour, javelins and shield. Superior FIghters. Superior Shooters. Evade. May have spear (+1).",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_noble_cavalry",
+          "name": "Noble Cavalry",
+          "description": "Noble Cavalry have light armour, javelins and shield. Superior Fighters. Superior Shooters. Evade. May have spear (+1). May be fielded as skirmishers at a cost of 24 points per base.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -534,89 +544,36 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }
-          ],
-              
             },
-        {
-          "id": "al_andalus_and_grenada_taifa_kingdoms_hidalgos",
-          "name": "Hidalgos",
-          "description": "Hidalgos have light armour, spear and shield. Superior FIghters. Shock Cavalry. May have heacy armour (+1).",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 4,
-          "cohesion": 8,
-          "pointsPerBase": 26,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": [
-            "Spear", "Light Armour",
-            "Shield"
-          ],
-          "specialRules": ["Open Order", "Superior Fighters", "Shock Cavalry"],
-          "optionalEquipment": [
             {
-              "name": "Heavy Armour",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Heavy Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ],
-              
-            },
-{
-          "id": "al_andalus_and_grenada_taifa_kingdoms_cabelleros_villanos",
-          "name": "Cabelleros Villanos",
-          "description": "Cabelleros Villanos have a spear and shield. May have light amrour (+1).",
-    "category": "Cavalry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 17,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipEment": [
-            "Spear",
-            "Shield",
-          ],
-          "specialRules": ["Open Order"],
-          "optionalEquipment": [
-            {
-              "name": "light Armour",
-              "pointsModifier": 1,
+              "name": "Skirmishers",
+              "pointsModifier": -2,
               "equipmentAdded": [
-             "Light Armour"
               ],
               "equipmentRemoved": [
               ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
               "cohesionModifier": 0
-            }          
-          ],     
+            }
+          ],
+              
             },
+
         {
-          "id": "al_andalus_and_grenada_taifa_kingdoms_guards",
-          "name": "Guards",
-          "description": "Guards have a spear, javelins and shield. Superior Fighters. Superior Shooters. May have ligHt armour (+2) and Stubboorn (+2).",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have a spear and shield. Inferior Fighters. May have light armour (+2) and javelins (+2)..",
           "category": "Infantry",
-          "maxCountAllowed": 1,
           "type": "other",
           "defence": 6,
-          "cohesion": 8,
-          "pointsPerBase": 28,
+          "cohesion": 6,
+          "pointsPerBase": 10,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [
-            "Javelins", "Spear",
-            "Shield"
-          ],
-          "specialRules": ["Close Order", "Superior Fighters", "Superior Shooters"],
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Close Order", "Inferior Fighters"],
           "optionalEquipment": [
             {
               "name": "Light Armour",
@@ -632,13 +589,13 @@
               "cohesionModifier": 0
             },
           {
-              "name": "Stubborn",
+              "name": "Javelins",
               "pointsModifier": 2,
-              "equipmentAdded": [
+              "equipmentAdded": ["Javelins"
               ],
               "equipmentRemoved": [
               ],
-              "rulesAdded": ["Stubborn"],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -649,181 +606,41 @@
         
         
           {
-          "id": "al_andalus_and_grenada_taifa_kingdoms_prones",
-          "name": "Prones",
-          "description": "Prones spear, javelins and shield. May be declared as Open Order (-4) in which case may exchange spear for throwing spear (+2). If Close ORder may use combine dFormation by including50% Close Order Arqueros (14 points per base) an the rear rows.",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_archers",
+          "name": "Arcehrs",
+          "description": "Archer shave a bow. Inferior Fighters. Open Order. May have light armour (+2) or shield (+2). May be fielded as skirmishers at a cost of five points per base.",
           "category": "Infantry",
           "type": "other",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 16,
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
           "minBases": 3,
           "maxBases": 12,
 
           "baseEquipment": [
-            "Shield", "Spear",
-            "Javelins"
+            "Bow"
           ],
-          "specialRules": [
-            "Close Order", "Superior Fighters"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Open Order",
-              "enableHidden": ["Throwing Spear"],
-              "pointsModifier": -4,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Throwing Spear",
-              "hiddenUntilEnabled": "hidden",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Throwing Spear"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "al_andalus_and_grenada_taifa_kingdoms_arqueros",
-          "name": "Arqueros",
-          "description": "Arqueros have a bow. Open Order. May have shield (+1). May be fielded as skirmishers at a cost of seven points per base.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 7,
-          "pointsPerBase": 11,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Bow"],
           "specialRules": [
             "Open Order"
           ],
           "optionalEquipment": [
             {
-              "name": "Shield",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-               "Shield"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }, 
-            {
-              "name": "Skirmishers",
-              "pointsModifier": -4,
-              "equipmentAdded": [],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-          {
-          "id": "al_andalus_and_grenada_taifa_kingdoms_ballesteros",
- "excludes": ["al_andalus_and_grenada_taifa_kingdoms_militia_crossbowmen"],
-          "maxCountAllowed": 1,
-
-          "name": "Ballesteros",
-          "description": "Ballesteros have light amrour and crossbow. Open Order. May have shields (+2). May be fielded as skirmishers at a cost of eight points per base.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 12,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Light Armour",
-            "Crossbow"
-          ],
-          "specialRules": [
-            "Open Order",
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Shield",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-               "Shield"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "pointsModifier": -4,
-              "equipmentAdded": [],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "al_andalus_and_grenada_taifa_kingdoms_ballesteros",
- "excludes": ["al_andalus_and_grenada_taifa_kingdoms_militia_crossbowmen"],
-          "maxCountAllowed": 1,
-          "name": "Militia Crossbowmen",
-          "description": "Militia Crossbowmen have a crossbow. Inferior Shooters. Open Order. May have light armour (+2) and shield (+2). May be fiedled as skirmishers at a cost of seven points per base. There may not be more units of crossbowmen than there are units of Prones in the army.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 7,
-          "pointsPerBase": 11,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Crossbow"
-          ],
-          "specialRules": [
-            "Open Order", "Inferior Shooters"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Shield",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-               "Shield"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
               "name": "Light Armour",
+              "disables": "Shield",
               "pointsModifier": 2,
-              "equipmentAdded": [
-               "Light Armour"
-              ],
-              "equipmentRemoved": [
-              ],
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "disables": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -831,21 +648,22 @@
             },
             {
               "name": "Skirmishers",
-              "pointsModifier": -4,
-              "equipmentAdded": [],
+              "pointsModifier": -3,
+              "equipmentAdded": [
+              ],
               "equipmentRemoved": [
               ],
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
-        },  
+        },          
         {
           "id": "al_andalus_and_grenada_taifa_kingdoms_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelisn and shield. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
+          "description": "Skirmishers have javelins. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -854,7 +672,7 @@
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": [
-            "Javelins", "Shield"
+            "Javelins"
           ],
           "specialRules": [
             "Skirmishers","Inferior Fighers"
@@ -867,7 +685,7 @@
               "equipmentAdded": [
                 "Bow"
               ],
-              "equipmentRemoved": [],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -880,7 +698,7 @@
               "equipmentAdded": [
                 "Sling"
               ],
-              "equipmentRemoved": [],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -889,64 +707,6 @@
              {
               "name": "Throwing Spear",
                "disables": ["Bow", "Sling"],
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Throwing Spear"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers Crossbow",
-              "hiddenUntilEnabled": "hidden",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Crossbow"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-            
-          ]
-        },
-        {
-          "id": "al_andalus_and_grenada_taifa_kingdoms_basque_javelinmen_skirmishers",
-          "name": "Basque Javelinmen Skirmishers",
-          "description": "Basque Javelinmen Skirmishers have javelins. Skirmishers. Superior Shooters. May have shield (+1) and throwing spar (+1).",
-          "category": "Allies",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 8,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [
-            "Javelins"
-          ],
-          "specialRules": [
-            "Skirmishers","Superior Shooters"
-          ],
-          "optionalEquipment": [
-          {
-              "name": "Shield",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Shield"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Throwing Spear",
               "pointsModifier": 1,
               "equipmentAdded": [
                 "Throwing Spear"
@@ -956,667 +716,10 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }
-            
+            }            
           ]
-        },       
-        ]
-    },
-    "Late_christian_spanish": {
-      "armyName": "Late Christian Spanish - 1040 AD to 1100 AD)",
-       
-      "categories": [
-        {
-          "id": "Commanders",
-          "name": "Commanders",
-          "constraintType": "count",
-          "min": 0,
-          "max": 4
         },
-        {
-          "id": "Cavalry",
-          "name": "Cavalry",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 50
-        },
-        {
-          "id": "Infantry",
-          "name": "Infantry",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 50
-        },
-        {
-          "id": "Allies",
-          "name": "Allies and Mercenaries",
-          "description": "The army may have allies from the relevant period of the Al-Andalus and Grenada list.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25,
-          "alliedArmyKeys": [
-            "al_andalus_and_grenada_taifa_kingdom"
-          ],
-          "maxAlliedArmiesAllowed": 2
-        }
-      ],
-      "units": [
-                {
-          "id": "late_christian_spanish_king",
-          "excludes": [
-            "late_christian_spanish_el_cid"
-          ],
-          "name": "King",
-          "maxCountAllowed": 1,
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+3",
-          "cohesion": 9,
-          "pointsPerBase": 0,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-{
-        "id": "late_christian_spanish_el_cid",
-  "excludes": ["late_christian_spanish_king"],
-          "name": "El Cid",
-          "maxCountAllowed": 1,
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+3",
-          "cohesion": 10,
-          "pointsPerBase": 50,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
-          "id": "late_christian_spanish_captain",
-          "name": "Captain",
-          "description": "Rides a horse.",
-          "category": "Commanders",
-          "type": "other",
-          "attacks": "+2",
-          "cohesion": "+2",
-          "pointsPerBase": 20,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
-          "id": "late_christian_spanish_jinetes",
-          "name": "Jinetes",
-          "description": "Jinetes have javelins. Evade. May have shield (+1) and spear (+1). May be fielded as skirmishers at a cost of 16 points points per base.",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 18,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipEment": [
-            "Javelins"
-          ],
-          "specialRules": ["Open Order", "Evade"],
-          "optionalEquipment": [
-            {
-              "name": "Shield",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Shield"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Spear",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Spear"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "pointsModifier": -2,
-              "equipmentAdded": [
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
           
-          ],
-              
-            },
-        {
-          "id": "late_christian_spanish_cabelleros",
-          "name": "Cabelleros",
-          "description": "Cabelleros have light armour, javelins and shield. Superior FIghters. Superior Shooters. Evade. May have spear (+1).",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 4,
-          "cohesion": 8,
-          "pointsPerBase": 26,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": [
-            "Javelins", "Light Armour",
-            "Shield"
-          ],
-          "specialRules": ["Open Order", "Superior Fighters", "Superior Shooters", "Evade"],
-          "optionalEquipment": [
-            {
-              "name": "Spear",
-              "pointsModifier": 0,
-              "equipmentAdded": [
-                "Spear"
-              ],
-              "equipmentRemoved": ["Javelins"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ],
-              
-            },
-        {
-          "id": "late_christian_spanish_hidalgos",
-          "name": "Hidalgos",
-          "description": "Hidalgos have light armour, spear and shield. Superior FIghters. Shock Cavalry. May have heacy armour (+1).",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 4,
-          "cohesion": 8,
-          "pointsPerBase": 26,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": [
-            "Spear", "Light Armour",
-            "Shield"
-          ],
-          "specialRules": ["Open Order", "Superior Fighters", "Shock Cavalry"],
-          "optionalEquipment": [
-            {
-              "name": "Heavy Armour",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Heavy Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-              {
-              "name": "Barding",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Barding"],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Lance",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Lance"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ],
-              
-            },
-{
-          "id": "late_christian_spanish_cabelleros_villanos",
-          "name": "Cabelleros Villanos",
-          "description": "Cabelleros Villanos have a spear and shield. May have light amrour (+1).",
-    "category": "Cavalry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 17,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipEment": [
-            "Spear",
-            "Shield",
-          ],
-          "specialRules": ["Open Order"],
-          "optionalEquipment": [
-            {
-              "name": "light Armour",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-             "Light Armour"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Lance",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Lance"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }          
-          ],     
-            },
-        {
-          "id": "late_christian_spanish_military_orders",
-          "name": "Military Orders",
-          "description": "Military Orders have heavy armour, lance and shield. Superior FIghters. Shock Cavalry. May have barding (+1).",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 3,
-          "cohesion": 9,
-          "pointsPerBase": 30,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": [
-            "Lance", "Heavy Armour",
-            "Shield"
-          ],
-          "specialRules": ["Open Order", "Superior Fighters", "Shock Cavalry"],
-          "optionalEquipment": [
-                       {
-              "name": "Barding",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Barding"],
-              "equipmentRemoved": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ],
-              
-            },
-        {
-          "id": "late_christian_spanish_guards",
-          "name": "Guards",
-          "description": "Guards have a spear, javelins and shield. Superior Fighters. Superior Shooters. May have ligHt armour (+2) and Stubboorn (+2).",
-          "category": "Infantry",
-          "maxCountAllowed": 1,
-          "type": "other",
-          "defence": 6,
-          "cohesion": 8,
-          "pointsPerBase": 28,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Javelins", "Spear",
-            "Shield"
-          ],
-          "specialRules": ["Close Order", "Superior Fighters", "Superior Shooters"],
-          "optionalEquipment": [
-            {
-              "name": "Light Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-               "Light Armour"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-          {
-              "name": "Stubborn",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Stubborn"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ],
-              
-            },
-        
-        
-          {
-          "id": "late_christian_spanish_prones",
-          "name": "Prones",
-          "description": "Prones spear, javelins and shield. May be declared as Open Order (-4) in which case may exchange spear for throwing spear (+2). If Close ORder may use combine dFormation by including50% Close Order Arqueros (14 points per base) an the rear rows.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 16,
-          "minBases": 3,
-          "maxBases": 12,
-
-          "baseEquipment": [
-            "Shield", "Spear",
-            "Javelins"
-          ],
-          "specialRules": [
-            "Close Order", "Superior Fighters"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Open Order",
-              "enableHidden": ["Throwing Spear"],
-              "pointsModifier": -4,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Throwing Spear",
-              "hiddenUntilEnabled": "hidden",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Throwing Spear"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "late_christian_spanish_arqueros",
-          "name": "Arqueros",
-          "description": "Arqueros have a bow. Open Order. May have shield (+1). May be fielded as skirmishers at a cost of seven points per base.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 7,
-          "pointsPerBase": 11,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Bow"],
-          "specialRules": [
-            "Open Order"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Shield",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-               "Shield"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }, 
-            {
-              "name": "Skirmishers",
-              "pointsModifier": -4,
-              "equipmentAdded": [],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-          {
-          "id": "late_christian_spanish_ballesteros",
-          "name": "Ballesteros",
-          "description": "Ballesteros have light amrour and crossbow. Open Order. May have shields (+2). May be fielded as skirmishers at a cost of eight points per base.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 12,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Light Armour",
-            "Crossbow"
-          ],
-          "specialRules": [
-            "Open Order",
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Shield",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-               "Shield"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "pointsModifier": -4,
-              "equipmentAdded": [],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "late_christian_spanish_ballesteros",
-          "name": "Militia Crossbowmen",
-          "description": "Militia Crossbowmen have a crossbow. Inferior Shooters. Open Order. May have light armour (+2) and shield (+2). May be fiedled as skirmishers at a cost of seven points per base. There may not be more units of crossbowmen than there are units of Prones in the army.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 7,
-          "pointsPerBase": 11,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Crossbow"
-          ],
-          "specialRules": [
-            "Open Order", "Inferior Shooters"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Shield",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-               "Shield"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Light Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-               "Light Armour"
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "pointsModifier": -4,
-              "equipmentAdded": [],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
-        },  
-        {
-          "id": "late_christian_spanish_skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have javelisn and shield. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 5,
-          "pointsPerBase": 5,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [
-            "Javelins", "Shield"
-          ],
-          "specialRules": [
-            "Skirmishers","Inferior Fighers"
-          ],
-          "optionalEquipment": [
-          {
-              "name": "Bow",
-            "disables": "Sling",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Bow"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Sling",
-            "disables": "Bow",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Sling"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Throwing Spear",
-               "disables": ["Bow", "Sling"],
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Throwing Spear"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers Crossbow",
-              "hiddenUntilEnabled": "hidden",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Crossbow"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-            
-          ]
-        },
-        {
-          "id": "late_christian_spanish_basque_javelinmen_skirmishers",
-          "name": "Basque Javelinmen Skirmishers",
-          "description": "Basque Javelinmen Skirmishers have javelins. Skirmishers. Superior Shooters. May have shield (+1) and throwing spar (+1).",
-          "category": "Allies",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 8,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [
-            "Javelins"
-          ],
-          "specialRules": [
-            "Skirmishers","Superior Shooters"
-          ],
-          "optionalEquipment": [
-          {
-              "name": "Shield",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Shield"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Throwing Spear",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Throwing Spear"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-            
-          ]
-        },       
         ]
     },
   }
