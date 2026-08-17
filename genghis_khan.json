@@ -948,14 +948,12 @@
           "specialRules": ["Skirmishers", "Inferior Fighters"],
           "optionalEquipment": [],
               
-            }
-          
-        ]
-    },
+            },
+
     {
           "id": "early_arab_conquest_religious_volunteers",
           "name": "Religious Volunteers",
-          "description": "Religious Volunteers have throwing spear and shield. Warband. May have large shield (+2) and be Riding Camels (_1). May be stubborn (+2). Every second Religious Volunteers unit may have light armour (+2). Unarmoured units may instead be fielded with Throwing spear and shiled. Skirmishers. (no longer Warband) at a cost of eight points per base",
+          "description": "Religious Volunteers have throwing spear and shield. Warband. May have large shield (+2) and be Riding Camels (_1). May be stubborn (+2). Every second Religious Volunteers unit may have light armour (+2). Unarmoured units may instead be fielded with Throwing spear and shield. Skirmishers. (no longer Warband) at a cost of eight points per base",
           "category": "Allies",
           "type": "other",
           "defence": 6,
