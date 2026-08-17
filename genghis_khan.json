@@ -325,7 +325,7 @@
               "equipmentAdded": [
                 "Bow"
               ],
-              "equipmentRemoved": [Javelins],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
