@@ -477,7 +477,7 @@
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 6
+          "max": 5
         },
         {
           "id": "Cavalry",
@@ -501,7 +501,6 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "al_andalus_and_grenada_al_andalus",
             "al_andalus_and_grenada_taifa_kingdom"
           ],
           "maxAlliedArmiesAllowed": 2
@@ -528,9 +527,7 @@
         },
 {
         "id": "middle_christian_spanish_el_cid",
-  "excludes": [
-            "middle_christian_spanish_king"
-          ],
+  "excludes": ["middle_christian_spanish_king"],
           "name": "El Cid",
           "maxCountAllowed": 1,
           "description": "May ride a horse.",
@@ -643,6 +640,36 @@
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+        {
+          "id": "middle_christian_spanish_hidalgos",
+          "name": "Hidalgos",
+          "description": "Hidalgos have light armour, spear and shield. Superior FIghters. Shock Cavalry. May have heacy armour (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear", "Light Armour",
+            "Shield"
+          ],
+          "specialRules": ["Open Order", "Superior Fighters", "Shock Cavalry"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
               "cohesionModifier": 0
             }
           ],
@@ -815,7 +842,113 @@
             }
           ]
         },
-            
+          {
+          "id": "early_christian_spanish_ballesteros",
+ "excludes": ["middle_christian_spanish_militia_crossbowmen"],
+          "maxCountAllowed": 1,
+
+          "name": "Ballesteros",
+          "description": "Ballesteros have light amrour and crossbow. Open Order. May have shields (+2). May be fielded as skirmishers at a cost of eight points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Light Armour",
+            "Crossbow"
+          ],
+          "specialRules": [
+            "Open Order",
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+               "Shield"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_christian_spanish_ballesteros",
+ "excludes": ["middle_christian_spanish_militia_crossbowmen"],
+          "maxCountAllowed": 1,
+          "name": "Militia Crossbowmen",
+          "description": "Militia Crossbowmen have a crossbow. Inferior Shooters. Open Order. May have light armour (+2) and shield (+2). May be fiedled as skirmishers at a cost of seven points per base. There may not be more units of crossbowmen than there are units of Prones in the army.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Crossbow"
+          ],
+          "specialRules": [
+            "Open Order", "Inferior Shooters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+               "Shield"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+               "Light Armour"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },  
         {
           "id": "middle_christian_spanish_skirmishers",
           "name": "Skirmishers",
