@@ -363,7 +363,7 @@
         ]
     },
 "middle_christian_spanish": {
-      "armyName": "Middle Christian Spanish - 1040 AD to 1100 AD)",
+      "armyName": "Al-Andalus and Granada (Taifa Kingdoms) - 1009 AD to 1110 AD)",
        
       "categories": [
         {
@@ -402,9 +402,9 @@
       ],
       "units": [
                 {
-          "id": "middle_christian_spanish_king",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_king",
           "excludes": [
-            "middle_christian_spanish_el_cid"
+            "al_andalus_and_grenada_taifa_kingdoms_el_cid"
           ],
           "name": "King",
           "maxCountAllowed": 1,
@@ -420,8 +420,8 @@
           "optionalEquipment": []
         },
 {
-        "id": "middle_christian_spanish_el_cid",
-  "excludes": ["middle_christian_spanish_king"],
+        "id": "al_andalus_and_grenada_taifa_kingdoms_el_cid",
+  "excludes": ["al_andalus_and_grenada_taifa_kingdoms_king"],
           "name": "El Cid",
           "maxCountAllowed": 1,
           "description": "May ride a horse.",
@@ -436,7 +436,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "middle_christian_spanish_captain",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_captain",
           "name": "Captain",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -450,7 +450,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "middle_christian_spanish_jinetes",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_jinetes",
           "name": "Jinetes",
           "description": "Jinetes have javelins. Evade. May have shield (+1) and spear (+1). May be fielded as skirmishers at a cost of 16 points points per base.",
           "category": "Cavalry",
@@ -507,7 +507,7 @@
               
             },
         {
-          "id": "middle_christian_spanish_cabelleros",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_cabelleros",
           "name": "Cabelleros",
           "description": "Cabelleros have light armour, javelins and shield. Superior FIghters. Superior Shooters. Evade. May have spear (+1).",
           "category": "Cavalry",
@@ -540,7 +540,7 @@
               
             },
         {
-          "id": "middle_christian_spanish_hidalgos",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_hidalgos",
           "name": "Hidalgos",
           "description": "Hidalgos have light armour, spear and shield. Superior FIghters. Shock Cavalry. May have heacy armour (+1).",
           "category": "Cavalry",
@@ -570,7 +570,7 @@
               
             },
 {
-          "id": "middle_christian_spanish_cabelleros_villanos",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_cabelleros_villanos",
           "name": "Cabelleros Villanos",
           "description": "Cabelleros Villanos have a spear and shield. May have light amrour (+1).",
     "category": "Cavalry",
@@ -602,7 +602,7 @@
           ],     
             },
         {
-          "id": "middle_christian_spanish_guards",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_guards",
           "name": "Guards",
           "description": "Guards have a spear, javelins and shield. Superior Fighters. Superior Shooters. May have ligHt armour (+2) and Stubboorn (+2).",
           "category": "Infantry",
@@ -650,7 +650,7 @@
         
         
           {
-          "id": "middle_christian_spanish_prones",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_prones",
           "name": "Prones",
           "description": "Prones spear, javelins and shield. May be declared as Open Order (-4) in which case may exchange spear for throwing spear (+2). If Close ORder may use combine dFormation by including50% Close Order Arqueros (14 points per base) an the rear rows.",
           "category": "Infantry",
@@ -694,7 +694,7 @@
           ]
         },
         {
-          "id": "middle_christian_spanish_arqueros",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_arqueros",
           "name": "Arqueros",
           "description": "Arqueros have a bow. Open Order. May have shield (+1). May be fielded as skirmishers at a cost of seven points per base.",
           "category": "Infantry",
@@ -737,8 +737,8 @@
           ]
         },
           {
-          "id": "middle_christian_spanish_ballesteros",
- "excludes": ["middle_christian_spanish_militia_crossbowmen"],
+          "id": "al_andalus_and_grenada_taifa_kingdoms_ballesteros",
+ "excludes": ["al_andalus_and_grenada_taifa_kingdoms_militia_crossbowmen"],
           "maxCountAllowed": 1,
 
           "name": "Ballesteros",
@@ -785,8 +785,8 @@
           ]
         },
         {
-          "id": "middle_christian_spanish_ballesteros",
- "excludes": ["middle_christian_spanish_militia_crossbowmen"],
+          "id": "al_andalus_and_grenada_taifa_kingdoms_ballesteros",
+ "excludes": ["al_andalus_and_grenada_taifa_kingdoms_militia_crossbowmen"],
           "maxCountAllowed": 1,
           "name": "Militia Crossbowmen",
           "description": "Militia Crossbowmen have a crossbow. Inferior Shooters. Open Order. May have light armour (+2) and shield (+2). May be fiedled as skirmishers at a cost of seven points per base. There may not be more units of crossbowmen than there are units of Prones in the army.",
@@ -844,7 +844,7 @@
           ]
         },  
         {
-          "id": "middle_christian_spanish_skirmishers",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelisn and shield. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
           "category": "Infantry",
@@ -917,7 +917,7 @@
           ]
         },
         {
-          "id": "middle_christian_spanish_basque_javelinmen_skirmishers",
+          "id": "al_andalus_and_grenada_taifa_kingdoms_basque_javelinmen_skirmishers",
           "name": "Basque Javelinmen Skirmishers",
           "description": "Basque Javelinmen Skirmishers have javelins. Skirmishers. Superior Shooters. May have shield (+1) and throwing spar (+1).",
           "category": "Allies",
