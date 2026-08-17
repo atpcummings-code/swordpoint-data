@@ -150,7 +150,7 @@
               "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
               "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
             {
@@ -161,7 +161,7 @@
               "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
               "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             }
           
