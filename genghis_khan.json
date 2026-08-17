@@ -1047,9 +1047,11 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }
+           }
           ]
-        },
+        }
+      ]
+    },
  "arab_caliphate_fatimid_caliphate": {
       "armyName": "Arab Caliphate (Fatimid Caliphate) - 750 AD to 1055 AD)",
        
