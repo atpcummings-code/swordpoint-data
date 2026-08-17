@@ -975,7 +975,7 @@
         {
           "id": "dabai_irish_and_scots_skirmishers",
           "name": "Skirmishers",
-          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army..",
+          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army.",
           "category": "Skirmishers",
           "type": "other",
           "defence": 7,
@@ -1190,7 +1190,7 @@
         {
           "id": "dabai_caledonians_skirmishers",
           "name": "Skirmishers",
-          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army..",
+          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army.",
           "category": "Skirmishers",
           "type": "other",
           "defence": 7,
@@ -1459,7 +1459,7 @@
         {
           "id": "dabai_picts_skirmishers",
           "name": "Skirmishers",
-          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army..",
+          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army.",
           "category": "Skirmishers",
           "type": "other",
           "defence": 7,
@@ -1583,7 +1583,7 @@
         {
           "id": "Allies",
           "name": "Allies",
-          "description": "The army may have allies from the Dark Age Britain and AIreland (Saxons) list..",
+          "description": "The army may have allies from the Dark Age Britain and AIreland (Saxons) list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
@@ -1830,7 +1830,7 @@
         {
           "id": "dabai_british_skirmishers",
           "name": "Skirmishers",
-          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army..",
+          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army.",
           "category": "Skirmishers",
           "type": "other",
           "defence": 7,
@@ -2142,7 +2142,7 @@
         {
           "id": "dabai_saxons_skirmishers",
           "name": "Skirmishers",
-          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army..",
+          "description": "SKirmishers have javelins. Inferior Fighters May have shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallllest javelin unit in the army.",
           "category": "Skirmishers",
           "type": "other",
           "defence": 7,
@@ -5607,7 +5607,7 @@
         {
           "id": "lir_border_garrison_illyricani_sagittarii",
           "name": "Illyricani Sagittarii",
-          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri.. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
@@ -6199,7 +6199,7 @@
         {
           "id": "lir_imperial_field_army_illyricani_sagittarii",
           "name": "Illyricani Sagittarii",
-          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri.. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
@@ -6931,7 +6931,7 @@
         {
           "id": "lir_romanised_warlord_illyricani_sagittarii",
           "name": "Illyricani Sagittarii",
-          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri.. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
@@ -7657,7 +7657,7 @@
         {
           "id": "lir_romano_british_illyricani_sagittarii",
           "name": "Illyricani Sagittarii",
-          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri.. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
@@ -14674,7 +14674,7 @@
         {
           "id": "early_arab_conquest_religious_volunteers",
           "name": "Religious Volunteers",
-          "description": "Religious Volunteers have throwing spear and shield. Warband. May have large shield (+2) and be Riding Camels (_1). May be stubborn (+2). Every second Religious Volunteers unit may have light armour (+2). Unarmoured units may instead be fielded with Throwing spear and shiled. Skirmishers. (no longer Warband) at a cost of eight points per base",
+          "description": "Religious Volunteers have throwing spear and shield. Warband. May have large shield (+2) and be Riding Camels (_1). May be stubborn (+2). Every second Religious Volunteers unit may have light armour (+2). Unarmoured units may instead be fielded with Throwing spear and shield. Skirmishers. (no longer Warband) at a cost of eight points per base",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -15294,7 +15294,7 @@
         {
           "id": "umayyad_caliphate_arab_conquest_religious_volunteers",
           "name": "Religious Volunteers",
-          "description": "Religious Volunteers have throwing spear and shield. Warband. May have large shield (+2) and be Riding Camels (_1). May be stubborn (+2). Every second Religious Volunteers unit may have light armour (+2). Unarmoured units may instead be fielded with Throwing spear and shiled. Skirmishers. (no longer Warband) at a cost of eight points per base",
+          "description": "Religious Volunteers have throwing spear and shield. Warband. May have large shield (+2) and be Riding Camels (_1). May be stubborn (+2). Every second Religious Volunteers unit may have light armour (+2). Unarmoured units may instead be fielded with Throwing spear and shield. Skirmishers. (no longer Warband) at a cost of eight points per base",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -15701,7 +15701,7 @@
         {
           "id": "early_bulgar_elite_bulgar_horse_archers",
           "name": "Elite Bulgar Horse Archers",
-          "description": "Elite Bulgar Horse Archers have a bow and shield. Nomad Cavalry. There must be at least on unit of Horse Archers if ther are any Bulgar noble cavalry in the army.. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
+          "description": "Elite Bulgar Horse Archers have a bow and shield. Nomad Cavalry. There must be at least on unit of Horse Archers if ther are any Bulgar noble cavalry in the army. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
@@ -15722,7 +15722,7 @@
         {
           "id": "early_bulgar_bulgar_horse_archers",
           "name": "Bulgar Horse Archers",
-          "description": "Bulgar Horse Archers have a bow and shield. Nomad Cavalry. There must be at least on unit of Horse Archers if ther are any Bulgar noble cavalry in the army.. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
+          "description": "Bulgar Horse Archers have a bow and shield. Nomad Cavalry. There must be at least on unit of Horse Archers if ther are any Bulgar noble cavalry in the army. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
@@ -16076,7 +16076,7 @@
         {
           "id": "Later_bulgar_elite_bulgar_horse_archers",
           "name": "Elite Bulgar Horse Archers",
-          "description": "Elite Bulgar Horse Archers have a light armour, bow and shield. Nomad Cavalry. There must be at least on unit of Horse Archers if ther are any Bulgar noble cavalry in the army.. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
+          "description": "Elite Bulgar Horse Archers have a light armour, bow and shield. Nomad Cavalry. There must be at least on unit of Horse Archers if ther are any Bulgar noble cavalry in the army. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -16098,7 +16098,7 @@
         {
           "id": "Later_bulgar_bulgar_horse_archers",
           "name": "Bulgar Horse Archers",
-          "description": "Bulgar Horse Archers have a bow and shield. Nomad Cavalry. There must be at least on unit of Horse Archers if ther are any Bulgar noble cavalry in the army.. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
+          "description": "Bulgar Horse Archers have a bow and shield. Nomad Cavalry. There must be at least on unit of Horse Archers if ther are any Bulgar noble cavalry in the army. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
@@ -17893,7 +17893,7 @@
         {
           "id": "early_thematic_byzantine_tagmata_cataphracts",
           "name": "Tagmata Cataphracts",
-          "description": "Tagmata Cataphracts have heavy armour, shield and barded horse. Superior Fighters. Shock Cavalry. May have Kontos (+2) May be Drilled (+3). Count as Tagmata troops..",
+          "description": "Tagmata Cataphracts have heavy armour, shield and barded horse. Superior Fighters. Shock Cavalry. May have Kontos (+2) May be Drilled (+3). Count as Tagmata troops.",
           "category": "SpecialUnits",
           "type": "other",
           "defence": 2,
@@ -18857,7 +18857,7 @@
         {
           "id": "late_thematic_byzantine_tagmata_cataphracts",
           "name": "Tagmata Cataphracts",
-          "description": "Tagmata Cataphracts have heavy armour, shield and barded horse. Superior Fighters. Shock Cavalry. May have Kontos (+2) May be Drilled (+3). Count as Tagmata troops..",
+          "description": "Tagmata Cataphracts have heavy armour, shield and barded horse. Superior Fighters. Shock Cavalry. May have Kontos (+2) May be Drilled (+3). Count as Tagmata troops.",
           "category": "SpecialUnits",
           "type": "other",
           "defence": 2,
@@ -22217,7 +22217,7 @@
         {
           "id": "al_andalus_and_granada_al_andalus_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have a spear and shield. Inferior Fighters. May have light armour (+2) and javelins (+2)..",
+          "description": "Spearmen have a spear and shield. Inferior Fighters. May have light armour (+2) and javelins (+2).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -22578,7 +22578,7 @@
         {
           "id": "al_andalus_and_granada_taifa_kingdoms_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have a spear and shield. Inferior Fighters. May have light armour (+2) and javelins (+2)..",
+          "description": "Spearmen have a spear and shield. Inferior Fighters. May have light armour (+2) and javelins (+2).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -23038,7 +23038,7 @@
         {
           "id": "al_andalus_and_granada_nasrid_kingdom_of_granada_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have a spear and shield. Inferior Fighters. May have light armour (+2) and javelins (+2)..",
+          "description": "Spearmen have a spear and shield. Inferior Fighters. May have light armour (+2) and javelins (+2).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -25136,7 +25136,7 @@
         {
           "id": "later_irish_gallogIaich",
           "name": "GallogIaich",
-          "description": "GallogIaich have double-handed weapons and light armour. Superior Fighters. Veteran. May exchange double handed weapon for spear and shield +2 in which case they may form Shieldwall.  In later armies (after 1200AD) may have heavy armour (+2). May be Stubborn (+2)..",
+          "description": "GallogIaich have double-handed weapons and light armour. Superior Fighters. Veteran. May exchange double handed weapon for spear and shield +2 in which case they may form Shieldwall.  In later armies (after 1200AD) may have heavy armour (+2). May be Stubborn (+2).",
           "category": "Mercenaries",
           "type": "other",
           "defence": 6,
@@ -26613,7 +26613,7 @@
         {
           "id": "khitan_empire_medium_cavalry",
           "name": "Medium Cavalry",
-          "description": "Medium Cavalry have light armour, spear, bow, shield. Superior Shooters. Evade. May have heavy armour (+1)..",
+          "description": "Medium Cavalry have light armour, spear, bow, shield. Superior Shooters. Evade. May have heavy armour (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -28914,7 +28914,7 @@
         {
           "id": "seljuk_turks_elephant",
           "name": "Elephant",
-          "description": "Mahouts have light armour. The two crewmen have light armour, bow or javelins and shield.. They fight from a howdah. An additional crewman can be purchased (+4) The elephant may have barding (+4).",
+          "description": "Mahouts have light armour. The two crewmen have light armour, bow or javelins and shield. They fight from a howdah. An additional crewman can be purchased (+4) The elephant may have barding (+4).",
           "category": "Elephants",
           "type": "other",
           "minBases": 1,
@@ -30474,7 +30474,7 @@
         {
           "id": "early_turcoman_elite_horse_archers",
           "name": "Elite Horse Archers",
-          "description": "Elite Horse Archers have a bow and shield. Superior Shooters. Evade. May have light armour. (+1). May be fielded as skirmishers if wearing no armour/light armour, Superio Shooters. Nomad Cavalry at 23/24 points per base..",
+          "description": "Elite Horse Archers have a bow and shield. Superior Shooters. Evade. May have light armour. (+1). May be fielded as skirmishers if wearing no armour/light armour, Superio Shooters. Nomad Cavalry at 23/24 points per base.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
@@ -30877,7 +30877,7 @@
         {
           "id": "later_turcoman_elite_horse_archers",
           "name": "Elite Horse Archers",
-          "description": "Elite Horse Archers have a bow and shield. Superior Shooters. Evade. May have light armour. (+1). May be fielded as skirmishers if wearing no armour/light armour, Superio Shooters. Nomad Cavalry at 23/24 points per base..",
+          "description": "Elite Horse Archers have a bow and shield. Superior Shooters. Evade. May have light armour. (+1). May be fielded as skirmishers if wearing no armour/light armour, Superio Shooters. Nomad Cavalry at 23/24 points per base.",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
@@ -31940,7 +31940,7 @@
         {
           "id": "late_capetain_france_militia",
           "name": "Militia",
-          "description": "Militia have spear and shield. Inferior Fighters. Open Order. They may exchange spear and shield for bow (free), halberd (free), double-handed weapon (free) or crossbow (+2).. If equiped with bows Militia can be fielded as Skirmishers at a cost of four points per base",
+          "description": "Militia have spear and shield. Inferior Fighters. Open Order. They may exchange spear and shield for bow (free), halberd (free), double-handed weapon (free) or crossbow (+2). If equiped with bows Militia can be fielded as Skirmishers at a cost of four points per base",
           "category": "Commoners",
           "type": "other",
           "defence": 6,
