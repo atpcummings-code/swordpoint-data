@@ -22047,7 +22047,7 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "early_christian_spanish_"
+            "early_christian_spanish"
           ],
           "maxAlliedArmiesAllowed": 2
         }
