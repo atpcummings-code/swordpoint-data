@@ -32,6 +32,13 @@
           "min": 0,
           "max": 75
         },
+         {
+          "id": "SpecialUnits",
+          "name": "Special Units",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
         {
           "id": "Allies",
           "name": "Allies and Mercenaries",
@@ -40,15 +47,16 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "early_christian_spanish_"
+            "tibetan", "cuman_or_kipchak"
           ],
           "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
                 {
-          "id": "al_andalus_and_granada_al_andalus_caliph_vizier_general",
-          "name": "Caliph Vizier General",
+          "id": "arab_caliphate_abbasid_caliphate_caliph",
+          "name": "Caliph",
+          
           "maxCountAllowed": 1,
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -62,7 +70,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "al_andalus_and_granada_al_andalus_amir",
+          "id": "arab_caliphate_abbasid_caliphate_amir",
           "name": "Amir",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -76,7 +84,7 @@
           "optionalEquipment": []
         },
           {
-          "id": "al_andalus_and_granada_al_andalus_christian_captain",
+          "id": "arab_caliphate_abbasid_caliphate_christian_captain",
           "name": "Christian Captain",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -90,7 +98,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "al_andalus_and_granada_al_andalus_jinetes",
+          "id": "arab_caliphate_abbasid_caliphate_jinetes",
           "name": "Jinetes",
           "description": "Jinetes have javelins. Evade. May have spear (+1) and shield (+1). Up to half of jinete units may have bow in place of javelins (+2), in which case they may not take spears. Jinetes may be fielded as skirmishers at a cost of 16 points points per base.",
           "category": "Cavalry",
@@ -162,7 +170,7 @@
               
             },
         {
-          "id": "al_andalus_and_granada_al_andalus_noble_cavalry",
+          "id": "arab_caliphate_abbasid_caliphate_noble_cavalry",
           "name": "Noble Cavalry",
           "description": "Noble Cavalry have light armour, javelins and shield. Superior Fighters. Superior Shooters. Evade. May have spear (+1). May be fielded as skirmishers at a cost of 24 points per base.",
           "category": "Cavalry",
@@ -208,7 +216,7 @@
             },
 
         {
-          "id": "al_andalus_and_granada_al_andalus_spearmen",
+          "id": "arab_caliphate_abbasid_caliphate_spearmen",
           "name": "Spearmen",
           "description": "Spearmen have a spear and shield. Inferior Fighters. May have light armour (+2) and javelins (+2)..",
           "category": "Infantry",
@@ -252,7 +260,7 @@
         
         
           {
-          "id": "al_andalus_and_granada_al_andalus_archers",
+          "id": "arab_caliphate_abbasid_caliphate_archers",
           "name": "Arcehrs",
           "description": "Archer shave a bow. Inferior Fighters. Open Order. May have light armour (+2) or shield (+2). May be fielded as skirmishers at a cost of five points per base.",
           "category": "Infantry",
@@ -307,7 +315,7 @@
           ]
         },          
         {
-          "id": "al_andalus_and_granada_al_andalus_skirmishers",
+          "id": "arab_caliphate_abbasid_caliphate_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
           "category": "Infantry",
