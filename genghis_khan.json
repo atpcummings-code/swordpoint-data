@@ -28,12 +28,12 @@
         {
           "id": "Allies",
           "name": "Allies and Mercenaries",
-          "description": "The army may have allies from the relevant period of teh Al-Andalus and Grenada list.",
+          "description": "The army may have allies from the relevant period of the Al-Andalus and Grenada list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "",
+            "early_christian_spanish_",
             "medieval_spain"
           ],
           "maxAlliedArmiesAllowed": 2
@@ -41,11 +41,8 @@
       ],
       "units": [
                 {
-          "id": "al_andalus_and_grenada_al_andalus_king",
-          "excludes": [
-            "al_andalus_and_grenada_al_andalus_el_cid"
-          ],
-          "name": "King",
+          "id": "al_andalus_and_grenada_al_andalus_caliph_vizier_general",
+          "name": "Caliph Vizier General",
           "maxCountAllowed": 1,
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -58,28 +55,10 @@
           "specialRules": [],
           "optionalEquipment": []
         },
-{
-        "id": "al_andalus_and_grenada_al_andalus_el_cid",
-  "excludes": [
-            "al_andalus_and_grenada_al_andalus_king"
-          ],
-          "name": "El Cid",
-          "maxCountAllowed": 1,
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+3",
-          "cohesion": 10,
-          "pointsPerBase": 50,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
         {
-          "id": "al_andalus_and_grenada_al_andalus_captain",
-          "name": "Captain",
-          "description": "Rides a horse.",
+          "id": "al_andalus_and_grenada_al_andalus_amir",
+          "name": "Amir",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
@@ -90,10 +69,24 @@
           "specialRules": [],
           "optionalEquipment": []
         },
+          {
+          "id": "al_andalus_and_grenada_al_andalus_christian_captain",
+          "name": "Christian Captain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
         {
           "id": "al_andalus_and_grenada_al_andalus_jinetes",
           "name": "Jinetes",
-          "description": "Jinetes have javelins. Evade. May have shield (+1) and spear (+1). May be fielded as skirmishers at a cost of 16 points points per base.",
+          "description": "Jinetes have javelins. Evade. May have spear (+1) and shield (+1). Up to half of jinete units may have bow in place of javelins (+2), in which case they may not take spears. Jinetes may be fielded as skirmishers at a cost of 16 points points per base.",
           "category": "Cavalry",
           "type": "other",
           "defence": 6,
@@ -142,7 +135,22 @@
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }
+            },
+            {
+              "name": "Bow",
+              "enabledEvery": 2,
+              "disables": "Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
           
           ],
               
@@ -496,7 +504,7 @@
         {
           "id": "Allies",
           "name": "Allies and Mercenaries",
-          "description": "The army may have allies from the relevant period of teh Al-Andalus and Grenada list.",
+          "description": "The army may have allies from the relevant period of the Al-Andalus and Grenada list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
@@ -1097,7 +1105,7 @@
         {
           "id": "Allies",
           "name": "Allies and Mercenaries",
-          "description": "The army may have allies from the relevant period of teh Al-Andalus and Grenada list.",
+          "description": "The army may have allies from the relevant period of the Al-Andalus and Grenada list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
