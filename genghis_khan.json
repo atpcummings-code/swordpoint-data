@@ -621,7 +621,7 @@
             "Bow"
           ],
           "specialRules": [
-            "Open Order"
+            "Open Order", "Inferior Fighters"
           ],
           "optionalEquipment": [
             {
@@ -659,7 +659,63 @@
               "cohesionModifier": 0
             }
           ]
-        },          
+        },
+         {
+          "id": "al_andalus_and_grenada_taifa_kingdoms_crossbowmen",
+          "name": "Crossbowmen",
+          "description": "Crossbowmen shave a crossbow. Inferior Fighters. Open Order. May have light armour (+2) or shield (+2). May be fielded as skirmishers at a cost of six points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 6,
+          "maxCountAllowed": 1,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+
+          "baseEquipment": [
+            "Crossbow"
+          ],
+          "specialRules": [
+            "Open Order", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "disables": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "disables": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
         {
           "id": "al_andalus_and_grenada_taifa_kingdoms_skirmishers",
           "name": "Skirmishers",
