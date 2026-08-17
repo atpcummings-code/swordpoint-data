@@ -1869,12 +1869,11 @@
           "Incendiary Bomb"
           ],
           "specialRules": ["Skirmishers", "Inferior Fighters"],
-          "optionalEquipment": [],
-              
-            },       
-        ]
-    },
-    
+          "optionalEquipment": []
+            }
+          ]
+        }
+      ]
+    }
   }
-}
 }
