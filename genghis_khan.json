@@ -1,7 +1,7 @@
 {
   "armies": {
-    "early_christian_spanish": {
-      "armyName": "Early Christian Spanish - 711 AD to 1039 AD)",
+    "al_andalus_and_grenada_al_andalus": {
+      "armyName": "Al-Andalus and Grenada (Al-Andalus) - 755 AD to 1008 AD)",
        
       "categories": [
         {
@@ -41,9 +41,9 @@
       ],
       "units": [
                 {
-          "id": "early_christian_spanish_king",
+          "id": "al_andalus_and_grenada_al_andalus_king",
           "excludes": [
-            "early_christian_spanish_el_cid"
+            "al_andalus_and_grenada_al_andalus_el_cid"
           ],
           "name": "King",
           "maxCountAllowed": 1,
@@ -59,9 +59,9 @@
           "optionalEquipment": []
         },
 {
-        "id": "early_christian_spanish_el_cid",
+        "id": "al_andalus_and_grenada_al_andalus_el_cid",
   "excludes": [
-            "early_christian_spanish_king"
+            "al_andalus_and_grenada_al_andalus_king"
           ],
           "name": "El Cid",
           "maxCountAllowed": 1,
@@ -77,7 +77,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_christian_spanish_captain",
+          "id": "al_andalus_and_grenada_al_andalus_captain",
           "name": "Captain",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -91,7 +91,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_christian_spanish_jinetes",
+          "id": "al_andalus_and_grenada_al_andalus_jinetes",
           "name": "Jinetes",
           "description": "Jinetes have javelins. Evade. May have shield (+1) and spear (+1). May be fielded as skirmishers at a cost of 16 points points per base.",
           "category": "Cavalry",
@@ -148,7 +148,7 @@
               
             },
         {
-          "id": "early_christian_spanish_cabelleros",
+          "id": "al_andalus_and_grenada_al_andalus_cabelleros",
           "name": "Cabelleros",
           "description": "Cabelleros have light armour, javelins and shield. Superior FIghters. Superior Shooters. Evade. May have spear (+1).",
           "category": "Cavalry",
@@ -181,7 +181,7 @@
               
             },
 {
-          "id": "early_christian_spanish_cabelleros_villanos",
+          "id": "al_andalus_and_grenada_al_andalus_cabelleros_villanos",
           "name": "Cabelleros Villanos",
           "description": "Cabelleros Villanos have a spear and shield. May have light amrour (+1).",
     "category": "Cavalry",
@@ -213,7 +213,7 @@
           ],     
             },
         {
-          "id": "early_christian_spanish_guards",
+          "id": "al_andalus_and_grenada_al_andalus_guards",
           "name": "Guards",
           "description": "Guards have a spear, javelins and shield. Superior Fighters. Superior Shooters. May have ligHt armour (+2) and Stubboorn (+2).",
           "category": "Infantry",
@@ -261,7 +261,7 @@
         
         
           {
-          "id": "early_christian_spanish_prones",
+          "id": "al_andalus_and_grenada_al_andalus_prones",
           "name": "Prones",
           "description": "Prones spear, javelins and shield. May be declared as Open Order (-4) in which case may exchange spear for throwing spear (+2). If Close ORder may use combine dFormation by including50% Close Order Arqueros (14 points per base) an the rear rows.",
           "category": "Infantry",
@@ -305,7 +305,7 @@
           ]
         },
         {
-          "id": "early_christian_spanish_arqueros",
+          "id": "al_andalus_and_grenada_al_andalus_arqueros",
           "name": "Arqueros",
           "description": "Arqueros have a bow. Open Order. May have shield (+1). May be fielded as skirmishers at a cost of seven points per base.",
           "category": "Infantry",
@@ -349,7 +349,7 @@
         },
             
         {
-          "id": "early_christian_spanish_skirmishers",
+          "id": "al_andalus_and_grenada_al_andalus_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelisn and shield. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
           "category": "Infantry",
@@ -422,7 +422,7 @@
           ]
         },
         {
-          "id": "early_christian_spanish_basque_javelinmen_skirmishers",
+          "id": "al_andalus_and_grenada_al_andalus_basque_javelinmen_skirmishers",
           "name": "Basque Javelinmen Skirmishers",
           "description": "Basque Javelinmen Skirmishers have javelins. Skirmishers. Superior Shooters. May have shield (+1) and throwing spar (+1).",
           "category": "Allies",
