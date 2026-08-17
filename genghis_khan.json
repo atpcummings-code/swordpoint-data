@@ -760,7 +760,6 @@
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": [
-            "Javelins"
           ],
           "specialRules": [
             "Skirmishers","Inferior Fighers"
