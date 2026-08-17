@@ -1860,7 +1860,7 @@
           "defence": 6,
           "cohesion": 6,
           "pointsPerBase": 7,
-"maxAlliedArmiesAllowed": 1
+"maxAlliedArmiesAllowed": 1,
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": [
