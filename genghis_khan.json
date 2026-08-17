@@ -664,7 +664,7 @@
           "optionalEquipment": [
             {
               "name": "Heavy Armour",
-              "pointsModifier": 2,
+              "pointsModifier": 1,
               "equipmentAdded": ["Heavy Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
