@@ -375,7 +375,7 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
-              "equipmentAdded": [Light Armour],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -445,7 +445,7 @@
               "pointsModifier": -5,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Skirmsihers"],
+              "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -453,7 +453,7 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
-              "equipmentAdded": [Light Armour],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -463,25 +463,202 @@
           ],
         },
             
-        
-        
+        {
+          "id": "arab_caliphate_abbasid_caliphate_heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have light armour, Spear and shield.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipEment": [
+            "Light Armour", "Spear", "Shield"
+          ],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [],
+              
+            },
+        {
+          "id": "arab_caliphate_abbasid_caliphate_tribal_cavalry",
+          "name": "Tribal Cavalry",
+          "description": "Tribal Cavalry have javelins and shield. Evade. May exchange javelins for bow or spear (free). May be fielded as skirmihsers at a cost of 16 points per base.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipEment": [
+            "Javelins", "Shield"
+          ],
+          "specialRules": ["Open Order", "Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+        {
+          "id": "arab_caliphate_abbasid_caliphate_camelry",
+          "name": "Camelry",
+          "description": "Camelry have javelins. May have a spear (+1) and shield (+1) or large shield (+2)/ May exchange javelins for bow (free). ",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipEment": [
+            "Javelins"
+          ],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "disables": "Large Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Large Shield",
+               "disables": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+        {
+          "id": "arab_caliphate_abbasid_caliphate_abbasiya",
+          "name": "Abbasiya",
+          "description": "Abbasiya have a bow and shield. Superior Shooters. Evade. May have light armmour (+1) and spear (+1). May be fiedled as skirmishers with Parthian Shot. My not be used by Fatmid or Umayyad armies.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipEment": [
+            "Bow", "Shield"
+          ],
+          "specialRules": ["Open Order", "Evade", "Superior Shooters"], 
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+                       {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers". "Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
           {
-          "id": "arab_caliphate_abbasid_caliphate_archers",
-          "name": "Arcehrs",
-          "description": "Archer shave a bow. Inferior Fighters. Open Order. May have light armour (+2) or shield (+2). May be fielded as skirmishers at a cost of five points per base.",
+          "id": "arab_caliphate_abbasid_caliphate_arab_or_berber_infantry",
+          "name": "Arab or Berber Infantry",
+          "description": "Arab or Berber Infantry have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2).",
           "category": "Infantry",
           "type": "other",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 8,
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 12,
 
           "baseEquipment": [
-            "Bow"
+            "Spear", "Shield"
           ],
           "specialRules": [
-            "Open Order"
+            "Close Order"
           ],
           "optionalEquipment": [
             {
@@ -496,34 +673,76 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Shield",
-              "disables": "Light Armour",
+              "name": "Large Shield",
               "pointsModifier": 2,
-              "equipmentAdded": ["Shield"],
-              "equipmentRemoved": [],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
             {
-              "name": "Skirmishers",
-              "pointsModifier": -3,
+              "name": "Riding Camels",
+              "pointsModifier": 1,
               "equipmentAdded": [
               ],
               "equipmentRemoved": [
               ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
-        },          
+        }, 
         {
-          "id": "arab_caliphate_abbasid_caliphate_skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have javelins. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
+          "id": "arab_caliphate_abbasid_caliphate_militia",
+          "name": "Militia",
+          "description": "Militia have spear and shield. Inferior Fighters. May have large shield (+2) and be Riding Camels (+1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+
+          "baseEquipment": [
+            "Spear", "Shield"
+          ],
+          "specialRules": [
+            "Close Order". "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+                       {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        {
+          "id": "arab_caliphate_abbasid_caliphate_militia_skirmishers",
+          "name": "Militia Skirmishers",
+          "description": "Militia Skirmishers have a shield and either sling, javelins or bow. Inferior Fighters. Skirmishers. All may be Riding Camels",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -540,12 +759,12 @@
           "optionalEquipment": [
           {
               "name": "Bow",
-            "disables": "Sling",
-              "pointsModifier": 1,
+            "disables": ["Sling", "Javelins"],
+              "pointsModifier": 0,
               "equipmentAdded": [
                 "Bow"
               ],
-              "equipmentRemoved": ["Javelins"],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -553,32 +772,184 @@
             },
             {
               "name": "Sling",
-            "disables": "Bow",
-              "pointsModifier": 1,
+            "disables": ["Bow", "Javelins"],
+              "pointsModifier": 0,
               "equipmentAdded": [
                 "Sling"
-              ],
-              "equipmentRemoved": ["Javelins"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Throwing Spear",
-               "disables": ["Bow", "Sling"],
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Throwing Spear"
               ],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }            
+            },
+            {
+              "name": "Javelins",
+            "disables": ["Bow", "Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
           ]
         },
+        {
+          "id": "arab_caliphate_abbasid_caliphate_khurasan_cavalry",
+          "name": "Khurasan Cavalry",
+          "description": "Khurasan Cavalry have light armour and bow. Superior Shooters. May have heavy armour (+1), a spear (+1) and shield (+1) and half-barding or barding (+1).",
+          "category": "SpecialUnits",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipEment": [
+            "Light Armour", "Bow"
+          ],
+          "specialRules": ["Open Order", "Superior Shooters"],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+               {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half-barding",
+              "disables": "Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half-barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,  
+            "cohesionModifier": 0
+            },
+            {
+              "name": "Barding",
+              "disables": "Half-barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+        {
+          "id": "arab_caliphate_abbasid_caliphate_turcoman",
+          "name": "Turcoman",
+          "description": "Turcoman have a bow. Superior Shooters. Skirmishers. Nomad Cavalry. May have spear (+1), javelins (+1) and shield (+1)",
+          "category": "SpecialUnits",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 21,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipEment": [
+          "Bow"
+          ],
+          "specialRules": ["Skirmishers", "Superior Shooters", "Nomad Cavalry"],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+               
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+              
+            },
+        {
+          "id": "arab_caliphate_abbasid_caliphate_naffatun",
+          "name": "Naffatun",
+          "description": "Naffatun have a shield and Incendiary 'Bombs'. Inferior Fighters. Skirmishers. Treat their bombs as javelins with no armour save. Any unit that suffers at least one casualty from one of these incediary bomb must take a cohesion test even if it did not suffer 25% casualties.",
+          "category": "SpecialUnits",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipEment": [
+          "Incendiary Bomb""
+          ],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [],
+              
+            }
           
         ]
     },
