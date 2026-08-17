@@ -33,8 +33,7 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "early_christian_spanish_",
-            "medieval_spain"
+            "early_christian_spanish_"
           ],
           "maxAlliedArmiesAllowed": 2
         }
@@ -371,7 +370,7 @@
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 5
+          "max": 6
         },
         {
           "id": "Cavalry",
