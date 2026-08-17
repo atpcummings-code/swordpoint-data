@@ -342,7 +342,7 @@
           "maxBases": 8,
           "baseEquipEment": ["Light Armour", "Spear", "Shield"],
           "specialRules": ["Open Order"],
-          "optionalEquipment": [],
+          "optionalEquipment": []
               
             },
 
