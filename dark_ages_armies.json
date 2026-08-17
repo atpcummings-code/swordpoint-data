@@ -18933,7 +18933,7 @@
         {
           "id": "Allies",
           "name": "Allies and Mercenaries",
-          "description": "The army may have allies from the relevant period of teh Al-Andalus and Grenada list.",
+          "description": "The army may have allies from the relevant period of the Al-Andalus and Grenada list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
@@ -19401,7 +19401,7 @@
         {
           "id": "Allies",
           "name": "Allies and Mercenaries",
-          "description": "The army may have allies from the relevant period of teh Al-Andalus and Grenada list.",
+          "description": "The army may have allies from the relevant period of the Al-Andalus and Grenada list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
@@ -20002,7 +20002,7 @@
         {
           "id": "Allies",
           "name": "Allies and Mercenaries",
-          "description": "The army may have allies from the relevant period of teh Al-Andalus and Grenada list.",
+          "description": "The army may have allies from the relevant period of the Al-Andalus and Grenada list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
@@ -21225,7 +21225,7 @@
         {
           "id": "pagan_rus_militia",
           "name": "Militia",
-          "description": "Militia have a spear and shield. Shieldwall. May have light armour (+2) and javelins (+2). Up to 25% of a unit may exchange spear and shield for bow (free) and forma cobined fomration with teh spearmen.",
+          "description": "Militia have a spear and shield. Shieldwall. May have light armour (+2) and javelins (+2). Up to 25% of a unit may exchange spear and shield for bow (free) and forma cobined fomration with the spearmen.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -21763,7 +21763,7 @@
         {
           "id": "christian_rus_militia",
           "name": "Militia",
-          "description": "Militia have a spear and shield. Shieldwall. May have light armour (+2) and javelins (+2). Up to 25% of a unit may exchange spear and shield for bow (free) and forma cobined fomration with teh spearmen.",
+          "description": "Militia have a spear and shield. Shieldwall. May have light armour (+2) and javelins (+2). Up to 25% of a unit may exchange spear and shield for bow (free) and forma cobined fomration with the spearmen.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -27431,7 +27431,7 @@
         {
           "id": "Allies",
           "name": "Allies",
-          "description": "The army may take allies from teh Arab Caliphate (Abbasid) list including up to two unis of Daylami.",
+          "description": "The army may take allies from the Arab Caliphate (Abbasid) list including up to two unis of Daylami.",
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
@@ -27975,7 +27975,7 @@
         {
           "id": "song_china_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have spear and shield. May use Mixed Order in which up to a quarter of teh figurs in the unit exchange spear and shield for crossbow (+2).",
+          "description": "Spearmen have spear and shield. May use Mixed Order in which up to a quarter of the figurs in the unit exchange spear and shield for crossbow (+2).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -27995,7 +27995,7 @@
         {
           "id": "song_china_levy_spearmen",
           "name": "Levy Spearmen",
-          "description": "Spearmen have spear and shield. May use Mixed Order in which up to a quarter of teh figurs in the unit exchange spear and shield for crossbow (+2).",
+          "description": "Spearmen have spear and shield. May use Mixed Order in which up to a quarter of the figurs in the unit exchange spear and shield for crossbow (+2).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -28134,7 +28134,7 @@
         {
           "id": "ghaznavid_guard_ghulams",
           "name": "Guard Ghulams",
-          "description": "Guard Ghulams have light armour, bow and shield. Superior Fighters. Superior Shooters. Veteran. They may have heavy armour (+1), Spear (+1) amd cloth barding (+1) They may be Drilled (+3) amd Stubborn (+2), and must accompany teh Army General at all times. ",
+          "description": "Guard Ghulams have light armour, bow and shield. Superior Fighters. Superior Shooters. Veteran. They may have heavy armour (+1), Spear (+1) amd cloth barding (+1) They may be Drilled (+3) amd Stubborn (+2), and must accompany the Army General at all times. ",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -28226,7 +28226,7 @@
         {
           "id": "ghaznavid_ghulams",
           "name": "Ghulams",
-          "description": "Ghulams have light armour, bow and shield. Superior Fighters. They may have heavy armour (+1), Spear (+1) amd cloth barding (+1) They may be Drilled (+3) amd Stubborn (+2), and must accompany teh Army General at all times. ",
+          "description": "Ghulams have light armour, bow and shield. Superior Fighters. They may have heavy armour (+1), Spear (+1) amd cloth barding (+1) They may be Drilled (+3) amd Stubborn (+2), and must accompany the Army General at all times. ",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -28501,7 +28501,7 @@
         {
           "id": "ghaznavid_elephant",
           "name": "Elephant",
-          "description": "Mahouts have heavy armour. The two crewmen have heavy armour and javelins. May exchange javelins for bow (free).  Both the elephant and crew are Superior Fighters. The crew ride on teh elpehants back in this period. May have barding (+4).",
+          "description": "Mahouts have heavy armour. The two crewmen have heavy armour and javelins. May exchange javelins for bow (free).  Both the elephant and crew are Superior Fighters. The crew ride on the elpehants back in this period. May have barding (+4).",
           "category": "Elephants",
           "type": "other",
           "minBases": 1,
