@@ -951,9 +951,8 @@
           "pointsPerBase": 7,
           "minBases": 2,
           "maxBases": 6,
-          "maxAlliedArmiesAllowed": 1
-          "baseEquipment": [
-          "Incendiary Bomb"
+          "maxAlliedArmiesAllowed": 1,
+          "baseEquipment": ["Incendiary Bomb"
           ],
           "specialRules": ["Skirmishers", "Inferior Fighters"],
           "optionalEquipment": [],
