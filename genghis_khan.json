@@ -33,8 +33,8 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "al_andalus_and_grenada_al_andalus",
-            "al_andalus_and_grenada_taifa_kingdom"
+            "",
+            "medieval_spain"
           ],
           "maxAlliedArmiesAllowed": 2
         }
