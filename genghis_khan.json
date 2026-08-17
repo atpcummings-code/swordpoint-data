@@ -361,9 +361,7 @@
           
         ]
     },
-{
-  "armies": {
-    "al_andalus_and_grenada_taifa_kingdoms": {
+"al_andalus_and_grenada_taifa_kingdoms": {
       "armyName": "Al-Andalus and Grenada (Taifa Kingdoms) - 1009 AD to 1110 AD)",
        
       "categories": [
@@ -394,9 +392,9 @@
           "description": "The army may have allies from the relevant period of the Al-Andalus and Grenada list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25,
+          "max": 50,
           "alliedArmyKeys": [
-            "early_christian_spanish_"
+            "medieval_spain", "middle_christian_spainish"
           ],
           "maxAlliedArmiesAllowed": 2
         }
@@ -609,7 +607,7 @@
         
           {
           "id": "al_andalus_and_grenada_taifa_kingdoms_archers",
-          "name": "Arcehrs",
+          "name": "Archers",
           "description": "Archer shave a bow. Inferior Fighters. Open Order. May have light armour (+2) or shield (+2). May be fielded as skirmishers at a cost of five points per base.",
           "category": "Infantry",
           "type": "other",
