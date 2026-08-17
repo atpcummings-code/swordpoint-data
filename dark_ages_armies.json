@@ -18939,7 +18939,7 @@
           "max": 25,
           "alliedArmyKeys": [
             "al_andalus_and_grenada_al_andalus",
-            "al_andalus_and_grenada_taifa_kingdom"
+            "al_andalus_and_grenada_taifa_kingdoms"
           ],
           "maxAlliedArmiesAllowed": 2
         }
@@ -19406,7 +19406,7 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "al_andalus_and_grenada_taifa_kingdom"
+            "al_andalus_and_grenada_taifa_kingdoms"
           ],
           "maxAlliedArmiesAllowed": 2
         }
@@ -20007,7 +20007,7 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "al_andalus_and_grenada_taifa_kingdom"
+            "al_andalus_and_grenada_taifa_kingdoms"
           ],
           "maxAlliedArmiesAllowed": 2
         }
