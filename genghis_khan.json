@@ -347,7 +347,7 @@
              {
               "name": "Throwing Spear",
                "disables": ["Bow", "Sling"],
-              "pointsModifier": 2,
+              "pointsModifier": 1,
               "equipmentAdded": [
                 "Throwing Spear"
               ],
@@ -356,68 +356,10 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers Crossbow",
-              "hiddenUntilEnabled": "hidden",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Crossbow"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-            
+            }            
           ]
         },
-        {
-          "id": "al_andalus_and_grenada_al_andalus_basque_javelinmen_skirmishers",
-          "name": "Basque Javelinmen Skirmishers",
-          "description": "Basque Javelinmen Skirmishers have javelins. Skirmishers. Superior Shooters. May have shield (+1) and throwing spar (+1).",
-          "category": "Allies",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 8,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [
-            "Javelins"
-          ],
-          "specialRules": [
-            "Skirmishers","Superior Shooters"
-          ],
-          "optionalEquipment": [
-          {
-              "name": "Shield",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Shield"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Throwing Spear",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Throwing Spear"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-            
-          ]
-        },       
+          
         ]
     },
 "middle_christian_spanish": {
