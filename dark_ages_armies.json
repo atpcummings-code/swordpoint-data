@@ -19256,7 +19256,7 @@
         {
           "id": "early_christian_spanish_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelisn and shield. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -19278,7 +19278,7 @@
               "equipmentAdded": [
                 "Bow"
               ],
-              "equipmentRemoved": [],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -19291,7 +19291,7 @@
               "equipmentAdded": [
                 "Sling"
               ],
-              "equipmentRemoved": [],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -19857,7 +19857,7 @@
         {
           "id": "middle_christian_spanish_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelisn and shield. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -19879,7 +19879,7 @@
               "equipmentAdded": [
                 "Bow"
               ],
-              "equipmentRemoved": [],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -19892,7 +19892,7 @@
               "equipmentAdded": [
                 "Sling"
               ],
-              "equipmentRemoved": [],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -20514,7 +20514,7 @@
         {
           "id": "late_christian_spanish_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelisn and shield. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May exchange javelins for bow or sling (free) or have throwing spear (+1).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -20536,7 +20536,7 @@
               "equipmentAdded": [
                 "Bow"
               ],
-              "equipmentRemoved": [],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -20549,7 +20549,7 @@
               "equipmentAdded": [
                 "Sling"
               ],
-              "equipmentRemoved": [],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
