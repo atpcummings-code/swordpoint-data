@@ -953,6 +953,97 @@
           
         ]
     },
+    {
+          "id": "early_arab_conquest_religious_volunteers",
+          "name": "Religious Volunteers",
+          "description": "Religious Volunteers have throwing spear and shield. Warband. May have large shield (+2) and be Riding Camels (_1). May be stubborn (+2). Every second Religious Volunteers unit may have light armour (+2). Unarmoured units may instead be fielded with Throwing spear and shiled. Skirmishers. (no longer Warband) at a cost of eight points per base",
+          "category": "Allies",
+          "type": "other",
+          "defence": 6,
+    "maxCountAllowed": 2,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "disables": "Light Armour",
+              "pointsModifier": -10,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [
+                "Skirmishers"
+              ],
+              "rulesRemoved": [
+                "Open Order",
+                "Warband"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "disables": "Skirmishers",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Light Armour"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "enabledEvery": 2,
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Large Shield"
+              ],
+              "equipmentRemoved": [
+                "Shield"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [
+                "Riding Camels"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [
+                "Stubborn"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
 "al_andalus_and_granada_taifa_kingdoms": {
       "armyName": "Al-Andalus and Granada (Taifa Kingdoms) - 1009 AD to 1110 AD)",
        
