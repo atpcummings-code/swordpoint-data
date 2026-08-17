@@ -1365,16 +1365,6 @@
               "rulesRemoved": ["Open Order"],
               "defenceModifier": -1,
               "cohesionModifier": 0
-            },
-            {
-              "name": "Lance",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Lance"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
             }
           ],
               
