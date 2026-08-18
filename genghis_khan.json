@@ -106,7 +106,18 @@
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-          "optionalEquipment": []
+          "optionalEquipment": [
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
         },
         {
           "id": "north_african_berbers_almoravid_christian_captain",
@@ -120,7 +131,18 @@
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-          "optionalEquipment": []
+          "optionalEquipment": [
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
         },
           
         {
