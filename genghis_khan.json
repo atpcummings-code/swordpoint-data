@@ -164,7 +164,7 @@
         {
           "id": "early_japanese_Archers",
           "name": "Archers",
-          "description": "Archers have a bow". They form a Combined Formation in which the front rank as pavises (+2)",
+          "description": "Archers have a bow. They form a Combined Formation in which the front rank as pavises (+2)",
           "category": "Infantry",
           "type": "other",
           "defence": 7,
