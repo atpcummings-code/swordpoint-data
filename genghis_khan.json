@@ -34,7 +34,7 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "middle_christian_spanish", "al_andalus_and_grenada_taifa_kingdoms"
+            "late_christian_spanish", "al_andalus_and_granada_nasrid_kingdom_of_granada"
           ],
           "maxAlliedArmiesAllowed": 2
         }
