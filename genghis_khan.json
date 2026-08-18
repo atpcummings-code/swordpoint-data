@@ -1350,7 +1350,6 @@
           "description": "Ghuzz Horse have a bow. May have shield (+1) and throwing spear (+1). Superior Shooters. Nomad Cavalry. May be fielded as skirmishers with Parthian Shot.",
           "category": "Mercenaries",
           "type": "other",
-          "maxCountAllowed": 1,
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 22,
