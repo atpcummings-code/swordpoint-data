@@ -217,7 +217,7 @@
             {
               "name": "Heavy Throwing Spear",
               "disables": [
-                "Spear (mandatory Post 700AD)"
+                "Spear (mandatory Post 700AD"
               ],
               "pointsModifier": 2,
               "equipmentAdded": [
@@ -232,7 +232,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Spear (mandatory Post 700AD)",
+              "name": "Spear (mandatory Post 700AD",
               "disables": [
                 "Heavy Throwing Spear"
               ],
@@ -299,7 +299,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Spear (mandatory Post 700AD)",
+              "name": "Spear (mandatory Post 700AD",
               "disables": [
                 "Heavy Throwing Spear"
               ],
@@ -322,7 +322,7 @@
             {
               "name": "Heavy Throwing Spear",
               "disables": [
-                "Spear (mandatory Post 700AD)"
+                "Spear (mandatory Post 700AD"
               ],
               "pointsModifier": 2,
               "equipmentAdded": [
@@ -533,7 +533,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Open order",
+              "name": "Open Order",
               "pointsModifier": -4,
               "rulesAdded": [
                 "Open Order"
@@ -609,7 +609,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Open order",
+              "name": "Open Order",
               "pointsModifier": -3,
               "rulesAdded": [
                 "Open Order"
@@ -1875,7 +1875,7 @@
       ]
     },
     "dabai_saxons": {
-      "armyName": "Dark Age Britain and Ireland (Saxons) - (300 AD-800 AD)",
+      "armyName": "Dark Age Britain and Ireland (Saxons) - (300 AD-800 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -2261,7 +2261,7 @@
         {
           "id": "gavk_vandal_armies_comitatus_mounted",
           "name": "Comitatus Mounted",
-          "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May exchange spear for kontos (+1). The comitatus must be led by the Army General. ",
+          "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May exchange spear for kontos (+1). The comitatus must be led by the Army General.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -2601,7 +2601,7 @@
         {
           "id": "gavk_vandal_armies_no_allies_comitatus_mounted",
           "name": "Comitatus Mounted",
-          "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May exchange spear for kontos (+1). The comitatus must be led by the Army General. ",
+          "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May exchange spear for kontos (+1). The comitatus must be led by the Army General.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -3065,7 +3065,7 @@
         {
           "id": "gavk_visigoth_comitatus_mounted",
           "name": "Comitatus Mounted",
-          "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May have javelins (+1) or exchange spear for kontos (+1). The comitatus must be led by the Army General. ",
+          "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May have javelins (+1) or exchange spear for kontos (+1). The comitatus must be led by the Army General.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -3545,7 +3545,7 @@
         {
           "id": "gavk_ostrogoth_comitatus_mounted",
           "name": "Comitatus Mounted",
-          "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May have javelins (+1) or exchange spear for kontos (+1). May have Barding (+1). May be Shock Cavalry (+4).The comitatus must be led by the Army General. ",
+          "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May have javelins (+1) or exchange spear for kontos (+1). May have Barding (+1). May be Shock Cavalry (+4).The comitatus must be led by the Army General.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -3916,7 +3916,7 @@
                 "Skirmishers"
               ],
               "rulesRemoved": [
-                "Open order"
+                "Open Order"
               ],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -4185,7 +4185,7 @@
         {
           "id": "gavk_Lombard_comitatus_mounted",
           "name": "Comitatus Mounted",
-          "description": "Mounted Comitatus have spear, Heavy and shield. Superior Fighters. May have javelins (+1).  May be Shock Cavalry (+4).The comitatus must be led by the Army General. ",
+          "description": "Mounted Comitatus have spear, Heavy and shield. Superior Fighters. May have javelins (+1).  May be Shock Cavalry (+4).The comitatus must be led by the Army General.",
           "category": "Cavalry",
           "type": "other",
           "defence": 3,
@@ -4404,7 +4404,7 @@
                 "Skirmishers"
               ],
               "rulesRemoved": [
-                "Open order"
+                "Open Order"
               ],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -8142,7 +8142,7 @@
         {
           "id": "hindu_india_standard_army_muslim_cavalry",
           "name": "Muslim Cavalry",
-          "description": "Muslim Cavalry have light armour, spear and shield. Used to Elephants. ",
+          "description": "Muslim Cavalry have light armour, spear and shield. Used to Elephants.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -8469,7 +8469,7 @@
         {
           "id": "hindu_india_standard_army_medieval_muslim_cavalry",
           "name": "Muslim Cavalry",
-          "description": "Muslim Cavalry have light armour, spear and shield. Used to Elephants. ",
+          "description": "Muslim Cavalry have light armour, spear and shield. Used to Elephants.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -9028,7 +9028,7 @@
       ]
     },
     "hindu_india_orissa_medieval": {
-      "armyName": "Hindu India Orissa (Medieval) - 1135 AD to 1540 AD)",
+      "armyName": "Hindu India Orissa (Medieval) - 1135 AD to 1540 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -9362,7 +9362,7 @@
       ]
     },
     "hindu_india_vijayanagar_medieval": {
-      "armyName": "Hindu India Vijayanagar (Medieval) - 1336 AD to 1565 AD)",
+      "armyName": "Hindu India Vijayanagar (Medieval) - 1336 AD to 1565 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -9544,7 +9544,7 @@
         {
           "id": "hindu_india_vijayanagar_medieval_muslim_cavalry",
           "name": "Muslim Cavalry",
-          "description": "Muslim Cavalry have light armour, spear and shield. Used to Elephants. ",
+          "description": "Muslim Cavalry have light armour, spear and shield. Used to Elephants.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -9853,7 +9853,7 @@
       ]
     },
     "early_byzantine": {
-      "armyName": "Early Byzantine - 475 AD to 612 AD)",
+      "armyName": "Early Byzantine - 475 AD to 612 AD",
       "unitPoolRatio": [
         {
           "sources": [
@@ -12888,7 +12888,7 @@
       ]
     },
     "heraclian_byzantine": {
-      "armyName": "Heraclian Byzantine - 612 AD to 660 AD)",
+      "armyName": "Heraclian Byzantine - 612 AD to 660 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -13040,7 +13040,7 @@
         {
           "id": "heraclian_byzantine_cavalry",
           "name": "Cavalry",
-          "description": "Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1). ",
+          "description": "Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -14165,7 +14165,7 @@
         {
           "id": "tibetan_archers",
           "name": "Archers",
-          "description": "Archers have a bow. Open order",
+          "description": "Archers have a bow. Open Order",
           "category": "Infantry",
           "type": "other",
           "defence": 7,
@@ -14324,7 +14324,7 @@
         {
           "id": "tibetan_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have a spear and shield. Open order",
+          "description": "Spearmen have a spear and shield. Open Order",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -14901,7 +14901,7 @@
         {
           "id": "early_arab_conquest_militia_skirmishers",
           "name": "Militia Skirmishers",
-          "description": "Skirmishers have a shield and either sling, javelins or bow. Inferior Fighters. Skirmishers. ",
+          "description": "Skirmishers have a shield and either sling, javelins or bow. Inferior Fighters. Skirmishers.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -15521,7 +15521,7 @@
         {
           "id": "umayyad_caliphate_arab_conquest_militia_skirmishers",
           "name": "Militia Skirmishers",
-          "description": "Skirmishers have a shield and either sling, javelins or bow. Inferior Fighters. Skirmishers. ",
+          "description": "Skirmishers have a shield and either sling, javelins or bow. Inferior Fighters. Skirmishers.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -15842,7 +15842,7 @@
         {
           "id": "early_bulgar_slav_warriors",
           "name": "Slav Warriors",
-          "description": "Slav Warriors have throwing spear and shield. Open order. Warband. May be fielded as skirmishers at a cost of six points per base. Every second unitof warriors may replace throwing spar with bow (free). Two formed units of Slav Warriors may replace throwing spear with two-handed axe (free).",
+          "description": "Slav Warriors have throwing spear and shield. Open Order. Warband. May be fielded as skirmishers at a cost of six points per base. Every second unitof warriors may replace throwing spar with bow (free). Two formed units of Slav Warriors may replace throwing spear with two-handed axe (free).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -16218,7 +16218,7 @@
         {
           "id": "Later_bulgar_slav_warriors",
           "name": "Slav Warriors",
-          "description": "Slav Warriors have throwing spear and shield. Close order. Warband. May be fielded as skirmishers at a cost of six points per base. Every second unitof warriors may replace throwing spar with bow (free). Two formed units of Slav Warriors may replace throwing spear with two-handed axe (free). If armed with throwing spear may have light armour (+2) and large shield (+2).",
+          "description": "Slav Warriors have throwing spear and shield. Close Order. Warband. May be fielded as skirmishers at a cost of six points per base. Every second unitof warriors may replace throwing spar with bow (free). Two formed units of Slav Warriors may replace throwing spear with two-handed axe (free). If armed with throwing spear may have light armour (+2) and large shield (+2).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -17636,7 +17636,7 @@
         {
           "id": "early_thematic_byzantine_elite_themata_skirmishers",
           "name": "Elite Themata Skirmishers",
-          "description": "Elite Themata Skirmisher have slings or javelins and shield. Skirmishers. Superior Shooters. Maximum four bases. Every second unit may replace sling or javelins with bow (free). ",
+          "description": "Elite Themata Skirmisher have slings or javelins and shield. Skirmishers. Superior Shooters. Maximum four bases. Every second unit may replace sling or javelins with bow (free).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -17700,7 +17700,7 @@
         {
           "id": "early_thematic_byzantine_themata_skirmishers",
           "name": "Themata Skirmishers",
-          "description": "Themata Skirmisher have slings or javelins and shield. Skirmishers. Every second unit may replace sling or javelins with bow (free). ",
+          "description": "Themata Skirmisher have slings or javelins and shield. Skirmishers. Every second unit may replace sling or javelins with bow (free).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -17763,7 +17763,7 @@
         {
           "id": "early_thematic_byzantine_irregular_skirmishers",
           "name": "Irregular Skirmishers",
-          "description": "Irregular Skirmisher have slings or javelins and shield. Skirmishers. Every second unit may replace sling or javelins with bow (free). Inferior Fighters. Levies. ",
+          "description": "Irregular Skirmisher have slings or javelins and shield. Skirmishers. Every second unit may replace sling or javelins with bow (free). Inferior Fighters. Levies.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -18600,7 +18600,7 @@
         {
           "id": "late_thematic_byzantine_elite_themata_skirmishers",
           "name": "Elite Themata Skirmishers",
-          "description": "Elite Themata Skirmisher have slings or javelins and shield. Skirmishers. Superior Shooters. Maximum four bases. Every second unit may replace sling or javelins with bow (free). ",
+          "description": "Elite Themata Skirmisher have slings or javelins and shield. Skirmishers. Superior Shooters. Maximum four bases. Every second unit may replace sling or javelins with bow (free).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -18664,7 +18664,7 @@
         {
           "id": "late_thematic_byzantine_themata_skirmishers",
           "name": "Themata Skirmishers",
-          "description": "Themata Skirmisher have slings or javelins and shield. Skirmishers. Every second unit may replace sling or javelins with bow (free). ",
+          "description": "Themata Skirmisher have slings or javelins and shield. Skirmishers. Every second unit may replace sling or javelins with bow (free).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -18727,7 +18727,7 @@
         {
           "id": "late_thematic_byzantine_irregular_skirmishers",
           "name": "Irregular Skirmishers",
-          "description": "Irregular Skirmisher have slings or javelins and shield. Skirmishers. Every second unit may replace sling or javelins with bow (free). Inferior Fighters. Levies. ",
+          "description": "Irregular Skirmisher have slings or javelins and shield. Skirmishers. Every second unit may replace sling or javelins with bow (free). Inferior Fighters. Levies.",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -18906,7 +18906,7 @@
     },
 
 "early_christian_spanish": {
-      "armyName": "Early Christian Spanish - 711 AD to 1039 AD)",
+      "armyName": "Early Christian Spanish - 711 AD to 1039 AD",
        
       "categories": [
         {
@@ -19192,7 +19192,7 @@
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open order"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
@@ -19374,7 +19374,7 @@
         ]
     },
 "middle_christian_spanish": {
-      "armyName": "Middle Christian Spanish - 1040 AD to 1100 AD)",
+      "armyName": "Middle Christian Spanish - 1040 AD to 1100 AD",
        
       "categories": [
         {
@@ -19687,7 +19687,7 @@
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open order"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
@@ -19975,7 +19975,7 @@
         ]
     },
     "Late_christian_spanish": {
-      "armyName": "Late Christian Spanish - 1040 AD to 1100 AD)",
+      "armyName": "Late Christian Spanish - 1040 AD to 1100 AD",
        
       "categories": [
         {
@@ -20349,7 +20349,7 @@
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open order"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
@@ -22015,7 +22015,7 @@
     },
 
 "arab_caliphate_abbasid_caliphate": {
-      "armyName": "Arab Caliphate (Abbasid Caliphate) - 750 AD to 1055 AD)",
+      "armyName": "Arab Caliphate (Abbasid Caliphate) - 750 AD to 1055 AD",
        
       "categories": [
         {
@@ -22548,7 +22548,7 @@
         {
           "id": "arab_caliphate_abbasid_caliphate_camelry",
           "name": "Camelry",
-          "description": "Camelry have javelins. May have a spear (+1) and shield (+1) or large shield (+2)/ May exchange javelins for bow (free). ",
+          "description": "Camelry have javelins. May have a spear (+1) and shield (+1) or large shield (+2)/ May exchange javelins for bow (free).",
           "category": "Cavalry",
           "type": "other",
           "defence": 6,
@@ -23067,7 +23067,7 @@
       ]
     },
  "arab_caliphate_fatimid_caliphate": {
-      "armyName": "Arab Caliphate (Fatimid Caliphate) - 750 AD to 1055 AD)",
+      "armyName": "Arab Caliphate (Fatimid Caliphate) - 750 AD to 1055 AD",
         "armyValidation": [ { "ids": ["arab_caliphate_fatimid_caliphate_arab_or_berber_infantry", "arab_caliphate_fatimid_caliphate_militia", "arab_caliphate_fatimid_caliphate_militia_skirmishers"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["arab_caliphate_fatimid_caliphate_abid_or_guards"] } ],
       "categories": [
         {
@@ -23581,7 +23581,7 @@
         {
           "id": "arab_caliphate_fatimid_caliphate_camelry",
           "name": "Camelry",
-          "description": "Camelry have javelins. May have a spear (+1) and shield (+1) or large shield (+2)/ May exchange javelins for bow (free). ",
+          "description": "Camelry have javelins. May have a spear (+1) and shield (+1) or large shield (+2)/ May exchange javelins for bow (free).",
           "category": "CavalryAndInfantry",
           "type": "other",
           "defence": 6,
@@ -23701,7 +23701,7 @@
         {
           "id": "arab_caliphate_fatimid_caliphate_abid_or_guards",
           "name": "Abid' or Guards",
-          "description": "Abid' or Guards have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2) and be Stubborn (+2). You may have up to one Abid' or Guards unit per every two units. ",
+          "description": "Abid' or Guards have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2) and be Stubborn (+2). You may have up to one Abid' or Guards unit per every two units.",
           "category": "CavalryAndInfantry",
                     "maxCountAllowed": 2,
           "type": "other",
@@ -23956,7 +23956,7 @@
     },
     
 "al_andalus_and_granada_al_andalus": {
-      "armyName": "Al-Andalus and Granada (Al-Andalus) - 755 AD to 1008 AD)",
+      "armyName": "Al-Andalus and Granada (Al-Andalus) - 755 AD to 1008 AD",
        
       "categories": [
         {
@@ -24317,7 +24317,7 @@
         ]
     },
 "al_andalus_and_granada_taifa_kingdoms": {
-      "armyName": "Al-Andalus and Granada (Taifa Kingdoms) - 1009 AD to 1110 AD)",
+      "armyName": "Al-Andalus and Granada (Taifa Kingdoms) - 1009 AD to 1110 AD",
        
       "categories": [
         {
@@ -24735,7 +24735,7 @@
     },
 
 "al_andalus_and_granada_nasrid_kingdom_of_granada": {
-      "armyName": "Al-Andalus and Granada (The Nasrid Kingdom of Granada) - 1110 AD to 1492 AD)",
+      "armyName": "Al-Andalus and Granada (The Nasrid Kingdom of Granada) - 1110 AD to 1492 AD",
        
       "categories": [
         {
@@ -25604,7 +25604,7 @@
     },
 
  "early_japanese": {
-      "armyName": "Early Japanese - 794 AD to 1040 AD)",
+      "armyName": "Early Japanese - 794 AD to 1040 AD",
        
       "categories": [
         {
@@ -25798,7 +25798,7 @@
     },
 
 "middle_japanese": {
-      "armyName": "Middle Japanese - 1041 AD to 1391 AD)",
+      "armyName": "Middle Japanese - 1041 AD to 1391 AD",
        
       "categories": [
         {
@@ -26129,7 +26129,7 @@
     },
 
     "late_japanese": {
-      "armyName": "Late Japanese - 1392 AD to 1500 AD)",
+      "armyName": "Late Japanese - 1392 AD to 1500 AD",
        
       "categories": [
         {
@@ -27710,7 +27710,7 @@
         {
           "id": "Allies",
           "name": "Allied Contingents",
-          "description": "An Irish Kingdoms army may have allies from the Medieval Scots list.  An early Irish Kingdoms army (before 1200AD) without gallogiaich may have allies from the Viking list.",
+          "description": "An Irish Kingdoms army may have allies from the Medieval Scots list.  An early Irish Kingdoms army (before 1200AD without gallogiaich may have allies from the Viking list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 20,
@@ -27967,7 +27967,7 @@
         {
           "id": "later_irish_gallogIaich",
           "name": "GallogIaich",
-          "description": "GallogIaich have double-handed weapons and light armour. Superior Fighters. Veteran. May exchange double handed weapon for spear and shield +2 in which case they may form Shieldwall.  In later armies (after 1200AD) may have heavy armour (+2). May be Stubborn (+2).",
+          "description": "GallogIaich have double-handed weapons and light armour. Superior Fighters. Veteran. May exchange double handed weapon for spear and shield +2 in which case they may form Shieldwall.  In later armies (after 1200AD may have heavy armour (+2). May be Stubborn (+2).",
           "category": "Mercenaries",
           "type": "other",
           "defence": 6,
@@ -28002,7 +28002,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Heavy Armour (Post 1200 AD)",
+              "name": "Heavy Armour (Post 1200 AD",
               "pointsModifier": 2,
               "equipmentAdded": [
                 "Heavy Armour"
@@ -28016,7 +28016,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Stubborn (Post 1200 AD)",
+              "name": "Stubborn (Post 1200 AD",
               "pointsModifier": 2,
               "rulesAdded": [
                 "Stubborn"
@@ -28373,7 +28373,7 @@
       ]
     },
     "late_burmese": {
-      "armyName": "Late Burmese - (1175 to 1287 AD)",
+      "armyName": "Late Burmese - (1175 to 1287 AD",
       "armyValidation": [
         {
           "ids": [
@@ -29613,7 +29613,7 @@
     },
 
 "nab_norman": {
-      "armyName": "Norman and Breton (Norman) - 911 AD to 1189 AD)",
+      "armyName": "Norman and Breton (Norman) - 911 AD to 1189 AD",
        "armyValidation": [ { "ids": ["nab_norman_breton_knights", "nab_norman_breton_retainers", "nab_norman_breton_retainers_infantry"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["nab_norman_norman_knights", "nab_norman_norman_retainers", "nab_norman_norman_spearmen", "nab_norman_norman_archers"] } ],
 
       "categories": [
@@ -30172,7 +30172,7 @@
     },
 
 "nab_breton": {
-      "armyName": "Norman and Breton (Breton) - 911 AD to 1189 AD)",
+      "armyName": "Norman and Breton (Breton) - 911 AD to 1189 AD",
        "armyValidation": [ { "ids": ["nab_breton_norman_knights", "nab_breton_norman_retainers", "nab_breton_norman_spearmen", "nab_breton_norman_archers"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["nab_breton_breton_knights", "nab_breton_breton_retainers", "nab_breton_breton_retainers_infantry"] } ],
 
       "categories": [
@@ -30731,7 +30731,7 @@
     },
 
     "nab_italo_norman": {
-      "armyName": "Norman and Breton (Italo-Norman) - 911 AD to 1189 AD)",
+      "armyName": "Norman and Breton (Italo-Norman) - 911 AD to 1189 AD",
        
       "categories": [
         {
@@ -31735,7 +31735,7 @@
                 "Skirmishers"
               ],
               "rulesRemoved": [
-                "Open order"
+                "Open Order"
               ],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -32204,7 +32204,7 @@
         {
           "id": "ghaznavid_guard_ghulams",
           "name": "Guard Ghulams",
-          "description": "Guard Ghulams have light armour, bow and shield. Superior Fighters. Superior Shooters. Veteran. They may have heavy armour (+1), Spear (+1) amd cloth barding (+1) They may be Drilled (+3) amd Stubborn (+2), and must accompany the Army General at all times. ",
+          "description": "Guard Ghulams have light armour, bow and shield. Superior Fighters. Superior Shooters. Veteran. They may have heavy armour (+1), Spear (+1) amd cloth barding (+1) They may be Drilled (+3) amd Stubborn (+2), and must accompany the Army General at all times.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -32296,7 +32296,7 @@
         {
           "id": "ghaznavid_ghulams",
           "name": "Ghulams",
-          "description": "Ghulams have light armour, bow and shield. Superior Fighters. They may have heavy armour (+1), Spear (+1) amd cloth barding (+1) They may be Drilled (+3) amd Stubborn (+2), and must accompany the Army General at all times. ",
+          "description": "Ghulams have light armour, bow and shield. Superior Fighters. They may have heavy armour (+1), Spear (+1) amd cloth barding (+1) They may be Drilled (+3) amd Stubborn (+2), and must accompany the Army General at all times.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -34328,7 +34328,7 @@
                 "Skirmishers"
               ],
               "rulesRemoved": [
-                "Open order"
+                "Open Order"
               ],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -34881,7 +34881,7 @@
                 "Skirmishers"
               ],
               "rulesRemoved": [
-                "Open order"
+                "Open Order"
               ],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -35882,7 +35882,7 @@
     },
 
  "north_african_berbers_almoravid": {
-      "armyName": "North African Berbers (Almoravid) - 1042 AD to 1500 AD)",
+      "armyName": "North African Berbers (Almoravid) - 1042 AD to 1500 AD",
        
       "categories": [
         {
@@ -36344,7 +36344,7 @@
       ]
     },
 "north_african_berbers_almohad": {
-      "armyName": "North African Berbers (Almohad) - 1042 AD to 1500 AD)",
+      "armyName": "North African Berbers (AlmohAD - 1042 AD to 1500 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -36786,7 +36786,7 @@
       ]
     },
     "north_african_berbers_onabd": {
-      "armyName": "North African Berbers (Other North African Berber Dynasties) - 1042 AD to 1500 AD)",
+      "armyName": "North African Berbers (Other North African Berber Dynasties) - 1042 AD to 1500 AD",
        
       "categories": [
         {
@@ -37284,7 +37284,7 @@
     },
     
 "later_byzantine_macedonian_dynasty": {
-      "armyName": "Later Byzantine Macedonian Dynasty - 1041 AD to 1081 AD)",
+      "armyName": "Later Byzantine Macedonian Dynasty - 1041 AD to 1081 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -37412,7 +37412,7 @@
         {
           "id": "later_byzantine_macedonian_dynasty_regular_cavalry",
           "name": "Regular Cavalry",
-          "description": "Regular Cavalry have light armour, spear and shield. They may have heavy armour (+1). ",
+          "description": "Regular Cavalry have light armour, spear and shield. They may have heavy armour (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -37934,7 +37934,7 @@
         {
           "id": "later_byzantine_macedonian_dynasty_latin_mercenary_infantry",
           "name": "Latin Mercenary Infantry",
-          "description": "Latin Mercenary Infantry have a spear and shield. May have light armour (+2).  Up to two units may instead exchange spear and shield for bow (free) or crossbow (+2) and then become Open order.",
+          "description": "Latin Mercenary Infantry have a spear and shield. May have light armour (+2).  Up to two units may instead exchange spear and shield for bow (free) or crossbow (+2) and then become Open Order.",
           "category": "SpecialUnits",
           "type": "other",
           "defence": 6,
@@ -37993,7 +37993,7 @@
           "id": "later_byzantine_macedonian_dynasty_emperors_guard_cavalry",
           "name": "Emperors Guard Cavalry",
           "requires": { "unitId": "later_byzantine_macedonian_dynasty_emperor", "count": 1, "name": "Emperor" },
-          "description": "Emperors Guard Cavalry have heavy armour and shield. Superior Fighters. May have half barding or barding (+1). ",
+          "description": "Emperors Guard Cavalry have heavy armour and shield. Superior Fighters. May have half barding or barding (+1).",
           "category": "SpecialUnits",
           "type": "other",
           "defence": 3,
@@ -38043,7 +38043,7 @@
       ]
     },
      "later_byzantine_comnenian_dynasty": {
-      "armyName": "Later Byzantine Comnenian Dynasty - 1081AD to 1185 AD)",
+      "armyName": "Later Byzantine Comnenian Dynasty - 1081AD to 1185 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -38175,7 +38175,7 @@
         {
           "id": "later_byzantine_comnenian_dynasty_regular_cavalry",
           "name": "Regular Cavalry",
-          "description": "Regular Cavalry have light armour, spear and shield. They may have heavy armour (+1). ",
+          "description": "Regular Cavalry have light armour, spear and shield. They may have heavy armour (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -38697,7 +38697,7 @@
         {
           "id": "later_byzantine_comnenian_dynasty_latin_mercenary_infantry",
           "name": "Latin Mercenary Infantry",
-          "description": "Latin Mercenary Infantry have a spear and shield. May have light armour (+2).  Up to two units may instead exchange spear and shield for bow (free) or crossbow (+2) and then become Open order.",
+          "description": "Latin Mercenary Infantry have a spear and shield. May have light armour (+2).  Up to two units may instead exchange spear and shield for bow (free) or crossbow (+2) and then become Open Order.",
           "category": "SpecialUnits",
           "type": "other",
           "defence": 6,
@@ -38756,7 +38756,7 @@
           "id": "later_byzantine_comnenian_dynasty_emperors_guard_cavalry",
           "name": "Emperors Guard Cavalry",
           "requires": { "unitId": "later_byzantine_comnenian_dynasty_emperor", "count": 1, "name": "Emperor" },
-          "description": "Emperors Guard Cavalry have heavy armour, Spear and shield. Superior Fighters. ",
+          "description": "Emperors Guard Cavalry have heavy armour, Spear and shield. Superior Fighters.",
           "category": "SpecialUnits",
           "type": "other",
           "defence": 3,
@@ -38778,7 +38778,7 @@
     },
 
 "early_italian_city_states": {
-      "armyName": "Early Italian City States - 1050 AD to 1320 AD)",
+      "armyName": "Early Italian City States - 1050 AD to 1320 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -39057,7 +39057,7 @@
         {
           "id": "early_italian_city_states_militia",
           "name": "Militia",
-          "description": "Militia have spear and large shield. Inferior Fighters. ",
+          "description": "Militia have spear and large shield. Inferior Fighters.",
           "category": "Infantry",
           "type": "other",
           "defence": 5,
