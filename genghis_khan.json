@@ -1737,7 +1737,7 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-            
+            {
               "name": "Stubborn",
               "pointsModifier": 2,
               "equipmentAdded": [
