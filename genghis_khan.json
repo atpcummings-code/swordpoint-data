@@ -28,7 +28,7 @@
  
         {
           "id": "Allies",
-          "name": "Allies and Mercenaries",
+          "name": "Allies",
           "description": "May take allies form the Al-Andalus and Granade (Taifa Kingdoms) and Middle Christian Spanish lists.",
           "constraintType": "percentage",
           "min": 0,
@@ -489,7 +489,7 @@
  
         {
           "id": "Allies",
-          "name": "Allies and Mercenaries",
+          "name": "Allies",
           "description": "May take allies form the Al-Andalus and Granade (Taifa Kingdoms) and Middle Christian Spanish lists.",
           "constraintType": "percentage",
           "min": 0,
@@ -939,7 +939,7 @@
  
         {
           "id": "Allies",
-          "name": "Allies and Mercenaries",
+          "name": "Allies",
           "description": "May take allies from the Medieval Spanish lists.",
           "constraintType": "percentage",
           "min": 0,
