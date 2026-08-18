@@ -781,6 +781,7 @@
             },
               {
               "name": "Pike (Yari)",
+              "disables": "Spear",  
               "pointsModifier": 2,
               "equipmentAdded": ["Pike (Yari)"],
               "equipmentRemoved": ["Spear"],
@@ -827,6 +828,7 @@
             },
             {
               "name": "Pike (Yari)",
+              "disables": "Spear", 
               "pointsModifier": 7,
               "equipmentAdded": ["Pike (Yari)"],
               "equipmentRemoved": ["Spear"],
@@ -873,6 +875,7 @@
             },
             {
               "name": "Pike (Yari)",
+              "disables": "Spear", 
               "pointsModifier": 4,
               "equipmentAdded": ["Pike (Yari)"],
               "equipmentRemoved": ["Spear"],
