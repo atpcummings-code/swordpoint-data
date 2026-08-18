@@ -1687,7 +1687,7 @@
         {
           "id": "arab_caliphate_fatimid_caliphate_abid_or_guards",
           "name": "Abid' or Guards",
-          "description": "Abid' or Guards have spear and shield. Mau have large shield (+2) and be Riding Camels (+1). May have light armour (+2) and be Stubborn (+2). You may have up to one Abid' or Guards unit per every two units. ",
+          "description": "Abid' or Guards have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2) and be Stubborn (+2). You may have up to one Abid' or Guards unit per every two units. ",
           "category": "CavalryAndInfantry",
           "requires": { "minCount": 2, "fromGroup": ["arab_caliphate_fatimid_caliphate_arab_or_berber_infantry", "rab_caliphate_fatimid_caliphate_militia", "arab_caliphate_fatimid_caliphate_militia_skirmishers"] },
           "type": "other",
