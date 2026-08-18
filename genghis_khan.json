@@ -110,8 +110,8 @@
         },
         {
           "id": "north_african_berbers_almoravid_christian_captain",
-          "name": Christian Captain",
-          "description": "ay ride a horse or camel, or be Riding Camels.",
+          "name": "Christian Captain",
+          "description": "May ride a horse or camel, or be Riding Camels.",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
@@ -897,7 +897,7 @@
         {
           "id": "arab_caliphate_fatimid_caliphate_camelry",
           "name": "Camelry",
-          "description": "Camelry have javelins. May have a spear (+1) and shield (+1) or large shield (+2)/ May exchange javelins for bow (free). ",
+          "description": "Camelry have javelins. May have a spear (+1) and shield (+1) or large shield (+2)/ May exchange javelins for bow (free).",
           "category": "CavalryAndInfantry",
           "type": "other",
           "defence": 6,
@@ -1017,7 +1017,7 @@
         {
           "id": "arab_caliphate_fatimid_caliphate_abid_or_guards",
           "name": "Abid' or Guards",
-          "description": "Abid' or Guards have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2) and be Stubborn (+2). You may have up to one Abid' or Guards unit per every two units. ",
+          "description": "Abid' or Guards have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2) and be Stubborn (+2). You may have up to one Abid' or Guards unit per every two units.",
           "category": "CavalryAndInfantry",
                     "maxCountAllowed": 2,
           "type": "other",
