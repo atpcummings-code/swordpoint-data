@@ -1,7 +1,7 @@
 {
   "armies": {
-    "arab_caliphate_abbasid_caliphate": {
-      "armyName": "Arab Caliphate (Abbasid Caliphate) - 750 AD to 1055 AD)",
+    "north_african_berbers_almoravid": {
+      "armyName": "North African Berbers (Almoravid) - 1042 AD to 1500 AD)",
        
       "categories": [
         {
@@ -10,13 +10,6 @@
           "constraintType": "count",
           "min": 0,
           "max": 6
-        },
-        {
-          "id": "Ghulams",
-          "name": "Ghulams",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 40
         },
         {
           "id": "Cavalry",
@@ -30,24 +23,18 @@
           "name": "Infantry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 75
+          "max": 50
         },
-         {
-          "id": "SpecialUnits",
-          "name": "Special Units",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 33
-        },
+ 
         {
           "id": "Allies",
           "name": "Allies and Mercenaries",
-          "description": "Tibetan or Utrighur (Use Cuman or Kipchak list.",
+          "description": "May take allies form the Al-Andalus and Granade (Taifa Kingdoms) and Middle Christian Spanish lists.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "tibetan", "cuman_or_kipchak"
+            "middle_christian_spanish", "
           ],
           "maxAlliedArmiesAllowed": 1
         }
