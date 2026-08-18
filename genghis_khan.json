@@ -193,151 +193,7 @@
         },
       ]
     },
-"north_african_berbers_almohad": {
-      "armyName": "North African Berbers (Almohad) - 1042 AD to 1500 AD)",
-      "categories": [
-        {
-          "id": "Commanders",
-          "name": "Commanders",
-          "constraintType": "count",
-          "min": 0,
-          "max": 6
-        },
-        {
-          "id": "Cavalry",
-          "name": "Cavalry",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 50
-        },
-        {
-          "id": "Infantry",
-          "name": "Infantry",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 50
-        },
- 
-        {
-          "id": "Allies",
-          "name": "Allies",
-          "description": "May take allies form the Al-Andalus and Granade (Taifa Kingdoms) and Middle Christian Spanish lists.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25,
-          "alliedArmyKeys": [
-            "middle_christian_spanish", "al_andalus_and_grenada_nasrid_kingdoms"
-          ],
-          "maxAlliedArmiesAllowed": 2
-        }
-      ],
-      "units": [
-                {
-          "id": "north_african_berbers_almohad_caliph",
-          "excludes": ["north_african_berbers_almohad_emir"],
-          "name": "Caliph",
-          "maxCountAllowed": 1,
-          "description": "May ride a horse or camel, or be Riding Camels.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+1",
-          "cohesion": 10,
-          "pointsPerBase": 50,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": [
-            {
-              "name": "Riding Camels",
-              "pointsModifier": 0,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Riding Camels"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "north_african_berbers_almohad_emir",
-          "excludes": ["north_african_berbers_almohad_caliph"],
-          "name": "Emir",
-          "maxCountAllowed": 1,
-          "description": "May ride a horse or camel, or be Riding Camels.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+3",
-          "cohesion": 9,
-          "pointsPerBase": 50,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": [
-            {
-              "name": "Riding Camels",
-              "pointsModifier": 0,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Riding Camels"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "north_african_berbers_almohad_berber_sheikh",
-          "name": "Berber Sheikh",
-          "description": "ay ride a horse or camel, or be Riding Camels.",
-          "category": "Commanders",
-          "type": "other",
-          "attacks": "+2",
-          "cohesion": "+2",
-          "pointsPerBase": 20,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": [
-            {
-              "name": "Riding Camels",
-              "pointsModifier": 0,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Riding Camels"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "north_african_berbers_almohad_christian_captain",
-          "name": "Christian Captain",
-          "description": "May ride a horse or camel, or be Riding Camels.",
-          "category": "Commanders",
-          "type": "other",
-          "attacks": "+2",
-          "cohesion": "+2",
-          "pointsPerBase": 20,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": [
-            {
-              "name": "Riding Camels",
-              "pointsModifier": 0,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Riding Camels"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        }  
-      ]
-    },
+
 "middle_japanese": {
       "armyName": "Middle Japanese - 1041 AD to 1391 AD)",
        
@@ -598,7 +454,7 @@
           "id": "middle_japanese_trained_monks",
           "name": "Trained Monks",
           "description": "Trained Monks have a spear. Superior Fighters. Open Order. May have light armour (+2). May exchange spear for halberd (+2).",
-          "category": "Infantry",
+          "category": "Allies",
           "type": "other",
           "defence": 7,
           "cohesion": 8,
@@ -634,7 +490,7 @@
           "id": "middle_japanese_other_monks",
           "name": "Other Monks",
           "description": "Other Monks have a spear. Open Order.",
-          "category": "Infantry",
+          "category": "Allies",
           "type": "other",
           "defence": 7,
           "cohesion": 6,
