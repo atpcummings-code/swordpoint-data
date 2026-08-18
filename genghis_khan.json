@@ -1736,6 +1736,18 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
+            },
+            
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
           ]
         },
