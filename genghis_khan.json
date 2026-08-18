@@ -341,7 +341,7 @@
           "pointsPerBase": 16,
           "minBases": 2,
           "maxBases": 6,
-          "baseEquipment": [Javelins"],
+          "baseEquipment": ["Javelins"],
           "specialRules": ["Skirmishers", "Inferior Fighters"],
           "optionalEquipment": [
            {
