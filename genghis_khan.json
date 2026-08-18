@@ -1689,6 +1689,7 @@
           "name": "Abid' or Guards",
           "description": "Abid' or Guards have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2) and be Stubborn (+2). You may have up to one Abid' or Guards unit per every two units. ",
           "category": "CavalryAndInfantry",
+                    "maxCountAllowed": 2,
           "type": "other",
           "defence": 6,
           "cohesion": 8,
