@@ -164,7 +164,7 @@
         {
           "id": "early_japanese_Archers",
           "name": "Archers",
-          "description": "Archers have a bow. They form a Combined Formation in which the front rank as pavises (+2)",
+          "description": "Archers have a bow. They form a Combined Formation in which the front rank has pavises (+2)",
           "category": "Infantry",
           "type": "other",
           "defence": 7,
@@ -178,7 +178,7 @@
         },
         {
           "id": "early_japanese_emishi_infantry",
-          "name": "Spearmen",
+          "name": "Emishi",
           "description": "Emishi Infantry have a bow. Inferior Fighters",
           "category": "Infantry",
           "type": "other",
@@ -190,56 +190,6 @@
           "baseEquipment": ["Bow"],
           "specialRules": ["Close Order", "Inferior Fighters"],
           "optionalEquipment": [],
-        },
-        {
-          "id": "early_japanese_archers",
-          "name": "Archers",
-          "description": "Archers have a bow. Open Order. Maybe fielded as skirmishers at a cost of six points per base. May be Riding Camels (+1). If formed may be Stubborn (+2).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 76,
-          "cohesion": 6,
-          "pointsPerBase": 9,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Bow"],
-          "specialRules": ["Open Order"],
-          "optionalEquipment": [
-           {
-              "name": "Riding Camels",
-              "pointsModifier": 1,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Riding Camels"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Stubborn",
-              "disables": "Skirmishers",
-              "pointsModifier": 2,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Stubborn"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "disables": "Stubborn",
-              "pointsModifier": -3,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-            
-            
-          ],
         },
       ]
     },
