@@ -3424,7 +3424,7 @@
         {
           "id": "gavk_visigoth_wagons",
           "name": "Wagons",
-          "description": "Wagons form a Wagon Tabor. There is one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
+          "description": "Wagons form a Wagon Tabor. There may be one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
           "category": "SpecialUnits",
           "type": "other",
           "minBases": 0,
@@ -16680,7 +16680,7 @@
         {
           "id": "magyar_wagons",
           "name": "Wagons",
-          "description": "Wagons form a Wagon Tabor. There is one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
+          "description": "Wagons form a Wagon Tabor. There may be one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
           "category": "SpecialUnits",
           "type": "other",
           "minBases": 0,
@@ -29219,7 +29219,7 @@
         {
           "id": "pecheneg_wagons",
           "name": "Wagons",
-          "description": "Wagons form a Wagon Tabor. There is one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
+          "description": "Wagons form a Wagon Tabor. There may be one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
           "category": "SpecialUnits",
           "type": "other",
           "minBases": 0,
