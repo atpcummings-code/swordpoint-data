@@ -319,7 +319,7 @@
         {
           "id": "north_african_berbers_almoravid_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have spear, javelins and shield. May have large shield (+2). May use Combined Formation by including a quarter to half archers in the rear ranks (bases comprising only archers cost twelve points per base). May be Riding Camels (+1).",
+          "description": "Spearmen have spear, javelins and shield. May have large shield (+2). May use Combined Formation by including a quarter to half archers in the rear ranks (bases comprising only archers cost twelve points per base). May be Riding Camels (+1). May be Stubborn (+2).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
@@ -349,7 +349,67 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
+          ],
+        },
+        {
+          "id": "north_african_berbers_almoravid_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Open Order. Maybe fielded as skirmishers at a cost of six points per base. May be Riding Camels (+1). If formed may be Stubborn (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 76,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+           {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "disables": "Skirmishers",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Stubborn",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+            
           ],
         },
         {
