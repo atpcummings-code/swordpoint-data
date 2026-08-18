@@ -725,7 +725,7 @@
         {
           "id": "late_japanese_retainers",
           "name": "Retainers",
-          "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2).",
+          "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2). May exchange spear for pike (+2) representing troops armed with yari - they become Close Order.",
           "category": "Infantry",
           "type": "other",
           "defence": 7,
@@ -770,13 +770,23 @@
               "cohesionModifier": 0
             },
               {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Pike (Yari)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Pike (Yari)"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ],
@@ -814,6 +824,16 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
+            },
+            {
+              "name": "Pike (Yari)",
+              "pointsModifier": 7,
+              "equipmentAdded": ["Pike (Yari)"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
           ],
         },
@@ -849,6 +869,16 @@
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Pike (Yari)",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Pike (Yari)"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ],
