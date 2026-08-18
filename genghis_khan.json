@@ -34,16 +34,16 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "middle_christian_spanish", "
+            "middle_christian_spanish", "al_andalus_and_grenada_taifa_kingdoms"
           ],
-          "maxAlliedArmiesAllowed": 1
+          "maxAlliedArmiesAllowed": 2
         }
       ],
       "units": [
                 {
-          "id": "arab_caliphate_abbasid_caliphate_caliph",
+          "id": "north_african_berbers_almoravid_caliph",
           "name": "Caliph",
-          "excludes": ["arab_caliphate_abbasid_caliphate_amir"],
+          "excludes": ["north_african_berbers_almoravid_amir"],
           "maxCountAllowed": 1,
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -57,9 +57,9 @@
           "optionalEquipment": []
         },
         {
-          "id": "arab_caliphate_abbasid_caliphate_amir",
+          "id": "north_african_berbers_almoravid_amir",
           "name": "Amir",
-          "excludes": ["arab_caliphate_abbasid_caliphate_caliph"],
+          "excludes": ["north_african_berbers_almoravid_caliph"],
           "maxCountAllowed": 1,
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -73,7 +73,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "arab_caliphate_abbasid_caliphate_sheikh",
+          "id": "north_african_berbers_almoravid_sheikh",
           "name": "Sheikh",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -88,7 +88,7 @@
         },
           
         {
-          "id": "arab_caliphate_abbasid_caliphate_turkish_senior_ghulams",
+          "id": "north_african_berbers_almoravid_turkish_senior_ghulams",
           "name": "Turkish Senior Ghulams",
           "description": "Turkish Senior Ghulams have light armour, bow and shield. Superior Fighters. Superior Shooters. May have spear (+1). heavy armour (+1) and half barding or barding (+1).  Must be lked by the army general at all times.",
           "category": "Ghulams",
@@ -156,7 +156,7 @@
               
             },
         {
-          "id": "arab_caliphate_abbasid_caliphate_turkish_ghulams",
+          "id": "north_african_berbers_almoravid_turkish_ghulams",
           "name": "Turkish Ghulams",
           "description": "Turkish Ghulams have light armour, bow and shield. Superior Shooters. May have spear (+1). heavy armour (+1) and half barding or barding (+1).",
           "category": "Ghulams",
@@ -223,7 +223,7 @@
               
             },
         {
-          "id": "arab_caliphate_abbasid_caliphate_armenian_ghulams",
+          "id": "north_african_berbers_almoravid_armenian_ghulams",
           "name": "Armenian Ghulams",
           "description": "Armenian Ghulams have light armour, spear and shield. Superior Fighters. May have heavy armour (+1).",
           "category": "Ghulams",
@@ -255,7 +255,7 @@
               
             },
         {
-          "id": "arab_caliphate_abbasid_caliphate_turkish_dismounted_ghulams",
+          "id": "north_african_berbers_almoravid_turkish_dismounted_ghulams",
           "name": "Turkish Dismounted Ghulams",
           "description": "Turkish Dismounted Ghulams have light armour, bow and shield. Superior Shooters. May be Riding Horses (+1) or Riding Camels (+1).May have spear (free0. May have heavy armour (+2)",
           "category": "Ghulams",
@@ -317,7 +317,7 @@
               
             },
         {
-          "id": "arab_caliphate_abbasid_caliphate_greek_ghulams",
+          "id": "north_african_berbers_almoravid_greek_ghulams",
           "name": "Greek Ghulams",
           "description": "Greek (Byzantine) Ghulams have light armour, spear and shield. May use combined formation where up to half the  figures in the unit exchange spear for bow (free) and form the rear ranks.",
           "category": "Ghulams",
@@ -334,7 +334,7 @@
             },
 
         {
-          "id": "arab_caliphate_abbasid_caliphate_daylami_infantry",
+          "id": "north_african_berbers_almoravid_daylami_infantry",
           "name": "Daylami Infantry",
           "description": "Daylami Infantry have a spear and shield. Shieldwall. Warband. May be designated Open Order costing 17 points per base. May have light armour (+2) and be Riding Camels (+1). May exchange spear for throwing spea (+2). May be Stubborn (+2). They may be fielded as skirmishers at a cost of ten points per base (no longer Warband).",
           "category": "Ghulams",
@@ -413,7 +413,7 @@
               
             },
         {
-          "id": "arab_caliphate_abbasid_caliphate_daylami_archers",
+          "id": "north_african_berbers_almoravid_daylami_archers",
           "name": "Daylami Archers",
           "description": "Daylami Archers have a bow and shield. Open Order. May be fielded as skirmishers at a cost of ten points per base.",
           "category": "Ghulams",
@@ -450,7 +450,7 @@
         },
             
         {
-          "id": "arab_caliphate_abbasid_caliphate_heavy_cavalry",
+          "id": "north_african_berbers_almoravid_heavy_cavalry",
           "name": "Heavy Cavalry",
           "description": "Heavy Cavalry have light armour, Spear and shield.",
           "category": "Cavalry",
@@ -468,7 +468,7 @@
               
             },
         {
-          "id": "arab_caliphate_abbasid_caliphate_tribal_cavalry",
+          "id": "north_african_berbers_almoravid_tribal_cavalry",
           "name": "Tribal Cavalry",
           "description": "Tribal Cavalry have javelins and shield. Evade. May exchange javelins for bow or spear (free). May be fielded as skirmihsers at a cost of 16 points per base.",
           "category": "Cavalry",
@@ -519,7 +519,7 @@
               
             },
         {
-          "id": "arab_caliphate_abbasid_caliphate_camelry",
+          "id": "north_african_berbers_almoravid_camelry",
           "name": "Camelry",
           "description": "Camelry have javelins. May have a spear (+1) and shield (+1) or large shield (+2)/ May exchange javelins for bow (free). ",
           "category": "Cavalry",
@@ -590,7 +590,7 @@
               
             },
         {
-          "id": "arab_caliphate_abbasid_caliphate_abbasiya",
+          "id": "north_african_berbers_almoravid_abbasiya",
           "name": "Abbasiya",
           "description": "Abbasiya have a bow and shield. Superior Shooters. Evade. May have light armmour (+1) and spear (+1). May be fiedled as skirmishers with Parthian Shot. My not be used by Fatmid or Umayyad armies.",
           "category": "Cavalry",
@@ -639,7 +639,7 @@
               
             },
           {
-          "id": "arab_caliphate_abbasid_caliphate_arab_or_berber_infantry",
+          "id": "north_african_berbers_almoravid_arab_or_berber_infantry",
           "name": "Arab or Berber Infantry",
           "description": "Arab or Berber Infantry have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2).",
           "category": "Infantry",
@@ -693,7 +693,7 @@
           ]
         }, 
         {
-          "id": "arab_caliphate_abbasid_caliphate_militia",
+          "id": "north_african_berbers_almoravid_militia",
           "name": "Militia",
           "description": "Militia have spear and shield. Inferior Fighters. May have large shield (+2) and be Riding Camels (+1).",
           "category": "Infantry",
@@ -736,7 +736,7 @@
           ]
         },
         {
-          "id": "arab_caliphate_abbasid_caliphate_militia_skirmishers",
+          "id": "north_african_berbers_almoravid_militia_skirmishers",
           "name": "Militia Skirmishers",
           "description": "Militia Skirmishers have a shield and either sling, javelins or bow. Inferior Fighters. Skirmishers. All may be Riding Camels",
           "category": "Infantry",
@@ -807,7 +807,7 @@
           ]
         },
         {
-          "id": "arab_caliphate_abbasid_caliphate_khurasan_cavalry",
+          "id": "north_african_berbers_almoravid_khurasan_cavalry",
           "name": "Khurasan Cavalry",
           "description": "Khurasan Cavalry have light armour and bow. Superior Shooters. May have heavy armour (+1), a spear (+1) and shield (+1) and half-barding or barding (+1).",
           "category": "SpecialUnits",
@@ -878,7 +878,7 @@
               
             },
         {
-          "id": "arab_caliphate_abbasid_caliphate_turcoman",
+          "id": "north_african_berbers_almoravid_turcoman",
           "name": "Turcoman",
           "description": "Turcoman have a bow. Superior Shooters. Skirmishers. Nomad Cavalry. May have spear (+1), javelins (+1) and shield (+1)",
           "category": "SpecialUnits",
@@ -928,7 +928,7 @@
               
             },
         {
-          "id": "arab_caliphate_abbasid_caliphate_naffatun",
+          "id": "north_african_berbers_almoravid_naffatun",
           "name": "Naffatun",
           "description": "Naffatun have a shield and Incendiary 'Bombs'. Inferior Fighters. Skirmishers. Treat their bombs as javelins with no armour save. Any unit that suffers at least one casualty from one of these incediary bomb must take a cohesion test even if it did not suffer 25% casualties.",
           "category": "SpecialUnits",
