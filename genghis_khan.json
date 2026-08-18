@@ -459,11 +459,450 @@
               "cohesionModifier": 0
             }
           ]
+        },
+"north_african_berbers_almohad": {
+      "armyName": "North African Berbers (Almohad) - 1042 AD to 1500 AD)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+ 
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "description": "May take allies form the Al-Andalus and Granade (Taifa Kingdoms) and Middle Christian Spanish lists.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+            "middle_christian_spanish", "al_andalus_and_grenada_nasrid_kingdoms"
+          ],
+          "maxAlliedArmiesAllowed": 2
+        }
+      ],
+      "units": [
+                {
+          "id": "north_african_berbers_almohad_caliph",
+          "excludes": ["north_african_berbers_almohad_emir"],
+          "name": "Caliph",
+          "maxCountAllowed": 1,
+          "description": "May ride a horse or camel, or be Riding Camels.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+1",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "north_african_berbers_almohad_emir",
+          "excludes": ["north_african_berbers_almohad_caliph"],
+          "name": "Emir",
+          "maxCountAllowed": 1,
+          "description": "May ride a horse or camel, or be Riding Camels.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "north_african_berbers_almohad_berber_sheikh",
+          "name": "Berber Sheikh",
+          "description": "ay ride a horse or camel, or be Riding Camels.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "north_african_berbers_almohad_christian_captain",
+          "name": "Christian Captain",
+          "description": "May ride a horse or camel, or be Riding Camels.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+          
+        {
+          "id": "north_african_berbers_almohad_berber_cavalry",
+          "name": "Berber Cavalry",
+          "description": "Berber Cavalry have javelins. Evade. May have spear (+1) and shield (+1). May be fieled as skirmishers at a cost of 16 pointsper base.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": ["Open Order", "Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+        {
+          "id": "north_african_berbers_almohad_guard_cavalry",
+          "name": "Guard Cavalry",
+          "description": "Guard Cavalry have light armour, javelins and shield. Superior FIghters. Superior Shooters. May have spear (+1) and may be Drilled (+3)",
+          "category": "Cavalry",
+          "type": "other",
+          "maxCountAllowed": 1,
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour", "Javelins", "Shield"
+          ],
+          "specialRules": ["Open Order", "Superior Fighters", "Superior Shooters"],
+          "optionalEquipment": [
+           {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Drilled",
+              "pointsModifier": 3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+        {
+          "id": "north_african_berbers_almohad_camelry",
+          "name": "Camelry",
+          "description": "Camelry have javelins. May have spear (+1) and shield (+1).",
+          "category": "Cavalry",
+          "type": "other",
+          "maxCountAllowed": 1,
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+           {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          
+          ],
+              
+            },
+          {
+          "id": "north_african_berbers_almohad_negro_black_guard",
+          "name": "Negro Black Guard",
+          "description": "Negro Black Guard have a spear, javelins and large shield. Superior Fighters. Drilled. Stubborn. May be Riding Camels (+1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 8,
+          "maxCountAllowed": 1,
+          "pointsPerBase": 31,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Javelins", "Large Shield"],
+          "specialRules": ["Close Order", "Drilled", "Stubborn"],
+          "optionalEquipment": [
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],       
+        },
+        {
+          "id": "north_african_berbers_almohad_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have spear, javelins and shield. May have large shield (+2). May use Combined Formation by including a quarter to half archers in the rear ranks (bases comprising only archers cost twelve points per base). May be Riding Camels (+1). May be Stubborn (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Javelins", "Shield"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": [
+           {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ],
+        },
+        {
+          "id": "north_african_berbers_almohad_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Open Order. Maybe fielded as skirmishers at a cost of six points per base. May be Riding Camels (+1). If formed may be Stubborn (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 76,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+           {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Stubborn",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+            
+          ],
+        },
+        {
+          "id": "north_african_berbers_almohad_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers. May exchange javelins for bow (free) or have throwing spear (+1). May be Riding Camels (+1)",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+           {
+              "name": "Bow",
+              "disables": "Throwing Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear",
+              "disables": "Bow",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
         }
             
         
       ]
     },
+
  
   }
 }
