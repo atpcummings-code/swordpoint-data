@@ -291,10 +291,11 @@
       "maxBases": 12,
       "pointsPerBase": 10,
       "baseEquipment": ["Spear", "Shield"],
-      "specialRules": ["Close Order", "Levies", "Mixed Order"]
+      "specialRules": ["Close Order", "Levies"]
     },
     {
       "name": "Levy Bowmen",
+      "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "equipment", "name": "XXX", "target": "all" }, { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] } },
       "defence": 6,
       "cohesion": 6,
       "minBases": 0,
@@ -302,7 +303,7 @@
       "maxPercentage": 50,
       "pointsPerBase": 12,
       "baseEquipment": ["Bow", "Shield"],
-      "specialRules": ["Close Order", "Levies", "Mixed Order"]
+      "specialRules": ["Close Order", "Levies"]
     }
   ],
 
