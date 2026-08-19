@@ -3596,6 +3596,7 @@
             {
               "name": "Barding",
               "pointsModifier": 1,
+              "enabledEvery": 2,
               "equipmentAdded": [
                 "Barding"
               ],
