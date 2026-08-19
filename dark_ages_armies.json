@@ -3,7 +3,7 @@
     
     "franks": {
       "armyName": "Franks - 300 to 750 AD",
-      "categoEries": [
+      "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
