@@ -241,26 +241,6 @@
           ]
         },
         {
-          "id": "tang_china_levy_spearmen",
-          "name": "Levy Spearmen",
-          "description": "Levy Spearmen have a spear and shield. Levies. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 10,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order"
-          ],
-          "optionalEquipment": []
-        },
-        {
           "id": "tang_china_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have a bow. Inferior Fighters. Skirmishers. May exchange bow for crossbow (+2).",
@@ -295,8 +275,8 @@
           ]
         },
         {
-          "id": "tang_china_levy_spearmen2",
-          "name": "Levy Spearmen2",
+          "id": "tang_china_levy_spearmen",
+          "name": "Levy Spearmen",
           "description": "Levy Spearmen have a spear and shield. Levies. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
           "category": "Infantry",
           "type": "other",
@@ -321,7 +301,7 @@
       "maxBases": 6,
       "maxPercentage": 50,
       "pointsPerBase": 12,
-      "baseEquipment": ["Bow"],
+      "baseEquipment": ["Bow", "Shield"],
       "specialRules": ["Close Order", "Levies", "Mixed Order"]
     }
   ],
@@ -340,7 +320,7 @@
               "targetProfile": "Levy Bowmen",
               "equipmentAdded": ["Crossbow"],
               "equipmentRemoved": ["Bow"],
- 	            "defenceModifier": -1
+ 	            "defenceModifier": 0
             }
           ]
         }
