@@ -332,7 +332,7 @@
               "targetProfile": ["Levy Spearmen", "Levy Bowmen"],
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": []
- 	      "defenceModifier": -1,
+ 	      "defenceModifier": -1
             },
    {
               "name": "Crossbow",
@@ -340,7 +340,7 @@
               "targetProfile": "Levy Bowmen",
               "equipmentAdded": ["Crossbow"],
               "equipmentRemoved": ["Bow"]
- 	      "defenceModifier": 0,
+ 	      "defenceModifier": 0
             }
           ]
         }
