@@ -293,7 +293,60 @@
               "cohesionModifier": 0
             }
           ]
+        },
+        {
+          "id": "tang_china_levy_spearmen2",
+          "name": "Levy Spearmen",
+          "description": "Levy Spearmen have a spear and shield. Levies. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+    {
+      "name": "Levy Spearmen",
+      "defence": 6,
+      "cohesion": 6,
+      "minBases": 0,
+      "maxBases": 10,
+      "baseEquipment": ["Spear", "Shield"],
+      "specialRules": ["Close Order", "Levies", "Mixed Order"]
+    },
+    {
+      "name": "Levy Bowmen",
+      "defence": 6,
+      "cohesion": 6,
+      "minBases": 0,
+      "maxBases": 6,
+      "maxPercentage": 50,
+      "pointsPerBase": 12,
+      "baseEquipment": ["Bow"],
+      "specialRules": ["Close Order", "Levies", "Mixed Order"]
+    }
+  ],
+
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsPerBase": 2,
+              "targetProfile": ["Levy Spearmen", "Levy Bowmen"],
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": []
+ 	      "defenceModifier": -1,
+            },
+   {
+              "name": "Crossbow",
+              "pointsPerBase": 2,
+              "targetProfile": "Levy Bowmen",
+              "equipmentAdded": ["Crossbow"],
+              "equipmentRemoved": ["Bow"]
+ 	      "defenceModifier": 0,
+            }
+          ]
         }
+
+
+
       ]
     },
     
