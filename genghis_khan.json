@@ -340,7 +340,7 @@
               "targetProfile": "Levy Bowmen",
               "equipmentAdded": ["Crossbow"],
               "equipmentRemoved": ["Bow"],
- 	            "defenceModifier": 0
+ 	            "defenceModifier": -1
             }
           ]
         }
