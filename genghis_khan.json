@@ -1,14 +1,21 @@
 {
   "armies": {
-    "franks": {
-      "armyName": "Franks - 300 to 750 AD",
-      "categoEries": [
+    "tang_china": {
+      "armyName": "Tang China - 618 to 907 AD",
+      "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 8
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
         },
         {
           "id": "Infantry",
@@ -16,13 +23,6 @@
           "constraintType": "percentage",
           "min": 33,
           "max": 100
-        },
-        {
-          "id": "Cavalry",
-          "name": "Cavalry",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25
         },
         {
           "id": "Skirmishers",
@@ -33,22 +33,21 @@
         },
         {
           "id": "Allies",
-          "name": "Special Troops or Allies",
-          "description": "The pre-700 AD army may have allies rom the Dark Age Britain and Ireland or Late Imperial Roman (Limitanei, Auxilia, Esquites and Illyrian/Sagitarii only) lists.",
+          "name": "Allies",
+          "description": "The army may take allies from the Cuman or Kipchak list or from the Tobetan list if the army does not include lancers.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 30,
+          "max": 25,
           "alliedArmyKeys": [
-            "late_imperial_roman",
-            "dark_age_britain_and_ireland"
+            "cuman_or_kipchak"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
         {
-          "id": "franks_duke_or_king",
-          "name": "Duke or King",
+          "id": "tang_china_general",
+          "name": "General",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
@@ -62,8 +61,8 @@
           "optionalEquipment": []
         },
         {
-          "id": "franks_noble",
-          "name": "Noble",
+          "id": "tang_china_commander",
+          "name": "Commander",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "other",
@@ -76,23 +75,9 @@
           "optionalEquipment": []
         },
         {
-          "id": "franks_minor_noble",
-          "name": "Minor Noble",
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "other",
-          "attacks": "+3",
-          "cohesion": "+1",
-          "pointsPerBase": 20,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
-          "id": "franks_noble_cavalry",
-          "name": "Noble Cavalry",
-          "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. Maybe fielded as skirmishers.Formed Noble and Light Cavalry may form Combined Units containing up to 75% of bases of the inferior type.",
+          "id": "tang_china_lancers",
+          "name": "Lancers",
+          "description": "lancers have heavy armour and spear. Superior Fighters. May have cataphract armour (+1) and barding (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -101,157 +86,146 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "Light Armour",
-            "Spear",
-            "Javelins",
-            "Shield"
+            "Heavy Armour",
+            "Spear"
           ],
           "specialRules": [
             "Open Order",
             "Superior Fighters"
           ],
-          "allowedSecondaryUnits": [
-            {
-              "unitId": "franks_light_cavalry",
-              "name": "Light Cavalry",
-              "pointsPerBase": 17,
-              "minRatioPercent": 0,
-              "maxRatioPercent": 75,
-              "specialRules": [
-                "Combined Units"
-              ]
-            }
-          ],
           "optionalEquipment": [
             {
-              "name": "Skirmishers",
-              "pointsModifier": 0,
+              "name": "Cataphract Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Cataphract Armour"
+              ],
+              "equipmentRemoved": [
+                "Heavy Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Barding"
+              ],
+              "equipmentRemoved": [],
               "rulesAdded": [
-                "Skirmishers"
+                "Close Order"
               ],
               "rulesRemoved": [
                 "Open Order"
               ],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             }
           ]
         },
         {
-          "id": "franks_light_cavalry",
-          "name": "Light Cavalry",
-          "description": "Light Cavalry have spear, javelins and shield. Maybe fielded as skirmishers.",
+          "id": "tang_china_cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have light armour and bow. May have heavy armour (+1) and spear (+1).",
           "category": "Cavalry",
           "type": "other",
           "defence": 5,
-          "cohesion": 6,
+          "cohesion": 7,
           "pointsPerBase": 17,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "Spear"
+            "Light Armour",
+            "Bow"
           ],
           "specialRules": [
             "Open Order"
           ],
           "optionalEquipment": [
             {
-              "name": "Skirmishers",
-              "pointsModifier": 0,
-              "rulesAdded": [
-                "Skirmishers"
-              ],
-              "rulesRemoved": [
-                "Open Order"
-              ],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "franks_elite_warriors",
-          "name": "Elite Warriors",
-          "description": "Elite Warriors have throwing spear and shield. Superior Fighters. Warband. May have light armour (+2) and javelins (+2). May exchange throwing spear for heavy throwing spear (+2).  In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 20,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Throwing Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order",
-            "Superior Fighters",
-            "Warband"
-          ],
-          "allowedSecondaryUnits": [
-            {
-              "unitId": "franks_warriors",
-              "name": "Warriors",
-              "pointsPerBase": 16,
-              "minRatioPercent": 0,
-              "maxRatioPercent": 75,
-              "specialRules": [
-                "Combined Units"
-              ]
-            }
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Javelins",
-              "pointsModifier": 2,
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
               "equipmentAdded": [
-                "Javelins"
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": [
+                "Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Spear"
               ],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
+            }
+          ]
+        },
+        {
+          "id": "tang_china_horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Archers have a bow. May exchange bow for light crossbow (free). May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
             {
-              "name": "Heavy Throwing Spear",
-              "disables": [
-                "Spear (mandatory Post 700AD"
-              ],
-              "pointsModifier": 2,
+              "name": "Light Crossbow",
+              "pointsModifier": 0,
               "equipmentAdded": [
-                "Heavy Throwing Spear"
+                "Light Crossbow"
               ],
               "equipmentRemoved": [
-                "Throwing Spear"
+                "Bow"
               ],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
-            {
-              "name": "Spear (mandatory Post 700AD",
-              "disables": [
-                "Heavy Throwing Spear"
-              ],
-              "pointsModifier": -2,
-              "equipmentAdded": [
-                "Spear"
-              ],
-              "equipmentRemoved": [
-                "Throwing Spear"
-              ],
-              "rulesAdded": [
-                "Shieldwall"
-              ],
-              "rulesRemoved": [
-                "Warband"
-              ],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
+            }
+          ]
+        },
+        {
+          "id": "tang_china_regular_spearmen",
+          "name": "Regular Spearmen",
+          "description": "Regular Spearmen have a spear and shield. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
             {
               "name": "Light Armour",
               "pointsModifier": 2,
@@ -267,157 +241,52 @@
           ]
         },
         {
-          "id": "franks_warriors",
-          "name": "Warriors",
-          "description": "Warriors having throwing spear and shield, Warband. May have javelins (+2). May exchange throwing spear for heavy throwing spear (+2). In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
+          "id": "tang_china_levy_spearmen",
+          "name": "Levy Spearmen",
+          "description": "Levy Spearmen have a spear and shield. Levies. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
           "category": "Infantry",
           "type": "other",
           "defence": 6,
           "cohesion": 6,
-          "pointsPerBase": 16,
+          "pointsPerBase": 10,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": [
-            "Throwing Spear",
+            "Spear",
             "Shield"
           ],
           "specialRules": [
-            "Close Order",
-            "Warband"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Javelins",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Javelins"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Spear (mandatory Post 700AD",
-              "disables": [
-                "Heavy Throwing Spear"
-              ],
-              "pointsModifier": -2,
-              "equipmentAdded": [
-                "Spear"
-              ],
-              "equipmentRemoved": [
-                "Throwing Spear"
-              ],
-              "rulesAdded": [
-                "Shieldwall"
-              ],
-              "rulesRemoved": [
-                "Warband"
-              ],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Heavy Throwing Spear",
-              "disables": [
-                "Spear (mandatory Post 700AD"
-              ],
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Heavy Throwing Spear"
-              ],
-              "equipmentRemoved": [
-                "Throwing Spear"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "franks_tribal_infantry",
-          "name": "Tribal Infantry",
-          "description": "Tribal Infantry having throwing spear and shield. Warband.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 5,
-          "pointsPerBase": 14,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Throwing Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Warband",
             "Close Order"
           ],
           "optionalEquipment": []
         },
         {
-          "id": "franks_skirmishers",
+          "id": "tang_china_skirmishers",
           "name": "Skirmishers",
-          "description": "All have either javelins, bow or sling.",
-          "category": "Skirmishers",
+          "description": "Skirmishers have a bow. Inferior Fighters. Skirmishers. May exchange bow for crossbow (+2).",
+          "category": "Infantry",
           "type": "other",
           "defence": 7,
           "cohesion": 5,
-          "pointsPerBase": 5,
+          "pointsPerBase": 6,
           "minBases": 2,
           "maxBases": 6,
-          "baseEquipment": [],
+          "baseEquipment": [
+            "Bow"
+          ],
           "specialRules": [
             "Skirmishers"
           ],
           "optionalEquipment": [
             {
-              "name": "Javelins",
-              "disables": [
-                "Sling",
+              "name": "Crossbow",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": [
                 "Bow"
               ],
-              "pointsModifier": 0,
-              "equipmentAdded": [
-                "Javelins"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Bow",
-              "disables": [
-                "Javelins",
-                "Sling"
-              ],
-              "pointsModifier": 0,
-              "equipmentAdded": [
-                "Bow"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Sling",
-              "disables": [
-                "Javelins",
-                "Bow"
-              ],
-              "pointsModifier": 0,
-              "equipmentAdded": [
-                "Sling"
-              ],
-              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
