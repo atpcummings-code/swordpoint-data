@@ -264,7 +264,7 @@
           "id": "tang_china_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have a bow. Inferior Fighters. Skirmishers. May exchange bow for crossbow (+2).",
-          "category": "Infantry",
+          "category": "Skirmishers",
           "type": "other",
           "defence": 7,
           "cohesion": 5,
