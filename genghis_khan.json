@@ -295,7 +295,7 @@
     },
     {
       "name": "Levy Bowmen",
-      "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "equipment", "name": "XXX", "target": "all" }, { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] } },
+      "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "equipment", "name": "XXX", "target": "all" }, { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
       "defence": 6,
       "cohesion": 6,
       "minBases": 0,
