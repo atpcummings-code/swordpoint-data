@@ -331,7 +331,7 @@
               "pointsPerBase": 2,
               "targetProfile": ["Levy Spearmen", "Levy Bowmen"],
               "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": []
+              "equipmentRemoved": [],
  	      "defenceModifier": -1
             },
    {
@@ -339,7 +339,7 @@
               "pointsPerBase": 2,
               "targetProfile": "Levy Bowmen",
               "equipmentAdded": ["Crossbow"],
-              "equipmentRemoved": ["Bow"]
+              "equipmentRemoved": ["Bow"],
  	      "defenceModifier": 0
             }
           ]
