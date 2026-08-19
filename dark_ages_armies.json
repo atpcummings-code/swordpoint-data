@@ -1,302 +1,6 @@
 {
   "armies": { 
     
-    "mayan": {
-      "armyName": "Mayan - 300 to 1530 AD",
-      "armyValidation": [
-        {
-          "unitId": "mayan_archers",
-          "compareWith": [
-            "mayan_professional_warriors",
-            "mayan_warriors"
-          ],
-          "expression": "lessThanOrEqual",
-          "ratio": 2
-        }
-      ],
-      "categories": [
-        {
-          "id": "Commanders",
-          "name": "Commanders",
-          "constraintType": "count",
-          "min": 0,
-          "max": 8
-        },
-        {
-          "id": "Infantry",
-          "name": "Infantry",
-          "constraintType": "percentage",
-          "min": 85,
-          "max": 100
-        }
-      ],
-      "units": [
-        {
-          "id": "mayan_kuhul_ajaw",
-          "name": "K'uhul Ajaw",
-          "description": "",
-          "category": "Commanders",
-          "type": "General",
-          "maxCountAllowed": 1,
-          "attacks": "+3",
-          "cohesion": 9,
-          "pointsPerBase": 0,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
-          "id": "mayan_ajaw",
-          "name": "Ajaw",
-          "description": "",
-          "category": "Commanders",
-          "type": "other",
-          "attacks": "+2",
-          "cohesion": "+2",
-          "pointsPerBase": 20,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
-          "id": "mayan_sajal",
-          "name": "Sajal",
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "other",
-          "attacks": "+3",
-          "cohesion": "+1",
-          "pointsPerBase": 20,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
-          "id": "mayan_professional_warriors",
-          "name": "Professional Warriors",
-          "description": "Professional Warriors have a shield. Superior Fighters. May have light armour (+2) and atlatl (+2). May be Veteran (+2). May have the Ambush rule (+2).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 18,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order",
-            "Superior Fighters"
-          ],
-          "maxCountAllowed": 2,
-          "optionalEquipment": [
-            {
-              "name": "Light Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Light Armour"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Open Order",
-              "pointsModifier": -4,
-              "rulesAdded": [
-                "Open Order"
-              ],
-              "rulesRemoved": [
-                "Close Order"
-              ],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Atlatl",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Atlatl"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Veteran",
-              "pointsModifier": 2,
-              "rulesAdded": [
-                "Veteran"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Ambush",
-              "pointsModifier": 2,
-              "rulesAdded": [
-                "Ambush"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "mayan_warriors",
-          "name": "Warriors",
-          "description": "Warriors have a shield. May have light armour (+2) and atlatl (+2). May have the Ambush rule (+2).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 12,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Light Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Light Armour"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Open Order",
-              "pointsModifier": -3,
-              "rulesAdded": [
-                "Open Order"
-              ],
-              "rulesRemoved": [
-                "Close Order"
-              ],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Atlatl",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Atlatl"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Ambush",
-              "pointsModifier": 2,
-              "rulesAdded": [
-                "Ambush"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "mayan_archers",
-          "name": "Archers",
-          "description": "Archers have bow and shield. Open Order. May be fielded as skirmishers at a cost of seven points per base. May have the Ambush rule (+2). There may not be more than two archer bases for every Professional Warrior or Warrior base in the army.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 11,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Bow",
-            "Shield"
-          ],
-          "specialRules": [
-            "Open Order"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Ambush",
-              "pointsModifier": 2,
-              "rulesAdded": [
-                "Ambush"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "pointsModifier": -4,
-              "rulesAdded": [
-                "Skirmishers"
-              ],
-              "rulesRemoved": [
-                "Open Order"
-              ],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "mayan_slingers",
-          "name": "Slingers",
-          "description": "Slingers have a shield. Open Order. May be fielded as skirmishers at a cost of seven points per base.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 11,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Shield"
-          ],
-          "specialRules": [
-            "Open Order"
-          ],
-          "maxCountAllowed": 1,
-          "optionalEquipment": [
-            {
-              "name": "Skirmishers",
-              "pointsModifier": -4,
-              "rulesAdded": [
-                "Skirmishers"
-              ],
-              "rulesRemoved": [
-                "Open Order"
-              ],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        }
-      ]
-    },
-
     "franks": {
       "armyName": "Franks - 300 to 750 AD",
       "categoEries": [
@@ -724,6 +428,302 @@
         }
       ]
     },
+    "mayan": {
+      "armyName": "Mayan - 300 to 1530 AD",
+      "armyValidation": [
+        {
+          "unitId": "mayan_archers",
+          "compareWith": [
+            "mayan_professional_warriors",
+            "mayan_warriors"
+          ],
+          "expression": "lessThanOrEqual",
+          "ratio": 2
+        }
+      ],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 85,
+          "max": 100
+        }
+      ],
+      "units": [
+        {
+          "id": "mayan_kuhul_ajaw",
+          "name": "K'uhul Ajaw",
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "mayan_ajaw",
+          "name": "Ajaw",
+          "description": "",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "mayan_sajal",
+          "name": "Sajal",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "mayan_professional_warriors",
+          "name": "Professional Warriors",
+          "description": "Professional Warriors have a shield. Superior Fighters. May have light armour (+2) and atlatl (+2). May be Veteran (+2). May have the Ambush rule (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Superior Fighters"
+          ],
+          "maxCountAllowed": 2,
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Light Armour"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Open Order",
+              "pointsModifier": -4,
+              "rulesAdded": [
+                "Open Order"
+              ],
+              "rulesRemoved": [
+                "Close Order"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Atlatl",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Atlatl"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "rulesAdded": [
+                "Veteran"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Ambush",
+              "pointsModifier": 2,
+              "rulesAdded": [
+                "Ambush"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "mayan_warriors",
+          "name": "Warriors",
+          "description": "Warriors have a shield. May have light armour (+2) and atlatl (+2). May have the Ambush rule (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Light Armour"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Open Order",
+              "pointsModifier": -3,
+              "rulesAdded": [
+                "Open Order"
+              ],
+              "rulesRemoved": [
+                "Close Order"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Atlatl",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Atlatl"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Ambush",
+              "pointsModifier": 2,
+              "rulesAdded": [
+                "Ambush"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "mayan_archers",
+          "name": "Archers",
+          "description": "Archers have bow and shield. Open Order. May be fielded as skirmishers at a cost of seven points per base. May have the Ambush rule (+2). There may not be more than two archer bases for every Professional Warrior or Warrior base in the army.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Ambush",
+              "pointsModifier": 2,
+              "rulesAdded": [
+                "Ambush"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "rulesAdded": [
+                "Skirmishers"
+              ],
+              "rulesRemoved": [
+                "Open Order"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "mayan_slingers",
+          "name": "Slingers",
+          "description": "Slingers have a shield. Open Order. May be fielded as skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "maxCountAllowed": 1,
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "rulesAdded": [
+                "Skirmishers"
+              ],
+              "rulesRemoved": [
+                "Open Order"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+      ]
+    },
+
     "dabai_irish_and_scots": {
       "armyName": "Dark Age Britain and Ireland (Irish and Scots) - 300 AD to 800 AD",
       "exclusiveGroups": [
