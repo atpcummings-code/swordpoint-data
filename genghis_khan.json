@@ -208,36 +208,53 @@
           ]
         },
         {
-          "id": "tang_china_skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have a bow. Inferior Fighters. Skirmishers. May exchange bow for crossbow (+2).",
-          "category": "Skirmishers",
+          "id": "tang_china_regular_spearmen",
+          "name": "Regular Spearmen",
+          "description": "Regular Spearmen have a spear and shield. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
+          "category": "Infantry",
           "type": "other",
-          "defence": 7,
-          "cohesion": 5,
-          "pointsPerBase": 6,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [
-            "Bow"
-          ],
-          "specialRules": [
-            "Skirmishers"
-          ],
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+    {
+      "name": "Regular Spearmen",
+      "defence": 6,
+      "cohesion": 7,
+      "minBases": 0,
+      "maxBases": 12,
+      "pointsPerBase": 14,
+      "baseEquipment": ["Spear", "Shield"],
+      "specialRules": ["Close Order", "Levies"]
+    },
+    {
+      "name": "Regular Bowmen",
+      "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+      "defence": 6,
+      "cohesion": 7,
+      "minBases": 0,
+      "maxBases": 6,
+      "maxPercentage": 50,
+      "pointsPerBase": 14,
+      "baseEquipment": ["Bow", "Shield"],
+      "specialRules": ["Close Order", "Levies"]
+    }
+  ],
+
           "optionalEquipment": [
             {
+              "name": "Light Armour",
+              "pointsPerBase": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+ 	            "defenceModifier": -1
+            },
+   {
               "name": "Crossbow",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Crossbow"
-              ],
-              "equipmentRemoved": [
-                "Bow"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
+              "pointsPerBase": 2,
+              "targetProfile": "Levy Bowmen",
+              "equipmentAdded": ["Crossbow"],
+              "equipmentRemoved": ["Bow"],
+ 	            "defenceModifier": 0
             }
           ]
         },
@@ -292,57 +309,41 @@
             }
           ]
         },
+        
         {
-          "id": "tang_china_regular_spearmen",
-          "name": "Regular Spearmen",
-          "description": "Regular Spearmen have a spear and shield. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
-          "category": "Infantry",
+          "id": "tang_china_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have a bow. Inferior Fighters. Skirmishers. May exchange bow for crossbow (+2).",
+          "category": "Skirmishers",
           "type": "other",
-          "minBases": 3,
-          "maxBases": 12,
-          "subProfiles": [
-    {
-      "name": "Regular Spearmen",
-      "defence": 6,
-      "cohesion": 7,
-      "minBases": 0,
-      "maxBases": 12,
-      "pointsPerBase": 14,
-      "baseEquipment": ["Spear", "Shield"],
-      "specialRules": ["Close Order", "Levies"]
-    },
-    {
-      "name": "Regular Bowmen",
-      "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
-      "defence": 6,
-      "cohesion": 7,
-      "minBases": 0,
-      "maxBases": 6,
-      "maxPercentage": 50,
-      "pointsPerBase": 14,
-      "baseEquipment": ["Bow", "Shield"],
-      "specialRules": ["Close Order", "Levies"]
-    }
-  ],
-
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
           "optionalEquipment": [
             {
-              "name": "Light Armour",
-              "pointsPerBase": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
- 	            "defenceModifier": -1
-            },
-   {
               "name": "Crossbow",
-              "pointsPerBase": 2,
-              "targetProfile": "Levy Bowmen",
-              "equipmentAdded": ["Crossbow"],
-              "equipmentRemoved": ["Bow"],
- 	            "defenceModifier": 0
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": [
+                "Bow"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
           ]
-        },
+        }
         
 
 
