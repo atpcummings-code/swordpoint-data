@@ -1,9 +1,8 @@
 {
   "armies": {
-    "early_japanese": {
-      "armyName": "Early Japanese - 794 AD to 1040 AD)",
-       
-      "categories": [
+    "franks": {
+      "armyName": "Franks - 300 to 750 AD",
+      "categoEries": [
         {
           "id": "Commanders",
           "name": "Commanders",
@@ -12,71 +11,59 @@
           "max": 8
         },
         {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 33,
+          "max": 100
+        },
+        {
           "id": "Cavalry",
           "name": "Cavalry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 75
+          "max": 25
         },
         {
-          "id": "Infantry",
-          "name": "Infantry",
+          "id": "Skirmishers",
+          "name": "Skirmishers",
           "constraintType": "percentage",
           "min": 0,
-          "max": 50
+          "max": 10
         },
- 
         {
           "id": "Allies",
-          "name": "Allies",
-          "description": "May take allies from the Korean list",
+          "name": "Special Troops or Allies",
+          "description": "The pre-700 AD army may have allies rom the Dark Age Britain and Ireland or Late Imperial Roman (Limitanei, Auxilia, Esquites and Illyrian/Sagitarii only) lists.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25,
+          "max": 30,
           "alliedArmyKeys": [
-            "korean"
+            "late_imperial_roman",
+            "dark_age_britain_and_ireland"
           ],
-          "maxAlliedArmiesAllowed": 1
+          "maxAlliedArmiesAllowed": 2
         }
       ],
       "units": [
-                {
-          "id": "early_japanese_general",
-          "excludes": ["early_japanese_warlord"],
-          "name": "General",
-          "maxCountAllowed": 1,
+        {
+          "id": "franks_duke_or_king",
+          "name": "Duke or King",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
+          "maxCountAllowed": 1,
           "attacks": "+3",
           "cohesion": 9,
           "pointsPerBase": 0,
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-          "optionalEquipment": [
-          ]
+          "optionalEquipment": []
         },
         {
-          "id": "early_japanese_warlord",
-          "excludes": ["early_japanese_general"],
-          "name": "Warlord",
-          "maxCountAllowed": 1,
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+2",
-          "cohesion": 10,
-          "pointsPerBase": 50,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": [
-            ]
-        },
-        {
-          "id": "early_japanese_lord",
-          "name": "Lord",
+          "id": "franks_noble",
+          "name": "Noble",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "other",
@@ -88,25 +75,186 @@
           "specialRules": [],
           "optionalEquipment": []
         },
- {
-          "id": "early_japanese_bushi_cavalry",
-          "name": "Bushi Cavalry",
-          "description": "Bushi have light armour and bow. Superior Fighters. Superior Shooters. May have heavy armour (+1). May be Veteran (+1). May be fielded as Skirmishers.",
+        {
+          "id": "franks_minor_noble",
+          "name": "Minor Noble",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "franks_noble_cavalry",
+          "name": "Noble Cavalry",
+          "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. Maybe fielded as skirmishers.Formed Noble and Light Cavalry may form Combined Units containing up to 75% of bases of the inferior type.",
           "category": "Cavalry",
           "type": "other",
-          "defence": 5,
+          "defence": 4,
           "cohesion": 8,
           "pointsPerBase": 23,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "Light Armour", "Bow"
+            "Light Armour",
+            "Spear",
+            "Javelins",
+            "Shield"
           ],
-          "specialRules": ["Open Order", "Superior Fighters", "Superior Shooters"],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters"
+          ],
+          "allowedSecondaryUnits": [
+            {
+              "unitId": "franks_light_cavalry",
+              "name": "Light Cavalry",
+              "pointsPerBase": 17,
+              "minRatioPercent": 0,
+              "maxRatioPercent": 75,
+              "specialRules": [
+                "Combined Units"
+              ]
+            }
+          ],
           "optionalEquipment": [
             {
-              "name": "Heavy Armour",
-              "pointsModifier": 1,
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "rulesAdded": [
+                "Skirmishers"
+              ],
+              "rulesRemoved": [
+                "Open Order"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "franks_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have spear, javelins and shield. Maybe fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "other",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "rulesAdded": [
+                "Skirmishers"
+              ],
+              "rulesRemoved": [
+                "Open Order"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "franks_elite_warriors",
+          "name": "Elite Warriors",
+          "description": "Elite Warriors have throwing spear and shield. Superior Fighters. Warband. May have light armour (+2) and javelins (+2). May exchange throwing spear for heavy throwing spear (+2).  In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Superior Fighters",
+            "Warband"
+          ],
+          "allowedSecondaryUnits": [
+            {
+              "unitId": "franks_warriors",
+              "name": "Warriors",
+              "pointsPerBase": 16,
+              "minRatioPercent": 0,
+              "maxRatioPercent": 75,
+              "specialRules": [
+                "Combined Units"
+              ]
+            }
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Throwing Spear",
+              "disables": [
+                "Spear (mandatory Post 700AD"
+              ],
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Heavy Throwing Spear"
+              ],
+              "equipmentRemoved": [
+                "Throwing Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear (mandatory Post 700AD",
+              "disables": [
+                "Heavy Throwing Spear"
+              ],
+              "pointsModifier": -2,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [
+                "Throwing Spear"
+              ],
+              "rulesAdded": [
+                "Shieldwall"
+              ],
+              "rulesRemoved": [
+                "Warband"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
               "equipmentAdded": [
                 "Light Armour"
               ],
@@ -115,777 +263,168 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-            },
+            }
+          ]
+        },
+        {
+          "id": "franks_warriors",
+          "name": "Warriors",
+          "description": "Warriors having throwing spear and shield, Warband. May have javelins (+2). May exchange throwing spear for heavy throwing spear (+2). In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Warband"
+          ],
+          "optionalEquipment": [
             {
-              "name": "Veteran",
-              "pointsModifier": 1,
+              "name": "Javelins",
+              "pointsModifier": 2,
               "equipmentAdded": [
+                "Javelins"
               ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Veteran"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
             {
-              "name": "Skirmishers",
-              "pointsModifier": 0,
-              "equipmentAdded": [],
-              "equipmentRemoved": [
+              "name": "Spear (mandatory Post 700AD",
+              "disables": [
+                "Heavy Throwing Spear"
               ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
+              "pointsModifier": -2,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [
+                "Throwing Spear"
+              ],
+              "rulesAdded": [
+                "Shieldwall"
+              ],
+              "rulesRemoved": [
+                "Warband"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Throwing Spear",
+              "disables": [
+                "Spear (mandatory Post 700AD"
+              ],
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Heavy Throwing Spear"
+              ],
+              "equipmentRemoved": [
+                "Throwing Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
-          
-          ],
-              
-            },
-        {
-          "id": "early_japanese_emishi_cavalry",
-          "name": "Emishi Cavalry",
-          "description": "Emishi have light armour and bow. Skirmishers.",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 6,
-          "pointsPerBase": 16,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [
-            "Light Armour", "Bow"
-          ],
-          "specialRules": ["Skirmishers"],
-          "optionalEquipment": [],
-              
-            },
-        {
-          "id": "early_japanese_Archers",
-          "name": "Archers",
-          "description": "Archers have a bow. They form a Combined Formation in which the front rank has pavises (+2)",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 12,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Bow"],
-          "specialRules": ["Close Order"],
-          "optionalEquipment": [],       
+          ]
         },
         {
-          "id": "early_japanese_emishi_infantry",
-          "name": "Emishi",
-          "description": "Emishi Infantry have a bow. Inferior Fighters",
+          "id": "franks_tribal_infantry",
+          "name": "Tribal Infantry",
+          "description": "Tribal Infantry having throwing spear and shield. Warband.",
           "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Warband",
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "franks_skirmishers",
+          "name": "Skirmishers",
+          "description": "All have either javelins, bow or sling.",
+          "category": "Skirmishers",
           "type": "other",
           "defence": 7,
           "cohesion": 5,
-          "pointsPerBase": 8,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Bow"],
-          "specialRules": ["Close Order", "Inferior Fighters"],
-          "optionalEquipment": [],
-        },
-      ]
-    },
-
-"middle_japanese": {
-      "armyName": "Middle Japanese - 1041 AD to 1391 AD)",
-       
-      "categories": [
-        {
-          "id": "Commanders",
-          "name": "Commanders",
-          "constraintType": "count",
-          "min": 0,
-          "max": 8
-        },
-        {
-          "id": "Cavalry",
-          "name": "Cavalry",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 50
-        },
-        {
-          "id": "Infantry",
-          "name": "Infantry",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 75
-        },
- 
-        {
-          "id": "Allies",
-          "name": "Allies",
-          "description": "May take Warrior Monks as Allies.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25
-        }
-      ],
-      "units": [
-                {
-          "id": "middle_japanese_general",
-          "excludes": ["middle_japanese_warlord"],
-          "name": "General",
-          "maxCountAllowed": 1,
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+3",
-          "cohesion": 9,
-          "pointsPerBase": 0,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": [
-          ]
-        },
-        {
-          "id": "middle_japanese_warlord",
-          "excludes": ["middle_japanese_general"],
-          "name": "Warlord",
-          "maxCountAllowed": 1,
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+2",
-          "cohesion": 10,
-          "pointsPerBase": 50,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": [
-            ]
-        },
-        {
-          "id": "middle_japanese_lord",
-          "name": "Lord",
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "other",
-          "attacks": "+2",
-          "cohesion": "+2",
-          "pointsPerBase": 20,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
- {
-          "id": "middle_japanese_bushi_cavalry",
-          "name": "Bushi Cavalry",
-          "description": "Bushi have light armour and bow. Superior Fighters. Superior Shooters. May have heavy armour (+1). May be Veteran (+1). May be fielded as Skirmishers.",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 8,
-          "pointsPerBase": 23,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": [
-            "Light Armour", "Bow"
-          ],
-          "specialRules": ["Open Order", "Superior Fighters", "Superior Shooters"],
-          "optionalEquipment": [
-            {
-              "name": "Heavy Armour",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Light Armour"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Veteran",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Veteran"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "pointsModifier": 0,
-              "equipmentAdded": [],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          
-          ],
-              
-            },
-                {
-          "id": "middle_japanese_bushi_infantry",
-          "name": "Bushi Infantry",
-          "description": "Bushi have light armour and bow. Superior Fighters. Superior Shooters. May have heavy armour (+2) and spear (free). May be Stubborn (+2) and Veteran (+2)",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 8,
-          "pointsPerBase": 28,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Bow", "Light Armour"],
-          "specialRules": ["Close Order", "Superior Fighters", "Superior Shooters"],
-          "optionalEquipment": [
-            {
-              "name": "Heavy Armour",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Spear",
-              "pointsModifier": 0,
-              "equipmentAdded": ["Spear"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Veteran",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Veteran"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Stubborn",
-              "pointsModifier": 2,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Stubborn"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]      
-        },
-        {
-          "id": "middle_japanese_retainers",
-          "name": "Retainers",
-          "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 7,
-          "pointsPerBase": 9,
-          "minBases": 3,
-          "maxBases": 12,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
           "baseEquipment": [],
-          "specialRules": ["Open Order"],
+          "specialRules": [
+            "Skirmishers"
+          ],
           "optionalEquipment": [
             {
-              "name": "Spear",
-              "disables": ["Bow", "Halberd"],
+              "name": "Javelins",
+              "disables": [
+                "Sling",
+                "Bow"
+              ],
               "pointsModifier": 0,
-              "equipmentAdded": ["Spear"],
+              "equipmentAdded": [
+                "Javelins"
+              ],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-             {
+            {
               "name": "Bow",
-              "disables": ["Spear", "Halberd"],
+              "disables": [
+                "Javelins",
+                "Sling"
+              ],
               "pointsModifier": 0,
-              "equipmentAdded": ["Bow"],
+              "equipmentAdded": [
+                "Bow"
+              ],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-              {
-              "name": "Halberd",
-              "disables": ["Spear", "Bow"],
-              "pointsModifier": 2,
-              "equipmentAdded": ["Halberd"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-              {
-              "name": "light Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ],
-        },
-        {
-          "id": "middle_japanese_trained_monks",
-          "name": "Trained Monks",
-          "description": "Trained Monks have a spear. Superior Fighters. Open Order. May have light armour (+2). May exchange spear for halberd (+2).",
-          "category": "Allies",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 8,
-          "pointsPerBase": 15,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Spear"],
-          "specialRules": ["Open Order","Superior Fighters"],
-          "optionalEquipment": [
             {
-              "name": "Halberd",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Halberd"],
-              "equipmentRemoved": ["Spear"],
+              "name": "Sling",
+              "disables": [
+                "Javelins",
+                "Bow"
+              ],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
-              {
-              "name": "light Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
             }
-          ],
-        },
-        {
-          "id": "middle_japanese_other_monks",
-          "name": "Other Monks",
-          "description": "Other Monks have a spear. Open Order.",
-          "category": "Allies",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 8,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Spear"],
-          "specialRules": ["Open Order"],
-          "optionalEquipment": [
-            {
-              "name": "Halberd",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Halberd"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-              {
-              "name": "light Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ],
-        },
-      ]
-    },
-
-    "late_japanese": {
-      "armyName": "Late Japanese - 1392 AD to 1500 AD)",
-       
-      "categories": [
-        {
-          "id": "Commanders",
-          "name": "Commanders",
-          "constraintType": "count",
-          "min": 0,
-          "max": 8
-        },
-        {
-          "id": "Cavalry",
-          "name": "Cavalry",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25
-        },
-        {
-          "id": "Infantry",
-          "name": "Infantry",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 100
-        },
- 
-        {
-          "id": "Allies",
-          "name": "Allies",
-          "description": "May take Warrior Monks as Allies.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25
-        }
-      ],
-      "units": [
-                {
-          "id": "late_japanese_general",
-          "excludes": ["late_japanese_warlord"],
-          "name": "General",
-          "maxCountAllowed": 1,
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+3",
-          "cohesion": 9,
-          "pointsPerBase": 0,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": [
           ]
-        },
-        {
-          "id": "late_japanese_warlord",
-          "excludes": ["late_japanese_general"],
-          "name": "Warlord",
-          "maxCountAllowed": 1,
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "General",
-          "attacks": "+2",
-          "cohesion": 10,
-          "pointsPerBase": 50,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": [
-            ]
-        },
-        {
-          "id": "late_japanese_lord",
-          "name": "Lord",
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "other",
-          "attacks": "+2",
-          "cohesion": "+2",
-          "pointsPerBase": 20,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
- {
-          "id": "late_japanese_bushi_cavalry",
-          "name": "Bushi Cavalry",
-          "description": "Bushi have light armour and bow. Superior Fighters. Superior Shooters. May have heavy armour (+1). May be Veteran (+1). May be fielded as Skirmishers.",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 8,
-          "pointsPerBase": 23,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": [
-            "Light Armour", "Bow"
-          ],
-          "specialRules": ["Open Order", "Superior Fighters", "Superior Shooters"],
-          "optionalEquipment": [
-            {
-              "name": "Heavy Armour",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Light Armour"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Veteran",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Veteran"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "pointsModifier": 0,
-              "equipmentAdded": [],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          
-          ],
-              
-            },
-                {
-          "id": "late_japanese_bushi_infantry",
-          "name": "Bushi Infantry",
-          "description": "Bushi have light armour and bow. Superior Fighters. Superior Shooters. May have heavy armour (+2) and spear (free). May be Stubborn (+2) and Veteran (+2)",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 8,
-          "pointsPerBase": 28,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Bow", "Light Armour"],
-          "specialRules": ["Close Order", "Superior Fighters", "Superior Shooters"],
-          "optionalEquipment": [
-            {
-              "name": "Heavy Armour",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Spear",
-              "pointsModifier": 0,
-              "equipmentAdded": ["Spear"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Veteran",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-              ],
-              "equipmentRemoved": [
-              ],
-              "rulesAdded": ["Veteran"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Stubborn",
-              "pointsModifier": 2,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Stubborn"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]      
-        },
-        {
-          "id": "late_japanese_retainers",
-          "name": "Retainers",
-          "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2). May exchange spear for pike (+2) representing troops armed with yari - they become Close Order.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 7,
-          "pointsPerBase": 9,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [],
-          "specialRules": ["Open Order"],
-          "optionalEquipment": [
-            {
-              "name": "Spear",
-              "disables": ["Bow", "Halberd"],
-              "pointsModifier": 0,
-              "equipmentAdded": ["Spear"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Bow",
-              "disables": ["Spear", "Halberd"],
-              "pointsModifier": 0,
-              "equipmentAdded": ["Bow"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-              {
-              "name": "Halberd",
-              "disables": ["Spear", "Bow"],
-              "pointsModifier": 2,
-              "equipmentAdded": ["Halberd"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-              {
-              "name": "Light Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-              {
-              "name": "Pike (Yari)",
-              "disables": "Spear",  
-              "pointsModifier": 2,
-              "equipmentAdded": ["Pike (Yari)"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ],
-        },
-        {
-          "id": "late_japanese_trained_monks",
-          "name": "Trained Monks",
-          "description": "Trained Monks have a spear. Superior Fighters. Open Order. May have light armour (+2). May exchange spear for halberd (+2).",
-          "category": "Allies",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 8,
-          "pointsPerBase": 15,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Spear"],
-          "specialRules": ["Open Order","Superior Fighters"],
-          "optionalEquipment": [
-            {
-              "name": "Halberd",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Halberd"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-              {
-              "name": "light Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Pike (Yari)",
-              "disables": "Spear", 
-              "pointsModifier": 7,
-              "equipmentAdded": ["Pike (Yari)"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ],
-        },
-        {
-          "id": "late_japanese_other_monks",
-          "name": "Other Monks",
-          "description": "Other Monks have a spear. Open Order.",
-          "category": "Allies",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 8,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Spear"],
-          "specialRules": ["Open Order"],
-          "optionalEquipment": [
-            {
-              "name": "Halberd",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Halberd"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-              {
-              "name": "light Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Pike (Yari)",
-              "disables": "Spear", 
-              "pointsModifier": 4,
-              "equipmentAdded": ["Pike (Yari)"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ],
-        },
+        }
       ]
     },
     
