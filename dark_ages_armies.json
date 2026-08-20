@@ -13996,9 +13996,9 @@
  	            "defenceModifier": -1
             },
    {
-              "name": "Crossbow",
+              "name": "Crossbow (Regular Bowmen)",
               "pointsPerBase": 2,
-              "targetProfile": "Levy Bowmen",
+              "targetProfile": "Regular Bowmen",
               "equipmentAdded": ["Crossbow"],
               "equipmentRemoved": ["Bow"],
  	            "defenceModifier": 0
