@@ -3,46 +3,14 @@
     "test_army": {
       "armyName": "Test Army",
       "categories": [
-        {
-          "id": "Commanders",
-          "name": "Commanders",
-          "constraintType": "count",
-          "min": 0,
-          "max": 6
-        },
-        {
-          "id": "Cavalry",
-          "name": "Cavalry",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 33
-        },
-        {
+               {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 33,
+          "min": 0,
           "max": 100
-        },
-        {
-          "id": "Skirmishers",
-          "name": "Skirmishers",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 10
-        },
-        {
-          "id": "Allies",
-          "name": "Allies",
-          "description": "The army may take allies from the Cuman or Kipchak list or from the Tobetan list if the army does not include lancers.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25,
-          "alliedArmyKeys": [
-          ],
-          "maxAlliedArmiesAllowed": 1
         }
-      ],
+      ]
       "units": [
         
         {
