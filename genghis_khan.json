@@ -14,23 +14,23 @@
       "units": [
         
         {
-          "id": "song_china_spearmen",
-          "name": "Spearmen",
-          "description": "Spearmen have spear and shield. May use Mixed Order in which up to a quarter of the figures in the unit exchange spear and shield for crossbow (+2).",
+          "id": "later_saxon_kingdoms_thegns",
+          "name": "Thegns",
+          "description": "Thegns have spear and shield. Superior Fighters. Shieldwall. Warband. May exchange spear for throwing Spear(+2). May have light armour (+2) and javelins (+2). May be Veteran (+2).  All spear armed Saxon troops in the army should be armed with the same type of spear. Thegns may form combined unit with Fyrd. They may form up to 66% of such units.",
           "category": "Infantry",
           "type": "other",
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
             {
-              "name": "Spearmen",
+              "name": "Thegns",
               "defence": 6,
               "cohesion": 6,
-              "pointsPerBase": 12,
+              "pointsPerBase": 20,
               "minBases": 3,
               "maxBases": 12,
               "baseEquipment": ["Spear", "Shield"],
-              "specialRules": ["Close Order"]
+              "specialRules": ["Close Order", Superior Fighters", "Shieldwall", "Warband"]
             },
             {
               "name": "Crossbowmen",
@@ -40,13 +40,59 @@
               "pointsPerBase": 14,
               "minBases": 0,
               "maxBases": 3,
-              "minPercentage": 0,
-              "maxPercentage": 25,
               "baseEquipment": ["Crossbow"],
               "specialRules": ["Close Order"]
             }
             ],
-"optionalEquipment": []
+"optionalEquipment": [
+"optionalEquipment": [
+            {
+              "name": "Veteran",
+              "targetProfile": "Thegns",
+              "pointsModifier": 2,
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear",
+              "targetProfile": "Thegns",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "targetProfile": "Thegns",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [ ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+  {
+              "name": "Light Armour",
+              "targetProfile": "Thegns",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+            ]
+
+  
+]
             },
         {
           "id": "song_china_Levy_spearmen",
