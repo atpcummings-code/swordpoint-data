@@ -34,15 +34,15 @@
               "specialRules": ["Close Order", "Superior Fighters", "Shieldwall", "Warband"]
             },
             {
-              "name": "Crossbowmen",
+              "name": "Fyrd",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
-              "defence": 7,
+              "defence": 6,
               "cohesion": 5,
               "pointsPerBase": 14,
               "minBases": 0,
               "maxBases": 3,
-              "baseEquipment": ["Crossbow"],
-              "specialRules": ["Close Order"]
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Close Order", "Shieldwall", "Warband"]
             }
             ],
 "optionalEquipment": [
