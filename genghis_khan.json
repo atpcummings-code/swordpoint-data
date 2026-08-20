@@ -16,7 +16,7 @@
         {
           "id": "anglo_danish_huscarls",
           "name": "Huscarls",
-          "description": "A Huscarl has light armour, spear and shield. Shieldwall. Superior Fighters. May exchange spear for two-handed axe (+2) and may have javelins (+2).  May be Stubborn (+2) and Veteran (+2). May count as Riding Horses (+1). Huscarls and Fyrd form Combined Units with 50%-67% (half to two thirds) being Fyrd.",
+          "description": "A Huscarl has light armour, spear and shield. Shieldwall. Superior Fighters. May exchange spear for two-handed axe (+2) and may have javelins (+2).  May be Stubborn (+2) and Veteran (+2). May count as Riding Horses (+1). Huscarls and Fyrd form Combined Units with 50%-67% (half to two thirds) being Fyrd.  Fyrd have a spear and shield. Shieldwall. May throw rocks (+2). May count as Riding Horses (+1).",
           "category": "Infantry",
           "type": "other",
           "minBases": 3,
@@ -34,7 +34,6 @@
             },
             {
               "name": "Fyrd",
-              "description": "Fyrd have a spear and shield. Shieldwall. May throw rocks (+2). May count as Riding Horses (+1).  Fyrd may form units on their own costing 14 points per base and being Subject to Warband rules 1 and 2. No Commanders may be attached to such units.",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
               "defence": 6,
               "cohesion": 5,
@@ -43,8 +42,8 @@
               "maxBases": 8,
               "minPercentage": 50,
               "maxPercentage": 67,
-              "baseEquipment": ["Bow", "Shield"],
-              "specialRules": ["Close Order", "Levies"]
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Close Order", "Shieldwall"]
             }
             ],
 "optionalEquipment": [
@@ -87,7 +86,32 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
+            },
+  {
+              "name": "Rocks",
+              "targetProfile": "Fyrd",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Rocks"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Riding Horses",
+              "targetProfile": "Fyrd",
+              "pointsModifier": 1,
+              "rulesAdded": [
+                "Riding Horses"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
+
             ]
             },
         
