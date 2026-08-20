@@ -24,52 +24,54 @@
           "subProfiles": [
             {
               "name": "Elite Warriors",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
-              "defence": 6,
-              "cohesion": 5,
-              "pointsPerBase": 14,
-              "minBases": 1,
-              "maxBases": 12,
-              "baseEquipment": ["Spear", "Shield"],
-              "specialRules": ["Close Order", "Shieldwall", "Warband"]
-            },
-            {
-              "name": "Thegns",
               "defence": 6,
               "cohesion": 6,
               "pointsPerBase": 20,
-              "minBases": 0,
-              "maxBases": 8,
-              "maxPercentage": 66,
-              "baseEquipment": ["Spear", "Shield"],
-              "specialRules": ["Close Order", "Superior Fighters", "Shieldwall", "Warband"]
+              "minBases": 1,
+              "maxBases": 12,
+              "baseEquipment": ["Throwing Spear", "Shield"],
+              "specialRules": ["Close Order", "Superior Fighters", "Warband"]
+            },
+            {
+              "name": "Warriors",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 16,
+              "minBases": 1,
+              "maxBases": 9,
+              "maxPercentage": 75,
+              "baseEquipment": ["Throwing Spear", "Shield"],
+              "specialRules": ["Close Order", "Warband"]
             }
             
             ],
 "optionalEquipment": [
             {
-              "name": "Veteran (Thegns)",
-              "targetProfile": "Thegns",
+              "name": "Heavy Throwing Spear (Elite Warriors)",
+              "targetProfile": "Elite Warriors",
               "pointsModifier": 2,
-              "rulesAdded": ["Veteran"],
-              "rulesRemoved": [],
-
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Throwing Spear",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Throwing Spear"],
-              "equipmentRemoved": ["Spear"],
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
             {
-              "name": "Javelins (Thegns)",
-              "targetProfile": "Thegns",
+              "name": "Heavy Throwing Spear (Warriors)",
+              "targetProfile": "Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins (Elite Warriors)",
+              "targetProfile": "Elite Warriors",
               "pointsModifier": 2,
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": [ ],
@@ -78,10 +80,9 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-           {
-              "name": "Javelins (Fyrd)",
-              "targetProfile": "Fyrd",
-              "disables": "Rocks (Fyrd)",
+            {
+              "name": "Javelins (Warriors)",
+              "targetProfile": "Warriors",
               "pointsModifier": 2,
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": [ ],
@@ -90,21 +91,9 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-            {  
-              "name": "Rocks (Fyrd)",
-              "targetProfile": "Fyrd",
-              "disables": "Javelins (Fyrd)",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": [ ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-  {
-              "name": "Light Armour (Thegns)",
-              "targetProfile": "Thegns",
+            {
+              "name": "Light Armour (Elite Warriors)",
+              "targetProfile": "Elite Warriors",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -112,7 +101,19 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-            }
+            },
+            {
+              "name": "Spear (mandatory Post 700AD",
+              "disables": ["Heavy Throwing Spear (Elite Warriors)", "Heavy Throwing Spear (Warriors)"],
+              "pointsModifier": -2,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": ["Shieldwall"],
+              "rulesRemoved": ["Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
 
             ]
             },
