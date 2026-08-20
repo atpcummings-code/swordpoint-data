@@ -58,7 +58,7 @@
           "maxBases": 12,
           "subProfiles": [
             {
-              "name": "Spearmen",
+              "name": "Levy Spearmen",
               "defence": 6,
               "cohesion": 5,
               "pointsPerBase": 6,
@@ -68,9 +68,9 @@
               "specialRules": ["Close Order", "Levies", "Inferior Fighters"]
             },
             {
-              "name": "Crossbowmen",
+              "name": "Levy Crossbowmen",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
-              "defence": 6,
+              "defence": 7,
               "cohesion": 5,
               "pointsPerBase": 8,
               "minBases": 0,
