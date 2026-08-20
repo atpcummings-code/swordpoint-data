@@ -26730,64 +26730,109 @@
             }
           ]
         },
-
 {
-          "id": "later_saxon_kingdoms_fyrd",
+"id": "later_saxon_kingdoms_fyrd",
           "name": "Fyrd",
-          "description": "Fyrd have a spear and shield. Shieldwall. Warband. may exchange spear for throwing spear (+2). May throw rocks or javelins (+2).  All spear armed Saxon troops in the army should be armed with the same type of spear.",
+          "description": "Fyrd have a spear and shield. Shieldwall. Warband. may exchange spear for throwing spear (+2). May throw rocks or javelins (+2).  All spear armed Saxon troops in the army should be armed with the same type of spear. Thegns may form combined unit with Fyrd. They may form up to 66% of such units.",
           "category": "Infantry",
           "type": "other",
-          "defence": 6,
-          "cohesion": 5,
-          "pointsPerBase": 14,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [
-            "Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order",
-            "Shieldwall",
-            "Warband"
-          ],
-          "optionalEquipment": [
+          "subProfiles": [
             {
-              "name": "Javelins",
-              "disables": [
-                "Rocks"
-              ],
+              "name": "Fyrd",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 5,
+              "pointsPerBase": 14,
+              "minBases": 1,
+              "maxBases": 12,
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Close Order", "Shieldwall", "Warband"]
+            },
+            {
+              "name": "Thegns",
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 20,
+              "minBases": 0,
+              "maxBases": 8,
+              "maxPercentage": 66,
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Close Order", "Superior Fighters", "Shieldwall", "Warband"]
+            }
+            
+            ],
+"optionalEquipment": [
+            {
+              "name": "Veteran (Thegns)",
+              "targetProfile": "Thegns",
               "pointsModifier": 2,
-              "equipmentAdded": [
-                "Javelins"
-              ],
-              "equipmentRemoved": [
-                "Rocks"
-              ],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
             {
-              "name": "Rocks",
-              "disables": [
-                "Javelins"
-              ],
+              "name": "Javelins (Thegns)",
+              "targetProfile": "Thegns",
               "pointsModifier": 2,
-              "equipmentAdded": [
-                "Rocks"
-              ],
-              "equipmentRemoved": [
-                "Javelins"
-              ],
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [ ],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
+            },
+           {
+              "name": "Javelins (Fyrd)",
+              "targetProfile": "Fyrd",
+              "disables": "Rocks (Fyrd)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [ ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {  
+              "name": "Rocks (Fyrd)",
+              "targetProfile": "Fyrd",
+              "disables": "Javelins (Fyrd)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [ ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+  {
+              "name": "Light Armour (Thegns)",
+              "targetProfile": "Thegns",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
             }
-          ]
-        },
+
+            ]
+            },
         
         {
           "id": "later_saxon_kingdoms_vikings",
