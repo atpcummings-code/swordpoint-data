@@ -29,12 +29,13 @@
               "pointsPerBase": 20,
               "minBases": 3,
               "maxBases": 12,
+              "maxPercentage": 66,
               "baseEquipment": ["Spear", "Shield"],
               "specialRules": ["Close Order", "Superior Fighters", "Shieldwall", "Warband"]
             },
             {
               "name": "Crossbowmen",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
               "defence": 7,
               "cohesion": 5,
               "pointsPerBase": 14,
@@ -45,13 +46,13 @@
             }
             ],
 "optionalEquipment": [
-"optionalEquipment": [
             {
               "name": "Veteran",
               "targetProfile": "Thegns",
               "pointsModifier": 2,
               "rulesAdded": ["Veteran"],
               "rulesRemoved": [],
+
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
