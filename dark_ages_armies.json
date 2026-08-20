@@ -190,18 +190,6 @@
             "Superior Fighters",
             "Warband"
           ],
-          "allowedSecondaryUnits": [
-            {
-              "unitId": "franks_warriors",
-              "name": "Warriors",
-              "pointsPerBase": 16,
-              "minRatioPercent": 0,
-              "maxRatioPercent": 75,
-              "specialRules": [
-                "Combined Units"
-              ]
-            }
-          ],
           "optionalEquipment": [
             {
               "name": "Javelins",
