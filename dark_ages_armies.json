@@ -111,19 +111,7 @@
             "Open Order",
             "Superior Fighters"
           ],
-          "allowedSecondaryUnits": [
-            {
-              "unitId": "franks_light_cavalry",
-              "name": "Light Cavalry",
-              "pointsPerBase": 17,
-              "minRatioPercent": 0,
-              "maxRatioPercent": 75,
-              "specialRules": [
-                "Combined Units"
-              ]
-            }
-          ],
-          "optionalEquipment": [
+           "optionalEquipment": [
             {
               "name": "Skirmishers",
               "pointsModifier": 0,
