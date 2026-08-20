@@ -48,7 +48,7 @@
             ],
 "optionalEquipment": [
             {
-              "name": "Veteran",
+              "name": "Veteran (Thegns)",
               "targetProfile": "Thegns",
               "pointsModifier": 2,
               "rulesAdded": ["Veteran"],
@@ -58,7 +58,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Throwing Spear (Thegn)",
+              "name": "Throwing Spear (Thegns)",
               "targetProfile": "Thegns",
               "pointsModifier": 2,
               "equipmentAdded": ["Throwing Spear"],
@@ -103,7 +103,7 @@
               "cohesionModifier": 0
             },
             {  
-              "name": "Rocks",
+              "name": "Rocks (Fyrd)",
               "targetProfile": "Fyrd",
               "disables": "Javelins (Fyrd)",
               "pointsModifier": 2,
@@ -115,7 +115,7 @@
               "cohesionModifier": 0
             },
   {
-              "name": "Light Armour",
+              "name": "Light Armour (Thegns)",
               "targetProfile": "Thegns",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
