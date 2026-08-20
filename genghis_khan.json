@@ -58,19 +58,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Throwing Spear (Thegns)",
-              "targetProfile": "Thegns",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Throwing Spear"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Throwing Spear (Fyrd)",
-              "targetProfile": "Fyrd",
+              "name": "Throwing Spear",
               "pointsModifier": 2,
               "equipmentAdded": ["Throwing Spear"],
               "equipmentRemoved": ["Spear"],
