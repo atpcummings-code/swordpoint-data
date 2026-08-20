@@ -35731,7 +35731,7 @@
             ],
 "optionalEquipment": [
             {
-              "name": "Veteran",
+              "name": "Veteran (Huscarls)",
               "targetProfile": "Huscarls",
               "pointsModifier": 2,
               "rulesAdded": ["Veteran"],
@@ -35740,7 +35740,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Stubborn",
+              "name": "Stubborn (Huscarls)",
               "targetProfile": "Huscarls",
               "pointsModifier": 2,
               "rulesAdded": ["Stubborn"],
@@ -35757,7 +35757,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Two-handed Axe",
+              "name": "Two-handed Axe (Huscarls)",
               "targetProfile": "Huscarls",
               "pointsModifier": 2,
               "equipmentAdded": ["Two-handed Axe"],
@@ -35770,7 +35770,7 @@
               "cohesionModifier": 0
             },
   {
-              "name": "Rocks",
+              "name": "Rocks (Fyrd)",
               "targetProfile": "Fyrd",
               "pointsModifier": 2,
               "equipmentAdded": [
