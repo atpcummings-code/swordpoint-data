@@ -14,93 +14,39 @@
       "units": [
         
         {
-          "id": "anglo_danish_huscarls",
-          "name": "Huscarls",
-          "description": "A Huscarl has light armour, spear and shield. Shieldwall. Superior Fighters. May exchange spear for two-handed axe (+2) and may have javelins (+2).  May be Stubborn (+2) and Veteran (+2). May count as Riding Horses (+1). Huscarls and Fyrd form Combined Units with 50%-67% (half to two thirds) being Fyrd.  Fyrd have a spear and shield. Shieldwall. May throw rocks (+2). May count as Riding Horses (+1).",
+          "id": "song_china_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have spear and shield. May use Mixed Order in which up to a quarter of the figures in the unit exchange spear and shield for crossbow (+2).",
           "category": "Infantry",
           "type": "other",
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
             {
-              "name": "Huscarls",
-              "defence": 5,
-              "cohesion": 7,
-              "pointsPerBase": 22,
-              "minBases": 1,
+              "name": "Spearmen",
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 12,
+              "minBases": 3,
               "maxBases": 12,
-              "baseEquipment": ["Light Armour", "Spear", "Shield"],
-              "specialRules": ["Close Order", "Superior Fighters", "Shieldwall"]
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Close Order"]
             },
             {
-              "name": "Fyrd",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
-              "defence": 6,
+              "name": "Crossbowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 7,
               "cohesion": 5,
-              "pointsPerBase": 12,
-              "minBases": 1,
-              "maxBases": 8,
-              "minPercentage": 50,
-              "maxPercentage": 67,
-              "baseEquipment": ["Spear", "Shield"],
-              "specialRules": ["Close Order", "Shieldwall"]
+              "pointsPerBase": 14,
+              "minBases": 0,
+              "maxBases": 3,
+              "minPercentage": 0,
+              "maxPercentage": 25,
+              "baseEquipment": ["Crossbow"],
+              "specialRules": ["Close Order"]
             }
             ],
-"optionalEquipment": [
-            {
-              "name": "Veteran",
-              "targetProfile": "Huscarls",
-              "pointsModifier": 2,
-              "rulesAdded": ["Veteran"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Stubborn",
-              "targetProfile": "Huscarls",
-              "pointsModifier": 2,
-              "rulesAdded": ["Stubborn"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Riding Horses",
-              "pointsModifier": 1,
-              "rulesAdded": ["Riding Horses"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Two-handed Axe",
-              "targetProfile": "Huscarls",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Two-handed Axe"],
-              "equipmentRemoved": [
-                "Spear"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-  {
-              "name": "Rocks",
-              "targetProfile": "Fyrd",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Rocks"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-
-            ]
+"optionalEquipment": []
             },
         
         
