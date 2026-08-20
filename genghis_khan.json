@@ -93,7 +93,7 @@
            {
               "name": "Javelins (Fyrd)",
               "targetProfile": "Fyrd",
-              "disables": "Rocks",
+              "disables": "Rocks (Fyrd)",
               "pointsModifier": 2,
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": [ ],
