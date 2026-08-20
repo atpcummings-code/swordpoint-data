@@ -26749,19 +26749,7 @@
             "Shieldwall",
             "Warband"
           ],
-          "allowedSecondaryUnits": [
-            {
-              "unitId": "Fyrd",
-              "name": "Fyrd",
-              "pointsPerBase": 14,
-              "minRatioPercent": 0,
-              "maxRatioPercent": 67,
-              "specialRules": [
-                "Combined Units"
-              ]
-            }
-          ],
-          "optionalEquipment": [
+                   "optionalEquipment": [
             {
               "name": "Veteran",
               "pointsModifier": 2,
