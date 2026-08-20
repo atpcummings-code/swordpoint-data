@@ -67,7 +67,6 @@
             },
             {
               "name": "Riding Horses",
-              "targetProfile": "Huscarls",
               "pointsModifier": 1,
               "rulesAdded": ["Riding Horses"],
               "rulesRemoved": [],
@@ -96,17 +95,6 @@
               ],
               "equipmentRemoved": [],
               "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Riding Horses",
-              "targetProfile": "Fyrd",
-              "pointsModifier": 1,
-              "rulesAdded": [
-                "Riding Horses"
-              ],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
