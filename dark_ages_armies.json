@@ -26730,7 +26730,8 @@
             }
           ]
         },
-        {
+
+{
           "id": "later_saxon_kingdoms_fyrd",
           "name": "Fyrd",
           "description": "Fyrd have a spear and shield. Shieldwall. Warband. may exchange spear for throwing spear (+2). May throw rocks or javelins (+2).  All spear armed Saxon troops in the army should be armed with the same type of spear.",
@@ -26787,6 +26788,7 @@
             }
           ]
         },
+        
         {
           "id": "later_saxon_kingdoms_vikings",
           "name": "Vikings",
