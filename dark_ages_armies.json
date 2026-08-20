@@ -35654,56 +35654,54 @@
             }
           ]
         },
-        {
+{
           "id": "anglo_danish_huscarls",
           "name": "Huscarls",
-          "description": "A Huscarl has light armour, spear and shield. Shieldwall. Superior Fighters. May exchange spear for two-handed axe (+2) and may have javelins (+2).  May be Stubborn (+2) and Veteran (+2). May count as Riding Horses (+1). Huscarls and Fyrd form Combined Units with 50%-67% (half to two thirds) being Fyrd.  ",
+          "description": "A Huscarl has light armour, spear and shield. Shieldwall. Superior Fighters. May exchange spear for two-handed axe (+2) and may have javelins (+2).  May be Stubborn (+2) and Veteran (+2). May count as Riding Horses (+1). Huscarls and Fyrd form Combined Units with 50%-67% (half to two thirds) being Fyrd.  Fyrd have a spear and shield. Shieldwall. May throw rocks (+2). May count as Riding Horses (+1).",
           "category": "Infantry",
           "type": "other",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 22,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [
-            "Light Armour",
-            "Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order",
-            "Superior Fighters",
-            "Shieldwall"
-          ],
-          "allowedSecondaryUnits": [
+          "subProfiles": [
             {
-              "unitId": "Fyrd",
+              "name": "Huscarls",
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 22,
+              "minBases": 1,
+              "maxBases": 12,
+              "baseEquipment": ["Light Armour", "Spear", "Shield"],
+              "specialRules": ["Close Order", "Superior Fighters", "Shieldwall"]
+            },
+            {
               "name": "Fyrd",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 5,
               "pointsPerBase": 12,
-              "minRatioPercent": 50,
-              "maxRatioPercent": 67,
-              "specialRules": [
-                "Combined Units"
-              ]
+              "minBases": 1,
+              "maxBases": 8,
+              "minPercentage": 50,
+              "maxPercentage": 67,
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Close Order", "Shieldwall"]
             }
-          ],
-          "optionalEquipment": [
+            ],
+"optionalEquipment": [
             {
               "name": "Veteran",
+              "targetProfile": "Huscarls",
               "pointsModifier": 2,
-              "rulesAdded": [
-                "Veteran"
-              ],
+              "rulesAdded": ["Veteran"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
             {
               "name": "Stubborn",
+              "targetProfile": "Huscarls",
               "pointsModifier": 2,
-              "rulesAdded": [
-                "Stubborn"
-              ],
+              "rulesAdded": ["Stubborn"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -35711,19 +35709,16 @@
             {
               "name": "Riding Horses",
               "pointsModifier": 1,
-              "rulesAdded": [
-                "Riding Horses"
-              ],
+              "rulesAdded": ["Riding Horses"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
             {
               "name": "Two-handed Axe",
+              "targetProfile": "Huscarls",
               "pointsModifier": 2,
-              "equipmentAdded": [
-                "Two-handed Axe"
-              ],
+              "equipmentAdded": ["Two-handed Axe"],
               "equipmentRemoved": [
                 "Spear"
               ],
@@ -35731,9 +35726,23 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
+            },
+  {
+              "name": "Rocks",
+              "targetProfile": "Fyrd",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Rocks"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
-          ]
-        },
+
+            ]
+            },
         {
           "id": "anglo_danish_fyrd",
           "name": "Fyrd",
