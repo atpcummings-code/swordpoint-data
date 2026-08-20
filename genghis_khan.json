@@ -14,107 +14,82 @@
       "units": [
         
         {
-          "id": "tang_china_regular_spearmen",
-          "name": "Regular Spearmen",
-          "description": "Regular Spearmen have a spear and shield. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
+          "id": "anglo_danish_huscarls",
+          "name": "Huscarls",
+          "description": "A Huscarl has light armour, spear and shield. Shieldwall. Superior Fighters. May exchange spear for two-handed axe (+2) and may have javelins (+2).  May be Stubborn (+2) and Veteran (+2). May count as Riding Horses (+1). Huscarls and Fyrd form Combined Units with 50%-67% (half to two thirds) being Fyrd.",
           "category": "Infantry",
           "type": "other",
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
             {
-              "name": "Regular Spearmen",
-              "defence": 6,
+              "name": "Huscarls",
+              "defence": 5,
               "cohesion": 7,
-              "minBases": 2,
+              "pointsPerBase": 22,
+              "minBases": 1,
               "maxBases": 12,
-              "pointsPerBase": 14,
-              "baseEquipment": ["Spear", "Shield"],
-              "specialRules": ["Close Order", "Levies"]
+              "baseEquipment": ["Light Armour", "Spear", "Shield"],
+              "specialRules": ["Close Order", "Superior Fighters", "Shieldwall"]
             },
             {
-              "name": "Regular Bowmen",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "name": "Fyrd",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
               "defence": 6,
-              "cohesion": 7,
-              "minBases": 0,
-              "maxBases": 6,
-              "maxPercentage": 50,
-              "pointsPerBase": 14,
+              "cohesion": 5,
+              "pointsPerBase": 12,
+              "minBases": 1,
+              "maxBases": 8,
+              "minPercentage": 50,
+              "maxPercentage": 67,
               "baseEquipment": ["Bow", "Shield"],
               "specialRules": ["Close Order", "Levies"]
             }
             ],
-
-            "optionalEquipment": [
-              {
-                "name": "Light Armour",
-                "pointsPerBase": 2,
-                "equipmentAdded": ["Light Armour"],
-                "equipmentRemoved": [],
-   	            "defenceModifier": -1
-              },
-               {
-                "name": "Crossbow",
-                "pointsPerBase": 2,
-                "targetProfile": "Levy Bowmen",
-                "equipmentAdded": ["Crossbow"],
-                "equipmentRemoved": ["Bow"],
-   	            "defenceModifier": 0
-              }
-            ]
-        },
-        {
-          "id": "tang_china_levy_spearmen",
-          "name": "Levy Spearmen",
-          "description": "Levy Spearmen have a spear and shield. Levies. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
-          "category": "Infantry",
-          "type": "other",
-          "minBases": 3,
-          "maxBases": 12,
-          "subProfiles": [
-                      {
-      "name": "Levy Spearmen",
-      "defence": 6,
-      "cohesion": 6,
-      "minBases": 2,
-      "maxBases": 12,
-      "pointsPerBase": 10,
-      "baseEquipment": ["Spear", "Shield"],
-      "specialRules": ["Close Order", "Levies"]
+"optionalEquipment": [
+            {
+              "name": "Veteran",
+              "targetProfile": "Huscarls",
+              "pointsModifier": 2,
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             },
             {
-              "name": "Levy Bowmen",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [{ "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
-              "defence": 6,
-              "cohesion": 6,
-              "minBases": 0,
-              "maxBases": 6,
-              "maxPercentage": 50,
-              "pointsPerBase": 12,
-              "baseEquipment": ["Bow", "Shield"],
-              "specialRules": ["Close Order", "Levies"]
-                  }
-                ],
-      
-                "optionalEquipment": [
-                  {
-                    "name": "Light Armour",
-                    "pointsPerBase": 2,
-                    "equipmentAdded": ["Light Armour"],
-                    "equipmentRemoved": [],
-       	            "defenceModifier": -1
-                  },
-                 {
-                    "name": "Crossbow",
-                    "pointsPerBase": 2,
-                    "targetProfile": "Levy Bowmen",
-                    "equipmentAdded": ["Crossbow"],
-                    "equipmentRemoved": ["Bow"],
-       	            "defenceModifier": 0
-                  }
-                ]
-              }
+              "name": "Stubborn",
+              "targetProfile": "Huscarls",
+              "pointsModifier": 2,
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Riding Horses",
+              "targetProfile": "Huscarls",
+              "pointsModifier": 1,
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Two-handed Axe",
+              "targetProfile": "Huscarls",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Two-handed Axe"],
+              "equipmentRemoved": [
+                "Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            ]
+            },
+        
         
 
 
