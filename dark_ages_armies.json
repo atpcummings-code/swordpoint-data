@@ -360,73 +360,6 @@
           ],
           "optionalEquipment": []
         },
-        {
-          "id": "franks_skirmishers",
-          "name": "Skirmishers",
-          "description": "All have either javelins, bow or sling.",
-          "category": "Skirmishers",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 5,
-          "pointsPerBase": 5,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [],
-          "specialRules": [
-            "Skirmishers"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Javelins",
-              "disables": [
-                "Sling",
-                "Bow"
-              ],
-              "pointsModifier": 0,
-              "equipmentAdded": [
-                "Javelins"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Bow",
-              "disables": [
-                "Javelins",
-                "Sling"
-              ],
-              "pointsModifier": 0,
-              "equipmentAdded": [
-                "Bow"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Sling",
-              "disables": [
-                "Javelins",
-                "Bow"
-              ],
-              "pointsModifier": 0,
-              "equipmentAdded": [
-                "Sling"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-
 {
           "id": "franks_combined_warriors",
           "name": "Combined Warriors",
@@ -526,11 +459,77 @@
               "rulesRemoved": ["Warband"],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
+            }
 
 
             ]
+            },
+         {
+          "id": "franks_skirmishers",
+          "name": "Skirmishers",
+          "description": "All have either javelins, bow or sling.",
+          "category": "Skirmishers",
+          "type": "other",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "disables": [
+                "Sling",
+                "Bow"
+              ],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": [
+                "Javelins",
+                "Sling"
+              ],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": [
+                "Javelins",
+                "Bow"
+              ],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
+          ]
+        },
         
       ]
     },
