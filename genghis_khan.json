@@ -1,7 +1,7 @@
 {
   "armies": {
-    "tang_china": {
-      "armyName": "Tang China - 618 to 907 AD",
+    "test_army": {
+      "armyName": "Test Army",
       "categories": [
         {
           "id": "Commanders",
@@ -39,174 +39,12 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "cuman_or_kipchak"
           ],
           "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
-        {
-          "id": "tang_china_general",
-          "name": "General",
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "General",
-          "maxCountAllowed": 1,
-          "attacks": "+3",
-          "cohesion": 9,
-          "pointsPerBase": 0,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
-          "id": "tang_china_commander",
-          "name": "Commander",
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "other",
-          "attacks": "+2",
-          "cohesion": "+2",
-          "pointsPerBase": 20,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
-          "id": "tang_china_lancers",
-          "name": "Lancers",
-          "description": "lancers have heavy armour and spear. Superior Fighters. May have cataphract armour (+1) and barding (+1).",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 4,
-          "cohesion": 8,
-          "pointsPerBase": 23,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": [
-            "Heavy Armour",
-            "Spear"
-          ],
-          "specialRules": [
-            "Open Order",
-            "Superior Fighters"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Cataphract Armour",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Cataphract Armour"
-              ],
-              "equipmentRemoved": [
-                "Heavy Armour"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Barding",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Barding"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [
-                "Close Order"
-              ],
-              "rulesRemoved": [
-                "Open Order"
-              ],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "tang_china_cavalry",
-          "name": "Cavalry",
-          "description": "Cavalry have light armour and bow. May have heavy armour (+1) and spear (+1).",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 17,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": [
-            "Light Armour",
-            "Bow"
-          ],
-          "specialRules": [
-            "Open Order"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Heavy Armour",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Heavy Armour"
-              ],
-              "equipmentRemoved": [
-                "Light Armour"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Spear",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Spear"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "tang_china_horse_archers",
-          "name": "Horse Archers",
-          "description": "Horse Archers have a bow. May exchange bow for light crossbow (free). May be fielded as Skirmishers.",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 16,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [
-            "Bow"
-          ],
-          "specialRules": [
-            "Skirmishers"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Light Crossbow",
-              "pointsModifier": 0,
-              "equipmentAdded": [
-                "Light Crossbow"
-              ],
-              "equipmentRemoved": [
-                "Bow"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
+        
         {
           "id": "tang_china_regular_spearmen",
           "name": "Regular Spearmen",
@@ -216,47 +54,47 @@
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
-    {
-      "name": "Regular Spearmen",
-      "defence": 6,
-      "cohesion": 7,
-      "minBases": 0,
-      "maxBases": 12,
-      "pointsPerBase": 14,
-      "baseEquipment": ["Spear", "Shield"],
-      "specialRules": ["Close Order", "Levies"]
-    },
-    {
-      "name": "Regular Bowmen",
-      "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
-      "defence": 6,
-      "cohesion": 7,
-      "minBases": 0,
-      "maxBases": 6,
-      "maxPercentage": 50,
-      "pointsPerBase": 14,
-      "baseEquipment": ["Bow", "Shield"],
-      "specialRules": ["Close Order", "Levies"]
-    }
-  ],
-
-          "optionalEquipment": [
             {
-              "name": "Light Armour",
-              "pointsPerBase": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
- 	            "defenceModifier": -1
+              "name": "Regular Spearmen",
+              "defence": 6,
+              "cohesion": 7,
+              "minBases": 0,
+              "maxBases": 12,
+              "pointsPerBase": 14,
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Close Order", "Levies"]
             },
-   {
-              "name": "Crossbow",
-              "pointsPerBase": 2,
-              "targetProfile": "Levy Bowmen",
-              "equipmentAdded": ["Crossbow"],
-              "equipmentRemoved": ["Bow"],
- 	            "defenceModifier": 0
+            {
+              "name": "Regular Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "minBases": 0,
+              "maxBases": 6,
+              "maxPercentage": 50,
+              "pointsPerBase": 14,
+              "baseEquipment": ["Bow", "Shield"],
+              "specialRules": ["Close Order", "Levies"]
             }
-          ]
+            ],
+
+            "optionalEquipment": [
+              {
+                "name": "Light Armour",
+                "pointsPerBase": 2,
+                "equipmentAdded": ["Light Armour"],
+                "equipmentRemoved": [],
+   	            "defenceModifier": -1
+              },
+               {
+                "name": "Crossbow",
+                "pointsPerBase": 2,
+                "targetProfile": "Levy Bowmen",
+                "equipmentAdded": ["Crossbow"],
+                "equipmentRemoved": ["Bow"],
+   	            "defenceModifier": 0
+              }
+            ]
         },
         {
           "id": "tang_china_levy_spearmen",
@@ -267,7 +105,7 @@
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
-    {
+                      {
       "name": "Levy Spearmen",
       "defence": 6,
       "cohesion": 6,
@@ -276,74 +114,39 @@
       "pointsPerBase": 10,
       "baseEquipment": ["Spear", "Shield"],
       "specialRules": ["Close Order", "Levies"]
-    },
-    {
-      "name": "Levy Bowmen",
-      "onBaseAdded": { "trigger": "oneOrMore", "apply": [{ "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
-      "defence": 6,
-      "cohesion": 6,
-      "minBases": 0,
-      "maxBases": 6,
-      "maxPercentage": 50,
-      "pointsPerBase": 12,
-      "baseEquipment": ["Bow", "Shield"],
-      "specialRules": ["Close Order", "Levies"]
-    }
-  ],
-
-          "optionalEquipment": [
-            {
-              "name": "Light Armour",
-              "pointsPerBase": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
- 	            "defenceModifier": -1
             },
-   {
-              "name": "Crossbow",
-              "pointsPerBase": 2,
-              "targetProfile": "Levy Bowmen",
-              "equipmentAdded": ["Crossbow"],
-              "equipmentRemoved": ["Bow"],
- 	            "defenceModifier": 0
-            }
-          ]
-        },
-        
-        {
-          "id": "tang_china_skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have a bow. Inferior Fighters. Skirmishers. May exchange bow for crossbow (+2).",
-          "category": "Skirmishers",
-          "type": "other",
-          "defence": 7,
-          "cohesion": 5,
-          "pointsPerBase": 6,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [
-            "Bow"
-          ],
-          "specialRules": [
-            "Skirmishers"
-          ],
-          "optionalEquipment": [
             {
-              "name": "Crossbow",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Crossbow"
-              ],
-              "equipmentRemoved": [
-                "Bow"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        }
+              "name": "Levy Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [{ "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+              "minBases": 0,
+              "maxBases": 6,
+              "maxPercentage": 50,
+              "pointsPerBase": 12,
+              "baseEquipment": ["Bow", "Shield"],
+              "specialRules": ["Close Order", "Levies"]
+                  }
+                ],
+      
+                "optionalEquipment": [
+                  {
+                    "name": "Light Armour",
+                    "pointsPerBase": 2,
+                    "equipmentAdded": ["Light Armour"],
+                    "equipmentRemoved": [],
+       	            "defenceModifier": -1
+                  },
+                 {
+                    "name": "Crossbow",
+                    "pointsPerBase": 2,
+                    "targetProfile": "Levy Bowmen",
+                    "equipmentAdded": ["Crossbow"],
+                    "equipmentRemoved": ["Bow"],
+       	            "defenceModifier": 0
+                  }
+                ]
+              }
         
 
 
