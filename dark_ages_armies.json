@@ -32094,81 +32094,76 @@
             }
           ]
         },
-        {
+  {
           "id": "song_china_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have spear and shield. May use Mixed Order in which up to a quarter of the figurs in the unit exchange spear and shield for crossbow (+2).",
+          "description": "Spearmen have spear and shield. May use Mixed Order in which up to a quarter of the figures in the unit exchange spear and shield for crossbow (+2).",
           "category": "Infantry",
           "type": "other",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 12,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [
-            "Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order"
-          ],
-          "optionalEquipment": []
-        },
-        {
-          "id": "song_china_levy_spearmen",
-          "name": "Levy Spearmen",
-          "description": "Spearmen have spear and shield. May use Mixed Order in which up to a quarter of the figurs in the unit exchange spear and shield for crossbow (+2).",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 5,
-          "pointsPerBase": 6,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order",
-            "Inferior Fighters",
-            "Levies"
-          ],
-          "optionalEquipment": [
+          "subProfiles": [
             {
-              "name": "Bow",
-              "disables": "Crossbow",
-              "pointsModifier": -1,
-              "equipmentAdded": [
-                "Bow"
-              ],
-              "equipmentRemoved": [
-                "Javelins",
-                "Shield"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 1,
-              "cohesionModifier": 0
+              "name": "Spearmen",
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 12,
+              "minBases": 3,
+              "maxBases": 12,
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Close Order"]
             },
             {
-              "name": "Crossbow",
-              "disables": "Bow",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Crossbow"
-              ],
-              "equipmentRemoved": [
-                "Javelins",
-                "Shield"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 1,
-              "cohesionModifier": 0
+              "name": "Crossbowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 5,
+              "pointsPerBase": 14,
+              "minBases": 0,
+              "maxBases": 3,
+              "minPercentage": 0,
+              "maxPercentage": 25,
+              "baseEquipment": ["Crossbow"],
+              "specialRules": ["Close Order"]
             }
-          ]
-        }
+            ],
+"optionalEquipment": []
+            },
+        {
+          "id": "song_china_Levy_spearmen",
+          "name": "Levy Spearmen",
+          "description": "Levy Spearmen have spear and shield. May use Mixed Order in which up to a quarter of the figures in the unit exchange spear and shield for crossbow (+2).",
+          "category": "Infantry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Levy Spearmen",
+              "defence": 6,
+              "cohesion": 5,
+              "pointsPerBase": 6,
+              "minBases": 3,
+              "maxBases": 12,
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Close Order", "Levies", "Inferior Fighters"]
+            },
+            {
+              "name": "Levy Crossbowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 5,
+              "pointsPerBase": 8,
+              "minBases": 0,
+              "maxBases": 3,
+              "minPercentage": 0,
+              "maxPercentage": 25,
+              "baseEquipment": ["Crossbow"],
+              "specialRules": ["Close Order", "Levies", "Inferior Fighters"]
+            }
+            ],
+"optionalEquipment": []
+            }
       ]
     },
     "ghaznavid": {
