@@ -425,7 +425,113 @@
               "cohesionModifier": 0
             }
           ]
-        }
+        },
+
+{
+          "id": "franks_combined_warriors",
+          "name": "Combined Warriors",
+          "description": "Elite Warriors have throwing spear and shield. Superior Fighters. Warband. May have light armour (+2) and javelins (+2). May exchange throwing spear for heavy throwing spear (+2).  In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall. Warriors having throwing spear and shield, Warband. May have javelins (+2). May exchange throwing spear for heavy throwing spear (+2). In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
+          "category": "Infantry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Elite Warriors",
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 20,
+              "minBases": 1,
+              "maxBases": 12,
+              "baseEquipment": ["Throwing Spear", "Shield"],
+              "specialRules": ["Close Order", "Superior Fighters", "Warband"]
+            },
+            {
+              "name": "Warriors",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 16,
+              "minBases": 1,
+              "maxBases": 9,
+              "maxPercentage": 75,
+              "baseEquipment": ["Throwing Spear", "Shield"],
+              "specialRules": ["Close Order", "Warband"]
+            }
+            
+            ],
+"optionalEquipment": [
+            {
+              "name": "Heavy Throwing Spear (Elite Warriors)",
+              "targetProfile": "Elite Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Throwing Spear (Warriors)",
+              "targetProfile": "Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins (Elite Warriors)",
+              "targetProfile": "Elite Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [ ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins (Warriors)",
+              "targetProfile": "Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [ ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour (Elite Warriors)",
+              "targetProfile": "Elite Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear (mandatory Post 700AD",
+              "disables": ["Heavy Throwing Spear (Elite Warriors)", "Heavy Throwing Spear (Warriors)"],
+              "pointsModifier": -2,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": ["Shieldwall"],
+              "rulesRemoved": ["Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
+
+            ]
+            }
+        
       ]
     },
     "mayan": {
