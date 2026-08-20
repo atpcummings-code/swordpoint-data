@@ -339,27 +339,7 @@
             }
           ]
         },
-        {
-          "id": "franks_tribal_infantry",
-          "name": "Tribal Infantry",
-          "description": "Tribal Infantry having throwing spear and shield. Warband.",
-          "category": "Infantry",
-          "type": "other",
-          "defence": 6,
-          "cohesion": 5,
-          "pointsPerBase": 14,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Throwing Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Warband",
-            "Close Order"
-          ],
-          "optionalEquipment": []
-        },
+        
 {
           "id": "franks_combined_warriors",
           "name": "Combined Warriors",
@@ -464,6 +444,27 @@
 
             ]
             },
+        {
+          "id": "franks_tribal_infantry",
+          "name": "Tribal Infantry",
+          "description": "Tribal Infantry having throwing spear and shield. Warband.",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Warband",
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
          {
           "id": "franks_skirmishers",
           "name": "Skirmishers",
