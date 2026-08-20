@@ -34,6 +34,7 @@
             },
             {
               "name": "Fyrd",
+              "description": "Fyrd have a spear and shield. Shieldwall. May throw rocks (+2). May count as Riding Horses (+1).  Fyrd may form units on their own costing 14 points per base and being Subject to Warband rules 1 and 2. No Commanders may be attached to such units.",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
               "defence": 6,
               "cohesion": 5,
