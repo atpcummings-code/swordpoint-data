@@ -2578,19 +2578,7 @@
             "Warband Rule 1"
           ],
           "optionalEquipment": [
-            {
-              "name": "Riding Horses",
-              "pointsModifier": 1,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": [
-                "Riding Horses"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
+                        {
               "name": "Open Order",
               "enableHidden": [
                 "Bow"
@@ -3457,18 +3445,6 @@
             "Warband Rule 1"
           ],
           "optionalEquipment": [
-            {
-              "name": "Riding Horses",
-              "pointsModifier": 1,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": [
-                "Riding Horses"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
             {
               "name": "Open Order",
               "enableHidden": [
