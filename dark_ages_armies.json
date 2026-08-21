@@ -38050,7 +38050,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 33,
-          "categories": [ { "id": "Allies", "alliedArmyKeys": [ {"key": "later_bulgar", "onlyUnits": ["Later_bulgar_bulgar_nobles", "Later_bulgar_elite_bulgar_horse_archers", "Later_bulgar_elite_bulgar_horse_archers"]}, { "key": "pecheneg"},{ "key": "alans"} ] } ],
+          "alliedArmyKeys": [ {"key": "later_bulgar", "onlyUnits": ["Later_bulgar_bulgar_nobles", "Later_bulgar_elite_bulgar_horse_archers", "Later_bulgar_elite_bulgar_horse_archers"]}, { "key": "pecheneg"},{ "key": "alans"} ],
           "maxAlliedArmiesAllowed": 3
         }
       ],
@@ -39001,8 +39001,8 @@
           "alliedArmyKeys": [
             "alans", "pecheneg", "cuman_or_kipchak", "first_crusade", "later_crusades"
           ],
-          "maxAlliedArmiesAllowed": 5,
-          "allies": [ { "armyKey": "later_bulgar", "onlyUnits": [ "Later_bulgar_bulgar_nobles", "Later_bulgar_elite_bulgar_horse_archers" ] } ]
+          "maxAlliedArmiesAllowed": 5
+         
         }
       ],
       "units": [
