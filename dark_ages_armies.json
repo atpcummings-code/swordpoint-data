@@ -38920,7 +38920,7 @@
             {
               "name": "Emperors Guard Cavalry (Bow)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-              "defence": 4,
+              "defence": 5,
               "cohesion": 8,
               "pointsPerBase": 22,
               "minBases": 1,
