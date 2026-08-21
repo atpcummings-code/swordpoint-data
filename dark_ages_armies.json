@@ -2329,7 +2329,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "gavk_vandal_armies_noble",
+          "id": "_noble",
           "name": "Noble",
           "description": "May ride a horse,",
           "category": "Commanders",
@@ -3039,6 +3039,64 @@
               "cohesionModifier": 0
             }
           ]
+        },
+        {
+          "id": "gavk_vandal_armies_no_allies_elite_warriors_cu",
+          "name": "Combined Unit Elite Warriors/Warriors",
+          "description": "Elite Warriors have light armour, spear and shield. Superior Fighters. May exchange spear for throwing spear (+2) and may be Riding Horses (+1). Elite Warriors and Warriors may form a Combined Unit where up to 75% of the bases may be Warriors.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Elite Warriors",
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 20,
+              "minBases": 1,
+              "maxBases": 12,
+              "baseEquipment": ["Light Armour", "Shield", "Spear"],
+              "specialRules": ["Close Order", "Superior Fighters"]
+            },
+            {
+              "name": "Warriors",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 14,
+              "minBases": 0,
+              "maxBases": 9,
+              "maxPercentage": 75,
+              "baseEquipment": ["Shield", "Throwing Spear"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+"optionalEquipment": [
+  {
+              "name": "Throwing Spear (Elite Warriors)",
+              "targetProfile": "Elite Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }, 
+
+]
         }
       ]
     },
