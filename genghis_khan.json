@@ -23,56 +23,38 @@
         {
           "id": "later_byzantine_macedonian_dynasty_guard_cavalry_cf",
           "name": "Combined Formation Guard Cavalry",
-          "description": "Greek (Byzantine) Ghulams have light armour, spear and shield. May use combined formation where up to half the  figures in the unit exchange spear for bow (free) and form the rear ranks.",
+          "description": "Guard Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1). Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models may not have heavy armour.",
           "category": "Cavalry",
           "type": "other",
           "minBases": 3,
           "maxBases": 8,
           "subProfiles": [
             {
-              "name": "Greek Ghulams",
+              "name": "Guard Cavalry",
               "defence": 4,
               "cohesion": 7,
-              "pointsPerBase": 18,
+              "pointsPerBase": 20,
               "minBases": 3,
               "maxBases": 8,
               "baseEquipment": ["Light Armour", "Spear", "Shield"],
-              "specialRules": ["Open Order"]
+              "specialRules": ["Open Order", "Superior FIghters"]
             },
             {
-              "name": "Greek Ghulams (Bow)",
+              "name": "Guard Cavalry (Bow)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 4,
               "cohesion": 7,
-              "pointsPerBase": 18,
+              "pointsPerBase": 20,
               "minBases": 1,
               "maxBases": 4,
               "maxPercentage": 50,
               "baseEquipment": ["Light Armour", "Bow", "Shield"],
-              "specialRules": ["Open Order"]
+              "specialRules": ["Open Order", "Superior FIghters"]
             }
             
             ],
 "optionalEquipment": []
-        },
-
-{
-          "id": "arab_caliphate_abbasid_caliphate_greek_ghulams",
-          "name": "Greek Ghulams",
-          "description": "Greek (Byzantine) Ghulams have light armour, spear and shield. May use combined formation where up to half the  figures in the unit exchange spear for bow (free) and form the rear ranks.",
-          "category": "Ghulams",
-          "type": "other",
-          "defence": 4,
-          "cohesion": 7,
-          "pointsPerBase": 18,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": ["Light Armour", "Spear", "Shield"],
-          "specialRules": ["Open Order"],
-          "optionalEquipment": []
-              
-            }
-
+        }
 
 
         
