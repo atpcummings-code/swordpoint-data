@@ -45,7 +45,7 @@
               "defence": 4,
               "cohesion": 78,
               "pointsPerBase": 20,
-              "minBases": 0,
+              "minBases": 1,
               "maxBases": 4,
               "maxPercentage": 50,
               "baseEquipment": ["Light Armour", "Bow", "Shield"],
