@@ -13181,7 +13181,7 @@
               "name": "Cavalry (Bow)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 4,
-              "cohesion": 78,
+              "cohesion": 7,
               "pointsPerBase": 20,
               "minBases": 1,
               "maxBases": 4,
