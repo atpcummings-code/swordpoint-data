@@ -64,44 +64,7 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-            },
-        {
-          "id": "heraclian_byzantine_cavalry2",
-          "name": "Cavalry2",
-          "description": "Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1).",
-          "category": "Cavalry",
-          "type": "other",
-          "defence": 4,
-          "cohesion": 7,
-          "pointsPerBase": 20,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": [
-            "Spear",
-            "Shield",
-            "Light Armour"
-          ],
-          "specialRules": [
-            "Open Order",
-            "Superior Fighters"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Heavy Armour",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Heavy Armour"
-              ],
-              "equipmentRemoved": [
-                "Light Armour"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
             }
-          ]
-        }
-    
+  
   }
 }
