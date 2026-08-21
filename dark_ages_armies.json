@@ -39001,7 +39001,8 @@
           "alliedArmyKeys": [
             "alans", "pecheneg", "cuman_or_kipchak", "first_crusade", "later_crusades"
           ],
-          "maxAlliedArmiesAllowed": 5
+          "maxAlliedArmiesAllowed": 5,
+          "allies": [ { "armyKey": "later_bulgar", "onlyUnits": [ "Later_bulgar_bulgar_nobles", "Later_bulgar_elite_bulgar_horse_archers" ] } ]
         }
       ],
       "units": [
