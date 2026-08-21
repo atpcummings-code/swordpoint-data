@@ -9,6 +9,13 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 100
+        },
+         {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 100
         }
       ],
       "units": [
@@ -120,7 +127,7 @@
         {
           "id": "early_thematic_byzantine_tagmata_cavalry",
           "name": "Tagmata Cavalry",
-          "description": "Tagmata have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1) and either half barding or barding (+1). May be Drilled (+3) and Veteran (+1). May swap spear for javelins (free), such units cannot use combined formation but may alternatively be fielded as skirmishers. They may opt to dop their light armour (-1) if they wish.",
+          "description": "Tagmata have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1) and either half barding or barding (+1). May be Drilled (+3) and Veteran (+1). May swap spear for javelins (free), such units cannot use combined formation but may alternatively be fielded as skirmishers. They may opt to dop their light armour (-1) if they wish.  Units may use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models are Superior Shooters but not Superiror Fighters and may not have heavy armour or barding.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
