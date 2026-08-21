@@ -32850,7 +32850,7 @@
           "name": "Cavalry",
           "description": "Cavalry have light armour and spear.",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 5,
           "cohesion": 7,
           "pointsPerBase": 30,
@@ -32870,7 +32870,7 @@
           "name": "Horse Archers",
           "description": "Horse Archers have a bow. May be fielded as skirmishers.",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 16,
@@ -32904,7 +32904,7 @@
           "name": "Guard Spearmen",
           "description": "Guard Spearmen have spear and shield. May have light armour (+2) and may exchange spear for halberd (+2). They may be Drilled (+3).",
           "category": "Infantry",
-          "type": "Commander",
+          "type": "Infantry",
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 14,
@@ -32958,12 +32958,43 @@
             }
           ]
         },
-  {
+		  {
           "id": "song_china_spearmen",
           "name": "Spearmen",
+          "description": "Spearmen have spear and shield. ",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+           "cohesion": 6,
+           "pointsPerBase": 12,
+           "minBases": 3,
+           "maxBases": 12,
+           "baseEquipment": ["Spear", "Shield"],
+           "specialRules": ["Close Order"],
+	   "optionalEquipment": []
+            },
+
+	{
+          "id": "song_china_Levy_spearmen",
+          "name": "Levy Spearmen",
+          "description": "Levy Spearmen have spear and shield. Levies.",
+          "category": "Infantry",
+          "type": "Infantry",
+		"defence": 6,
+              "cohesion": 5,
+              "pointsPerBase": 6,
+              "minBases": 3,
+              "maxBases": 12,
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Close Order", "Levies", "Inferior Fighters"],
+  		"optionalEquipment": []
+            },
+  {
+          "id": "song_china_spearmen_mo",
+          "name": "Mixed Order Spearmen",
           "description": "Spearmen have spear and shield. May use Mixed Order in which up to a quarter of the figures in the unit exchange spear and shield for crossbow (+2).",
           "category": "Infantry",
-          "type": "Commander",
+          "type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
@@ -32983,7 +33014,7 @@
               "defence": 7,
               "cohesion": 5,
               "pointsPerBase": 14,
-              "minBases": 0,
+              "minBases": 1,
               "maxBases": 3,
               "minPercentage": 0,
               "maxPercentage": 25,
@@ -32994,11 +33025,11 @@
 "optionalEquipment": []
             },
         {
-          "id": "song_china_Levy_spearmen",
-          "name": "Levy Spearmen",
-          "description": "Levy Spearmen have spear and shield. May use Mixed Order in which up to a quarter of the figures in the unit exchange spear and shield for crossbow (+2).",
+          "id": "song_china_Levy_spearmen_mo",
+          "name": "Mixed Order Levy Spearmen",
+          "description": "Levy Spearmen have spear and shield. Levies. May use Mixed Order in which up to a quarter of the figures in the unit exchange spear and shield for crossbow (+2).",
           "category": "Infantry",
-          "type": "Commander",
+          "type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
