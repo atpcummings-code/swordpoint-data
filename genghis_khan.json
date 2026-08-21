@@ -127,15 +127,15 @@
               "rulesRemoved": ["Open Order","CLose Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }
+            },
             {
               "name": "Drop Light Armour",
               "hiddenUntilEnabled": "hidden",
-              "pointsModifier": 0,
+              "pointsModifier": -1,
               "equipmentAdded": [],
               "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
-              "rulesRemoved": ["Open Order","CLose Order"],
+              "rulesRemoved": [],
               "defenceModifier": 1,
               "cohesionModifier": 0
             }
