@@ -46,7 +46,7 @@
               "cohesion": 6,
               "pointsPerBase": 14,
               "minBases": 0,
-              "maxBases": 8,
+              "maxBases": 9,
               "maxPercentage": 75,
               "baseEquipment": ["Shield", "Throwing Spear"],
               "specialRules": ["Close Order"]
