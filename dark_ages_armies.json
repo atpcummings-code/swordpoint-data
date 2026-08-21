@@ -33016,7 +33016,6 @@
               "pointsPerBase": 14,
               "minBases": 1,
               "maxBases": 3,
-              "minPercentage": 0,
               "maxPercentage": 25,
               "baseEquipment": ["Crossbow"],
               "specialRules": ["Close Order"]
