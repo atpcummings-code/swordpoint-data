@@ -21,113 +21,130 @@
       "units": [
         
         {
-          "id": "franks_combined_warriors",
-          "name": "Combined Warriors",
-          "description": "Elite Warriors have throwing spear and shield. Superior Fighters. Warband. May have light armour (+2) and javelins (+2). May exchange throwing spear for heavy throwing spear (+2).  In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall. Warriors having throwing spear and shield, Warband. May have javelins (+2). May exchange throwing spear for heavy throwing spear (+2). In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
-          "category": "Infantry",
+          "id": "early_thematic_byzantine_tagmata_cavalry",
+          "name": "Tagmata Cavalry",
+          "description": "Tagmata have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1) and either half barding or barding (+1). May be Drilled (+3) and Veteran (+1). May swap spear for javelins (free), such units cannot use combined formation but may alternatively be fielded as skirmishers. They may opt to drop their light armour (-1) if they wish.  Units may use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models are Superior Shooters but not Superior Fighters and may not have heavy armour or barding.",
+          "category": "Cavalry",
           "type": "other",
           "minBases": 3,
-          "maxBases": 12,
+          "maxBases": 8,
           "subProfiles": [
             {
-              "name": "Elite Warriors",
-              "defence": 6,
-              "cohesion": 6,
-              "pointsPerBase": 20,
+              "name": "Tagmata (Spear)",
+              "defence": 4,
+              "cohesion": 8,
+              "pointsPerBase": 22,
               "minBases": 1,
               "maxBases": 12,
-              "baseEquipment": ["Throwing Spear", "Shield"],
-              "specialRules": ["Close Order", "Superior Fighters", "Warband"]
+              "baseEquipment": ["Light Armour", "Spear", "Shield"],
+              "specialRules": ["Open Order", "Superior Fighters"]
             },
             {
-              "name": "Warriors",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
-              "defence": 6,
-              "cohesion": 6,
-              "pointsPerBase": 16,
+              "name": "Tagmata (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 8,
+              "pointsPerBase": 22,
               "minBases": 1,
               "maxBases": 9,
               "maxPercentage": 75,
-              "baseEquipment": ["Throwing Spear", "Shield"],
-              "specialRules": ["Close Order", "Warband"]
+              "baseEquipment": ["Light Armour", "Bow", "Shield"],
+              "specialRules": ["Open Order", "Superior Shooters"]
             }
             
             ],
 "optionalEquipment": [
             {
-              "name": "Heavy Throwing Spear (Elite Warriors)",
-              "targetProfile": "Elite Warriors",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Throwing Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Heavy Throwing Spear (Warriors)",
-              "targetProfile": "Warriors",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Throwing Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Javelins (Elite Warriors)",
-              "targetProfile": "Elite Warriors",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": [ ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Javelins (Warriors)",
-              "targetProfile": "Warriors",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": [ ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Light Armour (Elite Warriors)",
-              "targetProfile": "Elite Warriors",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
             {
-              "name": "Spear (mandatory Post 700AD",
-              "disables": ["Heavy Throwing Spear (Elite Warriors)", "Heavy Throwing Spear (Warriors)"],
-              "pointsModifier": -2,
-              "equipmentAdded": ["Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
-              "rulesAdded": ["Shieldwall"],
-              "rulesRemoved": ["Warband"],
+              "name": "Half Barding",
+              "disables": "Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Barding",
+              "disables": "Half Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Drilled",
+              "pointsModifier": 3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-
-
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "enableHidden": ["Skirmishers", "Drop Light Armour"],
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order","CLose Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            {
+              "name": "Drop Light Armour",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": ["Open Order","CLose Order"],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
             ]
             },
         {
-          "id": "early_thematic_byzantine_tagmata_cavalry",
-          "name": "Tagmata Cavalry",
-          "description": "Tagmata have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1) and either half barding or barding (+1). May be Drilled (+3) and Veteran (+1). May swap spear for javelins (free), such units cannot use combined formation but may alternatively be fielded as skirmishers. They may opt to dop their light armour (-1) if they wish.  Units may use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models are Superior Shooters but not Superiror Fighters and may not have heavy armour or barding.",
+          "id": "early_thematic_byzantine_tagmata_cavalry2",
+          "name": "Tagmata Cavalry2",
+          "description": "Tagmata have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1) and either half barding or barding (+1). May be Drilled (+3) and Veteran (+1). May swap spear for javelins (free), such units cannot use combined formation but may alternatively be fielded as skirmishers. They may opt to drop their light armour (-1) if they wish.  Units may use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models are Superior Shooters but not Superior Fighters and may not have heavy armour or barding.",
           "category": "Cavalry",
           "type": "other",
           "defence": 4,
@@ -224,7 +241,7 @@
               ],
               "pointsModifier": 1,
               "equipmentAdded": [
-                "Javelins"
+                "Javelins", "Drop Light Armour"
               ],
               "equipmentRemoved": [
                 "Spear"
@@ -248,6 +265,22 @@
                 "CLose Order"
               ],
               "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            {
+              "name": "Drop Light Armour",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [
+                
+              ],
+              "rulesRemoved": [
+                "Open Order",
+                "CLose Order"
+              ],
+              "defenceModifier": 1,
               "cohesionModifier": 0
             }
           ]
