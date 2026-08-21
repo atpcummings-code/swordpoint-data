@@ -38994,7 +38994,7 @@
         {
           "id": "later_byzantine_comnenian_dynasty_guard_cavalry",
           "name": "Guard Cavalry",
-          "requires": { "unitId": ["later_byzantine_comnenian_dynasty_regular_cavalry","later_byzantine_comnenian_dynasty_regular_cavalry_cf" "later_byzantine_comnenian_dynasty_irregular_cavalry","later_byzantine_comnenian_dynasty_irregular_cavalry_cf" "later_byzantine_comnenian_dynasty_turkopoloi"], "count": 1, "name": "Regular Cavalry, Irregular Cavalry, Combined Formation Regular Cavalry, Combined Formation Irregular Cavalryor Turkopoloi", "perUnit": true },
+          "requires": { "unitId": ["later_byzantine_comnenian_dynasty_regular_cavalry", "later_byzantine_comnenian_dynasty_regular_cavalry_cf", "later_byzantine_comnenian_dynasty_irregular_cavalry", "later_byzantine_comnenian_dynasty_irregular_cavalry_cf", "later_byzantine_comnenian_dynasty_turkopoloi"], "count": 1, "name": "Regular Cavalry, Irregular Cavalry, Combined Formation Regular Cavalry, Combined Formation Irregular Cavalry or Turkopoloi", "perUnit": true },
           "description": "Guard Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1).",
           "category": "Cavalry",
           "type": "other",
