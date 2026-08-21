@@ -36543,8 +36543,8 @@
           ]
         },
 {
-          "id": "anglo_danish_huscarls",
-          "name": "Huscarls",
+          "id": "anglo_danish_huscarls_cu",
+          "name": "Combined Unit Huscarls/Fyrd",
           "description": "A Huscarl has light armour, spear and shield. Shieldwall. Superior Fighters. May exchange spear for two-handed axe (+2) and may have javelins (+2).  May be Stubborn (+2) and Veteran (+2). May count as Riding Horses (+1). Huscarls and Fyrd form Combined Units with 50%-67% (half to two thirds) being Fyrd.  Fyrd have a spear and shield. Shieldwall. May throw rocks (+2). May count as Riding Horses (+1).",
           "category": "Infantry",
           "type": "Commander",
