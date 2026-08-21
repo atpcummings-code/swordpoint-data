@@ -17247,7 +17247,7 @@
             {
               "name": "Half Barding (Elite Themata)",
               "targetProfile": "Elite Themata",
-              "disables": "Barding",
+              "disables": "Barding (Elite Themata)",
               "pointsModifier": 1,
               "equipmentAdded": ["Half Barding"],
               "equipmentRemoved": [],
@@ -17259,7 +17259,7 @@
             {
               "name": "Barding (Elite Themata)",
               "targetProfile": "Elite Themata",
-              "disables": "Half Barding",
+              "disables": "Half Barding (Elite Themata)",
               "pointsModifier": 1,
               "equipmentAdded": ["Barding"],
               "equipmentRemoved": [],
