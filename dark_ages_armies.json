@@ -22979,6 +22979,41 @@
           "optionalEquipment": []
               
             },
+        {
+          "id": "arab_caliphate_abbasid_caliphate_greek_ghulams_cf",
+          "name": "Combined Formation Greek Ghulams",
+          "description": "Greek (Byzantine) Ghulams have light armour, spear and shield. May use combined formation where up to half the  figures in the unit exchange spear for bow (free) and form the rear ranks.",
+          "category": "Cavalry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Greek Ghulams",
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Light Armour", "Spear", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Greek Ghulams (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Light Armour", "Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": []
+        },
 
         {
           "id": "arab_caliphate_abbasid_caliphate_daylami_infantry",
@@ -24012,6 +24047,41 @@
           "optionalEquipment": []
               
             },
+        {
+          "id": "arab_caliphate_abbasid_caliphate_greek_ghulams_cf",
+          "name": "Combined Formation Greek Ghulams",
+          "description": "Greek (Byzantine) Ghulams have light armour, spear and shield. May use combined formation where up to half the  figures in the unit exchange spear for bow (free) and form the rear ranks.",
+          "category": "Cavalry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Greek Ghulams",
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Light Armour", "Spear", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Greek Ghulams (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Light Armour", "Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": []
+        },
 
         {
           "id": "arab_caliphate_fatimid_caliphate_daylami_infantry",
