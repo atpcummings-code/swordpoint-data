@@ -38175,7 +38175,7 @@
             },
             {
               "name": "Skirmishers",
-                  "disables": "Heay Armour",
+                  "disables": "Heavy Armour",
               "pointsModifier": 0,
               "equipmentAdded": [
               ],
@@ -38938,7 +38938,7 @@
             },
             {
               "name": "Skirmishers",
-                  "disables": "Heay Armour",
+                  "disables": "Heavy Armour",
               "pointsModifier": 0,
               "equipmentAdded": [
               ],
