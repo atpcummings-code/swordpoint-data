@@ -13159,6 +13159,53 @@
           ]
         },
         {
+          "id": "heraclian_byzantine_cavalry_cf",
+          "name": "Combined Formation Cavalry",
+          "description": "Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1). They may use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. These should not receive heavy armour.",
+          "category": "Cavalry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Cavalry",
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 20,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Light Armour", "Spear", "Shield"],
+              "specialRules": ["Open Order", "Superior Fighters"]
+            },
+            {
+              "name": "Cavalry (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 78,
+              "pointsPerBase": 20,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Light Armour", "Bow", "Shield"],
+              "specialRules": ["Open Order", "Superior Fighters"]
+            }
+            
+            ],
+"optionalEquipment": [
+            {
+              "name": "Heavy Armour (Cavalry)",
+              "targetProfile": "Cavalry",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
           "id": "heraclian_byzantine_light_cavalry",
           "name": "Light Cavalry",
           "description": "Light Cavalry have light armour. May have heavy armour(+1). bow or javelns (+1), spear (+1) and shield (+1). Troops without Heavy Armour may be fielded as skirmishers",
