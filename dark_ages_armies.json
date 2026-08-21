@@ -35693,7 +35693,7 @@
             {
               "name": "Crossbow",
 			"disables": ["Double-handed Weapon", "Halberd"],
-              "pointsModifier": 4,
+              "pointsModifier": 0,
               "equipmentAdded": [
                 "Crossbow"
               ],
