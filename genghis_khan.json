@@ -21,107 +21,16 @@
       "units": [
         
         {
-          "id": "early_thematic_byzantine_tagmata_cavalry_cf",
-          "name": "Combined Formation Tagmata Cavalry",
-          "description": "Tagmata have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1) and either half barding or barding (+1). May be Drilled (+3) and Veteran (+1).  May use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models are Superior Shooters but not Superior Fighters and may not have heavy armour or barding.",
+          "id": "heraclian_byzantine_cavalry_cf",
+          "name": "Combined Formation Cavalry",
+          "description": "Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1). They may use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. These should not receive heavy armour.",
           "category": "Cavalry",
           "type": "other",
           "minBases": 3,
           "maxBases": 8,
           "subProfiles": [
             {
-              "name": "Tagmata",
-              "defence": 4,
-              "cohesion": 8,
-              "pointsPerBase": 22,
-              "minBases": 3,
-              "maxBases": 8,
-              "baseEquipment": ["Light Armour", "Spear", "Shield"],
-              "specialRules": ["Open Order", "Superior Fighters"]
-            },
-            {
-              "name": "Tagmata (Bow)",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-              "defence": 4,
-              "cohesion": 8,
-              "pointsPerBase": 22,
-              "minBases": 0,
-              "maxBases": 4,
-              "maxPercentage": 50,
-              "baseEquipment": ["Light Armour", "Bow", "Shield"],
-              "specialRules": ["Open Order", "Superior Shooters"]
-            }
-            
-            ],
-"optionalEquipment": [
-            {
-              "name": "Heavy Armour (Tagmata)",
-              "targetProfile": "Tagmata",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Heavy Armour"],
-              "equipmentRemoved": ["Light Armour"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Half Barding (Tagmata)",
-              "targetProfile": "Tagmata",
-              "disables": "Barding",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Half Barding"],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Barding (Tagmata)",
-              "targetProfile": "Tagmata",
-              "disables": "Half Barding",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Barding"],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Drilled",
-              "pointsModifier": 3,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Drilled"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Veteran",
-              "pointsModifier": 1,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Veteran"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-            ]
-            }, 
-        {
-          "id": "early_thematic_byzantine_elite_themata_cavalry_cf",
-          "name": "Combined Formation Elite Themata Cavalry",
-          "description": "Elite Themata have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1) and either half barding or barding (+1). May be Veteran (+1).  May use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models are Superior Shooters but not Superior Fighters and may not have heavy armour or barding.",
-          "category": "Cavalry",
-          "type": "other",
-          "minBases": 3,
-          "maxBases": 8,
-          "subProfiles": [
-            {
-              "name": "Elite Themata",
+              "name": "Cavalry",
               "defence": 4,
               "cohesion": 7,
               "pointsPerBase": 20,
@@ -131,23 +40,23 @@
               "specialRules": ["Open Order", "Superior Fighters"]
             },
             {
-              "name": "Elite Themata (Bow)",
+              "name": "Cavalry (Bow)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 4,
-              "cohesion": 7,
+              "cohesion": 78,
               "pointsPerBase": 20,
               "minBases": 0,
               "maxBases": 4,
               "maxPercentage": 50,
               "baseEquipment": ["Light Armour", "Bow", "Shield"],
-              "specialRules": ["Open Order", "Superior Shooters"]
+              "specialRules": ["Open Order", "Superior Fighters"]
             }
             
             ],
 "optionalEquipment": [
             {
-              "name": "Heavy Armour (Elite Themata)",
-              "targetProfile": "Elite Themata",
+              "name": "Heavy Armour (Cavalry)",
+              "targetProfile": "Cavalry",
               "pointsModifier": 1,
               "equipmentAdded": ["Heavy Armour"],
               "equipmentRemoved": ["Light Armour"],
@@ -155,80 +64,45 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-            },
-            {
-              "name": "Half Barding (Elite Themata)",
-              "targetProfile": "Elite Themata",
-              "disables": "Barding",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Half Barding"],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Barding (Elite Themata)",
-              "targetProfile": "Elite Themata",
-              "disables": "Half Barding",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Barding"],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Veteran",
-              "pointsModifier": 1,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Veteran"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
             }
-            ]
             },
         {
-          "id": "early_thematic_byzantine_themata_cavalry_cf",
-          "name": "Combined Formation Themata Cavalry",
-          "description": "Elite Themata have light armour, spear and shield. May use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models are Superior Shooters but not Superior Fighters and may not have heavy armour or barding.",
+          "id": "heraclian_byzantine_cavalry2",
+          "name": "Cavalry2",
+          "description": "Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1).",
           "category": "Cavalry",
           "type": "other",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 20,
           "minBases": 3,
           "maxBases": 8,
-          "subProfiles": [
+          "baseEquipment": [
+            "Spear",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters"
+          ],
+          "optionalEquipment": [
             {
-              "name": "Themata",
-              "defence": 4,
-              "cohesion": 7,
-              "pointsPerBase": 18,
-              "minBases": 3,
-              "maxBases": 8,
-              "baseEquipment": ["Light Armour", "Spear", "Shield"],
-              "specialRules": ["Open Order"]
-            },
-            {
-              "name": "Themata (Bow)",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-              "defence": 4,
-              "cohesion": 7,
-              "pointsPerBase": 18,
-              "minBases": 0,
-              "maxBases": 4,
-              "maxPercentage": 50,
-              "baseEquipment": ["Light Armour", "Bow", "Shield"],
-              "specialRules": ["Open Order"]
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": [
+                "Light Armour"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
             }
-            
-            ],
-            "optionalEquipment": []
-            }
-      ]
-    },
+          ]
+        }
     
   }
 }
