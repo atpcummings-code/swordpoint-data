@@ -16133,13 +16133,13 @@
         }
       ]
     },
-    "Later_bulgar": {
+    "later_bulgar": {
       "armyName": "Later Bulgar - 643 to 1014 AD",
       "unitCountValidation": [
         {
           "ids": [
-            "Later_bulgar_slav_nobles",
-            "Later_bulgar_slav_cavalry"
+            "later_bulgar_slav_nobles",
+            "later_bulgar_slav_cavalry"
           ],
           "expression": "lessThanOrEqual",
           "count": 2
@@ -16182,7 +16182,7 @@
       ],
       "units": [
         {
-          "id": "Later_bulgar_bulgar_khan",
+          "id": "later_bulgar_bulgar_khan",
           "name": "Bulgar Khan",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -16197,7 +16197,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "Later_bulgar_turkhan",
+          "id": "later_bulgar_turkhan",
           "name": "Turkhan",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -16211,7 +16211,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "Later_bulgar_bulgar_nobles",
+          "id": "later_bulgar_bulgar_nobles",
           "name": "Bulgar Nobles",
           "description": "Bulgar Nobles have light armour, sheild and bow. Evade. May have half barding (+1).",
           "category": "Cavalry",
@@ -16224,8 +16224,8 @@
           "maxCountAllowed": 1,
           "requires": {
             "unitId": [
-              "Later_bulgar_elite_bulgar_horse_archers",
-              "Later_bulgar_bulgar_horse_archers"
+              "later_bulgar_elite_bulgar_horse_archers",
+              "later_bulgar_bulgar_horse_archers"
             ],
             "count": 2,
             "name": "Elite Bulgar Horse Archers or Bulgar Horse Archers"
@@ -16255,7 +16255,7 @@
           ]
         },
         {
-          "id": "Later_bulgar_elite_bulgar_horse_archers",
+          "id": "later_bulgar_elite_bulgar_horse_archers",
           "name": "Elite Bulgar Horse Archers",
           "description": "Elite Bulgar Horse Archers have a light armour, bow and shield. Nomad Cavalry. There must be at least on unit of Horse Archers if ther are any Bulgar noble cavalry in the army. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
           "category": "Cavalry",
@@ -16277,7 +16277,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "Later_bulgar_bulgar_horse_archers",
+          "id": "later_bulgar_bulgar_horse_archers",
           "name": "Bulgar Horse Archers",
           "description": "Bulgar Horse Archers have a bow and shield. Nomad Cavalry. There must be at least on unit of Horse Archers if ther are any Bulgar noble cavalry in the army. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
           "category": "Cavalry",
@@ -16298,7 +16298,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "Later_bulgar_slav_nobles",
+          "id": "later_bulgar_slav_nobles",
           "name": "Slav Nobles",
           "description": "Slav Nobles have javelins and sheild. Skirmishers. May have spear (+1). May have light armour (+1). There must be at least one unit of Slav Cavalery if any Slab Nobl Cavalr are taken. Slav Noble Cavalry May form in Open Order. Up to 25% may be spent on all Slav Cavalry.",
           "category": "Cavalry",
@@ -16310,7 +16310,7 @@
           "maxBases": 8,
           "requires": {
             "unitId": [
-              "Later_bulgar_slav_cavalry"
+              "later_bulgar_slav_cavalry"
             ],
             "count": 1,
             "name": "Slav Cavalry"
@@ -16364,7 +16364,7 @@
           ]
         },
         {
-          "id": "Later_bulgar_slav_cavalry",
+          "id": "later_bulgar_slav_cavalry",
           "name": "Slav Cavalry",
           "description": "Slav Nobles have javelins and sheild. Skirmishers. May have spear (+1). There must be at least one unit of Slav Cavalery if any Slab Nobl Cavalr are taken. Slav Noble Cavalry May form in Open Order. Up to 25% may be spent on all Slav Cavalry.",
           "category": "Cavalry",
@@ -16397,7 +16397,7 @@
           ]
         },
         {
-          "id": "Later_bulgar_slav_warriors",
+          "id": "later_bulgar_slav_warriors",
           "name": "Slav Warriors",
           "description": "Slav Warriors have throwing spear and shield. Close Order. Warband. May be fielded as skirmishers at a cost of six points per base. Every second unitof warriors may replace throwing spar with bow (free). Two formed units of Slav Warriors may replace throwing spear with two-handed axe (free). If armed with throwing spear may have light armour (+2) and large shield (+2).",
           "category": "Infantry",
@@ -16510,7 +16510,7 @@
           ]
         },
         {
-          "id": "Later_bulgar_slav_brigands",
+          "id": "later_bulgar_slav_brigands",
           "name": "Slav Brigands",
           "description": "Slav Brigands have throwing spear and shield. Open Order. Inferior Fighters. Warband. May be fielded as skirmishers at a cost of four points per base.",
           "category": "Infantry",
@@ -38050,7 +38050,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 33,
-          "alliedArmyKeys": [ {"key": "later_bulgar", "onlyUnits": ["Later_bulgar_bulgar_nobles", "Later_bulgar_elite_bulgar_horse_archers", "Later_bulgar_elite_bulgar_horse_archers"]}, { "key": "pecheneg"},{ "key": "alans"} ],
+          "alliedArmyKeys": [ {"key": "later_bulgar", "onlyUnits": ["later_bulgar_bulgar_nobles", "later_bulgar_elite_bulgar_horse_archers", "later_bulgar_elite_bulgar_horse_archers"]}, { "key": "pecheneg"},{ "key": "alans"} ],
           "maxAlliedArmiesAllowed": 3
         }
       ],
