@@ -191,6 +191,41 @@
               "cohesionModifier": 0
             }
             ]
+            },
+        {
+          "id": "early_thematic_byzantine_themata_cavalry_cf",
+          "name": "Combined Formation Themata Cavalry",
+          "description": "Elite Themata have light armour, spear and shield. May use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models are Superior Shooters but not Superior Fighters and may not have heavy armour or barding.",
+          "category": "Cavalry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Themata",
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Light Armour", "Spear", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Themata (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 0,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Light Armour", "Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+            "optionalEquipment": []
             }
       ]
     },
