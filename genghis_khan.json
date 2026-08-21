@@ -35,7 +35,7 @@
               "cohesion": 8,
               "pointsPerBase": 22,
               "minBases": 1,
-              "maxBases": 12,
+              "maxBases": 8,
               "baseEquipment": ["Light Armour", "Spear", "Shield"],
               "specialRules": ["Open Order", "Superior Fighters"]
             },
@@ -45,9 +45,9 @@
               "defence": 4,
               "cohesion": 8,
               "pointsPerBase": 22,
-              "minBases": 1,
-              "maxBases": 9,
-              "maxPercentage": 75,
+              "minBases": 0,
+              "maxBases": 4,
+              "maxPercentage": 50,
               "baseEquipment": ["Light Armour", "Bow", "Shield"],
               "specialRules": ["Open Order", "Superior Shooters"]
             }
