@@ -34937,8 +34937,8 @@
         }
       ]
     },
-    "early_capetain_france": {
-      "armyName": "Early Capetain France - 987 to early 12th Century",
+    "early_capetian_france": {
+      "armyName": "Early Capetian France - 987 to early 12th Century",
       "categories": [
         {
           "id": "Commanders",
@@ -34971,7 +34971,7 @@
       ],
       "units": [
         {
-          "id": "early_capetain_france_general",
+          "id": "early_capetian_france_general",
           "name": "General",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -34986,7 +34986,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_capetain_france_captain",
+          "id": "early_capetian_france_captain",
           "name": "Captain",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -35000,7 +35000,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_capetain_france_mercenary_captain",
+          "id": "early_capetian_france_mercenary_captain",
           "name": "Mercenary Captain",
           "description": "Rides a horse. Any Mercenary unit within 8 of the Mercenary Captain may use his Cohesion Value when taking a Cohesion (but not a break) test, although he is not the Army General.",
           "category": "Commanders",
@@ -35015,7 +35015,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_capetain_france_bishop",
+          "id": "early_capetian_france_bishop",
           "name": "Bishop",
           "description": "Rides a horse.Any unit led by a Bishop may re-roll failed Cohesion tests.",
           "category": "Commanders",
@@ -35030,7 +35030,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_capetain_france_mounted_knights",
+          "id": "early_capetian_france_mounted_knights",
           "name": "Mounted Knights",
           "description": "Mounted Knights have heavy armour, spear and shield. Superior Fighters. Impetuous. Shock Cavalry.",
           "category": "knightsandRetainers",
@@ -35054,7 +35054,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_capetain_france_mounted_sergeants",
+          "id": "early_capetian_france_mounted_sergeants",
           "name": "Mounted Sergeants",
           "description": "Mounted Sergeants have light armour, spear and shield.",
           "category": "knightsandRetainers",
@@ -35075,7 +35075,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_capetain_france_dismounted_knights",
+          "id": "early_capetian_france_dismounted_knights",
           "name": "Dismounted Knights",
           "description": "Dismounted Knights have heavy armour, spear and shield. May exchange spear for halberd (+2) or double-handed weapon (+2).",
           "category": "knightsandRetainers",
@@ -35127,7 +35127,7 @@
           ]
         },
         {
-          "id": "early_capetain_france_dismounted_sergeants",
+          "id": "early_capetian_france_dismounted_sergeants",
           "name": "Dismounted Sergeants",
           "description": "Disounted Sergeants have light armour, spear and shield.",
           "category": "knightsandRetainers",
@@ -35179,7 +35179,7 @@
           ]
         },
         {
-          "id": "early_capetain_france_militia",
+          "id": "early_capetian_france_militia",
           "name": "Militia",
           "description": "Militia have spear and shield. Inferior Fighters. Open Order. They may exchange spear and shield for bow (free), halberd (free) or double-handed weapon (free). If equiped with bows Militia can be fielded as Skirmishers at a cost of four points per base",
           "category": "Commoners",
@@ -35276,7 +35276,7 @@
           ]
         },
         {
-          "id": "early_capetain_france_arriere_ban",
+          "id": "early_capetian_france_arriere_ban",
           "name": "Arriere Ban",
           "description": "Arriere Ban have rocks. Inferior Fighters. Levies.",
           "category": "Commoners",
@@ -35297,7 +35297,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_capetain_france_foot_mercenaries",
+          "id": "early_capetian_france_foot_mercenaries",
           "name": "Foot Mercenaries",
           "description": "foot_mercenaries have a spear and shield. They may have light armour (+2) and exchange spear and shield for halberd or double-handed weapon (free). May be designated as Open Order, at a base cost of 11 points. One unit may be upgraded to Brabancons (+6). Brabancons are Superior Fighters and are Stubborn",
           "category": "Mercenaries",
@@ -35394,7 +35394,7 @@
           ]
         },
         {
-          "id": "early_capetain_france_mercenary_knights",
+          "id": "early_capetian_france_mercenary_knights",
           "name": "Mercenary Knights",
           "description": "Mercenary Knights have heavy armour, spear and shield. Superior Fighters. Shock Cavalry.",
           "category": "Mercenaries",
@@ -35418,8 +35418,8 @@
         }
       ]
     },
-    "late_capetain_france": {
-      "armyName": "Late Capetain France - early 12th Century to 1328 AD",
+    "late_capetian_france": {
+      "armyName": "Late Capetian France - early 12th Century to 1328 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -35452,7 +35452,7 @@
       ],
       "units": [
         {
-          "id": "late_capetain_france_general",
+          "id": "late_capetian_france_general",
           "name": "General",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -35467,7 +35467,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "late_capetain_france_captain",
+          "id": "late_capetian_france_captain",
           "name": "Captain",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -35481,7 +35481,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "late_capetain_france_mercenary_captain",
+          "id": "late_capetian_france_mercenary_captain",
           "name": "Mercenary Captain",
           "description": "Rides a horse. Any Mercenary unit within 8 of the Mercenary Captain may use his Cohesion Value when taking a Cohesion (but not a break) test, although he is not the Army General.",
           "category": "Commanders",
@@ -35496,7 +35496,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "late_capetain_france_bishop",
+          "id": "late_capetian_france_bishop",
           "name": "Bishop",
           "description": "Rides a horse.Any unit led by a Bishop may re-roll failed Cohesion tests.",
           "category": "Commanders",
@@ -35511,7 +35511,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "late_capetain_france_mounted_knights",
+          "id": "late_capetian_france_mounted_knights",
           "name": "Mounted Knights",
           "description": "Mounted Knights have heavy armour, lance and shield. Superior Fighters. Impetuous. Shock Cavalry. May have cloth barding (+1).",
           "category": "knightsandRetainers",
@@ -35552,7 +35552,7 @@
           ]
         },
         {
-          "id": "late_capetain_france_mounted_sergeants",
+          "id": "late_capetian_france_mounted_sergeants",
           "name": "Mounted Sergeants",
           "description": "Mounted Sergeants have light armour, spear and shield.",
           "category": "knightsandRetainers",
@@ -35589,7 +35589,7 @@
           ]
         },
         {
-          "id": "late_capetain_france_dismounted_knights",
+          "id": "late_capetian_france_dismounted_knights",
           "name": "Dismounted Knights",
           "description": "Dismounted Knights have heavy armour, spear and shield. May exchange spear for halberd (+2) or double-handed weapon (+2).May have crossbow (+4).",
           "category": "knightsandRetainers",
@@ -35641,7 +35641,7 @@
           ]
         },
         {
-          "id": "late_capetain_france_dismounted_sergeants",
+          "id": "late_capetian_france_dismounted_sergeants",
           "name": "Dismounted Sergeants",
           "description": "Disounted Sergeants have light armour, spear and shield.",
           "category": "knightsandRetainers",
@@ -35662,7 +35662,7 @@
           "optionalEquipment": [
             {
               "name": "Halberd",
-              "disables": "Double-handed Weapon",
+			  "disables": ["Double-handed Weapon", "Crossbow"],
               "pointsModifier": 2,
               "equipmentAdded": [
                 "Halberd"
@@ -35677,7 +35677,7 @@
             },
             {
               "name": "Double-handed Weapon",
-              "disables": "Halberd",
+              "disables": ["Halberd", "Crossbow"],
               "pointsModifier": 2,
               "equipmentAdded": [
                 "Double-handed Weapon"
@@ -35692,7 +35692,8 @@
             },
             {
               "name": "Crossbow",
-              "pointsModifier": 0,
+			"disables": ["Double-handed Weapon", "Halberd"],
+              "pointsModifier": 4,
               "equipmentAdded": [
                 "Crossbow"
               ],
@@ -35709,7 +35710,7 @@
           ]
         },
         {
-          "id": "late_capetain_france_militia",
+          "id": "late_capetian_france_militia",
           "name": "Militia",
           "description": "Militia have spear and shield. Inferior Fighters. Open Order. They may exchange spear and shield for bow (free), halberd (free), double-handed weapon (free) or crossbow (+2). If equiped with bows Militia can be fielded as Skirmishers at a cost of four points per base",
           "category": "Commoners",
@@ -35829,7 +35830,7 @@
           ]
         },
         {
-          "id": "late_capetain_france_arriere_ban",
+          "id": "late_capetian_france_arriere_ban",
           "name": "Arriere Ban",
           "description": "Arriere Ban have rocks. Inferior Fighters. Levies.",
           "category": "Commoners",
@@ -35850,7 +35851,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "late_capetain_france_foot_mercenaries",
+          "id": "late_capetian_france_foot_mercenaries",
           "name": "Foot Mercenaries",
           "description": "foot_mercenaries have a spear and shield. They may have light armour (+2) and exchange spear and shield for halberd or double-handed weapon (free). May be designated as Open Order, at a base cost of 11 points. One unit may be upgraded to Brabancons (+6). Brabancons are Superior Fighters and are Stubborn",
           "category": "Mercenaries",
@@ -35968,7 +35969,7 @@
           ]
         },
         {
-          "id": "late_capetain_france_mercenary_knights",
+          "id": "late_capetian_france_mercenary_knights",
           "name": "Mercenary Knights",
           "description": "Mercenary Knights have heavy armour, lance and shield. Superior Fighters. Shock Cavalry.",
           "category": "Mercenaries",
