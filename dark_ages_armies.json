@@ -33012,7 +33012,7 @@
               "name": "Crossbowmen",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
               "defence": 7,
-              "cohesion": 5,
+              "cohesion": 6,
               "pointsPerBase": 14,
               "minBases": 1,
               "maxBases": 3,
@@ -33050,7 +33050,6 @@
               "pointsPerBase": 8,
               "minBases": 0,
               "maxBases": 3,
-              "minPercentage": 0,
               "maxPercentage": 25,
               "baseEquipment": ["Crossbow"],
               "specialRules": ["Close Order", "Levies", "Inferior Fighters"]
