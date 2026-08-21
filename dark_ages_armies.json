@@ -3528,6 +3528,64 @@
           ]
         },
         {
+          "id": "gavk_vandal_armies_no_allies_elite_warriors_cu",
+          "name": "Combined Unit Elite Warriors/Warriors",
+          "description": "Elite Warriors have light armour, spear and shield. Superior Fighters. May exchange spear for throwing spear (+2) and may be Riding Horses (+1). Elite Warriors and Warriors may form a Combined Unit where up to 75% of the bases may be Warriors.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Elite Warriors",
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 20,
+              "minBases": 1,
+              "maxBases": 12,
+              "baseEquipment": ["Light Armour", "Shield", "Spear"],
+              "specialRules": ["Close Order", "Superior Fighters"]
+            },
+            {
+              "name": "Warriors",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 14,
+              "minBases": 0,
+              "maxBases": 9,
+              "maxPercentage": 75,
+              "baseEquipment": ["Shield", "Throwing Spear"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+"optionalEquipment": [
+  {
+              "name": "Throwing Spear (Elite Warriors)",
+              "targetProfile": "Elite Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }, 
+
+]
+        },
+        {
           "id": "gavk_visigoth_wagons",
           "name": "Wagons",
           "description": "Wagons form a Wagon Tabor. There may be one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
@@ -13977,7 +14035,7 @@
           "name": "Lancers",
           "description": "lancers have heavy armour and spear. Superior Fighters. May have cataphract armour (+1) and barding (+1).",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 4,
           "cohesion": 8,
           "pointsPerBase": 23,
@@ -14029,7 +14087,7 @@
           "name": "Cavalry",
           "description": "Cavalry have light armour and bow. May have heavy armour (+1) and spear (+1).",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 5,
           "cohesion": 7,
           "pointsPerBase": 17,
@@ -14076,7 +14134,7 @@
           "name": "Horse Archers",
           "description": "Horse Archers have a bow. May exchange bow for light crossbow (free). May be fielded as Skirmishers.",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 16,
@@ -14106,11 +14164,11 @@
           ]
         },
         {
-          "id": "tang_china_regular_spearmen",
-          "name": "Regular Spearmen",
+          "id": "tang_china_regular_spearmen_mo",
+          "name": "Mixed Order Regular Spearmen",
           "description": "Regular Spearmen have a spear and shield. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
           "category": "Infantry",
-          "type": "Commander",
+          "type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
@@ -14122,7 +14180,7 @@
       "maxBases": 12,
       "pointsPerBase": 14,
       "baseEquipment": ["Spear", "Shield"],
-      "specialRules": ["Close Order", "Levies"]
+      "specialRules": ["Close Order"]
     },
     {
       "name": "Regular Bowmen",
@@ -14134,7 +14192,7 @@
       "maxPercentage": 50,
       "pointsPerBase": 14,
       "baseEquipment": ["Bow", "Shield"],
-      "specialRules": ["Close Order", "Levies"]
+      "specialRules": ["Close Order"]
     }
   ],
 
@@ -14157,11 +14215,11 @@
           ]
         },
         {
-          "id": "tang_china_levy_spearmen",
-          "name": "Levy Spearmen",
+          "id": "tang_china_levy_spearmen_mo",
+          "name": "Mixed Order Levy Spearmen",
           "description": "Levy Spearmen have a spear and shield. Levies. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
           "category": "Infantry",
-          "type": "Commander",
+          "type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
