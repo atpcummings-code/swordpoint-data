@@ -38280,6 +38280,137 @@
           ]
         },
         {
+          "id": "later_byzantine_macedonian_dynasty_guard_cavalry_cf",
+          "name": "Combined Formation Guard Cavalry",
+          "description": "Guard Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1). Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models may not have heavy armour.",
+          "category": "Cavalry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Guard Cavalry",
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 20,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Light Armour", "Spear", "Shield"],
+              "specialRules": ["Open Order", "Superior FIghters"]
+            },
+            {
+              "name": "Guard Cavalry (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 20,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Light Armour", "Bow", "Shield"],
+              "specialRules": ["Open Order", "Superior FIghters"]
+            }
+            
+            ],
+"optionalEquipment": [
+  {
+              "name": "Heavy Armour (Guard Cavalry)",
+              "targetProfile": "Guard Cavalry",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+]
+        },
+        {
+        
+          "id": "later_byzantine_macedonian_dynasty_regular_cavalry_cf",
+          "name": "Combined Formation Regular Cavalry",
+          "description": "Regular Cavalry have light armour, spear and shield. They may have heavy armour (+1). Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models may not have heavy armour.",
+          "category": "Cavalry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Regular Cavalry",
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Light Armour", "Spear", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Regular Cavalry (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Light Armour", "Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": [
+  {
+              "name": "Heavy Armour (Regular Cavalry)",
+              "targetProfile": "Regular Cavalry",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+]
+        },
+         {
+        
+          "id": "later_byzantine_macedonian_dynasty_irregular_cavalry_cf",
+          "name": "Combined Formation Irregular Cavalry",
+          "description": "Irregular Cavalry have spear and shield. Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models may not have heavy armour.",
+          "category": "Cavalry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Irregular Cavalry",
+              "defence": 5,
+              "cohesion": 6,
+              "pointsPerBase": 16,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Irregular Cavalry (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 6,
+              "pointsPerBase": 16,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": []
+        },
+        {
           "id": "later_byzantine_macedonian_dynasty_guard",
           "name": "Guard",
           "description": "Guard have light armour and shield. Open Order. May have either javelins(+2), sling (+2) or throwing spear (+2)/ May be fielded as skirmishers at a cost of eight points per base.",
@@ -39041,6 +39172,137 @@
               "cohesionModifier": 0
             }
           ]
+        },
+        {
+          "id": "later_byzantine_comnenian_dynasty_guard_cavalry_cf",
+          "name": "Combined Formation Guard Cavalry",
+          "description": "Guard Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1). Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models may not have heavy armour.",
+          "category": "Cavalry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Guard Cavalry",
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 20,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Light Armour", "Spear", "Shield"],
+              "specialRules": ["Open Order", "Superior FIghters"]
+            },
+            {
+              "name": "Guard Cavalry (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 20,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Light Armour", "Bow", "Shield"],
+              "specialRules": ["Open Order", "Superior FIghters"]
+            }
+            
+            ],
+"optionalEquipment": [
+  {
+              "name": "Heavy Armour (Guard Cavalry)",
+              "targetProfile": "Guard Cavalry",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+]
+        },
+        {
+        
+          "id": "later_byzantine_comnenian_dynasty_regular_cavalry_cf",
+          "name": "Combined Formation Regular Cavalry",
+          "description": "Regular Cavalry have light armour, spear and shield. They may have heavy armour (+1). Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models may not have heavy armour.",
+          "category": "Cavalry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Regular Cavalry",
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Light Armour", "Spear", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Regular Cavalry (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Light Armour", "Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": [
+  {
+              "name": "Heavy Armour (Regular Cavalry)",
+              "targetProfile": "Regular Cavalry",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+]
+        },
+         {
+        
+          "id": "later_byzantine_comnenian_dynasty_irregular_cavalry_cf",
+          "name": "Combined Formation Irregular Cavalry",
+          "description": "Irregular Cavalry have spear and shield. Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models may not have heavy armour.",
+          "category": "Cavalry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Irregular Cavalry",
+              "defence": 5,
+              "cohesion": 6,
+              "pointsPerBase": 16,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Irregular Cavalry (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 6,
+              "pointsPerBase": 16,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": []
         },
         {
           "id": "later_byzantine_comnenian_dynasty_guard",
