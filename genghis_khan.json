@@ -21,149 +21,167 @@
       "units": [
         
         {
-          "id": "later_byzantine_macedonian_dynasty_emperors_guard_cavalry_cf",
-          "name": "Combined Formation Emperors Guard Cavalry",
-          "requires": { "unitId": "later_byzantine_macedonian_dynasty_emperor", "count": 1, "name": "Emperor" },
-          "description": "Emperors Guard Cavalry have heavy armour and shield. Superior Fighters. May have half barding or barding (+1).",
-          "category": "Cavalry",
+          "id": "gavk_vandal_armies_no_allies_elite_warriors",
+          "name": "Elite Warriors",
+          "description": "Elite Warriors have light armour, spear and shield. Superior Fighters. May exchange spear for throwing spear (+2) and may be Riding Horses (+1).",
+          "category": "Infantry",
           "type": "other",
           "minBases": 3,
-          "maxBases": 8,
+          "maxBases": 12,
           "subProfiles": [
             {
-              "name": "Emperors Guard Cavalry",
-              "defence": 3,
-              "cohesion": 8,
-              "pointsPerBase": 22,
-              "minBases": 3,
-              "maxBases": 8,
-              "baseEquipment": ["Heavy Armour", "Shield"],
-              "specialRules": ["Open Order", "Superior Fighters"]
+              "name": "Elite Warriors",
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 20,
+              "minBases": 1,
+              "maxBases": 12,
+              "baseEquipment": ["Light Armour", "Shield", "Spear"],
+              "specialRules": ["Close Order", "Superior Fighters"]
             },
             {
-              "name": "Emperors Guard Cavalry (Bow)",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-              "defence": 4,
-              "cohesion": 8,
-              "pointsPerBase": 22,
-              "minBases": 1,
-              "maxBases": 4,
-              "maxPercentage": 50,
-              "baseEquipment": ["Heavy Armour", "Bow"],
-              "specialRules": ["Open Order", "Superior Shooters"]
+              "name": "Warriors",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 14,
+              "minBases": 0,
+              "maxBases": 8,
+              "maxPercentage": 75,
+              "baseEquipment": ["Shield", "Throwing Spear"],
+              "specialRules": ["Close Order"]
             }
             
             ],
 "optionalEquipment": [
   {
-              "name": "Half Barding",
-              "disables": "Barding",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Half Barding"],
-              "equipmentRemoved": [],
+              "name": "Throwing Spear",
+              "targetProfile": "Elite Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": -1,
+              "defenceModifier": 0,
               "cohesionModifier": 0
             },
           {
-              "name": "Barding",
-              "disables": "Half Barding",
+              "name": "Riding Horses",
               "pointsModifier": 1,
-              "equipmentAdded": ["Barding"],
+              "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": [],
+              "rulesAdded": ["Riding Horses"],
               "rulesRemoved": [],
-              "defenceModifier": -1,
+              "defenceModifier": 0,
               "cohesionModifier": 0
-            }
+            }, 
 
 ]
         },
-        {
-        
-          "id": "later_byzantine_macedonian_dynasty_regular_cavalry_cf",
-          "name": "Combined Formation Regular Cavalry",
-          "description": "Regular Cavalry have light armour, spear and shield. They may have heavy armour (+1). Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models may not have heavy armour.",
-          "category": "Cavalry",
+{
+          "id": "gavk_vandal_armies_no_allies_elite_warriors",
+          "name": "Elite Warriors",
+          "description": "Elite Warriors have light armour, spear and shield. Superior Fighters. May exchange spear for throwing spear (+2) and may be Riding Horses (+1).",
+          "category": "Infantry",
           "type": "other",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 20,
           "minBases": 3,
-          "maxBases": 8,
-          "subProfiles": [
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
             {
-              "name": "Regular Cavalry",
-              "defence": 4,
-              "cohesion": 7,
-              "pointsPerBase": 18,
-              "minBases": 3,
-              "maxBases": 8,
-              "baseEquipment": ["Light Armour", "Spear", "Shield"],
-              "specialRules": ["Open Order"]
-            },
-            {
-              "name": "Regular Cavalry (Bow)",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-              "defence": 4,
-              "cohesion": 7,
-              "pointsPerBase": 18,
-              "minBases": 1,
-              "maxBases": 4,
-              "maxPercentage": 50,
-              "baseEquipment": ["Light Armour", "Bow", "Shield"],
-              "specialRules": ["Open Order"]
-            }
-            
-            ],
-"optionalEquipment": [
-  {
-              "name": "Heavy Armour (Regular Cavalry)",
-              "targetProfile": "Regular Cavalry",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Heavy Armour"],
-              "equipmentRemoved": ["Light Armour"],
+              "name": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Throwing Spear"
+              ],
+              "equipmentRemoved": [
+                "Spear"
+              ],
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": -1,
+              "defenceModifier": 0,
               "cohesionModifier": 0
-            }
-]
-        },
-         {
-        
-          "id": "later_byzantine_macedonian_dynasty_irregular_cavalry_cf",
-          "name": "Combined Formation Irregular Cavalry",
-          "description": "Irregular Cavalry have spear and shield. Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models may not have heavy armour.",
-          "category": "Cavalry",
-          "type": "other",
-          "minBases": 3,
-          "maxBases": 8,
-          "subProfiles": [
-            {
-              "name": "Irregular Cavalry",
-              "defence": 5,
-              "cohesion": 6,
-              "pointsPerBase": 16,
-              "minBases": 3,
-              "maxBases": 8,
-              "baseEquipment": ["Spear", "Shield"],
-              "specialRules": ["Open Order"]
             },
             {
-              "name": "Irregular Cavalry (Bow)",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-              "defence": 5,
-              "cohesion": 6,
-              "pointsPerBase": 16,
-              "minBases": 1,
-              "maxBases": 4,
-              "maxPercentage": 50,
-              "baseEquipment": ["Bow", "Shield"],
-              "specialRules": ["Open Order"]
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [
+                "Riding Horses"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
-            
-            ],
-"optionalEquipment": []
-        }
+          ]
+        },
+        {
+          "id": "gavk_vandal_armies_no_allies_warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Warband Rule 1. May be Riding Horses (+1).",
+          "category": "Infantry",
+          "type": "other",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Warband Rule 1"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Open Order",
+              "enableHidden": [
+                "Bow"
+              ],
+              "enabledEvery": 2,
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [
+                "Open Order"
+              ],
+              "rulesRemoved": [
+                "Close Order"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "hiddenUntilEnabled": "hidden",
+              "enabledEvery": 4,
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [
+                "Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        
 
 
         
