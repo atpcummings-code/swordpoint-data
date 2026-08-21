@@ -17645,7 +17645,7 @@
             {
               "name": "Half Barding (Tagmata)",
               "targetProfile": "Tagmata",
-              "disables": "Barding",
+              "disables": "Barding (Tagmata)",
               "pointsModifier": 1,
               "equipmentAdded": ["Half Barding"],
               "equipmentRemoved": [],
@@ -17657,7 +17657,7 @@
             {
               "name": "Barding (Tagmata)",
               "targetProfile": "Tagmata",
-              "disables": "Half Barding",
+              "disables": "Half Barding (Tagmata)",
               "pointsModifier": 1,
               "equipmentAdded": ["Barding"],
               "equipmentRemoved": [],
@@ -17772,7 +17772,7 @@
         {
           "id": "early_thematic_byzantine_themata_cavalry_cf",
           "name": "Combined Formation Themata Cavalry",
-          "description": "Elite Themata have light armour, spear and shield. May use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models are Superior Shooters but not Superior Fighters and may not have heavy armour or barding.",
+          "description": "Themata have light armour, spear and shield. May use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows.",
           "category": "Cavalry",
           "type": "other",
           "minBases": 3,
@@ -18828,7 +18828,7 @@
             {
               "name": "Half Barding (Tagmata)",
               "targetProfile": "Tagmata",
-              "disables": "Barding",
+              "disables": "Barding (Tagmata)",
               "pointsModifier": 1,
               "equipmentAdded": ["Half Barding"],
               "equipmentRemoved": [],
@@ -18840,7 +18840,7 @@
             {
               "name": "Barding (Tagmata)",
               "targetProfile": "Tagmata",
-              "disables": "Half Barding",
+              "disables": "Half Barding (Tagmata)",
               "pointsModifier": 1,
               "equipmentAdded": ["Barding"],
               "equipmentRemoved": [],
