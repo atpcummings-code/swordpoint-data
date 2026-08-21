@@ -114,6 +114,42 @@
               "cohesionModifier": 0
             }
 ]
+        },
+         {
+        
+          "id": "later_byzantine_macedonian_dynasty_irregular_cavalry_cf",
+          "name": "Combined Formation Regular Cavalry",
+          "description": "Irregular Cavalry have spear and shield. Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models may not have heavy armour.",
+          "category": "Cavalry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Irregular Cavalry",
+              "defence": 5,
+              "cohesion": 6,
+              "pointsPerBase": 16,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Irregular Cavalry (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 6,
+              "pointsPerBase": 16,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": []
         }
 
 
