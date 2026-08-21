@@ -55,7 +55,7 @@
             ],
 "optionalEquipment": [
   {
-              "name": "Heavy Armour",
+              "name": "Heavy Armour (Guard Cavalry)",
               "targetProfile": "Guard Cavalry",
               "pointsModifier": 1,
               "equipmentAdded": ["Heavy Armour"],
