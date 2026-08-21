@@ -14164,6 +14164,53 @@
           ]
         },
         {
+          "id": "tang_china_regular_spearmen",
+          "name": "Regular Spearmen",
+          "description": "Regular Spearmen have a spear and shield. May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+	  "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsPerBase": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+ 	       "defenceModifier": -1
+            }          
+		]
+        },
+        {
+          "id": "tang_china_levy_spearmen",
+          "name": "Levy Spearmen",
+          "description": "Levy Spearmen have a spear and shield. Levies. May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+ 	"defence": 6,
+      "cohesion": 6,
+	"pointsPerBase": 10,
+      "minBases": 3,
+      "maxBases": 12,
+      "baseEquipment": ["Spear", "Shield"],
+      "specialRules": ["Close Order", "Levies"],
+       "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsPerBase": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+ 	            "defenceModifier": -1
+            },
+
+          ]
+        },
+        {
           "id": "tang_china_regular_spearmen_mo",
           "name": "Mixed Order Regular Spearmen",
           "description": "Regular Spearmen have a spear and shield. May have light armour (+2). May used Mixed Order in which up to half the figures in the unit exchange spear for bow (+2) and form the rear ranks.  The bowmen may then exchange bow for crossbow (+2).",
