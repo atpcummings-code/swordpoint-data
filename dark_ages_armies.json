@@ -38849,7 +38849,7 @@
             }
           ]
         },
-{
+        {
           "id": "later_byzantine_macedonian_dynasty_emperors_guard_cavalry",
           "name": "Emperors Guard Cavalry",
           "requires": { "unitId": "later_byzantine_macedonian_dynasty_emperor", "count": 1, "name": "Emperor" },
@@ -38888,11 +38888,8 @@
               "name": "Barding",
               "disables": "Half Barding",
               "pointsModifier": 1,
-              "equipmentAdded": [
-                "Barding"
-              ],
-              "equipmentRemoved": [
-              ],
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
