@@ -38050,7 +38050,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 33,
-          "alliedArmyKeys": [ {"key": "later_bulgar"}, { "key": "pecheneg"},{ "key": "alans"} ],
+          "alliedArmyKeys": [ {"key": "later_bulgar", "onlyUnits": ["later_bulgar_bulgar_nobles", "later_bulgar_elite_bulgar_horse_archers", "later_bulgar_elite_bulgar_horse_archers"]}, { "key": "pecheneg"},{ "key": "alans"} ],
           "maxAlliedArmiesAllowed": 3
         }
       ],
