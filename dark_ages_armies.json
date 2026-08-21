@@ -38902,7 +38902,7 @@
           "name": "Combined Formation Emperors Guard Cavalry",
           "requires": { "unitId": "later_byzantine_macedonian_dynasty_emperor", "count": 1, "name": "Emperor" },
           "description": "Emperors Guard Cavalry have heavy armour and shield. Superior Fighters. May have half barding or barding (+1).",
-          "category": "Cavalry",
+          "category": "SpecialUnits",
           "type": "other",
           "minBases": 3,
           "maxBases": 8,
@@ -38920,7 +38920,7 @@
             {
               "name": "Emperors Guard Cavalry (Bow)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-              "defence": 5,
+              "defence": 4,
               "cohesion": 8,
               "pointsPerBase": 22,
               "minBases": 1,
