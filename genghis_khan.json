@@ -66,6 +66,54 @@
               "cohesionModifier": 0
             }
 ]
+        },
+        {
+        
+          "id": "later_byzantine_macedonian_dynasty_regular_cavalry_cf",
+          "name": "Combined Formation Regular Cavalry",
+          "description": "Regular Cavalry have light armour, spear and shield. They may have heavy armour (+1). Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models may not have heavy armour.",
+          "category": "Cavalry",
+          "type": "other",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Regular Cavalry",
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Light Armour", "Spear", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Regular Cavalry (Bow)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Light Armour", "Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": [
+  {
+              "name": "Heavy Armour (Regular Cavalry)",
+              "targetProfile": "Regular Cavalry",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+]
         }
 
 
