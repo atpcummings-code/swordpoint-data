@@ -147,7 +147,7 @@
 "optionalEquipment": [
             {
               "name": "Heavy Armour (Elite Themata)",
-              "targetProfile": "Tagmata",
+              "targetProfile": "Elite Themata",
               "pointsModifier": 1,
               "equipmentAdded": ["Heavy Armour"],
               "equipmentRemoved": ["Light Armour"],
@@ -158,7 +158,7 @@
             },
             {
               "name": "Half Barding (Elite Themata)",
-              "targetProfile": "Tagmata",
+              "targetProfile": "Elite Themata",
               "disables": "Barding",
               "pointsModifier": 1,
               "equipmentAdded": ["Half Barding"],
@@ -170,7 +170,7 @@
             },
             {
               "name": "Barding (Elite Themata)",
-              "targetProfile": "Tagmata",
+              "targetProfile": "Elite Themata",
               "disables": "Half Barding",
               "pointsModifier": 1,
               "equipmentAdded": ["Barding"],
