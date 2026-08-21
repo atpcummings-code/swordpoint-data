@@ -21,50 +21,63 @@
       "units": [
         
         {
-          "id": "later_byzantine_macedonian_dynasty_guard_cavalry_cf",
-          "name": "Combined Formation Guard Cavalry",
-          "description": "Guard Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1). Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. Such models may not have heavy armour.",
+          "id": "later_byzantine_macedonian_dynasty_emperors_guard_cavalry_cf",
+          "name": "Combined Formation Emperors Guard Cavalry",
+          "requires": { "unitId": "later_byzantine_macedonian_dynasty_emperor", "count": 1, "name": "Emperor" },
+          "description": "Emperors Guard Cavalry have heavy armour and shield. Superior Fighters. May have half barding or barding (+1).",
           "category": "Cavalry",
           "type": "other",
           "minBases": 3,
           "maxBases": 8,
           "subProfiles": [
             {
-              "name": "Guard Cavalry",
-              "defence": 4,
-              "cohesion": 7,
-              "pointsPerBase": 20,
+              "name": "Emperors Guard Cavalry",
+              "defence": 3,
+              "cohesion": 8,
+              "pointsPerBase": 22,
               "minBases": 3,
               "maxBases": 8,
-              "baseEquipment": ["Light Armour", "Spear", "Shield"],
-              "specialRules": ["Open Order", "Superior FIghters"]
+              "baseEquipment": ["Heavy Armour", "Shield"],
+              "specialRules": ["Open Order", "Superior Fighters"]
             },
             {
-              "name": "Guard Cavalry (Bow)",
+              "name": "Emperors Guard Cavalry (Bow)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 4,
-              "cohesion": 7,
-              "pointsPerBase": 20,
+              "cohesion": 8,
+              "pointsPerBase": 22,
               "minBases": 1,
               "maxBases": 4,
               "maxPercentage": 50,
-              "baseEquipment": ["Light Armour", "Bow", "Shield"],
-              "specialRules": ["Open Order", "Superior FIghters"]
+              "baseEquipment": ["Heavy Armour", "Bow"],
+              "specialRules": ["Open Order", "Superior Shooters"]
             }
             
             ],
 "optionalEquipment": [
   {
-              "name": "Heavy Armour (Guard Cavalry)",
-              "targetProfile": "Guard Cavalry",
+              "name": "Half Barding",
+              "disables": "Barding",
               "pointsModifier": 1,
-              "equipmentAdded": ["Heavy Armour"],
-              "equipmentRemoved": ["Light Armour"],
+              "equipmentAdded": ["Half Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Barding",
+              "disables": "Half Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
             }
+
 ]
         },
         {
