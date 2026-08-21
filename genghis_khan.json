@@ -21,11 +21,11 @@
       "units": [
         
         {
-          "id": "gavk_vandal_armies_no_allies_elite_warriors",
-          "name": "Elite Warriors",
-          "description": "Elite Warriors have light armour, spear and shield. Superior Fighters. May exchange spear for throwing spear (+2) and may be Riding Horses (+1).",
+          "id": "gavk_vandal_armies_no_allies_elite_warriors_cu",
+          "name": "Combined Unit Elite Warriors/Warriors",
+          "description": "Elite Warriors have light armour, spear and shield. Superior Fighters. May exchange spear for throwing spear (+2) and may be Riding Horses (+1). Elite Warriors and Warriors may form a Combined Unit where up to 75% of the bases may be Warriors.",
           "category": "Infantry",
-          "type": "other",
+          "type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
