@@ -53,7 +53,18 @@
             }
             
             ],
-"optionalEquipment": []
+"optionalEquipment": [
+  {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+]
         }
 
 
