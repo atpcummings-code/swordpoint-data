@@ -33,7 +33,7 @@
               "name": "Greek Ghulams",
               "defence": 4,
               "cohesion": 7,
-              "pointsPerBase": 19,
+              "pointsPerBase": 18,
               "minBases": 3,
               "maxBases": 8,
               "baseEquipment": ["Light Armour", "Spear", "Shield"],
