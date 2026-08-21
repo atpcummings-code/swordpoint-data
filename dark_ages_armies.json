@@ -27556,17 +27556,7 @@
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
-            {
-              "name": "Fyrd",
-               "defence": 6,
-              "cohesion": 5,
-              "pointsPerBase": 14,
-              "minBases": 1,
-              "maxBases": 12,
-              "baseEquipment": ["Spear", "Shield"],
-              "specialRules": ["Close Order", "Shieldwall", "Warband"]
-            },
-            {
+           {
               "name": "Thegns",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
               "defence": 6,
@@ -27577,6 +27567,16 @@
               "maxPercentage": 66,
               "baseEquipment": ["Spear", "Shield"],
               "specialRules": ["Close Order", "Superior Fighters", "Shieldwall", "Warband"]
+            },
+			    {
+              "name": "Fyrd",
+               "defence": 6,
+              "cohesion": 5,
+              "pointsPerBase": 14,
+              "minBases": 1,
+              "maxBases": 12,
+              "baseEquipment": ["Spear", "Shield"],
+              "specialRules": ["Close Order", "Shieldwall", "Warband"]
             }
             
             ],
