@@ -4828,7 +4828,7 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "tang_chinese"
+            "tang_china"
           ],
           "maxAlliedArmiesAllowed": 1
         }
