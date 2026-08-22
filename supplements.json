@@ -1,1 +1,11 @@
-
+[ 
+{"key": "chariot_armies", "name": "Chariot Armies", "file": "chariot_armies.json"},
+{"key": "dark_age_armies", "name": "Dark Age Armies", "file": "dark_ages_armies.json"},
+{"key": "charlemagne", "name": "charlemagne", "file": "charlemagne.json"},
+{"key": "classical_armies", "name": "Classical Armies", "file": "classical_armies.json"},
+{"key": "genghis_khan", "name": "Genghis Khan", "file": "genghis_khan.json"},
+{"key": "medieval_armies", "name": "Medieval Armies", "file": "medieval_armies.json"},
+{"key": "rise_of_rome", "name": "Rie of Rome", "file": "rise_of_rome.json"},
+{"key": "the_hundred_years_war", "name": "The Hundred Years War", "file": "the_hundred_years_war.json"},
+{"key": "the_war_of_the_roses", "name": "The War of the Roses", "file": "the_war_of_the_roses.json"},
+] 
