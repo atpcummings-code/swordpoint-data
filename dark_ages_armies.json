@@ -34,7 +34,7 @@
         },
         {
           "id": "Allies",
-          "name": "Special Troops or Allies",
+          "name": "Allies",
           "description": "The pre-700 AD army may have allies from the Dark Age Britain and Ireland or Late Imperial Roman (Limitanei, Auxilia, Esquites and Illyrian/Sagitarii only) lists.",
           "constraintType": "percentage",
           "min": 0,
