@@ -1,3 +1,5 @@
+{
+  "armies": {
 "huns": {
       "armyName": "Huns - 350 to 475 AD",
       "categories": [
@@ -456,6 +458,8 @@
               ]
             }
           ]
+        }
+            }
         }
       ]
     },
