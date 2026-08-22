@@ -4833,7 +4833,7 @@
           "name": "Cataphracts",
           "description": "Cataphracts have cataphracts armour, spear and barding. Superior Fighters. Massed Cavalry.",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 2,
           "cohesion": 8,
           "pointsPerBase": 24,
@@ -4857,7 +4857,7 @@
           "name": "Heavy Cavalry",
           "description": "Heavy Cavalry have light armour and spear.",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 5,
           "cohesion": 7,
           "pointsPerBase": 17,
@@ -4878,7 +4878,7 @@
           "name": "Horse Archers",
           "description": "Horse Arches have a bow. Inferior Fighters, Skirmishers. Nomad Cavalry.",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 6,
           "cohesion": 6,
           "pointsPerBase": 18,
@@ -4899,7 +4899,7 @@
           "name": "Manchurian Horse Archers",
           "description": "Horse Arches have a bow. Inferior Fighters, Skirmishers. Nomad Cavalry.",
           "category": "Allies",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 6,
           "cohesion": 6,
           "pointsPerBase": 18,
@@ -4920,7 +4920,7 @@
           "name": "Guards",
           "description": "Guards have spear and shield. Superior Fighters. May have light armour (+2) and large shield (+2) and may exchange spear for halberd (+2). May be Stubborn (+2).",
           "category": "Infantry",
-          "type": "Commander",
+          "type": "Infantry",
           "defence": 6,
           "cohesion": 8,
           "pointsPerBase": 12,
@@ -4993,7 +4993,7 @@
           "name": "Spearmen",
           "description": "Spearmen have a spear and shield. May have a large shield (+2) and may exchange spear for halberd (+2). May use Combined Formation where up to half of the figures exchange spear for bow (+2) and form the rear rows.  Alternatively may be a Mixed Unit where up to half of the figures exchange spear for crossbow (+4).",
           "category": "Infantry",
-          "type": "Commander",
+          "type": "Infantry",
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 14,
@@ -5006,7 +5006,6 @@
           "specialRules": [
             "Close Order"
           ],
-          "maxCountAllowed": 1,
           "optionalEquipment": [
             {
               "name": "Halberd",
@@ -5057,7 +5056,6 @@
             "Close Order",
             "Levies"
           ],
-          "maxCountAllowed": 1,
           "optionalEquipment": []
         },
         {
