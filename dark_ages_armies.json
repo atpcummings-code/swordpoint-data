@@ -5056,8 +5056,159 @@
             "Close Order",
             "Levies"
           ],
-          "optionalEquipment": []
+          "optionalEquipment": [
+			  {
+              "name": "Halberd",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Halberd"
+              ],
+              "equipmentRemoved": [
+                "Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Large Shield"
+              ],
+              "equipmentRemoved": [
+                "Shield"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+		  ]
         },
+
+{
+          "id": "korean_spearmen_mo",
+          "name": "Mixed Order Spearmen",
+          "description": "Spearmen have a spear and shield. May have a large shield (+2) and may exchange spear for halberd (+2). Mixed Order where up to half of the figures exchange spear for crossbow (+4).",
+          "type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+          "subProfiles": [
+            {
+              "name": "Spearmen",
+            	"defence": 6,
+          	"cohesion": 7,
+          	"pointsPerBase": 14,
+              "minBases": 2,
+              "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Crossbowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 6,
+              "maxPercentage": 50,
+              "baseEquipment": ["Shield", "Crossbow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Halberd (Spearmen)",
+              "targetProfile": "Spearmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Large Shield",
+              "targetProfile": "Spearmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }, 
+
+]
+        },
+{
+          "id": "korean_levy_spearmen_mo",
+          "name": "Mixed Order Levy Spearmen",
+          "description": "Levy Spearmen have a spear and shield. May have a large shield (+2) and may exchange spear for halberd (+2). Mixed Order where up to half of the figures exchange spear for crossbow (+4).",
+          "type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+          "subProfiles": [
+            {
+              "name": "Spearmen",
+            	"defence": 6,
+          	"cohesion": 5,
+          	"pointsPerBase": 8,
+              "minBases": 2,
+              "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order", "Levies"],
+            },
+            {
+              "name": "Crossbowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 5,
+              "pointsPerBase": 12,
+              "minBases": 1,
+              "maxBases": 6,
+              "maxPercentage": 50,
+              "baseEquipment": ["Shield", "Crossbow"],
+              "specialRules": ["Close Order", "Levies"]
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Halberd (Levy Spearmen)",
+              "targetProfile": "Levy Spearmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Large Shield",
+              "targetProfile": "Spearmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }, 
+
+]
+        },
+		  
         {
           "id": "korean_skirmishers",
           "name": "Skirmishers",
