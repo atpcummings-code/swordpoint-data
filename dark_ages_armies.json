@@ -5340,8 +5340,6 @@
 			  {"key": "alans", "supplement":"classical_armies"}, 
 			  {"key": "franks"},
 			  {"key": "goths"}
-            "franks",
-            "goths"
           ],
           "maxAlliedArmiesAllowed": 3
         }
