@@ -12876,7 +12876,7 @@
           "alliedArmyKeys": [
 		  {"key": "alans", "supplement":"classical_armies"}, 
 			  {"key": "magyar"},
-			  {"key": "turcoman"}
+			  {"key": "early_turcoman"}
           ],
           "maxAlliedArmiesAllowed": 3
         }
