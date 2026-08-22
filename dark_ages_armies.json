@@ -39889,7 +39889,7 @@
         {
           "id": "Allies",
           "name": "Allies",
-          "description": "Allies may be taken from Alans, Pecheneg, Cuman, First Crusade or Later Crusades lists.",
+          "description": "Allies may be taken from Alans, Pecheneg, Cuman, Christin Crusaders (First Crusade) or Christin Crusaders (Later Crusades) lists.",
           "constraintType": "percentage",
           "min": 0,
           "max": 33,
@@ -39898,8 +39898,8 @@
 			  		  {"key": "alans", "supplement":"classical_armies"}, 
 			  {"key": "cuman_or_kipchak"},
 			  {"key": "pecheneg"},
-			    {"key": "first_crusade"},
-			  {"key": "later_crusades"}
+			    {"key": "christian_crusaders_first_and_second_crusades", "supplement":"medieval_armies"},
+			  {"key": "christian_crusaders_later_crusades", "supplement":"medieval_armies"}
           ],
           "maxAlliedArmiesAllowed": 5
          
