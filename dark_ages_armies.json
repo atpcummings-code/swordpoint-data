@@ -2655,7 +2655,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Evade  (Cavalry)",
+              "name": "Evade (Cavalry)",
 	      "targetProfile": "Cavalry",
               "pointsModifier": 2,
               "equipmentAdded": [],
@@ -3588,7 +3588,7 @@
         },
 		  {
           "id": "gavk_visigoth_combined_cavalry_cu",
-          "name": "Combined Unit Elite/Cavalry",
+          "name": "Combined Unit Elite Cavalry/Cavalry",
           "description": "Elite Cavalry have light armour, spear and shield. Superior Fighters. May have heavy armour (+1) and may either have javelins (+1) or exchange spear for kontos (+1). Cavalry have spear and shield. Every second unit may have light armour (+1). Elite Cavalry and Cavalry combine to form Combined Units where up to 75% of bases may be of the inferior type (Cavalry).",
           "category": "Cavalry",
           "type": "Cavalry",
@@ -3621,7 +3621,7 @@
             ],
 "optionalEquipment": [
             {
-              "name": "Heavy Armour",
+              "name": "Heavy Armour  (Elite Cavalry)",
 	      "targetProfile": "Elite Cavalry",
               "pointsModifier": 1,
               "equipmentAdded": ["Heavy Armour"],
@@ -3632,9 +3632,9 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Javelins",
+              "name": "Javelins  (Elite Cavalry)",
 	      "targetProfile": "Elite Cavalry",
-              "disables": "Kontos",
+              "disables": "Kontos (Elite Cavalry)",
               "pointsModifier": 1,
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": [],
@@ -3644,9 +3644,9 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Kontos",
+              "name": "Kontos  (Elite Cavalry)",
 	      "targetProfile": "Elite Cavalry",
-              "disables": "Javelins",
+              "disables": "Javelins (Elite Cavalry)",
               "pointsModifier": 1,
               "equipmentAdded": ["Kontos"],
               "equipmentRemoved": ["Spear"],
@@ -3656,10 +3656,10 @@
               "cohesionModifier": 0
             },
  {
-              "name": "Light Armour",
+              "name": "Light Armour  (Cavalry)",
 	      "targetProfile": "Cavalry",
               "enabledEvery": 2,
-              "disables": "Skirmishers",
+              "disables": "Skirmishers (Cavalry)",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -3669,7 +3669,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Evade",
+              "name": "Evade (Cavalry)",
 	      "targetProfile": "Cavalry",
               "pointsModifier": 2,
               "equipmentAdded": [],
@@ -4297,7 +4297,7 @@
             ],
 "optionalEquipment": [
             {
-              "name": "Heavy Armour",
+              "name": "Heavy Armour (Elite Cavalry)",
 	      "targetProfile": "Elite Cavalry",
               "pointsModifier": 1,
               "equipmentAdded": ["Heavy Armour"],
@@ -4308,7 +4308,7 @@
               "cohesionModifier": 0
             },
 {
-              "name": "Barding",
+              "name": "Barding (Elite Cavalry)",
 	      "targetProfile": "Elite Cavalry",
               "pointsModifier": 1,
               "equipmentAdded": ["Barding"],
@@ -4319,9 +4319,9 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Javelins",
+              "name": "Javelins (Elite Cavalry)",
 	      "targetProfile": "Elite Cavalry",
-              "disables": "Kontos",
+              "disables": "Kontos (Elite Cavalry)",
               "pointsModifier": 1,
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": [],
@@ -4331,9 +4331,9 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Kontos",
+              "name": "Kontos (Elite Cavalry)",
 	      "targetProfile": "Elite Cavalry",
-              "disables": "Javelins",
+              "disables": "Javelins (Elite Cavalry)",
               "pointsModifier": 1,
               "equipmentAdded": ["Kontos"],
               "equipmentRemoved": ["Spear"],
@@ -4343,7 +4343,7 @@
               "cohesionModifier": 0
             },
   {
-              "name": "Shock Cavalry",
+              "name": "Shock Cavalry (Elite Cavalry)",
 	      "targetProfile": "Elite Cavalry",
               "pointsModifier": 4,
               "equipmentAdded": [],
@@ -4354,10 +4354,9 @@
               "cohesionModifier": 0
             },
  	    {
-              "name": "Light Armour",
+              "name": "Light Armour (Cavalry)",
 	      "targetProfile": "Cavalry",
               "enabledEvery": 2,
-              "disables": "Skirmishers",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -4367,7 +4366,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Evade",
+              "name": "Evade (Elite Cavalry)",
 	      "targetProfile": "Cavalry",
               "pointsModifier": 2,
               "equipmentAdded": [],
@@ -4951,7 +4950,7 @@
 "optionalEquipment": [
            
 	    {
-              "name": "Shock Cavalry",
+              "name": "Shock Cavalry (Elite Cavalry)",
 	      "targetProfile": "Elite Cavalry",
               "pointsModifier": 4,
               "equipmentAdded": [],
@@ -4962,10 +4961,9 @@
               "cohesionModifier": 0
             },
  	    {
-              "name": "Light Armour",
+              "name": "Light Armour (Cavalry)",
 	      "targetProfile": "Cavalry",
               "enabledEvery": 2,
-              "disables": "Skirmishers",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -4975,7 +4973,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Evade",
+              "name": "Evade (Cavalry)",
 	      "targetProfile": "Cavalry",
               "pointsModifier": 2,
               "equipmentAdded": [],
