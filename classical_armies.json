@@ -1,7 +1,7 @@
 {
   "armies": {
-"huns": {
-      "armyName": "Huns - 350 to 475 AD",
+"alans": {
+      "armyName": "Alans - 350 to 475 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -9,6 +9,13 @@
           "constraintType": "count",
           "min": 0,
           "max": 6
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 10
         },
         {
           "id": "Cavalry",
@@ -24,26 +31,13 @@
           "min": 0,
           "max": 15
         },
-        {
-          "id": "Allies",
-          "name": "Allies & Mercenaries",
-          "description": "As Allies the army may have up to 66% of its points total, comprising Alans and/or Frank or Goth infantry,",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 66,
-          "alliedArmyKeys": [
-            "alans",
-            "franks",
-            "goths"
-          ],
-          "maxAlliedArmiesAllowed": 3
-        }
+        
       ],
       "units": [
         {
-          "id": "huns_high_chieftain",
+          "id": "alans_high_chieftain",
           "name": "High chieftain",
-          "description": "Rides a horse. The High Chieftain may have Stratagem (+50)",
+          "description": "Rides a horse.",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
@@ -53,23 +47,12 @@
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-          "optionalEquipment": [
-            {
-              "name": "Strategem",
-              "pointsModifier": 50,
-              "rulesAdded": [
-                "Stratagem"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
+          "optionalEquipment": []
         },
         {
-          "id": "huns_chieftain",
+          "id": "alans_chieftain",
           "name": "Chieftain",
-          "description": "May ride a horse.",
+          "description": "Rides a horse.",
           "category": "Commanders",
           "type": "Commander",
           "attacks": "+2",
@@ -81,11 +64,11 @@
           "optionalEquipment": []
         },
         {
-          "id": "huns_nobles",
+          "id": "alans_nobles",
           "name": "Nobles",
-          "description": "Noble Cavalry have light armour and bow. Superior Fighters. Superior Shooters. Nomad Cavalry. May have heavy armour (+1), javelins (+1), shield (+1) and spear (+1). Nobles without upgrades may be fielded as Skirmishers.",
+          "description": "Noble Cavalry have light armour and bow. Superior Fighters. Superior Shooters. Nomad Cavalry. May have heavy armour (+1), javelins (+1), shield (+1) and spear (+1) or kontos (+2).May be fielded without upgrades as Skirmishers.",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 5,
           "cohesion": 8,
           "pointsPerBase": 27,
@@ -105,16 +88,21 @@
           "optionalEquipment": [
             {
               "name": "Heavy Armour",
-              "disables": [
-                "Noble Alternate Deployment"
-              ],
+              "disables": ["Skirmishers"],
               "pointsModifier": 1,
-              "equipmentAdded": [
-                "Heavy Armour"
-              ],
-              "equipmentRemoved": [
-                "Light Armour"
-              ],
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+              "disables": ["Skirmishers"],
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -122,13 +110,9 @@
             },
             {
               "name": "Javelins",
-              "disables": [
-                "Noble Alternate Deployment"
-              ],
+              "disables": ["Skirmishers"],
               "pointsModifier": 1,
-              "equipmentAdded": [
-                "Javelins"
-              ],
+              "equipmentAdded": ["Javelins"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -137,13 +121,9 @@
             },
             {
               "name": "Spear",
-              "disables": [
-                "Noble Alternate Deployment"
-              ],
+              "disables": ["Skirmishers", "Kontos"],
               "pointsModifier": 1,
-              "equipmentAdded": [
-                "Spear"
-              ],
+              "equipmentAdded": ["Spear"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -151,34 +131,19 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Noble Alternate Deployment",
-              "disables": [
-                "Spear",
-                "Skirmishers",
-                "Javelins",
-                "Heavy Armour"
-              ],
-              "pointsModifier": -1,
-              "equipmentAdded": [
-                "Heavy Armour",
-                "Shield",
-                "Spear"
-              ],
-              "equipmentRemoved": [
-                "Light Armour"
-              ],
+              "name": "Kontos",
+              "disables": ["Skirmishers", "Spear"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Kontos"],
+              "equipmentRemoved": [],
               "rulesAdded": [],
-              "rulesRemoved": [
-                "Nomad Cavalry"
-              ],
-              "defenceModifier": -2,
+              "rulesRemoved": [],
+              "defenceModifier": 0,
               "cohesionModifier": 0
             },
-            {
+                        {
               "name": "Skirmishers",
-              "disables": [
-                "Noble Alternate Deployment"
-              ],
+              "disables": ["Heavy Armour", "Spear", "Kontos", "Javelins", "Shield"],
               "pointsModifier": 0,
               "rulesAdded": [
                 "Skirmishers"
@@ -192,59 +157,11 @@
           ]
         },
         {
-          "id": "huns_subject_nobles",
-          "name": "Subject Nobles",
-          "description": "Subject Nobles have light armour and spear. May have heavy armour (+1) and shield (+1).",
-          "category": "Cavalry",
-          "type": "Commander",
-          "defence": 5,
-          "cohesion": 7,
-          "baseEquipment": [
-            "Light Armour",
-            "Speear"
-          ],
-          "pointsPerBase": 17,
-          "minBases": 3,
-          "maxBases": 8,
-          "specialRules": [
-            "Open Order"
-          ],
-          "maxCountAllowed": 2,
-          "optionalEquipment": [
-            {
-              "name": "Heavy Armour",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Heavy Armour"
-              ],
-              "equipmentRemoved": [
-                "Light Armour"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Shield",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Shield"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "huns_elite_horse_archers",
+          "id": "alans_elite_horse_archers",
           "name": "Elite Horse Archers",
           "description": "Elite Horse Arches have a bow. Superior Shooters. Nomad Cavalry. May have javelins (+1), shield (+1) and spear (+1). May be fielded as skirmishers.",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 22,
@@ -310,11 +227,11 @@
           ]
         },
         {
-          "id": "huns_horse_archers",
+          "id": "alans_horse_archers",
           "name": "Horse Archers",
-          "description": "Horse Arches have a bow. Nomad Cavalry. May have javelins (+1), shield (+1) and spear (+1). May be fielded as skirmishers.",
+          "description": "Horse Arches have a bow. Nomad Cavalry. May have javelins (+1), shield (+1). May be fielded as skirmishers.",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 20,
@@ -334,18 +251,6 @@
               "pointsModifier": 1,
               "equipmentAdded": [
                 "Javelins"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Spear",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Spear"
               ],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -380,46 +285,28 @@
           ]
         },
         {
-          "id": "huns_subject_horse_archers",
-          "name": "Subject Horse Archers",
-          "description": "Subject Horse Arches have a bow. Skirmishers. Nomad Cavalry. May have shield (+1).",
-          "category": "Cavalry",
-          "type": "Commander",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 19,
-          "minBases": 1,
+          "id": "alans_warriors",
+          "name": "Warriors",
+          "description": "Warriors have a bow. Skirmishers.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
           "maxBases": 6,
-          "baseEquipment": [
-            "Bow"
-          ],
-          "specialRules": [
-            "Skirmishers",
-            "Nomad Cavalry"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Shield",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Shield"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": []
         },
         {
-          "id": "huns_wagons",
+          "id": "alans_wagons",
           "name": "Wagons",
-          "description": "Wagons form a Wagon Tabor. There is one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
+          "description": "Wagons form a Wagon Tabor. There may be one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
           "category": "SpecialUnits",
           "type": "Commander",
           "minBases": 0,
-          "maxBases": 4,
+          "maxBases": 5,
           "subProfiles": [
             {
               "name": "Wagons",
