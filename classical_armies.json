@@ -453,12 +453,9 @@
               "equipmentAdded": [
                 "Bow"
               ],
-              "equipmentRemoved": [
-                "Javelins"
-              ]
-            }
-          ]
+              "equipmentRemoved": ["Javelins"]
         }
+      ]
     }
   }
 }
