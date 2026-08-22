@@ -5136,7 +5136,7 @@
               "cohesionModifier": 0
             },
           {
-              "name": "Large Shield",
+              "name": "Large Shield (Spearmen)",
               "targetProfile": "Spearmen",
               "pointsModifier": 2,
               "equipmentAdded": ["Large Shield"],
@@ -5146,6 +5146,28 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             }, 
+		{
+              "name": "Halberd (Crossbowmen)",
+              "targetProfile": "Crossbowmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Large Shield (Crossbowmen)",
+              "targetProfile": "Crossbowmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
 
 ]
         },
@@ -5161,7 +5183,7 @@
           "specialRules": ["Close Order"],
           "subProfiles": [
             {
-              "name": "Spearmen",
+              "name": "Levy Spearmen",
             	"defence": 6,
           	"cohesion": 5,
           	"pointsPerBase": 8,
@@ -5171,7 +5193,7 @@
           "specialRules": ["Close Order", "Levies"],
             },
             {
-              "name": "Crossbowmen",
+              "name": "Levy Crossbowmen",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
               "defence": 6,
               "cohesion": 5,
@@ -5197,8 +5219,8 @@
               "cohesionModifier": 0
             },
           {
-              "name": "Large Shield",
-              "targetProfile": "Spearmen",
+              "name": "Large Shield (Levy Spearmen)",
+              "targetProfile": "Levy Spearmen",
               "pointsModifier": 2,
               "equipmentAdded": ["Large Shield"],
               "equipmentRemoved": ["Shield"],
@@ -5207,6 +5229,28 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             }, 
+		{
+              "name": "Halberd (Levy Crossbowmen)",
+              "targetProfile": "Levy Crossbowmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Large Shield (Crossbowmen)",
+              "targetProfile": "Crossbowmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
 
 ]
         },
