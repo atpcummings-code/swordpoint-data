@@ -454,8 +454,10 @@
                 "Bow"
               ],
               "equipmentRemoved": ["Javelins"]
-        }
-      ]
+            }
+          ]      
+    }
+  ]      
     }
   }
 }
