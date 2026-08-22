@@ -63,7 +63,7 @@
               "defence": 6,
               "cohesion": 7,
               "pointsPerBase": 16,
-              "maxPercentage": 25,
+              "maxPercentage": 26,
               "baseEquipment": ["Shield", "Spear", "Bow"],
               "specialRules": ["Close Order"]
             }
