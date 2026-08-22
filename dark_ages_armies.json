@@ -36743,8 +36743,8 @@
               "pointsPerBase": 12,
               "minBases": 1,
               "maxBases": 8,
+				"maxPercentage": 67,
               "minPercentage": 50,
-              "maxPercentage": 67,
               "baseEquipment": ["Spear", "Shield"],
               "specialRules": ["Close Order", "Shieldwall"]
             }
