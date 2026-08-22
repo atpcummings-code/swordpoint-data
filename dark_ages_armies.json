@@ -159,7 +159,7 @@
         },
 		  {
           "id": "franks_combined_cavalry_cu",
-          "name": "Combined Noble/Light Cavalry",
+          "name": "Combined Unit Noble Cavalry/Light Cavalry",
           "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. Light Cavalry have spear, javelins and shield.  Noble and Light Cavalry may form Combined Units containing up to 75% of bases of the inferior type (Light Cavalry).",
           "category": "Cavalry",
           "type": "Cavalry",
@@ -352,7 +352,7 @@
         
 {
           "id": "franks_combined_warriors_cu",
-          "name": "Combined Warriors",
+          "name": "Combined Unit Elite Warriors/Warriors",
           "description": "Elite and other Warriors may form Combined Units containing up to 75% of bases of the inferior type. Elite Warriors have throwing spear and shield. Superior Fighters. Warband. May have light armour (+2) and javelins (+2). May exchange throwing spear for heavy throwing spear (+2).  In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall. Warriors having throwing spear and shield, Warband. May have javelins (+2). May exchange throwing spear for heavy throwing spear (+2). In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
           "category": "Infantry",
           "type": "Infantry",
@@ -3047,7 +3047,7 @@
         },
 		  {
           "id": "gavk_vandal_armies_no_allies_combined_cavalry_cu",
-          "name": "Combined Unit Elite/Cavalry",
+          "name": "Combined Unit Elite Cavalry/Cavalry",
           "description": "Elite Cavalry have light armour, spear and shield. Superior Fighters. May have heavy armour (+1) and may either have javelins (+1) or exchange spear for kontos (+1). Cavalry have spear and shield. Every second unit may have light armour (+1). Elite Cavalry and Cavalry combine to form Combined Units where up to 75% of bases may be of the inferior type (Cavalry).",
           "category": "Cavalry",
           "type": "Cavalry",
@@ -5485,7 +5485,7 @@
         {
           "id": "korean_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have a spear and shield. May have a large shield (+2) and may exchange spear for halberd (+2). May use Combined Formation where up to half of the figures exchange spear for bow (+2) and form the rear rows.  Alternatively may be a Mixed Unit where up to half of the figures exchange spear for crossbow (+4).",
+          "description": "Spearmen have a spear and shield. May have a large shield (+2) and may exchange spear for halberd (+2). ",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
