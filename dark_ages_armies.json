@@ -93,7 +93,7 @@
         {
           "id": "franks_noble_cavalry",
           "name": "Noble Cavalry",
-          "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. Maybe fielded as skirmishers.Formed Noble and Light Cavalry may form Combined Units containing up to 75% of bases of the inferior type.",
+          "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. Maybe fielded as skirmishers.",
           "category": "Cavalry",
           "type": "Commander",
           "defence": 4,
@@ -158,6 +158,41 @@
             }
           ]
         },
+		  {
+          "id": "franks_combined_cavalry_cu",
+          "name": "Combined Noble/Light Cavalry",
+          "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. Light Cavalry have spear, javelins and shield.  Noble and Light Cavalry may form Combined Units containing up to 75% of bases of the inferior type (Light Cavalry).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Noble Cavalry",
+              "defence": 4,
+              "cohesion": 8,
+              "pointsPerBase": 23,
+              "minBases": 1,
+              "maxBases": 8,
+              "baseEquipment": ["Light Armour", "Spear", "Shield", "Javelins"],
+              "specialRules": ["Open Order", "Superior Fighters"]
+            },
+            {
+              "name": "Light Cavalry",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 6,
+              "pointsPerBase": 17,
+              "minBases": 1,
+              "maxBases": 6,
+              "maxPercentage": 75,
+              "baseEquipment": ["Spear", "Shield", "Javelins"],
+              "specialRules": ["open Order"]
+            }
+            
+            ],
+		"optionalEquipment": []
+            },
         {
           "id": "franks_elite_warriors",
           "name": "Elite Warriors",
@@ -317,7 +352,7 @@
         },
         
 {
-          "id": "franks_combined_warriors",
+          "id": "franks_combined_warriors_cu",
           "name": "Combined Warriors",
           "description": "Elite and other Warriors may form Combined Units containing up to 75% of bases of the inferior type. Elite Warriors have throwing spear and shield. Superior Fighters. Warband. May have light armour (+2) and javelins (+2). May exchange throwing spear for heavy throwing spear (+2).  In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall. Warriors having throwing spear and shield, Warband. May have javelins (+2). May exchange throwing spear for heavy throwing spear (+2). In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
           "category": "Infantry",
