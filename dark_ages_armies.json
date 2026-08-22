@@ -34525,10 +34525,12 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "rus",
-            "christian_crusader"
+             {"key": "rus"},
+			    {"key": "christian_crusaders_first_crusade", "supplement":"medieval_armies"},
+			  {"key": "christian_crusaders_second_crusade", "supplement":"medieval_armies"},
+			  {"key": "christian_crusaders_later_crusades", "supplement":"medieval_armies"}
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 4
         }
       ],
       "units": [
@@ -39895,10 +39897,10 @@
           "max": 33,
           "alliedArmyKeys": [
            
-			  		  {"key": "alans", "supplement":"classical_armies"}, 
+			  {"key": "alans", "supplement":"classical_armies"}, 
 			  {"key": "cuman_or_kipchak"},
 			  {"key": "pecheneg"},
-			    {"key": "christian_crusaders_first_and_second_crusades", "supplement":"medieval_armies"},
+			  {"key": "christian_crusaders_first_crusade", "supplement":"medieval_armies"},
 			  {"key": "christian_crusaders_later_crusades", "supplement":"medieval_armies"}
           ],
           "maxAlliedArmiesAllowed": 5
