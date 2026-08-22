@@ -14397,7 +14397,7 @@
       "defence": 6,
       "cohesion": 7,
 		"pointsPerBase": 14,
-      "minBases": 1,
+      "minBases": 2,
       "maxBases": 12,
       
       "baseEquipment": ["Spear", "Shield"],
@@ -14449,8 +14449,8 @@
       "defence": 6,
       "cohesion": 6,
 	  "pointsPerBase": 10,
-      "minBases": 1,
-      "maxBases": 10,
+      "minBases": 2,
+      "maxBases": 12,
       "baseEquipment": ["Spear", "Shield"],
       "specialRules": ["Close Order", "Levies"]
     },
