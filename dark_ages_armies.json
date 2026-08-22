@@ -2337,12 +2337,12 @@
         {
           "id": "Allies",
           "name": "Allies",
-          "description": "Alans (use Hun list) and/or up to two units of Berber Cavalry from the Early Byzantine list.",
+          "description": "Alans and/or up to two units of Berber Cavalry from the Early Byzantine list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "alans"
+            {"key": "alans", "supplement":"classical_armies"} 
           ],
           "maxAlliedArmiesAllowed": 1
         }
