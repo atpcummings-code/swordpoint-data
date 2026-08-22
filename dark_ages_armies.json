@@ -10270,9 +10270,9 @@
           "min": 0,
           "max": 33,
           "alliedArmyKeys": [
-            "huns",
-            "alans",
-            "avars"
+		  {"key": "alans", "supplement":"classical_armies"}, 
+			  {"key": "huns"},
+			  {"key": "avars"}
           ],
           "maxAlliedArmiesAllowed": 3
         }
@@ -12407,7 +12407,8 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "alans"
+          		  {"key": "alans", "supplement":"classical_armies"}, 
+
           ],
           "maxAlliedArmiesAllowed": 5
         }
@@ -12873,8 +12874,9 @@
           "min": 0,
           "max": 50,
           "alliedArmyKeys": [
-            "alans",
-            "gavk_visigoth"
+		  {"key": "alans", "supplement":"classical_armies"}, 
+			  {"key": "magyar"},
+			  {"key": "turcoman"}
           ],
           "maxAlliedArmiesAllowed": 3
         }
@@ -17533,13 +17535,14 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "alans",
-            "khazar",
-            "pecheneg",
-            "pagan_rus",
-            "christianised_rus"
+		  {"key": "alans", "supplement":"classical_armies"}, 
+			  {"key": "khazar"},
+			  {"key": "pecheneg"},
+			    {"key": "pagan_rus"},
+			  {"key": "christianised_rus"}
+			  
           ],
-          "maxAlliedArmiesAllowed": 4
+          "maxAlliedArmiesAllowed": 5
         }
       ],
       "units": [
@@ -18716,11 +18719,11 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "alans",
-            "khazar",
-            "pecheneg",
-            "pagan_rus",
-            "christianised_rus"
+		  {"key": "alans", "supplement":"classical_armies"}, 
+			  {"key": "khazar"},
+			  {"key": "pecheneg"},
+			    {"key": "pagan_rus"},
+			  {"key": "christianised_rus"}
           ],
           "maxAlliedArmiesAllowed": 4
         }
@@ -38478,7 +38481,11 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 33,
-          "alliedArmyKeys": [ {"key": "later_bulgar", "onlyUnits": ["later_bulgar_bulgar_nobles", "later_bulgar_elite_bulgar_horse_archers", "later_bulgar_bulgar_horse_archers"]}, { "key": "pecheneg"},{ "key": "alans"} ], 
+          "alliedArmyKeys": [ 
+			  {"key": "later_bulgar", "onlyUnits": ["later_bulgar_bulgar_nobles", "later_bulgar_elite_bulgar_horse_archers", "later_bulgar_bulgar_horse_archers"]}, 
+			  { "key": "pecheneg"},
+		  {"key": "alans", "supplement":"classical_armies"}
+		  ], 
           "maxAlliedArmiesAllowed": 3
         }
       ],
@@ -39427,7 +39434,12 @@
           "min": 0,
           "max": 33,
           "alliedArmyKeys": [
-            "alans", "pecheneg", "cuman_or_kipchak", "first_crusade", "later_crusades"
+           
+			  		  {"key": "alans", "supplement":"classical_armies"}, 
+			  {"key": "cuman_or_kipchak"},
+			  {"key": "pecheneg"},
+			    {"key": "first_crusade"},
+			  {"key": "later_crusades"}
           ],
           "maxAlliedArmiesAllowed": 5
          
