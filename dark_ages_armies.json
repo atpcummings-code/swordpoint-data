@@ -5242,7 +5242,7 @@
             },
           {
               "name": "Large Shield (Crossbowmen)",
-              "targetProfile": "Crossbowmen",
+              "targetProfile": "Levy Crossbowmen",
               "pointsModifier": 2,
               "equipmentAdded": ["Large Shield"],
               "equipmentRemoved": ["Shield"],
