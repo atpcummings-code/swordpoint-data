@@ -63,6 +63,7 @@
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 6,
               "cohesion": 7,
+				"maxPercentage": 25,
               "maxBases": 6,
               "pointsPerBase": 16,
               "baseEquipment": ["Shield", "Spear", "Bow"],
