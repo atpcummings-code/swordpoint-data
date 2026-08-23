@@ -103,7 +103,7 @@
 		},
 			{
 		"name": "Drilled",
-		"pointsModifier": 4,
+		"pointsModifier": 3,
 		"equipmentAdded": [],
 		"equipmentRemoved": [],
 		"rulesAdded": ["Drilled"],
