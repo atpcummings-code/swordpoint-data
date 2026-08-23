@@ -57,7 +57,6 @@
           "baseEquipment": ["Spear", "Shield"],
           "specialRules": ["Close Order"],
             },
-			 
             {
               "name": "Bowmen",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
@@ -94,6 +93,28 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
+		{
+              "name": "Halberd ((Mixed Spear/Bowmen (Rear Row))",
+              "targetProfile": "Mixed Spear/Bowmen (Rear Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Halberd ((Mixed Spear/Bowmen (Front Row))",
+              "targetProfile": "(Mixed Spear/Bowmen (Front Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
 		
           {
               "name": "Large Shield (Spearmen)",
@@ -109,6 +130,28 @@
 	        {
               "name": "Large Shield (Bowmen)",
               "targetProfile": "Bowmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Large Shield (Mixed Spear/Bowmen (Rear Row))",
+              "targetProfile": "Mixed Spear/Bowmen (Rear Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Large Shield (Mixed Spear/Bowmen (Front Row))",
+              "targetProfile": "Mixed Spear/Bowmen (Rear Row)",
               "pointsModifier": 2,
               "equipmentAdded": ["Large Shield"],
               "equipmentRemoved": ["Shield"],
