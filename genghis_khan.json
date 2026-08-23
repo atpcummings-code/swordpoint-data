@@ -256,7 +256,7 @@
 		"minBases": 3,
 	  	"maxBases": 6,
         "baseEquipment": ["Spear", "Shield", "Bow"],
-        "specialRules": ["Close Order", "Shieldwall" "Inferior Fighters", "Levies"],
+        "specialRules": ["Close Order", "Shieldwall","Inferior Fighters", "Levies"],
         },
 		{
 		"name": "Irregulars",
@@ -267,7 +267,7 @@
 		"minBases": 0,
 		"maxBases": 12,
 		"baseEquipment": ["Spear", "Shield"],
-        "specialRules": ["Close Order", "Shieldwall" "Inferior Fighters", "Levies"],
+        "specialRules": ["Close Order", "Shieldwall", "Inferior Fighters", "Levies"],
 		},
 		{
 		"name": "Irregulars Bowmen",
@@ -288,7 +288,7 @@
 		"pointsPerBase": 10,
 		"maxBases": 6,
 		"baseEquipment": ["Spear", "Shield", "Bow"],
-        "specialRules": ["Close Order", "Shieldwall" "Inferior Fighters", "Levies"],
+        "specialRules": ["Close Order", "Shieldwall", "Inferior Fighters", "Levies"],
 		}        
 		],
 		"optionalEquipment": [
