@@ -26308,6 +26308,187 @@
             }
           ]
         },
+{
+        "id": "arab_caliphate_abbasid_caliphate_arab_or_berber_infantry_cf",
+        "name": "Combined Formation Arab or Berber Infantry",
+         "description": "Arab or Berber Infantry have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2). May use Combined Formation where up to half the figures in the unit exchange spear for bow (free) and form the rear rows.",
+    	"category": "Infantry",      
+		"type": "Infantry",
+        "minBases": 3,
+        "maxBases": 12,
+  
+	  	"combinedFormation":  
+		[
+		{ "label": "25%", "disableSubProfiles": ["Arab or Berber Infantry Bowmen","Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Front Row)","Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Rear Row)" ]}
+		],
+       "subProfiles": [
+       	{
+        "name": "Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 14,
+		"minBases": 3,
+	  	"maxBases": 6,
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order"],
+        },
+		{
+		"name": "Arab or Berber Infantry",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 14,
+		"minBases": 3,
+		"maxBases": 12,
+        "baseEquipment": ["Spear", "Shield"],
+        "specialRules": ["Close Order"],
+		},
+		{
+		"name": "Arab or Berber Infantry Bowmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Arab or Berber Infantry", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 14,
+		"minBases": 1,
+		"baseEquipment": ["Bow", "Shield"],
+		"specialRules": ["Close Order"],
+		},
+		{
+		"name": "Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Arab or Berber Infantry", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 14,
+		"minBases": 1,
+		"maxBases": 6,
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order"],
+		}        
+		],
+		"optionalEquipment": [
+		{
+		"name": "Large Shield (Excludes Arab or Berber Infantry Bowmen)",
+		"pointsModifier": 2,
+		"targetProfile": ["Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Rear Row)", "Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Front Row)", "Arab or Berber Infantry"],
+		"equipmentAdded": ["Large Shield"],
+		"equipmentRemoved": ["Shield"],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		},
+		{
+		"name": "light Armour",
+		"pointsModifier": 2,
+		"equipmentAdded": ["Light Armour"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		},
+			{
+		"name": "Riding Camels",
+		"pointsModifier": 1,
+		"equipmentAdded": [],
+		"equipmentRemoved": [],
+		"rulesAdded": ["Riding Camels"],
+		"rulesRemoved": [],
+		"defenceModifier": 0,
+		"cohesionModifier": 0
+		}
+	]
+},
+		  {
+        "id": "arab_caliphate_abbasid_caliphate_militia_cf",
+        "name": "Combined Formation Militia",
+         "description": "Militia have spear and shield. Inferior Fighters. Inferior Shooters. May have large shield (+2) and be Riding Camels (+1). May use Combined Formation where up to half the figures in the unit exchange spear for bow (-2) and form the rear rows.",
+    	"category": "Infantry",      
+		"type": "Infantry",
+        "minBases": 3,
+        "maxBases": 12,
+  
+	  	"combinedFormation":  
+		[
+		{ "label": "25%", "disableSubProfiles": ["Militia Bowmen","Militia/Militia Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Militia/Militia Bowmen (Front Row)","Militia/Militia Bowmen (Rear Row)" ]}
+		],
+       "subProfiles": [
+       	{
+        "name": "Militia/Militia Bowmen (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 6,
+    	"pointsPerBase": 10,
+		"minBases": 3,
+	  	"maxBases": 6,
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order", "Inferior Fighters", "Inferior Shooters"],
+        },
+		{
+		"name": "Militia",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 6,
+    	"pointsPerBase": 10,
+		"minBases": 3,
+		"maxBases": 12,
+        "baseEquipment": ["Spear", "Shield"],
+        "specialRules": ["Close Order", "Inferior Fighters", "Inferior Shooters"],
+		},
+		{
+		"name": "Militia Bowmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Militia", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 6,
+        "cohesion": 6,
+    	"pointsPerBase": 8,
+		"minBases": 1,
+		"baseEquipment": ["Bow", "Shield"],
+        "specialRules": ["Close Order", "Inferior Fighters", "Inferior Shooters"],
+		},
+		{
+		"name": "Militia/Militia Bowmen (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Militia", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 14,
+		"minBases": 1,
+		"maxBases": 6,
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order", "Inferior Fighters", "Inferior Shooters"],
+		}        
+		],
+		"optionalEquipment": [
+		{
+		"name": "Large Shield (Excludes Militia Bowmen)",
+		"pointsModifier": 2,
+		"targetProfile": ["Militia/Militia Bowmen (Rear Row)", "Militia/Militia Bowmen (Front Row)", "Militia"],
+		"equipmentAdded": ["Large Shield"],
+		"equipmentRemoved": ["Shield"],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		},
+		{
+		"name": "Riding Camels",
+		"pointsModifier": 1,
+		"equipmentAdded": [],
+		"equipmentRemoved": [],
+		"rulesAdded": ["Riding Camels"],
+		"rulesRemoved": [],
+		"defenceModifier": 0,
+		"cohesionModifier": 0
+		}
+	]
+},
+		  
         {
           "id": "arab_caliphate_abbasid_caliphate_militia_skirmishers",
           "name": "Militia Skirmishers",
