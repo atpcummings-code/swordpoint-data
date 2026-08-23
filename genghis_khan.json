@@ -151,7 +151,7 @@
             },
 		{
               "name": "Large Shield (Mixed Spear/Bowmen (Front Row))",
-              "targetProfile": "Mixed Spear/Bowmen (Rear Row)",
+              "targetProfile": "Mixed Spear/Bowmen (Front Row)",
               "pointsModifier": 2,
               "equipmentAdded": ["Large Shield"],
               "equipmentRemoved": ["Shield"],
