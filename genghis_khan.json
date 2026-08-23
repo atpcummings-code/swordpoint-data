@@ -36,36 +36,35 @@
 		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Bowmen (Front)","Mixed Spear/Bowmen (Rear)" ]}
 		],
           "subProfiles": [
-            {
-              "name": "Spearmen",
-		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-            	"defence": 6,
-          	"cohesion": 7,
-          	"pointsPerBase": 14,
-              "minBases": 3,
-              "maxBases": 12,
-          "baseEquipment": ["Spear", "Shield"],
-          "specialRules": ["Close Order"],
-            },
-			  {
+             {
               "name": "Mixed Spear/Bowmen (Front Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 6,
               "cohesion": 7,
 	          "pointsPerBase": 16,
-		      "maxPercentage": 25,
-              "maxBases": 6,
+               "maxBases": 6,
               "baseEquipment": ["Shield", "Spear", "Bow"],
               "specialRules": ["Close Order"]
             },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 7,
+          	"pointsPerBase": 14,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+            },
+			 
             {
               "name": "Bowmen",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 6,
               "cohesion": 7,
               "pointsPerBase": 16,
-              "maxPercentage": 50,
-              "maxBases": 6,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
               "baseEquipment": ["Shield", "Bow"],
               "specialRules": ["Close Order"]
             },
@@ -73,10 +72,10 @@
 			  {
               "name": "Mixed Spear/Bowmen (Rear Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
               "defence": 6,
               "cohesion": 7,
 	          "pointsPerBase": 16,
-		      "maxPercentage": 25,
               "maxBases": 6,
               "baseEquipment": ["Shield", "Spear", "Bow"],
               "specialRules": ["Close Order"]
