@@ -5726,6 +5726,293 @@
 
 ]
         },
+		  {
+          "id": "korean_spearmen_cf",
+          "name": "Combined Formation Spearmen",
+          "description": "Spearmen have a spear and shield. May have a large shield (+2) and may exchange spear for halberd (+2). Combined Formation up to half of the figures exchange spear for bow (+2) and form the rear rows.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Bowmen","Mixed Spear/Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Bowmen (Front Row)","Mixed Spear/Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Spear/Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+               "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear", "Bow"],
+              "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 7,
+          	"pointsPerBase": 14,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 16,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Shield", "Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Mixed Spear/Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear", "Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Halberd (Spearmen)",
+              "targetProfile": "Spearmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Halberd (Mixed Spear/Bowmen (Rear Row))",
+              "targetProfile": "Mixed Spear/Bowmen (Rear Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Halberd (Mixed Spear/Bowmen (Front Row))",
+              "targetProfile": "Mixed Spear/Bowmen (Front Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		
+          {
+              "name": "Large Shield (Spearmen)",
+              "targetProfile": "Spearmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }, 
+	        {
+              "name": "Large Shield (Bowmen)",
+              "targetProfile": "Bowmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Large Shield (Mixed Spear/Bowmen (Rear Row))",
+              "targetProfile": "Mixed Spear/Bowmen (Rear Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Large Shield (Mixed Spear/Bowmen (Front Row))",
+              "targetProfile": "Mixed Spear/Bowmen (Front Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]
+        },
+		  {
+          "id": "korean_levy_spearmen_cf",
+          "name": "Combined Formation Levy Spearmen",
+          "description": "Levy Spearmen have a spear and shield. May have a large shield (+2) and may exchange spear for halberd (+2). Combined Formation up to half of the figures exchange spear for bow (+2) and form the rear rows.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order","Levies"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Levy Bowmen","Mixed Levy Spear/Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Levy Spear/Bowmen (Front Row)","Mixed Levy Spear/Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Levy Spear/Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+               "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear", "Bow"],
+              "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Levy Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 7,
+          	"pointsPerBase": 14,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Levy Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 16,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Shield", "Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Mixed Levy Spear/Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear", "Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Halberd (Levy Spearmen)",
+              "targetProfile": "Levy Spearmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Halberd (Mixed Levy Spear/Bowmen (Rear Row))",
+              "targetProfile": "Mixed Levy Spear/Bowmen (Rear Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Halberd (Mixed Levy Spear/Bowmen (Front Row))",
+              "targetProfile": "Mixed Levy Spear/Bowmen (Front Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		
+          {
+              "name": "Large Shield (Levy Spearmen)",
+              "targetProfile": "Levy Spearmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }, 
+	        {
+              "name": "Large Shield (Levy Bowmen)",
+              "targetProfile": "Levy Bowmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Large Shield (Mixed Levy Spear/Bowmen (Rear Row))",
+              "targetProfile": "Mixed Levy Spear/Bowmen (Rear Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Large Shield (Mixed Levy Spear/Bowmen (Front Row))",
+              "targetProfile": "Mixed Levy Spear/Bowmen (Front Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]
+        }
+		  
 		  
         {
           "id": "korean_skirmishers",
