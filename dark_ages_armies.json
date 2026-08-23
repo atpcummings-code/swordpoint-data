@@ -23110,6 +23110,80 @@
             }
           ]
         },
+		  {
+        "id": "middle_christian_spanish_prones_cf",
+        "name": "Combined Formation Prones/Arqueros",
+         "description": "Prones have spear spear, javelins and shield. May use Combined Formation by including up to 50% Close Order Arqueros (14 points per base) an the rear rows. Arqueros may have shield (+1).",
+    	"category": "Infantry",      
+		"type": "Infantry",
+        "minBases": 3,
+        "maxBases": 12,
+  
+	  	"combinedFormation":  
+		[
+		{ "label": "25%", "disableSubProfiles": ["Arqueros","Prones/Arqueros (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Prones/Arqueros (Front Row)","Prones/Arqueros (Rear Row)" ]}
+		],
+       "subProfiles": [
+       	{
+        "name": "Prones/Arqueros (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 16,
+		"minBases": 3,
+	  	"maxBases": 6,
+        "baseEquipment": ["Spear", "Javelins", "Shield", "Bow"],
+        "specialRules": ["Close Order"],
+        },
+		{
+		"name": "Prones",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 16,
+		"minBases": 0,
+		"maxBases": 12,
+        "baseEquipment": ["Spear", "Javelins", "Shield"],
+        "specialRules": ["Close Order"],
+		},
+		{
+		"name": "Arqueros",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Prones", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 7,
+        "cohesion": 7,
+    	"pointsPerBase": 14,
+		"baseEquipment": ["Bow"],
+		"specialRules": ["Close Order"],
+		},
+		{
+		"name": "Prones/Arqueros (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Prones", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 16,
+		"maxBases": 6,
+        "baseEquipment": ["Spear", "Javelins", "Shield", "Bow"],
+        "specialRules": ["Close Order"],
+		}        
+		],
+		"optionalEquipment": [
+				{
+		"name": "Shield",
+		"pointsModifier": 2,
+		"targetProfile": ["Arqueros"],
+		"maxEquipmentCount": 2, 
+		"equipmentAdded": ["Shield"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		}
+	]
+},
           {
           "id": "middle_christian_spanish_ballesteros",
  "excludes": ["middle_christian_spanish_militia_crossbowmen"],
@@ -23772,6 +23846,80 @@
             }
           ]
         },
+		  {
+        "id": "early_christian_spanish_prones_cf",
+        "name": "Combined Formation Prones/Arqueros",
+         "description": "Prones have spear spear, javelins and shield. May use Combined Formation by including up to 50% Close Order Arqueros (14 points per base) an the rear rows. Arqueros may have shield (+1).",
+    	"category": "Infantry",      
+		"type": "Infantry",
+        "minBases": 3,
+        "maxBases": 12,
+  
+	  	"combinedFormation":  
+		[
+		{ "label": "25%", "disableSubProfiles": ["Arqueros","Prones/Arqueros (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Prones/Arqueros (Front Row)","Prones/Arqueros (Rear Row)" ]}
+		],
+       "subProfiles": [
+       	{
+        "name": "Prones/Arqueros (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 16,
+		"minBases": 3,
+	  	"maxBases": 6,
+        "baseEquipment": ["Spear", "Javelins", "Shield", "Bow"],
+        "specialRules": ["Close Order"],
+        },
+		{
+		"name": "Prones",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 16,
+		"minBases": 0,
+		"maxBases": 12,
+        "baseEquipment": ["Spear", "Javelins", "Shield"],
+        "specialRules": ["Close Order"],
+		},
+		{
+		"name": "Arqueros",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Prones", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 7,
+        "cohesion": 7,
+    	"pointsPerBase": 14,
+		"baseEquipment": ["Bow"],
+		"specialRules": ["Close Order"],
+		},
+		{
+		"name": "Prones/Arqueros (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Prones", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 16,
+		"maxBases": 6,
+        "baseEquipment": ["Spear", "Javelins", "Shield", "Bow"],
+        "specialRules": ["Close Order"],
+		}        
+		],
+		"optionalEquipment": [
+				{
+		"name": "Shield",
+		"pointsModifier": 2,
+		"targetProfile": ["Arqueros"],
+		"maxEquipmentCount": 2, 
+		"equipmentAdded": ["Shield"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		}
+	]
+},
           {
           "id": "late_christian_spanish_ballesteros",
           "name": "Ballesteros",
