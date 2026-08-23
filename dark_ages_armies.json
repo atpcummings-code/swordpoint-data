@@ -22457,7 +22457,7 @@
           {
           "id": "early_christian_spanish_prones",
           "name": "Prones",
-          "description": "Prones spear, javelins and shield. May be declared as Open Order (-4) in which case may exchange spear for throwing spear (+2). If Close ORder may use combine dFormation by including50% Close Order Arqueros (14 points per base) an the rear rows.",
+          "description": "Prones spear, javelins and shield. May be declared as Open Order (-4) in which case may exchange spear for throwing spear (+2).",
           "category": "Infantry",
           "type": "Commander",
           "defence": 6,
