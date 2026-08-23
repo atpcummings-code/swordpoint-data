@@ -170,7 +170,7 @@
         "defence": 6,
         "cohesion": 7,
     	"pointsPerBase": 14,
-		"minBases": 3,
+		"minBases": 1,
 		"maxBases": 6,
         "baseEquipment": ["Spear", "Shield", "Bow"],
         "specialRules": ["Close Order", "Inferior Fighters", "Inferior Shooters"],
