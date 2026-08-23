@@ -27687,7 +27687,7 @@
 		],
 		"optionalEquipment": [
 		{
-		"name": "Large Shield (Excludes Arab or Berber Infantry Bowmen)",
+		"name": "Large Shield (Excludes Abid' or Guards Bowmen)",
 		"pointsModifier": 2,
 		"targetProfile": ["Abid' or Guards/Abid' or Guards Bowmen (Rear Row)", "Abid' or Guards/Abid' or Guards Bowmen (Front Row)", "Abid' or Guards"],
 		"equipmentAdded": ["Large Shield"],
