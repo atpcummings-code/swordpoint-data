@@ -63,7 +63,7 @@
             	"defence": 5,
           	"cohesion": 5,
           	"pointsPerBase": 8,
-		"compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+		"compareWithSubProfile": { "name": "Levy", "expression": "lessThanOrEqual", "ratio": 1 },
         	"baseEquipment": ["Bow"],
           	"specialRules": ["Close Order", "Levies", "Inferior Fighters"],
             	},
@@ -71,7 +71,7 @@
 	  	{
               	"name": "Levy/Levy Bowmen (Rear Row)",
               	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+		"compareWithSubProfile": { "name": "Levy", "expression": "lessThanOrEqual", "ratio": 1 },
             	"defence": 5,
           	"cohesion": 5,
           	"pointsPerBase": 10,
