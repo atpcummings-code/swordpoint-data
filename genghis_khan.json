@@ -1,4 +1,4 @@
-{
+{"targetProfile":
   "armies": {
     "test_army": {
       "armyName": "Test Army",
@@ -94,7 +94,7 @@
 		"cohesionModifier": 0
 		},
 		{
-		"name": "light Armour",
+		"name": "Light Armour",
 		"pointsModifier": 2,
 		"equipmentAdded": ["Light Armour"],
 		"equipmentRemoved": [],
@@ -199,7 +199,7 @@
 		"cohesionModifier": 0
 		},
 		{
-		"name": "light Armour",
+		"name": "Light Armour",
 		"pointsModifier": 2,
 		"equipmentAdded": ["Light Armour"],
 		"equipmentRemoved": [],
