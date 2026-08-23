@@ -103,7 +103,7 @@
 		},
 		{
 		"name": "Large Shield (Elite Themata)",
-		"targetProfile": "Elite Themata",
+		"targetProfile": ["Elite Themata","Elite Themata/Elite Themata Bowmen (Rear Row)"],
 		"pointsModifier": 2,
 		"maxEquipmentCount": 2, 
 		"equipmentAdded": ["Large Shield"],
@@ -114,7 +114,7 @@
 		"cohesionModifier": 0
 		},	
 		{
-		"name": "Large Shield (Elite Themata/Elite Themata Bowmen (Rear Row))",
+		"name": "XLarge Shield (Elite Themata/Elite Themata Bowmen (Rear Row))",
 		"targetProfile": "Elite Themata/Elite Themata Bowmen (Rear Row)",
 		"pointsModifier": 2,
 		"maxEquipmentCount": 2, 
