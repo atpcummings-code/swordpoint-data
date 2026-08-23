@@ -106,7 +106,7 @@
             },
 		{
               "name": "Halberd ((Mixed Spear/Bowmen (Front Row))",
-              "targetProfile": "(Mixed Spear/Bowmen (Front Row)",
+              "targetProfile": "Mixed Spear/Bowmen (Front Row)",
               "pointsModifier": 2,
               "equipmentAdded": ["Halberd"],
               "equipmentRemoved": ["Spear"],
