@@ -94,7 +94,7 @@
               "cohesionModifier": 0
             },
 		{
-              "name": "Halberd ((Mixed Spear/Bowmen (Rear Row))",
+              "name": "Halberd (Mixed Spear/Bowmen (Rear Row))",
               "targetProfile": "Mixed Spear/Bowmen (Rear Row)",
               "pointsModifier": 2,
               "equipmentAdded": ["Halberd"],
@@ -105,7 +105,7 @@
               "cohesionModifier": 0
             },
 		{
-              "name": "Halberd ((Mixed Spear/Bowmen (Front Row))",
+              "name": "Halberd (Mixed Spear/Bowmen (Front Row))",
               "targetProfile": "Mixed Spear/Bowmen (Front Row)",
               "pointsModifier": 2,
               "equipmentAdded": ["Halberd"],
