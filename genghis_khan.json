@@ -21,7 +21,7 @@
       "units": [
         
         {
-          	"id": "early_byzantine_regular_infantry_cf",
+          	"id": "heraclian_byzantine_regular_infantry_cf",
           	"name": "Combined Formation Regular Infantry",
           	"description": "Regular Infantry have spear and large shield. Shieldwall. Levies. They may have darts (+2) and up to two units may have light armour (+2). May use combined Formation with up to half the units figures exchanging spear and large shield for bow (-2 for archer only bases) and forming the rear ranks.",
     		"category": "Infantry",      
@@ -106,7 +106,7 @@
              ]
         },
 		  {
-          	"id": "early_byzantine_levy_infantry_cf",
+          	"id": "heraclian_byzantine_levy_infantry_cf",
           	"name": "Combined Formation Levy Infantry",
           	"description": "Levy Infantry have spear and large shield. Inferior Fighters. Shieldwall. Levies. They may have darts (+2). May use combined Formation with up to half the units figures exchanging spear and large shield for bow (-2 for archer only bases) and forming the rear ranks.",
     		"category": "Infantry",      
