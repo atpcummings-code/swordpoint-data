@@ -21604,6 +21604,288 @@
             }
           ]
         },
+{
+        "id": "late_thematic_byzantine_elite_themata_cf",
+        "name": "Combined Formation Elite Themata",
+         "description": "Themata have spear and shield. Shieldwall. Superior Fighters. They may have large shield (+2) and darts (+2). May have light armour (+2). May be Drilled (+3). May use Combined Formation with a quarter or half the units figures exchanging spear and shield for bow (free) and forming the rear ranks.",
+    	"category": "Infantry",      
+		"type": "Infantry",
+        "minBases": 3,
+        "maxBases": 12,
+  
+	  	"combinedFormation":  
+		[
+		{ "label": "25%", "disableSubProfiles": ["Elite Themata Bowmen","Elite Themata/Elite Themata Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Elite Themata/Elite Themata Bowmen (Front Row)","Elite Themata/Elite Themata Bowmen (Rear Row)" ]}
+		],
+       "subProfiles": [
+       	{
+        "name": "Elite Themata/Elite Themata Bowmen (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 20,
+		"minBases": 3,
+	  	"maxBases": 6,
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order", "Shieldwall", "Superior Fighters"],
+        },
+		{
+		"name": "Elite Themata",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"defence": 6,
+		"cohesion": 7,
+		"pointsPerBase": 20,
+		"minBases": 0,
+		"maxBases": 12,
+		"baseEquipment": ["Spear", "Shield"],
+		"specialRules": ["Close Order", "Shieldwall", "Superior Fighters"],
+		},
+		{
+		"name": "Elite Themata Bowmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Elite Themata", "expression": "lessThanOrEqual", "ratio": 1 },
+		"defence": 7,
+		"cohesion": 7,
+		"pointsPerBase": 20,
+		"baseEquipment": ["Bow"],
+		"specialRules": ["Close Order", "Superior Fighters"],
+		},
+		{
+		"name": "Elite Themata/Elite Themata Bowmen (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Elite Themata", "expression": "lessThanOrEqual", "ratio": 1 },
+		"defence": 6,
+		"cohesion": 7,
+		"pointsPerBase": 20,
+		"maxBases": 6,
+		"baseEquipment": ["Spear", "Shield", "Bow"],
+		"specialRules": ["Close Order", "Shieldwall", "Superior Fighters"],
+		}        
+		],
+		"optionalEquipment": [
+		{
+		"name": "Darts",
+		"pointsModifier": 2,
+		"equipmentAdded": ["Darts"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": 0,
+		"cohesionModifier": 0
+		},
+		{
+		"name": "Light Armour",
+		"pointsModifier": 2,
+		"maxEquipmentCount": 2, 
+		"equipmentAdded": ["Light Armour"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		},
+		{
+		"name": "Large Shield (Excludes Elite Themata Bowmen)",
+		"targetProfile": ["Elite Themata","Elite Themata/Elite Themata Bowmen (Rear Row)", "Elite Themata/Elite Themata Bowmen (Front Row)"],
+		"pointsModifier": 2,
+		"equipmentAdded": ["Large Shield"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		},	
+		{
+		"name": "Drilled",
+		"pointsModifier": 3,
+		"equipmentAdded": [],
+		"equipmentRemoved": [],
+		"rulesAdded": ["Drilled"],
+		"rulesRemoved": [],
+		"defenceModifier": 0,
+		"cohesionModifier": 0
+		},
+	]
+},
+		  {
+        "id": "late_thematic_byzantine_themata_cf",
+        "name": "Combined Formation Themata",
+         "description": "Themata have spear and shield. Shieldwall.They may have large shield (+2) and darts (+2). May have light armour (+2). May use Combined Formation with a quarter or half the units figures exchanging spear and shield for bow (free) and forming the rear ranks.",
+    	"category": "Infantry",      
+		"type": "Infantry",
+        "minBases": 3,
+        "maxBases": 12,
+  
+	  	"combinedFormation":  
+		[
+		{ "label": "25%", "disableSubProfiles": ["Themata Bowmen","Themata/Themata Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Themata/Themata Bowmen (Front Row)","Themata/Themata Bowmen (Rear Row)" ]}
+		],
+       "subProfiles": [
+       	{
+        "name": "Themata/Themata Bowmen (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 16,
+		"minBases": 3,
+	  	"maxBases": 6,
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order", "Shieldwall"],
+        },
+		{
+		"name": "Themata",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"defence": 6,
+		"cohesion": 7,
+		"pointsPerBase": 16,
+		"minBases": 0,
+		"maxBases": 12,
+		"baseEquipment": ["Spear", "Shield"],
+		"specialRules": ["Close Order", "Shieldwall"],
+		},
+		{
+		"name": "Themata Bowmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Themata", "expression": "lessThanOrEqual", "ratio": 1 },
+		"defence": 7,
+		"cohesion": 7,
+		"pointsPerBase": 16,
+		"baseEquipment": ["Bow"],
+		"specialRules": ["Close Order"],
+		},
+		{
+		"name": "Themata/Themata Bowmen (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Themata", "expression": "lessThanOrEqual", "ratio": 1 },
+		"defence": 6,
+		"cohesion": 7,
+		"pointsPerBase": 16,
+		"maxBases": 6,
+		"baseEquipment": ["Spear", "Shield", "Bow"],
+		"specialRules": ["Close Order", "Shieldwall"],
+		}        
+		],
+		"optionalEquipment": [
+		{
+		"name": "Darts",
+		"pointsModifier": 2,
+		"equipmentAdded": ["Darts"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": 0,
+		"cohesionModifier": 0
+		},
+		{
+		"name": "Light Armour",
+		"pointsModifier": 2,
+		"maxEquipmentCount": 2, 
+		"equipmentAdded": ["Light Armour"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		},
+		{
+		"name": "Large Shield (Excludes Themata Bowmen)",
+		"targetProfile": ["Themata","Themata/Themata Bowmen (Rear Row)", "Themata/Themata Bowmen (Front Row)"],
+		"pointsModifier": 2,
+		"equipmentAdded": ["Large Shield"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		}
+	]
+},
+		  {
+        "id": "late_thematic_byzantine_irregulars_cf",
+        "name": "Combined Formation Irregulars",
+         "description": "Irregulars have spear and shield. Shieldwall.They may have large shield (+2) and darts (+2). May use Combined Formation with a quarter or half the units figures exchanging spear and shield for bow (free) and forming the rear ranks.",
+    	"category": "Infantry",      
+		"type": "Infantry",
+        "minBases": 3,
+        "maxBases": 12,
+  
+	  	"combinedFormation":  
+		[
+		{ "label": "25%", "disableSubProfiles": ["Irregulars Bowmen","Irregulars/Irregulars Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Irregulars/Irregulars Bowmen (Front Row)","Irregulars/Irregulars Bowmen (Rear Row)" ]}
+		],
+       "subProfiles": [
+       	{
+        "name": "Irregulars/Irregulars Bowmen (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 6,
+    	"pointsPerBase": 10,
+		"minBases": 3,
+	  	"maxBases": 6,
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order", "Shieldwall","Inferior Fighters", "Levies"],
+        },
+		{
+		"name": "Irregulars",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"defence": 6,
+		"cohesion": 6,
+		"pointsPerBase": 10,
+		"minBases": 0,
+		"maxBases": 12,
+		"baseEquipment": ["Spear", "Shield"],
+        "specialRules": ["Close Order", "Shieldwall", "Inferior Fighters", "Levies"],
+		},
+		{
+		"name": "Irregulars Bowmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Irregulars", "expression": "lessThanOrEqual", "ratio": 1 },
+		"defence": 7,
+		"cohesion": 6,
+		"pointsPerBase": 10,
+		"baseEquipment": ["Bow"],
+        "specialRules": ["Close Order", "Inferior Fighters", "Levies"],
+		},
+		{
+		"name": "Irregulars/Irregulars Bowmen (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Irregulars", "expression": "lessThanOrEqual", "ratio": 1 },
+		"defence": 6,
+		"cohesion": 6,
+		"pointsPerBase": 10,
+		"maxBases": 6,
+		"baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order", "Shieldwall", "Inferior Fighters", "Levies"],
+		}        
+		],
+		"optionalEquipment": [
+		{
+		"name": "Darts",
+		"pointsModifier": 2,
+		"equipmentAdded": ["Darts"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": 0,
+		"cohesionModifier": 0
+		},
+			{
+		"name": "Large Shield (Excludes Irregulars Bowmen)",
+		"targetProfile": ["Irregulars","Irregulars/Irregulars Bowmen (Rear Row)", "Irregulars/Irregulars Bowmen (Front Row)"],
+		"pointsModifier": 2,
+		"equipmentAdded": ["Large Shield"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		}
+	]
+},
+		  
         {
           "id": "late_thematic_byzantine_elite_themata_skirmishers",
           "name": "Elite Themata Skirmishers",
