@@ -102,10 +102,9 @@
 		"cohesionModifier": 0
 		},
 		{
-		"name": "Large Shield (Elite Themata)",
-		"targetProfile": ["Elite Themata","Elite Themata/Elite Themata Bowmen (Rear Row)"],
+		"name": "Large Shield (Excludes Elite Bowmen)",
+		"targetProfile": ["Elite Themata","Elite Themata/Elite Themata Bowmen (Rear Row)", "Elite Themata/Elite Themata Bowmen (Front Row)"],
 		"pointsModifier": 2,
-		"maxEquipmentCount": 2, 
 		"equipmentAdded": ["Large Shield"],
 		"equipmentRemoved": [],
 		"rulesAdded": [],
@@ -113,30 +112,6 @@
 		"defenceModifier": -1,
 		"cohesionModifier": 0
 		},	
-		{
-		"name": "XLarge Shield (Elite Themata/Elite Themata Bowmen (Rear Row))",
-		"targetProfile": "Elite Themata/Elite Themata Bowmen (Rear Row)",
-		"pointsModifier": 2,
-		"maxEquipmentCount": 2, 
-		"equipmentAdded": ["Large Shield"],
-		"equipmentRemoved": [],
-		"rulesAdded": [],
-		"rulesRemoved": [],
-		"defenceModifier": -1,
-		"cohesionModifier": 0
-		},
-		{
-		"name": "Large Shield (Elite Themata/Elite Themata Bowmen (Front Row))",
-		"targetProfile": "Elite Themata/Elite Themata Bowmen (Front Row)",
-		"pointsModifier": 2,
-		"maxEquipmentCount": 2, 
-		"equipmentAdded": ["Large Shield"],
-		"equipmentRemoved": [],
-		"rulesAdded": [],
-		"rulesRemoved": [],
-		"defenceModifier": -1,
-		"cohesionModifier": 0
-		},
 		{
 		"name": "Drilled",
 		"pointsModifier": 3,
