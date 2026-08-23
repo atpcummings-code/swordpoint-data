@@ -48,7 +48,7 @@
           "specialRules": ["Close Order"],
             },
 			  {
-              "name": "Mixed Spear/Bowmen (Front)",
+              "name": "Mixed Spear/Bowmen (Front Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 6,
               "cohesion": 7,
@@ -71,7 +71,7 @@
             },
 
 			  {
-              "name": "Mixed Spear/Bowmen (Rear)",
+              "name": "Mixed Spear/Bowmen (Rear Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 6,
               "cohesion": 7,
