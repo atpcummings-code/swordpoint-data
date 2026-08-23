@@ -6814,7 +6814,7 @@
         {
           "id": "lir_border_garrison_legionaries",
           "name": "Legionaries",
-          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Legionary units may use Combined Formation with a quarter or half of the units figures exchnaging throwing spear, large shield and darts for bow and shield (-4) and forming the rear of thh unit. They may not take any other quipment. Veteran (+2)",
+          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Veteran(+2).",
           "category": "Infantry",
           "type": "Commander",
           "defence": 5,
@@ -6871,6 +6871,112 @@
               "cohesionModifier": 0
             }
           ]
+        },
+		  {
+          "id": "lir_border_garrison_legionaries_cf",
+          "name": "Combined Formation Legionaries",
+          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Legionary units may use Combined Formation with a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4) and forming the rear of the unit. They may not take any other equipment. Veteran (+2).",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Legionaries Bowmen","Mixed Legionaries/Legionaries Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Legionaries/Legionaries Bowmen (Front Row)","Mixed Legionaries/Legionaries Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Legionaries/Legionaries Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+              "maxBases": 6,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts", "Bow"],
+              "specialRules": ["Close Order", "Shieldwall"],
+            },
+			  {
+              "name": "Legionaries",
+	      "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 22,
+              "minBases": 0,
+              "maxBases": 12,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+              "specialRules": ["Close Order", "Shieldwall"],
+            },
+            {
+              "name": "Legionaries Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+	      "compareWithSubProfile": { "name": "Legionaries", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow", "Shield"],
+              "specialRules": ["Close Order", "Shieldwall"],
+            },
+
+			  {
+              "name": "Mixed Legionaries/Legionaries Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+	      "compareWithSubProfile": { "name": "Legionaries", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 22,
+              "maxBases": 6,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts", "Bow"],
+              "specialRules": ["Close Order", "Shieldwall"],
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Heavy Throwing Spear (Legionaries)",
+              "targetProfile": "Legionaries",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Heavy Throwing Spear (Mixed Legionaries/Legionaries Bowmen (Rear Row))",
+              "targetProfile": "Mixed Legionaries/Legionaries Bowmen (Rear Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Heavy Throwing Spear (Mixed Legionaries/Legionaries Bowmen (Front Row))",
+              "targetProfile": "Mixed Legionaries/Legionaries Bowmen (Front Row)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		
+          {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+]
         },
         {
           "id": "lir_border_garrison_limitanei",
