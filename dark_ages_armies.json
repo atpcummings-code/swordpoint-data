@@ -2789,7 +2789,7 @@
         {
           "id": "gavk_vandal_armies_no_allies_noble",
           "name": "Noble",
-          "description": "May ride a horse,",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "Commander",
           "attacks": "+2",
