@@ -21,9 +21,9 @@
       "units": [
         
         {
-        "id": "early_christian_spanish_prones_cf",
-        "name": "Combined Formation Prones/Arqueros",
-         "description": "Prones have spear spear, javelins and shield. May use Combined Formation by including up to 50% Close Order Arqueros (14 points per base) an the rear rows. Arqueros may have shield (+1).",
+        "id": "arab_caliphate_abbasid_caliphate_arab_or_berber_infantry_cf",
+        "name": "Combined Formation Arab or Berber Infantry",
+         "description": "Arab or Berber Infantry have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2). AMy us eCombined Formatin where up to half the figures in the unit exchange spear for bow (free) and form the rear rows.",
     	"category": "Infantry",      
 		"type": "Infantry",
         "minBases": 3,
@@ -31,65 +31,84 @@
   
 	  	"combinedFormation":  
 		[
-		{ "label": "25%", "disableSubProfiles": ["Arqueros","Prones/Arqueros (Front Row)"]},
-		{ "label": "50%", "disableSubProfiles": ["Prones/Arqueros (Front Row)","Prones/Arqueros (Rear Row)" ]}
+		{ "label": "25%", "disableSubProfiles": ["Arab or Berber Infantry Bowmen","Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Front Row)","Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Rear Row)" ]}
 		],
        "subProfiles": [
        	{
-        "name": "Prones/Arqueros (Front Row)",
+        "name": "Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Front Row)",
         "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
         "defence": 6,
         "cohesion": 7,
-    	"pointsPerBase": 16,
+    	"pointsPerBase": 14,
 		"minBases": 3,
 	  	"maxBases": 6,
-        "baseEquipment": ["Spear", "Javelins", "Shield", "Bow"],
+        "baseEquipment": ["Spear", "Shield", "Bow"],
         "specialRules": ["Close Order"],
         },
 		{
-		"name": "Prones",
+		"name": "Arab or Berber Infantry",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
         "defence": 6,
         "cohesion": 7,
-    	"pointsPerBase": 16,
+    	"pointsPerBase": 14,
 		"minBases": 0,
 		"maxBases": 12,
-        "baseEquipment": ["Spear", "Javelins", "Shield"],
+        "baseEquipment": ["Spear", "Shield"],
         "specialRules": ["Close Order"],
 		},
 		{
-		"name": "Arqueros",
+		"name": "Arab or Berber Infantry Bowmen",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Prones", "expression": "lessThanOrEqual", "ratio": 1 },
-        "defence": 7,
+		"compareWithSubProfile": { "name": "Arab or Berber Infantry", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 6,
         "cohesion": 7,
     	"pointsPerBase": 14,
 		"baseEquipment": ["Bow"],
 		"specialRules": ["Close Order"],
 		},
 		{
-		"name": "Prones/Arqueros (Rear Row)",
+		"name": "Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Rear Row)",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Prones", "expression": "lessThanOrEqual", "ratio": 1 },
+		"compareWithSubProfile": { "name": "Arab or Berber Infantry", "expression": "lessThanOrEqual", "ratio": 1 },
         "defence": 6,
         "cohesion": 7,
-    	"pointsPerBase": 16,
+    	"pointsPerBase": 14,
 		"maxBases": 6,
-        "baseEquipment": ["Spear", "Javelins", "Shield", "Bow"],
+        "baseEquipment": ["Spear", "Shield", "Bow"],
         "specialRules": ["Close Order"],
 		}        
 		],
 		"optionalEquipment": [
-				{
-		"name": "Shield",
+		{
+		"name": "Large Shield (Excludes Arab or Berber Infantry Bowmen)",
 		"pointsModifier": 2,
-		"targetProfile": ["Arqueros"],
-		"maxEquipmentCount": 2, 
-		"equipmentAdded": ["Shield"],
+		"targetProfile": ["Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Rear Row)", "Arab or Berber Infantry/Arab or Berber Infantry Bowmen (Front Row)", "Arab or Berber Infantry"],
+		"equipmentAdded": ["Large Shield"],
+		"equipmentRemoved": ["Shield"],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		},
+		{
+		"name": "light Armour",
+		"pointsModifier": 2,
+		"equipmentAdded": ["Light Armour],
 		"equipmentRemoved": [],
 		"rulesAdded": [],
 		"rulesRemoved": [],
 		"defenceModifier": -1,
+		"cohesionModifier": 0
+		},
+			{
+		"name": "Riding Camels",
+		"pointsModifier": 1,
+		"equipmentAdded": [],
+		"equipmentRemoved": [],
+		"rulesAdded": ["Riding Camels"],
+		"rulesRemoved": [],
+		"defenceModifier": 0,
 		"cohesionModifier": 0
 		}
 	]
