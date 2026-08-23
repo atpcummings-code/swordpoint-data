@@ -7018,7 +7018,7 @@
         {
           "id": "lir_border_garrison_auxillia",
           "name": "Auxillia",
-          "description": "Auxillia have a throwing spear, large shield and darts. Open Order. Auxillia units may use Combined Formation with  a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4 for each archer only bases) and forming the rear of the unit. Auxillia may be fielded as skirmishers at a points reduction of 33%.",
+          "description": "Auxillia have a throwing spear, large shield and darts. Open Order. Auxillia may be fielded as skirmishers at a points reduction of 33%.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 5,
@@ -7051,6 +7051,68 @@
             }
           ]
         },
+{
+          "id": "lir_border_garrison_auxillia_cf",
+          "name": "Combined Formation Auxillia",
+          "description": "Auxillia have a throwing spear, large shield and darts. Open Order. Auxillia units may use Combined Formation with  a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4 for each archer only bases) and forming the rear of the unit. ",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Auxillia Bowmen","Mixed Auxillia/Auxillia Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Auxillia/Auxillia Bowmen (Front Row)","Mixed Auxillia/Auxillia Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Auxillia/Auxillia Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+              "maxBases": 6,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts", "Bow"],
+              "specialRules": ["Open Order"]
+            },
+			  {
+              "name": "Auxillia",
+	      "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 15,
+              "minBases": 0,
+              "maxBases": 12,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Auxillia Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 11,
+	      "compareWithSubProfile": { "name": "Auxillia", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+
+			  {
+              "name": "Mixed Auxillia/Auxillia Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+	      "compareWithSubProfile": { "name": "Auxillia", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 15,
+              "maxBases": 6,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts", "Bow"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+	"optionalEquipment": []
+        },
+		  
         {
           "id": "lir_border_garrison_archers",
           "name": "Archers",
