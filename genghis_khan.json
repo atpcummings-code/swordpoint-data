@@ -17,242 +17,103 @@
           "min": 0,
           "max": 100
         }
-      ],
+      				],
       "units": [
         
         {
-          	"id": "early_thematic_byzantine_regular_infantry_cf",
-          	"name": "Combined Formation Regular Infantry",
-          	"description": "Regular Infantry have spear and shield. Shieldwall. They may have darts (+2) and up to two units may have light armour (+2). May use combined Formation with up to half the units figures exchanging spear and large shield for bow (-2 for archer only bases) and forming the rear ranks.",
-    		"category": "Infantry",      
+        "id": "early_thematic_byzantine_elite_themata_cf",
+        "name": "Combined Formation Elite Themata",
+         "description": "Elite Themata have spear and shield. Shieldwall. Superior Fighters. They may have large shield (+2) and darts (+2). May have light armour (+2). May be Drilled (+3). May use Combined Formation with a quarter or half the units figures exchanging spear and shield for bow (free) and forming the rear ranks.",
+    	"category": "Infantry",      
 		"type": "Infantry",
-          	"minBases": 3,
-          	"maxBases": 12,
+        "minBases": 3,
+        "maxBases": 12,
   
 	  	"combinedFormation":  
 		[
-		{ "label": "25%", "disableSubProfiles": ["Regular Bowmen","Regular/Regular Bowmen (Front Row)"]},
-		{ "label": "50%", "disableSubProfiles": ["Regular/Regular Bowmen (Front Row)","Regular/Regular Bowmen (Rear Row)" ]}
+		{ "label": "25%", "disableSubProfiles": ["Elite Themata Bowmen","Elite Themata/Elite Themata Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Elite Themata/Elite Themata Bowmen (Front Row)","Elite Themata/Elite Themata Bowmen (Rear Row)" ]}
 		],
-          	"subProfiles": [
-             	{
-              	"name": "Regular/Regular Bowmen (Front Row)",
-              	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-          	"defence": 5,
-          	"cohesion": 6,
-          	"pointsPerBase": 16,
-          	"minBases": 3,
+       "subProfiles": [
+       	{
+        "name": "Elite Themata/Elite Themata Bowmen (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 20,
+		"minBases": 3,
 	  	"maxBases": 6,
-          	"baseEquipment": ["Spear", "Large Shield", "Bow"],
-          	"specialRules": ["Close Order", "Shieldwall"],
-           	},
-		{
-              	"name": "Regular",
-		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-            	"defence": 5,
-          	"cohesion": 6,
-          	"pointsPerBase": 16,
-              	"minBases": 0,
-              	"maxBases": 12,
-        	"baseEquipment": ["Spear", "Large Shield"],
-          	"specialRules": ["Close Order", "Shieldwall"],
-		},
-            	{
-              	"name": "Regular Bowmen",
-              	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-            	"defence": 7,
-          	"cohesion": 6,
-          	"pointsPerBase": 14,
-		"compareWithSubProfile": { "name": "Regular", "expression": "lessThanOrEqual", "ratio": 1 },
-        	"baseEquipment": ["Bow"],
-          	"specialRules": ["Close Order"],
-            	},
-
-	  	{
-              	"name": "Regular/Regular Bowmen (Rear Row)",
-              	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Regular", "expression": "lessThanOrEqual", "ratio": 1 },
-            	"defence": 5,
-          	"cohesion": 6,
-          	"pointsPerBase": 16,
-              	"maxBases": 6,
-        	"baseEquipment": ["Spear", "Large Shield", "Bow"],
-          	"specialRules": ["Close Order", "Shieldwall"],
-            	}
-            
-            	],
-		"optionalEquipment": [
-  				{
-              	"name": "Darts",
-              	"pointsModifier": 2,
-              	"equipmentAdded": ["Darts"],
-              	"equipmentRemoved": [],
-              	"rulesAdded": [],
-              	"rulesRemoved": [],
-              	"defenceModifier": 0,
-              	"cohesionModifier": 0
-            	},
-				{
-              	"name": "Light Armour",
-              	"pointsModifier": 2,
-				"maxEquipmentCount": 2, 
-              	"equipmentAdded": ["Light Armour"],
-              	"equipmentRemoved": [],
-              	"rulesAdded": [],
-              	"rulesRemoved": [],
-              	"defenceModifier": -1,
-              	"cohesionModifier": 0
-            	}
-             ]
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order", "Shieldwall", "Superior Fighters"],
         },
-		  {
-          	"id": "early_thematic_byzantine_levy_infantry_cf",
-          	"name": "Combined Formation Levy Infantry",
-          	"description": "Levy Infantry have spear and large shield. Inferior Fighters. Shieldwall. Levies. They may have darts (+2). May use combined Formation with up to half the units figures exchanging spear and large shield for bow (-2 for archer only bases) and forming the rear ranks.",
-    		"category": "Infantry",      
-		"type": "Infantry",
-          	"minBases": 3,
-          	"maxBases": 12,
-  
-	  	"combinedFormation": 
-		[
-		{ "label": "25%", "disableSubProfiles": ["Levy Bowmen","Levy/Levy Bowmen (Front Row)"]},
-		{ "label": "50%", "disableSubProfiles": ["Levy/Levy Bowmen (Front Row)","Levy/Levy Bowmen (Rear Row)" ]}
-		],
-          	"subProfiles": [
-             	{
-              	"name": "Levy/Levy Bowmen (Front Row)",
-              	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-          	"defence": 5,
-          	"cohesion": 5,
-          	"pointsPerBase": 10,
-          	"minBases": 3,
-	  	"maxBases": 6,
-          	"baseEquipment": ["Spear", "Large Shield", "Bow"],
-          	"specialRules": ["Close Order", "Shieldwall", "Levies", "Inferior Fighters"],
-           	},
 		{
-              	"name": "Levy",
+		"name": "Elite Themata",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-            	"defence": 5,
-          	"cohesion": 5,
-          	"pointsPerBase": 10,
-              	"minBases": 0,
-              	"maxBases": 12,
-        	"baseEquipment": ["Spear", "Large Shield"],
-          	"specialRules": ["Close Order", "Shieldwall", "Levies", "Inferior Fighters"],
+		"defence": 6,
+		"cohesion": 7,
+			"pointsPerBase": 20,
+		"minBases": 0,
+		"maxBases": 12,
+		"baseEquipment": ["Spear", "Shield"],
+		"specialRules": ["Close Order", "Shieldwall", "Superior Fighters"],
 		},
-            	{
-              	"name": "Levy Bowmen",
-              	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-            	"defence": 7,
-          	"cohesion": 5,
-          	"pointsPerBase": 8,
-		"compareWithSubProfile": { "name": "Levy", "expression": "lessThanOrEqual", "ratio": 1 },
-        	"baseEquipment": ["Bow"],
-          	"specialRules": ["Close Order", "Levies", "Inferior Fighters"],
-            	},
-
-	  	{
-              	"name": "Levy/Levy Bowmen (Rear Row)",
-              	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Levy", "expression": "lessThanOrEqual", "ratio": 1 },
-            	"defence": 5,
-          	"cohesion": 5,
-          	"pointsPerBase": 10,
-              	"maxBases": 6,
-        	"baseEquipment": ["Spear", "Large Shield", "Bow"],
-          	"specialRules": ["Close Order", "Shieldwall", "Levies", "Inferior Fighters"],
-            	}
-            
-            	],
-		"optionalEquipment": [
-  		{
-              	"name": "Darts",
-              	"pointsModifier": 2,
-              	"equipmentAdded": ["Darts"],
-              	"equipmentRemoved": [],
-              	"rulesAdded": [],
-              	"rulesRemoved": [],
-              	"defenceModifier": 0,
-              	"cohesionModifier": 0
-            	}
-             ]
-        },
-		  {
-          	"id": "early_thematic_byzantine_irregulars_cf",
-          	"name": "Combined Formation Irregulars",
-          	"description": "Levy Infantry have spear and large shield. Inferior Fighters. Shieldwall. Levies. They may have darts (+2). May use combined Formation with up to half the units figures exchanging spear and large shield for bow (-2 for archer only bases) and forming the rear ranks.",
-    		"category": "Infantry",      
-		"type": "Infantry",
-          	"minBases": 3,
-          	"maxBases": 12,
-  
-	  	"combinedFormation": 
-		[
-		{ "label": "25%", "disableSubProfiles": ["Levy Bowmen","Levy/Levy Bowmen (Front Row)"]},
-		{ "label": "50%", "disableSubProfiles": ["Levy/Levy Bowmen (Front Row)","Levy/Levy Bowmen (Rear Row)" ]}
-		],
-          	"subProfiles": [
-             	{
-              	"name": "Levy/Levy Bowmen (Front Row)",
-              	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-          	"defence": 5,
-          	"cohesion": 5,
-          	"pointsPerBase": 10,
-          	"minBases": 3,
-	  	"maxBases": 6,
-          	"baseEquipment": ["Spear", "Large Shield", "Bow"],
-          	"specialRules": ["Close Order", "Shieldwall", "Levies", "Inferior Fighters"],
-           	},
 		{
-              	"name": "Levy",
+		"name": "Elite Themata Bowmen",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-            	"defence": 5,
-          	"cohesion": 5,
-          	"pointsPerBase": 10,
-              	"minBases": 0,
-              	"maxBases": 12,
-        	"baseEquipment": ["Spear", "Large Shield"],
-          	"specialRules": ["Close Order", "Shieldwall", "Levies", "Inferior Fighters"],
+		"compareWithSubProfile": { "name": "Elite Themata", "expression": "lessThanOrEqual", "ratio": 1 },
+		"defence": 7,
+		"cohesion": 7,
+		"pointsPerBase": 20,
+		"baseEquipment": ["Bow"],
+		"specialRules": ["Close Order", "Superior Fighters"],
 		},
-            	{
-              	"name": "Levy Bowmen",
-              	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-            	"defence": 7,
-          	"cohesion": 5,
-          	"pointsPerBase": 8,
-		"compareWithSubProfile": { "name": "Levy", "expression": "lessThanOrEqual", "ratio": 1 },
-        	"baseEquipment": ["Bow"],
-          	"specialRules": ["Close Order", "Levies", "Inferior Fighters"],
-            	},
-
-	  	{
-              	"name": "Levy/Levy Bowmen (Rear Row)",
-              	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Levy", "expression": "lessThanOrEqual", "ratio": 1 },
-            	"defence": 5,
-          	"cohesion": 5,
-          	"pointsPerBase": 10,
-              	"maxBases": 6,
-        	"baseEquipment": ["Spear", "Large Shield", "Bow"],
-          	"specialRules": ["Close Order", "Shieldwall", "Levies", "Inferior Fighters"],
-            	}
-            
-            	],
+		{
+		"name": "Elite Themata/Elite Themata Bowmen (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Elite Themata", "expression": "lessThanOrEqual", "ratio": 1 },
+		"defence": 6,
+		"cohesion": 7,
+		"pointsPerBase": 20,
+		"maxBases": 6,
+		"baseEquipment": ["Spear", "Shield", "Bow"],
+		"specialRules": ["Close Order", "Shieldwall", "Superior Fighters"],
+		}        
+		],
 		"optionalEquipment": [
-  		{
-              	"name": "Darts",
-              	"pointsModifier": 2,
-              	"equipmentAdded": ["Darts"],
-              	"equipmentRemoved": [],
-              	"rulesAdded": [],
-              	"rulesRemoved": [],
-              	"defenceModifier": 0,
-              	"cohesionModifier": 0
-            	}
-             ]
-        }
+		{
+		"name": "Darts",
+		"pointsModifier": 2,
+		"equipmentAdded": ["Darts"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": 0,
+		"cohesionModifier": 0
+		},
+		{
+		"name": "Light Armour",
+		"pointsModifier": 2,
+		"maxEquipmentCount": 2, 
+		"equipmentAdded": ["Light Armour"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		},
+			{
+		"name": "Drilled",
+		"pointsModifier": 4,
+		"equipmentAdded": [],
+		"equipmentRemoved": [],
+		"rulesAdded": ["Drilled"],
+		"rulesRemoved": [],
+		"defenceModifier": 0,
+		"cohesionModifier": 0
+		},
+	]
+},
+		  
 		  
 
 
