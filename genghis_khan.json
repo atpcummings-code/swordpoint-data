@@ -21,7 +21,112 @@
       "units": [
         
         {
-        "id": "arab_caliphate_abbasid_caliphate_arab_or_berber_infantry_cf",
+        "id": "arab_caliphate_fatimid_caliphate_abid_or_guards_cf",
+        "name": "Combined Formation Abid' or Guards",
+         "description": "Abid' or Guards have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2) and maybe Stubborn (+2). May use Combined Formation where up to half the figures in the unit exchange spear for bow (free) and form the rear rows.",
+    	"category": "Infantry",      
+		"type": "Infantry",
+        "minBases": 3,
+        "maxBases": 12,
+  		"maxAllowed": 2,
+	  	"combinedFormation":  
+		[
+		{ "label": "25%", "disableSubProfiles": ["Abid' or Guards Bowmen","Abid' or Guards/Abid' or Guards Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Abid' or Guards/Abid' or Guards Bowmen (Front Row)","Abid' or Guards/Abid' or Guards Bowmen (Rear Row)" ]}
+		],
+       "subProfiles": [
+       	{
+        "name": "Abid' or Guards/Abid' or Guards Bowmen (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 8,
+    	"pointsPerBase": 18,
+		"minBases": 3,
+	  	"maxBases": 6,
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order"],
+        },
+		{
+		"name": "Abid' or Guards",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 8,
+    	"pointsPerBase": 18,
+		"minBases": 3,
+		"maxBases": 12,
+        "baseEquipment": ["Spear", "Shield"],
+        "specialRules": ["Close Order"],
+		},
+		{
+		"name": "Abid' or Guards Bowmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Abid' or Guards", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 6,
+        "cohesion": 8,
+    	"pointsPerBase": 18,
+		"minBases": 1,
+		"baseEquipment": ["Bow", "Shield"],
+		"specialRules": ["Close Order"],
+		},
+		{
+		"name": "Abid' or Guards/Abid' or Guards Bowmen (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Abid' or Guards", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 6,
+        "cohesion": 8,
+    	"pointsPerBase": 18,
+		"minBases": 1,
+		"maxBases": 6,
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order"],
+		}        
+		],
+		"optionalEquipment": [
+		{
+		"name": "Large Shield (Excludes Arab or Berber Infantry Bowmen)",
+		"pointsModifier": 2,
+		"targetProfile": ["Abid' or Guards/Abid' or Guards Bowmen (Rear Row)", "Abid' or Guards/Abid' or Guards Bowmen (Front Row)", "Abid' or Guards"],
+		"equipmentAdded": ["Large Shield"],
+		"equipmentRemoved": ["Shield"],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		},
+		{
+		"name": "light Armour",
+		"pointsModifier": 2,
+		"equipmentAdded": ["Light Armour"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		},
+		{
+		"name": "Riding Camels",
+		"pointsModifier": 1,
+		"equipmentAdded": [],
+		"equipmentRemoved": [],
+		"rulesAdded": ["Riding Camels"],
+		"rulesRemoved": [],
+		"defenceModifier": 0,
+		"cohesionModifier": 0
+		},
+			{
+		"name": "Stubborn",
+		"pointsModifier": 2,
+		"equipmentAdded": [],
+		"equipmentRemoved": [],
+		"rulesAdded": ["Stubborn"],
+		"rulesRemoved": [],
+		"defenceModifier": 0,
+		"cohesionModifier": 0
+		}
+	]
+},
+		  {
+        "id": "arab_caliphate_fatimid_caliphate_arab_or_berber_infantry_cf",
         "name": "Combined Formation Arab or Berber Infantry",
          "description": "Arab or Berber Infantry have spear and shield. May have large shield (+2) and be Riding Camels (+1). May have light armour (+2). May use Combined Formation where up to half the figures in the unit exchange spear for bow (free) and form the rear rows.",
     	"category": "Infantry",      
@@ -116,7 +221,7 @@
 	]
 },
 		  {
-        "id": "arab_caliphate_abbasid_caliphate_militia_cf",
+        "id": "arab_caliphate_fatimid_caliphate_militia_cf",
         "name": "Combined Formation Militia",
          "description": "Militia have spear and shield. Inferior Fighters. Inferior Shooters. May have large shield (+2) and be Riding Camels (+1). May use Combined Formation where up to half the figures in the unit exchange spear for bow (-2) and form the rear rows.",
     	"category": "Infantry",      
