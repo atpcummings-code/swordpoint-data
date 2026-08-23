@@ -1,6 +1,6 @@
 {
   "armies": { 
-    
+
     "franks": {
       "armyName": "Franks - 300 to 750 AD",
       "categories": [
@@ -7836,6 +7836,88 @@
             }
           ]
         },
+		  {
+          "id": "lir_imperial_field_army_auxillia_cf",
+          "name": "Combined Formation Auxillia",
+          "description": "Auxillia have a throwing spear, large shield and darts. Open Order. Auxillia units may use Combined Formation with  a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4 for each archer only bases) and forming the rear of the unit. ",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Auxillia Bowmen","Mixed Auxillia/Auxillia Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Auxillia/Auxillia Bowmen (Front Row)","Mixed Auxillia/Auxillia Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Auxillia/Auxillia Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+              "maxBases": 6,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts", "Bow"],
+              "specialRules": ["Open Order"]
+            },
+			  {
+              "name": "Auxillia",
+	      "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 15,
+              "minBases": 0,
+              "maxBases": 12,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Auxillia Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 11,
+	      "compareWithSubProfile": { "name": "Auxillia", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+
+			  {
+              "name": "Mixed Auxillia/Auxillia Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+	      "compareWithSubProfile": { "name": "Auxillia", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 15,
+              "maxBases": 6,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts", "Bow"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+	    {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+	    {
+              "name": "Elite Palatini",
+              "pointsModifier": 7,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            },
+]
+        },
         {
           "id": "lir_imperial_field_army_archers",
           "name": "Archers",
@@ -8663,6 +8745,69 @@
               "cohesionModifier": 0
             }
           ]
+        },
+		  {
+          "id": "lir_romanised_warlord_auxillia_cf",
+          "name": "Combined Formation Auxillia",
+          "description": "Auxillia have a throwing spear, large shield and darts. Open Order. Auxillia units may use Combined Formation with  a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4 for each archer only bases) and forming the rear of the unit. ",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Auxillia Bowmen","Mixed Auxillia/Auxillia Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Auxillia/Auxillia Bowmen (Front Row)","Mixed Auxillia/Auxillia Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Auxillia/Auxillia Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+              "maxBases": 6,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts", "Bow"],
+              "specialRules": ["Open Order"]
+            },
+			  {
+              "name": "Auxillia",
+	      "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 15,
+              "minBases": 0,
+              "maxBases": 12,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Auxillia Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 11,
+	      "compareWithSubProfile": { "name": "Auxillia", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+
+			  {
+              "name": "Mixed Auxillia/Auxillia Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+	      "compareWithSubProfile": { "name": "Auxillia", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 15,
+              "maxBases": 6,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts", "Bow"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+	    
+]
         },
         {
           "id": "lir_romanised_warlord_archers",
@@ -9493,6 +9638,69 @@
               "cohesionModifier": 0
             }
           ]
+        },
+		  {
+          "id": "lir_romano_british_auxillia_cf",
+          "name": "Combined Formation Auxillia",
+          "description": "Auxillia have a throwing spear, large shield and darts. Open Order. Auxillia units may use Combined Formation with  a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4 for each archer only bases) and forming the rear of the unit. ",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Auxillia Bowmen","Mixed Auxillia/Auxillia Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Auxillia/Auxillia Bowmen (Front Row)","Mixed Auxillia/Auxillia Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Auxillia/Auxillia Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+              "maxBases": 6,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts", "Bow"],
+              "specialRules": ["Open Order"]
+            },
+			  {
+              "name": "Auxillia",
+	      "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 15,
+              "minBases": 0,
+              "maxBases": 12,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Auxillia Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 11,
+	      "compareWithSubProfile": { "name": "Auxillia", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow", "Shield"],
+              "specialRules": ["Open Order"]
+            },
+
+			  {
+              "name": "Mixed Auxillia/Auxillia Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+	      "compareWithSubProfile": { "name": "Auxillia", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 15,
+              "maxBases": 6,
+              "baseEquipment": ["Throwing Spear", "Large Shield", "Darts", "Bow"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+	    
+]
         },
         {
           "id": "lir_romano_british_archers",
