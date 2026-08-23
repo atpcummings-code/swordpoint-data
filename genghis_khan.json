@@ -94,6 +94,91 @@
             	}
              ]
         },
+		  {
+          	"id": "early_byzantine_regular_infantry_cf",
+          	"name": "Combined Formation Regular Infantry",
+          	"description": "Regular Infantry have spear and large shield. Shieldwall. Levies. They may have darts (+2) and up to two unitsmay have light armour (+2). May use combined Formation with up to half the units figures exchanging spear and large shield for bow (-2 for archer only bases) and forming the rear ranks.",
+    		"category": "Infantry",      
+		"type": "Infantry",
+          	"minBases": 3,
+          	"maxBases": 12,
+  
+	  	"combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Regular Bowmen","Regular/Regular Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Regular/Regular Bowmen (Front Row)","Regular/Regular Bowmen (Rear Row)" ]}
+		],
+          	"subProfiles": [
+             	{
+              	"name": "Regular/Regular Bowmen (Front Row)",
+              	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+          	"defence": 5,
+          	"cohesion": 5,
+          	"pointsPerBase": 10,
+          	"minBases": 3,
+	  	"maxBases": 6,
+          	"baseEquipment": ["Spear", "Large Shield", "Bow"],
+          	"specialRules": ["Close Order", "Shieldwall"],
+           	},
+		{
+              	"name": "Regular",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+          	"cohesion": 5,
+          	"pointsPerBase": 10,
+              	"minBases": 0,
+              	"maxBases": 12,
+        	"baseEquipment": ["Spear", "Large Shield"],
+          	"specialRules": ["Close Order", "Shieldwall"],
+		},
+            	{
+              	"name": "Regular Bowmen",
+              	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+          	"cohesion": 5,
+          	"pointsPerBase": 8,
+		"compareWithSubProfile": { "name": "Regular", "expression": "lessThanOrEqual", "ratio": 1 },
+        	"baseEquipment": ["Bow"],
+          	"specialRules": ["Close Order"],
+            	},
+
+	  	{
+              	"name": "Regular/Regular Bowmen (Rear Row)",
+              	"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Regular", "expression": "lessThanOrEqual", "ratio": 1 },
+            	"defence": 5,
+          	"cohesion": 5,
+          	"pointsPerBase": 10,
+              	"maxBases": 6,
+        	"baseEquipment": ["Spear", "Large Shield", "Bow"],
+          	"specialRules": ["Close Order", "Shieldwall"],
+            	}
+            
+            	],
+		"optionalEquipment": [
+  				{
+              	"name": "Darts",
+              	"pointsModifier": 2,
+              	"equipmentAdded": ["Darts"],
+              	"equipmentRemoved": [],
+              	"rulesAdded": [],
+              	"rulesRemoved": [],
+              	"defenceModifier": 0,
+              	"cohesionModifier": 0
+            	}
+				{
+              	"name": "Light Armour",
+              	"pointsModifier": 2,
+				"enabledEvery": 2,
+              	"equipmentAdded": ["Light Armour"],
+              	"equipmentRemoved": [],
+              	"rulesAdded": [],
+              	"rulesRemoved": [],
+              	"defenceModifier": -1,
+              	"cohesionModifier": 0
+            	}
+             ]
+        }
 
 
         
