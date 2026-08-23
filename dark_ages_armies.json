@@ -9195,7 +9195,7 @@
         {
           "id": "lir_romano_british_legionaries",
           "name": "Legionaries",
-          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Legionary units may use Combined Formation with a quarter or half of the units figures exchnaging throwing spear, large shield and darts for bow and shield (-4) and forming the rear of thh unit. They may not take any other quipment. Veteran (+2)",
+          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Legionary units may use Combined Formation with a quarter or half of the units figures exchnaging throwing spear, large shield and darts for bow and shield (-4) and forming the rear of thh unit. They may not take any other quipment. Veteran (+2). There must be at least one Limiyanei unit per unit of Legionaries.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 5,
@@ -9257,7 +9257,7 @@
 {
           "id": "lir_romano_british_legionaries_cf",
           "name": "Combined Formation Legionaries",
-          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Legionary units may use Combined Formation with a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4) and forming the rear of the unit. They may not take any other equipment. Veteran (+2).",
+          "description": "Legionaries have a throwing spear, large shield and darts.  Shieldwall. They may have light armour (+2). They may exchange throwing spear for heavy throwing spear (+2). Legionary units may use Combined Formation with a quarter or half of the units figures exchanging throwing spear, large shield and darts for bow and shield (-4) and forming the rear of the unit. They may not take any other equipment. Veteran (+2).  There must be at least one Limiyanei unit per unit of Legionaries.",
     "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
