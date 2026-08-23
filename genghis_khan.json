@@ -32,8 +32,8 @@
           "specialRules": ["Close Order"],
 	  "combinedFormation": 
 		[
-		{ "label": "25%", "disableSubProfiles": ["Bowmen","Mixed Spear/Bowmen (Front)"]},
-		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Bowmen (Front)","Mixed Spear/Bowmen (Rear)" ]}
+		{ "label": "25%", "disableSubProfiles": ["Bowmen","Mixed Spear/Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Bowmen (Front Row)","Mixed Spear/Bowmen (Rear Row)" ]}
 		],
           "subProfiles": [
              {
