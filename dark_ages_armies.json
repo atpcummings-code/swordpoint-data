@@ -137,7 +137,7 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "Spear"
+            "Spear", "Javelins"
           ],
           "specialRules": [
             "Open Order"
