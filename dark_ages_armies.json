@@ -6936,7 +6936,7 @@
 	"optionalEquipment": [
   		{
               "name": "Heavy Throwing Spear (Legionaries)",
-              "targetProfile": "Legionaries",
+			  "targetProfile": [Mixed Legionaries/Legionaries Bowmen (Rear Row)", "Mixed Legionaries/Legionaries Bowmen (Front Row)", "Legionaries"],
               "pointsModifier": 2,
               "equipmentAdded": ["Heavy Throwing Spear"],
               "equipmentRemoved": ["Throwing Spear"],
@@ -6945,29 +6945,6 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-		{
-              "name": "Heavy Throwing Spear (Mixed Legionaries/Legionaries Bowmen (Rear Row))",
-              "targetProfile": "Mixed Legionaries/Legionaries Bowmen (Rear Row)",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Throwing Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-		{
-              "name": "Heavy Throwing Spear (Mixed Legionaries/Legionaries Bowmen (Front Row))",
-              "targetProfile": "Mixed Legionaries/Legionaries Bowmen (Front Row)",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Throwing Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-		
           {
               "name": "Veteran",
               "pointsModifier": 2,
@@ -7710,29 +7687,7 @@
 	"optionalEquipment": [
   		{
               "name": "Heavy Throwing Spear (Legionaries)",
-              "targetProfile": "Legionaries",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Throwing Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-		{
-              "name": "Heavy Throwing Spear (Mixed Legionaries/Legionaries Bowmen (Rear Row))",
-              "targetProfile": "Mixed Legionaries/Legionaries Bowmen (Rear Row)",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Throwing Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-		{
-              "name": "Heavy Throwing Spear (Mixed Legionaries/Legionaries Bowmen (Front Row))",
-              "targetProfile": "Mixed Legionaries/Legionaries Bowmen (Front Row)",
+			  "targetProfile": [Mixed Legionaries/Legionaries Bowmen (Rear Row)", "Mixed Legionaries/Legionaries Bowmen (Front Row)", "Legionaries"],
               "pointsModifier": 2,
               "equipmentAdded": ["Heavy Throwing Spear"],
               "equipmentRemoved": ["Throwing Spear"],
@@ -8629,29 +8584,7 @@
 	"optionalEquipment": [
   		{
               "name": "Heavy Throwing Spear (Legionaries)",
-              "targetProfile": "Legionaries",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Throwing Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-		{
-              "name": "Heavy Throwing Spear (Mixed Legionaries/Legionaries Bowmen (Rear Row))",
-              "targetProfile": "Mixed Legionaries/Legionaries Bowmen (Rear Row)",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Throwing Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-		{
-              "name": "Heavy Throwing Spear (Mixed Legionaries/Legionaries Bowmen (Front Row))",
-              "targetProfile": "Mixed Legionaries/Legionaries Bowmen (Front Row)",
+			  "targetProfile": [Mixed Legionaries/Legionaries Bowmen (Rear Row)", "Mixed Legionaries/Legionaries Bowmen (Front Row)", "Legionaries"],
               "pointsModifier": 2,
               "equipmentAdded": ["Heavy Throwing Spear"],
               "equipmentRemoved": ["Throwing Spear"],
@@ -9523,29 +9456,7 @@
 	"optionalEquipment": [
   		{
               "name": "Heavy Throwing Spear (Legionaries)",
-              "targetProfile": "Legionaries",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Throwing Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-		{
-              "name": "Heavy Throwing Spear (Mixed Legionaries/Legionaries Bowmen (Rear Row))",
-              "targetProfile": "Mixed Legionaries/Legionaries Bowmen (Rear Row)",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Throwing Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-		{
-              "name": "Heavy Throwing Spear (Mixed Legionaries/Legionaries Bowmen (Front Row))",
-              "targetProfile": "Mixed Legionaries/Legionaries Bowmen (Front Row)",
+			  "targetProfile": [Mixed Legionaries/Legionaries Bowmen (Rear Row)", "Mixed Legionaries/Legionaries Bowmen (Front Row)", "Legionaries"],
               "pointsModifier": 2,
               "equipmentAdded": ["Heavy Throwing Spear"],
               "equipmentRemoved": ["Throwing Spear"],
