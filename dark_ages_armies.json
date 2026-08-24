@@ -6936,7 +6936,7 @@
 	"optionalEquipment": [
   		{
               "name": "Heavy Throwing Spear (Legionaries)",
-			  "targetProfile": [Mixed Legionaries/Legionaries Bowmen (Rear Row)", "Mixed Legionaries/Legionaries Bowmen (Front Row)", "Legionaries"],
+			  "targetProfile": ["Mixed Legionaries/Legionaries Bowmen (Rear Row)", "Mixed Legionaries/Legionaries Bowmen (Front Row)", "Legionaries"],
               "pointsModifier": 2,
               "equipmentAdded": ["Heavy Throwing Spear"],
               "equipmentRemoved": ["Throwing Spear"],
@@ -7687,7 +7687,7 @@
 	"optionalEquipment": [
   		{
               "name": "Heavy Throwing Spear (Legionaries)",
-			  "targetProfile": [Mixed Legionaries/Legionaries Bowmen (Rear Row)", "Mixed Legionaries/Legionaries Bowmen (Front Row)", "Legionaries"],
+			  "targetProfile": ["Mixed Legionaries/Legionaries Bowmen (Rear Row)", "Mixed Legionaries/Legionaries Bowmen (Front Row)", "Legionaries"],
               "pointsModifier": 2,
               "equipmentAdded": ["Heavy Throwing Spear"],
               "equipmentRemoved": ["Throwing Spear"],
@@ -8584,7 +8584,7 @@
 	"optionalEquipment": [
   		{
               "name": "Heavy Throwing Spear (Legionaries)",
-			  "targetProfile": [Mixed Legionaries/Legionaries Bowmen (Rear Row)", "Mixed Legionaries/Legionaries Bowmen (Front Row)", "Legionaries"],
+			  "targetProfile": ["Mixed Legionaries/Legionaries Bowmen (Rear Row)", "Mixed Legionaries/Legionaries Bowmen (Front Row)", "Legionaries"],
               "pointsModifier": 2,
               "equipmentAdded": ["Heavy Throwing Spear"],
               "equipmentRemoved": ["Throwing Spear"],
@@ -9456,7 +9456,7 @@
 	"optionalEquipment": [
   		{
               "name": "Heavy Throwing Spear (Legionaries)",
-			  "targetProfile": [Mixed Legionaries/Legionaries Bowmen (Rear Row)", "Mixed Legionaries/Legionaries Bowmen (Front Row)", "Legionaries"],
+			  "targetProfile": ["Mixed Legionaries/Legionaries Bowmen (Rear Row)", "Mixed Legionaries/Legionaries Bowmen (Front Row)", "Legionaries"],
               "pointsModifier": 2,
               "equipmentAdded": ["Heavy Throwing Spear"],
               "equipmentRemoved": ["Throwing Spear"],
