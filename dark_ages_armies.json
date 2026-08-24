@@ -40669,7 +40669,7 @@
 		],
 		"optionalEquipment": [
 		{
-		"name": "Large Shield",
+		"name": "Large Shield (Excludes Archers)",
 		"pointsModifier": 2,
 		"targetProfile": ["Spearmen/Archers (Rear Row)", "Spearmen/Archers (Front Row)", "Spearmen"],
 		"equipmentAdded": ["Large Shield"],
@@ -41205,7 +41205,7 @@
 		],
 		"optionalEquipment": [
 		{
-		"name": "Large Shield",
+		"name": "Large Shield (Excludes Archers)",
 		"pointsModifier": 2,
 		"targetProfile": ["Spearmen/Archers (Rear Row)", "Spearmen/Archers (Front Row)", "Spearmen"],
 		"equipmentAdded": ["Large Shield"],
@@ -41723,7 +41723,7 @@
 		],
 		"optionalEquipment": [
 		{
-		"name": "Large Shield",
+		"name": "Large Shield (Excludes Archers)",
 		"pointsModifier": 2,
 		"targetProfile": ["Spearmen/Archers (Rear Row)", "Spearmen/Archers (Front Row)", "Spearmen"],
 		"equipmentAdded": ["Large Shield"],
