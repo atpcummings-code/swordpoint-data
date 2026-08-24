@@ -39,7 +39,7 @@
         "defence": 6,
         "cohesion": 7,
     	"pointsPerBase": 16,
-		"minBases": 3
+		"minBases": 3,
 		"maxBases": 12,
         "baseEquipment": ["Spear", "Shield"],
         "specialRules": ["Close Order", "Shieldwall"],
