@@ -83,7 +83,8 @@
 		],
 		"optionalEquipment": [
 		{
-		"name": "Heavy Armour",
+		"name": "Heavy Armour (Excludes Dismounted Cavalry Bowmen)",
+		"targetProfile": ["Dismounted Cavalry/Dismounted Cavalry Bowmen (Rear Row)", "Dismounted Cavalry/Dismounted Cavalry Bowmen (Front Row)", "Dismounted Cavalry"],
 		"pointsModifier": 2,
 		"equipmentAdded": ["Heavy Armour"],
 		"equipmentRemoved": ["Light Armour"],
