@@ -36683,7 +36683,7 @@
         {
           "id": "ghaznavid_archers",
           "name": "Archers",
-          "description": "Archer s have light armour, bow and shield. May use combined formation when a quarter or half the the units figures exchange bow for spear (-2) and form the front ranks. May be Riding Camels (+1).",
+          "description": "Archer s have light armour, bow and shield. May be Riding Camels (+1).",
           "category": "Infantry",
           "type": "Commander",
           "defence": 5,
