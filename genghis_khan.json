@@ -21,9 +21,9 @@
       "units": [
         
         {
-        "id": "north_african_berbers_almoravid_spearmen_cf",
-        "name": "Combined Formation Spearmen/Archers",
-         "description": "Spearmen have spear, javelins and shield. May have large shield (+2). May use Combined Formation by including a quarter to half archers in the rear ranks (bases comprising only archers cost twelve points per base). May be Riding Camels (+1). May be Stubborn (+2). Archers have a bow.  May be Riding Camels (+1). May be Stubborn (+2).",
+        "id": "later_byzantine_macedonian_dynasty_regular_spearmen_cf",
+        "name": "Combined Formation Regular Spearmen",
+         "description": "Regular Spearmen have spear and shield. Shieldwall. May use Combined Formation with up to half the unitsfigures exchanging spear and shield for bow(free) and forming the rear row of bases. They may have light armour (+2) and darts (+2).",
     	"category": "Infantry",      
 		"type": "Infantry",
         "minBases": 3,
@@ -31,62 +31,61 @@
   
 	  	"combinedFormation":  
 		[
-		{ "label": "25%", "disableSubProfiles": ["Archers","Spearmen/Archers (Front Row)"]},
-		{ "label": "50%", "disableSubProfiles": ["Spearmen/Archers (Front Row)","Spearmen/Archers (Rear Row)" ]}
+		{ "label": "25%", "disableSubProfiles": ["Regular Bowmen","Regular Spearmen/Regular Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Regular Spearmen/Regular Bowmen (Front Row)","Regular Spearmen/Regular Bowmen (Rear Row)" ]}
 		],
        "subProfiles": [
        	{
-        "name": "Spearmen/Archers (Front Row)",
+        "name": "Regular Spearmen/Regular Bowmen (Front Row)",
         "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
         "defence": 6,
         "cohesion": 7,
     	"pointsPerBase": 16,
 		"minBases": 3,
 	  	"maxBases": 6,
-        "baseEquipment": ["Javelins", "Spear", "Shield", "Bow"],
-        "specialRules": ["Close Order"],
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order", "Shieldwall"],
         },
 		{
-		"name": "Spearmen",
+		"name": "Regular Spearmen",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
         "defence": 6,
         "cohesion": 7,
     	"pointsPerBase": 16,
 		"minBases": 3,
 		"maxBases": 12,
-        "baseEquipment": ["Javelins", "Spear", "Shield"],
-        "specialRules": ["Close Order"],
+        "baseEquipment": ["Spear", "Shield"],
+        "specialRules": ["Close Order", "Shieldwall"],
 		},
 		{
-		"name": "Archers",
+		"name": "Regular Bowmen",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+		"compareWithSubProfile": { "name": "Regular Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
         "defence": 7,
         "cohesion": 7,
-    	"pointsPerBase": 12,
+    	"pointsPerBase": 16,
 		"minBases": 1,
         "baseEquipment": ["Bow"],
         "specialRules": ["Close Order"],
 		},
 		{
-		"name": "Spearmen/Archers (Rear Row)",
+		"name": "Regular Spearmen/Regular Bowmen (Rear Row)",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+		"compareWithSubProfile": { "name": "Regular Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
         "defence": 6,
         "cohesion": 7,
     	"pointsPerBase": 16,
 		"minBases": 1,
 		"maxBases": 6,
-        "baseEquipment": ["Javelins", "Spear", "Shield", "Bow"],
-        "specialRules": ["Close Order"],
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order", "Shieldwall"],
 		}        
 		],
 		"optionalEquipment": [
 		{
-		"name": "Large Shield (Excludes Archers)",
+		"name": "Light Armour",
 		"pointsModifier": 2,
-		"targetProfile": ["Spearmen/Archers (Rear Row)", "Spearmen/Archers (Front Row)", "Spearmen"],
-		"equipmentAdded": ["Large Shield"],
+		"equipmentAdded": ["Light Armour"],
 		"equipmentRemoved": [],
 		"rulesAdded": [],
 		"rulesRemoved": [],
@@ -94,11 +93,11 @@
 		"cohesionModifier": 0
 		},
 			{
-		"name": "Riding Camels",
-		"pointsModifier": 1,
-		"equipmentAdded": [],
+		"name": "Darts",
+		"pointsModifier": 2,
+		"equipmentAdded": ["Darts"],
 		"equipmentRemoved": [],
-		"rulesAdded": ["Riding Camels"],
+		"rulesAdded": [],
 		"rulesRemoved": [],
 		"defenceModifier": 0,
 		"cohesionModifier": 0
