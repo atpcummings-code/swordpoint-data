@@ -186,7 +186,7 @@
               "maxBases": 6,
               "maxPercentage": 75,
               "baseEquipment": ["Spear", "Shield", "Javelins"],
-              "specialRules": ["open Order"]
+              "specialRules": ["Open Order"]
             }
             
             ],
@@ -11734,7 +11734,7 @@
                 "Close Order"
               ],
               "rulesRemoved": [
-                "Open ORder"
+                "Open Order"
               ],
               "defenceModifier": -1,
               "cohesionModifier": 0
@@ -11751,7 +11751,7 @@
                 "Close Order"
               ],
               "rulesRemoved": [
-                "Open ORder"
+                "Open Order"
               ],
               "defenceModifier": -1,
               "cohesionModifier": 0
@@ -14906,7 +14906,7 @@
                 "Close Order"
               ],
               "rulesRemoved": [
-                "Open ORder"
+                "Open Order"
               ],
               "defenceModifier": -1,
               "cohesionModifier": 0
@@ -14923,7 +14923,7 @@
                 "Close Order"
               ],
               "rulesRemoved": [
-                "Open ORder"
+                "Open Order"
               ],
               "defenceModifier": -1,
               "cohesionModifier": 0
@@ -22937,7 +22937,7 @@
           {
           "id": "middle_christian_spanish_prones",
           "name": "Prones",
-          "description": "Prones spear, javelins and shield. May be declared as Open Order (-4) in which case may exchange spear for throwing spear (+2). If Close ORder may use combine dFormation by including50% Close Order Arqueros (14 points per base) an the rear rows.",
+          "description": "Prones spear, javelins and shield. May be declared as Open Order (-4) in which case may exchange spear for throwing spear (+2). If Close Order may use combine dFormation by including50% Close Order Arqueros (14 points per base) an the rear rows.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 6,
@@ -23673,7 +23673,7 @@
           {
           "id": "late_christian_spanish_prones",
           "name": "Prones",
-          "description": "Prones spear, javelins and shield. May be declared as Open Order (-4) in which case may exchange spear for throwing spear (+2). If Close ORder may use combine dFormation by including50% Close Order Arqueros (14 points per base) an the rear rows.",
+          "description": "Prones spear, javelins and shield. May be declared as Open Order (-4) in which case may exchange spear for throwing spear (+2). If Close Order may use combine dFormation by including50% Close Order Arqueros (14 points per base) an the rear rows.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 6,
@@ -26030,7 +26030,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Bow","Shield"],
-          "specialRules": ["open Order"],
+          "specialRules": ["Open Order"],
           "optionalEquipment": [
             {
               "name": "Skirmishers",
@@ -27279,7 +27279,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Bow","Shield"],
-          "specialRules": ["open Order"],
+          "specialRules": ["Open Order"],
           "optionalEquipment": [
             {
               "name": "Skirmishers",
