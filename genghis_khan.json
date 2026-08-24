@@ -21,9 +21,9 @@
       "units": [
         
         {
-        "id": "ghaznavid_archers_cf",
-        "name": "Combined Formation Ghaznavid Archers",
-         "description": "Archers have light armour, bow and shield. May use combined formation when a quarter or half the the units figures exchange bow for spear (-2) and form the front ranks. May be Riding Camels (+1).",
+        "id": "north_african_berbers_almoravid_spearmen_cf",
+        "name": "Combined Formation Spearmen/Archers",
+         "description": "Spearmen have spear, javelins and shield. May have large shield (+2). May use Combined Formation by including a quarter to half archers in the rear ranks (bases comprising only archers cost twelve points per base). May be Riding Camels (+1). May be Stubborn (+2).",
     	"category": "Infantry",      
 		"type": "Infantry",
         "minBases": 3,
