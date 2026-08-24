@@ -83,11 +83,10 @@
 		],
 		"optionalEquipment": [
 		{
-		"name": "Large Shield (Excludes Dismounted Cavalry Bowmen)",
+		"name": "Heavy Armour",
 		"pointsModifier": 2,
-		"targetProfile": ["Dismounted Cavalry/Dismounted Cavalry Bowmen (Rear Row)", "Dismounted Cavalry/Dismounted Cavalry Bowmen (Front Row)", "Dismounted Cavalry"],
-		"equipmentAdded": ["Large Shield"],
-		"equipmentRemoved": ["Shield"],
+		"equipmentAdded": ["Heavy Armour"],
+		"equipmentRemoved": ["Light Armour"],
 		"rulesAdded": [],
 		"rulesRemoved": [],
 		"defenceModifier": -1,
