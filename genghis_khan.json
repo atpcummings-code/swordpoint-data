@@ -91,26 +91,6 @@
 		"rulesRemoved": [],
 		"defenceModifier": -1,
 		"cohesionModifier": 0
-		},
-		{
-		"name": "Light Armour",
-		"pointsModifier": 2,
-		"equipmentAdded": ["Light Armour"],
-		"equipmentRemoved": [],
-		"rulesAdded": [],
-		"rulesRemoved": [],
-		"defenceModifier": -1,
-		"cohesionModifier": 0
-		},
-			{
-		"name": "Riding Camels",
-		"pointsModifier": 1,
-		"equipmentAdded": [],
-		"equipmentRemoved": [],
-		"rulesAdded": ["Riding Camels"],
-		"rulesRemoved": [],
-		"defenceModifier": 0,
-		"cohesionModifier": 0
 		}
 	]
 },
