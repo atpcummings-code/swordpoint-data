@@ -23,7 +23,7 @@
         {
         "id": "early_italian_city_states_militia_cf",
         "name": "Combined Formation Militia",
-         "description": "Militia have spear and large shield. Inferior Fighters. Up to half teh Spearmen may replace their spear and large shield with crossbow (free) and the other half replace large shield with a pavise (free). The whole unit is a Combined Formation, but the first row of crossbowmen may shoot over the head of any front row(s) of spearmen, this is an exception to the normal rules for Combined Formation.",
+         "description": "Militia have spear and large shield. Inferior Fighters. Up to half thr Spearmen may replace their spear and large shield with crossbow (free) and the other half replace large shield with a pavise (free). The whole unit is a Combined Formation, but the first row of crossbowmen may shoot over the head of any front row(s) of spearmen, this is an exception to the normal rules for Combined Formation.",
     	"category": "Infantry",      
 		"type": "Infantry",
         "minBases": 3,
