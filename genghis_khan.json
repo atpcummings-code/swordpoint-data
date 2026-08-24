@@ -21,9 +21,9 @@
       "units": [
         
         {
-        "id": "carolingian_dismounted_cavalry_cf",
-        "name": "Combined Formation Dismounted Cavalry",
-         "description": "Dismounted Cavalry light armour, spear and shield. Superior Fighters. They may have heavy armour (+2). Units of dismouned cavalry may use combined formation where up to 50% of figures exchange spear and shield for bow (free) and form the rear ranks",
+        "id": "ghaznavid_archers_cf",
+        "name": "Combined Formation Ghaznavid Archers",
+         "description": "Archers have light armour, bow and shield. May use combined formation when a quarter or half the the units figures exchange bow for spear (-2) and form the front ranks. May be Riding Camels (+1).",
     	"category": "Infantry",      
 		"type": "Infantry",
         "minBases": 3,
