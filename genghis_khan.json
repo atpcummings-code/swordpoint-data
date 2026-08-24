@@ -21,9 +21,9 @@
       "units": [
         
         {
-        "id": "later_byzantine_macedonian_dynasty_regular_spearmen_cf",
-        "name": "Combined Formation Regular Spearmen",
-         "description": "Regular Spearmen have spear and shield. Shieldwall. May use Combined Formation with up to half the unitsfigures exchanging spear and shield for bow(free) and forming the rear row of bases. They may have light armour (+2) and darts (+2).",
+        "id": "early_italian_city_states_militia_cf",
+        "name": "Combined Formation Militia",
+         "description": "Militia have spear and large shield. Inferior Fighters. Up to half teh Spearmen may replace their spear and large shield with crossbow (free) and the other half replace large shield with a pavise (free). The whol.e unit is a Combined Formation, but the first row of crossbowmen may shoot over the head of any front row(s) of spearmen",, this is an exception to the normal rules for Combined Formation.
     	"category": "Infantry",      
 		"type": "Infantry",
         "minBases": 3,
@@ -31,77 +31,58 @@
   
 	  	"combinedFormation":  
 		[
-		{ "label": "25%", "disableSubProfiles": ["Regular Bowmen","Regular Spearmen/Regular Bowmen (Front Row)"]},
-		{ "label": "50%", "disableSubProfiles": ["Regular Spearmen/Regular Bowmen (Front Row)","Regular Spearmen/Regular Bowmen (Rear Row)" ]}
+		{ "label": "25%", "disableSubProfiles": ["Militia Crossbowmen","Militia/Militia Crossbowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Militia/Militia Crossbowmen (Front Row)","Militia/Militia Crossbowmen (Rear Row)" ]}
 		],
        "subProfiles": [
        	{
-        "name": "Regular Spearmen/Regular Bowmen (Front Row)",
+        "name": "Militia/Militia Crossbowmen (Front Row)",
         "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-        "defence": 6,
+        "defence": 5,
         "cohesion": 7,
-    	"pointsPerBase": 16,
+    	"pointsPerBase": 14,
 		"minBases": 3,
 	  	"maxBases": 6,
-        "baseEquipment": ["Spear", "Shield", "Bow"],
-        "specialRules": ["Close Order", "Shieldwall"],
+        "baseEquipment": ["Spear", "Pavise", "Crossbow"],
+        "specialRules": ["Close Order", "Inferior Fighters"],
         },
 		{
-		"name": "Regular Spearmen",
+		"name": "Militia",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-        "defence": 6,
+        "defence": 5,
         "cohesion": 7,
-    	"pointsPerBase": 16,
+    	"pointsPerBase": 14,
 		"minBases": 3,
 		"maxBases": 12,
-        "baseEquipment": ["Spear", "Shield"],
-        "specialRules": ["Close Order", "Shieldwall"],
+        "baseEquipment": ["Spear", "Pavise"],
+        "specialRules": ["Close Order", "Inferior Fighters"],
 		},
 		{
-		"name": "Regular Bowmen",
+		"name": "Militia Crossbowmen",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Regular Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
-        "defence": 7,
+		"compareWithSubProfile": { "name": "Militia", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 5,
         "cohesion": 7,
-    	"pointsPerBase": 16,
+    	"pointsPerBase": 14,
 		"minBases": 1,
-        "baseEquipment": ["Bow"],
-        "specialRules": ["Close Order"],
+        "baseEquipment": ["Crossbow"],
+        "specialRules": ["Close Order", "Inferior Fighters"],
 		},
 		{
-		"name": "Regular Spearmen/Regular Bowmen (Rear Row)",
+		"name": "Militia/Militia Crossbowmen (Rear Row)",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Regular Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
-        "defence": 6,
+		"compareWithSubProfile": { "name": "Militia", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 5,
         "cohesion": 7,
-    	"pointsPerBase": 16,
+    	"pointsPerBase": 14,
 		"minBases": 1,
 		"maxBases": 6,
-        "baseEquipment": ["Spear", "Shield", "Bow"],
-        "specialRules": ["Close Order", "Shieldwall"],
+        "baseEquipment": ["Spear", "Pavise", "Crossbow"],
+        "specialRules": ["Close Order", "Inferior Fighters"],
 		}        
 		],
 		"optionalEquipment": [
-		{
-		"name": "Light Armour",
-		"pointsModifier": 2,
-		"equipmentAdded": ["Light Armour"],
-		"equipmentRemoved": [],
-		"rulesAdded": [],
-		"rulesRemoved": [],
-		"defenceModifier": -1,
-		"cohesionModifier": 0
-		},
-			{
-		"name": "Darts",
-		"pointsModifier": 2,
-		"equipmentAdded": ["Darts"],
-		"equipmentRemoved": [],
-		"rulesAdded": [],
-		"rulesRemoved": [],
-		"defenceModifier": 0,
-		"cohesionModifier": 0
-		}
+		
 	]
 },
 		  {
