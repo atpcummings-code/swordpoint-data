@@ -24779,6 +24779,67 @@
             }
           ]
         },
+		  {
+        "id": "pagan_rus_militia_cf",
+        "name": "Combined Formation Militia",
+         "description": "Militia have a spear and shield. Shieldwall. May have light armour (+2) and javelins (+2). Up to 25% of a unit may exchange spear and shield for bow (free) and form a Combined Formation with the spearmen ",
+    	"category": "Infantry",      
+		"type": "Infantry",
+        "minBases": 3,
+        "maxBases": 12,
+	  	"combinedFormation":  
+		[
+		{ "label": "25%"}
+		],
+       "subProfiles": [
+       {
+		"name": "Militia",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 16,
+		"minBases": 3,
+		"maxBases": 12,
+        "baseEquipment": ["Spear", "Shield"],
+        "specialRules": ["Close Order", "Shieldwall"],
+		},
+		{
+		"name": "Militia/Militia Bowmen (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Militia", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 6,
+        "cohesion": 7,
+    	"pointsPerBase": 16,
+		"minBases": 1,
+		"maxBases": 6,
+        "baseEquipment": ["Spear", "Shield", "Bow"],
+        "specialRules": ["Close Order", "Shieldwall"],
+		}        
+		],
+		"optionalEquipment": [
+				{
+		"name": "Light Armour",
+		"pointsModifier": 2,
+		"equipmentAdded": ["Light Armour"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": -1,
+		"cohesionModifier": 0
+		},
+		{
+		"name": "Javelins",
+		"pointsModifier": 2,
+		"equipmentAdded": ["Javelins"],
+		"equipmentRemoved": [],
+		"rulesAdded": [],
+		"rulesRemoved": [],
+		"defenceModifier": 0,
+		"cohesionModifier": 0
+		},
+			
+	]
+},
         {
           "id": "pagan_rus_tribal_warriors",
           "name": "Tribal Warriors",
@@ -24986,15 +25047,15 @@
         }
       ]
     },
-    "christian_rus": {
-      "armyName": "Christian Rus - 750 to 1250 AD",
+    "christianised_rus": {
+      "armyName": "christianised Rus - 750 to 1250 AD",
       "armyValidation": [
         {
-          "id": "christian_rus_militia",
+          "id": "christianised_rus_militia",
           "expression": "greaterThanOrEqual",
           "ratio": 2,
           "compareWith": [
-            "christian_rus_rus_skirmishers"
+            "christianised_rus_rus_skirmishers"
           ]
         }
       ],
@@ -25072,7 +25133,7 @@
       ],
       "units": [
         {
-          "id": "christian_rus_warlord",
+          "id": "christianised_rus_warlord",
           "name": "Warlord",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -25087,7 +25148,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "christian_rus_noble",
+          "id": "christianised_rus_noble",
           "name": "Noble",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -25101,7 +25162,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "christian_rus_druzhina",
+          "id": "christianised_rus_druzhina",
           "name": "Druzhina",
           "description": "druzhina have spear, light armour and shield. Superior Fighters. May have heavy armour (+1).",
           "category": "Cavalry",
@@ -25138,7 +25199,7 @@
           ]
         },
         {
-          "id": "christian_rus_black_hoods",
+          "id": "christianised_rus_black_hoods",
           "name": "Black Hoods",
           "description": "Black Hoods have a bow and shield. Skirmishers. Parthian Shot.",
           "category": "Cavalry",
@@ -25160,7 +25221,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "christian_rus_varjazi",
+          "id": "christianised_rus_varjazi",
           "name": "Varjazi",
           "description": "Varjazi have light armour, spear and shield. Superior Fighters. Shieldwall. May be Riding Horses (+1) and may exchange spear for throwing spear (+2), halberd (+2) or two-handed weapon (+2) and javelins(+2).",
           "category": "Infantry",
@@ -25272,7 +25333,7 @@
           ]
         },
         {
-          "id": "christian_rus_militia",
+          "id": "christianised_rus_militia",
           "name": "Militia",
           "description": "Militia have a spear and shield. Shieldwall. May have light armour (+2) and javelins (+2). Up to 25% of a unit may exchange spear and shield for bow (free) and forma cobined fomration with the spearmen.",
           "category": "Infantry",
@@ -25318,7 +25379,7 @@
           ]
         },
         {
-          "id": "christian_rus_tribal_warriors",
+          "id": "christianised_rus_tribal_warriors",
           "name": "Tribal Warriors",
           "description": "Tribal Warriors have throwing spear, javelins and shield. Warband. Levies. Any Tribal Warrior unit may be designated as Open Order (-4). Tribal Warriors units may be fielded as skirmishers at acost of 7 points per base.",
           "category": "Infantry",
@@ -25373,7 +25434,7 @@
           ]
         },
         {
-          "id": "christian_rus_smerd_levies",
+          "id": "christianised_rus_smerd_levies",
           "name": "Smerd Levies",
           "description": "Smerd Levies have spear and shield. Inferior Fighters. Leveis.",
           "category": "Infantry",
@@ -25395,7 +25456,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "christian_rus_rus_skirmishers",
+          "id": "christianised_rus_rus_skirmishers",
           "name": "Rus Skirmishers",
           "description": "Rus Skirmishers have a bow. Skirmishers. Inferior Fighters. May exchange bow for javelins and shield (+1). There mmust be at least twice as many formed Militia bases in the army as there are Rus Skirmisher bases.",
           "category": "Infantry",
@@ -25415,7 +25476,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "christian_rus_slav_skirmishers",
+          "id": "christianised_rus_slav_skirmishers",
           "name": "Slav Skirmishers",
           "description": "Slav Skirmishers have a bow. Skirmishers. Inferior Fighters. May exchange bow for javelins and shield (+1).",
           "category": "Infantry",
@@ -25451,7 +25512,7 @@
           ]
         },
         {
-          "id": "christian_rus_steppe_archers",
+          "id": "christianised_rus_steppe_archers",
           "name": "Steppe Archers",
           "description": "Steppe Archers have a bow. Superior Shooters. Nomad Cavalry. They may have light armour (+1), spear (+1) and shield (+1). They may be fielded as skirmishers.",
           "category": "Infantry",
