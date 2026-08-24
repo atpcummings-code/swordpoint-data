@@ -40563,7 +40563,7 @@
         {
           "id": "north_african_berbers_almoravid_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have spear, javelins and shield. May have large shield (+2). May use Combined Formation by including a quarter to half archers in the rear ranks (bases comprising only archers cost twelve points per base). May be Riding Camels (+1). May be Stubborn (+2).",
+          "description": "Spearmen have spear, javelins and shield. May have large shield (+2). May be Riding Camels (+1). May be Stubborn (+2).",
           "category": "Infantry",
           "type": "Commander",
           "defence": 6,
