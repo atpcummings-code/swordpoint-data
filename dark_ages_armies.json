@@ -44190,6 +44190,71 @@
           ],
           "optionalEquipment": []
         },
+		  {
+        "id": "early_italian_city_states_militia_cf",
+        "name": "Combined Formation Militia",
+         "description": "Militia have spear and large shield. Inferior Fighters. Up to half thr Spearmen may replace their spear and large shield with crossbow (free) and the other half replace large shield with a pavise (free). The whole unit is a Combined Formation, but the first row of crossbowmen may shoot over the head of any front row(s) of spearmen, this is an exception to the normal rules for Combined Formation.",
+    	"category": "Infantry",      
+		"type": "Infantry",
+        "minBases": 3,
+        "maxBases": 12,
+  
+	  	"combinedFormation":  
+		[
+		{ "label": "25%", "disableSubProfiles": ["Militia Crossbowmen","Militia/Militia Crossbowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Militia/Militia Crossbowmen (Front Row)","Militia/Militia Crossbowmen (Rear Row)" ]}
+		],
+       "subProfiles": [
+       	{
+        "name": "Militia/Militia Crossbowmen (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 5,
+        "cohesion": 7,
+    	"pointsPerBase": 14,
+		"minBases": 3,
+	  	"maxBases": 6,
+        "baseEquipment": ["Spear", "Pavise", "Crossbow"],
+        "specialRules": ["Close Order", "Inferior Fighters"],
+        },
+		{
+		"name": "Militia",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 5,
+        "cohesion": 7,
+    	"pointsPerBase": 14,
+		"minBases": 3,
+		"maxBases": 12,
+        "baseEquipment": ["Spear", "Pavise"],
+        "specialRules": ["Close Order", "Inferior Fighters"],
+		},
+		{
+		"name": "Militia Crossbowmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Militia", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 5,
+        "cohesion": 7,
+    	"pointsPerBase": 14,
+		"minBases": 1,
+        "baseEquipment": ["Crossbow"],
+        "specialRules": ["Close Order", "Inferior Fighters"],
+		},
+		{
+		"name": "Militia/Militia Crossbowmen (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Militia", "expression": "lessThanOrEqual", "ratio": 1 },
+        "defence": 5,
+        "cohesion": 7,
+    	"pointsPerBase": 14,
+		"minBases": 1,
+		"maxBases": 6,
+        "baseEquipment": ["Spear", "Pavise", "Crossbow"],
+        "specialRules": ["Close Order", "Inferior Fighters"],
+		}        
+		],
+		"optionalEquipment": [
+		
+	]
+},
         {
           "id": "early_italian_city_states_light_infantry",
           "name": "Light Infantry",
