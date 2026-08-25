@@ -29929,21 +29929,45 @@
           "optionalEquipment": [],
               
             },
-        {
+    {
           "id": "early_japanese_Archers",
-          "name": "Archers",
-          "description": "Archers have a bow. They form a Combined Formation in which the front rank has pavises (+2)",
+                "name": "Archers",
+          "description": "Archers have a bow. May have pavises (+2) for front rank only.",
           "category": "Infantry",
-          "type": "Commander",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 12,
+          "type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Bow"],
-          "specialRules": ["Close Order"],
-          "optionalEquipment": [],       
-        },
+          "subProfiles": [
+            {
+              "name": "Archers (Front Rank)",
+              "stats": {
+                "D": 7,
+                "C": 6
+              },
+              "pointsPerBase": 12,
+              "baseEquipment": ["Bow"],
+              "specialRules": []
+            },
+            {
+              "name": "Archers (Rear Rank)",
+              "stats": {
+                "D": 7,
+                "C": 6
+              },
+              "pointsPerBase": 12,
+              "baseEquipment": ["Bow"],
+              "specialRules": []
+            }
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Pavise",
+              "pointsPerBase": 2,
+              "targetProfile": "Archers (Front Rank)",
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": []
+            },
+
         {
           "id": "early_japanese_emishi_infantry",
           "name": "Emishi",
@@ -30180,7 +30204,7 @@
                 {
           "id": "middle_japanese_bushi_infantry",
           "name": "Bushi Infantry",
-          "description": "Bushi have light armour and bow. Superior Fighters. Superior Shooters. May have heavy armour (+2) and spear (free). May be Stubborn (+2) and Veteran (+2)",
+          "description": "Bushi have light armour and bow. Superior Fighters. Superior Shooters. May have heavy armour (+2) and spear (free). May be Stubborn (+2) and Veteran (+2). May have Naginata (Halberd) (+2).",
           "category": "Infantry",
           "type": "Commander",
           "defence": 6,
@@ -30203,8 +30227,20 @@
             },
             {
               "name": "Spear",
+				"disables": "Naginata (Halberd)",
               "pointsModifier": 0,
               "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Naginata (Halberd)",
+				"disables": "Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Naginata (Halberd)"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -30511,7 +30547,7 @@
                 {
           "id": "late_japanese_bushi_infantry",
           "name": "Bushi Infantry",
-          "description": "Bushi have light armour and bow. Superior Fighters. Superior Shooters. May have heavy armour (+2) and spear (free). May be Stubborn (+2) and Veteran (+2)",
+          "description": "Bushi have light armour and bow. Superior Fighters. Superior Shooters. May have heavy armour (+2) and spear (free). May be Stubborn (+2) and Veteran (+2). May have Naginata (Halberd) (+2).",
           "category": "Infantry",
           "type": "Commander",
           "defence": 6,
@@ -30534,6 +30570,17 @@
             },
             {
               "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+				"disables": "Naginata (Halberd)",
               "pointsModifier": 0,
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": [],
