@@ -6772,7 +6772,7 @@
         },
         {
           "id": "lir_border_garrison_illyricani_sagittarii",
-          "name": "Illyricani Sagittarii",
+          "name": "Illyricani/Sagittarii",
           "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "Commander",
@@ -7510,7 +7510,7 @@
         },
         {
           "id": "lir_imperial_field_army_illyricani_sagittarii",
-          "name": "Illyricani Sagittarii",
+          "name": "Illyricani/Sagittarii",
           "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "Commander",
@@ -8421,7 +8421,7 @@
         },
         {
           "id": "lir_romanised_warlord_illyricani_sagittarii",
-          "name": "Illyricani Sagittarii",
+          "name": "Illyricani/Sagittarii",
           "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "Commander",
@@ -9292,7 +9292,7 @@
         },
         {
           "id": "lir_romano_british_illyricani_sagittarii",
-          "name": "Illyricani Sagittarii",
+          "name": "Illyricani/Sagittarii",
           "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "Commander",
