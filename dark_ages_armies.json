@@ -24343,6 +24343,7 @@
             },
             {
               "name": "Bow",
+				"enableHidden": ["Skirmishers"], 
               "disables": [
                 "Throwing Spear"
               ],
@@ -24363,6 +24364,7 @@
             },
             {
               "name": "Skirmishers",
+				"hiddenUntilEnabled": "hidden",
               "disables": [
                 "Open Order"
               ],
