@@ -1,7 +1,7 @@
 {
   "armies": {
      "the_franks": {
-      "armyName": "the_franks - 768 to 814 AD",
+      "armyName": "The Franks - 768 to 814 AD",
 		 "exclusiveGroups": [
         [
           "the_franks_charlemagne",
