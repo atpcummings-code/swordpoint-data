@@ -30737,7 +30737,7 @@
             },
  {
               "name": "Pike (Yari)",
-              "disables": "Spear",  
+              "disables": ["Spear","Halberd],
               "pointsModifier": 5,
               "equipmentAdded": ["Pike (Yari)"],
               "equipmentRemoved": ["Spear"],
