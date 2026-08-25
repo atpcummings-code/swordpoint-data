@@ -2,6 +2,12 @@
   "armies": {
      "the_franks": {
       "armyName": "the_franks - 768 to 814 AD",
+		 "exclusiveGroups": [
+        [
+          "the_franks_charlemagne",
+          "the_franks_rex_duke_or_king"
+        ]
+      ],
       "categories": [
         {
           "id": "Commanders",
@@ -46,7 +52,7 @@
       ],
       "units": [
         {
-          "id": "the_franks_duke_or_king",
+          "id": "the_franks_rex_duke_or_king",
           "name": "Rex, Duke or King",
           "description": "May ride a horse.",
           "category": "Commanders",
