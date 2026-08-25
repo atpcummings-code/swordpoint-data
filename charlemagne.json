@@ -1,49 +1,57 @@
 {
   "armies": {
-    "sea_peoples": {
-      "armyName": "Sea Peoples - (1278 BC - 1175 BC)",
+     "franks": {
+      "armyName": "Franks - 300 to 750 AD",
       "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 6
-        },
-        {
-          "id": "Chariots",
-          "name": "Chariots",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 20
+          "max": 8
         },
         {
           "id": "Infantry",
           "name": "Infantry",
           "constraintType": "percentage",
-          "min": 25,
+          "min": 33,
           "max": 100
         },
         {
-          "id": "Allies",
-          "name": "Allies and Mercenaries",
-          "description": "The army may take allies from the Libyan list.",
+          "id": "Cavalry",
+          "name": "Cavalry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25,
+          "max": 25
+        },
+        {
+          "id": "Skirmishers",
+          "name": "Skirmishers",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "The pre-700 AD army may have allies from the Dark Age Britain and Ireland or Late Imperial Roman (Limitanei, Auxilia, Esquites and Illyrian/Sagitarii only) lists.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20,
           "alliedArmyKeys": [
-            "libyan"
+            "dark_age_britain_and_ireland", "lir_"
           ],
-          "maxAlliedArmiesAllowed": 1
+          "maxAlliedArmiesAllowed": 2
         }
       ],
       "units": [
         {
-          "id": "sea_peoples_over_king",
-          "name": "Over King",
-          "description": "May ride in a chariot.",
+          "id": "franks_duke_or_king",
+          "name": "Duke or King",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
+          "maxCountAllowed": 1,
           "attacks": "+3",
           "cohesion": 9,
           "pointsPerBase": 0,
@@ -53,11 +61,11 @@
           "optionalEquipment": []
         },
         {
-          "id": "sea_peoples_chief",
-          "name": "Chief",
-          "description": "May ride in a chariot.",
+          "id": "franks_noble",
+          "name": "Noble",
+          "description": "May ride a horse.",
           "category": "Commanders",
-          "type": "other",
+          "type": "Commander",
           "attacks": "+2",
           "cohesion": "+2",
           "pointsPerBase": 20,
@@ -67,101 +75,200 @@
           "optionalEquipment": []
         },
         {
-          "id": "sea_peoples_chariots",
-          "name": "Chariots",
-          "description": "Chariots have a driver and one crewman armed with javelins, light armour and shield.  Superior Fighters. Superior Shooters. Light Chariots.",
-          "category": "Chariots",
-          "type": "Formed",
-          "defence": 3,
-          "cohesion": 8,
-          "pointsPerBase": 25,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": [
-            "Javelins",
-            "Shield",
-            "Light Armour"
-          ],
-          "specialRules": [
-            "Superior Fighters",
-            "Open Order",
-            "Superior Shooters",
-            "Light Chariots"
-          ],
+          "id": "franks_minor_noble",
+          "name": "Minor Noble",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
           "optionalEquipment": []
         },
         {
-          "id": "sea_peoples_sherden",
-          "name": "Sherden",
-          "description": "Sherden have javelins and shield.  Superior Fighters. Warband (not rule 3) / Up top three units may have light armour (+2). May be Stubborn (+2)",
-          "category": "Infantry",
-          "type": "Formed",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 18,
+          "id": "franks_noble_cavalry",
+          "name": "Noble Cavalry",
+          "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. Maybe fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "Commander",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 23,
           "minBases": 3,
-          "maxBases": 12,
+          "maxBases": 8,
           "baseEquipment": [
+            "Light Armour",
+            "Spear",
             "Javelins",
             "Shield"
           ],
           "specialRules": [
-            "Superior Fighters",
-            "Close Order",
-            "Warband (not rule 3)"
+            "Open Order",
+            "Superior Fighters"
           ],
-          "optionalEquipment": [
+           "optionalEquipment": [
             {
-              "name": "Light Armour",
-              "pointsModifier": 2,
-              "maxUnits": 3,
-              "equipmentAdded": [
-                "Light Armour"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Stubborn",
-              "pointsModifier": 2,
+              "name": "Skirmishers",
+              "pointsModifier": 0,
               "rulesAdded": [
-                "Stubborn"
+                "Skirmishers"
               ],
-              "rulesRemoved": [],
+              "rulesRemoved": [
+                "Open Order"
+              ],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
         },
         {
-          "id": "sea_peoples_warriors",
-          "name": "Warriors",
-          "description": "Warriors have javelins and shield. Warband (not rule 3). Up to two units may have light armour (+2). At least one third of all formed infantry units must be Warriors.",
-          "category": "Infantry",
-          "type": "Formed",
-          "defence": 6,
-          "cohesion": 5,
-          "pointsPerBase": 12,
+          "id": "franks_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have spear, javelins and shield. Maybe fielded as skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 17,
           "minBases": 3,
-          "maxBases": 12,
+          "maxBases": 8,
           "baseEquipment": [
-            "Javelins",
-            "Shield"
+            "Spear", "Javelins"
           ],
           "specialRules": [
-            "Warband (not rule 3)",
-            "Close Order"
+            "Open Order"
           ],
           "optionalEquipment": [
             {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "rulesAdded": [
+                "Skirmishers"
+              ],
+              "rulesRemoved": [
+                "Open Order"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		  {
+          "id": "franks_combined_cavalry_cu",
+          "name": "Combined Unit Noble Cavalry/Light Cavalry",
+          "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. Light Cavalry have spear, javelins and shield.  Noble and Light Cavalry may form Combined Units containing up to 75% of bases of the inferior type (Light Cavalry).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Noble Cavalry",
+              "defence": 4,
+              "cohesion": 8,
+              "pointsPerBase": 23,
+              "minBases": 1,
+              "maxBases": 8,
+              "baseEquipment": ["Light Armour", "Spear", "Shield", "Javelins"],
+              "specialRules": ["Open Order", "Superior Fighters"]
+            },
+            {
+              "name": "Light Cavalry",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 6,
+              "pointsPerBase": 17,
+              "minBases": 1,
+              "maxBases": 6,
+              "maxPercentage": 75,
+              "baseEquipment": ["Spear", "Shield", "Javelins"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+		"optionalEquipment": []
+            },
+        {
+          "id": "franks_elite_warriors",
+          "name": "Elite Warriors",
+          "description": "Elite Warriors have throwing spear and shield. Superior Fighters. Warband. May have light armour (+2) and javelins (+2). May exchange throwing spear for heavy throwing spear (+2).  In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Superior Fighters",
+            "Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Throwing Spear",
+              "disables": [
+                "Spear (mandatory Post 700AD"
+              ],
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Heavy Throwing Spear"
+              ],
+              "equipmentRemoved": [
+                "Throwing Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear (mandatory Post 700AD",
+              "disables": [
+                "Heavy Throwing Spear"
+              ],
+              "pointsModifier": -2,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [
+                "Throwing Spear"
+              ],
+              "rulesAdded": [
+                "Shieldwall"
+              ],
+              "rulesRemoved": [
+                "Warband"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
               "name": "Light Armour",
               "pointsModifier": 2,
-              "maxUnits": 2,
               "equipmentAdded": [
                 "Light Armour"
               ],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -170,10 +277,208 @@
           ]
         },
         {
-          "id": "sea_peoples_skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have a bow or sling",
+          "id": "franks_warriors",
+          "name": "Warriors",
+          "description": "Warriors having throwing spear and shield, Warband. May have javelins (+2). May exchange throwing spear for heavy throwing spear (+2). In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
           "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear (mandatory Post 700AD",
+              "disables": [
+                "Heavy Throwing Spear"
+              ],
+              "pointsModifier": -2,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [
+                "Throwing Spear"
+              ],
+              "rulesAdded": [
+                "Shieldwall"
+              ],
+              "rulesRemoved": [
+                "Warband"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Throwing Spear",
+              "disables": [
+                "Spear (mandatory Post 700AD"
+              ],
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Heavy Throwing Spear"
+              ],
+              "equipmentRemoved": [
+                "Throwing Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+{
+          "id": "franks_combined_warriors_cu",
+          "name": "Combined Unit Elite Warriors/Warriors",
+          "description": "Elite and other Warriors may form Combined Units containing up to 75% of bases of the inferior type. Elite Warriors have throwing spear and shield. Superior Fighters. Warband. May have light armour (+2) and javelins (+2). May exchange throwing spear for heavy throwing spear (+2).  In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall. Warriors having throwing spear and shield, Warband. May have javelins (+2). May exchange throwing spear for heavy throwing spear (+2). In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Elite Warriors",
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 20,
+              "minBases": 1,
+              "maxBases": 12,
+              "baseEquipment": ["Throwing Spear", "Shield"],
+              "specialRules": ["Close Order", "Superior Fighters", "Warband"]
+            },
+            {
+              "name": "Warriors",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 16,
+              "minBases": 1,
+              "maxBases": 9,
+              "maxPercentage": 75,
+              "baseEquipment": ["Throwing Spear", "Shield"],
+              "specialRules": ["Close Order", "Warband"]
+            }
+            
+            ],
+"optionalEquipment": [
+            {
+              "name": "Heavy Throwing Spear (Elite Warriors)",
+              "targetProfile": "Elite Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Throwing Spear (Warriors)",
+              "targetProfile": "Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins (Elite Warriors)",
+              "targetProfile": "Elite Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [ ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins (Warriors)",
+              "targetProfile": "Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [ ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour (Elite Warriors)",
+              "targetProfile": "Elite Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear (mandatory Post 700AD",
+              "disables": ["Heavy Throwing Spear (Elite Warriors)", "Heavy Throwing Spear (Warriors)"],
+              "pointsModifier": -2,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": ["Shieldwall"],
+              "rulesRemoved": ["Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+
+            ]
+            },
+        {
+          "id": "franks_tribal_infantry",
+          "name": "Tribal Infantry",
+          "description": "Tribal Infantry having throwing spear and shield. Warband.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Warband",
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+         {
+          "id": "franks_skirmishers",
+          "name": "Skirmishers",
+          "description": "All have either javelins, bow or sling.",
+          "category": "Skirmishers",
           "type": "Skirmishers",
           "defence": 7,
           "cohesion": 5,
@@ -186,11 +491,32 @@
           ],
           "optionalEquipment": [
             {
+              "name": "Javelins",
+              "disables": [
+                "Sling",
+                "Bow"
+              ],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
               "name": "Bow",
+              "disables": [
+                "Javelins",
+                "Sling"
+              ],
               "pointsModifier": 0,
               "equipmentAdded": [
                 "Bow"
               ],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -198,10 +524,15 @@
             },
             {
               "name": "Sling",
+              "disables": [
+                "Javelins",
+                "Bow"
+              ],
               "pointsModifier": 0,
               "equipmentAdded": [
                 "Sling"
               ],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -209,8 +540,10 @@
             }
           ]
         }
+
+        
       ]
-    }
+    },
 
 
     
