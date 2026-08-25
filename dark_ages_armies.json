@@ -4010,8 +4010,8 @@
       ],
 		"exclusiveGroups": [
         [
-          "gavk_vandal_armies_no_allies_comitatus_foot",
-          "gavk_vandal_armies_no_allies_comitatus_mounted"
+          "gavk_ostrogoth_comitatus_foot",
+          "gavk_ostrogoth_comitatus_mounted"
         ]
       ],
       "categories": [
