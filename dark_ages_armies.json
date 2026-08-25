@@ -30657,8 +30657,8 @@
               },
               "pointsPerBase": 9,
               "baseEquipment": ["Bow"],
-              "specialRules": ["Open Order"]
-          	"minBases": 3,
+              "specialRules": ["Open Order"],
+          	"minBases": 3
             },
             {
               "name": "Retainers (Rear Rank)",
@@ -30677,7 +30677,7 @@
               "pointsPerBase": 2,
               "targetProfile": "Retainers (Front Rank)",
               "equipmentAdded": ["Pavise"],
-              "defenceModifier": -2,
+              "defenceModifier": -2
             },
 {
               "name": "Spear",
