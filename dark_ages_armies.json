@@ -29784,7 +29784,6 @@
           "min": 0,
           "max": 50
         },
-		  ,
 		  {
           "id": "warrior_monks",
           "name": "Warrior Monks",
@@ -30126,7 +30125,7 @@
  {
           "id": "middle_japanese_bushi_cavalry",
           "name": "Bushi Cavalry",
-          "description": "Bushi have light armour and bow. Superior Fighters. Superior Shooters. May have heavy armour (+1). May be Veteran (+1). May be fielded as Skirmishers.",
+          "description": "Bushi have light armour End bow. Superior Fighters. Superior Shooters. May have heavy armour (+1). May be Veteran (+1). May be fielded as Skirmishers.",
           "category": "Cavalry",
           "type": "Commander",
           "defence": 5,
