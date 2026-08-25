@@ -147,15 +147,25 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "Light Armour",
             "Spear",
             "Shield"
           ],
           "specialRules": [
-            "Open Order",
-            "Superior Fighters", "Shock Cavalry"
+            "Open Order"
           ],
-           "optionalEquipment": []
+           "optionalEquipment": [
+			   {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+             "maxCountAllowed": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+		   ]
           },
         {
           "id": "the_franks_light_cavalry",
