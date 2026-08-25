@@ -25924,7 +25924,7 @@
             },
             {
               "name": "Heavy Armour",
-              "pointsModifier": 0,
+              "pointsModifier": 2,
               "equipmentAdded": ["Heavy Armour"],
               "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
