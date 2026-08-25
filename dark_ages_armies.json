@@ -30279,7 +30279,8 @@
           "id": "middle_japanese_retainers",
                 "name": "Retainers",
           "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2). May have Pavise (+2) for front rank only.",
-          "type": "Infantry",
+          "category": "Infantry",
+			"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
@@ -30656,7 +30657,8 @@
           "id": "late_japanese_retainers",
                 "name": "Retainers",
           "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2). May have Pavise (+2) for front rank only.",
-          "type": "Infantry",
+          "category": "Infantry",
+			"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
