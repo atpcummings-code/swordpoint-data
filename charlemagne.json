@@ -175,7 +175,7 @@
               "name": "Light Armour",
 			"enableHidden": ["Shock Cavalry"],
               "pointsModifier": 1,
-             "maxCountAllowed": 2,
+             "maxUnits": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
