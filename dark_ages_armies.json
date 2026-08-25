@@ -32224,6 +32224,7 @@
           "optionalEquipment": [
             {
               "name": "Noble Upgrade",
+              "enableHidden": ["Light Armour"],				
               "pointsModifier": 2,
               "enabledEvery": 2,
               "equipmentAdded": [],
@@ -32235,6 +32236,18 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
+			  {
+              "name": "Light Armour",
+			"hiddenUntilEnabled": "hidden",			
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+
             {
               "name": "Skirmishers",
               "pointsModifier": -2,
