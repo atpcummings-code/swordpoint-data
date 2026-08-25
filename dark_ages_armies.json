@@ -4072,7 +4072,7 @@
         },
         {
           "id": "gavk_ostrogoth_comitatus_mounted",
-          "name": "Comitatus Mounted",
+          "name": "Comitatus MountedX",
     	  "excludesUnits": ["gavk_ostrogoth_comitatus_foot"],			
           "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May have javelins (+1) or exchange spear for kontos (+1). May have Barding (+1). May be Shock Cavalry (+4).The comitatus must be led by the Army General.",
           "category": "Cavalry",
