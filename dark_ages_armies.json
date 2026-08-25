@@ -2844,6 +2844,7 @@
         {
           "id": "gavk_vandal_armies_no_allies_comitatus_mounted",
           "name": "Comitatus Mounted",
+		  "excludesUnits": ["gavk_vandal_armies_no_allies_comitatus_foot"],
           "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May exchange spear for kontos (+1). The comitatus must be led by the Army General.",
           "category": "Cavalry",
           "type": "Commander",
@@ -2910,6 +2911,7 @@
         {
           "id": "gavk_vandal_armies_no_allies_comitatus_foot",
           "name": "Comitatus Foot",
+		  "excludesUnits": ["gavk_vandal_armies_no_allies_comitatus_mounted"],
           "description": "Foot Comitatus have spear, light armour and shield. Superior Fighters. May exchange spear for throwing spear (+2).  May be Riding Horses (+2). The comitatus must be led by the Army General.",
           "category": "Infantry",
           "type": "Commander",
@@ -3449,6 +3451,7 @@
         {
           "id": "gavk_visigoth_comitatus_mounted",
           "name": "Comitatus Mounted",
+		  "excludesUnits": ["gavk_visigoth_comitatus_foot"],
           "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May have javelins (+1) or exchange spear for kontos (+1). The comitatus must be led by the Army General.",
           "category": "Cavalry",
           "type": "Commander",
@@ -3725,6 +3728,7 @@
         {
           "id": "gavk_visigoth_comitatus_foot",
           "name": "Comitatus Foot",
+			"excludesUnits": ["gavk_visigoth_comitatus_mounted"],
           "description": "Foot Comitatus have spear, light armour and shield. Superir Fighters. May exchange spear for throwing spear (+2).  May be Riding Horses (+2). The comitatus must be led by the Army General.",
           "category": "Infantry",
           "type": "Commander",
@@ -4069,6 +4073,7 @@
         {
           "id": "gavk_ostrogoth_comitatus_mounted",
           "name": "Comitatus Mounted",
+    	  "excludesUnits": ["gavk_ostrogoth_comitatus_foot"],			
           "description": "Mounted Comitatus have spear, light armour and shield. Superior Fighters. May have heavy armour (+1) May have javelins (+1) or exchange spear for kontos (+1). May have Barding (+1). May be Shock Cavalry (+4).The comitatus must be led by the Army General.",
           "category": "Cavalry",
           "type": "Commander",
@@ -4422,6 +4427,7 @@
         {
           "id": "gavk_ostrogoth_comitatus_foot",
           "name": "Comitatus Foot",
+		"excludesUnits": ["gavk_ostrogoth_comitatus_mounted"],	
           "description": "Foot Comitatus have spear, light armour and shield. Superir Fighters. May exchange spear for throwing spear (+2).  May be Riding Horses (+2). The comitatus must be led by the Army General.",
           "category": "Infantry",
           "type": "Commander",
@@ -4825,6 +4831,7 @@
         {
           "id": "gavk_Lombard_comitatus_mounted",
           "name": "Comitatus Mounted",
+		"excludesUnits": ["gavk_Lombard_comitatus_foot"],	
           "description": "Mounted Comitatus have spear, Heavy and shield. Superior Fighters. May have javelins (+1).  May be Shock Cavalry (+4).The comitatus must be led by the Army General.",
           "category": "Cavalry",
           "type": "Commander",
@@ -5029,6 +5036,7 @@
         {
           "id": "gavk_Lombard_comitatus_foot",
           "name": "Comitatus Foot",
+		"excludesUnits": ["gavk_Lombard_comitatus_mounted"],	
           "description": "Foot Comitatus have spear, light armour and shield. Superir Fighters. May exchange spear for throwing spear (+2).  May be Riding Horses (+2). The comitatus must be led by the Army General.",
           "category": "Infantry",
           "type": "Commander",
