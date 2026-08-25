@@ -92,7 +92,7 @@
 		  {
           "id": "the_franks_scolae_guardsmen",
           "name": "Scolae Guardsmen",
-          "description": "Scolae Guardsmen have heavy armour, spear and shield. Superior Fighters, Drilled, Shock Cavalry.",
+          "description": "Scolae Guardsmen have heavy armour, spear and shield. Superior Fighters. Drilled. Shock Cavalry.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 3,
@@ -100,6 +100,7 @@
           "pointsPerBase": 30,
           "minBases": 3,
           "maxBases": 8,
+		  "maxCountAllowed": 1,
           "baseEquipment": [
             "Heavy Armour",
             "Spear",
@@ -111,42 +112,51 @@
           ],
            "optionalEquipment": []
         },
-                {
-          "id": "the_franks_noble_cavalry",
-          "name": "Noble Cavalry",
-          "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. Maybe fielded as skirmishers.",
+        {
+          "id": "the_franks_scara",
+          "name": "Scara",
+          "description": "Scara have heavy armour, spear and shield. Superior Fighters. Shock Cavalry.",
           "category": "Cavalry",
           "type": "Cavalry",
-          "defence": 4,
+          "defence": 3,
           "cohesion": 8,
-          "pointsPerBase": 23,
+          "pointsPerBase": 27,
+          "minBases": 3,
+          "maxBases": 8,
+   		  "maxCountAllowed": 2,
+          "baseEquipment": [
+            "Light Armour",
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters", "Shock Cavalry"
+          ],
+           "optionalEquipment": []
+          },
+		  {
+          "id": "the_franks_freemen_cavalry",
+          "name": "Freemen Cavalry",
+          "description": "Freemen Cavalry have spear and shield. Up to two units may have light armour (+1)/  Armoured units may be Shock Cavalry (+4)",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 19,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
             "Light Armour",
             "Spear",
-            "Javelins",
             "Shield"
           ],
           "specialRules": [
             "Open Order",
-            "Superior Fighters"
+            "Superior Fighters", "Shock Cavalry"
           ],
-           "optionalEquipment": [
-            {
-              "name": "Skirmishers",
-              "pointsModifier": 0,
-              "rulesAdded": [
-                "Skirmishers"
-              ],
-              "rulesRemoved": [
-                "Open Order"
-              ],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
+           "optionalEquipment": []
+          },
         {
           "id": "the_franks_light_cavalry",
           "name": "Light Cavalry",
