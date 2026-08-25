@@ -4008,6 +4008,12 @@
           "gavk_ostrogoth_berber_cavalry"
         ]
       ],
+		"exclusiveGroups": [
+        [
+          "gavk_vandal_armies_no_allies_comitatus_foot",
+          "gavk_vandal_armies_no_allies_comitatus_mounted"
+        ]
+      ],
       "categories": [
         {
           "id": "Commanders",
