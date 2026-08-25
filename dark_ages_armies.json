@@ -30617,6 +30617,17 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
+			  {
+              "name": "Naginata (Halberd)",
+				"disables": "Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Naginata (Halberd)"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
             {
               "name": "Veteran",
               "pointsModifier": 2,
