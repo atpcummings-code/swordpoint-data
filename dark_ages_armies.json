@@ -29969,7 +29969,8 @@
               "equipmentRemoved": [],
               "defenceModifier": -2,
             },
-
+		  ],
+	},
         {
           "id": "early_japanese_emishi_infantry",
           "name": "Emishi",
@@ -30058,7 +30059,7 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-}
+			}
           ]
         }
 
