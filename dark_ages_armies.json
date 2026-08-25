@@ -4427,7 +4427,7 @@
         {
           "id": "gavk_ostrogoth_comitatus_foot",
           "name": "Comitatus Foot",
-		"excludesUnits": ["gavk_ostrogoth_comitatus_mounted"],	
+    	  "excludesUnits": ["gavk_ostrogoth_comitatus_mounted"],	
           "description": "Foot Comitatus have spear, light armour and shield. Superir Fighters. May exchange spear for throwing spear (+2).  May be Riding Horses (+2). The comitatus must be led by the Army General.",
           "category": "Infantry",
           "type": "Commander",
