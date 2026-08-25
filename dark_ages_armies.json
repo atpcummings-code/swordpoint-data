@@ -29784,6 +29784,16 @@
           "min": 0,
           "max": 50
         },
+		  ,
+		  {
+          "id": "warrior_monks",
+          "name": "Warrior Monks",
+          "description": "Up to one unit of warrior monks.",
+          "constraintType": "count",
+          "min": 0,
+          "max": 1,
+          "alliedArmyKeys": []
+        }
  
         {
           "id": "Allies",
@@ -29796,15 +29806,6 @@
             "korean"
           ],
           "maxAlliedArmiesAllowed": 1
-        },
-		  {
-          "id": "warrior_onks",
-          "name": "Warrior Monks",
-          "description": "Up to one unit of warrior monks.",
-          "constraintType": "count",
-          "min": 0,
-          "max": 1,
-          "alliedArmyKeys": []
         }
       ],
       "units": [
