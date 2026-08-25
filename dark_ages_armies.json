@@ -27493,55 +27493,7 @@
           ],
               
             },
-        {
-          "id": "arab_caliphate_fatimid_caliphate_abbasiya",
-          "name": "Abbasiya",
-          "description": "Abbasiya have a bow and shield. Superior Shooters. Evade. May have light armmour (+1) and spear (+1). May be fiedled as skirmishers with Parthian Shot. My not be used by Fatmid or Umayyad armies.",
-          "category": "CavalryAndInfantry",
-          "type": "Commander",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 21,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": [
-            "Bow", "Shield"
-          ],
-          "specialRules": ["Open Order", "Evade", "Superior Shooters"], 
-          "optionalEquipment": [
-            {
-              "name": "Light Armour",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Spear",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Spear"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-                       {
-              "name": "Skirmishers",
-              "pointsModifier": 0,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Skirmishers", "Parthian Shot"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ],
-              
-            },
+        
         {
           "id": "arab_caliphate_fatimid_caliphate_abid_or_guards",
           "name": "Abid' or Guards",
