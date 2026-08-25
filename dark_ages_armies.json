@@ -29789,9 +29789,9 @@
           "id": "warrior_monks",
           "name": "Warrior Monks",
           "description": "Up to one unit of warrior monks.",
-          "constraintType": "count",
+          "constraintType": "percentage",
           "min": 0,
-          "max": 1,
+          "max": 10,
           "alliedArmyKeys": []
         }
  
@@ -29972,6 +29972,7 @@
           "pointsPerBase": 15,
           "minBases": 3,
           "maxBases": 12,
+			  "maxCountAllowed": 1,
           "baseEquipment": ["Spear"],
           "specialRules": ["Open Order","Superior Fighters"],
           "optionalEquipment": [
@@ -30009,6 +30010,7 @@
           "pointsPerBase": 8,
           "minBases": 3,
           "maxBases": 12,
+			"maxCountAllowed": 1,
           "baseEquipment": ["Spear"],
           "specialRules": ["Open Order"],
           "optionalEquipment": [
