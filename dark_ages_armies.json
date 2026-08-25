@@ -29945,8 +29945,9 @@
                 "C": 6
               },
               "pointsPerBase": 12,
+			"minBases": 3,
               "baseEquipment": ["Bow"],
-              "specialRules": []
+              "specialRules": ["Close Order"]
             },
             {
               "name": "Archers (Rear Rank)",
@@ -29956,7 +29957,7 @@
               },
               "pointsPerBase": 12,
               "baseEquipment": ["Bow"],
-              "specialRules": []
+              "specialRules": ["Close Order"]
             }
           ],
           "optionalEquipment": [
@@ -29964,7 +29965,7 @@
               "name": "Pavise",
               "pointsPerBase": 2,
               "targetProfile": "Archers (Front Rank)",
-              "equipmentAdded": ["Bow"],
+              "equipmentAdded": ["Pavise"],
               "equipmentRemoved": [],
               "defenceModifier": -2,
             },
@@ -30275,7 +30276,7 @@
         {
           "id": "middle_japanese_retainers",
           "name": "Retainers",
-          "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2).",
+          "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2). May have Pavise (+2) for front rank only. May have Naginata (Halberd) (+2).",
           "category": "Infantry",
           "type": "Commander",
           "defence": 7,
@@ -30283,12 +30284,41 @@
           "pointsPerBase": 9,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [],
-          "specialRules": ["Open Order"],
+          "subProfiles": [
+            {
+              "name": "Retainers (Front Rank)",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 9,
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Open Order"]
+          	"minBases": 3,
+            },
+            {
+              "name": "Retainers (Rear Rank)",
+              "stats": {
+                "D": 7,
+                "C": 6
+              },
+              "pointsPerBase": 12,
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Open Order"]
+            }
+          ],
           "optionalEquipment": [
             {
+              "name": "Pavise",
+              "pointsPerBase": 2,
+              "targetProfile": "Retainers (Front Rank)",
+              "equipmentAdded": ["Pavise"],
+              "equipmentRemoved": [],
+              "defenceModifier": -2,
+            },
+			  {
               "name": "Spear",
-              "disables": ["Bow", "Halberd"],
+              "disables": ["Bow", "Naginata (Halberd)"],
               "pointsModifier": 0,
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": [],
@@ -30299,7 +30329,7 @@
             },
              {
               "name": "Bow",
-              "disables": ["Spear", "Halberd"],
+              "disables": ["Spear", "Naginata (Halberd)"],
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
               "equipmentRemoved": [],
@@ -30309,7 +30339,7 @@
               "cohesionModifier": 0
             },
               {
-              "name": "Halberd",
+              "name": "Naginata (Halberd)",
               "disables": ["Spear", "Bow"],
               "pointsModifier": 2,
               "equipmentAdded": ["Halberd"],
