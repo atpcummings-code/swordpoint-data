@@ -1,14 +1,14 @@
 {
   "armies": {
-     "franks": {
-      "armyName": "Franks - 300 to 750 AD",
+     "the_franks": {
+      "armyName": "the_franks - 768 to 814 AD",
       "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 8
+          "max": 6
         },
         {
           "id": "Infantry",
@@ -22,37 +22,37 @@
           "name": "Cavalry",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 50
         },
         {
-          "id": "Skirmishers",
-          "name": "Skirmishers",
+          "id": "Vassals",
+          "name": "Vassals",
           "constraintType": "percentage",
           "min": 0,
-          "max": 10
+          "max": 25
         },
         {
           "id": "Allies",
           "name": "Allies",
-          "description": "The pre-700 AD army may have allies from the Dark Age Britain and Ireland or Late Imperial Roman (Limitanei, Auxilia, Esquites and Illyrian/Sagitarii only) lists.",
+          "description": "Troops may be selected from any one of teh following, Saxon and Wend (Slav) allies maybe taken after 790AD.  Lombard allies may be taken after 774 AD.  Saxon allies may be taken 785 AD. Wend (Slav) allies maybe taken after 709 AD.  Southern Slav allies may be taken after 801 AD. Arab alles may be taken if campaigning in Spain.  In this instance teh Allies allwoance is reduced to 25%.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 20,
+          "max": 50,
           "alliedArmyKeys": [
             "dark_age_britain_and_ireland", "lir_"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
         {
-          "id": "franks_duke_or_king",
-          "name": "Duke or King",
+          "id": "the_franks_duke_or_king",
+          "name": "Rex, Duke or King",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
-          "attacks": "+3",
+          "attacks": "+2",
           "cohesion": 9,
           "pointsPerBase": 0,
           "minBases": 0,
@@ -60,9 +60,24 @@
           "specialRules": [],
           "optionalEquipment": []
         },
+		  {
+          "id": "the_franks_charlemagne",
+          "name": "Charlemagne",
+          "description": "May ride a horse. Has teh Strategem rule (+50).",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": ["Strategem"],
+          "optionalEquipment": []
+        },
         {
-          "id": "franks_noble",
-          "name": "Noble",
+          "id": "the_franks_dux_or_comes",
+          "name": "Dux or Comes",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "Commander",
@@ -74,26 +89,34 @@
           "specialRules": [],
           "optionalEquipment": []
         },
-        {
-          "id": "franks_minor_noble",
-          "name": "Minor Noble",
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "Commander",
-          "attacks": "+3",
-          "cohesion": "+1",
-          "pointsPerBase": 20,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
+		  {
+          "id": "the_franks_scolae_guardsmen",
+          "name": "Scolae Guardsmen",
+          "description": "Scolae Guardsmen have heavy armour, spear and shield. Superior Fighters, Drilled, Shock Cavalry.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 30,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Heavy Armour",
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters", "Drilled", "Shock Cavalry"
+          ],
+           "optionalEquipment": []
         },
-        {
-          "id": "franks_noble_cavalry",
+                {
+          "id": "the_franks_noble_cavalry",
           "name": "Noble Cavalry",
           "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. Maybe fielded as skirmishers.",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 4,
           "cohesion": 8,
           "pointsPerBase": 23,
@@ -125,7 +148,7 @@
           ]
         },
         {
-          "id": "franks_light_cavalry",
+          "id": "the_franks_light_cavalry",
           "name": "Light Cavalry",
           "description": "Light Cavalry have spear, javelins and shield. Maybe fielded as skirmishers.",
           "category": "Cavalry",
@@ -157,7 +180,7 @@
           ]
         },
 		  {
-          "id": "franks_combined_cavalry_cu",
+          "id": "the_franks_combined_cavalry_cu",
           "name": "Combined Unit Noble Cavalry/Light Cavalry",
           "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. Light Cavalry have spear, javelins and shield.  Noble and Light Cavalry may form Combined Units containing up to 75% of bases of the inferior type (Light Cavalry).",
           "category": "Cavalry",
@@ -192,7 +215,7 @@
 		"optionalEquipment": []
             },
         {
-          "id": "franks_elite_warriors",
+          "id": "the_franks_elite_warriors",
           "name": "Elite Warriors",
           "description": "Elite Warriors have throwing spear and shield. Superior Fighters. Warband. May have light armour (+2) and javelins (+2). May exchange throwing spear for heavy throwing spear (+2).  In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
           "category": "Infantry",
@@ -277,7 +300,7 @@
           ]
         },
         {
-          "id": "franks_warriors",
+          "id": "the_franks_warriors",
           "name": "Warriors",
           "description": "Warriors having throwing spear and shield, Warband. May have javelins (+2). May exchange throwing spear for heavy throwing spear (+2). In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
           "category": "Infantry",
@@ -350,7 +373,7 @@
         },
         
 {
-          "id": "franks_combined_warriors_cu",
+          "id": "the_franks_combined_warriors_cu",
           "name": "Combined Unit Elite Warriors/Warriors",
           "description": "Elite and other Warriors may form Combined Units containing up to 75% of bases of the inferior type. Elite Warriors have throwing spear and shield. Superior Fighters. Warband. May have light armour (+2) and javelins (+2). May exchange throwing spear for heavy throwing spear (+2).  In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall. Warriors having throwing spear and shield, Warband. May have javelins (+2). May exchange throwing spear for heavy throwing spear (+2). In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
           "category": "Infantry",
@@ -454,7 +477,7 @@
             ]
             },
         {
-          "id": "franks_tribal_infantry",
+          "id": "the_franks_tribal_infantry",
           "name": "Tribal Infantry",
           "description": "Tribal Infantry having throwing spear and shield. Warband.",
           "category": "Infantry",
@@ -475,7 +498,7 @@
           "optionalEquipment": []
         },
          {
-          "id": "franks_skirmishers",
+          "id": "the_franks_skirmishers",
           "name": "Skirmishers",
           "description": "All have either javelins, bow or sling.",
           "category": "Skirmishers",
