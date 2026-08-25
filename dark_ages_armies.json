@@ -10503,7 +10503,7 @@
             {
               "name": "Rocket Launcher",
               "stats": {},
-              "pointsPerBase": 15,
+              "pointsPerBase": 30,
               "specialRules": [
                 "Rocket Artillery"
               ]
