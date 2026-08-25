@@ -29796,6 +29796,15 @@
             "korean"
           ],
           "maxAlliedArmiesAllowed": 1
+        },
+		  {
+          "id": "warrior_onks",
+          "name": "Warrior Monks",
+          "description": "Up to one unit of warrior monks.",
+          "constraintType": "count",
+          "min": 0,
+          "max": 1,
+          "alliedArmyKeys": []
         }
       ],
       "units": [
@@ -29950,6 +29959,82 @@
           "specialRules": ["Close Order", "Inferior Fighters"],
           "optionalEquipment": [],
         },
+		  {
+          "id": "early_japanese_trained_monks",
+          "name": "Trained Monks",
+			  "excludes": ["eaarly_japanese_other_monks"],
+          "description": "Trained Monks have a spear. Superior Fighters. Open Order. May have light armour (+2). May exchange spear for halberd (+2).",
+          "category": "warrior_monks",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 8,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Open Order","Superior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Halberd",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ],
+        },
+        {
+          "id": "eaarly_japanese_other_monks",
+          "name": "Other Monks",
+    	  "excludes": ["early_japanese_trained_monks"],
+          "description": "Other Monks have a spear. Open Order.",
+          "category": "warrior_monks",
+          "type": "Infanty",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Halberd",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ],
+        },
+      ]
+    },
       ]
     },
 
