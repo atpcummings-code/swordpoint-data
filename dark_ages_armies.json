@@ -30274,13 +30274,9 @@
         },
         {
           "id": "middle_japanese_retainers",
-          "name": "Retainers",
-          "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2). May have Pavise (+2) for front rank only. May have Naginata (Halberd) (+2).",
-          "category": "Infantry",
-          "type": "Commander",
-          "defence": 7,
-          "cohesion": 7,
-          "pointsPerBase": 9,
+                "name": "Retainers",
+          "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2). May have Pavise (+2) for front rank only.",
+          "type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
           "subProfiles": [
@@ -30312,12 +30308,11 @@
               "pointsPerBase": 2,
               "targetProfile": "Retainers (Front Rank)",
               "equipmentAdded": ["Pavise"],
-              "equipmentRemoved": [],
               "defenceModifier": -2,
             },
-			  {
+{
               "name": "Spear",
-              "disables": ["Bow", "Naginata (Halberd)"],
+              "disables": ["Bow", "Halberd"],
               "pointsModifier": 0,
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": [],
@@ -30328,7 +30323,7 @@
             },
              {
               "name": "Bow",
-              "disables": ["Spear", "Naginata (Halberd)"],
+              "disables": ["Spear", "Halberd"],
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
               "equipmentRemoved": [],
@@ -30338,7 +30333,7 @@
               "cohesionModifier": 0
             },
               {
-              "name": "Naginata (Halberd)",
+              "name": "Halberd",
               "disables": ["Spear", "Bow"],
               "pointsModifier": 2,
               "equipmentAdded": ["Halberd"],
@@ -30358,7 +30353,7 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             }
-          ],
+          ]
         },
         {
           "id": "middle_japanese_trained_monks",
@@ -30645,19 +30640,43 @@
         },
         {
           "id": "late_japanese_retainers",
-          "name": "Retainers",
-          "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2). May exchange spear for pike (+2) representing troops armed with yari - they become Close Order.",
-          "category": "Infantry",
-          "type": "Commander",
-          "defence": 7,
-          "cohesion": 7,
-          "pointsPerBase": 9,
+                "name": "Retainers",
+          "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2). May have Pavise (+2) for front rank only.",
+          "type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [],
-          "specialRules": ["Open Order"],
+          "subProfiles": [
+            {
+              "name": "Retainers (Front Rank)",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 9,
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Open Order"]
+          	"minBases": 3,
+            },
+            {
+              "name": "Retainers (Rear Rank)",
+              "stats": {
+                "D": 7,
+                "C": 6
+              },
+              "pointsPerBase": 12,
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Open Order"]
+            }
+          ],
           "optionalEquipment": [
             {
+              "name": "Pavise",
+              "pointsPerBase": 2,
+              "targetProfile": "Retainers (Front Rank)",
+              "equipmentAdded": ["Pavise"],
+              "defenceModifier": -2,
+            },
+{
               "name": "Spear",
               "disables": ["Bow", "Halberd"],
               "pointsModifier": 0,
@@ -30691,7 +30710,7 @@
               "cohesionModifier": 0
             },
               {
-              "name": "Light Armour",
+              "name": "light Armour",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -30700,10 +30719,10 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
-              {
+ {
               "name": "Pike (Yari)",
               "disables": "Spear",  
-              "pointsModifier": 2,
+              "pointsModifier": 5,
               "equipmentAdded": ["Pike (Yari)"],
               "equipmentRemoved": ["Spear"],
               "rulesAdded": ["Close Order"],
@@ -30711,7 +30730,7 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
-          ],
+          ]
         },
         {
           "id": "late_japanese_trained_monks",
