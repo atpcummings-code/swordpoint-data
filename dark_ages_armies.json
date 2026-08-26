@@ -6834,15 +6834,13 @@
                 "Skirmishers"
               ],
               "pointsModifier": 1,
-              "equipmentAdded": [],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
-              "rulesAdded": [
-                "Skirmishers"
-              ],
+              "rulesAdded": [],
               "rulesRemoved": [
                 "Open Order"
               ],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
             {
@@ -7449,6 +7447,16 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
+            },
+			  {
+              "name": "Elite Scholae",
+              "pointsModifier": 5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
             }
           ]
         },
@@ -7511,6 +7519,16 @@
               ],
               "defenceModifier": 0,
               "cohesionModifier": 0
+            },
+			  {
+              "name": "Elite Scholae",
+              "pointsModifier": 5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
             }
           ]
         },
@@ -7572,15 +7590,13 @@
                 "Skirmishers"
               ],
               "pointsModifier": 1,
-              "equipmentAdded": [],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
-              "rulesAdded": [
-                "Skirmishers"
-              ],
+              "rulesAdded": [],
               "rulesRemoved": [
                 "Open Order"
               ],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
             {
@@ -8483,15 +8499,13 @@
                 "Skirmishers"
               ],
               "pointsModifier": 1,
-              "equipmentAdded": [],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
-              "rulesAdded": [
-                "Skirmishers"
-              ],
+              "rulesAdded": [],
               "rulesRemoved": [
                 "Open Order"
               ],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
             {
@@ -9354,15 +9368,13 @@
                 "Skirmishers"
               ],
               "pointsModifier": 1,
-              "equipmentAdded": [],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
-              "rulesAdded": [
-                "Skirmishers"
-              ],
+              "rulesAdded": [],
               "rulesRemoved": [
                 "Open Order"
               ],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
             {
@@ -18873,7 +18885,7 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "light Armour",
+            "Light Armour",
             "Spear",
             "Bow",
             "Shield"
@@ -22356,7 +22368,7 @@
           "specialRules": ["Open Order"],
           "optionalEquipment": [
             {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 1,
               "equipmentAdded": [
              "Light Armour"
@@ -22925,7 +22937,7 @@
           "specialRules": ["Open Order"],
           "optionalEquipment": [
             {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 1,
               "equipmentAdded": [
              "Light Armour"
@@ -23620,7 +23632,7 @@
           "specialRules": ["Open Order"],
           "optionalEquipment": [
             {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 1,
               "equipmentAdded": [
              "Light Armour"
@@ -26470,7 +26482,7 @@
 		"cohesionModifier": 0
 		},
 		{
-		"name": "light Armour",
+		"name": "Light Armour",
 		"pointsModifier": 2,
 		"equipmentAdded": ["Light Armour"],
 		"equipmentRemoved": [],
@@ -29043,7 +29055,7 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "light Crossbow"
+            "Light Crossbow"
           ],
           "specialRules": ["Open Order", "Evade"],
           "optionalEquipment": [
@@ -30019,7 +30031,7 @@
               "cohesionModifier": 0
             },
               {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -30057,7 +30069,7 @@
               "cohesionModifier": 0
             },
               {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -30354,7 +30366,7 @@
               "cohesionModifier": 0
             },
               {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -30390,7 +30402,7 @@
               "cohesionModifier": 0
             },
               {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -30426,7 +30438,7 @@
               "cohesionModifier": 0
             },
               {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -30732,7 +30744,7 @@
               "cohesionModifier": 0
             },
               {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -30779,7 +30791,7 @@
               "cohesionModifier": 0
             },
               {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -30826,7 +30838,7 @@
               "cohesionModifier": 0
             },
               {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -30943,7 +30955,7 @@
               "name": "Light Armour",
               "pointsModifier": 1,
               "equipmentAdded": [
-                "light Armour"
+                "Light Armour"
               ],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -36470,7 +36482,7 @@
               "name": "Light Armour",
               "pointsModifier": 2,
               "equipmentAdded": [
-                "light Armour"
+                "Light Armour"
               ],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -42636,7 +42648,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 2,
               "equipmentAdded": [
                 "Light Armour"
@@ -43678,7 +43690,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "light Armour",
+              "name": "Light Armour",
               "pointsModifier": 2,
               "equipmentAdded": [
                 "Light Armour"
