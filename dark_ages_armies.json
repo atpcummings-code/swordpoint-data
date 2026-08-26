@@ -32503,19 +32503,20 @@
       "armyName": "Early Burmese - 849 to 1174 AD",
       "armyValidation": [
         {
-          "unitId": [
+          "ids": [
             "early_burmese_militia_archers"
           ],
           "expression": "lessThanOrEqual",
           "ratio": 0.5,
           "compareWith": [
             "early_burmese_militia_infantry",
-            "early_burmese_elephant_escorts",
-			  "early_burmese_militia_archers"
+			"early_burmese_militia_archers",
+            "early_burmese_elephant_escorts"
+			  
           ]
         }
       ],
-		 "armyValidation": [ { "ids": ["early_burmese_militia_archers"], "expression": "greaterThanOrEqual", "ratio": 0.3333, "compareWith": ["early_burmese_militia_infantry", "early_burmese_militia_archers","early_burmese_militia_horse"] } ],
+		 "armyValidation": [ { "ids": ["early_burmese_militia_archers"], "expression": "greaterThanOrEqual", "ratio": 0.3333, "compareWith": ["early_burmese_militia_infantry", "early_burmese_militia_archers"] } ],
       "categories": [
         {
           "id": "Commanders",
