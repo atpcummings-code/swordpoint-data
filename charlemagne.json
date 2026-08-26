@@ -217,6 +217,7 @@
            "optionalEquipment": [
 			   {
               "name": "Light Armour",
+				   			"pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -301,6 +302,7 @@
 		"optionalEquipment": [
 			   {
               "name": "Light Armour",
+				   			"pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
