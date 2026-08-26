@@ -278,7 +278,7 @@
 		{
 		"name": "Dismounted Cavalry Bowmen",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Militia", "expression": "lessThanOrEqual", "ratio": 1 },
+		"compareWithSubProfile": { "name": "Dismounted Cavalry", "expression": "lessThanOrEqual", "ratio": 1 },
         "defence": 7,
         "cohesion": 7,
     	"pointsPerBase": 14,
@@ -289,7 +289,7 @@
 		{
 		"name": "Dismounted Cavalry/Dismounted Cavalry Bowmen (Rear Row)",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Militia", "expression": "lessThanOrEqual", "ratio": 1 },
+		"compareWithSubProfile": { "name": "Dismounted Cavalry", "expression": "lessThanOrEqual", "ratio": 1 },
         "defence": 6,
         "cohesion": 8,
     	"pointsPerBase": 18,
