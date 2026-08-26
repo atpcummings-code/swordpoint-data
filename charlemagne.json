@@ -155,7 +155,7 @@
 		  {
           "id": "the_franks_freemen_cavalry",
           "name": "Freemen Cavalry",
-          "description": "Freemen Cavalry have spear and shield. Up to two units may have light armour (+1)/  Armoured units may be Shock Cavalry (+4)",
+          "description": "Freemen Cavalry have spear and shield. Up to two units may have light armour (+1).  Armoured units may be Shock Cavalry (+4).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 5,
@@ -196,34 +196,73 @@
             }
 		   ]
           },
+		  {
+          "id": "the_franks_dismounted_cavalry",
+          "name": "Dismounted Cavalry",
+          "description": "Dismounted Cavalry have spear and shield. They may have light armour (+2). Up to two units may be Superior Fighters (+4).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+           "optionalEquipment": [
+			   {
+              "name": "Light Armour",
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			      {
+              "name": "Superior Fighters",
+			"pointsModifier": 4,
+             "maxUnits": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		   ]
+          },
         {
           "id": "the_franks_light_cavalry",
           "name": "Light Cavalry",
-          "description": "Light Cavalry have spear, javelins and shield. Maybe fielded as skirmishers.",
+          "description": "Light Cavalry have javelins, spear and shield. Inferior Fighters. May exchange javelins spear and shield for bow (-2).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 5,
           "cohesion": 6,
-          "pointsPerBase": 17,
+          "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "Spear", "Javelins"
+            "Spear", "Javelins", "Shield"
           ],
           "specialRules": [
-            "Open Order"
+            "Open Order", "Inferior Fighters"
           ],
           "optionalEquipment": [
             {
-              "name": "Skirmishers",
-              "pointsModifier": 0,
-              "rulesAdded": [
-                "Skirmishers"
-              ],
-              "rulesRemoved": [
-                "Open Order"
-              ],
-              "defenceModifier": 0,
+              "name": "Bow",
+              "pointsModifier": -2,
+			"equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Spear", "Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
               "cohesionModifier": 0
             }
           ]
