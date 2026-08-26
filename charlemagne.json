@@ -2042,7 +2042,9 @@
 
 
 	  "the_saxon": {
-      "armyName": "The Saxon Army - AD",
+      "armyName": "The Saxon Army -  1000 AD",
+	  "armyValidation": [ { "type": "equipmentUnitCount", "left": { "unitIds": ["the_saxon_skirmishers"], "equipment": ["Bow", "Sling"] }, "expression": "lessThanOrEqual", "ratio": 1, "right": { "unitIds": ["the_saxon_skirmishers"], "equipment": ["Javelin"] } } ],
+
       "categories": [
         {
           "id": "Commanders",
@@ -2298,6 +2300,7 @@
               "disables": ["Bow"],
 				"basesComparison": {
                 "expression": "lessThanEqualTo",
+				"ratio": 1,
                 "compareWith": ["Javelins"]
               },
               "pointsModifier": 0,
@@ -2313,6 +2316,7 @@
               "disables": ["Sling"],
 			"basesComparison": {
                 "expression": "lessThanEqualTo",
+				"ratio": 1,
                 "compareWith": ["Javelins"]
               },
               "pointsModifier": 0,
