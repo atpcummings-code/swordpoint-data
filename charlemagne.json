@@ -2068,7 +2068,7 @@
       
         {
           "id": "Allies",
-          "name": "Special Troops or Allies",
+          "name": "Allies",
           "description": "The army may take Danish Allies using the Viking list.",
           "constraintType": "percentage",
           "min": 0,
