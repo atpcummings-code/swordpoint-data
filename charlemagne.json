@@ -2392,6 +2392,7 @@
           "pointsPerBase": 23,
           "minBases": 3,
           "maxBases": 8,
+			          "maxCountAllowed": 1,
           "baseEquipment": [
             "Shield",
             "Spear"
@@ -2505,6 +2506,7 @@
           "defence": 6,
           "cohesion": 6,
           "pointsPerBase": 11,
+"maxCountAllowed": 2,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": [
