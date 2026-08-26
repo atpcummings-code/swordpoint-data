@@ -241,7 +241,7 @@
         "id": "the_franks_dismounted_cavalry_cf",
         "name": "Combined Formation Dismounted Cavalry",
          "description": "Dismounted Cavalry have spear and shield. They may have light armour (+2). Up to two units may be Superior Fighters (+4). Units of dismounted cavalry may use Combined Formation where up to 50% of figures exchange spearand shield for bow (free) and form the rear rows.",
-    	"category": "Infantry",      
+    	"category": "Cavalry",      
 	"type": "Infantry",
         "minBases": 3,
         "maxBases": 12,
