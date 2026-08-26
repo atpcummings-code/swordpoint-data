@@ -2776,7 +2776,7 @@
         {
           "id": "the_emirate_of_cordoba_andulusian_spearmen",
           "name": "Andulusian Spearmen",
-          "description": "Andulusian Spearmen have a spear and shield. Inferior Fighters. May have light armour (+2) and javelins (+2). ",
+          "description": "Andulusian Spearmen have a spear and shield. Inferior Fighters. May have light armour (+2) and javelins (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -2784,8 +2784,7 @@
           "pointsPerBase": 10,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [
-            "Spear","Shield"
+          "baseEquipment": [       "Spear","Shield"
           ],
           "specialRules": [
             "Close Order", "Inferior Fighters"
@@ -2813,10 +2812,123 @@
             }
 		  ]
         },
+		  
+{
+          "id": "the_emirate_of_cordoba_andulusian_spearmen_cf",
+          "name": "Combined Formation Andulusian Spearmen/Archers",
+          "description": "Andulusian Spearmen have a spear and shield. Inferior Fighters. May have light armour (+2) and javelins (+2). Andulusian Archers have a bow. Inferior Fighters. May have light armour (+2) or Shield (+2). Combined Formation up to 50% Close Order Archers (ten points per base in the rear ranks.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Andulusian Archers","Andulusian Spearmen/Andulusian Archers (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Andulusian Spearmen/Andulusian Archers (Front Row)","Andulusian Spearmen/Andulusian Archers (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Andulusian Spearmen/Andulusian Archers (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 10,
+              "minBases": 3,
+			  "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Close Order", "Inferior Fighters"]
+            },
+			  {
+              "name": "Andulusian Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 10,
+              "minBases": 0,
+              "maxBases": 12,
+              "baseEquipment": ["Shield", "Spear"],
+              "specialRules": ["Close Order", "Inferior Fighters"]
+            },
+            {
+              "name": "Andulusian Archers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 6,
+	          "pointsPerBase": 10,
+		      "compareWithSubProfile": { "name": "Andulusian Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order", "Inferior Fighters"]
+            },
+
+			  {
+              "name": "Andulusian Spearmen/Andulusian Archers (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Andulusian Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 10,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear", "Bow"],
+              "specialRules": ["Close Order", "Inferior Fighters"]
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Light Armour",
+		"targetProfile": ["Andulusian Spearmen/Andulusian Archers (Rear Row)", "Andulusian Spearmen/Andulusian Archers (Front Row)","Andulusian Spearmen"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Javelins",
+		"targetProfile": ["Andulusian Spearmen/Andulusian Archers (Rear Row)", "Andulusian Spearmen/Andulusian Archers (Front Row)","Andulusian Spearmen"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Light Armour",
+		"disables": "Shield",
+		"targetProfile":"Andulusian Archers",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Shield",
+		"disables": "Light Armour",
+		"targetProfile":"Andulusian Archers",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+
+]
+        },
 		  {
-          "id": "the_emirate_of_berber_spearmen",
+          "id": "the_emirate_of_cordoba_berber_spearmen",
           "name": "Berber Spearmen",
-          "description": "Berber Spearmen have a spear, javelins and shield. May upgrade to large shield (+2). May be Riding Camels.",
+          "description": "Berber Spearmen have a spear, javelins and shield. May upgrade to large shield (+2). May be Riding Camels (=1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -2824,12 +2936,8 @@
           "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [
-            "Spear","Shield","Javelins"
-          ],
-          "specialRules": [
-            "Close Order"
-          ],
+          "baseEquipment": ["Spear","Shield","Javelins"],
+          "specialRules": ["Close Order"],
           "optionalEquipment": [
 			  {
               "name": "Large Shield",
@@ -2852,6 +2960,90 @@
               "cohesionModifier": 0
             }
 		  ]
+        },
+		  {
+          "id": "the_emirate_of_cordoba_berber_spearmen_cf",
+          "name": "Combined Formation Berber Spearmen/Archers",
+          "description": "Berber Spearmen have Berber Spearmen have a spear, javelins and shield. May upgrade to large shield (+2). Berber Archers have a bow. Open Order.  Combined Formation a quarter or half Close Order Archers (12 points per base in the rear ranks. May be Riding Camels (+1).",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Berber Archers","Berber Spearmen/Berber Archers (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Berber Spearmen/Berber Archers (Front Row)","Berber Spearmen/Berber Archers (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Berber Spearmen/Berber Archers (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,              
+"minBases": 3,
+			  "maxBases": 6,
+          "baseEquipment": ["Spear","Shield","Javelins"],
+          "specialRules": ["Close Order"],            },
+			  {
+              "name": "Berber Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Spear","Shield","Javelins"],
+          "specialRules": ["Close Order"],            },
+            {
+              "name": "Berber Archers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+             "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+		      "compareWithSubProfile": { "name": "Berber Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Berber Spearmen/Berber Archers (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Berber Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+              "maxBases": 6,
+          "baseEquipment": ["Spear","Shield","Javelins"],
+          "specialRules": ["Close Order"],            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Large Shield",
+"targetProfile": ["Berber Spearmen/Berber Archers (Rear Row)", "Berber Spearmen/Berber Archers (Front Row)","Berber Spearmen"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Riding Camels",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+]
         },
 		  {
           "id": "the_emirate_of_cordoba_andulusian_archers",
@@ -2908,7 +3100,7 @@
 		  {
           "id": "the_emirate_of_cordoba_berber_archers",
           "name": "Berber Archers",
-          "description": "Berber Archers have a bow. Open Order. May be fielded as Skirmishers at a cost of six points per base. MAy be Riding Camels (+1).",
+          "description": "Berber Archers have a bow. Open Order. May be fielded as Skirmishers at a cost of six points per base. May be Riding Camels (+1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -2916,9 +3108,7 @@
           "pointsPerBase": 9,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [
-            "Bow"
-          ],
+          "baseEquipment": ["Bow"],
           "specialRules": [
             "Open Order"
           ],
