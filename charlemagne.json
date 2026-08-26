@@ -2846,7 +2846,7 @@
               "defence": 6,
               "cohesion": 6,
 	          "pointsPerBase": 10,
-              "minBases": 0,
+              "minBases": 3,
               "maxBases": 12,
               "baseEquipment": ["Shield", "Spear"],
               "specialRules": ["Close Order", "Inferior Fighters"]
@@ -2856,6 +2856,7 @@
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 7,
               "cohesion": 6,
+				"minBases": 1,
 	          "pointsPerBase": 10,
 		      "compareWithSubProfile": { "name": "Andulusian Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
               "baseEquipment": ["Bow"],
@@ -2869,6 +2870,7 @@
               "defence": 6,
               "cohesion": 6,
 	          "pointsPerBase": 10,
+                "minBases": 1,
               "maxBases": 6,
               "baseEquipment": ["Shield", "Spear", "Bow"],
               "specialRules": ["Close Order", "Inferior Fighters"]
@@ -2993,7 +2995,7 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 16,
-              "minBases": 0,
+              "minBases": 3,
               "maxBases": 12,
           "baseEquipment": ["Spear","Shield","Javelins"],
           "specialRules": ["Close Order"],            },
@@ -3003,6 +3005,7 @@
              "defence": 7,
           "cohesion": 6,
           "pointsPerBase": 12,
+				"minBases": 3,
 		      "compareWithSubProfile": { "name": "Berber Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
               "baseEquipment": ["Bow"],
               "specialRules": ["Close Order"]
@@ -3015,6 +3018,7 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 16,
+			  "minBases": 3,
               "maxBases": 6,
           "baseEquipment": ["Spear","Shield","Javelins"],
           "specialRules": ["Close Order"],            }
