@@ -1391,7 +1391,7 @@
 		  {
           "id": "the_slav_wends_slav_skirmishers",
           "name": "Slav Skirmishers",
-          "description": "lav Skirmishers have javelins and shield. Skirmishers. May have spear (+1). May have Ambush (+2).",
+          "description": "Slav Skirmishers have javelins and shield. Skirmishers. May have spear (+1). May have Ambush (+2).",
           "category": "Cavalry",
           "type": "Commander",
           "defence": 5,
@@ -1552,7 +1552,7 @@
 {
           "id": "the_slav_wends_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. Up to two units may exchange javelins and shield for bow (-1).",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. Up to two units may exchange javelins and shield for bow (-1). May have Ambush (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -1598,6 +1598,396 @@
       ]
     },
 
+	  "the_slav_southern_slav": {
+      "armyName": "The Slav (Southern Slavs) - 750 to 1000 AD",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "description": "May have Avar or Bulgar Allies.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20,
+          "alliedArmyKeys": [],
+          "maxAlliedArmiesAllowed": 1
+        }
+      ],
+      "units": [
+        {
+          "id": "the_slav_southern_slav_khan",
+          "name": "Khan",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_slav_southern_slav_voevodo",
+          "name": "Voevodo",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+		  
+        {
+          "id": "the_slav_southern_slav_slav_noble_cavalry",
+          "name": "Slav Noble Cavalry",
+          "description": "Slav Noble Cavalry have javelins and shield. Evade. May have spear (+1) and light armour (+1). May be fielded as skirmishers at a cost o 17 points per base. May have Ambush (+2).",
+          "category": "Cavalry",
+          "requires": {
+            "unitId": "the_slav_southern_slav_slav_cavalry",
+            "count": 1,
+            "name": "Slav Cavalry"
+          },
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+		  "maxBases": 8,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order","Evade"],
+          "maxCountAllowed": 1,
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Ambush",
+              "disables": [],
+              "pointsModifier": 2,
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "the_slav_southern_slav_slav_cavalry",
+          "name": "Slav Cavalry",
+          "description": "Slav Cavalry have spear and shield. Evade. MThere must be at least one unit of Slav Cavalry if any Slav Noble Cavalry are taken. May have Ambush (+2).",
+          "category": "Cavalry",
+          "type": "Commander",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+		  "maxCountAllowed": 2,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order", "Evade"
+          ],
+          "optionalEquipment": [
+			   {
+              "name": "Ambush",
+              "disables": [],
+              "pointsModifier": 2,
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		  {
+          "id": "the_slav_southern_slav_slav_skirmishers",
+          "name": "Slav Skirmishers",
+          "description": "Slav Skirmishers have javelins and shield. Skirmishers. May have spear (+1). May have Ambush (+2).",
+          "category": "Cavalry",
+          "type": "Commander",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order", "Evade"
+          ],
+          "optionalEquipment": [
+			   {
+              "name": "Ambush",
+              "disables": [],
+              "pointsModifier": 2,
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		  {
+          "id": "the_slav_southern_slav_nobles",
+          "name": "Nobles",
+          "description": "Nobles have throwing spear and shield. Open Order. Warband. May have light armour (+2). May have Ambush (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Warband"
+          ],
+          "optionalEquipment": [
+           {
+              "name": "Ambush",
+              "disables": [],
+              "pointsModifier": 2,
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "the_slav_southern_slav_warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Open Order. Warband. May be fielded as skirmishers (no longer Warband) at a cost of six points per base.  Every second unit of warriors may replace throwing spear with bow (free).  Two formed units of Warriors may replace throwing spear with two-handed axe (free). May have Ambush (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Shield"],
+          "specialRules": ["Open Order","Warband"],
+          "optionalEquipment": [
+            {
+              "name": "Ambush",
+              "disables": [],
+              "pointsModifier": 2,
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Bow",
+              "enabledEvery": 2,
+              "disables": ["Two-handed Axe"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Two-handed Axe",
+              "maxUnits": 2,
+              "disables": ["Bow","Skirmishers"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["two-handed Axe"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order","Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		  {
+          "id": "the_slav_southern_slav_slav_brigands",
+          "name": "Slav Brigands",
+          "description": "Slav Brigands have throwing spear and shield. Open Order. Inferior Fighters. Warband. May be fielded as skirmishers (no longer Warband) at a cost of four points per base. May have Ambush (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 4,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Shield"],
+          "specialRules": ["Open Order","Warband", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Ambush",
+              "disables": [],
+              "pointsModifier": 2,
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order","Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "the_slav_southern_slav_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. Up to two units may exchange javelins and shield for bow (-1). May have Ambush (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 4,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Shield"],
+          "specialRules": ["Open Order","Warband", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Ambush",
+              "disables": [],
+              "pointsModifier": 2,
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order","Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Bow",
+              "maxUnits": 2,
+              "pointsModifier": -1,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		  {
+          "id": "the_slav_southern_slav_pechenegs",
+          "name": "Pechenegs",
+          "description": "Pechenegs bow and shield. Inferior Fighters. Evade. May have Ambush (+2).",
+          "category": "Cavalry",
+          "type": "Commander",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Open Order", "Inferior Fighters", "Evade"],
+          "optionalEquipment": [
+			   {
+              "name": "Ambush",
+              "disables": [],
+              "pointsModifier": 2,
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+		  
+      ]
+    },
     
   }
 }
