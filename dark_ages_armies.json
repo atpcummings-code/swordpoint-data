@@ -983,7 +983,7 @@
         {
           "id": "dabai_irish_and_scots_light_cavalry",
           "name": "Light Cavalry",
-          "description": "Light Cavalry have spear and shield. Evade. May be fielded as skirmishers at 16 points per base, in which may repalce spears with javelins.",
+          "description": "Light Cavalry have spear and shield. Evade. May be fielded as skirmishers at 16 points per base, in which may replace spears with javelins.",
           "category": "Cavalry",
           "type": "Commander",
           "defence": 5,
@@ -1519,7 +1519,7 @@
         {
           "id": "dabai_picts_light_cavalry",
           "name": "Light Cavalry",
-          "description": "Light Cavalry have spear and shield. Evade. May be fielded as skirmishers at 16 points per base, in which may repalce spears with javelins.",
+          "description": "Light Cavalry have spear and shield. Evade. May be fielded as skirmishers at 16 points per base, in which may replace spears with javelins.",
           "category": "Cavalry",
           "type": "Commander",
           "defence": 5,
@@ -1822,7 +1822,7 @@
         {
           "id": "dabai_british_light_cavalry",
           "name": "Light Cavalry",
-          "description": "Light Cavalry have spear and shield. Evade. May be fielded as skirmishers at 16 points per base, in which may repalce spears with javelins.",
+          "description": "Light Cavalry have spear and shield. Evade. May be fielded as skirmishers at 16 points per base, in which may replace spears with javelins.",
           "category": "Cavalry",
           "type": "Commander",
           "defence": 5,
@@ -2136,7 +2136,7 @@
         {
           "id": "dabai_saxons_light_cavalry",
           "name": "Light Cavalry",
-          "description": "Light Cavalry have spear and shield. Evade. May be fielded as skirmishers at 16 points per base, in which may repalce spears with javelins.",
+          "description": "Light Cavalry have spear and shield. Evade. May be fielded as skirmishers at 16 points per base, in which may replace spears with javelins.",
           "category": "Cavalry",
           "type": "Commander",
           "defence": 5,
@@ -6779,7 +6779,7 @@
         {
           "id": "lir_border_garrison_illyricani_sagittarii",
           "name": "Illyricani/Sagittarii",
-          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may replace javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "Commander",
           "defence": 5,
@@ -7457,6 +7457,16 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 1
+            },
+			    {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
           ]
         },
@@ -7529,13 +7539,23 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 1
+            },
+			    {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
           ]
         },
         {
           "id": "lir_imperial_field_army_illyricani_sagittarii",
           "name": "Illyricani/Sagittarii",
-          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may replace javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "Commander",
           "defence": 5,
@@ -8444,7 +8464,7 @@
         {
           "id": "lir_romanised_warlord_illyricani_sagittarii",
           "name": "Illyricani/Sagittarii",
-          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may replace javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "Commander",
           "defence": 5,
@@ -9313,7 +9333,7 @@
         {
           "id": "lir_romano_british_illyricani_sagittarii",
           "name": "Illyricani/Sagittarii",
-          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may repalce javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
+          "description": "Equites have javelins and shield. Evade. Inferior Fighters.  They may have spear (+1) and any unit may replace javelins with bow (free) to become Equites Sagitarri. These may have light armour (+1) or they may be fielded as skirmishers.",
           "category": "Cavalry",
           "type": "Commander",
           "defence": 5,
