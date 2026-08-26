@@ -32510,7 +32510,8 @@
           "ratio": 0.5,
           "compareWith": [
             "early_burmese_militia_infantry",
-            "early_burmese_elephant_escorts"
+            "early_burmese_elephant_escorts",
+			  "early_burmese_militia_archers"
           ]
         }
       ],
