@@ -2734,8 +2734,7 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "Shield", "Light Armour",
-            "Javelins"
+            "Shield", "Light Armour", "Javelins"
           ],
           "specialRules": [
             "Open Order", "Superior Fighters","Superior Shooters", "Evade"
