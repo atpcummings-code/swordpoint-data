@@ -1301,7 +1301,7 @@
         {
           "id": "the_slav_wends_slav_noble_cavalry",
           "name": "Slav Noble Cavalry",
-          "description": "Slav Noble Cavalry have javelins and shield. Evade. May have spear (+1) and light armour (+1). May be fielded as skirmishers at a cost o 17 points per base. May have Ambush (+2).",
+          "description": "Slav Noble Cavalry have javelins and shield. Evade. May have spear (+1) and light armour (+1). May be fielded as skirmishers at a cost of 17 points per base. May have Ambush (+2).",
           "category": "Cavalry",
           "requires": {
             "unitId": "the_slav_wends_slav_cavalry",
@@ -1663,11 +1663,58 @@
           "specialRules": [],
           "optionalEquipment": []
         },
-		  
+		  {
+          "id": "the_slav_southern_slav_bodyguard",
+          "name": "Bodyguard",
+          "description": "Bodyguard have light armour, javelins and shield. Superior Fighters. Evade. May have spear (+1). May be fielded as skirmishers at a cost of 22 points per base. May have Ambush (+2).",
+          "category": "Cavalry",
+          "requires": {
+            "unitId": "the_slav_southern_slav_slav_cavalry",
+            "count": 1,
+            "name": "Slav Cavalry"},
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+		  "maxBases": 8,
+          "baseEquipment": ["Light ARmour","Javelins","Shield"],
+          "specialRules": ["Open Order","Evade", "Superior Fighters"],
+          "maxCountAllowed": 1,
+          "optionalEquipment": [
+                        {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Ambush",
+              "disables": [],
+              "pointsModifier": 2,
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
         {
           "id": "the_slav_southern_slav_slav_noble_cavalry",
           "name": "Slav Noble Cavalry",
-          "description": "Slav Noble Cavalry have javelins and shield. Evade. May have spear (+1) and light armour (+1). May be fielded as skirmishers at a cost o 17 points per base. May have Ambush (+2).",
+          "description": "Slav Noble Cavalry have javelins and shield. Evade. May have spear (+1) and light armour (+1). May be fielded as skirmishers at a cost of 17 points per base. May have Ambush (+2).",
           "category": "Cavalry",
           "requires": {
             "unitId": "the_slav_southern_slav_slav_cavalry",
@@ -1682,7 +1729,7 @@
 		  "maxBases": 8,
           "baseEquipment": ["Javelins","Shield"],
           "specialRules": ["Open Order","Evade"],
-          "maxCountAllowed": 1,
+          "maxCountAllowed": 3,
           "optionalEquipment": [
             {
               "name": "Light Armour",
@@ -1963,7 +2010,7 @@
           "id": "the_slav_southern_slav_pechenegs",
           "name": "Pechenegs",
           "description": "Pechenegs bow and shield. Inferior Fighters. Evade. May have Ambush (+2).",
-          "category": "Cavalry",
+          "category": "Allies",
           "type": "Commander",
           "defence": 5,
           "cohesion": 7,
