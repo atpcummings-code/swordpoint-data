@@ -2879,7 +2879,7 @@
             ],
 	"optionalEquipment": [
   		{
-              "name": "Light Armour",
+              "name": "Light Armour (Andulusian Spearmen)",
 		"targetProfile": ["Andulusian Spearmen/Andulusian Archers (Rear Row)", "Andulusian Spearmen/Andulusian Archers (Front Row)","Andulusian Spearmen"],
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
@@ -2890,7 +2890,7 @@
               "cohesionModifier": 0
             },
 			  {
-              "name": "Javelins",
+              "name": "Javelins (Andulusian Spearmen)",
 		"targetProfile": ["Andulusian Spearmen/Andulusian Archers (Rear Row)", "Andulusian Spearmen/Andulusian Archers (Front Row)","Andulusian Spearmen"],
               "pointsModifier": 2,
               "equipmentAdded": ["Javelins"],
@@ -2901,7 +2901,7 @@
               "cohesionModifier": 0
             },
 {
-              "name": "Light Armour",
+              "name": "Light Armour (Andulusian Archers)",
 		"disables": "Shield",
 		"targetProfile":"Andulusian Archers",
               "pointsModifier": 2,
@@ -2913,7 +2913,7 @@
               "cohesionModifier": 0
             },
 			    {
-              "name": "Shield",
+              "name": "Shield (Andulusian Archers)",
 		"disables": "Light Armour",
 		"targetProfile":"Andulusian Archers",
               "pointsModifier": 2,
@@ -3026,7 +3026,7 @@
             ],
 	"optionalEquipment": [
   		{
-              "name": "Large Shield",
+              "name": "Large Shield (Berber Spearmen)",
 "targetProfile": ["Berber Spearmen/Berber Archers (Rear Row)", "Berber Spearmen/Berber Archers (Front Row)","Berber Spearmen"],
               "pointsModifier": 2,
               "equipmentAdded": ["Large Shield"],
