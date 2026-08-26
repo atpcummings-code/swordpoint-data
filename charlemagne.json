@@ -466,7 +466,7 @@
         "specialRules": ["Close Order"],
 		}        
 		],
-		""optionalEquipment": [
+		"optionalEquipment": [
 			   {
               "name": "Light Armour",
               "equipmentAdded": ["Light Armour"],
