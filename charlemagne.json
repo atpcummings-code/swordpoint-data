@@ -1263,7 +1263,9 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 20,
-          "alliedArmyKeys": [],
+          "alliedArmyKeys": [
+			  "the_franks"
+		  ],
           "maxAlliedArmiesAllowed": 1
         }
       ],
