@@ -488,90 +488,84 @@
               "cohesionModifier": 0
             }
 		   ]
-},
-        
-{
-          "id": "the_franks_combined_warriors_cu",
-          "name": "Combined Unit Elite Warriors/Warriors",
-          "description": "Elite and other Warriors may form Combined Units containing up to 75% of bases of the inferior type. Elite Warriors have throwing spear and shield. Superior Fighters. Warband. May have light armour (+2) and javelins (+2). May exchange throwing spear for heavy throwing spear (+2).  In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall. Warriors having throwing spear and shield, Warband. May have javelins (+2). May exchange throwing spear for heavy throwing spear (+2). In armies after 700AD, must exchange throwing spear for spear (-2). They cease to be Warband but gain Shieldwall.",
+		},
+		{
+          "id": "the_franks_eastern_franks",
+          "name": "Eastern_Franks",
+          "description": "Eastern Franks have a spear and shield. Shieldwall.Warband.. May exchange spear for throwing spear (+2).",
           "category": "Infantry",
           "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
-          "subProfiles": [
-            {
-              "name": "Elite Warriors",
-              "defence": 6,
-              "cohesion": 6,
-              "pointsPerBase": 20,
-              "minBases": 1,
-              "maxBases": 12,
-              "baseEquipment": ["Throwing Spear", "Shield"],
-              "specialRules": ["Close Order", "Superior Fighters", "Warband"]
-            },
-            {
-              "name": "Warriors",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
-              "defence": 6,
-              "cohesion": 6,
-              "pointsPerBase": 16,
-              "minBases": 1,
-              "maxBases": 9,
-              "maxPercentage": 75,
-              "baseEquipment": ["Throwing Spear", "Shield"],
-              "specialRules": ["Close Order", "Warband"]
-            }
-            
-            ],
-"optionalEquipment": [
-            {
-              "name": "Heavy Throwing Spear (Elite Warriors)",
-              "targetProfile": "Elite Warriors",
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Shieldwall", "Warband"
+          ],
+          "optionalEquipment": [
+			  {
+              "name": "Throwing Spear",
               "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Throwing Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
+              "equipmentAdded": [
+                "Throwing Spear"
+              ],
+              "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-            {
-              "name": "Heavy Throwing Spear (Warriors)",
-              "targetProfile": "Warriors",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Throwing Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
+		  ]
+        },
+		  {
+          "id": "the_franks_gascon_or_basque_javelinmen",
+          "name": "Gascon or Basque Javelinmen",
+          "description": "Gascon or Basque Javelinmen have javelins. Inferior Fighters. Superior Shooters. Skirmishers. They may have shields (+1).",
+          "category": "Vassals",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Skirmishers", "Inferior Fighters", "Superior Shooters"],
+          "optionalEquipment": [
+			  {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             },
-            {
-              "name": "Javelins (Elite Warriors)",
-              "targetProfile": "Elite Warriors",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": [ ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Javelins (Warriors)",
-              "targetProfile": "Warriors",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": [ ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Light Armour (Elite Warriors)",
-              "targetProfile": "Elite Warriors",
-              "pointsModifier": 2,
+		  ]
+        },
+		  {
+          "id": "the_franks_breton_cavalry",
+          "name": "Breton Cavalry",
+          "description": "Breton Cavalry have javelins, spear and shield. Superior Fighters. Evade. They may have light armour (+1).",
+          "category": "Vassals",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins", "Spear", "Shield"],
+          "specialRules": ["Open Order", "Evade", "Superior Fighters"],
+          "optionalEquipment": [
+			  {
+              "name": "Light Armour",
+              "pointsModifier": 1,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -579,21 +573,44 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
-            {
-              "name": "Spear (mandatory Post 700AD",
-              "disables": ["Heavy Throwing Spear (Elite Warriors)", "Heavy Throwing Spear (Warriors)"],
-              "pointsModifier": -2,
+		  ]
+        },
+		  {
+          "id": "the_franks_gascon_or_basque_cavalry",
+          "name": "Gascon or Basque Cavalry",
+          "description": "Gascon or Basque  Cavalry have javelins and shield. Inferior Fighters. Evade. They may have spear(+1). May be fielded as Skirmishers at a cost of 15 points per base.",
+          "category": "Vassals",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 67,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Open Order", "Evade", "Inferior Fighters"],
+          "optionalEquipment": [
+			  {
+              "name": "Spear",
+              "pointsModifier": 1,
               "equipmentAdded": ["Spear"],
-              "equipmentRemoved": ["Throwing Spear"],
-              "rulesAdded": ["Shieldwall"],
-              "rulesRemoved": ["Warband"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
-
-
-            ]
-            },
+		  ]
+        },
         {
           "id": "the_franks_tribal_infantry",
           "name": "Tribal Infantry",
