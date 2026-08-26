@@ -2043,7 +2043,7 @@
 
 	  "the_saxon": {
       "armyName": "The Saxon Army -  1000 AD",
-	  "armyValidation": [ { "type": "equipmentUnitCount", "left": { "unitIds": ["the_saxon_skirmishers"], "equipment": ["Bow", "Sling"] }, "expression": "lessThanOrEqual", "ratio": 1, "right": { "unitIds": ["the_saxon_skirmishers"], "equipment": ["Javelin"] } } ],
+	  "armyValidation": [ { "type": "equipmentUnitCount", "left": { "unitIds": ["the_saxon_skirmishers"], "equipment": ["Bow", "Sling"] }, "expression": "lessThanOrEqual", "ratio": 1, "right": { "unitIds": ["the_saxon_skirmishers"], "equipment": ["Javelins"] } } ],
 
       "categories": [
         {
