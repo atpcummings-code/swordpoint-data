@@ -2563,6 +2563,7 @@
 
 "the_emirate_of_cordoba": {
       "armyName": "The Emirate of Cordoba - X to Y AD",
+	{ "armyValidation": [ { "ids": ["the_emirate_of_cordoba_jinetes"], "expression": "greaterThanOrEqual", "ratio": 0.5, "compareWith": ["the_emirate_of_cordoba_jinetes", "the_emirate_of_cordoba_noble_cavalry", "the_emirate_of_cordoba_berber_cavalry"] } ] },
       "categories": [
         {
           "id": "Commanders",
@@ -2574,7 +2575,7 @@
         {
           "id": "Cavalry",
           "name": "Cavalry",
-			"description": "At least half teh cavalry bases must be Jinetes.",
+			"description": "At least half the cavalry bases must be Jinetes.",
           "constraintType": "percentage",
           "min": 0,
           "max": 50
