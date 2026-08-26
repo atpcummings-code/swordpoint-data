@@ -2353,7 +2353,7 @@
       ],
       "units": [
         {
-          "id": ""gascon_and_basque_duke_or_count",
+          "id": "gascon_and_basque_duke_or_count",
           "name": "Duke or Count",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -2368,7 +2368,7 @@
           "optionalEquipment": []
         },
         {
-          "id": ""gascon_and_basque_count",
+          "id": "gascon_and_basque_count",
           "name": "Count",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -2382,7 +2382,7 @@
           "optionalEquipment": []
         },
         {
-          "id": ""gascon_and_basque_noble_cavalry",
+          "id": "gascon_and_basque_noble_cavalry",
           "name": "Noble Cavalry",
           "description": "Noble Cavalry have spear and shield. Superior Fighters. Evade. May have light armour (+1). May be fielded as Skirmishers at a cost of 21 points per base.",
           "category": "Cavalry",
@@ -2425,7 +2425,7 @@
           ]
         },
 		  {
-          "id": ""gascon_and_basque_light_cavalry",
+          "id": "gascon_and_basque_light_cavalry",
           "name": "Light Cavalry",
           "description": "Light Cavalry have javelins and shield. Evade. May have light armour (+1). May be fielded as Skirmishers at a cost of 17 points per base.",
           "category": "Cavalry",
@@ -2467,7 +2467,7 @@
           ]
         },
         {
-          "id": ""gascon_and_basque_rural_infantry",
+          "id": "gascon_and_basque_rural_infantry",
           "name": "Rural Infantry",
           "description": "Rural Infantry have spear and shield. Open Order. May exchange spear for throwing spear (+2).",
           "category": "Infantry",
@@ -2497,7 +2497,7 @@
 		  ]
         },
 		  {
-          "id": ""gascon_and_basque_townsmen",
+          "id": gascon_and_basque_townsmen",
           "name": "Townsmen",
           "description": "Townsmen have a spear and shield. Shieldwall. May exchange spear for throwing spear (+2).",
           "category": "Infantry",
@@ -2527,7 +2527,7 @@
 		  ]
         },
 		  {
-          "id": ""gascon_and_basque_gascon_or_basque_javelinmen",
+          "id": gascon_and_basque_gascon_or_basque_javelinmen",
           "name": "Gascon or Basque Javelinmen",
           "description": "Gascon or Basque Javelinmen have javelins. Inferior Fighters. Superior Shooters. Skirmishers. They may have shields (+1).",
           "category": "Infantry",
