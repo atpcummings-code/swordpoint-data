@@ -2039,6 +2039,294 @@
 		  
       ]
     },
+
+
+	  "the_saxon": {
+      "armyName": "The Saxon Army - AD",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+  {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        {
+          "id": "Skirmishers",
+          "name": "Skirmishers",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        },
+      
+        {
+          "id": "Allies",
+          "name": "Special Troops or Allies",
+          "description": "The army may take Danish Allies using the Viking list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 15,
+          "alliedArmyKeys": [
+         
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
+      ],
+      "units": [
+        {
+          "id": "the_saxon_high_chieftain",
+          "name": "High chieftain",
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_saxon_chieftain",
+          "name": "Chieftain",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+{
+          "id": "the_saxon_minor_chieftain",
+          "name": "Minor Chieftain",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_saxon_noble_warriors",
+          "name": "Noble Warriors",
+          "description": "Noble Warriors have spear and shield. Superior Fighters. Shieldwall. Warband. May have light armour (+2). May exchange spear for throwing Spear(+2).  and javelins (+2). May be fielded in Open order at a cost of 15 points per base. May be Ridingh Horses (+1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+		"maxCountAllowed": 2,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Superior Fighters",
+            "Shieldwall",
+            "Warband"
+          ],
+                   "optionalEquipment": [
+            
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			{
+              "name": "Open Order",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			{
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		  {
+          "id": "the_saxon_freemen",
+          "name": "Freemen",
+          "description": "Freemen have a spear and shield. Warband. May exchange spear for throwing spear (+2). May be fielded in Open order at a cost of nine points per base. May be Ridingh Horses (+1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Warband"
+          ],
+                   "optionalEquipment": [
+             {
+              "name": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			{
+              "name": "Open Order",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			{
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		  {
+          "id": "the_saxon_bondsmen",
+          "name": "Bondsmen",
+          "description": "Bondsmen have a spear and shield. Inferior Fighters. Warband. May exchange spear for throwing spear (+2). ",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 4,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+		  "maxCountAllowed": 2,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Warband", "Inferior Fighters"
+          ],
+                   "optionalEquipment": [
+          {
+              "name": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "the_saxon_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Skirmishers. Inferior Fighters.  May have shield (+1) amd may exchange javelins for sling or bow (free).  There may not be more sling or bow units than Javelin units, and no sling or bow may be larger than the smallest javelin unit in army.",
+          "category": "Allies",
+          "type": "Commander",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Skirmishers",
+            "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "disables": ["Bow"],
+				"basesComparison": {
+                "expression": "lessThanEqualTo",
+                "compareWith": ["Javelins"]
+              },
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": ["Sling"],
+			"basesComparison": {
+                "expression": "lessThanEqualTo",
+                "compareWith": ["Javelins"]
+              },
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+      ]
+    },
     
   }
 }
