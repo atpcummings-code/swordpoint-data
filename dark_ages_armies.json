@@ -32729,7 +32729,7 @@
                 "Halberd"
               ],
               "enableHidden": [
-                "Bow"
+                "Skirmishers Bow", "Skirmishers Halberd"
               ],
               "pointsModifier": -5,
               "equipmentAdded": [],
