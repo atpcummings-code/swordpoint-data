@@ -40,7 +40,7 @@
         {
           "id": "Allies",
           "name": "Allies",
-          "description": "Troops may be selected from any one of teh following, Saxon and Wend (Slav) allies maybe taken after 790AD.  Lombard allies may be taken after 774 AD.  Saxon allies may be taken 785 AD. Wend (Slav) allies maybe taken after 709 AD.  Southern Slav allies may be taken after 801 AD. Arab alles may be taken if campaigning in Spain.  In this instance teh Allies allwoance is reduced to 25%.",
+          "description": "Troops may be selected from any one of the following, Saxon and Wend (Slav) allies maybe taken after 790AD.  Lombard allies may be taken after 774 AD.  Saxon allies may be taken 785 AD. Wend (Slav) allies maybe taken after 709 AD.  Southern Slav allies may be taken after 801 AD. Arab alles may be taken if campaigning in Spain.  In this instance the Allies allwoance is reduced to 25%.",
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
@@ -69,7 +69,7 @@
 		  {
           "id": "the_franks_charlemagne",
           "name": "Charlemagne",
-          "description": "May ride a horse. Has teh Strategem rule (+50).",
+          "description": "May ride a horse. Has the Strategem rule (+50).",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
@@ -656,7 +656,7 @@
         {
           "id": "Allies",
           "name": "Allies",
-          "description": "Troops may be selected from any one of teh following, Saxon and Wend (Slav) allies maybe taken after 790AD.  Lombard allies may be taken after 774 AD.  Saxon allies may be taken 785 AD. Wend (Slav) allies maybe taken after 709 AD.  Southern Slav allies may be taken after 801 AD. Arab alles may be taken if campaigning in Spain.  In this instance teh Allies allwoance is reduced to 25%.",
+          "description": "Troops may be selected from any one of the following, Saxon and Wend (Slav) allies maybe taken after 790AD.  Lombard allies may be taken after 774 AD.  Saxon allies may be taken 785 AD. Wend (Slav) allies maybe taken after 709 AD.  Southern Slav allies may be taken after 801 AD. Arab alles may be taken if campaigning in Spain.  In this instance the Allies allwoance is reduced to 25%.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
@@ -685,7 +685,7 @@
 		  {
           "id": "the_franks_in_spain_charlemagne",
           "name": "Charlemagne",
-          "description": "May ride a horse. Has teh Strategem rule (+50).",
+          "description": "May ride a horse. Has the Strategem rule (+50).",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
@@ -1629,7 +1629,9 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 20,
-          "alliedArmyKeys": [],
+          "alliedArmyKeys": [
+			  {"key": "the_avar"}, {"key": "early_bulgar", "supplement":"dark_age_armies"},{"key": "late_bulgar", "supplement":"dark_age_armies"}
+		  ],
           "maxAlliedArmiesAllowed": 1
         }
       ],
