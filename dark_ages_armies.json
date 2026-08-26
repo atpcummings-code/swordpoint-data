@@ -32506,14 +32506,15 @@
           "unitId": [
             "early_burmese_militia_archers"
           ],
-          "expression": "greaterThanOrEqual",
+          "expression": "lessThanOrEqual",
           "ratio": 0.5,
           "compareWith": [
             "early_burmese_militia_infantry",
-            "early_burmese_militia_horse"
+            "early_burmese_elephant_escorts"
           ]
         }
       ],
+		 "armyValidation": [ { "ids": ["early_burmese_militia_archers"], "expression": "greaterThanOrEqual", "ratio": 0.3333, "compareWith": ["early_burmese_militia_infantry", "early_burmese_militia_archers","early_burmese_militia_horse"] } ],
       "categories": [
         {
           "id": "Commanders",
