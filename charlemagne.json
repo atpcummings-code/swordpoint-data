@@ -2902,7 +2902,7 @@
             },
 {
               "name": "Light Armour (Andulusian Archers)",
-		"disables": "Shield",
+		"disables": "Shield (Andulusian Archers)",
 		"targetProfile":"Andulusian Archers",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
@@ -2914,7 +2914,7 @@
             },
 			    {
               "name": "Shield (Andulusian Archers)",
-		"disables": "Light Armour",
+		"disables": "Light Armour (Andulusian Archers)",
 		"targetProfile":"Andulusian Archers",
               "pointsModifier": 2,
               "equipmentAdded": ["Shield"],
