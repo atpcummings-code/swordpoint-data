@@ -2734,7 +2734,7 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "Shield", "Light Armour"
+            "Shield", "Light Armour",
             "Javelins"
           ],
           "specialRules": [
