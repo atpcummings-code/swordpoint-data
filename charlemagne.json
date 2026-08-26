@@ -2497,7 +2497,7 @@
 		  ]
         },
 		  {
-          "id": gascon_and_basque_townsmen",
+          "id": "gascon_and_basque_townsmen",
           "name": "Townsmen",
           "description": "Townsmen have a spear and shield. Shieldwall. May exchange spear for throwing spear (+2).",
           "category": "Infantry",
@@ -2527,7 +2527,7 @@
 		  ]
         },
 		  {
-          "id": gascon_and_basque_gascon_or_basque_javelinmen",
+          "id": "gascon_and_basque_gascon_or_basque_javelinmen",
           "name": "Gascon or Basque Javelinmen",
           "description": "Gascon or Basque Javelinmen have javelins. Inferior Fighters. Superior Shooters. Skirmishers. They may have shields (+1).",
           "category": "Infantry",
