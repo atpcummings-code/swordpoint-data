@@ -2975,7 +2975,7 @@
             },
 			  {
               "name": "Sling",
-				  "Disables": "["Bow", "Throwing Spear"],
+				  "Disables": ["Bow", "Throwing Spear"],
               "pointsModifier": 0,
               "equipmentAdded": ["Sling"],
               "equipmentRemoved": ["Javelins"],
@@ -2986,7 +2986,7 @@
             },
 		  {
               "name": "Bow",
-				  "Disables": "["Sling", "Throwing Spear"],
+				  "Disables": ["Sling", "Throwing Spear"],
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
               "equipmentRemoved": ["Javelins"],
@@ -2997,7 +2997,7 @@
             },
 	  {
               "name": "Throwing Spear",
-				  "Disables": "["Sling", "Bow"],
+				  "Disables": ["Sling", "Bow"],
               "pointsModifier": 2,
               "equipmentAdded": ["Throwing Spear"],
               "equipmentRemoved": ["Javelins"],
