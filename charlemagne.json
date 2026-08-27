@@ -4154,7 +4154,7 @@
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }
+            },
 			    {
               "name": "Remove Light Armour",
               "hiddenUntilEnabled": "hidden",
