@@ -214,7 +214,7 @@
           "pointsPerBase": 15,
           "minBases": 3,
           "maxBases": 8,
-          "minCountAllowed": 1,
+          "maxCountAllowed": 1,
           "baseEquipment": [
             "Bow",
             "Shield"
