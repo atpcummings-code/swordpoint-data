@@ -11101,7 +11101,7 @@
           "name": "Rocket Launcher",
           "description": "A rocket launcher has a crew of two. Up to three additional crew may be purchased (+5 each). Rocket Artillery",
           "category": "Artillery",
-          "type": "Commander",
+          "type": "Artillery",
           "minBases": 1,
           "maxBases": 12,
           "optionalEquipment": [
