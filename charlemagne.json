@@ -4049,6 +4049,10 @@
        {
           "id": "byzantine_expeditionary_force_elite_themata_cavalry",
           "name": "Elite Themata Cavalry",
+		   "excludes": [
+            "byzantine_expeditionary_force_elite_themata_cavalry",
+            "byzantine_expeditionary_force_elite_themata_cavalry_cf"
+          ],
           "description": "Elite Themata have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1) and either half barding or barding (+1). May be Veteran (+1).",
           "category": "Cavalry",
           "type": "Commander",
@@ -4120,6 +4124,7 @@
           "type": "Cavalry",
           "minBases": 3,
           "maxBases": 8,
+			             "maxCountAllowed": 1,
           "subProfiles": [
             {
               "name": "Elite Themata",
