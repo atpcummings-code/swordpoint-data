@@ -2,7 +2,10 @@
   "armies": {
  "scythian": {
       "armyName": "Scythian - 700 BC to 300 BC",
-    "armyValidation": [ { "ids": ["scythian_warriors"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["scythian_senior_nobles", "scythian_nobles"], "countBy": "units" } ],
+    "armyValidation": [ 
+      { "ids": ["scythian_warriors"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["scythian_senior_nobles", "scythian_nobles"], "countBy": "units" },
+      { "ids": ["scythian_warriors"], "expression": "greaterThanOrEqual", "ratio": 1, "compareWith": ["scythian_senior_nobles", "scythian_nobles"] } ] } 
+    ],
       "categories": [
         {
           "id": "Commanders",
