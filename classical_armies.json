@@ -1,6 +1,321 @@
 {
   "armies": {
-"alans": {
+ "scythian": {
+      "armyName": "Scythian - 700 BC to 300 BC",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          description": "There must be two warrior cavalry units for each Noble Cavalry unit of either sort fielded, and there must be more Warrior bases than Noble bases in total.",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+         {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        }
+      ],
+      "units": [
+        {
+          "id": "scythian_general",
+          "name": "General",
+          "description": "Rides a horse. May have Strategem (+50).",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "scythian_clan_chief",
+          "name": "Clan Chief",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "scythian_senior_nobles",
+          "name": "Senior Nobles",
+          "description": "Senior Nobles have light armour, bow, shield and half-barding. Superior Fighters. Superior Shooters. May have spear (+1)",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 8,
+          "maxCountAllowed": 2,
+          "baseEquipment": [
+            "Bow","Shield","Light Armour","Half-barding"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters",
+            "Superior Shooters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "scythian_nobles",
+          "name": "Nobles",
+          "description": "Nobles have a bow. Superior Fighters. Superior Shooters. Nomad Cavalry. May have light armour (+1), shield (+1), spear (+1). Troops without spear may be fielded s Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters",
+            "Superior Shooters", "Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "disables": "Skirmishers",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Light Armour"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "scythian_warriors",
+          "name": "Warriors",
+          "description": "Warriors have a bow. Superior Shooters. Skirmishers. Nomad Cavalry. ",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 21,
+          "minBases": 3,
+          "maxBases": 8,
+          "minCountAllowed": 2,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers",
+            "Superior Shooters",
+            "Nomad Cavalry"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "scythian_youths",
+          "name": "Youths",
+          "description": "Youths have a bow. Skirmishers. Impetuous.",
+          "category": "Cavalry",
+          "type": "Commander",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 8,
+          "minCountAllowed": 1,
+          "baseEquipment": [
+            "Bow",
+            "Shield"
+          ],
+          "specialRules": [
+            "Skirmishers",
+            "Impetuous"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "scythian_dismounted_archers",
+          "name": "Dismounted Archers",
+          "description": "Dismounted Archers have a bow. Superior Shooters. Skirmishers. May have a shield (+1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "maxCountAllowed": 1,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers","Superior Shooters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "scythian_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins. Inferior Fighters. Skirmishers. May have shield (+1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "scythian_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Inferior Fighters. Skirmishers. May have a shield (+1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
+    },
+    
+    
+    "alans": {
       "armyName": "Alans - 350 to 475 AD",
       "categories": [
         {
