@@ -24540,7 +24540,7 @@
         {
           "id": "Allies",
           "name": "Allies",
-          "description": "May take allies from the Vikings, Early Slavs, Pecheng, Magyar, or Khazar.",
+          "description": "May take allies from the Vikings, Early Slavs, Pecheneg, Magyar, or Khazar.",
           "constraintType": "percentage",
           "min": 0,
           "max": 20,
@@ -25096,7 +25096,7 @@
         {
           "id": "Allies",
           "name": "Allies",
-          "description": "May take allies from the Vikings, Early Slavs, Pecheng, Magyar, or Khazar.",
+          "description": "May take allies from the Vikings, Early Slavs, Pecheneg, Magyar, or Khazar.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
