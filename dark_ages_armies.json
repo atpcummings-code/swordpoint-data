@@ -4650,7 +4650,7 @@
         {
           "id": "gavk_ostrogoth_byzantine_light_cavalry",
           "name": "Byzantine Light Cavalry",
-          "description": "Byzantine Light Cavalry have light Armour. May have heavy armour (+1), bow or javelins (+1), spear (+1), and shield (+1). May be fiedled as skirmisrs at a cost of 18 points equipped with light armour, bow and shield.",
+          "description": "Byzantine Light Cavalry have light Armour. May have heavy armour (+1), bow or javelins (+1), spear (+1), and shield (+1). May be fielded as skirmisrs at a cost of 18 points equipped with light armour, bow and shield.",
           "category": "Allies",
           "type": "Commander",
           "defence": 5,
@@ -5199,7 +5199,7 @@
         {
           "id": "gavk_Lombard_byzantine_light_cavalry",
           "name": "Byzantine Light Cavalry",
-          "description": "Byzantine Light Cavalry have light Armour. May have heavy armour (+1), bow or javelins (+1), spear (+1), and shield (+1). May be fiedled as skirmisrs at a cost of 18 points equipped with light armour, bow and shield.",
+          "description": "Byzantine Light Cavalry have light Armour. May have heavy armour (+1), bow or javelins (+1), spear (+1), and shield (+1). May be fielded as skirmisrs at a cost of 18 points equipped with light armour, bow and shield.",
           "category": "Allies",
           "type": "Commander",
           "defence": 5,
@@ -23233,7 +23233,7 @@
  "excludes": ["middle_christian_spanish_militia_crossbowmen"],
           "maxCountAllowed": 1,
           "name": "Militia Crossbowmen",
-          "description": "Militia Crossbowmen have a crossbow. Inferior Shooters. Open Order. May have light armour (+2) and shield (+2). May be fiedled as skirmishers at a cost of seven points per base. There may not be more units of crossbowmen than there are units of Prones in the army.",
+          "description": "Militia Crossbowmen have a crossbow. Inferior Shooters. Open Order. May have light armour (+2) and shield (+2). May be fielded as skirmishers at a cost of seven points per base. There may not be more units of crossbowmen than there are units of Prones in the army.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 7,
@@ -23964,7 +23964,7 @@
         {
           "id": "late_christian_spanish_ballesteros",
           "name": "Militia Crossbowmen",
-          "description": "Militia Crossbowmen have a crossbow. Inferior Shooters. Open Order. May have light armour (+2) and shield (+2). May be fiedled as skirmishers at a cost of seven points per base. There may not be more units of crossbowmen than there are units of Prones in the army.",
+          "description": "Militia Crossbowmen have a crossbow. Inferior Shooters. Open Order. May have light armour (+2) and shield (+2). May be fielded as skirmishers at a cost of seven points per base. There may not be more units of crossbowmen than there are units of Prones in the army.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 7,
@@ -26285,7 +26285,7 @@
         {
           "id": "arab_caliphate_abbasid_caliphate_abbasiya",
           "name": "Abbasiya",
-          "description": "Abbasiya have a bow and shield. Superior Shooters. Evade. May have light armmour (+1) and spear (+1). May be fiedled as skirmishers with Parthian Shot. My not be used by Fatmid or Umayyad armies.",
+          "description": "Abbasiya have a bow and shield. Superior Shooters. Evade. May have light armmour (+1) and spear (+1). May be fielded as skirmishers with Parthian Shot. My not be used by Fatmid or Umayyad armies.",
           "category": "Cavalry",
           "type": "Commander",
           "defence": 5,
@@ -32029,7 +32029,7 @@
         {
           "id": "khmer_empire_subject_archers",
           "name": "Subject Archers",
-          "description": "Subject Archer shave a bow. Inferior Fighters. Levies. may be fiedled as skirmishers at a cost of two points per base.",
+          "description": "Subject Archer shave a bow. Inferior Fighters. Levies. may be fielded as skirmishers at a cost of two points per base.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 7,
@@ -34483,7 +34483,7 @@
         {
           "id": "nab_norman_norman_archers",
           "name": "Norman Archers",
-          "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fielded as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 7,
@@ -34542,7 +34542,7 @@
         {
           "id": "nab_norman_french_or_flemish_archers",
           "name": "French or Flemish Archers",
-          "description": "French or Flemish Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "description": "French or Flemish Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fielded as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 7,
@@ -35042,7 +35042,7 @@
         {
           "id": "nab_breton_norman_archers",
           "name": "Norman Archers",
-          "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fielded as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 7,
@@ -35101,7 +35101,7 @@
         {
           "id": "nab_breton_french_or_flemish_archers",
           "name": "French or Flemish Archers",
-          "description": "French or Flemish Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "description": "French or Flemish Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fielded as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 7,
@@ -35607,7 +35607,7 @@
         {
           "id": "nab_italo_norman_norman_archers",
           "name": "Norman Archers",
-          "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fielded as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 7,
@@ -35666,7 +35666,7 @@
         {
           "id": "nab_italo_norman_french_or_flemish_archers",
           "name": "French or Flemish Archers",
-          "description": "French or Flemish Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fiedled as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "description": "French or Flemish Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fielded as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 7,
