@@ -563,7 +563,7 @@
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open order"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
