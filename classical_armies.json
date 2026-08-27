@@ -2,6 +2,7 @@
   "armies": {
  "scythian": {
       "armyName": "Scythian - 700 BC to 300 BC",
+    "armyValidation": [ { "ids": ["scythian_warriors"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["scythian_senior_nobles", "scythian_nobles"], "countBy": "units" } ],
       "categories": [
         {
           "id": "Commanders",
@@ -86,7 +87,6 @@
           "pointsPerBase": 23,
           "minBases": 3,
           "maxBases": 8,
-          "requires": {"unitId": "scythian_warriors","count": 2,"name": "Warriors"},
           "maxCountAllowed": 2,
           "baseEquipment": [
             "Bow","Shield","Light Armour","Half-barding"
