@@ -565,17 +565,6 @@
               "rulesRemoved": ["Open order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
-                {
-              "name": "Open Order",
-              "disables": "Light Armour",
-              "pointsModifier": -11,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Open Order"],
-              "rulesRemoved": ["Phalanx"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
             }
           ]
         },
@@ -597,6 +586,7 @@
           "optionalEquipment": [
             {
               "name": "Sling",
+              "enabledEvery": 2,
               "pointsModifier": -4,
               "equipmentAdded": ["Sling"],
               "equipmentRemoved": ["Javelins"],
@@ -606,37 +596,7 @@
               "cohesionModifier": 0
             }
           ]
-        },
-        {
-          "id": "etruscan_javelinmen",
-          "name": "Javelinmen",
-          "description": "Javelinmen have javelins. Inferior Fighters. Skirmishers. May have shield (+1).",
-          "category": "Infantry",
-          "type": "Infantry",
-          "defence": 7,
-          "cohesion": 5,
-          "pointsPerBase": 8,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [
-            "Javelins"
-          ],
-          "specialRules": [
-            "Skirmishers", "Inferior Fighters"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Shield",
-              "pointsModifier": 1,
-              "equipmentAdded": [
-                "Shield"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
+        }
           ]
         }
         
