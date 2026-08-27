@@ -169,11 +169,12 @@
             },
              {
               "name": "Skirmishers",
+              "disables": "Spear",
               "pointsModifier": 0,
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["open Order"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": -1,
               "cohesionModifier": 0
             }
