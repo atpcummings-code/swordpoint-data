@@ -14,7 +14,7 @@
         {
           "id": "Cavalry",
           "name": "Cavalry",
-          description": "There must be two warrior cavalry units for each Noble Cavalry unit of either sort fielded, and there must be more Warrior bases than Noble bases in total.",
+          "description": "There must be two warrior cavalry units for each Noble Cavalry unit of either sort fielded, and there must be more Warrior bases than Noble bases in total.",
           "constraintType": "percentage",
           "min": 50,
           "max": 100
