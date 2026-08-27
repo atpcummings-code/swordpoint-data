@@ -3720,7 +3720,7 @@
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": [
-            "Javelins"
+            "Javelins",
             "Shield"
           ],
           "specialRules": [
