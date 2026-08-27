@@ -86,6 +86,7 @@
           "pointsPerBase": 23,
           "minBases": 3,
           "maxBases": 8,
+          "requires": {"unitId": "scythian_Warriors",ratio": 2,"name": "Warriors"},
           "maxCountAllowed": 2,
           "baseEquipment": [
             "Bow","Shield","Light Armour","Half-barding"
@@ -121,6 +122,7 @@
           "pointsPerBase": 24,
           "minBases": 3,
           "maxBases": 8,
+          "requires": {"unitId": "scythian_Warriors",ratio": 2,"name": "Warriors"},
           "baseEquipment": [
             "Bow"
           ],
