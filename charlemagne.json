@@ -3730,7 +3730,7 @@
           "optionalEquipment": [
             {
               "name": "Bow",
-				"maxCountAllowed": 2,
+		 "maxUnits": 2,
               "pointsModifier": -1,
               "equipmentAdded": [
                 "Bow"
