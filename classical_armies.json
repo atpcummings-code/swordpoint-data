@@ -334,7 +334,8 @@
       "armyName": "Etruscan - 700 BC to 280 BC",
     "armyValidation": [ 
       { "ids": ["etruscan_warriors"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["etruscan_senior_nobles", "etruscan_nobles"], "countBy": "units" },
-      { "ids": ["etruscan_warriors"], "expression": "greaterThan", "ratio": 1, "compareWith": ["etruscan_senior_nobles", "etruscan_nobles"] } 
+      { "ids": ["etruscan_warriors"], "expression": "greaterThan", "ratio": 1, "compareWith": ["etruscan_senior_nobles", "etruscan_nobles"] },
+       { "type": "equipmentBasesCount", "left": { "unitIds": ["etruscan_skirmishers"], "equipment": ["Sling"] }, "expression": "lessThanOrEqual", "ratio": 1, "right": { "unitIds": ["etruscan_skirmishers"], "equipment": ["Javelins"] } } 
     ],
       "categories": [
         {
