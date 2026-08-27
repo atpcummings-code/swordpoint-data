@@ -3490,9 +3490,9 @@
         {
           "id": "the_avars_wagons",
           "name": "Wagons",
-          "description": "Wagons form a Wagon Tabor. There is one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
+          "description": "Wagons form a Wagon Tabor. There is one base of defenders per wagon in the Tabor. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
           "category": "SpecialUnits",
-          "type": "Commander",
+          "type": "Special Units",
           "minBases": 0,
           "maxBases": 5,
           "subProfiles": [
@@ -3533,7 +3533,218 @@
               ]
             }
           ]
-        }
+        },
+		  
+{
+          "id": "the_avars_slav_subject_nobles",
+          "name": "Slav Subject Nobles",
+          "description": "Slav Subject Nobles have javelins and shield. Evade. May have spear (+1) and light armour (+1). May be fielded as skirmishers at a cost o 17 points per base.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "requires": {
+            "unitId": "the_avars_cavalry",
+            "count": 1,
+            "name": "Slav Cavalry"
+          },
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Evade"
+          ],
+          "maxCountAllowed": 1,
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -1,
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "the_avars_slav_subject_cavalry",
+          "name": "Slav Subject Cavalry",
+          "description": "Slav Subject Cavalry have spear and shield. Evade. ",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 5,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+		  "minCountAllowed": 1,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        },
+		   {
+          "id": "the_avars_bulgar_subject_cavalry",
+          "name": "Bulgar Subject Cavalry",
+          "description": "Bulgar Subject Cavalry have bow and shield. Nomad Cavalry. ",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 5,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+		  "minCountAllowed": 1,
+          "baseEquipment": [
+            "Bow",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order", "Nomad Cavalry"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_avars_warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Open Order. Warband. May be fielded as skirmishers (no longer Warband) at a cost of six points per base.  Every second unit of warriors may replace throwing spear with bow (free).  One formed units may replace throwing spear with two-handed axe (free).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "enabledEvery": 2,
+              "disables": [
+                "Two-handed Axe"
+              ],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [
+                "Throwing Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Two-handed Axe",
+              "maxUnits": 1,
+              "disables": [
+                "Bow",
+                "Skirmishers"
+              ],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Two-handed Axe"
+              ],
+              "equipmentRemoved": [
+                "Throwing Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": [
+                "Two-handed Axe"
+              ],
+              "pointsModifier": -5,
+              "rulesAdded": [
+                "Skirmishers"
+              ],
+              "rulesRemoved": [
+                "Open Order",
+                "Warband"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		  {
+          "id": "the_avars_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. Up to two units may exchange javelins and shield for bow (-1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins
+            "Shield"
+          ],
+          "specialRules": [
+            "Skirmishers",
+            "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "enabledEvery": 2,
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [
+                "Javelins", "Shield"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }  
       ]
     },
 
