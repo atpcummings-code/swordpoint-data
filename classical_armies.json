@@ -566,7 +566,7 @@
             },
                 {
               "name": "Open Order",
-              "disables": Light Armour",
+              "disables": "Light Armour",
               "pointsModifier": -11,
               "equipmentAdded": [],
               "equipmentRemoved": [],
