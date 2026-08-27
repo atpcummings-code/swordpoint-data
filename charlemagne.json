@@ -4137,7 +4137,7 @@
               "enableHidden": ["Skirmishers"],
               "pointsModifier": 1,
               "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": ["Spear",
+              "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
