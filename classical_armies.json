@@ -38,17 +38,28 @@
         {
           "id": "scythian_general",
           "name": "General",
-          "description": "Rides a horse. May have Strategem (+50).",
+          "description": "Rides a horse. May have Stratagem (+50).",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
           "attacks": "+3",
           "cohesion": 9,
-          "pointsPerBase": 50,
+          "pointsPerBase": 0,
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-          "optionalEquipment": []
+          "optionalEquipment": [
+            {
+              "name": "Stratagem",
+              "pointsModifier": 50,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stratagem"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
         },
         {
           "id": "scythian_clan_chief",
