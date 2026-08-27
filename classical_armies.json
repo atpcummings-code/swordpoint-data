@@ -534,7 +534,7 @@
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": ["Open Order"],
-              "rulesRemoved": ["Phalanx"],
+              "rulesRemoved": ["Phalanx", "Close Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
