@@ -11103,7 +11103,7 @@
           "category": "Artillery",
           "type": "Commander",
           "minBases": 1,
-          "maxBases": 1,
+          "maxBases": 12,
           "optionalEquipment": [
             {
               "name": "1 Extra Crew",
