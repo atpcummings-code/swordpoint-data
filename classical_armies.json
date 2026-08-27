@@ -430,6 +430,7 @@
             },
             {
               "name": "Light Armour",
+                            "disables": "Skirmishers",
               "pointsModifier": 1,
               "equipmentAdded": [
                 "Light Armour"
@@ -442,6 +443,7 @@
             },
              {
               "name": "Shield",
+                             "disables": "Skirmishers",
               "pointsModifier": 1,
               "equipmentAdded": [
                 "Shield"
