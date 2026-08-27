@@ -44585,7 +44585,7 @@
         {
           "id": "Allies",
           "name": "Allies",
-          "description": "The army may take allies from the Pecheng list (not Nobles) representing subjugated tribal remnants",
+          "description": "The army may take allies from the Pecheneg list (not Nobles) representing subjugated tribal remnants",
           "constraintType": "percentage",
           "min": 0,
           "max": 20,
