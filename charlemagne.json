@@ -3974,7 +3974,7 @@
           "specialRules": ["Skirmishers"],
           "optionalEquipment": [
             {
-              "name": "Downgrade to C5, Inferior Fighters"",
+              "name": "Downgrade to C5, Inferior Fighters",
               "pointsModifier": -2,
               "equipmentAdded": [],
               "equipmentRemoved": [],
