@@ -4369,118 +4369,6 @@
             }
           ]
         },
-        {
-          "id": "byzantine_expeditionary_force_themata_infantry",
-          "name": "Themata Infantry",
-          "description": "Themata Infantry spear and shield. Shieldwall. They may have large shield (+2) and darts (+2).",
-          "category": "Infantry",
-          "type": "Commander",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 16,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order",
-            "Shieldwall"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Large Shield",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Large Shield"
-              ],
-              "equipmentRemoved": [
-                "Shield"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Darts",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Darts"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "byzantine_expeditionary_force_slav_warriors",
-          "name": "Slav Warriors",
-          "description": "Slav Warriors have throwing spear and shield. Open Order. Warband.  They may be fielded as Skirmishers (no longer Warband) at a cost of six points per base.",
-          "category": "Infantry",
-          "type": "Infantry",
-          "defence": 6,
-          "cohesion": 5,
-          "pointsPerBase": 11,
-          "minBases": 3,
-          "maxBases": 12,
-		  "maxCountAllowed": 2,  
-          "baseEquipment": [
-            "Throwing Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Open Order", "Warband"
-          ],
-          "optionalEquipment": [
-			{
-              "name": "Skirmishers",
-              "pointsModifier": -5,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order", "Warband"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-		  {
-          "id": "byzantine_expeditionary_force_themata_skirmishers",
-          "name": "Slav Warriors",
-          "description": "Slav Warriors have throwing spear and shield. Open Order. Warband.  They may be fielded as Skirmishers (no longer Warband) at a cost of six points per base.",
-          "category": "Infantry",
-          "type": "Infantry",
-          "defence": 6,
-          "cohesion": 5,
-          "pointsPerBase": 11,
-          "minBases": 3,
-          "maxBases": 12,
-		  "maxCountAllowed": 2,  
-          "baseEquipment": [
-            "Throwing Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Open Order", "Warband"
-          ],
-          "optionalEquipment": [
-			{
-              "name": "Skirmishers",
-              "pointsModifier": -5,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order", "Warband"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
 		  {
         "id": "byzantine_expeditionary_force_elite_themata_cf",
         "name": "Combined Formation Elite Themata",
@@ -4585,6 +4473,55 @@
 		},
 	]
 },
+        {
+          "id": "byzantine_expeditionary_force_themata_infantry",
+          "name": "Themata Infantry",
+          "description": "Themata Infantry spear and shield. Shieldwall. They may have large shield (+2) and darts (+2).",
+          "category": "Infantry",
+          "type": "Commander",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Shieldwall"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Large Shield"
+              ],
+              "equipmentRemoved": [
+                "Shield"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Darts",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Darts"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
 		  {
         "id": "byzantine_expeditionary_force_themata_cf",
         "name": "Combined Formation Themata",
@@ -4668,6 +4605,40 @@
 		}
 	]
 },
+        {
+          "id": "byzantine_expeditionary_force_slav_warriors",
+          "name": "Slav Warriors",
+          "description": "Slav Warriors have throwing spear and shield. Open Order. Warband.  They may be fielded as Skirmishers (no longer Warband) at a cost of six points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+		  "maxCountAllowed": 2,  
+          "baseEquipment": [
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order", "Warband"
+          ],
+          "optionalEquipment": [
+			{
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order", "Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		
+		  
 
          {
           "id": "byzantine_expeditionary_force_themata_skirmishers",
