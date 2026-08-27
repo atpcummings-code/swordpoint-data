@@ -3253,9 +3253,9 @@
       ],
       "units": [
         {
-          "id": "the_avars_high_chieftain",
-          "name": "High Chieftain",
-          "description": "Rides a horse. The High Chieftain may have Stratagem (+50)",
+          "id": "the_avars_khagan",
+          "name": "Khagan",
+          "description": "Rides a horse.",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
@@ -3265,23 +3265,12 @@
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-          "optionalEquipment": [
-            {
-              "name": "Strategem",
-              "pointsModifier": 50,
-              "rulesAdded": [
-                "Stratagem"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
+          "optionalEquipment": []
         },
         {
-          "id": "the_avars_chieftain",
-          "name": "Chieftain",
-          "description": "May ride a horse.",
+          "id": "the_avars_chieftain_or_voevodo",
+          "name": "Avar Chieftain or Slav Voeodo",
+          "description": "Rides a horse.",
           "category": "Commanders",
           "type": "Commander",
           "attacks": "+2",
@@ -3390,6 +3379,27 @@
               "cohesionModifier": 0
             }
           ]
+        },
+		  {
+          "id": "the_avars_khagan_guard",
+          "name": "Khagan Guard",
+          "description": "Khagan Guard have heavy armour, shield, half-barding, spear and bow. Superior Fighters. Superior Shooters. Special Deployment. Veteran. Must be  accompanied by the KHagan and cannot comprise more than six bases.",
+          "category": "Cavalry",
+          "type": "Commander",
+          "defence": 2,
+          "cohesion": 9,
+          "pointsPerBase": 32,
+          "minBases": 3,
+          "maxBases": 6,
+          "baseEquipment": ["Heavy Armour", "Shield", "Half-barding", Spear", "Bow"],
+          "specialRules": [
+            "Close Order",
+            "Superior Shooters",
+            "Superior Fighters",
+            "Special Deployment", "Veteran"
+          ],
+          "maxCountAllowed": 1,
+          "optionalEquipment": []
         },
         {
           "id": "the_avars_elite_horse_archers",
