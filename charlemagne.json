@@ -3281,12 +3281,34 @@
           "specialRules": [],
           "optionalEquipment": []
         },
-        {
+        
+		  {
+          "id": "the_avars_khagan_guard",
+          "name": "Khagan Guard",
+          "description": "Khagan Guard have heavy armour, shield, half-barding, spear and bow. Superior Fighters. Superior Shooters. Special Deployment. Veteran. Must be  accompanied by the KHagan and cannot comprise more than six bases.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 2,
+          "cohesion": 9,
+          "pointsPerBase": 32,
+          "minBases": 3,
+          "maxBases": 6,
+          "baseEquipment": ["Heavy Armour", "Shield", "Half-barding", "Spear", "Bow"],
+          "specialRules": [
+            "Close Order",
+            "Superior Shooters",
+            "Superior Fighters",
+            "Special Deployment", "Veteran"
+          ],
+          "maxCountAllowed": 1,
+          "optionalEquipment": []
+        },
+		  {
           "id": "the_avars_nobles",
           "name": "Nobles",
-          "description": "Noble Cavalry have a bow. Superior Fighters. Superior Shooters. Nomad Cavalry. May have light armour (+1), heavy armour (+2), shield (+1), spear (+1) and half barding (+1`).",
+          "description": "Noble Cavalry have a bow. Superior Fighters. Superior Shooters. Nomad Cavalry. May have light armour (+1), heavy armour (+2), shield (+1), spear (+1) and half-barding (+1). Troops with half-barding lose the Nomad Cavalry rule but gain Special Deployment.",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "defence": 6,
           "cohesion": 8,
           "pointsPerBase": 26,
@@ -3305,16 +3327,10 @@
           "optionalEquipment": [
             {
               "name": "Light Armour",
-              "disables": [
-                "Heavy Armour"
-              ],
+              "disables": ["Heavy Armour"],
               "pointsModifier": 1,
-              "equipmentAdded": [
-                "Light Armour"
-              ],
-              "equipmentRemoved": [
-                "Heavy Armour"
-              ],
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -3322,16 +3338,10 @@
             },
             {
               "name": "Heavy Armour",
-              "disables": [
-                "Light Armour"
-              ],
+              "disables": ["Light Armour"],
               "pointsModifier": 2,
-              "equipmentAdded": [
-                "Heavy Armour"
-              ],
-              "equipmentRemoved": [
-                "Light Armour"
-              ],
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -2,
@@ -3340,9 +3350,7 @@
             {
               "name": "Shield",
               "pointsModifier": 1,
-              "equipmentAdded": [
-                "Shield"
-              ],
+              "equipmentAdded": ["Shield"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -3352,9 +3360,7 @@
             {
               "name": "Spear",
               "pointsModifier": 1,
-              "equipmentAdded": [
-                "Spear"
-              ],
+              "equipmentAdded": ["Spear"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -3363,43 +3369,15 @@
             },
             {
               "name": "Half Barding",
-              "pointsModifier": -3,
-              "equipmentAdded": [
-                "Half Barding"
-              ],
+              "pointsModifier": -1,
+              "equipmentAdded": ["Half Barding" ],
               "equipmentRemoved": [],
-              "rulesAdded": [
-                "Close Order"
-              ],
-              "rulesRemoved": [
-                "Open Order",
-                "Nomad Cavalry"
-              ],
+              "rulesAdded": ["Close Order", "Special Deployment"],
+              "rulesRemoved": ["Open Order","Nomad Cavalry"],
               "defenceModifier": -1,
               "cohesionModifier": 0
             }
           ]
-        },
-		  {
-          "id": "the_avars_khagan_guard",
-          "name": "Khagan Guard",
-          "description": "Khagan Guard have heavy armour, shield, half-barding, spear and bow. Superior Fighters. Superior Shooters. Special Deployment. Veteran. Must be  accompanied by the KHagan and cannot comprise more than six bases.",
-          "category": "Cavalry",
-          "type": "Commander",
-          "defence": 2,
-          "cohesion": 9,
-          "pointsPerBase": 32,
-          "minBases": 3,
-          "maxBases": 6,
-          "baseEquipment": ["Heavy Armour", "Shield", "Half-barding", Spear", "Bow"],
-          "specialRules": [
-            "Close Order",
-            "Superior Shooters",
-            "Superior Fighters",
-            "Special Deployment", "Veteran"
-          ],
-          "maxCountAllowed": 1,
-          "optionalEquipment": []
         },
         {
           "id": "the_avars_elite_horse_archers",
@@ -3412,21 +3390,14 @@
           "pointsPerBase": 22,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": [
-            "Bow"
-          ],
-          "specialRules": [
-            "Open Order",
-            "Superior Shooters",
-            "Nomad Cavalry"
-          ],
+   	  	  "maxCountAllowed": 2,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order","Superior Shooters","Nomad Cavalry"],
           "optionalEquipment": [
             {
               "name": "Light Armour",
               "pointsModifier": 1,
-              "equipmentAdded": [
-                "Light Armour"
-              ],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -3436,9 +3407,7 @@
             {
               "name": "Shield",
               "pointsModifier": 1,
-              "equipmentAdded": [
-                "Shield"
-              ],
+              "equipmentAdded": ["Shield"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -3447,10 +3416,9 @@
             },
             {
               "name": "Javelins",
+				"disables": "Spear",
               "pointsModifier": 1,
-              "equipmentAdded": [
-                "Javelins"
-              ],
+              "equipmentAdded": ["Javelins"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -3459,10 +3427,9 @@
             },
             {
               "name": "Spear",
+			  "disables": "Javelins",
               "pointsModifier": 1,
-              "equipmentAdded": [
-                "Spear"
-              ],
+              "equipmentAdded": ["Spear"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -3472,12 +3439,8 @@
             {
               "name": "Skirmishers",
               "pointsModifier": 0,
-              "rulesAdded": [
-                "Skirmishers"
-              ],
-              "rulesRemoved": [
-                "Open Order"
-              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
@@ -3494,13 +3457,8 @@
           "pointsPerBase": 20,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": [
-            "Bow"
-          ],
-          "specialRules": [
-            "Open Order",
-            "Nomad Cavalry"
-          ],
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order","Nomad Cavalry"],
           "minCountAllowed": 2,
           "optionalEquipment": [
             {
