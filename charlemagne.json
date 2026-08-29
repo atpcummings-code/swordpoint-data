@@ -14,7 +14,7 @@
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 6E
+          "max": 6
         },
         {
           "id": "Infantry",
@@ -2660,7 +2660,7 @@
 
 
 	  "the_saxon": {
-      "armyName": "The Saxon Army -  1 to 1000 AD",
+      "armyName": "The Saxon Army -  750 to 804 AD",
 	  "armyValidation": [ 
 		  { "type": "equipmentUnitCount", "left": { "unitIds": ["the_saxon_skirmishers"], "equipment": ["Bow", "Sling"] }, "expression": "lessThanOrEqual", "ratio": 1, "right": { "unitIds": ["the_saxon_skirmishers"], "equipment": ["Javelins"] } },
 		  { "type": "equipmentBasesCount", "left": { "unitIds": ["the_saxon_skirmishers"], "equipment": ["Bow", "Sling"] }, "expression": "lessThanOrEqual", "ratio": 1, "right": { "unitIds": ["the_saxon_skirmishers"], "equipment": ["Javelins"] } }
@@ -2697,7 +2697,7 @@
           "min": 0,
           "max": 15,
           "alliedArmyKeys": [
-         
+                     {"key": "Vikings", "supplement":"dark_age_armies"}
           ],
           "maxAlliedArmiesAllowed": 1
         }
@@ -2944,7 +2944,7 @@
     },
 
 	  "gascon_and_basque": {
-      "armyName": "Gascon and Basque - X to Y AD",
+      "armyName": "Gascon and Basque - 720 to 1000 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -3864,7 +3864,9 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "lombards"
+            {"key": "early_bulgar", "supplement":"dark_age_armies"},
+{"key": "the_slav_southern_slav"},
+{"key": "the_Lombard"}
           ],
           "maxAlliedArmiesAllowed": 1
         }
@@ -4361,7 +4363,7 @@
       ]
     },
 "the_Lombard": {
-      "armyName": " The Lombard Army X to Y AD",
+      "armyName": " The Lombard Army 700 to 950 AD",
   
       "categories": [
         {
