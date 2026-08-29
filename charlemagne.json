@@ -4364,7 +4364,7 @@
     },
 "the_Lombard": {
       "armyName": " The Lombard Army 700 to 950 AD",
-  
+  "armyValidation": [ { "ids": ["the_lombard_skirmishers"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["the_lombard_archers"] } ],
       "categories": [
         {
           "id": "Commanders",
