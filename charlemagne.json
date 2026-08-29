@@ -4551,7 +4551,7 @@
         },
 		{
           "id": "the_lombard_archers",
-          "name": "Warriors",
+          "name": "Archers",
           "description": "Archers have bow and shield. Open Order. May be Riding Horses (+1).",
           "category": "Infantry",
           "type": "Infantry",
