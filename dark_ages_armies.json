@@ -30002,6 +30002,7 @@
             {
               "name": "Pavise",
               "pointsPerBase": 2,
+				"maxBases": 6,
               "targetProfile": "Archers (Front Rank)",
               "equipmentAdded": ["Pavise"],
               "equipmentRemoved": [],
@@ -30348,6 +30349,7 @@
             {
               "name": "Pavise",
               "pointsPerBase": 2,
+				"maxBases": 6,
               "targetProfile": "Retainers (Front Rank)",
               "equipmentAdded": ["Pavise"],
               "defenceModifier": -2
@@ -30726,6 +30728,7 @@
             {
               "name": "Pavise",
               "pointsPerBase": 2,
+				"maxBases": 6,
               "targetProfile": "Retainers (Front Rank)",
               "equipmentAdded": ["Pavise"],
               "defenceModifier": -2
