@@ -1881,7 +1881,8 @@
           "min": 0,
           "max": 20,
           "alliedArmyKeys": [
-			  "the_franks"
+			{"key": "Vikings", "supplement":"dark_age_armies"},	{"key": "the_franks"},{"key": "the_saxon"}
+
 		  ],
           "maxAlliedArmiesAllowed": 1
         }
@@ -2249,7 +2250,7 @@
           "min": 0,
           "max": 20,
           "alliedArmyKeys": [
-			  {"key": "the_avar"}, {"key": "early_bulgar", "supplement":"dark_age_armies"},{"key": "later_bulgar", "supplement":"dark_age_armies"}
+			  {"key": "the_avars"}, {"key": "early_bulgar", "supplement":"dark_age_armies"}
 		  ],
           "maxAlliedArmiesAllowed": 1
         }
