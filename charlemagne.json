@@ -2697,7 +2697,7 @@
           "min": 0,
           "max": 15,
           "alliedArmyKeys": [
-                     {"key": "Vikings", "supplement":"dark_age_armies"}
+             {"key": "vikings", "supplement":"dark_age_armies"}
           ],
           "maxAlliedArmiesAllowed": 1
         }
