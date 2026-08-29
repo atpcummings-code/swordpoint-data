@@ -42,7 +42,7 @@
           "alliedArmyKeys": [
             "dark_age_britain_and_ireland", "lir_"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -6142,7 +6142,7 @@
 			  {"key": "franks"},
 			  {"key": "goths"}
           ],
-          "maxAlliedArmiesAllowed": 3
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -7256,7 +7256,7 @@
             "gavk_ostrogoth",
             "gavk_Lombard"
           ],
-          "maxAlliedArmiesAllowed": 5
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -11720,7 +11720,7 @@
 			  {"key": "huns"},
 			  {"key": "avars"}
           ],
-          "maxAlliedArmiesAllowed": 3
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -13641,7 +13641,7 @@
             "early_slav",
             "bulgar"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         },
         {
           "id": "Allies",
@@ -14015,7 +14015,7 @@
           		  {"key": "alans", "supplement":"classical_armies"}, 
 
           ],
-          "maxAlliedArmiesAllowed": 5
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -14483,7 +14483,7 @@
 			  {"key": "magyar"},
 			  {"key": "early_turcoman"}
           ],
-          "maxAlliedArmiesAllowed": 3
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -14906,7 +14906,7 @@
           "alliedArmyKeys": [
             "early_khazar"
           ],
-          "maxAlliedArmiesAllowed": 3
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -19306,7 +19306,7 @@
 			  {"key": "christianised_rus"}
 			  
           ],
-          "maxAlliedArmiesAllowed": 5
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -20770,7 +20770,7 @@
 			    {"key": "pagan_rus"},
 			  {"key": "christianised_rus"}
           ],
-          "maxAlliedArmiesAllowed": 4
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -22226,7 +22226,7 @@
             "al_andalus_and_grenada_al_andalus",
             "al_andalus_and_grenada_taifa_kingdoms"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -22767,7 +22767,7 @@
           "alliedArmyKeys": [
             "al_andalus_and_grenada_taifa_kingdoms"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -23442,7 +23442,7 @@
           "alliedArmyKeys": [
             "al_andalus_and_grenada_taifa_kingdoms"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -24167,7 +24167,7 @@
             "later_irish",
             "later_saxon_kingdoms"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -24535,7 +24535,7 @@
             "magyar",
             "Khazar"
           ],
-          "maxAlliedArmiesAllowed": 5
+          "maxAlliedArmiesAllowed": 1
         },
         {
           "id": "Allies",
@@ -24570,7 +24570,7 @@
               ]
             }
           ],
-          "maxAlliedArmiesAllowed": 5
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -25091,7 +25091,7 @@
             "magyar",
             "khazar"
           ],
-          "maxAlliedArmiesAllowed": 5
+          "maxAlliedArmiesAllowed": 1
         },
         {
           "id": "Allies",
@@ -25126,7 +25126,7 @@
               ]
             }
           ],
-          "maxAlliedArmiesAllowed": 5
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -28109,7 +28109,7 @@
           "alliedArmyKeys": [
             "early_christian_spanish"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -28470,7 +28470,7 @@
           "alliedArmyKeys": [
             "medieval_spain", "middle_christian_spainish"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -30919,7 +30919,7 @@
             "dark_age_britain_and_ireland",
             "later_irish"
           ],
-          "maxAlliedArmiesAllowed": 3
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -36680,7 +36680,7 @@
               ]
             }
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         },
         {
           "id": "Elephants",
@@ -37514,7 +37514,7 @@
 			  {"key": "christian_crusaders_second_crusade", "supplement":"medieval_armies"},
 			  {"key": "christian_crusaders_later_crusades", "supplement":"medieval_armies"}
           ],
-          "maxAlliedArmiesAllowed": 4
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -40144,7 +40144,7 @@
             "early_medieval_wales",
             "later_irish"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -40523,7 +40523,7 @@
           "alliedArmyKeys": [
             "late_christian_spanish", "al_andalus_and_granada_nasrid_kingdom_of_granada"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -41069,7 +41069,7 @@
           "alliedArmyKeys": [
             "middle_christian_spanish", "al_andalus_and_grenada_nasrid_kingdoms"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -42187,7 +42187,7 @@
 			  { "key": "pecheneg"},
 		  {"key": "alans", "supplement":"classical_armies"}
 		  ], 
-          "maxAlliedArmiesAllowed": 3
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -43226,7 +43226,7 @@
 			  {"key": "christian_crusaders_first_crusade", "supplement":"medieval_armies"},
 			  {"key": "christian_crusaders_later_crusades", "supplement":"medieval_armies"}
           ],
-          "maxAlliedArmiesAllowed": 5
+          "maxAlliedArmiesAllowed": 1
          
         }
       ],
@@ -44170,7 +44170,7 @@
           "alliedArmyKeys": [
             "nab_italo_norman"
           ],
-          "maxAlliedArmiesAllowed": 2
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
