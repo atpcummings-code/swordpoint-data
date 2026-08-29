@@ -14,7 +14,7 @@
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 6
+          "max": 6E
         },
         {
           "id": "Infantry",
