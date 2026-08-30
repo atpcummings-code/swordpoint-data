@@ -39,9 +39,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 20,
-          "alliedArmyKeys": [
-            "dark_age_britain_and_ireland", "lir_"
-          ],
+       "alliedArmyKeys": [ { "key": "lir_imperial_field_army",  "excludesUnits": ["lir_imperial_field_army_foederati", "lir_imperial_field_army_catafractii_clibanarii","lir_imperial_field_army_legionaries","lir_imperial_field_army_legionaries_cf","lir_imperial_field_army_archers","lir_imperial_field_army_heavy_cavalry","lir_imperial_field_army_light_cavalry","lir_imperial_field_army_federate_infantry"] } ], 
           "maxAlliedArmiesAllowed": 1
         }
       ],
@@ -7346,7 +7344,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "lir_imperial_field_army_foederati ",
+          "id": "lir_imperial_field_army_foederati",
           "name": "Foederati ",
           "description": "May ride a horse,",
           "category": "Commanders",
