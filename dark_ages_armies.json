@@ -38559,7 +38559,7 @@
       ]
     },
     "early_capetian_france": {
-      "armyName": "XEarly Capetian France - 987 to early 12th Century",
+      "armyName": "Early Capetian France - 987 to early 12th Century",
       "categories": [
         {
           "id": "Commanders",
@@ -38800,70 +38800,28 @@
           ]
         },
 {
-        "id": "early_capetian_france_dismounted_knights_cf",
-        "name": "Combined Formation Dismounted Knights/Dismounted Sergeants",
-         "description": "Dismounted Knights have heavy armour, spear and shield. May exchange spear for halberd (+2) or double-handed weapon (+2). May form Combined Formation with Dismounted Sergeants up to 50%. Dismounted Sergeants have light armour, spear and shield. ",
-    	"category": "Infantry",      
-		"type": "Infantry",
-        "minBases": 3,
-        "maxBases": 12,
-	  	"combinedFormation":  
-		[
-		{ "label": "25%", "disableSubProfiles": ["Dismounted Sergeants","Dismounted knights/Dismounted Sergeants (Front Row)"]},
-		{ "label": "50%", "disableSubProfiles": ["Dismounted knights/Dismounted Sergeants (Front Row)","Dismounted knights/Dismounted Sergeants (Rear Row)" ]}
-		],
-       "subProfiles": [
-       	{
-        "name": "Dismounted knights/Dismounted Sergeants (Front Row)",
-        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-        "defence": 4,
-        "cohesion": 8,
-    	"pointsPerBase": 26,
-		"minBases": 3,
-	  	"maxBases": 6,
-        "baseEquipment": ["Spear","Shield","Heavy Armour"],
-        "specialRules": ["Close Order"],
-        },
-		{
-		"name": "Dismounted knights",
-		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-        "defence": 4,
-        "cohesion": 8,
-    	"pointsPerBase": 26,
-		"minBases": 3,
-		"maxBases": 12,
-        "baseEquipment": ["Javelins", "Spear", "Shield"],
-        "specialRules": ["Close Order"],
-		},
-		{
-		"name": "Dismounted Sergeants",
-		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Dismounted knights", "expression": "lessThanOrEqual", "ratio": 1 },
-        "defence": 5,
-        "cohesion": 6,
-    	"pointsPerBase": 14,
-		"minBases": 1,
-        "baseEquipment": ["Spear","Shield","Light Armour"],
-        "specialRules": ["Close Order"],
-		},
-		{
-		"name": "Dismounted knights/Dismounted Sergeants (Rear Row)",
-		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Dismounted knights", "expression": "lessThanOrEqual", "ratio": 1 },
-        "defence": 4,
-        "cohesion": 8,
-    	"pointsPerBase": 26,
-		"minBases": 1,
-		"maxBases": 6,
-        "baseEquipment": ["Javelins", "Spear", "Shield", "Bow"],
-        "specialRules": ["Close Order"],
-		}        
-		],
-		"optionalEquipment": [
-		            {
+          "id": "early_capetian_france_dismounted_sergeants",
+          "name": "Dismounted SergeantsXXX",
+          "description": "Disounted Sergeants have light armour, spear and shield.",
+          "category": "knightsandRetainers",
+          "type": "Commander",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
               "name": "Halberd",
               "disables": "Double-handed Weapon",
-		"targetProfile": ["Dismounted knights/Dismounted Sergeants (Rear Row)", "Dismounted knights/Dismounted Sergeants (Front Row)", "Dismounted knights"],
               "pointsModifier": 2,
               "equipmentAdded": [
                 "Halberd"
@@ -38879,7 +38837,107 @@
             {
               "name": "Double-handed Weapon",
               "disables": "Halberd",
-		"targetProfile": ["Dismounted knights/Dismounted Sergeants (Rear Row)", "Dismounted knights/Dismounted Sergeants (Front Row)", "Dismounted knights"],
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Double-handed Weapon"
+              ],
+              "equipmentRemoved": [
+                "Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+{
+          "id": "early_capetian_france_dismounted_knights_cf",
+          "name": "Combined Formation Dismounted Knights/Dismounted Sergeants",
+          "description": "Dismounted Knights have heavy armour, spear and shield. May exchange spear for halberd (+2) or double-handed weapon (+2). May form Combined Formation with Dismounted Sergeants up to 50%. Dismounted Sergeants have light armour, spear and shield.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Dismounted Sergeants","Dismounted Knights/Dismounted Sergeants (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Dismounted Knights/Dismounted Sergeants (Front Row)","Dismounted Knights/Dismounted Sergeants (Rear Row)" ]}
+		],
+          "subProfiles": [
+
+       	{
+        "name": "Dismounted Knights/Dismounted Sergeants (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 4,
+        "cohesion": 8,
+    	"pointsPerBase": 26,
+	"minBases": 3,
+	"maxBases": 6,
+        "baseEquipment": ["Spear","Shield","Heavy Armour"],
+        "specialRules": ["Close Order"],
+        },
+		{
+		"name": "Dismounted Knights",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": 		"Combined Formation", "target": "all" } ] },
+        	"defence": 4,
+        	"cohesion": 8,
+    		"pointsPerBase": 26,
+		"minBases": 3,
+		"maxBases": 12,
+        	"baseEquipment": ["Javelins", "Spear", "Shield"],
+        	"specialRules": ["Close Order"],
+		},
+		{
+		"name": "Dismounted Sergeants",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": 		"Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Dismounted Knights", "expression": 				"lessThanOrEqual", "ratio": 1 },
+        	"defence": 5,
+        	"cohesion": 6,
+    		"pointsPerBase": 14,
+		"minBases": 1,
+        	"baseEquipment": ["Spear","Shield","Light Armour"],
+       		 "specialRules": ["Close Order"],
+		},
+		{
+		"name": "Dismounted Knights/Dismounted Sergeants (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": 		"Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Dismounted Knights", "expression": 				"lessThanOrEqual", "ratio": 1 },
+        	"defence": 4,
+       		"cohesion": 8,
+    		"pointsPerBase": 26,
+		"minBases": 1,
+		"maxBases": 6,
+       		"baseEquipment": ["Javelins", "Spear", "Shield", "Bow"],
+        	"specialRules": ["Close Order"],
+		}        
+		
+            
+            ],
+	"optionalEquipment": [
+		            {
+              "name": "Halberd",
+              "disables": "Double-handed Weapon",
+	      "targetProfile": ["Dismounted Knights/Dismounted Sergeants (Rear Row)", "Dismounted Knights/Dismounted Sergeants (Front Row)", "Dismounted Knights"],
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Halberd"
+              ],
+              "equipmentRemoved": [
+                "Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Double-handed Weapon",
+              "disables": "Halberd",
+		"targetProfile": ["Dismounted Knights/Dismounted Sergeants (Rear Row)", "Dismounted Knights/Dismounted Sergeants (Front Row)", "Dismounted Knights"],
               "pointsModifier": 2,
               "equipmentAdded": [
                 "Double-handed Weapon"
@@ -38926,9 +38984,7 @@
             },
 			
 	]
-},
-
-
+        },
 
 		  
         {
@@ -39462,135 +39518,7 @@
             }
           ]
         },
-{
-        "id": "late_capetian_france_dismounted_knights_cf",
-        "name": "Combined Formation Dismounted Knights/Dismounted Sergeants",
-         "description": "Dismounted Knights have heavy armour, spear and shield. May exchange spear for halberd (+2) or double-handed weapon (+2). May form Combined Formation with Dismounted Sergeants up to 50%. Dismounted Sergeants have light armour, spear and shield. ",
-    	"category": "Infantry",      
-		"type": "Infantry",
-        "minBases": 3,
-        "maxBases": 12,
-  
-	  	"combinedFormation":  
-		[
-		{ "label": "25%", "disableSubProfiles": ["Dismounted Sergeants","Dismounted knights/Dismounted Sergeants (Front Row)"]},
-		{ "label": "50%", "disableSubProfiles": ["Dismounted knights/Dismounted Sergeants (Front Row)","Dismounted knights/Dismounted Sergeants (Rear Row)" ]}
-		],
-       "subProfiles": [
-       	{
-        "name": "Dismounted knights/Dismounted Sergeants (Front Row)",
-        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-        "defence": 4,
-        "cohesion": 8,
-    	"pointsPerBase": 26,
-		"minBases": 3,
-	  	"maxBases": 6,
-        "baseEquipment": ["Spear","Shield","Heavy Armour"],
-        "specialRules": ["Close Order"],
-        },
-		{
-		"name": "Dismounted knights",
-		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-        "defence": 4,
-        "cohesion": 8,
-    	"pointsPerBase": 26,
-		"minBases": 3,
-		"maxBases": 12,
-        "baseEquipment": ["Javelins", "Spear", "Shield"],
-        "specialRules": ["Close Order"],
-		},
-		{
-		"name": "Dismounted Sergeants",
-		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Dismounted knights", "expression": "lessThanOrEqual", "ratio": 1 },
-        "defence": 5,
-        "cohesion": 6,
-    	"pointsPerBase": 14,
-		"minBases": 1,
-        "baseEquipment": ["Spear","Shield","Light Armour"],
-        "specialRules": ["Close Order"],
-		},
-		{
-		"name": "Dismounted knights/Dismounted Sergeants (Rear Row)",
-		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-		"compareWithSubProfile": { "name": "Dismounted knights", "expression": "lessThanOrEqual", "ratio": 1 },
-        "defence": 4,
-        "cohesion": 8,
-    	"pointsPerBase": 26,
-		"minBases": 1,
-		"maxBases": 6,
-        "baseEquipment": ["Javelins", "Spear", "Shield", "Bow"],
-        "specialRules": ["Close Order"],
-		}        
-		],
-		"optionalEquipment": [
-		            {
-              "name": "Halberd",
-              "disables": "Double-handed Weapon",
-		"targetProfile": ["Dismounted knights/Dismounted Sergeants (Rear Row)", "Dismounted knights/Dismounted Sergeants (Front Row)", "Dismounted knights"],
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Halberd"
-              ],
-              "equipmentRemoved": [
-                "Spear"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Double-handed Weapon",
-              "disables": "Halberd",
-		"targetProfile": ["Dismounted knights/Dismounted Sergeants (Rear Row)", "Dismounted knights/Dismounted Sergeants (Front Row)", "Dismounted knights"],
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Double-handed Weapon"
-              ],
-              "equipmentRemoved": [
-                "Spear"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-{
-              "name": "Halberd",
-			  "disables": ["Double-handed Weapon"],
-"targetProfile": "Dismounted Sergeants",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Halberd"
-              ],
-              "equipmentRemoved": [
-                "Spear"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Double-handed Weapon",
-              "disables": ["Halberd"],
-"targetProfile": "Dismounted Sergeants",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Double-handed Weapon"
-              ],
-              "equipmentRemoved": [
-                "Spear"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-			
-	]
-},		  
+	  
         {
           "id": "late_capetian_france_militia",
           "name": "Militia",
