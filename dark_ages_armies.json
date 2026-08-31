@@ -13526,7 +13526,7 @@
           "max": 100,
           "alliedArmyKeys": [
             "early_slav",
-            "bulgar"
+            "early_bulgar"
           ],
           "maxAlliedArmiesAllowed": 1
         },
@@ -13538,7 +13538,7 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "lombards"
+            "gavk_lombards"
           ],
           "maxAlliedArmiesAllowed": 1
         }
