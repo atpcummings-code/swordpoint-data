@@ -7,7 +7,7 @@
         {
           "id": "Commanders",
           "name": "Commanders",
-          "constraintType": "count",
+          "constraintType": "count",Ost
           "min": 0,
           "max": 8
         },
@@ -4609,6 +4609,65 @@
             }
           ]
         },
+{
+          "id": "gavk_ostrogoth_elite_warriors_cu",
+          "name": "Combined Unit Elite Warriors/Warriors",
+          "description": "Elite Warriors have light armour, spear and shield. Superior Fighters. May exchange spear for throwing spear (+2) and may be Riding Horses (+1). Elite Warriors and Warriors may form a Combined Unit where up to 75% of the bases may be Warriors.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Elite Warriors",
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 20,
+              "minBases": 1,
+              "maxBases": 12,
+              "baseEquipment": ["Light Armour", "Shield", "Spear"],
+              "specialRules": ["Close Order", "Superior Fighters"]
+            },
+            {
+              "name": "Warriors",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 6,
+              "pointsPerBase": 12,
+              "minBases": 0,
+              "maxBases": 9,
+              "maxPercentage": 75,
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+"optionalEquipment": [
+  {
+              "name": "Throwing Spear (Elite Warriors)",
+              "targetProfile": "Elite Warriors",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }, 
+
+]
+        },
+		  
         {
           "id": "gavk_ostrogoth_berber_cavalry",
           "name": "Berber Cavalry",
@@ -6176,7 +6235,7 @@
           "alliedArmyKeys": [
 			  {"key": "alans", "supplement":"classical_armies"}, 
 			  {"key": "franks"},
-			  {"key": "goths"}
+			  {"key": "gavk_visigoth"}
           ],
           "maxAlliedArmiesAllowed": 1
         }
@@ -15091,7 +15150,7 @@
         {
           "id": "heraclian_byzantine_cavalry_cf",
           "name": "Combined Formation Cavalry",
-          "description": "Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1). They may use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. These should not receive heavy armour.",
+          "description": "Cavalry have light armour, spear and shield. Superior Fighters. They may have heavy armour (+1). They may use Combined Formation with up to half their models exchanging spear for bow (free) and forming the rear rows. They loose Superior Fighters,  but gain Superior Shooters. These should not receive heavy armour.",
           "category": "Cavalry",
           "type": "Commander",
           "minBases": 3,
@@ -15117,7 +15176,7 @@
               "maxBases": 4,
               "maxPercentage": 50,
               "baseEquipment": ["Light Armour", "Bow", "Shield"],
-              "specialRules": ["Open Order", "Superior Fighters"]
+              "specialRules": ["Open Order", "Superior Shooters"]
             }
             
             ],
@@ -23998,7 +24057,7 @@
           ]
         },
         {
-          "id": "late_christian_spanish_ballesteros",
+          "id": "late_christian_spanish_militia_crossbowmen",
           "name": "Militia Crossbowmen",
           "description": "Militia Crossbowmen have a crossbow. Inferior Shooters. Open Order. May have light armour (+2) and shield (+2). May be fielded as skirmishers at a cost of seven points per base. There may not be more units of crossbowmen than there are units of Prones in the army.",
           "category": "Infantry",
@@ -26854,99 +26913,7 @@
           "specialRules": ["Skirmishers", "Inferior Fighters"],
           "optionalEquipment": [],
               
-            },
-
-    {
-          "id": "early_arab_conquest_religious_volunteers",
-          "name": "Religious Volunteers",
-          "description": "Religious Volunteers have throwing spear and shield. Warband. May have large shield (+2) and be Riding Camels (_1). May be stubborn (+2). Every second Religious Volunteers unit may have light armour (+2). Unarmoured units may instead be fielded with Throwing spear and shield. Skirmishers. (no longer Warband) at a cost of eight points per base",
-          "category": "Allies",
-          "type": "Commander",
-          "defence": 6,
-    "maxCountAllowed": 2,
-          "cohesion": 7,
-          "pointsPerBase": 18,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Throwing Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order",
-            "Warband"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Skirmishers",
-              "disables": "Light Armour",
-              "pointsModifier": -10,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": [
-                "Skirmishers"
-              ],
-              "rulesRemoved": [
-                "Open Order",
-                "Warband"
-              ],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Light Armour",
-              "disables": "Skirmishers",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Light Armour"
-              ],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "enabledEvery": 2,
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Large Shield",
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Large Shield"
-              ],
-              "equipmentRemoved": [
-                "Shield"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Riding Camels",
-              "pointsModifier": 1,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": [
-                "Riding Camels"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Stubborn",
-              "pointsModifier": 2,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": [
-                "Stubborn"
-              ],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-           }
-          ]
-        }
+            }
       ]
     },
  "arab_caliphate_fatimid_caliphate": {
