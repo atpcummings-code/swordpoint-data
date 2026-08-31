@@ -4854,6 +4854,7 @@
         }
       ]
     },
+
     "gavk_Lombard": {
       "armyName": "Gothic and Vandal Kingdoms (Lombard Armies) 400 to 1018 AD",
       "exclusiveGroups": [
@@ -5172,9 +5173,7 @@
             {
               "name": "Riding Horses",
               "pointsModifier": 1,
-              "equipmentAdded": [
-                "Riding Horses"
-              ],
+              "equipmentAdded": ["Riding Horses"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -5183,7 +5182,6 @@
             }
           ]
         },
-        
             {
               "name": "Skirmishers",
               "disables": [
