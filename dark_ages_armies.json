@@ -31117,7 +31117,7 @@
 {
 "id": "later_saxon_kingdoms_fyrd_cu",
           "name": "Combined Unit Thegns/Fyrd",
-          "description": "Fyrd have a spear and shield. Shieldwall. Warband. may exchange spear for throwing spear (+2). May throw rocks or javelins (+2).  Thegns have spear and shield. Superior Fighters. Shieldwall. Warband. May exchange spear for throwing Spear(+2). May have light armour (+2) and javelins (+2). May be Veteran (+2).  All spear armed Saxon troops in the army should be armed with the same type of spear. Thegns may form combined unit with Fyrd. They may form up to 66% of such units.",
+          "description": "Fyrd have a spear and shield. Shieldwall. Warband. may exchange spear for throwing spear (+2). May throw rocks or javelins (+2).  Thegns have spear and shield. Superior Fighters. Shieldwall. Warband. May exchange spear for throwing Spear(+2). May have light armour (+2) and javelins (+2). May be Veteran (+2).  All spear armed Saxon troops in the army should be armed with the same type of spear. Thegns may form combined unit with Fyrd. They may form up to 2/3 of such units.",
           "category": "Infantry",
           "type": "Infantry",
           "minBases": 3,
@@ -31131,7 +31131,7 @@
               "pointsPerBase": 20,
               "minBases": 1,
               "maxBases": 8,
-              "maxPercentage": 66,
+              "maxPercentage": 66.7,
               "baseEquipment": ["Spear", "Shield"],
               "specialRules": ["Close Order", "Superior Fighters", "Shieldwall", "Warband"]
             },
