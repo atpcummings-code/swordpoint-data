@@ -29964,10 +29964,10 @@
           "optionalEquipment": [],
               
             },
-    {
-          "id": "early_japanese_Archers",
-                "name": "Archers",
-          "description": "Archers have a bow. May have pavises (+2) for front rank only.",
+    		  {
+          "id": "early_japanese_Archers_cu",
+                "name": "Archers (Front Rank Pavise)",
+          "description": "Archers have a bow. They form a Combined Formation where the front rank has pavises (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "minBases": 3,
@@ -29976,12 +29976,13 @@
             {
               "name": "Archers (Front Rank)",
               "stats": {
-                "D": 7,
+                "D": 5,
                 "C": 6
               },
               "pointsPerBase": 12,
 			"minBases": 3,
-              "baseEquipment": ["Bow"],
+				"maxBases": 6,
+              "baseEquipment": ["Bow", "Pavise"],
               "specialRules": ["Close Order"]
             },
             {
@@ -29991,21 +29992,14 @@
                 "C": 6
               },
               "pointsPerBase": 12,
+				"minBases": 1,
+				"maxBases": 6,
               "baseEquipment": ["Bow"],
               "specialRules": ["Close Order"]
+			"compareWithSubProfile": { "name": "Archers (Front Rank)", "expression": "lessThanOrEqual", "ratio": 1 }
             }
           ],
-          "optionalEquipment": [
-            {
-              "name": "Pavise",
-              "pointsPerBase": 2,
-				"maxBases": 6,
-              "targetProfile": "Archers (Front Rank)",
-              "equipmentAdded": ["Pavise"],
-              "equipmentRemoved": [],
-              "defenceModifier": -2,
-            },
-		  ],
+          "optionalEquipment": []
 	},
         {
           "id": "early_japanese_emishi_infantry",
