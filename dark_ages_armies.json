@@ -37134,6 +37134,7 @@
           "type": "Commander",
           "minBases": 1,
           "maxBases": 1,
+		"maxPerPointsLimit": { "pointsThreshold": 333, "rounding": "floor" },
           "subProfiles": [
             {
               "name": "Elephant",
@@ -42042,7 +42043,7 @@
         {
           "id": "north_african_berbers_onabd_ghuzz_horse_archers",
           "name": "Ghuzz Horse Archers",
-          "description": "Ghuzz Horse have a bow. May have shield (+1) and throwing spear (+1). Superior Shooters. Nomad Cavalry. May be fielded as skirmishers with Parthian Shot.",
+          "description": "Ghuzz Horse Archers have a bow. May have shield (+1) and throwing spear (+1). Superior Shooters. Nomad Cavalry. May be fielded as skirmishers with Parthian Shot.",
           "category": "Mercenaries",
           "type": "Commander",
           "defence": 6,
