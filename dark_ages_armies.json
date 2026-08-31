@@ -28109,9 +28109,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [
-            "early_christian_spanish"
-          ],
+          "alliedArmyKeys": ["north_african_berbers_almoravid","north_african_berbers_almohad","early_christian_spanish"],
           "maxAlliedArmiesAllowed": 1
         }
       ],
@@ -28470,9 +28468,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
-          "alliedArmyKeys": [
-            "medieval_spain", "middle_christian_spainish"
-          ],
+          "alliedArmyKeys": ["north_african_berbers_almoravid","north_african_berbers_almohad","middle_christian_spanish"],
           "maxAlliedArmiesAllowed": 1
         }
       ],
