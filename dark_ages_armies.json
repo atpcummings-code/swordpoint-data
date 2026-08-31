@@ -5179,7 +5179,7 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }
+            },
             {
               "name": "Skirmishers",
               "disables": ["Spear","Shield","Bow","Javelins","Heavy Armour"],
