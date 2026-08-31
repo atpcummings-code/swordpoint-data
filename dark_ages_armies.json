@@ -36652,15 +36652,8 @@
             {"key": "hindu_india_standard",  "excludesUnits": ["elephant"]}
           ],
           "maxAlliedArmiesAllowed": 1
-        },
-        {
-          "id": "GhaznavidElephant",
-          "name": "Elephants",
-          "constraintType": "pointsRatio",
-          "pointsThreshold": 333,
-          "countPerThreshold": 1,
-          "rounding": "down"
         }
+        
       ],
       "units": [
         {
@@ -37020,7 +37013,7 @@
           "id": "ghaznavid_persian_cavalry",
           "name": "Persian Cavalry",
           "description": "Persian Cavalry have light armour and bow. Superior Shooters. May have heavy armour (+1).",
-          "category": "SpecialTroops",
+          "category": "Allies",
           "type": "Commander",
           "defence": 5,
           "cohesion": 7,
@@ -37056,7 +37049,7 @@
           "id": "ghaznavid_khwaresmian_cavalry",
           "name": "Khwaresmian Cavalry",
           "description": "Khwaresmian Cavalry have light a bow. Skirmishers. Inferior Fighters. Nomad Cavalry.",
-          "category": "SpecialTroops",
+          "category": "Allies",
           "type": "Commander",
           "defence": 6,
           "cohesion": 6,
@@ -37137,7 +37130,7 @@
           "id": "GhaznavidElephant",
           "name": "Elephant",
           "description": "Mahouts have heavy armour. The two crewmen have heavy armour and javelins. May exchange javelins for bow (free).  Both the elephant and crew are Superior Fighters. The crew ride on the elpehants back in this period. May have barding (+4).",
-          "category": "SpecialUnits",
+          "category": "Allies",
           "type": "Commander",
           "minBases": 1,
           "maxBases": 1,
