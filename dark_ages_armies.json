@@ -38862,8 +38862,8 @@
 		],
 		"optionalEquipment": [
 		            {
-              "name": "Halberd",
-              "disables": "Double-handed Weapon",
+              "name": "Halberd (Dismounted Knights)",
+              "disables": "Double-handed Weapon (Dismounted Knights)",
 	      "targetProfile": ["Dismounted Knights/Dismounted Sergeants (Rear Row)", "Dismounted Knights/Dismounted Sergeants (Front Row)", "Dismounted Knights"],
               "pointsModifier": 2,
               "equipmentAdded": [
@@ -38878,8 +38878,8 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Double-handed Weapon",
-              "disables": "Halberd",
+              "name": "Double-handed Weapon (Dismounted Knights)",
+              "disables": "Halberd (Dismounted Knights)",
 		"targetProfile": ["Dismounted Knights/Dismounted Sergeants (Rear Row)", "Dismounted Knights/Dismounted Sergeants (Front Row)", "Dismounted Knights"],
               "pointsModifier": 2,
               "equipmentAdded": [
@@ -38894,8 +38894,8 @@
               "cohesionModifier": 0
             },
 {
-              "name": "Halberd",
-			  "disables": ["Double-handed Weapon"],
+              "name": "Halberd (Dismounted Sergeants)",
+			  "disables": ["Double-handed Weapon (Dismounted Sergeants)"],
 "targetProfile": "Dismounted Sergeants",
               "pointsModifier": 2,
               "equipmentAdded": [
@@ -38910,8 +38910,8 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Double-handed Weapon",
-              "disables": ["Halberd"],
+              "name": "Double-handed Weapon (Dismounted Sergeants)",
+              "disables": ["Halberd (Dismounted Sergeants)"],
 "targetProfile": "Dismounted Sergeants",
               "pointsModifier": 2,
               "equipmentAdded": [
@@ -39524,8 +39524,8 @@
 		],
 		"optionalEquipment": [
 		            {
-              "name": "Halberd",
-              "disables": "Double-handed Weapon",
+              "name": "Halberd (Dismounted Knights)",
+              "disables": "Double-handed Weapon (Dismounted Knights)",
 	      "targetProfile": ["Dismounted Knights/Dismounted Sergeants (Rear Row)", "Dismounted Knights/Dismounted Sergeants (Front Row)", "Dismounted Knights"],
               "pointsModifier": 2,
               "equipmentAdded": [
@@ -39540,8 +39540,8 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Double-handed Weapon",
-              "disables": "Halberd",
+              "name": "Double-handed Weapon (Dismounted Knights)",
+              "disables": "Halberd (Dismounted Knights)",
 		"targetProfile": ["Dismounted Knights/Dismounted Sergeants (Rear Row)", "Dismounted Knights/Dismounted Sergeants (Front Row)", "Dismounted Knights"],
               "pointsModifier": 2,
               "equipmentAdded": [
@@ -39556,8 +39556,8 @@
               "cohesionModifier": 0
             },
 {
-              "name": "Halberd",
-			  "disables": ["Double-handed Weapon"],
+              "name": "Halberd (Dismounted Sergeants)",
+			  "disables": ["Double-handed Weapon (Dismounted Sergeants)"],
 "targetProfile": "Dismounted Sergeants",
               "pointsModifier": 2,
               "equipmentAdded": [
@@ -39572,8 +39572,8 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Double-handed Weapon",
-              "disables": ["Halberd"],
+              "name": "Double-handed Weapon (Dismounted Sergeants)",
+              "disables": ["Halberd (Dismounted Sergeants)"],
 "targetProfile": "Dismounted Sergeants",
               "pointsModifier": 2,
               "equipmentAdded": [
