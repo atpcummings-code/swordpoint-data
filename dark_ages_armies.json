@@ -24427,8 +24427,8 @@
             {"key": "early_slav"},
             {"key": "pecheneg","disables": ["pecheneg"]},
              {"key": "magyar","disables": [ "magyar"]},
-			  {"key": "early_khazar","disables": [ "magyar"]},
-			  {"key": "later_khazar","disables": [ "magyar"]}
+			  {"key": "early_khazar","disables": [ "early_khazar"]},
+			  {"key": "later_khazar","disables": [ "later_khazar"]}
           ],
           "maxAlliedArmiesAllowed": 1
         }
