@@ -4043,7 +4043,7 @@
     },
     "gavk_ostrogoth": {
     "armyName": "Gothic and Vandal Kingdoms (Ostrogoth Armies) 380 to 550 AD",
-
+"armyValidation": [ { "ids": ["gavk_ostrogoth_byzantine_light_cavalry", "gavk_ostrogoth_byzantine_cavalry", "gavk_ostrogoth_berber_cavalry"], "expression": "lessThanOrEqual", "value": 2, "countBy": "units" } ],
 		"exclusiveGroups": [
         [
           "gavk_ostrogoth_comitatus_foot",
