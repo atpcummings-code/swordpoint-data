@@ -13524,10 +13524,7 @@
           "constraintType": "percentage",
           "min": 25,
           "max": 100,
-          "alliedArmyKeys": [
-            "early_slav",
-            "early_bulgar"
-          ],
+          "alliedArmyKeys": ["early_slav","early_bulgar"],
           "maxAlliedArmiesAllowed": 1
         },
         {
@@ -13537,9 +13534,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [
-            "gavk_lombard"
-          ],
+          "alliedArmyKeys": ["gavk_lombard"],
           "maxAlliedArmiesAllowed": 1
         }
       ],
@@ -24384,7 +24379,7 @@
       ]
     },
     "pagan_rus": {
-      "armyName": "Pagan Rus - 750 to 1250 AD",
+      "armyName": "Pagan Rus - 750 to 950 AD",
       "armyValidation": [
         {
           "id": "pagan_rus_militia",
@@ -24417,11 +24412,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [
-            "pecheneg",
-            "magyar",
-            "Khazar"
-          ],
+          "alliedArmyKeys": ["pecheneg","magyar","early_khazar","later_khazar"],
           "maxAlliedArmiesAllowed": 1
         },
         {
@@ -24432,30 +24423,12 @@
           "min": 0,
           "max": 20,
           "alliedArmyKeys": [
-            {
-              "key": "vikings"
-            },
-            {
-              "key": "early_slav"
-            },
-            {
-              "key": "pecheneg",
-              "disables": [
-                "pecheneg"
-              ]
-            },
-            {
-              "key": "khazar",
-              "disables": [
-                "khazar"
-              ]
-            },
-            {
-              "key": "magyar",
-              "disables": [
-                "magyar"
-              ]
-            }
+            {"key": "vikings"},
+            {"key": "early_slav"},
+            {"key": "pecheneg","disables": ["pecheneg"]},
+             {"key": "magyar","disables": [ "magyar"]},
+			  {"key": "early_khazar","disables": [ "magyar"]},
+			  {"key": "later_khazar","disables": [ "magyar"]}
           ],
           "maxAlliedArmiesAllowed": 1
         }
