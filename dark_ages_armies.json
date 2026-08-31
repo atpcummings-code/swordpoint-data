@@ -7,7 +7,7 @@
         {
           "id": "Commanders",
           "name": "Commanders",
-          "constraintType": "count",Ost
+          "constraintType": "count",
           "min": 0,
           "max": 8
         },
