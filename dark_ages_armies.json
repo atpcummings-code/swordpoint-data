@@ -35719,7 +35719,7 @@
           "max": 50,
           "alliedArmyKeys": [
             {
-              "key": "arab_caliphate_abbasid",
+              "key": "arab_caliphate_abbasid_caliphate",
               "excludesUnits": [
                 "daylami_light_infantry"
               ]
