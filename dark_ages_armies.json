@@ -4855,7 +4855,7 @@
       ]
     },
 
-    "gavk_Lombard": {
+    "gavk_lombard": {
       "armyName": "Gothic and Vandal Kingdoms (Lombard Armies) 400 to 1018 AD",
       "exclusiveGroups": [
         [
@@ -7141,7 +7141,7 @@
             "gavk_visigoth",
             "gavk_vandal_armies_no_allies",
             "gavk_ostrogoth",
-            "gavk_Lombard"
+            "gavk_lombard"
           ],
           "maxAlliedArmiesAllowed": 1
         }
@@ -13538,7 +13538,7 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "gavk_lombards"
+            "gavk_lombard"
           ],
           "maxAlliedArmiesAllowed": 1
         }
@@ -29159,7 +29159,7 @@
           "min": 0,
           "max": 50,
           "alliedArmyKeys": [
-            "gavk_Lombard",
+            "gavk_lombard",
             "later_slave"
           ],
           "maxAlliedArmiesAllowed": 1
