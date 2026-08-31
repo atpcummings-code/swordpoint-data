@@ -28884,9 +28884,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
-          "alliedArmyKeys": [
-            "medieval_spain"
-          ],
+          "alliedArmyKeys": [{"key": "medieval_spanish_a", "supplement":"medieval_armies"}],
           "maxAlliedArmiesAllowed": 1
         }
       ],
