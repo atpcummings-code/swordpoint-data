@@ -42051,8 +42051,8 @@
           ]
         },
         {
-          "id": "north_african_berbers_onabd_ghuzz_horse",
-          "name": "Ghuzz Horse",
+          "id": "north_african_berbers_onabd_ghuzz_horse_archers",
+          "name": "Ghuzz Horse Archers",
           "description": "Ghuzz Horse have a bow. May have shield (+1) and throwing spear (+1). Superior Shooters. Nomad Cavalry. May be fielded as skirmishers with Parthian Shot.",
           "category": "Mercenaries",
           "type": "Commander",
