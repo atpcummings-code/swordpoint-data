@@ -38695,6 +38695,70 @@
           ],
           "optionalEquipment": []
         },
+
+		  {
+        "id": "early_capetian_france_Mounted_knights_cf",
+        "name": "Combined Formation Mounted Knights/Mounted Sergeants",
+         "description": "Mounted Knights have heavy armour, spear and shield. Superior Fighters. Impetuous. Shock Cavalry. May form Combined Formation with Mounted Sergeants up to 50%. Mounted Sergeants have light armour, spear and shield.",
+    	"category": "knightsandRetainers",      
+	"type": "Infantry",
+        "minBases": 3,
+        "maxBases": 8,
+  
+	  	"combinedFormation":  
+		[
+		{ "label": "25%", "disableSubProfiles": ["Mounted Sergeants","Mounted Knights/Mounted Sergeants (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mounted Knights/Mounted Sergeants (Front Row)","Mounted Knights/Mounted Sergeants (Rear Row)" ]}
+		],
+       "subProfiles": [
+       	{
+        "name": "Mounted Knights/Mounted Sergeants (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 3,
+        "cohesion": 8,
+    	"pointsPerBase": 27,
+	"minBases": 3,
+	"maxBases": 4,
+        	"baseEquipment": ["Heavy Armour", "Spear", "Shield"],
+        	"specialRules": ["Open Order", "Superior Fighters","Impetuous", "Shock Cavalry"],
+        },
+		{
+		"name": "Mounted Knights",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": 		"Combined Formation", "target": "all" } ] },
+        	"defence": 3,
+        	"cohesion": 8,
+    		"pointsPerBase": 27,
+		"minBases": 3,
+		"maxBases": 8,
+        	"baseEquipment": ["Heavy Armour", "Spear", "Shield"],
+        	"specialRules": ["Open Order", "Superior Fighters","Impetuous", "Shock Cavalry"],
+		},
+		{
+		"name": "Mounted Sergeants",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": 		"Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Mounted Knights", "expression": 				"lessThanOrEqual", "ratio": 1 },
+        	"defence": 4,
+        	"cohesion": 6,
+    		"pointsPerBase": 17,
+		"minBases": 1,
+        	"baseEquipment": ["Spear","Shield","Light Armour"],
+       		 "specialRules": ["Open Order"],
+		},
+		{
+		"name": "Mounted Knights/Mounted Sergeants (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": 		"Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Mounted Knights", "expression": 				"lessThanOrEqual", "ratio": 1 },
+        	"defence": 3,
+       		"cohesion": 8,
+    		"pointsPerBase": 27,
+		"minBases": 1,
+		"maxBases": 4,
+        	"baseEquipment": ["Heavy Armour", "Spear", "Shield"],
+        	"specialRules": ["Open Order", "Superior Fighters","Impetuous", "Shock Cavalry"],
+		}        
+		],
+		"optionalEquipment": []
+},	
         {
           "id": "early_capetian_france_dismounted_knights",
           "name": "Dismounted Knights",
@@ -39339,6 +39403,100 @@
             }
           ]
         },
+
+		  {
+        "id": "late_capetian_france_Mounted_knights_cf",
+        "name": "Combined Formation Mounted Knights/Mounted Sergeants",
+         "description": "Mounted Knights have heavy armour, spear and shield. Superior Fighters. Impetuous. Shock Cavalry. May form Combined Formation with Mounted Sergeants up to 50%. Mounted Sergeants have light armour, spear and shield.",
+    	"category": "knightsandRetainers",      
+	"type": "Infantry",
+        "minBases": 3,
+        "maxBases": 8,
+  
+	  	"combinedFormation":  
+		[
+		{ "label": "25%", "disableSubProfiles": ["Mounted Sergeants","Mounted Knights/Mounted Sergeants (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mounted Knights/Mounted Sergeants (Front Row)","Mounted Knights/Mounted Sergeants (Rear Row)" ]}
+		],
+       "subProfiles": [
+       	{
+        "name": "Mounted Knights/Mounted Sergeants (Front Row)",
+        "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+        "defence": 3,
+        "cohesion": 8,
+    	"pointsPerBase": 27,
+	"minBases": 3,
+	"maxBases": 4,
+        	"baseEquipment": ["Heavy Armour", "Spear", "Shield"],
+        	"specialRules": ["Open Order", "Superior Fighters","Impetuous", "Shock Cavalry"],
+        },
+		{
+		"name": "Mounted Knights",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": 		"Combined Formation", "target": "all" } ] },
+        	"defence": 3,
+        	"cohesion": 8,
+    		"pointsPerBase": 27,
+		"minBases": 3,
+		"maxBases": 8,
+        	"baseEquipment": ["Heavy Armour", "Spear", "Shield"],
+        	"specialRules": ["Open Order", "Superior Fighters","Impetuous", "Shock Cavalry"],
+		},
+		{
+		"name": "Mounted Sergeants",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": 		"Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Mounted Knights", "expression": 				"lessThanOrEqual", "ratio": 1 },
+        	"defence": 4,
+        	"cohesion": 6,
+    		"pointsPerBase": 17,
+		"minBases": 1,
+        	"baseEquipment": ["Spear","Shield","Light Armour"],
+       		 "specialRules": ["Open Order"],
+		},
+		{
+		"name": "Mounted Knights/Mounted Sergeants (Rear Row)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": 		"Combined Formation", "target": "all" } ] },
+		"compareWithSubProfile": { "name": "Mounted Knights", "expression": 				"lessThanOrEqual", "ratio": 1 },
+        	"defence": 3,
+       		"cohesion": 8,
+    		"pointsPerBase": 27,
+		"minBases": 1,
+		"maxBases": 4,
+        	"baseEquipment": ["Heavy Armour", "Spear", "Shield"],
+        	"specialRules": ["Open Order", "Superior Fighters","Impetuous", "Shock Cavalry"],
+		}        
+		],
+		"optionalEquipment": [
+{
+              "name": "Lance (Dismounted Knights)",
+		"targetProfile": ["Mounted Knights/Mounted Sergeants (Rear Row)", "Mounted Knights/Mounted Sergeants (Front Row)", "Mounted Knights"],
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Lance"
+              ],
+              "equipmentRemoved": [
+                "Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Barding (Dismounted Knights)",
+		"targetProfile": ["Mounted Knights/Mounted Sergeants (Rear Row)", "Mounted Knights/Mounted Sergeants (Front Row)", "Mounted Knights"],
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Barding"
+              ],
+              "equipmentRemoved": [
+              ],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+]
+},	
         {
           "id": "late_capetian_france_dismounted_knights",
           "name": "Dismounted Knights",
