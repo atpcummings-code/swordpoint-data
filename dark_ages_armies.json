@@ -28618,7 +28618,7 @@
         {
           "id": "Allies",
           "name": "Allies and Mercenaries",
-          "description": "The army may have allies from the relevant period of the Al-Andalus and Granada list.",
+          "description": "The army may have allies from the teh Medieval Spain list (A).",
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
