@@ -36642,26 +36642,19 @@
           "max": 25
         },
         {
-          "id": "SpecialTroops",
+          "id": "Allies",
           "name": "Special Troops",
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
           "alliedArmyKeys": [
-            {
-              "key": "arab_caliphate_abbasid"
-            },
-            {
-              "key": "hindu_india_standard",
-              "excludesUnits": [
-                "elephant"
-              ]
-            }
+            {"key": "arab_caliphate_abbasid"},
+            {"key": "hindu_india_standard",  "excludesUnits": ["elephant"]}
           ],
           "maxAlliedArmiesAllowed": 1
         },
         {
-          "id": "Elephants",
+          "id": "GhaznavidElephant",
           "name": "Elephants",
           "constraintType": "pointsRatio",
           "pointsThreshold": 333,
@@ -37141,10 +37134,10 @@
           ]
         },
         {
-          "id": "ghaznavid_elephant",
+          "id": "GhaznavidElephant",
           "name": "Elephant",
           "description": "Mahouts have heavy armour. The two crewmen have heavy armour and javelins. May exchange javelins for bow (free).  Both the elephant and crew are Superior Fighters. The crew ride on the elpehants back in this period. May have barding (+4).",
-          "category": "Elephants",
+          "category": "SpecialUnits",
           "type": "Commander",
           "minBases": 1,
           "maxBases": 1,
