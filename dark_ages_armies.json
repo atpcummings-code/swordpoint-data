@@ -36648,8 +36648,8 @@
           "min": 0,
           "max": 50,
           "alliedArmyKeys": [
-            {"key": "arab_caliphate_abbasid"},
-            {"key": "hindu_india_standard",  "excludesUnits": ["elephant"]}
+            {"key": "arab_caliphate_abbasid_caliphate"},
+            {"key": "hindu_india_standard_army",  "excludesUnits": ["elephant"]}
           ],
           "maxAlliedArmiesAllowed": 1
         }
@@ -37071,8 +37071,8 @@
           "id": "ghaznavid_daylami_light_infantry",
           "name": "Daylami Light Infantry",
           "description": "Daylami Light Infantry have spear and shield. Open Order. Shieldwall. Warband. May have light armour (+2) and be Riding Camels (+1). May be Stubborn (+2).",
-          "category": "SpecialTroops",
-          "type": "Commander",
+          "category": "Allies",
+          "type": "Infantry",
           "defence": 6,
           "cohesion": 8,
           "pointsPerBase": 17,
