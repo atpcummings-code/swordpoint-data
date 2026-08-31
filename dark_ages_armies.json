@@ -38807,7 +38807,6 @@
 		"type": "Infantry",
         "minBases": 3,
         "maxBases": 12,
-  
 	  	"combinedFormation":  
 		[
 		{ "label": "25%", "disableSubProfiles": ["Dismounted Sergeants","Dismounted knights/Dismounted Sergeants (Front Row)"]},
