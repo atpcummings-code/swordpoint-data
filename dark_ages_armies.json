@@ -41556,20 +41556,9 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 10
-        },
- 
-        {
-          "id": "Allies",
-          "name": "Allies",
-          "description": "May take allies from the Medieval Spanish lists.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25,
-          "alliedArmyKeys": [
-            "medieval_spainish"
-          ],
-          "maxAlliedArmiesAllowed": 1
         }
+ 
+        
       ],
       "units": [
                 {
