@@ -5180,30 +5180,14 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
-          ]
-        },
             {
               "name": "Skirmishers",
-              "disables": [
-                "Spear",
-                "Shield",
-                "Bow",
-                "Javelins",
-                "Heavy Armour"
-              ],
+              "disables": ["Spear","Shield","Bow","Javelins","Heavy Armour"],
               "pointsModifier": 2,
-              "equipmentAdded": [
-                "Spear",
-                "Bow",
-                "Ligt Armour"
-              ],
+              "equipmentAdded": ["Spear","Bow","Ligt Armour"],
               "equipmentRemoved": [],
-              "rulesAdded": [
-                "Skirmishers"
-              ],
-              "rulesRemoved": [
-                "Open Order"
-              ],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
