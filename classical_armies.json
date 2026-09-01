@@ -1411,7 +1411,7 @@
             "Skirmishers", "Inferior Fighters"
           ],
           "optionalEquipment": [
-			  
+			  {
               "name": "Sling",
               "pointsModifier": 0,
 			  "enabledEvery": 2,
