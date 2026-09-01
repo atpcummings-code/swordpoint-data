@@ -3815,6 +3815,105 @@
             }
             ]
         },
+		  {
+          "id": "persians_and_medes_cyrus_levy_cf"",
+          "name": "Combined Formation Levy",
+          "description": "Levy have spear. Inferior Fighters. Inferior Shooters. Levies. May have shield (+2), or large shield (+4). May have light armour (+2). Combined Formation. Bow armed troops form Combined Formation with Spearmen.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": [],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Bowmen","Mixed Spear/Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Bowmen (Front Row)","Mixed Spear/Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Spear/Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Spara", "Spear", "Bow"],
+              "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+          	"cohesion": 7,
+          	"pointsPerBase": 16,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Spear", "Spara"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 7,
+              "pointsPerBase": 12,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Mixed Spear/Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "maxBases": 6,
+              "baseEquipment": ["Spara", "Spear", "Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+  				
+         {
+              "equipmentAdded": ["Shield"],
+		"disables": "Large Shield",
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "enableHidden": "Throwing Spear",
+              "disables": "Shield",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Light Armour",
+               "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+
+
+]
+        },
         
         {
           "id": "persians_and_medes_cyrus_light_levy",
