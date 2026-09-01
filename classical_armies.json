@@ -922,7 +922,7 @@
     },
 "early_rome": {
       "armyName": "Early Rome - 600 BC to 400 BC",
-  "armyValidation": [ { "type": "ratio", "unitId": "early_rome_2nd_and_3rd_class_spearmen", "relatedUnitId": "early_rome_1st_class_hoplites", "ratio": "1:2" } ],
+ "armyValidation": [ { "ids": ["early_rome_1st_class_hoplites"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["early_rome_2nd_and_3rd_class_spearmen"], "countBy": "units" } ],
       "categories": [
         {
           "id": "Commanders",
