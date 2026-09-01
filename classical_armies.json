@@ -1391,18 +1391,7 @@
           "maxBases": 4,
           "baseEquipment": ["Bow", "Shield"],
           "specialRules": ["Skirmishers", "Superior Shooters"],
-          "optionalEquipment": [
-			  {
-              "name": "Skirmishers",
-              "pointsModifier": -4,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-		  ]
+          "optionalEquipment": []
         },
         {
           "id": "early_hoplite_greek_sparta_skirmishers",
