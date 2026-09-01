@@ -3889,9 +3889,9 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
-		{
+      	{
               "name": "Shield",
-              "targetProfile": "Bowmen",
+              "disables": "Large Shield",
               "pointsModifier": 2,
               "equipmentAdded": ["Shield"],
               "equipmentRemoved": [],
@@ -3900,9 +3900,34 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
+      {
+              "name": "Large Shield",
+              "enableHidden": ["Throwing Spear"],
+              "disables": "Shield",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+      {
+              "name": "Throwing Spear",
+              "targetProfile": ["Mixed Spear/Bowmen (Rear Row)","Spearmen","Mixed Spear/Bowmen (Front Row)"],
+              "hiddenUntilEnabled": "hidden",
+              "maxUnits": 1,
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
 
 ]
-        },
+        }
         
         {
           "id": "persians_and_medes_cyrus_light_levy",
