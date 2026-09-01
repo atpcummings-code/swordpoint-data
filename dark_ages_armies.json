@@ -19195,7 +19195,7 @@
         {
           "id": "early_thematic_byzantine_basileus",
           "name": "Basileus",
-          "description": "Rides a horse. The army must contain at least on Tagmata unit.",
+          "description": "Rides a horse. The army must contain at least one Tagmata unit.",
           "excludes": [
             "early_thematic_byzantine_tagmatic_general",
             "early_thematic_byzantine_thematic_general"
