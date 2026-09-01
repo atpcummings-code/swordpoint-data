@@ -694,7 +694,7 @@
           "pointsPerBase": 21,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": [ "Spear", ""Light Armour"],
+          "baseEquipment": [ "Spear", "Light Armour"],
           "specialRules": ["Open Order","Superior Fighters"],
           "optionalEquipment": [
             {
@@ -720,7 +720,7 @@
           "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": [ "Javelins"],
+          "baseEquipment": ["Javelins"],
           "specialRules": ["Open Order","Evade"],
           "optionalEquipment": [
             {
