@@ -44701,7 +44701,7 @@
           "min": 0,
           "max": 20,
           "alliedArmyKeys": [
-            "pecheneg"
+            {"key": "pecheneg",  "excludesUnits": ["pecheneg_nobles"]}
           ],
           "maxAlliedArmiesAllowed": 1
         }
