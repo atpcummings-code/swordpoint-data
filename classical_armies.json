@@ -3561,7 +3561,7 @@
             	"defence": 5,
           	"cohesion": 7,
           	"pointsPerBase": 26,
-              "minBases": 0,
+              "minBases": 3,
               "maxBases": 12,
           "baseEquipment": ["Spear", "Spara"],
           "specialRules": ["Close Order","Superior Fighters","Superior Shooters"],
@@ -3572,6 +3572,7 @@
               "defence": 7,
               "cohesion": 7,
               "pointsPerBase": 22,
+				"minBases": 1,
 		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
               "baseEquipment": ["Bow"],
               "specialRules": ["Close Order","Superior Fighters","Superior Shooters"]
@@ -3584,6 +3585,7 @@
               "defence": 5,
               "cohesion": 7,
 	          "pointsPerBase": 26,
+				  "minBases": 1,
               "maxBases": 6,
               "baseEquipment": ["Spara", "Spear", "Bow"],
               "specialRules": ["Close Order","Superior Fighters","Superior Shooters"]
@@ -3635,6 +3637,16 @@
               "disables": "Spear and Spara",
               "pointsModifier": 2,
               "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -3716,7 +3728,18 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-            }
+            },
+		{
+              "name": "Shield",
+              "targetProfile": "Bowmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
 
 ]
         },
