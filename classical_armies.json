@@ -1270,6 +1270,7 @@
               "name": "Heavy Armour",
               "disables": "Light Armour",
               "pointsModifier": 4,
+				"maxUnits": 1,
               "equipmentAdded": ["Heavy Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
