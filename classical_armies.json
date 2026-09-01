@@ -1161,7 +1161,7 @@
         {
           "id": "Allies",
           "name": "Allies",
-"description": "May choose Allies from other Greek State sin the Early Hoplite Greek List, or from Syracusan list.",
+"description": "May choose Allies from other Greek States in the Early Hoplite Greek List, or from Syracusan list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25
