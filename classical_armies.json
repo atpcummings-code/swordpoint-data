@@ -3834,46 +3834,46 @@
              {
               "name": "Mixed Spear/Bowmen (Front Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-              "defence": 5,
-              "cohesion": 7,
-	          "pointsPerBase": 16,
+              "defence": 7,
+              "cohesion": 5,
+	          "pointsPerBase": 14,
               "minBases": 3,
 			  "maxBases": 6,
-              "baseEquipment": ["Spara", "Spear", "Bow"],
-              "specialRules": ["Close Order"]
+              "baseEquipment": ["Spear", "Bow"],
+         "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
             },
 			  {
               "name": "Spearmen",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-            	"defence": 5,
-          	"cohesion": 7,
-          	"pointsPerBase": 16,
+            	"defence": 7,
+          	"cohesion": 5,
+          	"pointsPerBase": 14,
               "minBases": 0,
               "maxBases": 12,
-          "baseEquipment": ["Spear", "Spara"],
-          "specialRules": ["Close Order"],
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
             },
             {
               "name": "Bowmen",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 7,
-              "cohesion": 7,
+              "cohesion": 5,
               "pointsPerBase": 12,
 		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
               "baseEquipment": ["Bow"],
-              "specialRules": ["Close Order"]
+         "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
             },
 
 			  {
               "name": "Mixed Spear/Bowmen (Rear Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
 			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
-              "defence": 5,
-              "cohesion": 7,
+              "defence": 7,
+              "cohesion": 5,
 	          "pointsPerBase": 16,
               "maxBases": 6,
-              "baseEquipment": ["Spara", "Spear", "Bow"],
-              "specialRules": ["Close Order"]
+              "baseEquipment": ["Spear", "Bow"],
+         "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
             }
             
             ],
@@ -3902,7 +3902,7 @@
             },
 
 ]
-        },
+        }
         
         {
           "id": "persians_and_medes_cyrus_light_levy",
