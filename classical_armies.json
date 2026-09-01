@@ -920,7 +920,255 @@
         
       ]
     },
-
+"early_rome": {
+      "armyName": "Early Rome - 600 BC to 400 BC",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 15
+        },
+         {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        }
+      ],
+      "units": [
+        {
+          "id": "early_rome_general",
+          "name": "General",
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "early_rome_magistrate",
+          "name": "Magistrate",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_rome_equites",
+          "name": "Equites",
+          "description": "Equites have spear and shield. Superior FIghters. May have light armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 21,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [ "Spear", "Shield"],
+          "specialRules": ["Open Order","Superior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_rome_1st_class_hoplites",
+          "name": "1st Class Hoplites",
+          "description": "1st Class Hoplites have light armour, spear, and large shield. Phalanx. There must be at least one unit of Hoplites.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Light Armour","Spear", "Large Shield"
+          ],
+          "specialRules": [
+            "Close Order","Phalanx"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_rome_phrygians",
+          "name": "Phrygians",
+          "description": "Phrygians have javelins. Open Order. May have shield (+2). May be fielded as Skirmishers at a cost of six points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_rome_cilicians",
+          "name": "Cilicians",
+          "description": "Cilicians have throwing spear, javelins and large shield. Open Order. May be fielded as Skirmishers at a cost of ten points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Javelins", "Large Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_rome_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Open Order. Inferior Fighters.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": [
+            "Open Order", "Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_rome_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Skirmishers.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": []
+        },
+    {
+          "id": "early_rome_tribesmen",
+          "name": "Cimmerian Horse Tribesmen",
+          "description": "Cimmerian Horse Tribesme have a bow. Inferior Fighters. Evade. May be fielded as Skirmishers with Parthian Shot.",
+          "category": "Allies",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow"],
+          "specialRules": [
+            "Open Order", "Inferior Fighters", "Evade"
+          ],
+          "optionalEquipment": [
+             {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers", "Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
+    },
   
     "alans": {
       "armyName": "Alans - 350 to 475 AD",
