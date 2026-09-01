@@ -746,7 +746,7 @@
           "pointsPerBase": 25,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [ "Spear", ""Light Armour"],
+          "baseEquipment": [ "Spear", "Light Armour"],
           "specialRules": ["Close Order","Superior Fighters", "Stubborn", "Riding Horses"],
           "optionalEquipment": [
             {
