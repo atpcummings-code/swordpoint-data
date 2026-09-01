@@ -888,11 +888,7 @@
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": ["Skirmishers"],
           "optionalEquipment": []
-        }
- 
-        
-      ]
-    },
+        },
     {
           "id": "later_lydian_tribesmen",
           "name": "Cimmerian Horse Tribesmen",
