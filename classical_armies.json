@@ -1171,6 +1171,10 @@
         {
           "id": "early_hoplite_greek_spartan_king",
           "name": "Spartan King",
+			"excludes": [
+            "early_hoplite_greek_spartan_king",
+            "early_hoplite_greek_strategos"
+          ],
           "description": "Rides a horse",
           "category": "Commanders",
           "type": "General",
@@ -1197,6 +1201,10 @@
         {
           "id": "early_hoplite_greek_strategos",
           "name": "Strategos",
+			"excludes": [
+            "early_hoplite_greek_spartan_king",
+            "early_hoplite_greek_strategos"
+          ],
           "description": "Rides a horse",
           "category": "Commanders",
           "type": "General",
@@ -1212,6 +1220,7 @@
         {
           "id": "early_hoplite_greek_sparta_officer",
           "name": "Officer",
+			
           "description": "Rides a horse",
           "category": "Commanders",
           "type": "Commander",
