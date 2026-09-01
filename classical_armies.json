@@ -1119,66 +1119,7 @@
             }
           ]
         },
-        {
-          "id": "early_rome_archers",
-          "name": "Archers",
-          "description": "Archers have a bow. Open Order. Inferior Fighters.",
-          "category": "Infantry",
-          "type": "Infantry",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 8,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Bow"],
-          "specialRules": [
-            "Open Order", "Inferior Fighters"
-          ],
-          "optionalEquipment": []
-        },
-        {
-          "id": "early_rome_skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have javelins and shield. Skirmishers.",
-          "category": "Infantry",
-          "type": "Infantry",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 7,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": ["Javelins", "Shield"],
-          "specialRules": ["Skirmishers"],
-          "optionalEquipment": []
-        },
-    {
-          "id": "early_rome_tribesmen",
-          "name": "Cimmerian Horse Tribesmen",
-          "description": "Cimmerian Horse Tribesme have a bow. Inferior Fighters. Evade. May be fielded as Skirmishers with Parthian Shot.",
-          "category": "Allies",
-          "type": "Skirmishers",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 16,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": ["Bow"],
-          "specialRules": [
-            "Open Order", "Inferior Fighters", "Evade"
-          ],
-          "optionalEquipment": [
-             {
-              "name": "Skirmishers",
-              "pointsModifier": 0,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Skirmishers", "Parthian Shot"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        }
+        
         
       ]
     },
