@@ -1317,13 +1317,13 @@
             },
             {
               "name": "Elite Hoplites",
-
-              "pointsModifier": 4,
-              "equipmentAdded": ["Heavy Armour"],
+              "pointsModifier": 6,
+              "equipmentAdded": [],
+			  "minUnits": 1,
               "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -2,
+              "rulesAdded": ["Superior Fighters", "Trained Phalanx"],
+              "rulesRemoved": ["Phalanx"],
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
