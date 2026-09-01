@@ -3479,7 +3479,7 @@
             },
             {
               "name": "Large Shield",
-              "hiddenUntilEnabled": "hidden"
+              "hiddenUntilEnabled": "hidden",
               "pointsModifier": 2,
               "equipmentAdded": ["Large Shield"],
               "equipmentRemoved": ["Shield"],
