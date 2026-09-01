@@ -3103,7 +3103,7 @@
 	  "description": "May ride a horse",
           "category": "Commanders",
           "type": "General",
-			 "excludesUnits": ["persians_and_medes_cyrus_general","persians_and_medes_cyrus_great_king"],
+			"excludesUnits": ["persians_and_medes_cyrus_general"],
           "maxCountAllowed": 1,
           "attacks": "+1",
           "cohesion": 10,
@@ -3117,7 +3117,7 @@
           "id": "persians_and_medes_cyrus_general",
           "name": "General",
           "description": "May ride a horse",
-		 "excludesUnits": ["persians_and_medes_cyrus_general","persians_and_medes_cyrus_great_king"],
+			"excludesUnits": ["persians_and_medes_cyrus_great_king"],
           "category": "Commanders",
 			"maxCountAllowed": 1,
           "type": "General",
@@ -4068,6 +4068,1072 @@
         },
         {
           "id": "persians_and_medes_cyrus_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins. Inferior Fighters. Skirmishers.  May have shield (+1).",
+          "category": "LightTroops",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": [
+            "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+			  {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+        
+      ]
+    },
+
+	  "persians_and_medes_xerxes": {
+      "armyName": "Persians and Medes Xerxes - 550 BC to 420 BC",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 4
+        },
+       
+        {
+          "id": "Cavalry",
+	  "description": "",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+         {
+          "id": "Infantry",
+	  "description": "",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+{
+          "id": "LightTroops",
+	  "description": "",
+          "name": "Light Troops",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Allies",
+          "name": "Allies & Mercenaries",
+	  "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+         {
+          "id": "persians_and_medes_xerxes_great_king",
+          "name": "Great king",
+	  "description": "May ride a horse",
+          "category": "Commanders",
+          "type": "General",
+	"excludesUnits": ["persians_and_medes_xerxes_general"],
+          "maxCountAllowed": 1,
+          "attacks": "+1",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "persians_and_medes_xerxes_general",
+          "name": "General",
+          "description": "May ride a horse",
+	"excludesUnits": ["persians_and_medes_xerxes_great_king"],
+          "category": "Commanders",
+	"maxCountAllowed": 1,
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+	{
+          "id": "persians_and_medes_xerxes_satrap",
+          "name": "Satrap",
+          "description": "May ride a horse",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "persians_and_medes_xerxes_guards",
+          "name": "Guards",
+          "description": "Guards have light armour, Superior Fighters. Superior Shooters. Stubborn. May have a bow or javelin (+1) and half barding (+1). Every other unit ay have spear (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [ "Light Armour"],
+          "specialRules": ["Open Order", "Superior Fighters","Superior Shooters","Stubborn"],
+          "optionalEquipment": [
+			  {
+              "name": "Bow",
+              "disables": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "disables": "Bow",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half-barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half-barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+        {
+          "id": "persians_and_medes_xerxes_heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have javelins. Superior Shooters. May have light armour (+1) and bow (+1), and one unit may have half-barding. Every other unit ay have spear (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [ "Javelins"],
+          "specialRules": ["Open Order", "Superior Shooters"],
+          "optionalEquipment": [
+			  {
+              "name": "Bow",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half-barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half-barding"],
+              "maxUnits": 1,
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+        {
+          "id": "persians_and_medes_xerxes_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins. Evade. May replace javelins with bow (free). May be fielded as Skirmishers at a cost of 16 p[oints per base. Maybe down graded to Levies status (-1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [ "Javelins"],
+          "specialRules": ["Open Order", "Evade"],
+          "optionalEquipment": [
+			  			  {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Levies",
+              "pointsModifier": -1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Levies"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		  ]
+        },
+        {
+          "id": "persians_and_medes_xerxes_skirmish",
+          "name": "Skirmish Cavalry",
+          "description": "Skirmish Cavalry have javelins. Skirmishers. May repalce javelins with bow (free)",
+          "category": "Cavalry",
+          "type": "Skirmisher",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [ "Javelins"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": [
+			  		{
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
+ },
+ 
+ {
+          "id": "persians_and_medes_xerxes_levy_nobles",
+          "name": "Levy Nobles",
+          "description": "Levy Nobles have javelins. Superior Fighters. Superior Shooters. Massed Cavalry. May have light armour (+1) and bow (+1), or replace javelins with bow (free).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [ "Javelins"],
+          "specialRules": ["Open Order", "Superior Fighters","Superior Shooters","Massed Cavalry","Levies"],
+          "optionalEquipment": [
+			  {
+              "name": "Bow",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow (replace Javelins)",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half-barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half-barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+            ]
+ },
+        {
+          "id": "persians_and_medes_xerxes_levy_heavy_cavalry",
+          "name": "Levy Heavy Cavalry",
+          "description": "Levy Heavy Cavalry have javelins. Levies. May have light armour (+1) and bow (+1), or replace javelins with bow (free).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [ "Javelins"],
+          "specialRules": ["Open Order", "Levies"],
+          "optionalEquipment": [
+			  			  {
+              "name": "Bow",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow (replace Javelins)",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+        {
+          "id": "persians_and_medes_xerxes_levy_skirmish",
+          "name": "Levy Skirmish Cavalry",
+          "description": "Levy Skirmish Cavalry have javelins. Inferior Fighters. Inferior Shooters. Skirmishers. Levies.",
+          "category": "Cavalry",
+          "type": "Skirmisher",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 11,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [ "Javelins"],
+          "specialRules": ["Skirmishers","Inferior Fighters", "Inferior Shooters", "Levies"],
+          "optionalEquipment": []
+ },
+        {
+          "id": "persians_and_medes_xerxes_spear_bearers",
+          "name": "Spear Bearers",
+          "description": "Spear Bearers have a bow and shield. Superior Fighters. Superior Shooters. Stubborn. They may exchange bow for spear (-2), but the two variants may not be mixed. They may only be fielded in the presence of the Great King. They may have light amrour (+2). Spear armed troops may upgrade shield to large shield (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 30,
+          "minBases": 3,
+          "maxBases": 12,
+          "maxCountAllowed": 1,
+          "requires": {"unitId": "persians_and_medes_xerxes_great_king","count": 1,"name": "Great King"},    
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Close Order","Superoior Fighters","Superior Shooters","Stubborn"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+
+              "enableHidden": "Large Shield",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "persians_and_medes_xerxes_immortals",
+          "name": "Immortals",
+          "description": "Immortals are armed with bow, Superior Fighters. Superior Shooters. May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Close Order","Superior Fighters","Superior Shooters"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear and Spara",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Spara", "Spear"],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "persians_and_medes_xerxes_immortals_cf",
+          "name": "Combined Formation Immortals",
+          "description": "Immortals are armed with bow, Superior Fighters. Superior Shooters. May have light armour (+2). Replace bow with spear and Spara (+4). Spara carriers may form the front rank or ranks of an otherwise bow armed unit. Combined Formation.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": [],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Bowmen","Mixed Spear/Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Bowmen (Front Row)","Mixed Spear/Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Spear/Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 26,
+              "minBases": 3,
+			  "maxBases": 6,
+              "baseEquipment": ["Spara", "Spear", "Bow"],
+              "specialRules": ["Close Order","Superior Fighters","Superior Shooters"]
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+          	"cohesion": 7,
+          	"pointsPerBase": 26,
+              "minBases": 3,
+              "maxBases": 12,
+          "baseEquipment": ["Spear", "Spara"],
+          "specialRules": ["Close Order","Superior Fighters","Superior Shooters"],
+            },
+            {
+              "name": "Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 7,
+              "pointsPerBase": 22,
+				"minBases": 1,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order","Superior Fighters","Superior Shooters"]
+            },
+
+			  {
+              "name": "Mixed Spear/Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 26,
+				  "minBases": 1,
+              "maxBases": 6,
+              "baseEquipment": ["Spara", "Spear", "Bow"],
+              "specialRules": ["Close Order","Superior Fighters","Superior Shooters"]
+            }
+            
+            ],
+	"optionalEquipment": [
+  				
+          {
+              "name": "Light Armour",
+                "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]
+        },
+		  {
+          "id": "persians_and_medes_xerxes_line_infantry",
+          "name": "Line Infantry",
+          "description": "Line Infantry have a bow. May have a shield (+2). May exchange bow for Spear and Spara (+4).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": [
+            {
+              "name": "Spear and Spara",
+              "disables": "Shield",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Spara", "Spear"],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "disables": "Spear and Spara",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+            ]
+        },
+        {
+          "id": "persians_and_medes_xerxes_line_lnfantry_cf",
+          "name": "Combined Formation Line Infantry",
+          "description": "Line Infantry have a bow. May have a shield (+2). May exchange bow for Spear and Spara (+4). Spara carriers form the front ranks of an otherwise bow armed unit. Combined Fomration.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": [],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Bowmen","Mixed Spear/Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Bowmen (Front Row)","Mixed Spear/Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Spear/Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 3,
+			  "maxBases": 6,
+              "baseEquipment": ["Spara", "Spear", "Bow"],
+              "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+          	"cohesion": 7,
+          	"pointsPerBase": 16,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Spear", "Spara"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 7,
+              "pointsPerBase": 12,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Mixed Spear/Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "maxBases": 6,
+              "baseEquipment": ["Spara", "Spear", "Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+  				
+          {
+              "name": "Light Armour",
+                "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+		{
+              "name": "Shield",
+              "targetProfile": "Bowmen",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+
+]
+        },
+        {
+          "id": "persians_and_medes_xerxes_levy",
+          "name": "Levy",
+          "description": "Levy have spear. Inferior Fighters. Inferior Shooters. Levies. May have shield (+2), or large shield (+4). One unit with large shields may replace spear with throwing spear (+2). May have light armour (+2). May exchange spear for bow (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters", "Levies"],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "disables": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "enableHidden": ["Throwing Spear"],
+              "disables": "Shield",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear",
+              "hiddenUntilEnabled": "hidden",
+              "maxUnits": 1,
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            ]
+        },
+		  {
+          "id": "persians_and_medes_xerxes_levy_cf",
+          "name": "Combined Formation Levy",
+          "description": "Line Infantry have a bow. May have a shield (+2). May exchange bow for Spear and Spara (+4). Spara carriers form the front ranks of an otherwise bow armed unit. Combined Fomration.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": [],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Bowmen","Mixed Spear/Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Bowmen (Front Row)","Mixed Spear/Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Spear/Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 5,
+	          "pointsPerBase": 14,
+              "minBases": 3,
+			  "maxBases": 6,
+              "baseEquipment": ["Spear", "Bow"],
+         "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 7,
+          	"cohesion": 5,
+          	"pointsPerBase": 12,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
+            },
+            {
+              "name": "Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 5,
+              "pointsPerBase": 14,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+         "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
+            },
+
+			  {
+              "name": "Mixed Spear/Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 7,
+              "cohesion": 5,
+	          "pointsPerBase": 14,
+              "maxBases": 6,
+              "baseEquipment": ["Spear", "Bow"],
+         "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
+            }
+            
+            ],
+	"optionalEquipment": [
+  				
+          {
+              "name": "Light Armour",
+                "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+      	{
+              "name": "Shield",
+              "disables": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+      {
+              "name": "Large Shield",
+              "enableHidden": ["Throwing Spear"],
+              "disables": "Shield",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+      {
+              "name": "Throwing Spear",
+              "targetProfile": ["Mixed Spear/Bowmen (Rear Row)","Spearmen","Mixed Spear/Bowmen (Front Row)"],
+              "hiddenUntilEnabled": "hidden",
+              "maxUnits": 1,
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+]
+        },
+        
+        {
+          "id": "persians_and_medes_xerxes_light_levy",
+          "name": "Light Levy",
+          "description": "Light Levy have javelins and shield. Inferior Fighters. Inferior Shooters. Levies. Open Order. May be fielded as Skirmishers at a cost of four points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order","Inferior Fighters","Inferior Shooters", "Levies"],
+          "optionalEquipment": [
+                         
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            ]
+        },
+        {
+          "id": "persians_and_medes_xerxes_iranians",
+          "name": "Iranians",
+          "description": "Iranians have javelins and shield. Open Order. ",
+          "category": "LightTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "persians_and_medes_xerxes_phrygians",
+          "name": "Phrygians",
+          "description": "Phrygians have javelins, throwing spear and shield. Warband. Open Order.",
+          "category": "LightTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins", "throwing Spear","Shield"],
+          "specialRules": ["Open Order","Warband"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "persians_and_medes_xerxes_carians",
+          "name": "Carians",
+          "description": "Carians have throwing spear and large sheild. Levies. Open order.",
+          "category": "LightTroops",
+          "type": "Skirmishers",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear", "Large Shield"],
+          "specialRules": ["Open Order.", "Levies"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "persians_and_medes_xerxes_slingers",
+          "name": "Slingers",
+          "description": "Slingers have a sling. Inferior Fighters. Skirmishers. Up to half of all slinger units may replace sling with javelins or bow (free). Javelin armed troops may have sheild (+1) and light armour (+1). There must be at least one sling armed unit in a Cyrus period army",
+          "category": "LightTroops",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Sling"],
+          "specialRules": [
+            "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+			  {
+              "name": "Javelins",
+              "disbales": "Bow",
+              "pointsModifier": 1,
+			        "enabledEvery": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": ["Sling"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disbales": "Javelins",
+              "enableHidden": ["Shield","Light Armour"],
+              "pointsModifier": 1,
+			        "enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Sling"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+        {
+          "id": "persians_and_medes_xerxes_javelinmen",
           "name": "Javelinmen",
           "description": "Javelinmen have javelins. Inferior Fighters. Skirmishers.  May have shield (+1).",
           "category": "LightTroops",
