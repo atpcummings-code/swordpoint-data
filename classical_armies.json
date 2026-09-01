@@ -3770,7 +3770,7 @@
             },
             {
               "name": "Large Shield",
-              "enableHidden": "Throwing Spear",
+              "enableHidden": ["Throwing Spear"],
               "disables": "Shield",
               "pointsModifier": 4,
               "equipmentAdded": ["Large Shield"],
@@ -3782,7 +3782,7 @@
             },
              {
               "name": "Light Armour",
-               "pointsModifier": 2,
+              "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -3803,7 +3803,7 @@
             },
             {
               "name": "Throwing Spear",
-              "hiddenUntilEnabed": "hidden",
+              "hiddenUntilEnabled": "hidden",
               "maxUnits": 1,
               "pointsModifier": 2,
               "equipmentAdded": ["Throwing Spear"],
