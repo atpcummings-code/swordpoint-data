@@ -1211,7 +1211,7 @@
         },
         {
           "id": "early_hoplite_greek_sparta_officer",
-          "name": "Magistrate",
+          "name": "Officer",
           "description": "Rides a horse",
           "category": "Commanders",
           "type": "Commander",
@@ -1270,7 +1270,6 @@
               "name": "Heavy Armour",
               "disables": "Light Armour",
               "pointsModifier": 4,
-				"maxUnits": 1,
               "equipmentAdded": ["Heavy Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -1330,24 +1329,22 @@
           ]
         },
         {
-          "id": "early_hoplite_greek_sparta_2nd_and_3rd_class_spearmen",
-          "name": "2nd and 3rd Class Spearmen",
-          "description": "2nd and 3rd Class Spearmen have spear and large shield. Phalanx. There must be at least one unit of spearmen to every two units of hoplites. May be fielded in Open Order at a cost of eleven points per base, in which case they are no longer Phalanx.",
-          "category": "Infantry",
+          "id": "early_hoplite_greek_sparta_peltasts",
+          "name": "Peltasts",
+          "description": "Peltasts have javelins and shield. Open Order. Maybe fielded as Skirmishers at a cost of 7 points per base.",
+          "category": "LightTroops",
           "type": "Infantry",
-          "defence": 5,
+          "defence": 6,
           "cohesion": 6,
-          "pointsPerBase": 16,
+          "pointsPerBase": 11,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Spear", "Large Shield"],
-          "specialRules": [
-            "Close Order", "Phalanx"
-          ],
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Open Order"],
           "optionalEquipment": [
                      {
               "name": "Skirmishers",
-              "pointsModifier": -3,
+              "pointsModifier": -4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": ["Skirmishers"],
@@ -1358,8 +1355,8 @@
           ]
         },
         {
-          "id": "early_hoplite_greek_sparta_4th_class_skirmishers",
-          "name": "4th Class Skirmishers",
+          "id": "early_hoplite_greek_sparta_rhodians",
+          "name": "Rhodians",
           "description": "4th Class Skirmishers have javelins and shield. Skirmishers. May have throwing spear (+1).  There may not be more 4th Class Skirmisher bases than there are Spearmen bases.",
           "category": "Infantry",
           "type": "Infantry",
