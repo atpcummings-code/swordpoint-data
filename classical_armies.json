@@ -1863,17 +1863,6 @@
               "cohesionModifier": 1
             },
 			  {
-              "name": "Elite Troops",
-			 "hiddenUntilEnabled": "Open Order",
-              "pointsModifier": 4,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Superior Shooters"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 1
-            },
-			  {
               "name": "Open Order",
 			  "hiddenUntilEnabled": "hidden",
               "pointsModifier": 0,
