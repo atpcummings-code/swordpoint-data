@@ -3054,6 +3054,25 @@
     },
 	   "persians_and_medes_cyrus": {
       "armyName": "Persians and Medes Cyrus - 550 BC to 420 BC",
+	"armyValidation": [
+    {
+      "ids": [
+"persians_and_medes_cyrus_line_infantry",
+        "persians_and_medes_cyrus_line_lnfantry_cf",
+        "persians_and_medes_cyrus_levy",
+        "persians_and_medes_cyrus_levy_cf",
+        "persians_and_medes_cyrus_light_levy"
+      ],
+      "expression": "greaterThan",
+      "ratio": 1,
+      "compareWith": [
+        "persians_and_medes_cyrus_spear_bearers",
+        "persians_and_medes_cyrus_immortals",
+        "persians_and_medes_cyrus_immortals_cf"
+      ],
+      "countBy": "bases"
+    }
+  ],
       "categories": [
         {
           "id": "Commanders",
@@ -3102,7 +3121,7 @@
           "name": "Great King",
           "description": "May ride a horse.",
           "excludes": [
-            "persians_and_medes_xerxes_general"
+            "persians_and_medes_cyrus_general"
           ],
           "category": "Commanders",
           "type": "General",
@@ -3120,7 +3139,7 @@
           "name": "General",
           "description": "May ride a horse.",
           "excludes": [
-            "persians_and_medes_xerxes_great_king"
+            "persians_and_medes_cyrus_great_king"
           ],
           "category": "Commanders",
           "type": "General",
@@ -4104,6 +4123,25 @@
 
 	  "persians_and_medes_xerxes": {
       "armyName": "Persians and Medes Xerxes - 550 BC to 420 BC",
+		  "armyValidation": [
+    {
+      "ids": [
+"persians_and_medes_xerxes_line_infantry",
+        "persians_and_medes_xerxes_line_lnfantry_cf",
+        "persians_and_medes_xerxes_levy",
+        "persians_and_medes_xerxes_levy_cf",
+        "persians_and_medes_xerxes_light_levy"
+      ],
+      "expression": "greaterThan",
+      "ratio": 1,
+      "compareWith": [
+        "persians_and_medes_xerxes_spear_bearers",
+        "persians_and_medes_xerxes_immortals",
+        "persians_and_medes_xerxes_immortals_cf"
+      ],
+      "countBy": "bases"
+    }
+  ],
       "categories": [
         {
           "id": "Commanders",
