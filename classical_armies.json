@@ -3114,9 +3114,10 @@
         },
         {
           "id": "persians_and_medes_cyrus_general",
-          "name": "Officer",
+          "name": "General",
           "description": "May ride a horse",
           "category": "Commanders",
+			"maxCountAllowed": 1,
           "type": "General",
           "attacks": "+2",
           "cohesion": 9,
