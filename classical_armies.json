@@ -922,7 +922,10 @@
     },
 "early_rome": {
       "armyName": "Early Rome - 600 BC to 400 BC",
- "armyValidation": [ { "ids": ["early_rome_1st_class_hoplites"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["early_rome_2nd_and_3rd_class_spearmen"], "countBy": "units" } ],
+"armyValidation": [ 
+  { "ids": ["early_rome_2nd_and_3rd_class_spearmen"], "expression": "greaterThanOrEqual", "ratio": 0.5, "compareWith": ["early_rome_1st_class_hoplites"], "countBy": "units" },
+  { "ids": ["early_rome_4th_class_skirmishers"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["early_rome_2nd_and_3rd_class_spearmen"], "countBy": "bases" }
+], 
       "categories": [
         {
           "id": "Commanders",
@@ -1047,17 +1050,7 @@
             "Close Order", "Phalanx"
           ],
           "optionalEquipment": [
-            {
-              "name": "Shield",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Shield"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
+                     {
               "name": "Skirmishers",
               "pointsModifier": -3,
               "equipmentAdded": [],
@@ -1070,9 +1063,9 @@
           ]
         },
         {
-          "id": "early_rome_cilicians",
-          "name": "Cilicians",
-          "description": "Cilicians have throwing spear, javelins and large shield. Open Order. May be fielded as Skirmishers at a cost of ten points per base.",
+          "id": "early_rome_4th_class_skirmishers",
+          "name": "4th Class Skirmishers have javelins and shield. Skirmishers. May have throwing spear (+1).  There may not be more 4th Class Skirmisher bases than there are Spearmen bases.",
+          "description": "4th Class Skirmishers",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -1080,18 +1073,18 @@
           "pointsPerBase": 15,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Throwing Spear", "Javelins", "Large Shield"],
+          "baseEquipment": ["Javelins", "Shield"],
           "specialRules": [
-            "Open Order"
+            "Skirmishers"
           ],
           "optionalEquipment": [
             {
-              "name": "Skirmishers",
-              "pointsModifier": -5,
-              "equipmentAdded": [],
+              "name": "Throwing Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Throwing Spear"],
               "equipmentRemoved": [],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
