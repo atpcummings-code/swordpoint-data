@@ -3115,12 +3115,13 @@
         },
         {
           "id": "persians_and_medes_cyrus_general",
+		"category": "Commanders",
+			   "type": "General",
           "name": "General",
           "description": "May ride a horse",
 			"excludesUnits": ["persians_and_medes_cyrus_great_king"],
-          "category": "Commanders",
 			"maxCountAllowed": 1,
-          "type": "General",
+       
           "attacks": "+2",
           "cohesion": 9,
           "pointsPerBase": 0,
