@@ -1153,7 +1153,7 @@
 {
           "id": "LightTroops",
 "description": "At least one phalanx must upgrade to Elite. May not take Militia.",
-          "name": "Infantry",
+          "name": "Light Troops",
           "constraintType": "percentage",
           "min": 0,
           "max": 25
