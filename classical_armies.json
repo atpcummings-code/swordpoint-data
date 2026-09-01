@@ -3097,36 +3097,39 @@
         }
       ],
       "units": [
-         {
+                 {
           "id": "persians_and_medes_cyrus_great_king",
-          "name": "Great king",
-	  "description": "May ride a horse",
+          "name": "Great King",
+          "description": "May ride a horse.",
+          "excludes": [
+            "persians_and_medes_xerxes_general"
+          ],
           "category": "Commanders",
           "type": "General",
-			"excludesUnits": ["persians_and_medes_cyrus_general"],
-          "maxCountAllowed": 1,
           "attacks": "+1",
           "cohesion": 10,
           "pointsPerBase": 50,
           "minBases": 0,
           "maxBases": 1,
+          "maxCountAllowed": 1,
           "specialRules": [],
           "optionalEquipment": []
         },
         {
           "id": "persians_and_medes_cyrus_general",
-		"category": "Commanders",
-			   "type": "General",
           "name": "General",
-          "description": "May ride a horse",
-			"excludesUnits": ["persians_and_medes_cyrus_great_king"],
-			"maxCountAllowed": 1,
-       
+          "description": "May ride a horse.",
+          "excludes": [
+            "persians_and_medes_xerxes_great_king"
+          ],
+          "category": "Commanders",
+          "type": "General",
           "attacks": "+2",
           "cohesion": 9,
           "pointsPerBase": 0,
           "minBases": 0,
           "maxBases": 1,
+          "maxCountAllowed": 1,
           "specialRules": [],
           "optionalEquipment": []
         },
