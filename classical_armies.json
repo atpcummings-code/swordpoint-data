@@ -3451,8 +3451,7 @@
           "minBases": 3,
           "maxBases": 12,
           "maxCountAllowed": 1,
-          "requires": {"unitId": "persians_and_medes_cyrus_great_king","count": 1,"name": "Great King"
-    
+          "requires": {"unitId": "persians_and_medes_cyrus_great_king","count": 1,"name": "Great King"},    
           "baseEquipment": ["Bow", "Shield"],
           "specialRules": ["Close Order","Superoior Fighters","Superior Shooters","Stubborn"],
           "optionalEquipment": [
