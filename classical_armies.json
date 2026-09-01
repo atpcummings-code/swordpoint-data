@@ -3737,7 +3737,7 @@
               "name": "Shield",
               "disables": "Large Shield",
               "pointsModifier": 2,
-              "equipmentAdded": ["Shield],
+              "equipmentAdded": ["Shield"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
