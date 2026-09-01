@@ -1064,15 +1064,15 @@
         },
         {
           "id": "early_rome_4th_class_skirmishers",
-          "name": "4th Class Skirmishers have javelins and shield. Skirmishers. May have throwing spear (+1).  There may not be more 4th Class Skirmisher bases than there are Spearmen bases.",
-          "description": "4th Class Skirmishers",
+          "name": "4th Class Skirmishers",
+          "description": "4th Class Skirmishers have javelins and shield. Skirmishers. May have throwing spear (+1).  There may not be more 4th Class Skirmisher bases than there are Spearmen bases.",
           "category": "Infantry",
           "type": "Infantry",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 15,
-          "minBases": 3,
-          "maxBases": 12,
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": [
             "Skirmishers"
@@ -1083,6 +1083,35 @@
               "pointsModifier": 1,
               "equipmentAdded": ["Throwing Spear"],
               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_rome_5th_class_skirmishers",
+          "name": "5th Class Skirmishers",
+          "description": "5th Class Skirmishers have javelins. Inferior Fighters. Skirmishers. Every second unit may exchnage javleins for sling (free).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": [
+            "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "pointsModifier": 0,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
