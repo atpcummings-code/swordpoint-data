@@ -1381,11 +1381,9 @@
           "minBases": 2,
           "maxBases": 4,
           "baseEquipment": ["Bow", "Shield"],
-          "specialRules": [
-            "Skirmishers", "Superior Shooters"
-          ],
+          "specialRules": ["Skirmishers", "Superior Shooters"],
           "optionalEquipment": [
-			  
+			  {
               "name": "Skirmishers",
               "pointsModifier": -4,
               "equipmentAdded": [],
