@@ -922,6 +922,7 @@
     },
 "early_rome": {
       "armyName": "Early Rome - 600 BC to 400 BC",
+  "armyValidation": [ { "type": "ratio", "unitId": "early_rome_2nd_and_3rd_class_spearmen", "relatedUnitId": "early_rome_1st_class_hoplites", "ratio": "1:2" } ],
       "categories": [
         {
           "id": "Commanders",
@@ -1021,39 +1022,29 @@
           "pointsPerBase": 20,
           "minBases": 3,
           "maxBases": 12,
+          "minCountAllowed": 1,
           "baseEquipment": [
             "Light Armour","Spear", "Large Shield"
           ],
           "specialRules": [
             "Close Order","Phalanx"
           ],
-          "optionalEquipment": [
-            {
-              "name": "Heavy Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Heavy Armour"],
-              "equipmentRemoved": ["Light Armour"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
+          "optionalEquipment": []
         },
         {
-          "id": "early_rome_phrygians",
-          "name": "Phrygians",
-          "description": "Phrygians have javelins. Open Order. May have shield (+2). May be fielded as Skirmishers at a cost of six points per base.",
+          "id": "early_rome_2nd_and_3rd_class_spearmen",
+          "name": "2nd and 3rd Class Spearmen",
+          "description": "2nd and 3rd Class Spearmen have spear and large shield. Phalanx. There must be at least one unit of spearmen to every two units of hoplites. May be fielded in Open Order at a cost of eleven points per base, in which case they are no longer Phalanx.",
           "category": "Infantry",
           "type": "Infantry",
-          "defence": 6,
+          "defence": 5,
           "cohesion": 6,
-          "pointsPerBase": 9,
+          "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Javelins"],
+          "baseEquipment": ["Spear", "Large Shield"],
           "specialRules": [
-            "Open Order"
+            "Close Order", "Phalanx"
           ],
           "optionalEquipment": [
             {
