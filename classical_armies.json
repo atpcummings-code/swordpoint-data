@@ -1872,6 +1872,17 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 1
+            },
+			  {
+              "name": "Open Order",
+			  "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Skirmishers"],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
             }
 		  ]
         },
@@ -1947,6 +1958,16 @@
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Elite Hoplites",
+              "pointsModifier": 6,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters", "Trained Phalanx"],
+              "rulesRemoved": ["Phalanx"],
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
