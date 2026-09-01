@@ -3469,7 +3469,8 @@
             },
             {
               "name": "Spear",
-              "enablesHidden": "Large Shield",
+
+              "enableHidden": "Large Shield",
               "pointsModifier": -2,
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": ["Bow"],
