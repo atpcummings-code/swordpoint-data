@@ -1169,11 +1169,11 @@
       ],
       "units": [
         {
-          "id": "early_hoplite_greek_spartan_king",
+          "id": "early_hoplite_greek_sparta_spartan_king",
           "name": "Spartan King",
 			"excludes": [
-            "early_hoplite_greek_spartan_king",
-            "early_hoplite_greek_strategos"
+            "early_hoplite_greek_sparta_spartan_king",
+            "early_hoplite_greek_sparta_strategos"
           ],
           "description": "Rides a horse",
           "category": "Commanders",
@@ -1199,11 +1199,11 @@
 ]
         },
         {
-          "id": "early_hoplite_greek_strategos",
+          "id": "early_hoplite_greek_sparta_strategos",
           "name": "Strategos",
 			"excludes": [
-            "early_hoplite_greek_spartan_king",
-            "early_hoplite_greek_strategos"
+            "early_hoplite_greek_sparta_spartan_king",
+            "early_hoplite_greek_sparta_strategos"
           ],
           "description": "Rides a horse",
           "category": "Commanders",
@@ -1374,6 +1374,7 @@
           "pointsPerBase": 7,
           "minBases": 2,
           "maxBases": 6,
+			          "maxCountAllowed": 1,
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": ["Skirmishers"],
           "optionalEquipment": []
@@ -1389,12 +1390,311 @@
           "pointsPerBase": 9,
           "minBases": 2,
           "maxBases": 4,
+			          "maxCountAllowed": 1,
           "baseEquipment": ["Bow", "Shield"],
           "specialRules": ["Skirmishers", "Superior Shooters"],
           "optionalEquipment": []
         },
         {
           "id": "early_hoplite_greek_sparta_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers. Up to half of all Skirmisher units may replace javelins with bow or slig (free).",
+          "category": "LightTroops",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 2,
+          "maxBases": 4,
+          "baseEquipment": ["Javelins"],
+          "specialRules": [
+            "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+			  {
+              "name": "Sling",
+              "pointsModifier": 0,
+			  "enabledEvery": 2,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+        
+      ]
+    },
+	   "early_hoplite_greek_athens": {
+      "armyName": "Early Hoplite Greek Athens - 600 BC to 400 BC",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 4
+        },
+       
+        {
+          "id": "Cavalry",
+	  "description": "May not take Elite Cavalry.",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        },
+         {
+          "id": "Infantry",
+"description": "May not take Elite Hoplites.",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+{
+          "id": "LightTroops",
+"description": "At least one phalanx must upgrade to Elite. May not take Militia.",
+          "name": "Light Troops",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+"description": "May choose Allies from Minor STates in this list, or from Syracusan or Thracian list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+         {
+          "id": "early_hoplite_greek_athens_king_strategos",
+          "name": "King/Strategos",
+		  "description": "Rides a horse",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_hoplite_greek_athens_officer",
+          "name": "Officer",
+          "description": "Rides a horse",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+	
+]
+        },
+		  {
+          "id": "early_hoplite_greek_athens_heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have javelins. May have light armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [ "Javelins"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+			  {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+		  ]
+        },
+        {
+          "id": "early_hoplite_greek_athens_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins. Skirmishers. Inferior Fighters.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 13,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [ "Javelins"],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_hoplite_greek_athens_regular_hoplites",
+          "name": "Regular Hoplites",
+          "description": "Regular Hoplites have spear, and large shield. Phalanx. May take Light armour (+2), or heavy armour (+4).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield"],
+          "specialRules": ["Close Order","Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "disables": "Heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "disables": "Light Armour",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_hoplite_greek_athens_mercenary_hoplites",
+          "name": "Mercenary Hoplites",
+          "description": "Mercenary Hoplites have spear, and large shield. Phalanx. May take Light armour (+2), or heavy armour (+4).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield"],
+          "specialRules": ["Close Order","Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "disables": "Heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "disables": "Light Armour",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		  {
+          "id": "early_hoplite_greek_athens_militia_hoplites",
+          "name": "Militia Hoplites",
+          "description": "Militia Hoplites have spear, and large shield. Inferior Fighters. Phalanx. Levies.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield"],
+          "specialRules": ["Close Order","Phalanx", "Levies"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_hoplite_greek_athens_peltasts",
+          "name": "Peltasts",
+          "description": "Peltasts have javelins and shield. Open Order. Maybe fielded as Skirmishers at a cost of 7 points per base.",
+          "category": "LightTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+                     {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_hoplite_greek_athens_rhodians",
+          "name": "Rhodians",
+          "description": "Rhodians have slinga nd shield. Skirmishers",
+          "category": "LightTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+			          "maxCountAllowed": 1,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_hoplite_greek_athens_cretans",
+          "name": "Cretans",
+          "description": "Cretans have bow and shield. Superior Shooters. Skirmishers. The unit may not be more than 4 bases strong.",
+          "category": "LightTroops",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 2,
+          "maxBases": 4,
+			          "maxCountAllowed": 1,
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Skirmishers", "Superior Shooters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_hoplite_greek_athens_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers. Up to half of all Skirmisher units may replace javelins with bow or slig (free).",
           "category": "LightTroops",
