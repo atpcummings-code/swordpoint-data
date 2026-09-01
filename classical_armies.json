@@ -937,7 +937,7 @@
        
         {
           "id": "Cavalry",
-          "name": "Cavalry and Chariots",
+          "name": "Cavalry",
            "constraintType": "percentage",
           "min": 0,
           "max": 15
@@ -1123,7 +1123,300 @@
         
       ]
     },
-  
+  "early_hoplite_greek_sparta": {
+      "armyName": "Early Hoplite Greek Sparta - 600 BC to 400 BC",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+        {
+          "id": "Cavalry",
+	  "description": "One unit only,of light cavalry, which must be the smallest unit in the army. May not take Elite Cavalry.",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        },
+         {
+          "id": "Infantry",
+"description": "At least one phalanx must upgrade to Elite. May not take Militia.",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+{
+          "id": "LightTroops",
+"description": "At least one phalanx must upgrade to Elite. May not take Militia.",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+"description": "May choose Allies from other Greek State sin the Early Hoplite Greek List, or from Syracusan list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+        {
+          "id": "early_hoplite_greek_spartan_king",
+          "name": "Spartan King",
+          "description": "Rides a horse",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+{
+              "name": "Cohesion Upgrade C10)",
+              "pointsModifier": 50,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            }
+]
+        },
+        {
+          "id": "early_hoplite_greek_strategos",
+          "name": "Strategos",
+          "description": "Rides a horse",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_hoplite_greek_sparta_officer",
+          "name": "Magistrate",
+          "description": "Rides a horse",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+	
+]
+        },
+        {
+          "id": "early_hoplite_greek_sparta_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins. Skirmishers. Inferior Fighters.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 13,
+          "minBases": 2,
+          "maxBases": 6,
+          "maxCountAllowed": 1,
+          "baseEquipment": [ "Javelins"],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_hoplite_greek_sparta_regular_hoplites",
+          "name": "Regular Hoplites",
+          "description": "Regular Hoplites have spear, and large shield. Phalanx. May take Light armour (+2), or heavy armour (+4).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield"],
+          "specialRules": ["Close Order","Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "disables": "Heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "disables": "Light Armour",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_hoplite_greek_sparta_mercenary_hoplites",
+          "name": "Mercenary Hoplites",
+          "description": "Mercenary Hoplites have spear, and large shield. Phalanx. May take Light armour (+2), or heavy armour (+4). May upgrde to Superior Fighters, Trained Phalanx (+6) as Elites such as Spartans.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield"],
+          "specialRules": ["Close Order","Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "disables": "Heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "disables": "Light Armour",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Elite Hoplites",
+
+              "pointsModifier": 4,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_hoplite_greek_sparta_2nd_and_3rd_class_spearmen",
+          "name": "2nd and 3rd Class Spearmen",
+          "description": "2nd and 3rd Class Spearmen have spear and large shield. Phalanx. There must be at least one unit of spearmen to every two units of hoplites. May be fielded in Open Order at a cost of eleven points per base, in which case they are no longer Phalanx.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield"],
+          "specialRules": [
+            "Close Order", "Phalanx"
+          ],
+          "optionalEquipment": [
+                     {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_hoplite_greek_sparta_4th_class_skirmishers",
+          "name": "4th Class Skirmishers",
+          "description": "4th Class Skirmishers have javelins and shield. Skirmishers. May have throwing spear (+1).  There may not be more 4th Class Skirmisher bases than there are Spearmen bases.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Throwing Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_hoplite_greek_sparta_5th_class_skirmishers",
+          "name": "5th Class Skirmishers",
+          "description": "5th Class Skirmishers have javelins. Inferior Fighters. Skirmishers. Every second unit may exchnage javleins for sling (free).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": [
+            "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "pointsModifier": 0,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        
+      ]
+    },
     "alans": {
       "armyName": "Alans - 350 to 475 AD",
       "categories": [
