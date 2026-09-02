@@ -5818,7 +5818,7 @@
 "thracian_coalition": {
       "armyName": "Thracian - Coalition - 500 BC to 46 BC",
          "armyValidation": [ 
-           { "ids": ["thracian_coalition_lowland_warriors"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["thracian_coalition_highland_warriors"], "countBy": "units" }, { "ids": ["thracian_coalition_getae"], "expression": "lessThanOrEqual", "ratio": 0.333, "compareWith": ["thracian_coalition_warriors", "thracian_coalition_getae", "thracian_coalition_nobles"], "countBy": "units" }
+           { "ids": ["thracian_coalition_lowland_warriors"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["thracian_coalition_highland_warriors"], "countBy": "units" }, { "ids": ["thracian_coalition_getae"], "expression": "oneInEvery", "ratio": 2, "compareWith": ["thracian_coalition_warriors", "thracian_coalition_nobles"], "countBy": "units" } 
          ],
       "categories": [
         {
