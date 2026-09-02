@@ -23986,7 +23986,7 @@
           "min": 0,
           "max": 33,
           "alliedArmyKeys": [
-            "later_irish",
+            "later_irish_early",
             "later_saxon_kingdoms"
           ],
           "maxAlliedArmiesAllowed": 1
@@ -30588,7 +30588,7 @@
           "max": 25,
           "alliedArmyKeys": [ { "key": "dabai_irish_and_scots",  "excludesUnits": ["dabai_irish_and_scots_noble_chariots"] },
   {"key": "early_medieval_wales"},
-{"key": "later_irish"}
+{"key": "later_irish_early"}
 ], 
           "maxAlliedArmiesAllowed": 1
         }
@@ -40567,7 +40567,7 @@
           "max": 25,
           "alliedArmyKeys": [
             "early_medieval_wales",
-            "later_irish"
+            "later_irish_early"
           ],
           "maxAlliedArmiesAllowed": 1
         }
