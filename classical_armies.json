@@ -5285,6 +5285,7 @@
           "cohesion": 8,
           "pointsPerBase": 24,
           "minBases": 3,
+			"maxBases": 8,
           "baseEquipment": [
             "Light Armour","Javelins","Spear"
           ],
@@ -5300,7 +5301,7 @@
               "equipmentAdded": [
                 "Heavy Armour"
               ],
-              "equipmentRemoved": [],
+              "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
