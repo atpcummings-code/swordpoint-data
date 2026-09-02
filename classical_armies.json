@@ -5513,6 +5513,7 @@
             },
             {
               "name": "Bow",
+				"enabledEvery": 2,
               "hiddenUntilEnabled": "hidden",
               "pointsModifier": -1,
               "equipmentAdded": [
