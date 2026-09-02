@@ -5766,6 +5766,391 @@
         
       ]
     },
+
+"thracian_coalition": {
+      "armyName": "Thracian - Coalition - 500 BC to 46 BC",
+         "armyValidation": [ 
+           { "ids": ["thracian_coalition_lowland_warriors"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["thracian_coalition_highland_warriors"], "countBy": "units" },
+         { "ids": ["thracian_coalition_getae"], "expression": "lessThanOrEqual", "ratio": 0.333, "compareWith": ["thracian_coalition_warriors", "thracian_coalition_getae", "thracian_coalition_nobles"], "countBy": "units" }
+         ],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "description": "Must be at least two Getae cavalry units.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 40
+        },
+         {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+        {
+          "id": "thracian_coalition_warlord_king",
+          "name": "Warlord/King",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 8,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "thracian_coalition_chieftain",
+          "name": "Chieftain",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "thracian_coalition_nobles",
+          "name": "Nobles",
+          "description": "Nobles have light armour, javelins and spears. Superior Fighters. Superior Shooters. May have heavy armour (+1). May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+			"maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Javelins","Spear"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters",
+            "Superior Shooters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Armour"
+              ],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield (After 280 BC only)",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "thracian_coalition_getae",
+          "name": "Getae",
+          "description": "Getae have javelins or bow. Superior Shooters. Evade May have spears (+1) and light armour (+1). May be fielded as Skirmishers with Parthian Shot.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "minCountAllowed": 2,
+          "baseEquipment": [],
+          "specialRules": [
+            "Open Order",
+            "Superior Shooters", "Evade"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Javelins"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Light Armour"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers","Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield (After 280 BC only)",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "thracian_coalition_warriors",
+          "name": "Warriors",
+          "description": "Warriors have javelins. Warband. May be fielded as Skirmishers, which sre not Warband, at a cost of 14 points per base.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield (After 280 BC only)",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order", "Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "thracian_coalition_lowland_warriors",
+          "name": "Lowland Warriors",
+          "description": "Lowland Warriors have javelins and shield. Open Order. Warband. May add Spear (free).Every second unit may instead be fielded as Skirmishers at a cost of six points per base..  Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "enableHidden": "Bow",
+              "pointsModifier": -5,
+              "enabledEvery": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order", "Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+				"enabledEvery": 2,
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "thracian_coalition_highland_warriors",
+          "name": "Highland Warriors",
+          "description": "Highland Warriors have javelins and shield. Open Order. Warband. May add Halberd (+2).Every second unit may instead be fielded as Skirmishers at a cost of seven points per base..  Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "enableHidden": "Bow",
+              "pointsModifier": -5,
+              "enabledEvery": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order", "Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Halberd",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Halberd"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+				"enabledEvery": 2,
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
+    },
+	  
     "alans": {
       "armyName": "Alans - 350 to 475 AD",
       "categories": [
