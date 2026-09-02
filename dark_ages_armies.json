@@ -30641,15 +30641,14 @@
         {
           "id": "Allies",
           "name": "Special Troops or Allies",
-          "description": "The army may have allies from Wales (Early Medieval Wales), Scotland (Dark Age Britain and Ireland) or Ireland (Later Irish).",
+          "description": "The army may have allies from Wales (Early Medieval Wales), Scotland (Dark Age Britain and Ireland Irish and Scots list - no Chariots) or Ireland (Later Irish).",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [
-            "early_medieval_wales",
-            "dark_age_britain_and_ireland",
-            "later_irish"
-          ],
+          "alliedArmyKeys": [ { "key": "dabai_irish_and_scots",  "excludesUnits": ["dabai_irish_and_scots_noble_chariots"] },
+  {"key": "early_medieval_wales"},
+{"key": "later_irish"}
+], 
           "maxAlliedArmiesAllowed": 1
         }
       ],
