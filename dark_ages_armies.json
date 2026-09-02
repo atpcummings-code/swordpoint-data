@@ -31874,10 +31874,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 20,
-          "alliedArmyKeys": [
-            "medieval_scots",
-            "vikings"
-          ],
+          "alliedArmyKeys": [ { "key": "vikings",  "excludesIfUnits": ["later_irish_early_gallogIaich"] },{"key": "medieval_scots"} ], 
           "maxAlliedArmiesAllowed": 1
         }
       ],
