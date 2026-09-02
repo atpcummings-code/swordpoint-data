@@ -5533,7 +5533,7 @@
 
 	  "thracian_highland_tribes": {
       "armyName": "Thracian - Getae - 500 BC to 46 BC",
-     "armyValidation": [ { "ids": [""thracian_highland_tribes_lowland_warriors""], "expression": "greaterThanOrEqual", "ratio": 0.5, "compareWith": ["thracian_highland_tribes_highland_warriors"], "countBy": "units" } ],
+     "armyValidation": [ { "ids": ["thracian_highland_tribes_lowland_warriors"], "expression": "greaterThanOrEqual", "ratio": 0.5, "compareWith": ["thracian_highland_tribes_highland_warriors"], "countBy": "units" } ],
       "categories": [
         {
           "id": "Commanders",
