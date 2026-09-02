@@ -5225,7 +5225,7 @@
         {
           "id": "Cavalry",
           "name": "Cavalry",
-          "description": "There must be two warrior cavalry units for each Noble Cavalry unit of either sort fielded, and there must be more Warrior bases than Noble bases in total.",
+          "description": "Must be at least two Getae cavalry units.",
           "constraintType": "percentage",
           "min": 33,
           "max": 100
@@ -5434,7 +5434,6 @@
           "pointsPerBase": 15,
           "minBases": 3,
           "maxBases": 8,
-          "minCountAllowed": 2,
           "baseEquipment": [
             "Javelins"
           ],
