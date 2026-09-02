@@ -31870,11 +31870,11 @@
         {
           "id": "Allies",
           "name": "Allied Contingents",
-          "description": "An Irish Kingdoms army may have allies from the Medieval Scots list.  An early Irish Kingdoms army (before 1200AD without gallogiaich may have allies from the Viking list.",
+          "description": "An early Irish Kingdoms army without Gallogiaich may have allies from the Viking list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 20,
-          "alliedArmyKeys": [ { "key": "vikings",  "excludesIfUnits": ["later_irish_early_gallogIaich"] },{"key": "medieval_scots", "supplement":"medieval_armies"} ], 
+          "alliedArmyKeys": [ { "key": "vikings", "conditions": { "excludesIfUnits": ["later_irish_early_gallogIaich"] } }, { "key": "medieval_scots", "supplement": "medieval_armies" } ],
           "maxAlliedArmiesAllowed": 1
         }
       ],
