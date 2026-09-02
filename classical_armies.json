@@ -5554,6 +5554,7 @@
          {
           "id": "Infantry",
           "name": "Infantry",
+			"description": "Must include two highland warrior units for each lowland warrior unit.",
           "constraintType": "percentage",
           "min": 25,
           "max": 100
