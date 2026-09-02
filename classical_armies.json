@@ -5489,7 +5489,7 @@
           "optionalEquipment": [
             {
               "name": "Skirmishers",
-              "enableHidden": "Bow",
+              "enableHidden": ["Bow","Sling"],
               "pointsModifier": -5,
               "enabledEvery": 2,
               "equipmentAdded": [],
@@ -5514,6 +5514,22 @@
             {
               "name": "Bow",
 				"enabledEvery": 2,
+				"disables": "Sling",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Sling",
+				"enabledEvery": 2,
+				"disables": "Bow",
               "hiddenUntilEnabled": "hidden",
               "pointsModifier": -1,
               "equipmentAdded": [
@@ -5689,6 +5705,22 @@
             {
               "name": "Bow",
 				"enabledEvery": 2,
+				"disables": "Sling",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Sling",
+				"enabledEvery": 2,
+				"disables": "Bow",
               "hiddenUntilEnabled": "hidden",
               "pointsModifier": -1,
               "equipmentAdded": [
@@ -5750,6 +5782,22 @@
             {
               "name": "Bow",
 				"enabledEvery": 2,
+				"disables": "Sling",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Sling",
+				"enabledEvery": 2,
+				"disables": "Bow",
               "hiddenUntilEnabled": "hidden",
               "pointsModifier": -1,
               "equipmentAdded": [
@@ -6072,6 +6120,22 @@
             {
               "name": "Bow",
 				"enabledEvery": 2,
+				"disables": "Sling",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Sling",
+				"enabledEvery": 2,
+				"disables": "Bow",
               "hiddenUntilEnabled": "hidden",
               "pointsModifier": -1,
               "equipmentAdded": [
@@ -6132,6 +6196,22 @@
             {
               "name": "Bow",
 				"enabledEvery": 2,
+				"disables": "Sling",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": -1,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Sling",
+				"enabledEvery": 2,
+				"disables": "Bow",
               "hiddenUntilEnabled": "hidden",
               "pointsModifier": -1,
               "equipmentAdded": [
