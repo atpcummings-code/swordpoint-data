@@ -31836,8 +31836,8 @@
         }
       ]
     },
-    "later_irish": {
-      "armyName": "Later Irish - 830 to 1500 AD",
+    "later_irish_early": {
+      "armyName": "Later Irish (Early Kingdoms) - 830 to 1199 AD",
       "categories": [
         {
           "id": "Commanders",
@@ -31898,7 +31898,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "later_irish_irish_chieftain",
+          "id": "later_irish_early_irish_chieftain",
           "name": "Irish Chieftain",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -31912,7 +31912,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "later_irish_irish_cavalry",
+          "id": "later_irish_early_irish_cavalry",
           "name": "Irish Cavalry",
           "description": "Irish Cavalry have javelins and shield. Evade. May be fielded as skirmishers.Every second Irish cavalry unit may be upgraded to Nobles (+2); they are then Superior Fighters and may have Light Armour (+1).",
           "category": "Cavalry",
@@ -31972,7 +31972,7 @@
           ]
         },
         {
-          "id": "later_irish_noble_warriors",
+          "id": "later_irish_early_noble_warriors",
           "name": "Noble Warriors",
           "description": "Noble Warriors have light armour, throwing spear and shield. Superior Fighters. Warband. Open Order. They may exchange throwing spear for double handed weapon (free).",
           "category": "Infantry",
@@ -32010,7 +32010,7 @@
           ]
         },
         {
-          "id": "later_irish_kerns",
+          "id": "later_irish_early_kerns",
           "name": "Kerns",
           "description": "Kerns have javelins and shield. Open Order. Warband. They may exchange their javelins for throwing spears (free) or double handedweapons (+2).",
           "category": "Infantry",
@@ -32076,7 +32076,7 @@
           ]
         },
         {
-          "id": "later_irish_skirmishers",
+          "id": "later_irish_early_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers. May have shield (+1) and may exchange javelins for sling (free)",
           "category": "Infantry",
@@ -32126,7 +32126,7 @@
           ]
         },
         {
-          "id": "later_irish_rising_out",
+          "id": "later_irish_early_rising_out",
           "name": "Rising Out",
           "description": "Rising Out have stones. Inferior Fighters. Inferior Shooters. Levies.",
           "category": "Infantry",
@@ -32148,7 +32148,359 @@
           "optionalEquipment": []
         },
         {
-          "id": "later_irish_gallogIaich",
+          "id": "later_irish_early_gallogIaich",
+          "name": "GallogIaich",
+          "description": "GallogIaich have double-handed weapons and light armour. Superior Fighters. Veteran. May exchange double handed weapon for spear and shield +2 in which case they may form Shieldwall.  In later armies (after 1200AD may have heavy armour (+2). May be Stubborn (+2).",
+          "category": "Mercenaries",
+          "type": "Commander",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Double-handed Weapon",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Superior Fighters",
+            "Veteran"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear and Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Spear",
+                "Shield"
+              ],
+              "equipmentRemoved": [
+                "Double-handed Weapon"
+              ],
+              "rulesAdded": [
+                "Shieldwall"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+      ]
+    },
+ "later_irish_late__late": {
+      "armyName": "Later Irish (Late Irish Kingdoms) - 1200 to 1500 AD",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        {
+          "id": "Mercenaries",
+          "name": "Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+        {
+          "id": "Allies",
+          "name": "Allied Contingents",
+          "description": "An Irish Kingdoms army may have allies from the Medieval Scots list.  An early Irish Kingdoms army (before 1200AD without gallogiaich may have allies from the Viking list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20,
+          "alliedArmyKeys": [
+            "medieval_scots",
+            "vikings"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
+      ],
+      "units": [
+        {
+          "id": "later_irish_late__irish_king",
+          "name": "Irish King",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_irish_late__irish_chieftain",
+          "name": "Irish Chieftain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": 1,
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_irish_late__irish_cavalry",
+          "name": "Irish Cavalry",
+          "description": "Irish Cavalry have javelins and shield. Evade. May be fielded as skirmishers.Every second Irish cavalry unit may be upgraded to Nobles (+2); they are then Superior Fighters and may have Light Armour (+1).",
+          "category": "Cavalry",
+          "type": "Commander",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Evade"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Noble Upgrade",
+              "enableHidden": ["Light Armour"],				
+              "pointsModifier": 2,
+              "enabledEvery": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [
+                "Superior Fighters"
+              ],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Light Armour",
+			"hiddenUntilEnabled": "hidden",			
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "rulesAdded": [
+                "Skirmishers"
+              ],
+              "rulesRemoved": [
+                "Open Order"
+              ],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_irish_late__noble_warriors",
+          "name": "Noble Warriors",
+          "description": "Noble Warriors have light armour, throwing spear and shield. Superior Fighters. Warband. Open Order. They may exchange throwing spear for double handed weapon (free).",
+          "category": "Infantry",
+          "type": "Commander",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Light Armour",
+            "Throwing Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Superior Fighters",
+            "Open Order",
+            "Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Double-handed Weapon",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Double-handed Weapon"
+              ],
+              "equipmentRemoved": [
+                "Throwing Spear"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_irish_late__kerns",
+          "name": "Kerns",
+          "description": "Kerns have javelins and shield. Open Order. Warband. They may exchange their javelins for throwing spears (free) or double handedweapons (+2).",
+          "category": "Infantry",
+          "type": "Commander",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Double-handed Weapon",
+              "disables": [
+                "Throwing Spear"
+              ],
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Double-handed Weapon"
+              ],
+              "equipmentRemoved": [
+                "Javelins"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear",
+              "disables": [
+                "Double-handed Weapon"
+              ],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Throwing Spear"
+              ],
+              "equipmentRemoved": [
+                "Javelins"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Ambush",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+        {
+          "id": "later_irish_late__skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers. May have shield (+1) and may exchange javelins for sling (free)",
+          "category": "Infantry",
+          "type": "Commander",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 9,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Skirmishers",
+            "Inferiror Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": [
+                "Javelins"
+              ],
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Sling"
+              ],
+              "equipmentRemoved": [
+                "Javelins"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_irish_late__rising_out",
+          "name": "Rising Out",
+          "description": "Rising Out have stones. Inferior Fighters. Inferior Shooters. Levies.",
+          "category": "Infantry",
+          "type": "Commander",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Stones"
+          ],
+          "specialRules": [
+            "Inferior Fighters",
+            "Inferior Shooters",
+            "Levies",
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_irish_late__gallogIaich",
           "name": "GallogIaich",
           "description": "GallogIaich have double-handed weapons and light armour. Superior Fighters. Veteran. May exchange double handed weapon for spear and shield +2 in which case they may form Shieldwall.  In later armies (after 1200AD may have heavy armour (+2). May be Stubborn (+2).",
           "category": "Mercenaries",
@@ -32185,7 +32537,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Heavy Armour (Post 1200 AD",
+              "name": "Heavy Armour",
               "pointsModifier": 2,
               "equipmentAdded": [
                 "Heavy Armour"
@@ -32199,7 +32551,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Stubborn (Post 1200 AD",
+              "name": "Stubborn",
               "pointsModifier": 2,
               "rulesAdded": [
                 "Stubborn"
@@ -32212,6 +32564,8 @@
         }
       ]
     },
+
+	  
     "early_burmese": {
       "armyName": "Early Burmese - 849 to 1174 AD",
       "armyValidation": [
