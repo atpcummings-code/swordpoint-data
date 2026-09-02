@@ -37210,7 +37210,7 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-             {"key": "rus"},
+             {"key": "christianised_rus"},
 			    {"key": "christian_crusaders_first_crusade", "supplement":"medieval_armies"},
 			  {"key": "christian_crusaders_second_crusade", "supplement":"medieval_armies"},
 			  {"key": "christian_crusaders_later_crusades", "supplement":"medieval_armies"}
