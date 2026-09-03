@@ -7592,10 +7592,10 @@
           "maxBases": 12,
           "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["hispania_sertorian_revolt_caetrati","hispania_sertorian_revolt_celtiberians","hispania_sertorian_revolt_lusitanians","hispania_sertorian_revolt_tribesmen"] },
           "baseEquipment": [
-            "Throwing Spear", "Large Shield","Light Armour","Stamina"
+            "Throwing Spear", "Large Shield","Light Armour"
           ],
           "specialRules": [
-            "Close Order"
+            "Close Order","Stamina"
           ],
           "optionalEquipment": []
         },
