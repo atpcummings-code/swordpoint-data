@@ -6597,7 +6597,7 @@
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": [
-            "Sling""
+            "Sling"
           ],
           "specialRules": [
             "Skirmishers","Inferior Fighters"
