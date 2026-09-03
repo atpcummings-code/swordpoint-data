@@ -6414,7 +6414,7 @@
             },
             {
               "name": "Heavy Throwing Spear",
-              "disables": "Throwing Spear,"
+              "disables": "Throwing Spear",
               "pointsModifier": 2,
               "equipmentAdded": [
                 "Heavy Throwing Spear"
@@ -6427,7 +6427,7 @@
             },
             {
               "name": "Open Order",
-              "disables": "Heavy Throwing Spear,"
+              "disables": "Heavy Throwing Spear",
               "pointsModifier": -4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
@@ -6489,7 +6489,7 @@
             },
             {
               "name": "Open Order",
-              "disables": "Heavy Throwing Spear,"
+              "disables": "Heavy Throwing Spear",
               "pointsModifier": -4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
@@ -6532,7 +6532,7 @@
             },
             {
               "name": "Open Order",
-              "disables": "Heavy Throwing Spear,"
+              "disables": "Heavy Throwing Spear",
               "pointsModifier": -5,
               "equipmentAdded": [],
               "equipmentRemoved": [],
