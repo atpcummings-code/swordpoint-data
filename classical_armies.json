@@ -7390,7 +7390,422 @@
         
       ]
     },
+"hispania_sertorian_revolt": {
+      "armyName": "Hispania Sertorian Revolt - 80 BC to 72 BC",
+"armyValidation": [ 
+  { "ids": ["hispania_sertorian_revolt_raw_legionaries"], "expression": "oneInEvery", "ratio": 3, "compareWith": ["hispania_sertorian_revolt_caetrati","hispania_sertorian_revolt_celtiberians","hispania_sertorian_revolt_lusitanians","hispania_sertorian_revolt_tribesmen"], "countBy": "units" } 
+    ],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+       
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "description": "There must be two warrior cavalry units for each Noble Cavalry unit of either sort fielded, and there must be more Warrior bases than Noble bases in total.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+         
+        {
+          "id": "Skirmishers",
+          "name": "Skirmishers",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "units": [
+        {
+          "id": "hispania_sertorian_revolt_chieftain",
+          "name": "General",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hispania_sertorian_revolt_sub-chief",
+          "name": "Sub-Chief",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "minCountAllowed": 1,
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hispania_sertorian_revolt_legate",
+          "name": "Sub-Chief",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+1",
+          "cohesion": "+2",
+          "minCountAllowed": 1,
+          "pointsPerBase": 15,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hispania_sertorian_revolt_heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have spear, javelins and shield. Superior Fighters. May have light armour (+1). Maybe Stubborn (+2).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear","Shield","Javelins"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Light Armour"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hispania_sertorian_revolt_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins and shield. May have spear (+1). Maybe fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins", "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Spear"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+         {
+          "id": "hispania_sertorian_revolt_caetrati",
+          "name": "Caetrati",
+          "description": "Caetrati have javelins and shield. Skirmishers.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hispania_sertorian_revolt_raw_legionaries",
+          "name": "Raw Legionaries",
+          "description": "Raw Legionaries have light armour, large shield, and heavy throwing spear.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 12,
+          "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["hispania_sertorian_revolt_caetrati","hispania_sertorian_revolt_celtiberians","hispania_sertorian_revolt_lusitanians","hispania_sertorian_revolt_tribesmen"] },
+          "baseEquipment": [
+            "Throwing Spear", "Large Shield","Light Armour","Stamina"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hispania_sertorian_revolt_celtiberians",
+          "name": "Celtiberians",
+          "description": "Celtiberians have throwing spear and shield. Evade. Warband. May upgrade to heavy throwing spear (+1), but lose Evade if they do",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          
+          "baseEquipment": [
+            "Throwing Spear", "Shield"
+          ],
+          "specialRules": [
+            "Close Order","Evade", "Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Throwing Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Heavy Throwing Spear"
+              ],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": ["Evade"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Open Order",
+              "disables": "Heavy Throwing Spear",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+ {
+              "name": "Light Armour",
 
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hispania_sertorian_revolt_lusitanians",
+          "name": "Lusitanians",
+          "description": "Lusitanians have light armour, javelins, throwing spear and shield. Evade. May upgrade to heavy throwing spear (free), but lose Evade if they do",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear", "Shield","Light Armour", "Javelins"
+          ],
+          "specialRules": [
+            "Close Order","Evade"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Throwing Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": [
+                "Heavy Throwing Spear"
+              ],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": ["Evade"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Open Order",
+              "disables": "Heavy Throwing Spear",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hispania_sertorian_revolt_tribesmen",
+          "name": "Tribesmen",
+          "description": "Tribesmen have javelins and shield. Warband. May upgrade to throwing spear (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield", "Javelins"
+          ],
+          "specialRules": [
+            "Close Order","Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Throwing Spear",
+              "pointsModifier": 3,
+              "equipmentAdded": [
+                "Throwing Spear"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Open Order",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hispania_sertorian_revolt_slingers",
+          "name": "Slingers",
+          "description": "Slingers have sling. Inferior Fighters. Skirmishers. May have shield (+1).",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Sling"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hispania_sertorian_revolt_balearic_slingers",
+          "name": "Balearic Slingers",
+          "description": "Balearic Slingers have sling. Superior Shooters. Skirmishers. May have shield (+1). Balearic units must form no more than half of sling units present and must contain no more models than teh smallest other slinger unit.",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 9,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Sling"
+          ],
+          "specialRules": [
+            "Skirmishers","Superior Shooters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
+    },
 
 	  
     "alans": {
