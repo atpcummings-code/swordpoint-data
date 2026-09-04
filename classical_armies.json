@@ -8108,6 +8108,352 @@
         
       ]
     },
+
+"republican_indian": {
+      "armyName": "Republican Indian - 500 BC to 320 BC",
+    
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+         {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+            {
+          "id": "Wagons",
+          "name": "Wagons",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        },
+      ],
+      "units": [
+        {
+          "id": "republican_indian_senapati",
+          "name": "Senapati",
+          "description": "May ride a horse or join a chariot unit",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "republican_indian_padika",
+          "name": "Padika",
+          "description": "May ride a horse or join a chariot unit",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "republican_indian_brahmin_priests",
+          "name": "Brahmin Priests",
+          "description": "A unit accompanied by a Brahmin Priest may throw two extra dice in teh first round of every combat. If teh priest is killed during the game, the unit loses a base immediately, but suffers no further consequences.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "Special",
+          "cohesion": "0",
+          "maxCountAllowed": 3,
+          "pointsPerBase": 15,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "republican_indian_light_chariots",
+          "name": "Light Chariots",
+          "description": "Light Chariots have a driver and two crewmen armed with javelins and halberd. Superior Fighters. Superior Shooters. Light Chariots. 'Used to Elephants'. May have light armour (+1) and bow (+1) or shield (+1) but not both.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 31,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins","Halberd"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters","Superior Shooters","Light Chariots","Used to Elephants"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Light Armour"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+               "disables": "Bow",
+              "pointsModifier": 1,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "republican_indian_heavy_chariots",
+          "name": "Heavy Chariots",
+          "description": "Heavy Chariots have a driver and two crewmen with light armour,  javelins and halberd. Superior Fighters. Superior Shooters. Heavy Chariots. Used to Elephants. May have bow (+2) or shield (+2) but not both.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 39,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins","Halberd","Light Armour"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters","Superior Shooters","Heavy Chariots","Used to Elephants"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+             {
+              "name": "Shield",
+               "disables": "Bow",
+              "pointsModifier": 2,
+              "equipmentAdded": [
+                "Shield"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+          {
+          "id": "republican_indian_mercenaries",
+          "name": "Mercenaries",
+          "description": "Mercenaries have a halberd. May have a longbow (+4) or throwing spear, javelins and shield(+6). May upgrade shield to large shield(+2) and may have light armour (+2). May also exchange halberd for two-handed sword (free). One mercenary unit may be taken for every two other units from the Infantry section.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+            "requires": { "unitIds": ["republican_indian_hereditary","republican_indian_guildsmen"], "name": ["Hereditary","Guildsmen"], "countPerUnit": 2 },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Halberd"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Longbow",
+              "disables": "Throwing Spear/Javelins/Shield",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Longbow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear/Javelins/Shield",
+              "disables": "Longbow",
+              "enableHidden": "Large Shield"
+              "pointsModifier": 6,
+              "equipmentAdded": ["Throwing Spear","Javelins","Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "hiddenUntilEnabled": "hidden"
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Two-handed Sword",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Two-handed Sword"],
+              "equipmentRemoved": ["Halberd"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "republican_indian_hereditary",
+          "name": "Hereditary",
+          "description": "Hereditary have a halberd and longbow. Inferior Fighters. Up to half the figures in a unit may replace longbow with throwing spear, javelins and shield (+2). May upgrade shield to large shield (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Halberd","Longbow"
+          ],
+          "specialRules": [
+            "Close Order","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "republican_indian_guildsmen",
+          "name": "Guildsmen",
+          "description": "Guildsmen have a halberd and longbow. Inferior Fighters. Inferior Shooters. Levies. Up to half the figures in a unit may replace longbow with throwing spear, javelins and shield (+2). May upgrade shield to large shield (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Halberd","Longbow"
+          ],
+          "specialRules": [
+            "Close Order","Inferior Fighters","Inferior Shooters","Levies"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "republican_indian_wagons",
+          "name": "Wagons",
+          "description": "Wagons form a Wagon Tabor. There may be one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
+          "category": "Wagons",
+          "type": "Wagons",
+          "minBases": 2,
+          "maxBases": 5,
+          "subProfiles": [
+            {
+              "name": "Wagons",
+              "stats": {},
+              "pointsPerBase": 10,
+              "specialRules": [
+                "Wagon Tabor"
+              ]
+            },
+            {
+              "name": "Defenders",
+              "stats": {
+                "D": 4,
+                "C": 7
+              },
+              "pointsPerBase": 18,
+              "baseEquipment": [
+                "Javelins",
+                "Shield"
+              ],
+              "specialRules": [
+                "Inferior Fighters"
+              ]
+            }
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsPerBase": 0,
+              "targetProfile": "Defenders",
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Javelins"]
+            }
+          ]      
+    }
+ 
+        
+      ]
+    },
 	  
     "alans": {
       "armyName": "Alans - 350 to 475 AD",
