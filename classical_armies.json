@@ -8085,7 +8085,6 @@
           "pointsPerBase": 4,
           "minBases": 2,
           "maxBases": 6,
-          "maxCountAllowed": 1,
           "baseEquipment": ["Javelins"],
           "specialRules": [
             "Skirmishers","Inferior Fighters"
