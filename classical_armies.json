@@ -6776,11 +6776,7 @@
           "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
-			"requires": {
-            "unitId": "hispania_lusitanian_lusitanians",
-            "count": 2,
-            "name": "Lusitanians"
-          },
+		"requires": { "unitIds": ["hispania_lusitanian_lusitanians"], "name": ["Lusitanians"], "countPerUnit": 2 },
           "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["hispania_lusitanian_lusitanians"] },
           "baseEquipment": [
             "Throwing Spear", "Shield"
@@ -7205,11 +7201,7 @@
           "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
-				"requires": {
-            "unitId": "hispania_iberian_scutarii",
-            "count": 2,
-            "name": "Scutarii"
-          },
+		"requires": { "unitIds": ["hispania_iberian_scutarii"], "name": ["Scutarii"], "countPerUnit": 3 },
           "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["hispania_iberian_scutarii"] },
           "baseEquipment": [
             "Throwing Spear", "Shield"
