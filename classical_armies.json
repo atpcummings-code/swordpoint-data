@@ -9399,7 +9399,7 @@
           "optionalEquipment": [
             {
               "name": "Light Armour",
-              "pointsModifier": -4,
+              "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
