@@ -7389,9 +7389,6 @@
     },
 "hispania_sertorian_revolt": {
       "armyName": "Hispania Sertorian Revolt - 80 BC to 72 BC",
-"armyValidation": [ 
-  { "ids": ["hispania_sertorian_revolt_raw_legionaries"], "expression": "oneInEvery", "ratio": 3, "compareWith": ["hispania_sertorian_revolt_caetrati","hispania_sertorian_revolt_celtiberians","hispania_sertorian_revolt_lusitanians","hispania_sertorian_revolt_tribesmen"], "countBy": "units" } 
-    ],
       "categories": [
         {
           "id": "Commanders",
@@ -7587,6 +7584,7 @@
           "pointsPerBase": 23,
           "minBases": 3,
           "maxBases": 12,
+			"requires": { "unitIds": ["hispania_sertorian_revolt_caetrati","hispania_sertorian_revolt_celtiberians","hispania_sertorian_revolt_lusitanians","hispania_sertorian_revolt_tribesmen"], "name": ["Caetrati","Celtiberians","Lusitanians","Tribesmen"], "countPerUnit": 2 },
           "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["hispania_sertorian_revolt_caetrati","hispania_sertorian_revolt_celtiberians","hispania_sertorian_revolt_lusitanians","hispania_sertorian_revolt_tribesmen"] },
           "baseEquipment": [
             "Throwing Spear", "Large Shield","Light Armour"
