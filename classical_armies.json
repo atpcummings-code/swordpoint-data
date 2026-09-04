@@ -8891,7 +8891,7 @@
 "illyrians": {
       "armyName": "Illyrians - 500 BC to 10 AD",
     "armyValidation": [ 
-  { "ids": ["illyrians_slaves"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["uillyrians_warriors"], "countBy": "bases" } 
+  { "ids": ["illyrians_slaves"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["illyrians_warriors"], "countBy": "bases" } 
     ],
       "categories": [
         {
