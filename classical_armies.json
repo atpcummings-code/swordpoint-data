@@ -8662,71 +8662,7 @@
               "cohesionModifier": 0
             }
           ]
-        },
-        {
-          "id": "ligurian_guildsmen",
-          "name": "Guildsmen",
-          "description": "Guildsmen have a halberd and longbow. Inferior Fighters. Inferior Shooters. Levies. Up to half the figures in a unit may replace longbow with throwing spear, javelins and shield (+2). May upgrade shield to large shield (+2).",
-          "category": "Infantry",
-          "type": "Infantry",
-          "defence": 7,
-          "cohesion": 5,
-          "pointsPerBase": 8,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-            "Halberd","Longbow"
-          ],
-          "specialRules": [
-            "Close Order","Inferior Fighters","Inferior Shooters","Levies"
-          ],
-          "optionalEquipment": []
-        },
-        {
-          "id": "ligurian_wagons",
-          "name": "Wagons",
-          "description": "Wagons form a Wagon Tabor. There may be one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
-          "category": "Wagons",
-          "type": "Wagons",
-          "minBases": 2,
-          "maxBases": 5,
-          "subProfiles": [
-            {
-              "name": "Wagons",
-              "stats": {},
-              "pointsPerBase": 10,
-              "specialRules": [
-                "Wagon Tabor"
-              ]
-            },
-            {
-              "name": "Defenders",
-              "stats": {
-                "D": 4,
-                "C": 7
-              },
-              "pointsPerBase": 18,
-              "baseEquipment": [
-                "Javelins",
-                "Shield"
-              ],
-              "specialRules": [
-                "Inferior Fighters"
-              ]
-            }
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Bow",
-              "pointsPerBase": 0,
-              "targetProfile": "Defenders",
-              "equipmentAdded": [
-                "Bow"
-              ],
-              "equipmentRemoved": ["Javelins"]
-            }
-          ]      
-    }
+        }
  
         
       ]
