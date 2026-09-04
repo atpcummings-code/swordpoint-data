@@ -8454,6 +8454,284 @@
         
       ]
     },
+
+"ligurian": {
+      "armyName": "Ligurian - 500 BC to 100 BC",
+    
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+       
+        {
+          "id": "Warriors",
+          "name": "Warriors",
+           "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+         {
+          "id": "Skirmishers",
+          "name": "Skirmishers",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        }
+      ],
+      "units": [
+        {
+          "id": "ligurian_general",
+          "name": "General",
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 8,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "ligurian_clab_chief",
+          "name": "Clan Chief",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+2",
+          "maxCountAllowed": 2,
+          "pointsPerBase": 25,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "ligurian_sub_chief",
+          "name": "Sub Chief",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+          {
+          "id": "ligurian_veterans",
+          "name": "Veterans",
+          "description": "Veterans have light armour, throwing spear and shield. Superior Fighters. Warband. Veteran. May be fieled in Open Order for 18pts per base.",
+          "category": "Warriors",
+          "type": "Warriors",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 24,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Light Armour","Throwing Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order", "Warband","Veteran"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "open Order",
+              "pointsModifier": -6,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "ligurian_warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Warband. May be fieled in Open Order for 12pts per base.",
+          "category": "Warriors",
+          "type": "Warriors",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order", "Warband"
+          ],
+          "optionalEquipment": [
+             {
+              "name": "open Order",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "ligurian_apnani",
+          "name": "Apnani",
+          "description": "Apnani have halberd, javelins and shield. Warband. May be fieled in Open Order for 14pts per base.",
+          "category": "Warriors",
+          "type": "Warriors",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "maxCountAllowed": 1,
+          "baseEquipment": [
+            "Halberd","Javelins","Shield"
+          ],
+          "specialRules": [
+            "Close Order", "Warband"
+          ],
+          "optionalEquipment": [
+             {
+              "name": "Open Order",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "ligurian_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins. Skirmishers/ Up to half may exchange javelins for sling or bow (free)",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              enabledEvery": 2,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": 0,
+              enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "ligurian_guildsmen",
+          "name": "Guildsmen",
+          "description": "Guildsmen have a halberd and longbow. Inferior Fighters. Inferior Shooters. Levies. Up to half the figures in a unit may replace longbow with throwing spear, javelins and shield (+2). May upgrade shield to large shield (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Halberd","Longbow"
+          ],
+          "specialRules": [
+            "Close Order","Inferior Fighters","Inferior Shooters","Levies"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "ligurian_wagons",
+          "name": "Wagons",
+          "description": "Wagons form a Wagon Tabor. There may be one base of defenders per wagon on the table. Defenders have javelins and shield. Inferior Fighters. May exchange javelins for bow (free). They form one single unit",
+          "category": "Wagons",
+          "type": "Wagons",
+          "minBases": 2,
+          "maxBases": 5,
+          "subProfiles": [
+            {
+              "name": "Wagons",
+              "stats": {},
+              "pointsPerBase": 10,
+              "specialRules": [
+                "Wagon Tabor"
+              ]
+            },
+            {
+              "name": "Defenders",
+              "stats": {
+                "D": 4,
+                "C": 7
+              },
+              "pointsPerBase": 18,
+              "baseEquipment": [
+                "Javelins",
+                "Shield"
+              ],
+              "specialRules": [
+                "Inferior Fighters"
+              ]
+            }
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsPerBase": 0,
+              "targetProfile": "Defenders",
+              "equipmentAdded": [
+                "Bow"
+              ],
+              "equipmentRemoved": ["Javelins"]
+            }
+          ]      
+    }
+ 
+        
+      ]
+    },
+
 	  
     "alans": {
       "armyName": "Alans - 350 to 475 AD",
