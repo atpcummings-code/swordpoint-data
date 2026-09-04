@@ -9194,7 +9194,279 @@
       ]
     },
 
-	  
+	 "gallic": {
+      "armyName": "Gallic - 500 BC to 50 BC",
+    
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 30
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+         {
+          "id": "Skirmishers",
+          "name": "Skirmishers",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+        {
+          "id": "gallic_high_chieftain",
+          "name": "high Chieftain",
+          "description": "May ride a horse or join a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 8,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "gallic_chieftain",
+          "name": "Chieftain",
+          "description": "May ride a horse or join a chariot.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "gallic_minor_chief",
+          "name": "Minor Chief",
+          "description": "May ride a horse or join a chariot.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "gallic_noble_cavalry",
+          "name": "Noble Cavalry",
+          "description": "Noble Cavalry have spear, shield and light armour. Superior Fighters.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+         "excludes": ["gallic_noble_chariots","gallic_noble_cavalry"],
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear","Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Open Order","Superir Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "gallic_noble_chariots",
+          "name": "Noble Chariots",
+          "description": "Noble Chariots have an unarmed driver and one warrior crewman with javelins, light armour and shield. Light Chariots. Superior Fighters.  If any chariots a eincluded, Noble Cavalry may not be used.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "excludes": ["gallic_noble_chariots","gallic_noble_cavalry"],
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 27,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins","Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Open Order","Superir Fighters","Light Chariots"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "gallic_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have spear and shield.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Shield","Spear"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        },
+          {
+          "id": "gallic_warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Warband. May be fielded in Open Order at a cost of eleven points per base.  May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield","Throwing Spear"
+          ],
+          "specialRules": [
+            "Close Order","Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Open Order",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "gallic_fanatics",
+          "name": "Fanatics",
+          "description": "Fanatics have throwing spear and shield. Warband. Stubborn. May be fielded in Open Order at a cost of twelve points per base.  They may not be taken unless there is at least one unit of chariots in the army., and there cannot be more fanatics than warriors in the army.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "requires": {"unitId": "gallic_noble_chariots","count": 1,"name": "Nobel Chariots"}, 
+          "baseEquipment": [
+            "Shield","Throwing Spear"
+          ],
+          "specialRules": [
+            "Close Order","Warband","Stubborn"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": -4,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Open Order",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+          {
+          "id": "gallic_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May exchange javelins with sling or bow (free). There may not be more bow units than sling units and sling or bow units may not be larger tham the smallest javelin unit in the army.",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+
+        
+        
+      ]
+    }, 
     "alans": {
       "armyName": "Alans - 350 to 475 AD",
       "categories": [
