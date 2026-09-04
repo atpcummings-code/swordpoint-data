@@ -8051,7 +8051,7 @@
             },
                 {
               "name": "Light Armour",
-                  "Disables": "Skirmishers,"
+                  "Disables": "Skirmishers",
               "enabledEvery": 2,
               "pointsModifier": 2,,
               "equipmentAdded": ["Light Armour"],
