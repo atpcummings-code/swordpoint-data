@@ -8323,7 +8323,7 @@
             },
             {
               "name": "Longbow",
-              "disables": "Throwing Spear/Javelins/Shield",
+              "disables": "Throwing Spear-Javelins-Shield",
               "pointsModifier": 4,
               "equipmentAdded": ["Longbow"],
               "equipmentRemoved": [],
@@ -8333,9 +8333,9 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Throwing Spear/Javelins/Shield",
+              "name": "Throwing Spear-Javelins-Shield",
               "disables": "Longbow",
-              "enableHidden": "Large Shield"
+              "enableHidden": "Large Shield",
               "pointsModifier": 6,
               "equipmentAdded": ["Throwing Spear","Javelins","Shield"],
               "equipmentRemoved": [],
@@ -8346,7 +8346,7 @@
             },
             {
               "name": "Large Shield",
-              "hiddenUntilEnabled": "hidden"
+              "hiddenUntilEnabled": "hidden",
               "pointsModifier": 2,
               "equipmentAdded": ["Large Shield"],
               "equipmentRemoved": ["Shield"],
