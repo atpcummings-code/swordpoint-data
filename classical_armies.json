@@ -6598,8 +6598,6 @@
 "hispania_lusitanian": {
       "armyName": "Hispania Lusitanian - 500 BC to 72 BC",
 "armyValidation": [ 
-  { "ids": ["hispania_lusitanian_celtiberians"], "expression": "oneInEvery", "ratio": 2, "compareWith": ["hispania_lusitanian_lusitanians"], "countBy": "units" } 
-    ],
       "categories": [
         {
           "id": "Commanders",
@@ -6779,6 +6777,11 @@
           "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
+			"requires": {
+            "unitId": "hispania_lusitanian_lusitanians",
+            "count": 2,
+            "name": "Lusitanians"
+          },
           "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["hispania_lusitanian_lusitanians"] },
           "baseEquipment": [
             "Throwing Spear", "Shield"
@@ -6966,9 +6969,7 @@
     },
 "hispania_iberian": {
       "armyName": "Hispania Iberian - 500 BC to 72 BC",
-"armyValidation": [ 
-  { "ids": ["hispania_iberian_celtiberians"], "expression": "oneInEvery", "ratio": 3, "compareWith": ["hispania_iberian_scutarii"], "countBy": "units" } 
-    ],
+
       "categories": [
         {
           "id": "Commanders",
@@ -7205,6 +7206,11 @@
           "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
+				"requires": {
+            "unitId": "hispania_iberian_scutarii",
+            "count": 2,
+            "name": "Scutarii"
+          },
           "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["hispania_iberian_scutarii"] },
           "baseEquipment": [
             "Throwing Spear", "Shield"
