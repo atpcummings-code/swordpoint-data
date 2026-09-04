@@ -9197,7 +9197,8 @@
 	 "gallic": {
       "armyName": "Gallic - 500 BC to 50 BC",
     "armyValidation": [ 
-{ "ids": ["gallic_fanatics"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["gallic_warriors"], "countBy": "bases" }    
+{ "ids": ["gallic_fanatics"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["gallic_warriors"], "countBy": "bases" },
+{ "type": "equipmentUnitCount", "left": { "unitIds": ["gallic_skirmishers"], "equipment": ["Bow"] }, "right": { "unitIds": ["gallic_skirmishers"], "equipment": ["Sling"] }, "expression": "lessThanOrEqual", "ratio": 1 } 
     ],
       "categories": [
         {
