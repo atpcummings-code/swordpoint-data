@@ -8840,7 +8840,7 @@
             },
             {
               "name": "Elite Troops - Superior Fighters",
-              "enablesHidde": "drilled",
+              "enablesHidde": "Elite Troops - Drilled",
               "pointsModifier": 4,
               "maxUnits": 1,
               "equipmentAdded": [],
