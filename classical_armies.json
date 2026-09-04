@@ -9238,7 +9238,7 @@
       "units": [
         {
           "id": "gallic_high_chieftain",
-          "name": "high Chieftain",
+          "name": "High Chieftain",
           "description": "May ride a horse or join a chariot.",
           "category": "Commanders",
           "type": "General",
@@ -9285,7 +9285,7 @@
           "description": "Noble Cavalry have spear, shield and light armour. Superior Fighters.",
           "category": "Cavalry",
           "type": "Cavalry",
-         "excludes": ["gallic_noble_chariots","gallic_noble_cavalry"],
+         "excludes": ["gallic_noble_chariots"],
           "defence": 4,
           "cohesion": 7,
           "pointsPerBase": 20,
@@ -9305,7 +9305,7 @@
           "description": "Noble Chariots have an unarmed driver and one warrior crewman with javelins, light armour and shield. Light Chariots. Superior Fighters.  If any chariots a eincluded, Noble Cavalry may not be used.",
           "category": "Cavalry",
           "type": "Cavalry",
-          "excludes": ["gallic_noble_chariots","gallic_noble_cavalry"],
+          "excludes": ["gallic_noble_cavalry"],
           "defence": 3,
           "cohesion": 7,
           "pointsPerBase": 27,
