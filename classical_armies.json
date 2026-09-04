@@ -8547,7 +8547,7 @@
           ],
           "optionalEquipment": [
             {
-              "name": "open Order",
+              "name": "Open Order",
               "pointsModifier": -6,
               "equipmentAdded": [],
               "equipmentRemoved": [],
@@ -8577,7 +8577,7 @@
           ],
           "optionalEquipment": [
              {
-              "name": "open Order",
+              "name": "Open Order",
               "pointsModifier": -4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
