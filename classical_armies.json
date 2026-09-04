@@ -358,7 +358,7 @@
           "name": "Infantry",
           "constraintType": "percentage",
           "min": 50,
-          "max": 1000
+          "max": 100
         },
         {
           "id": "Allies",
