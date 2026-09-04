@@ -8053,7 +8053,7 @@
               "name": "Light Armour",
                   "Disables": "Skirmishers",
               "enabledEvery": 2,
-              "pointsModifier": 2,,
+              "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
