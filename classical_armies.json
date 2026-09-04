@@ -8641,7 +8641,7 @@
               "name": "Sling",
               "disables": "Bow",
               "pointsModifier": 0,
-              enabledEvery": 2,
+              "enabledEvery": 2,
               "equipmentAdded": ["Sling"],
               "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
