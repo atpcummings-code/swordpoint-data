@@ -8276,7 +8276,7 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }
+            },
              {
               "name": "Shield",
                "disables": "Bow",
