@@ -9443,6 +9443,7 @@
             {
               "name": "Sling",
               "disables": "Bow",
+				 "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["Sling"], "ratio": 1 }, 
               "pointsModifier": 0,
               "equipmentAdded": ["Sling"],
               "equipmentRemoved": ["Javelins"],
@@ -9454,6 +9455,7 @@
              {
               "name": "Bow",
               "disables": "Sling",
+				 "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["Sling"], "ratio": 1 }, 
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
               "equipmentRemoved": ["Javelins"],
