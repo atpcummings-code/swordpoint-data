@@ -11011,7 +11011,7 @@
           "defence": 6,
           "cohesion": 6,
           "pointsPerBase": 8,
-          "requires": { "unitIds": ["classical_indian_elephants","classical_indian_heavy_chariots","classical_indian_light_chariots"], "name": ["Elephants","Heavy Chariots","Light Chariots"], "countPerUnit": 1 },
+          "requires": { "unitIds": ["classical_indian_elephant","classical_indian_heavy_chariots","classical_indian_light_chariots"], "name": ["Elephants","Heavy Chariots","Light Chariots"], "countPerUnit": 1 },
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": [
