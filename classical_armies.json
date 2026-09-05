@@ -10352,6 +10352,736 @@
         
       ]
     },
+
+"classical_indian": {
+      "armyName": "Classical Indian - 500 BC to 185 BC",
+    
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 4
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 15,
+          "max": 33
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+         {
+          "id": "Elephants",
+          "name": "Elephants",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 250,
+          "countPerThreshold": 1,
+          "rounding": "down"
+          "countOffset": 1,
+        }
+      ],
+      "units": [
+        {
+          "id": "classical_indian_general_or_king",
+          "name": "General or King",
+          "description": "May ride a horse or elephant. Or Join a chariot unit.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "classical_indian_padika",
+          "name": "Padika",
+          "description": "May ride a horse or elephant. Or Join a chariot unit.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "classical_indian_elephant",
+          "name": "Elephant",
+          "description": "The two crewmen are armed with bow or javelins and heavy armour and sit astride the elephant.  The mahout is unarmed. A third crewman may be added (+4). The elephant and crew all count as Superior Fighters. and the crew are Superior Shooters.",
+          "category": "Elephants",
+          "type": "Elephants",
+          "minCountAllowed": 1,
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "Third Crewman",
+              "disables": "Type 2 Crew",
+              "applyToAllUnits": true,
+              "pointsModifier": 4,
+              "targetProfile": "Crewmen",
+              "equipmentAdded": ["Third Crewman"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Javelins",
+              "applyToAllUnits": true,
+              "pointsModifier": 0,
+              "targetProfile": "Crewmen",
+              "equipmentAdded": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "disables": "Bow",
+              "applyToAllUnits": true,
+              "pointsModifier": 0,
+              "targetProfile": "Crewmen",
+              "equipmentAdded": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Elephant",
+              "stats": {
+                "D": 3,
+                "C": 4
+              },
+              "pointsPerBase": 60,
+              "specialRules": [
+                "Terror"
+              ]
+            },
+            {
+              "name": "Crewmen",
+              "stats": {
+                "D": 4,
+                "C": 8,
+              },
+              "pointsPerBase": 0
+            },
+            {
+              "name": "Mahout",
+              "stats": {
+                "D": 6,
+                "C": 8
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+        {
+          "id": "classical_indian_light_chariots",
+          "name": "Light Chariots",
+          "description": "Light Chariots have driver and two crewmen with javelins and halberd. Superior Fighters. Used to Elephants. Light Chariots. May have light armour (+1) and may exchange javelins for bow (+2, become Superior Shooters). or have shield (+1) but not both.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 29,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Halberd","Javelins"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters","Light Chariots","Used to Elephants"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "disables": "Bow (Superior Shooters)",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow (Superior Shooters)",
+              "disables": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Shooters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "classical_indian_heavy_chariots",
+          "name": "Heavy Chariots",
+          "description": "Heavy Chariots have driver and two crewmen with light armour, javelins and halberd. Superior Fighters. Superior Shooters. Used to Elephants. Heavy Chariots. May have light armour (+1) and may exchange bow or shield (+2) but not both.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 39,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Halberd","Javelins","Light Armour"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters","Superior Shooters","Heavy Chariots","Used to Elephants"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "disables": "Bow",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "classical_indian_cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have javelins. Used to Elephants. May have shield (+1).  May replace javelins with spear (free). Every second unit may have light armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Javelins"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "enabledEvery": 2,
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+          {
+          "id": "classical_indian_guardsmen",
+          "name": "Guardsmen",
+          "description": "Guardsmen have halberd and javelins. Superior Fighters. They may replace javelins with throwing spear (free) and may replace halberds with two-handed swords (free). They may have light amrour (+2) and shield (+2), or large Shield (+4). Guardsmen may be Stubborn (+2) and may not be the only infantry unit in the army.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 12,
+          "requires": { "unitIds": ["classical_indian_mercenaries","classical_indian_hereditary","classical_indian_hereditary_cf","classical_indian_guildsmen","classical_indian_guildsmen_cf"], "name": ["Mercenaries","Hereditary","Combined Formation Hereditary","Guildsmen","Combined Formation Guildsmen"], "countPerUnit": 1 },
+          "baseEquipment": [
+            "Halberd","Javelins"
+          ],
+          "specialRules": [
+            "Close Order","Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Throwing Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Two-handed Sword",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Two-handed Sword"],
+              "equipmentRemoved": ["Halberd"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "disables": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "disables": "Shield",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "classical_indian_mercenaries",
+          "name": "Mercenaries",
+          "description": "Mercenaries have halberd. May have longbow (+4) or throwing spear, javelins and shield (+6). May upgrade shield to large shield (+2) and may have light armour (+2). May also exchange halberd for two-handed swords (free). One mercenary unit may be taken for every two hereditary or guildsmen units from tis section.",
+          "category": "Infantry",
+			"type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "requires": { "unitIds": ["classical_indian_hereditary","classical_indian_hereditary_cf","classical_indian_guildsmen","classical_indian_guildsmen_cf"], "name": ["Hereditary","Combined Formation Hereditary","Guildsmen","Combined Formation Guildsmen"], "countPerUnit": 2 },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Halberd"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Two-handed Sword",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Two-handed Sword"],
+              "equipmentRemoved": ["Halberd"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Longbow",
+               "disables": "Throwing Spear-Javelins-Shield",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Longbow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear-Javelins-Shield", 
+              "disables": "Longbow",
+              "enablesHidden": "Large Shield",
+              "pointsModifier": 6,
+              "equipmentAdded": ["Throwing Spear","Javelins","Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "classical_indian_hereditary",
+          "name": "Hereditary",
+          "description": "Hereditary infantry have halberd and longbow. Inferior Fighters",
+          "category": "Infantry",
+			"type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Halberd","Longbow"
+          ],
+          "specialRules": [
+            "Close Order","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "classical_indian_guildsmen",
+          "name": "Guildsmen",
+          "description": "Guildsmen have halberd and longbow. Inferior Fighters. Inferior Shooters. Levies.",
+          "category": "Infantry",
+			"type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Halberd","Longbow"
+          ],
+          "specialRules": [
+            "Close Order","Inferior Fighters","Inferior Shooters","Levies"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "classical_indian_elephant_escorts",
+          "name": "Elephant or Chariot Escorts",
+          "description": "Elephant Escorts have halberd, javelins and shield. Inferior Fighters. Escorts. Skirmishers. They may replace halberd with two-handed sword or club (free). One unit is allowed for every chariot unit or elephant in the army.",
+          "category": "Infantry",
+			"type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "requires": { "unitIds": ["classical_indian_elephants","classical_indian_heavy_chariots","classical_indian_light_chariots"], "name": ["Elephants","Heavy Chariots","Light Chariots"], "countPerUnit": 1 },
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Halberd","Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Two-handed Sword or Club",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Two-handed Sword or Club"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "classical_indian_forest_tribesmen",
+          "name": "Forest Tribesmen",
+          "description": "Forest Tribesmen have javelins and shield. Inferior Fighters. Skirmishers.  They may substitute slings or bows for javelins (free). One unit allowed for every elephant or chariot escort unit in the army.",
+          "category": "Infantry",
+			"type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "requires": { "unitIds": ["classical_indian_elephant_escorts"], "name": ["Elephant or Chariot Escorts"], "countPerUnit": 1 },
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skrimishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "classical_indian_guildsmen_cf",
+          "name": "Combined Formation Guildsmen",
+          "description": "Guildsmen have halberd and longbow. Inferior Fighters. Inferior Shooters. Levies. Up to half the figures in a unit replace longbow with throwing spear, javelins and shield (+2) and form a Combined Formation. May upgrade shield to large shield (+2)",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Halberd", "Longbow"],
+          "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Longbowmen","Mixed Spear/Longbowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Longbowmen (Front Row)","Mixed Spear/Longbowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Spear/Longbowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 5,
+	      "pointsPerBase": 10,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Throwing Spear", "Javelins", "Longbow"],
+              "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"]
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 5,
+          	"pointsPerBase": 8,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Shield", "Throwing Spear", "Javelins"],
+          "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
+            },
+            {
+              "name": "Longbowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 5,
+              "pointsPerBase": 10,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Longbow"],
+              "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"]
+            },
+
+			  {
+              "name": "Mixed Spear/Longbowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 5,
+	          "pointsPerBase": 10,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Throwing Spear", "Javelins", "Longbow"],
+              "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"]
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Large Shield (Spearmen)",
+              "targetProfile": ["Spearmen","Mixed Spear/Longbowmen (Rear Row)","Mixed Spear/Longbowmen (Front Row)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]
+        },
+        {
+          "id": "classical_indian_hereditary_cf",
+          "name": "Combined Formation Hereditary",
+          "description": "Hereditary have halberd and longbow. Inferior Fighters. Inferior Shooters. Levies. Up to half the figures in a unit replace longbow with throwing spear, javelins and shield (+2) and form a Combined Formation. May upgrade shield to large shield (+2)",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Halberd", "Longbow"],
+          "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Longbowmen","Mixed Spear/Longbowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Longbowmen (Front Row)","Mixed Spear/Longbowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Spear/Longbowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 5,
+	      "pointsPerBase": 10,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Throwing Spear", "Javelins", "Longbow"],
+              "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"]
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 5,
+          	"pointsPerBase": 8,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Shield", "Throwing Spear", "Javelins"],
+          "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
+            },
+            {
+              "name": "Longbowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 5,
+              "pointsPerBase": 10,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Longbow"],
+              "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"]
+            },
+
+			  {
+              "name": "Mixed Spear/Longbowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 5,
+	          "pointsPerBase": 10,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Throwing Spear", "Javelins", "Longbow"],
+              "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"]
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Large Shield (Spearmen)",
+              "targetProfile": ["Spearmen","Mixed Spear/Longbowmen (Rear Row)","Mixed Spear/Longbowmen (Front Row)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]
+        },
+        
+        
+        
+      ]
+    },
 	  
     "alans": {
       "armyName": "Alans - 350 to 475 AD",
