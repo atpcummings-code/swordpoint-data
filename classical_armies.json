@@ -9546,7 +9546,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_carthaginian_Heavy_cavalry",
+          "id": "early_carthaginian_heavy_cavalry",
           "name": "Heavy Cavalry",
           "description": "Heavy Cavalry have javelins. May have light armour (+1) and shield (+1).",
           "category": "Cavalry",
