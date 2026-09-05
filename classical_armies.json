@@ -9474,6 +9474,416 @@
       ]
     }, 
 
+"early_carthaginian_earlier": {
+      "armyName": "Early Carthaginian (Earlier) - 500 BC to 270 BC",
+    
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 4
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 30,
+          "max": 100
+        },
+         {
+          "id": "Mercenaries",
+          "name": "Mercenaries",
+          "constraintType": "percentage",
+          "min": 30,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        }
+      ],
+      "units": [
+        {
+          "id": "early_carthaginian_general",
+          "name": "General",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_carthaginian_officer",
+          "name": "Officer",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_carthaginian_Heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have javelins. May have light armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_carthaginian_heavy_chariots",
+          "name": "Heavy Chariots",
+          "description": "Heavy Chariots have driver and two crewmen with light armour, spear, javelins and shield. Superior Fighters. Superior SHooters. Heavy Chariots.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 36,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Spear","Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters","Superior Shooters","Heavy Chariots"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_carthaginian_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins. Inferior Fighters. Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 13,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Javelins"
+          ],
+          "specialRules": [
+            "Open Order","Inferior Fighters","Skirmishers"
+          ],
+          "optionalEquipment": []
+        },
+          {
+          "id": "early_carthaginian_citizen_phalanx",
+          "name": "Citizen Phalanx",
+          "description": "Citizen Phalanx have spear and large shield. Phalanx. May take light armour (+2). The army must contain at least one unit of Citizen Phalanx.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Large Shield","Spear"
+          ],
+          "specialRules": [
+            "Close Order","Phalanx"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_carthaginian_north_african_levy",
+          "name": "North African Levy",
+          "description": "North African Levy have spear and large shield. Inferior Fighters. Phalanx. Levies.",
+                    "category": "Infantry",
+			"type": "Infantry",
+          "defence": 5,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Large Shield","Spear"
+          ],
+          "specialRules": [
+            "Close Order","Phalanx","Levies"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_carthaginian_mercenary_hoplites",
+          "name": "Mercenary Hoplites",
+          "description": "Mercenary Hoplites have spear and large shield. Phalanx. May take light armour (+2).",
+                    "category": "Mercenaries",
+			"type": "Mercenaries",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Large Shield","Spear"
+          ],
+          "specialRules": [
+            "Close Order","Phalanx"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "early_carthaginian_skirmishers",
+          "name": "Skrimishers",
+          "description": "Skrimishers have javelins. Inferior Fighters. Skirmishers. May replace javelins with bow or sling (free).",
+                    "category": "Mercenaries",          
+			"type": "Mercenaries",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Skrimishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "early_carthaginian_spanish_infantry",
+          "name": "Spanish Infantry",
+          "description": "Spanish Infantry have javelins and shield. Open Order. Warband. They may have light armour (+2) and every second unit may have throwing spear (+2).",
+                            "category": "Mercenaries",
+			"type": "Mercenaries",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield","Javelins"
+          ],
+          "specialRules": [
+            "Open Order","Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+               {
+              "name": "Throwing Spear",
+                 "enabledEvery": 2,
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+        {
+          "id": "early_carthaginian_sardinians",
+          "name": "Sardinians",
+          "description": "Sardinians have javelins and shield. Warband.",
+                            "category": "Mercenaries",
+			"type": "Mercenaries",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield","Javelins"
+          ],
+          "specialRules": [
+            "Close Order","Warband"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_carthaginian_celts",
+          "name": "Celts",
+          "description": "Celts have throwing spear and shield. Warband. Both may be fielded in Open Order at a cost of eleven points per base. May take light armour (+2).",
+                              "category": "Mercenaries",
+			"type": "Mercenaries",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield","Throwing Spear"
+          ],
+          "specialRules": [
+            "Close Order","Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Open Order",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+        {
+          "id": "early_carthaginian_ligurians",
+          "name": "Ligurians",
+          "description": "Ligurians have throwing spear and shield. Warband. Both may be fielded in Open Order at a cost of eleven points per base. May have javelins (+2).",
+                             "category": "Mercenaries",
+			"type": "Mercenaries",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield","Throwing Spear"
+          ],
+          "specialRules": [
+            "Close Order","Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Open Order",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        }
+        
+      ]
+    },
+
+	  
 "early_carthaginian": {
       "armyName": "Early Carthaginian - 500 BC to 270 BC",
     
