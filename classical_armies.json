@@ -9506,7 +9506,7 @@
           "constraintType": "percentage",
           "min": 30,
           "max": 100
-        }
+        },
         {
           "id": "Allies",
           "name": "Allies",
