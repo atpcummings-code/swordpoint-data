@@ -10459,7 +10459,7 @@
               "applyToAllUnits": true,
               "pointsModifier": 0,
               "targetProfile": "Crewmen",
-              "equipmentAdded": ["Bow"],
+              "equipmentAdded": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
