@@ -11258,7 +11258,7 @@
             {
               "name": "Light Armour",
               "disables": "Skirmishers",
-              "enabled"Evry": 2,
+              "enabledEvery": 2,
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
