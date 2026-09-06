@@ -12098,6 +12098,7 @@
           "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
+			"requires": { "unitIds": ["early_german_warriors"], "name": ["Warriors"], "countPerUnit": 3 },
           "baseEquipment": [
             "Throwing Spear","Shield"
           ],
