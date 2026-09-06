@@ -3,7 +3,7 @@
  "scythian": {
       "armyName": "Scythian - 700 BC to 300 BC",
     "armyValidation": [ 
-      { "ids": ["scythian_warriors"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["scythian_senior_nobles", "scythian_nobles"], "countBy": "units" },
+      { "ids": ["Escythian_warriors"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["scythian_senior_nobles", "scythian_nobles"], "countBy": "units" },
       { "ids": ["scythian_warriors"], "expression": "greaterThan", "ratio": 1, "compareWith": ["scythian_senior_nobles", "scythian_nobles"] } 
     ],
       "categories": [
@@ -12809,6 +12809,382 @@
             },
           ]
         }
+      ]
+    },
+
+"early_sudanese": {
+      "armyName": "Early Sudanese - 30 BC to 650 AD",
+    "
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 100
+        }
+      ],
+      "units": [
+        {
+          "id": "early_sudanese_high_chieftain",
+          "name": "High Chieftain",
+          "description": "Rides a Horse. May have Stratagem.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Stratagem",
+              "pointsModifier": 50,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stratagem"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_sudanese_chieftainr",
+          "name": "Chieftain",
+          "description": "Rides a Horse",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_sudanese_nobles",
+          "name": "Nobles",
+          "description": "Noble Cavalry have light armour and bow. SUperior Fighters. Superior Shooters. Nomad Cavalry. May have heavy armour (+1), javelins (+1), Shield (+1) and spear (+1). Nobles without upgrades may be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 27,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Light Armour","Bow"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters","Massed Cavalry","Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "disables": ["Skirmishers","Nobles (Alternative)"],
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "disables": ["Skirmishers","Nobles (Alternative)"],
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Spear",
+              "disables": ["Skirmishers","Nobles (Alternative)"],
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "disables": ["Skirmishers","Nobles (Alternative)"],
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+              "disables": ["Javelins","Spear","Shield","Heavy Armour","Nobles (Alternative)"],
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Nobles (Alternative)",
+              "disables": ["Javelins","Spear","Shield","Heavy Armour", "Skirmishers"],
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour", "Shield", "Spear"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": ["Superior Shooters"],
+              "rulesRemoved": ["Massed Cavalry","Nomad Cavalry"],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_sudanese_subject_nobles",
+          "name": "Subject Nobles",
+          "description": "Subject Noble Cavalry have light armour and spear. May have heavy armour (+1), and Shield (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Light Armour","Spear"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_sudanese_elite_horse_archers",
+          "name": "Elite Horse Archers",
+          "description": "Elite Horse Archers have a bow. Superior Shooters. Nomad Cavalry. May have javelins (+1), shield (+1) and spear (+1). May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Bow"
+          ],
+          "specialRules": [
+            "Open Order","Superior Shooters","Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_sudanese_horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Archers have a bow. Nomad Cavalry. May have javelins (+1), shield (+1) and spear (+1). May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Bow"
+          ],
+          "specialRules": [
+            "Open Order","Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+        {
+          "id": "early_sudanese_subject_horse_archers",
+          "name": "Subject Horse Archers",
+          "description": "Subject Horse Archers have a bow. Skirmishers. Nomad Cavalry. May have a shield (+1).",
+          "category": "Cavalry",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 19,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+          "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers","Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        
       ]
     },
 	  
