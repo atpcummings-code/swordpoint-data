@@ -11788,8 +11788,8 @@
 			  {
               "name": "Spear",
               "pointsModifier": -2,
-              "equipmentAdded": ["Spear],
-              "equipmentRemoved": ["Throwing Spear],
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
