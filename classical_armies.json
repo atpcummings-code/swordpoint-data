@@ -11907,6 +11907,309 @@
         
       ]
     },
+
+"early_german": {
+      "armyName": "Early German - 150 BC to 300 AD",
+    "armyValidation": [ 
+      { "ids": ["early_german_cavalry_supports"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["early_german_noble_cavalry"], "countBy": "units" },
+      { "type": "equipmentBasesCount", "left": { "unitIds": ["early_german_skirmishers"], "equipment": ["Bow"] }, "expression": "lessThanOrEqual", "ratio": 1, "right": { "unitIds": ["early_german_skirmishers"], "equipment": ["Javelins"] } },
+ { "ids": ["early_german_fanatics"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["early_german_warriors"], "countBy": "bases" }
+    ],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        {
+          "id": "Skirmishers",
+          "name": "Wagon Tabor",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        }
+      ],
+      "units": [
+        {
+          "id": "early_german_high_chieftain",
+          "name": "High Chieftain ",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_german_chieftain",
+          "name": "Chieftain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_german_minor_chief",
+          "name": "Minor Chief",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_german_noble_cavalry",
+          "name": "Noble Cavalry",
+          "description": "Noble Cavalry have spear and shield. Superior Fighters. One unit may have light armour (+1). Up to two units may be Stubborn (+2).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Shield","Spear"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "maxUnits": 1,
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "maxUnits": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+          {
+          "id": "early_german_warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Warband. Throwing Spear armed units may be fielded in Open Order costing eleven points per base. May exchange throwing spear for spear (-2). Units armed with spear may be Stubborn (+2). ",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order","Warband"
+          ],
+          "optionalEquipment": [
+            
+            {
+              "name": "Open Order",
+              "disables": "Spear",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "disables": "Open Order",
+              "enablesHidden": "Stubborn",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "hiddenUntilEnabled": "hidden,"
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_german_fanatics",
+          "name": "Fanatics",
+          "description": "Fanatics have throwing spear and shield. Warband. Stubborn. Throwing Spear armed units may be fielded in Open Order costing eleven points per base. May exchange throwing spear for spear (-2). Units armed with spear may be Stubborn (+2). ",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order","Warband"
+          ],
+          "optionalEquipment": [
+            
+            {
+              "name": "Open Order",
+              "disables": "Spear",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "disables": "Open Order",
+              "enablesHidden": "Stubborn",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "hiddenUntilEnabled": "hidden,"
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_german_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Inferior Fighters. One in every three may exchange javelins for bow (free). Bow units may not be larger than the smallest javel armed unit.",
+          "category": "Skirmishers",
+			"type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "enabledEvery": 3,
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_german_cavalry_supports",
+          "name": "Cavalry Supports",
+          "description": "Cavalry Supports have javelins and shield. Skirmishers. Escorts (when interacting with a single pre selected cavalry unit).",
+          "category": "Skirmishers",
+			"type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "enabledEvery": 3,
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+        
+        
+        
+      ]
+    },
 	  
     "alans": {
       "armyName": "Alans - 350 to 475 AD",
