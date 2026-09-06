@@ -11712,7 +11712,7 @@
             },
             {
               "name": "Javelins",
-              "hiddenUntilEnabled": "hidden,"
+              "hiddenUntilEnabled": "hidden",
               "pointsModifier": 0,
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": ["Spear"],
