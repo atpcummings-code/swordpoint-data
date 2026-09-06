@@ -12259,7 +12259,7 @@
           "pointsPerBase": 50,
           "minBases": 0,
           "maxBases": 1,
-          "specialRules": ["Strategem"],
+          "specialRules": ["Stratagem"],
           "optionalEquipment": []
         },
         {
@@ -12548,7 +12548,7 @@
           "pointsPerBase": 50,
           "minBases": 0,
           "maxBases": 1,
-          "specialRules": ["Strategem"],
+          "specialRules": ["Stratagem"],
           "optionalEquipment": []
         },
         {
