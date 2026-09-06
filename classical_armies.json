@@ -11581,12 +11581,262 @@
             },
           ]
         }
-        
-        
-        
+         
       ]
     },
 
+"northern_britain_picts": {
+      "armyName": "Northern Britain - Picts - 200 BC to 300 AD",
+    
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+       {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Skirmishers",
+          "name": "Skirmishers",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "units": [
+        {
+          "id": "northern_britain_picts_high_chieftain",
+          "name": "High Chieftain",
+          "description": "May ride a horse or join a chariot unit.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 8,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "northern_britain_picts_chieftainr",
+          "name": "Chieftain",
+          "description": "May ride a horse or join a chariot unit.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "northern_britain_picts_minor_chieftainr",
+          "name": "Minor Chieftain",
+          "description": "May ride a horse or join a chariot unit.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "northern_britain_picts_noble_cavalry",
+          "name": "Noble Cavalry",
+          "description": "Noble Cavalry have light armour, spear and shield. Superior Fighters.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Spear","Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "northern_britain_picts_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have spear and shield. Evade. May be fielded as Skirmishers at a cost of 16 points per base, in which case may replace spears with javelins (free).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Spear","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Evade"
+          ],
+          "optionalEquipment": [
+             {
+              "name": "Skirmishers",
+               "enableHidden": "Javelins",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "hiddenUntilEnabled": "hidden,"
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "northern_britain_picts_noble_chariots",
+          "name": "Noble Chariots",
+          "description": "Noble Chariots have a driver and one warrior crewman with javelins, light armour and shield. Superior Fighters. Light Chariots.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 27,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Light Armour","Shield","Javelins"
+          ],
+          "specialRules": [
+            "Open Order","Light Chariots","Superior Fighters","Superior Shooters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "northern_britain_picts_warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Open Order. Warband.  May be fielded as Skirmishers (no longer Warband) at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+          "Throwing Spear","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order","Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "northern_britain_picts_fanatics",
+          "name": "Fanatics",
+          "description": "Fanatics have throwing spear and shield. Open Order. Warband. Stubborn. The unit must contain no more bases than the smallest formed Warrior Unit.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["northern_britain_picts_warriors"] },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+          "Throwing Spear","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Warband","Stubborn"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "northern_britain_picts_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishes have javelins. Inferior Fighters. Skirmishers. May have  shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than teh smallest javelin unit in the army.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+           "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["javelin_unit_a", "javelin_unit_b"] },
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+          "Javelins"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+      ]
+    },
+	  
 "bastarnae": {
       "armyName": "Bastarnae - 200 BC to 200 AD",
     
