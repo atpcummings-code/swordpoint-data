@@ -11571,7 +11571,7 @@
           "optionalEquipment": [
             {
               "name": "Javelins-Shield",
-              "pointsModifier": -3,
+              "pointsModifier": 1,
               "equipmentAdded": ["Javelins","Shield"],
               "equipmentRemoved": ["Bow"],
               "rulesAdded": [],
