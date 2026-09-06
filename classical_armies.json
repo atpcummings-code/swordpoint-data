@@ -11803,7 +11803,6 @@
           "defence": 7,
           "cohesion": 5,
           "pointsPerBase": 4,
-           "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["javelin_unit_a", "javelin_unit_b"] },
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": [
@@ -11827,7 +11826,7 @@
               "name": "Sling",
               "pointsModifier": 0,
               "equipmentAdded": ["Sling"],
-              "equipmentRemoved": ["javelins"],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
