@@ -11587,8 +11587,10 @@
 
 "northern_britain_picts": {
       "armyName": "Northern Britain - Picts - 200 BC to 300 AD",
-    
-      "categories": [
+    "armyValidation": [ 
+{ "type": "equipmentUnitCount", "left": { "unitIds": ["british_tribes_skirmishers"], "equipment": ["Sling"] }, "right": { "unitIds": ["british_tribes_skirmishers"], "equipment": ["Javelins"] }, "expression": "lessThanOrEqual", "ratio": 1 }
+	],
+	"categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
