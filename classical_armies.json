@@ -11926,7 +11926,7 @@
        
         {
           "id": "Cavalry",
-          "name": "Cavalry and Chariots",
+          "name": "Cavalry",
            "constraintType": "percentage",
           "min": 0,
           "max": 25
@@ -11940,7 +11940,7 @@
         },
         {
           "id": "Skirmishers",
-          "name": "Wagon Tabor",
+          "name": "Skirmishers",
            "constraintType": "percentage",
           "min": 0,
           "max": 20
