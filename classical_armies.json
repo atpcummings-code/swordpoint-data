@@ -12341,7 +12341,7 @@
             },
               {
               "name": "Shield",
-              "disables": "Large Shield"
+              "disables": "Large Shield",
               "pointsModifier": 2,
               "equipmentAdded": ["Shield"],
               "equipmentRemoved": [],
@@ -12352,7 +12352,7 @@
             },
             {
               "name": "large Shield",
-              "disables": "Shield"
+              "disables": "Shield",
               "pointsModifier": 4,
               "equipmentAdded": ["Large Shield"],
               "equipmentRemoved": [],
