@@ -12958,7 +12958,7 @@
         {
           "id": "british_tribes_noble_chariots",
           "name": "Noble Chariots",
-          "description": "Noble Chariots have a driver and one warrior crewman with javelins. light armour and shield. Superior Fighters. Superior Shooters. Ligt Chariots.",
+          "description": "Noble Chariots have a driver and one warrior crewman with javelins, light armour and shield. Superior Fighters. Superior Shooters. Light Chariots.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 3,
@@ -13058,7 +13058,7 @@
               "name": "Sling",
               "pointsModifier": 0,
               "equipmentAdded": ["Sling"],
-              "equipmentRemoved": ["javelins"],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
