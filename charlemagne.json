@@ -69,7 +69,7 @@
 		  {
           "id": "the_franks_saxon_wend_charlemagne",
           "name": "Charlemagne",
-          "description": "May ride a horse. Has the Strategem rule (+50).",
+          "description": "May ride a horse. Has the Stratagem rule (+50).",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
@@ -81,11 +81,11 @@
           "specialRules": [],
           "optionalEquipment": [
 			  {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Strategem"],
+              "rulesAdded": ["Stratagem"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -686,7 +686,7 @@
 		  {
           "id": "the_franks_charlemagne",
           "name": "Charlemagne",
-          "description": "May ride a horse. Has the Strategem rule (+50).",
+          "description": "May ride a horse. Has the Stratagem rule (+50).",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
@@ -698,11 +698,11 @@
           "specialRules": [],
           "optionalEquipment": [
 			  {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Strategem"],
+              "rulesAdded": ["Stratagem"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -1302,7 +1302,7 @@
 		  {
           "id": "the_franks_in_spain_charlemagne",
           "name": "Charlemagne",
-          "description": "May ride a horse. Has the Strategem rule (+50).",
+          "description": "May ride a horse. Has the Stratagem rule (+50).",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
@@ -1314,11 +1314,11 @@
           "specialRules": [],
           "optionalEquipment": [
 			  {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Strategem"],
+              "rulesAdded": ["Stratagem"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
