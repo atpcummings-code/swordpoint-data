@@ -12949,7 +12949,7 @@
             {
               "name": "Nobles (Alternative)",
               "disables": ["Javelins","Spear","Shield","Heavy Armour", "Skirmishers"],
-              "pointsModifier": 1,
+              "pointsModifier": -1,
               "equipmentAdded": ["Heavy Armour", "Shield", "Spear"],
               "equipmentRemoved": ["Light Armour"],
               "rulesAdded": ["Superior Shooters"],
@@ -13009,6 +13009,7 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 22,
+			"maxCountAllowed": 2,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
