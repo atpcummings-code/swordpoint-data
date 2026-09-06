@@ -11859,6 +11859,7 @@
             },
 			  {
               "name": "Bow",
+				  "disables": "Light Crossbow",  
 			  "hiddenUntilEnabled": "hidden",
 			  "enabledEvery": 2,	  
               "pointsModifier": 0,
@@ -11871,6 +11872,7 @@
             },
 			  {
               "name": "Light Crossbow",
+			  "disables": "Bow",  
 			  "hiddenUntilEnabled": "hidden",
 			  "enabledEvery": 2,	  
               "pointsModifier": 0,
