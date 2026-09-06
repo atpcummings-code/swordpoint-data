@@ -11912,8 +11912,8 @@
       "armyName": "Early German - 150 BC to 300 AD",
     "armyValidation": [ 
       { "ids": ["early_german_cavalry_supports"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["early_german_noble_cavalry"], "countBy": "units" },
-      { "type": "equipmentBasesCount", "left": { "unitIds": ["early_german_skirmishers"], "equipment": ["Bow"] }, "expression": "lessThanOrEqual", "ratio": 1, "right": { "unitIds": ["early_german_skirmishers"], "equipment": ["Javelins"] } },
- { "ids": ["early_german_fanatics"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["early_german_warriors"], "countBy": "bases" }
+      { "type": "equipmentBasesCount", "left": { "unitIds": ["early_german_skirmishers"], "equipment": ["Bow"] }, "expression": "lessThanOrEqual", "ratio": 1, "right": { "unitIds": ["early_german_skirmishers"], "equipment": ["Javelins"] } }
+		
     ],
       "categories": [
         {
@@ -12099,6 +12099,7 @@
           "minBases": 3,
           "maxBases": 12,
 			"requires": { "unitIds": ["early_german_warriors"], "name": ["Warriors"], "countPerUnit": 3 },
+		"basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["early_german_warriors"] },
           "baseEquipment": [
             "Throwing Spear","Shield"
           ],
