@@ -11833,6 +11833,7 @@
           "optionalEquipment": [
             {
               "name": "Bow",
+				"enabledEvery": 2,
               "disables": "Sling",
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
@@ -11845,6 +11846,7 @@
              {
               "name": "Sling",
               "disables": "Bow",
+				 "enabledEvery": 2,
               "pointsModifier": 0,
               "equipmentAdded": ["Sling"],
               "equipmentRemoved": ["Javelins"],
