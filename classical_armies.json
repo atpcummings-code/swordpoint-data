@@ -11588,7 +11588,8 @@
 "northern_britain_picts": {
       "armyName": "Northern Britain - Picts - 200 BC to 300 AD",
     "armyValidation": [ 
-{ "type": "equipmentUnitCount", "left": { "unitIds": ["british_tribes_skirmishers"], "equipment": ["Sling"] }, "right": { "unitIds": ["british_tribes_skirmishers"], "equipment": ["Javelins"] }, "expression": "lessThanOrEqual", "ratio": 1 }
+{ "type": "equipmentUnitCount", "left": { "unitIds": ["northern_britain_picts_skirmishers"], "equipment": ["Sling"] }, "right": { "unitIds": ["northern_britain_picts_skirmishers"], "equipment": ["Javelins"] }, "expression": "lessThanOrEqual", "ratio": 1 },
+		{ "type": "equipmentBasesCount", "left": { "unitIds": ["northern_britain_picts_skirmishers"], "equipment": ["Sling"] }, "right": { "unitIds": ["northern_britain_picts_skirmishers"], "equipment": ["Javelin"] }, "expression": "lessThanOrEqual", "ratio": 1 } 
 	],
 	"categories": [
         {
