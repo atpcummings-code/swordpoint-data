@@ -12644,7 +12644,7 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 20,
-          "basesComparison": { "expression": "greaterThanOrEqual", "compareWith": ["kushan_cataphracts"] }
+          "basesComparison": { "expression": "greaterThanOrEqual", "compareWith": ["kushan_cataphracts"] },
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": [
