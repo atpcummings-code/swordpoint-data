@@ -12205,11 +12205,333 @@
               "cohesionModifier": 0
             }
           ]
+        }  
+      ]
+    },
+
+"slave_revolt": {
+      "armyName": "Slave Revolt - 150 BC to 60 BC",
+    "armyValidation": [ 
+  
+      { "type": "equipmentBasesCount", "left": { "unitIds": ["slave_revolt_skirmishers"], "equipment": ["Bow","Sling"] }, "expression": "lessThanOrEqual", "ratio": 1, "right": { "unitIds": ["slave_revolt_skirmishers"], "equipment": ["Javelins"] } }
+     ],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        {
+          "id": "Skirmishers",
+          "name": "Wagon Tabor",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 20
         }
-        
-        
-        
-        
+      ],
+      "units": [
+        {
+          "id": "slave_revolt_sparticus",
+          "name": "Sparticus (or similar)",
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": ["Strategem"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "slave_revolt_gladiator",
+          "name": "Gladiator",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+2",
+          "pointsPerBase": 25,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "slave_revolt_rabble_rouser",
+          "name": "Rabble Rouser",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+1",
+          "pointsPerBase": 15,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "slave_revolt_mountd_slaves",
+          "name": "Mounted Slaves",
+          "description": "Mounted Slaves have throwing spear and shield. Inferior Fighters. Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Shield","Throwing Spear"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+          {
+          "id": "slave_revolt_trained_slaves",
+          "name": "Trained Slaves",
+          "description": "Trained Slaves have a spear. Open Order. Warband. May have shield (+2) or large shield (+4). Up to three units may have light armour (+2). A unit led by a Gladiator Army General may be stubborn (+2). May be fielded as Skirmishers at a cost of five points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear"
+          ],
+          "specialRules": [
+            "Open Order","Warband"
+          ],
+          "optionalEquipment": [
+            
+            {
+              "name": "Light Armour",
+              "maxUnits": 3,
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Shield",
+              "disables": "Large Shield"
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "large Shield",
+              "disables": "Shield"
+              "pointsModifier": 4,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "maxUnits": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order","Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "slave_revolt_fighting_slaves",
+          "name": "Fighting Slaves",
+          "description": "Fighting Slaves have a spear. Inferior Fighters. Warband. Open Order.  May have shield (+2). Up to two units may have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 4,
+          "pointsPerBase": 5,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear"
+          ],
+          "specialRules": [
+            "Open Order","Warband","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            
+            {
+              "name": "Light Armour",
+              "maxUnits": 2,
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "slave_revolt_desperate_slaves",
+          "name": "Desperate Slaves",
+          "description": "Desperate Slaves have rocks and stones. Inferior Fighters. Levies",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 4,
+          "pointsPerBase": 5,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Rocks and Stones"
+          ],
+          "specialRules": [
+            "Close Order","Levies","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "slave_revolt_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers. May have shield (+1). Every second unit may exchnage javelins for bow or sling free, such unts may not be larger than the smallesty javelin armed unit.",
+          "category": "Skirmishers",
+			"type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "enabledEvery": 2,
+              "enabledEvery": 0,
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "enabledEvery": 2,
+              "enabledEvery": 0,
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "slave_revolt_cavalry_supports",
+          "name": "Cavalry Supports",
+          "description": "Cavalry Supports have javelins and shield. Skirmishers. Escorts (when interacting with a single pre selected cavalry unit).",
+          "category": "Skirmishers",
+			"type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "enabledEvery": 3,
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
       ]
     },
 	  
