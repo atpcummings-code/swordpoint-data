@@ -12515,7 +12515,7 @@
        
         {
           "id": "Cavalry",
-          "name": "Cavalry and Chariots",
+          "name": "Cavalry",
            "constraintType": "percentage",
           "min": 0,
           "max": 100
@@ -12552,8 +12552,8 @@
           "optionalEquipment": []
         },
         {
-          "id": "kushan_gladiator",
-          "name": "Gladiator",
+          "id": "kushan_noble",
+          "name": "Noble",
           "description": "Rides a Horse",
           "category": "Commanders",
           "type": "Commander",
