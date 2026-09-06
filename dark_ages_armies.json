@@ -893,7 +893,7 @@
           "specialRules": [],
           "optionalEquipment": [
             {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "rulesAdded": [
                 "Stratagem"
@@ -1204,7 +1204,7 @@
           "specialRules": [],
           "optionalEquipment": [
             {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "rulesAdded": [
                 "Stratagem"
@@ -1429,7 +1429,7 @@
           "specialRules": [],
           "optionalEquipment": [
             {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "rulesAdded": [
                 "Stratagem"
@@ -5989,7 +5989,7 @@
           "specialRules": [],
           "optionalEquipment": [
             {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "rulesAdded": [
                 "Stratagem"
@@ -11556,7 +11556,7 @@
           "id": "early_byzantine_magister",
           "name": "Magister",
           "maxCountAllowed": 1,
-          "description": "Rides a horse. Mayhave Strategem (+50).",
+          "description": "Rides a horse. Mayhave Stratagem (+50).",
           "category": "Commanders",
           "type": "General",
           "attacks": "+3",
@@ -11567,12 +11567,12 @@
           "specialRules": [],
           "optionalEquipment": [
             {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": [
-                "Strategem"
+                "Stratagem"
               ],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -13495,7 +13495,7 @@
           "specialRules": [],
           "optionalEquipment": [
             {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "rulesAdded": [
                 "Stratagem"
@@ -16481,7 +16481,7 @@
           "excludes": [
             "early_arab_conquest_sheikh_or_vizier"
           ],
-          "description": "May ride a horse. May have Strategem (+50). May upgrade to C10 (+50).",
+          "description": "May ride a horse. May have Stratagem (+50). May upgrade to C10 (+50).",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
@@ -16493,13 +16493,13 @@
           "specialRules": [],
           "optionalEquipment": [
             {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "maxEquipmentCount": 1,
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": [
-                "Strategem"
+                "Stratagem"
               ],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -16524,7 +16524,7 @@
           "excludes": [
             "early_arab_conquest_companion_of_the_prophet"
           ],
-          "description": "May ride a horse. May have Strategem (+50).",
+          "description": "May ride a horse. May have Stratagem (+50).",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
@@ -16536,13 +16536,13 @@
           "specialRules": [],
           "optionalEquipment": [
             {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "maxEquipmentCount": 1,
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": [
-                "Strategem"
+                "Stratagem"
               ],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -17104,7 +17104,7 @@
         {
           "id": "umayyad_caliphate_arab_conquest_companion_of_the_prophet",
           "name": "Companion of the Prophet",
-          "description": "May ride a horse. May have Strategem (+50). May upgrade to C10 (+50).",
+          "description": "May ride a horse. May have Stratagem (+50). May upgrade to C10 (+50).",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
@@ -17116,13 +17116,13 @@
           "specialRules": [],
           "optionalEquipment": [
             {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "maxEquipmentCount": 1,
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": [
-                "Strategem"
+                "Stratagem"
               ],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -17144,7 +17144,7 @@
         {
           "id": "umayyad_caliphate_arab_conquest_sheikh_or_vizier",
           "name": "Sheikh or Vizier",
-          "description": "May ride a horse. May have Strategem (+50).",
+          "description": "May ride a horse. May have Stratagem (+50).",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
@@ -17156,13 +17156,13 @@
           "specialRules": [],
           "optionalEquipment": [
             {
-              "name": "Strategem",
+              "name": "Stratagem",
               "pointsModifier": 50,
               "maxEquipmentCount": 1,
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": [
-                "Strategem"
+                "Stratagem"
               ],
               "rulesRemoved": [],
               "defenceModifier": 0,
