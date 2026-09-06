@@ -13013,6 +13013,7 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 16,
+			          "maxCountAllowed": 1,
           "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["british_tribes_warriors"] },
           "minBases": 3,
           "maxBases": 12,
