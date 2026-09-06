@@ -11311,6 +11311,283 @@
             }
           ]
         }
+      ]
+    },
+
+"xiongnu": {
+      "armyName": "Campanian - 200 BC to 200 AD",
+    
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+         {
+          "id": "Allies",
+          "name": "Allies",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+      ],
+      "units": [
+        {
+          "id": "xiongnu_shanyu",
+          "name": "Shanyu ",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "xiongnu_chieftain",
+          "name": "Chieftain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "xiongnu_nobles",
+          "name": "Nobles",
+          "description": "Nobles have light armour, spear and bow. Superior Fighters. Superior Shooters. Nomad Cavalry. May have heavy armour (+1) and shield (+1). May be fielded as Skirmishers if in light armour.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Light Armour","Spear","Bow"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters","Superior Shooters","Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "disables": "Skirmishers",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disbales": "Heavy Armour",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+          {
+          "id": "xiongnu_horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Archers have a bow. Nomad Cavalry. May have javelins(+1), throwing spear (+1) and shield (+1). May be fielded as skirmishers. There must be at least two units of Horse Archers in the army.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Bow"
+          ],
+          "specialRules": [
+            "Open Order","Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+          {
+          "id": "xiongnu_warriors",
+          "name": "Warriors",
+          "description": "Warriors have a bow. Open Order. May exchange bow for javelins or throwing spear and shield (+2). May be fielded as Skirmishers with bow at a cost of seven points per base, or with javelins and shield at a cost of eight points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins-Shield",
+              "disables": ["Throwing Spear-Shield","Skirmishers (Bow)","Skirmishers (Javelins)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins","Shield"],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear-Shield",
+              "disables": ["Javelins-Shield","Skirmishers (Bow)","Skirmishers (Javelins)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear","Shield",],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers (Bow)",
+              "disables": ["Javelins-Shield","Throwing Spear-Shield","Skirmishers (Javelins)"],
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers (Javelins)",
+              "disables": ["Javelins-Shield","Throwing Spear-Shield","Skirmishers (Bow)"],
+              "pointsModifier": -3,
+              "equipmentAdded": ["Javelins","Shield"],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "xiongnu_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have a bow. Inferior Fighters. Skirmishers. May exchange bow for javelins and shield (+1)",
+          "category": "Infantry",
+			"type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins-Shield",
+              "pointsModifier": -3,
+              "equipmentAdded": ["Javelins","Shield"],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        }
         
         
         
