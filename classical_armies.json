@@ -11635,7 +11635,18 @@
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-          "optionalEquipment": []
+          "optionalEquipment": [
+			  {
+              "name": "Stratagem",
+              "pointsModifier": 50,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stratagem"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
         },
         {
           "id": "northern_britain_picts_chieftainr",
@@ -11674,6 +11685,7 @@
           "defence": 4,
           "cohesion": 7,
           "pointsPerBase": 20,
+          "maxCountAllowed": 1,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
@@ -11748,7 +11760,7 @@
         {
           "id": "northern_britain_picts_warriors",
           "name": "Warriors",
-          "description": "Warriors have throwing spear and shield. Open Order. Warband.  May be fielded as Skirmishers (no longer Warband) at a cost of seven points per base.",
+          "description": "Warriors have throwing spear and shield. Open Order. Warband.  May be fielded as Skirmishers (no longer Warband) at a cost of seven points per base. May exchange thoriwng spear for spear (-2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -11770,6 +11782,16 @@
               "equipmentRemoved": [],
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order","Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Spear",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Spear],
+              "equipmentRemoved": ["Throwing Spear],
+              "rulesAdded": [],
+              "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
@@ -11826,9 +11848,34 @@
             },
              {
               "name": "Sling",
+			  "enableHidden": ["Bow", "Light Crossbow"],	 
               "pointsModifier": 0,
               "equipmentAdded": ["Sling"],
               "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Bow",
+			  "hiddenUntilEnabled": "hidden",
+			  "enabledEvery": 2,	  
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Sling"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Light Crossbow",
+			  "hiddenUntilEnabled": "hidden",
+			  "enabledEvery": 2,	  
+              "pointsModifier": 0,
+              "equipmentAdded": ["Light Crossbow"],
+              "equipmentRemoved": ["Sling"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
