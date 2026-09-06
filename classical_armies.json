@@ -12501,6 +12501,317 @@
         }
       ]
     },
+
+"kushan": {
+      "armyName": "Kushan - 140 BC to 400 AD",
+    "
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 40
+        }
+      ],
+      "units": [
+        {
+          "id": "kushan_general",
+          "name": "General",
+          "description": "Rides a Horse",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": ["Strategem"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "kushan_gladiator",
+          "name": "Gladiator",
+          "description": "Rides a Horse",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "kushan_cataphracts",
+          "name": "Cataphracts",
+          "description": "Cataphracts have Cataphracts Armour and kontos. Superior Fighters. Massed Cavalry. May have barding (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Cataphracts Armour","Kontos"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters","Massed Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "kushan_lancers",
+          "name": "Lancers",
+          "description": "Lancers have bow and kontos. May have light armour (+2). May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Bow","Kontos"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "kushan_horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Archers have a bow. Nomad Cavalry. Skirmishers. May have shield (+1).  There must be at least 1 horse archer base for each cataphract base in the army.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "basesComparison": { "expression": "greaterThanOrEqual", "compareWith": ["kushan_cataphracts"] }
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+          "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers","Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+          {
+          "id": "kushan_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have spear and large shield. Open Order.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Large Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "kushan_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Inferior Fighters. Open Order.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "kushan_kurdish_skirmishers",
+          "name": "Kurdish Skirmishers",
+          "description": "Kurdish Skirmishers have a sling and shield. Skirmishers. May replace sling with javelins or bow (free). May have throwing spear (+1) and light armour (+1)",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Sling","Shield"
+          ],
+          "specialRules": [
+            "Skirmishersr"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Throwing Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Sling"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": ["Sling"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+        {
+          "id": "kushan_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have a sling and shield. Inferior Fighters. Skirmishers. May replace sling with javelins or bow (free). May have throwing spear (+1) and light armour (+1)",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Sling","Shield"
+          ],
+          "specialRules": [
+            "Skirmishersr","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            
+            {
+              "name": "Javelins",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Sling"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": ["Sling"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        }
+      ]
+    },
 	  
     "alans": {
       "armyName": "Alans - 350 to 475 AD",
