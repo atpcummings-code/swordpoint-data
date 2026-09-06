@@ -12226,7 +12226,7 @@
        
         {
           "id": "Cavalry",
-          "name": "Cavalry and Chariots",
+          "name": "Cavalry",
            "constraintType": "percentage",
           "min": 0,
           "max": 10
@@ -12240,7 +12240,7 @@
         },
         {
           "id": "Skirmishers",
-          "name": "Wagon Tabor",
+          "name": "Skirmishers",
            "constraintType": "percentage",
           "min": 0,
           "max": 20
@@ -12291,7 +12291,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "slave_revolt_mountd_slaves",
+          "id": "slave_revolt_mounted_slaves",
           "name": "Mounted Slaves",
           "description": "Mounted Slaves have throwing spear and shield. Inferior Fighters. Skirmishers.",
           "category": "Cavalry",
@@ -12433,7 +12433,7 @@
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
-          "cohesion": 4,
+          "cohesion": 3,
           "pointsPerBase": 5,
           "minBases": 3,
           "maxBases": 12,
@@ -12493,37 +12493,6 @@
               "enabledEvery": 0,
               "pointsModifier": 0,
               "equipmentAdded": ["Sling"],
-              "equipmentRemoved": ["Javelins"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "slave_revolt_cavalry_supports",
-          "name": "Cavalry Supports",
-          "description": "Cavalry Supports have javelins and shield. Skirmishers. Escorts (when interacting with a single pre selected cavalry unit).",
-          "category": "Skirmishers",
-			"type": "Skirmishers",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 8,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [
-            "Javelins","Shield"
-          ],
-          "specialRules": [
-            "Skirmishers","Escorts"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Bow",
-              "enabledEvery": 3,
-              "pointsModifier": 0,
-              "equipmentAdded": ["Bow"],
               "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
