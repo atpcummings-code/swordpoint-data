@@ -12065,7 +12065,7 @@
             {
               "name": "Spear",
               "disables": "Open Order",
-              "enablesHidden": "Stubborn",
+              "enableHidden": "Stubborn",
               "pointsModifier": -2,
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": ["Throwing Spear"],
@@ -12076,7 +12076,7 @@
             },
             {
               "name": "Stubborn",
-              "hiddenUntilEnabled": "hidden,"
+              "hiddenUntilEnabled": "hidden",
               "pointsModifier": 2,
               "equipmentAdded": [],
               "equipmentRemoved": [],
@@ -12120,7 +12120,7 @@
             {
               "name": "Spear",
               "disables": "Open Order",
-              "enablesHidden": "Stubborn",
+              "enableHidden": "Stubborn",
               "pointsModifier": -2,
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": ["Throwing Spear"],
