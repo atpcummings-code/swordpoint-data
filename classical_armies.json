@@ -12351,7 +12351,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "large Shield",
+              "name": "Large Shield",
               "disables": "Shield",
               "pointsModifier": 4,
               "equipmentAdded": ["Large Shield"],
