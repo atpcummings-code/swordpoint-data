@@ -10778,7 +10778,7 @@
             {
               "name": "Throwing Spear-Javelins-Shield", 
               "disables": "Longbow",
-              "enablesHidden": "Large Shield",
+              "enableHidden": "Large Shield",
               "pointsModifier": 6,
               "equipmentAdded": ["Throwing Spear","Javelins","Shield"],
               "equipmentRemoved": [],
