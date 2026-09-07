@@ -12245,7 +12245,7 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 16,
-
+"excludes": ["numidian_imitation_legionaries"],
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Javelins","Shield"],
@@ -12257,13 +12257,13 @@
         {
           "id": "numidian_imitation_legionaries",
           "name": "Imitation Legionaries",
-          "description": "Imitation Legionaries have light armour, heavy throwing spear and shield.  The imitation egionary figures in the army may not outnumber the warrior figures.",
+          "description": "Imitation Legionaries have light armour, heavy throwing spear and shield.  The Iimitation legionary figures in the army may not outnumber the warrior figures.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
           "cohesion": 7,
           "pointsPerBase": 20,
-
+"excludes": ["numidian_trained_infantry"],
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Light Armour","Heavy Throwing Spear","Shield"],
