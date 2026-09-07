@@ -7854,7 +7854,7 @@
         },
         {
           "id": "southern_italian_leader",
-          "name": ":Leader",
+          "name": "Leader",
           "description": "",
           "category": "Commanders",
           "type": "Commander",
