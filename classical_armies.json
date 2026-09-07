@@ -11790,7 +11790,7 @@
 "parthian": {
       "armyName": "Parthian - 250 BC to 225 AD",
     "armyValidation": [ 
-      { "ids": ["parthian_horse_archers", "expression": "greaterThanOrEqual", "ratio": 3, "compareWith": ["parthian_cataphracts"], "countBy": "bases" }
+      { "ids": ["parthian_horse_archers"], "expression": "greaterThanOrEqual", "ratio": 3, "compareWith": ["parthian_cataphracts"], "countBy": "bases" }
     ],
       "categories": [
         {
@@ -11800,7 +11800,6 @@
           "min": 0,
           "max": 6
         },
-       
         {
           "id": "Cavalry",
           "name": "Cavalry",
