@@ -12245,7 +12245,7 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 16,
-          "excludes": ["numidian_imitation_legionaries"],
+
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Javelins","Shield"],
