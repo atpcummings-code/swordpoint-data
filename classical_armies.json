@@ -12063,7 +12063,6 @@
           "defence": 4,
           "cohesion": 8,
           "pointsPerBase": 22,
-          "requires": { "unitId": ["numidian_elephant","numidian_imitation_legionaries"], "countPerUnit": 1, "name": ["Elephant","Imitation Legionaries"] },
           "maxCountAllowed": 1,
           "minBases": 3,
           "maxBases": 8,
@@ -12264,7 +12263,7 @@
           "defence": 5,
           "cohesion": 7,
           "pointsPerBase": 20,
-           "excludes": ["numidian_trained_infantry"],
+
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Light Armour","Heavy Throwing Spear","Shield"],
