@@ -15837,6 +15837,21 @@
         },
       ]
     },
+{
+          "id": "palmyran_dromedarii",
+          "name": "Dromedarii",
+          "description": "Dromedarii have light armour, shield, bow and spear. Riding Camels.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Shield","Bow","Spear"],
+          "specialRules": ["Open Order","Riding Camels"],
+          "optionalEquipment": []
+        },
 
 	  
   }
