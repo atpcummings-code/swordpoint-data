@@ -14617,7 +14617,6 @@
          {
           "id": "Infantry",
           "name": "Infantry",
-           "description": "An army may contain either Trained Infantry or Imitation Legionaries, but not both",
           "constraintType": "percentage",
           "min": 33,
           "max": 100
