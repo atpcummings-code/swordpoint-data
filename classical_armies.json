@@ -15612,5 +15612,232 @@
         
       ]
     }, 
+"palmyran": {
+      "armyName": "Palmyran - 260 AD to 272 AD",
+
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 35,
+          "max": 100
+        },
+         {
+          "id": "Infantry",
+          "name": "Infantry",
+           "description": "An army may contain either Trained Infantry or Imitation Legionaries, but not both",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+         {
+          "id": "Allies",
+          "name": "Allies",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+      ],
+      "units": [
+        {
+          "id": "palmyran_odenathus",
+          "name": "Odenathus",
+          "description": "May ride a horse or camel.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "palmyran_zenobia",
+          "name": "Zenobia",
+          "description": "May ride a horse or camel.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": 0,
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "palmyran_noble",
+          "name": "Noble",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "palmyran_cataphract",
+          "name": "Cataphracts",
+          "description": "Cataphracts have Cataphract Armour and kontos. Superior Fighters. Massed Cavalry. May have barding (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Cataphract Armour","Kontos"],
+          "specialRules": ["Open Order","Superior Fighters","Massed Cavalry"],
+          "optionalEquipment": [
+            {
+              "name": "Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "palmyran_light_horse",
+          "name": "Light Horse",
+          "description": "Light Horse have javelins and shield. Evade. May have bow (+1). May be fielded as Skirmishers at a cost of 17pts per base.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order","Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+         {
+          "id": "palmyran_horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Archers have a bow. Inferior Fighters. Evade. May be fielded as Skirmishers with Parthian Shot.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers","Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "palmyran_archers",
+          "name": "Archers",
+          "description": "Archers have a bow and shield. Open Order. May be fielded as Skirmishers at a cost of eight points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+                        {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+          {
+          "id": "palmyran_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have a bow and shield. Skirmishers.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": []
+        },
+      ]
+    },
+
+	  
   }
 }
