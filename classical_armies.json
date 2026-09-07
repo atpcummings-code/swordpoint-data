@@ -14593,7 +14593,8 @@
       ]
     },
 
-"dacian": {
+"dacian": 
+	{
       "armyName": "Dacian - 82 BC to 106 AD",
 
       "categories": [
@@ -15606,8 +15607,10 @@
               ],
               "equipmentRemoved": ["Javelins"]
             }
-          ]      
-    }
-  ]      
-    }
+          ]
+        },
+        
+      ]
+    }, 
   }
+}
