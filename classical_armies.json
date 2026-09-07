@@ -11342,7 +11342,7 @@
           "max": 100
         },
         {
-          "id": "Allies",
+          "id": "Mercenaries",
           "name": "Mercenaries",
           "constraintType": "percentage",
           "min": 0,
@@ -11351,9 +11351,9 @@
       ],
       "units": [
         {
-          "id": "ssyracusan_tyrant",
+          "id": "syracusan_tyrant",
           "name": "Tyrant",
-			"excludes": ["ssyracusan_strategos"],
+			"excludes": ["syracusan_strategos"],
           "description": "",
           "category": "Commanders",
           "type": "General",
@@ -11367,9 +11367,9 @@
           "optionalEquipment": []
         },
         {
-          "id": "ssyracusan_strategos",
+          "id": "syracusan_strategos",
           "name": "Strategos",
-		"excludes": ["ssyracusan_tyrant"],
+		"excludes": ["syracusan_tyrant"],
           "description": "",
           "category": "Commanders",
           "type": "General",
@@ -11383,7 +11383,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "ssyracusan_officer",
+          "id": "syracusan_officer",
           "name": "Officer",
           "description": "",
           "category": "Commanders",
@@ -11397,7 +11397,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "ssyracusan_heavy_cavalry",
+          "id": "syracusan_heavy_cavalry",
           "name": "Heavy Cavalry",
           "description": "Heavy Cavalry have javelins. May have light armour (+1).",
           "category": "Cavalry",
@@ -11427,7 +11427,7 @@
           ]
         },
         {
-          "id": "ssyracusan_light_cavalry",
+          "id": "syracusan_light_cavalry",
           "name": "Light Cavalry",
           "description": "Light Cavalry have javelins. Skirmishers.",
           "category": "Cavalry",
@@ -11446,7 +11446,7 @@
           "optionalEquipment": []
         },
           {
-          "id": "ssyracusan_regular_hoplites",
+          "id": "syracusan_regular_hoplites",
           "name": "Regular Hoplites",
           "description": "Regular Hoplites have spear and large shield. Phalanx. May take light armour (+2).",
           "category": "Infantry",
@@ -11476,7 +11476,7 @@
           ]
         },
           {
-          "id": "ssyracusan_militia_hoplites",
+          "id": "syracusan_militia_hoplites",
           "name": "Militia Hoplites",
           "description": "Militia Hoplites have spear and large shield. Inferior Fighters. Levies. Phalanx.",
           "category": "Infantry",
@@ -11495,7 +11495,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "ssyracusan_peltasts",
+          "id": "syracusan_peltasts",
           "name": "Peltasts",
           "description": "Peltasts have javelins and shield. Open Order. May be fielded as Skirmishers at a cost of seven points per base.",
           "category": "Infantry",
@@ -11523,7 +11523,7 @@
           ]
         },
         {
-          "id": "ssyracusan_skirmishers",
+          "id": "syracusan_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers. Up to half of all Skirmisher units may replace javelins with bow or sling (free)",
           "category": "Infantry",
@@ -11565,7 +11565,7 @@
           ]
         },
         {
-          "id": "ssyracusan_superior_hoplites",
+          "id": "syracusan_superior_hoplites",
           "name": "Superior Hoplites",
           "description": "Superior Hoplites have spear and large shield. Phalanx. May take light armour (+2). Can only be used if a Tyrant Army General taken, may not be larger than 6 bases.",
           "category": "Mercenaries",
@@ -11573,7 +11573,7 @@
           "defence": 5,
           "cohesion": 8,
           "pointsPerBase": 28,
-         "requires": { "unitId": "ssyracusan_tyrant", "count": 1, "name": "Tyrant" },
+         "requires": { "unitId": "syracusan_tyrant", "count": 1, "name": "Tyrant" },
           "minBases": 3,
           "maxBases": 6,
           "maxCountAllowed": 1,
@@ -11607,7 +11607,7 @@
           ]
         },
  {
-          "id": "ssyracusan_mercenary_hoplites",
+          "id": "syracusan_mercenary_hoplites",
           "name": "Mercenary Hoplites",
           "description": "Mercenary Hoplites have spear and large shield. Phalanx. May take light armour (+2).",
           "category": "Mercenaries",
@@ -11637,7 +11637,7 @@
           ]
         },
         {
-          "id": "ssyracusan_spanish",
+          "id": "syracusan_spanish",
           "name": "Spanish",
           "description": "Spanish infantry are armed with javelins and shield. They may have light armour (+2) and every second unit may have throwing spears (+2). Open Order. Warband. May be fielded as Skirmishers, no longer Warband, at a cost of six points per base.",
           "category": "Mercenaries",
@@ -11686,7 +11686,7 @@
           ]
         },
         {
-          "id": "ssyracusan_celts",
+          "id": "syracusan_celts",
           "name": "Celts",
           "description": "Celts have throwing spear and shield. May take light armour (+2). Warband.",
           "category": "Mercenaries",
@@ -11714,7 +11714,7 @@
           ]
         },
         {
-          "id": "ssyracusan_peltasts",
+          "id": "syracusan_peltasts",
           "name": "Peltasts",
           "description": "Peltasts have javelins and shield. Open Order. May be fielded as Skirmishers at a cost of seven points per base.",
           "category": "Mercenaries",
@@ -11742,7 +11742,7 @@
           ]
         },
         {
-          "id": "ssyracusan_skirmishers",
+          "id": "syracusan_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins. Skirmishers. Up to half of all Skirmisher units may replace javelins with bow or sling (free)",
           "category": "Mercenaries",
