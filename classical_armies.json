@@ -11785,6 +11785,205 @@
         }
       ]
     },
+
+
+"parthian": {
+      "armyName": "Parthian - 250 BC to 225 AD",
+    "armyValidation": [ 
+      { "ids": ["parthian_horse_archers", "expression": "greaterThanOrEqual", "ratio": 3, "compareWith": ["parthian_cataphracts"], "countBy": "bases" }
+    ],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+         {
+          "id": "Infantry",
+          "name": "Infantry and Light Troops",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+        {
+          "id": "parthian_general",
+          "name": "General",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 8,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "parthian_officer",
+          "name": "Officer",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "parthian_cataphracts",
+          "name": "Cataphracts",
+          "description": "Cataphracts have heavy armour and kontos. Superior Fighters. Massed Cavalry. May have Cataphract Armour (+1) and barding (+1). One unit maybe mounted on camels instead of horses.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Heavy Armour","Kontos"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters","Massed Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Cataphract Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Cataphract Armour"],
+              "equipmentRemoved": ["Heavy Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Mount on Camels",
+              "pointsModifier": 0,
+              "maxUnits": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Mounted on Camels"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "parthian_horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Archers have a bow. Inferior Fighters. Skirmishers. Nomad Cavalry.  There must be at least three times as many Horse Archer bases as Cataphract bses in the army.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters","Nomad Cavalry"
+          ],
+          "optionalEquipment": []
+        },
+          {
+          "id": "parthian_militia",
+          "name": "Militia",
+          "description": "Militia have javelins and shield. Open Order. Maybe fielded as Skirmishers at a cost of six points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "javelins", "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "parthian_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers. May exchange javelins for bow (free).",
+          "category": "Infantry",
+          "type": "Skirmisher",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+           {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+      ]
+    },
 	  
 "xiongnu": {
       "armyName": "Xiongnu - 200 BC to 200 AD",
