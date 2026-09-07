@@ -15613,8 +15613,10 @@
      
 "palmyran": {
       "armyName": "Palmyran - 260 AD to 272 AD",
-
-      "categories": [
+	"armyValidation": [
+{ "ids": ["palmyran_skirmishers"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["palmyran_archers"], "countBy": "bases" }
+	],
+	"categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
