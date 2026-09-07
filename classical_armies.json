@@ -11353,6 +11353,7 @@
         {
           "id": "ssyracusan_tyrant",
           "name": "Tyrant",
+			"excludes": ["ssyracusan_strategos"],
           "description": "",
           "category": "Commanders",
           "type": "General",
@@ -11367,7 +11368,8 @@
         },
         {
           "id": "ssyracusan_strategos",
-          "name": "Tyrant",
+          "name": "Strategos",
+		"excludes": ["ssyracusan_tyrant"],
           "description": "",
           "category": "Commanders",
           "type": "General",
