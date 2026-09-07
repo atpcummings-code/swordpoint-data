@@ -15779,16 +15779,6 @@
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
-            {
-              "name": "Bow",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Bow"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
             }
           ]
         },
