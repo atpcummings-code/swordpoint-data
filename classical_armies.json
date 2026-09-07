@@ -14815,7 +14815,7 @@
           "defence": 7,
           "cohesion": 6,
           "pointsPerBase": 9,
-          "requires": { "unitIds": ["dacian_warriors", "dacian_falxmen"], "name": ["Warriors", "Falxmen"], "countPerUnit": 2 }
+          "requires": { "unitIds": ["dacian_warriors", "dacian_falxmen"], "name": ["Warriors", "Falxmen"], "countPerUnit": 2 },
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Bow"],
