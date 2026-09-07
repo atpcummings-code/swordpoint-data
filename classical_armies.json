@@ -6564,7 +6564,7 @@
         {
           "id": "hispania_celtiberian_balearic_slingers",
           "name": "Balearic Slingers",
-          "description": "Balearic Slingers have sling. Superior Shooters. Skirmishers. May have shield (+1). Balearic units must form no more than half of sling units present and must contain no more models than teh smallest other slinger unit.",
+          "description": "Balearic Slingers have sling. Superior Shooters. Skirmishers. May have shield (+1). Balearic units must form no more than half of sling units present and must contain no more models than the smallest other slinger unit.",
           "category": "Skirmishers",
           "type": "Skirmishers",
           "defence": 7,
@@ -6931,7 +6931,7 @@
         {
           "id": "hispania_lusitanian_balearic_slingers",
           "name": "Balearic Slingers",
-          "description": "Balearic Slingers have sling. Superior Shooters. Skirmishers. May have shield (+1). Balearic units must form no more than half of sling units present and must contain no more models than teh smallest other slinger unit.",
+          "description": "Balearic Slingers have sling. Superior Shooters. Skirmishers. May have shield (+1). Balearic units must form no more than half of sling units present and must contain no more models than the smallest other slinger unit.",
           "category": "Skirmishers",
           "type": "Skirmishers",
           "defence": 7,
@@ -7356,7 +7356,7 @@
         {
           "id": "hispania_iberian_balearic_slingers",
           "name": "Balearic Slingers",
-          "description": "Balearic Slingers have sling. Superior Shooters. Skirmishers. May have shield (+1). Balearic units must form no more than half of sling units present and must contain no more models than teh smallest other slinger unit.",
+          "description": "Balearic Slingers have sling. Superior Shooters. Skirmishers. May have shield (+1). Balearic units must form no more than half of sling units present and must contain no more models than the smallest other slinger unit.",
           "category": "Skirmishers",
           "type": "Skirmishers",
           "defence": 7,
@@ -7770,7 +7770,7 @@
         {
           "id": "hispania_sertorian_revolt_balearic_slingers",
           "name": "Balearic Slingers",
-          "description": "Balearic Slingers have sling. Superior Shooters. Skirmishers. May have shield (+1). Balearic units must form no more than half of sling units present and must contain no more models than teh smallest other slinger unit.",
+          "description": "Balearic Slingers have sling. Superior Shooters. Skirmishers. May have shield (+1). Balearic units must form no more than half of sling units present and must contain no more models than the smallest other slinger unit.",
           "category": "Skirmishers",
           "type": "Skirmishers",
           "defence": 7,
@@ -8177,7 +8177,7 @@
         {
           "id": "republican_indian_brahmin_priests",
           "name": "Brahmin Priests",
-          "description": "A unit accompanied by a Brahmin Priest may throw two extra dice in teh first round of every combat. If teh priest is killed during the game, the unit loses a base immediately, but suffers no further consequences.",
+          "description": "A unit accompanied by a Brahmin Priest may throw two extra dice in the first round of every combat. If the priest is killed during the game, the unit loses a base immediately, but suffers no further consequences.",
           "category": "Commanders",
           "type": "Commander",
           "attacks": "Special",
@@ -11751,7 +11751,7 @@
         {
           "id": "northern_britain_caledonians_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishes have javelins. Inferior Fighters. Skirmishers. May have  shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than teh smallest javelin unit in the army.",
+          "description": "Skirmishes have javelins. Inferior Fighters. Skirmishers. May have  shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallest javelin unit in the army.",
           "category": "Skirmishers",
           "type": "Skirmishers",
           "defence": 7,
@@ -12008,7 +12008,7 @@
         {
           "id": "northern_britain_picts_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishes have javelins. Inferior Fighters. Skirmishers. May have  shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than teh smallest javelin unit in the army.",
+          "description": "Skirmishes have javelins. Inferior Fighters. Skirmishers. May have  shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallest javelin unit in the army.",
           "category": "Skirmishers",
           "type": "Skirmishers",
           "defence": 7,
@@ -13517,7 +13517,7 @@
         {
           "id": "british_tribes_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishes have javelins. Inferior Fighters. Skirmishers. May have  shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than teh smallest javelin unit in the army.",
+          "description": "Skirmishes have javelins. Inferior Fighters. Skirmishers. May have  shield (+1) and may exchange javelins for sling (free). There may not be more sling units than javelin units, and no sling unit may be larger than the smallest javelin unit in the army.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
