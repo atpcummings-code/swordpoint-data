@@ -1,5 +1,4 @@
 {
-  "armies": {
  "scythian": {
       "armyName": "Scythian - 700 BC to 300 BC",
     "armyValidation": [ 
@@ -14593,7 +14592,302 @@
         
       ]
     },
-	  
+
+"dacian": {
+      "armyName": "Dacian - 82 BC to 106 AD",
+
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        },
+         {
+          "id": "Infantry",
+          "name": "Infantry",
+           "description": "An army may contain either Trained Infantry or Imitation Legionaries, but not both",
+          "constraintType": "percentage",
+          "min": 33,
+          "max": 100
+        },
+         {
+          "id": "Allies",
+          "name": "Allies",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+      ],
+      "units": [
+        {
+          "id": "dacian_chieftain",
+          "name": "Chieftain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Stratagem",
+              "pointsModifier": 50,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stratagem"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "dacian_sub-chief",
+          "name": "Sub-Chief",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "dacian_minor_chief",
+          "name": "Minor Chief",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "dacian_cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have Spear and shield. may be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "dacian_warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Open Order. Warband. May take Stubborn (+2), Evade (+2) and Ambush (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minCountAllowed": 3,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Shield"],
+          "specialRules": [
+            "Open Order","Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Evade",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Evade"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Ambush",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "dacian_falxmen",
+          "name": "Falxmen",
+          "description": "Falxmen have halberd and shield. Open Order. Warband. May take Stubborn (+2) and Ambush (+2). May lose their shield (-1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Halberd","Shield"],
+          "specialRules": [
+            "Open Order","Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+              "pointsModifier": -1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Ambush",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "dacian_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Open Order. May be fielded as Skirmishers at a cost of six points per base. Only one foot unit in three may be Archers. (excludes Youths from calculation).  May take Evade (+2) and Ambush (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "requires": { "unitIds": ["dacian_warriors", "dacian_falxmen"], "name": ["Warriors", "Falxmen"], "countPerUnit": 2 }
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+                        {
+              "name": "Evade",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Evade"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Ambush",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+          {
+          "id": "dacian_youth",
+          "name": "Youths",
+          "description": "Youths have javelins. Inferior Fighters. Skirmishers. May exchange javelins for bow (free).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Ambush",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Ambush"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+      ]
+    },
+	
 "early_sudanese": {
       "armyName": "Early Sudanese - 30 BC to 650 AD",
       "categories": [
