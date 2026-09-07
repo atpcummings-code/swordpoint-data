@@ -11983,6 +11983,372 @@
         
       ]
     },
+
+"numidian": {
+      "armyName": "Numidian - 250 BC to 30 BC",
+"armyValidation": [ 
+{ "ids": ["numidian_trained_infantry"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["numidian_warriors"], "countBy": "bases" },
+  { "ids": ["numidian_imitation_legionaries"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["numidian_warriors"], "countBy": "bases" } 
+    ],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+         {
+          "id": "Infantry",
+          "name": "Infantry",
+           "description": "An army may contain either Trained Infantry or Imitation Legionaries, but not both",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+         {
+          "id": "Elephants",
+          "name": "Elephants",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 250,
+          "countPerThreshold": 1,
+          "rounding": "down",
+
+        }
+      ],
+      "units": [
+        {
+          "id": "numidian_general",
+          "name": "General",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "numidian_tribal_leaders",
+          "name": "Tribal Leaders",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "numidian_guard_cavalry",
+          "name": "Guard Cavalry",
+          "description": "Guard Cavalry have light armour, Spear and shield. Superior Fighters. This unit must accompany the general at all times, and can only be used if the army contains both imitation legionaries and elephants.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "requires": { "unitId": ["numidian_elephant","numidian_imitation_legionaries"] "countPerUnit": 1, "name": ["Elephant","Imitation Legionaries" },
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order","Superior Fighters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "numidian_light_horse",
+          "name": "Light Horse",
+          "description": "Light Horse have javelins and shield. Superior Shooters. Evade. May be fielded as Skirmishers with Parthian Shot.",
+          "category": "Cavalry",
+          "type": "Skirmishers",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Superior Shooters","Evade"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers","Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "numidian_levy",
+          "name": "Levy",
+          "description": "Levy horse have javelins and shield. Inferior Fighters, Levies. May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Skirmishers",
+          "defence": 5,
+          "cohesion": 5,
+          "pointsPerBase": 13,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Inferior Fighters","Levies"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+          {
+          "id": "numidian_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers. Every third unit may exchange javelins for bow or sling (free). Skirmish units may be promoted to Elephant Escorts with the Escorts Rule for +1 point. No more than one unit per elephant fielded.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins", "Shield"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "enabledEvery": 3,
+              "disables": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Sling",
+              "enabledEvery": 3,
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "numidian_elephant_escorts",
+          "name": "Elephant Escorts",
+          "description": "Elephant Escorts have javelins and shield. Inferior Fighters. Skirmishers. Every third unit may exchange javelins for bow or sling (free). Elephant Escorts with the Escorts Rule for +1 point. No more than one unit per elephant fielded.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 10,
+          "requires": { "unitId": "numidian_elephant", "countPerUnit": 1, "name": "Elephant" } 
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins", "Shield"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "enabledEvery": 3,
+              "disables": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Sling",
+              "enabledEvery": 3,
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "numidian_warriors",
+          "name": "Warriors",
+          "description": "Warriors have javelins and shield. Inferior Fighters. Warband (rule 1 only)",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": [
+            "Close Order","Inferior Fighters","Warband (rule 1 only)"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "numidian_trained_infantry",
+          "name": "Trained Infantry",
+          "description": "Trained Infantry have javelins and shield. The Trained Infantry in the army may not out number the warrior figures.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "excludes": ["numidian_imitation_legionaries"],
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "numidian_imitation_legionaries",
+          "name": "Imitation Legionaries",
+          "description": "Imitation Legionaries have light armour, heavy throwing spear and shield.  The imitation egionary figures in the army may not outnumber the warrior figures.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+           "excludes": ["numidian_trained_infantry"],
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Heavy Throwing Spear","Shield"],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "numidian_elephant",
+          "name": "Elephant",
+          "description": "The mahout is unarmed; the two crew have javelins. The elephant is a Superior Fighter. A third crewman maybe added (+4). They may exchange javelins for bow (free). The elephant maybe fitted with a howdah (+4).",
+          "category": "Elephants",
+          "type": "Elephants",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "Third Crewman",
+              "applyToAllUnits": true,
+              "pointsModifier": 4,
+              "targetProfile": "Crewmen",
+              "equipmentAdded": ["Third Crewman"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "applyToAllUnits": true,
+              "pointsModifier": 0,
+              "targetProfile": "Crewmen",
+              "equipmentAdded": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Howdah",
+              "applyToAllUnits": true,
+              "pointsModifier": 4,
+              "targetProfile": "Elephant",
+              "equipmentAdded": ["Howdah"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Elephant",
+              "stats": {
+                "D": 3,
+                "C": 4
+              },
+              "pointsPerBase": 60,
+              "specialRules": [
+                "Terror","Superior Fighter"
+              ]
+            },
+            {
+              "name": "Crewmen",
+              "stats": {
+                "D": 6,
+                "C": 7,
+                "baseEquipment": ["Javelins"],
+              },
+              "pointsPerBase": 0
+            },
+            {
+              "name": "Mahout",
+              "stats": {
+                "D": 6,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        }
+      ]
+    },
 	  
 "xiongnu": {
       "armyName": "Xiongnu - 200 BC to 200 AD",
