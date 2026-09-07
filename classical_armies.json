@@ -11729,8 +11729,8 @@
             "Open Order"
           ],
           "optionalEquipment": [
-            {            {
-              "name": "Skirmishers",
+            {   
+				"name": "Skirmishers",
               "pointsModifier": -4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
