@@ -12063,7 +12063,7 @@
           "defence": 4,
           "cohesion": 8,
           "pointsPerBase": 22,
-          "requires": { "unitId": ["numidian_elephant","numidian_imitation_legionaries"] "countPerUnit": 1, "name": ["Elephant","Imitation Legionaries"] },
+          "requires": { "unitId": ["numidian_elephant","numidian_imitation_legionaries"], "countPerUnit": 1, "name": ["Elephant","Imitation Legionaries"] },
           "maxCountAllowed": 1,
           "minBases": 3,
           "maxBases": 8,
