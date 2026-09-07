@@ -12184,7 +12184,7 @@
           "defence": 6,
           "cohesion": 6,
           "pointsPerBase": 10,
-          "requires": { "unitId": "numidian_elephant", "countPerUnit": 1, "name": "Elephant" } 
+          "requires": { "unitId": "numidian_elephant", "countPerUnit": 1, "name": "Elephant" },
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": [
