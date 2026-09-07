@@ -15851,6 +15851,10 @@
           "baseEquipment": ["Light Armour","Shield","Bow","Spear"],
           "specialRules": ["Open Order","Riding Camels"],
           "optionalEquipment": []
+        }
+          ]
         },
- ]
-    }, 
+
+  }
+}
+
