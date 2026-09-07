@@ -15821,7 +15821,7 @@
           {
           "id": "palmyran_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have a bow and shield. Skirmishers.",
+          "description": "Skirmishers have a bow and shield. Skirmishers. There may not be moe Skirmishers (bases) than Archers in the army.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
