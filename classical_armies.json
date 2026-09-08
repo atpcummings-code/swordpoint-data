@@ -12387,7 +12387,7 @@
             },
             {
               "name": "Large Shield",
-              "disables": "Two-handed Sword"
+              "disables": "Two-handed Sword",
               "pointsModifier": 2,
               "equipmentAdded": ["Large Shield"],
               "equipmentRemoved": ["Shield"],
@@ -12438,70 +12438,7 @@
           "id": "warring_states_chinese_halberdiers_archers_cf",
           "name": "Combined Formation Halberdiers/Archers",
           "description": "Combined Formation: up to 50% of each unit may be comprised of Archers which will form in Close Order costing 14 points per base.",
-    "category": "Persians",      
-	"type": "Infantry",
-          "minBases": 3,
-          "maxBases": 12,
-	  "combinedFormation": 
-		[
-		{ "label": "25%", "disableSubProfiles": ["Archers","Halberdiers/Archers (Front Row)"]},
-		{ "label": "50%", "disableSubProfiles": ["Halberdiers/Archers (Front Row)","Halberdiers/Archers (Rear Row)" ]}
-		],
-          "subProfiles": [
-             {
-              "name": "Halberdiers/Archers (Front Row)",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-              "defence": 6,
-              "cohesion": 7,
-	          "pointsPerBase": 16,
-              "minBases": 3,
-			  "maxBases": 6,
-          "baseEquipment": ["Halberd", "Light Armour","Bow"],
-          "specialRules": ["Close Order"],
-            },
-			  {
-              "name": "Halberdiers",
-		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-            	"defence": 6,
-          	"cohesion": 7,
-          	"pointsPerBase": 16,
-              "minBases": 0,
-              "maxBases": 12,
-          "baseEquipment": ["Halberd", "Light Armour"],
-          "specialRules": ["Close Order"],
-            },
-            {
-              "name": "Archers",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-              "minBases": 1,
-              "defence": 7,
-              "cohesion": 7,
-              "pointsPerBase": 14,
-		      "compareWithSubProfile": { "name": "Halberdiers", "expression": "lessThanOrEqual", "ratio": 1 },
-          "baseEquipment": ["Bow"],
-          "specialRules": ["Close Order"],
-            },
-
-			  {
-              "name": "Halberdiers/Archers (Rear Row)",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-			  "compareWithSubProfile": { "name": "Halberdiers", "expression": "lessThanOrEqual", "ratio": 1 },
-              "defence": 6,
-              "cohesion": 7,
-	          "pointsPerBase": 16,
-              "minBases": 1,
-              "maxBases": 6,
-          "baseEquipment": ["Halberd", "Light Armour","Bow"],
-          "specialRules": ["Close Order"],
-            }
-            
-            ],
-	"optionalEquipment": []
-        },{
-          "id": "warring_states_chinese_halberdiers_archers_cf",
-          "name": "Combined Formation Halberdiers/Archers",
-          "description": "Combined Formation: up to 50% of each unit may be comprised of Archers which will form in Close Order costing 14 points per base.",
-    "category": "Persians",      
+    "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
@@ -12561,11 +12498,11 @@
             ],
 	"optionalEquipment": []
         },
-        {
-          "id": "warring_states_chinese_halberdiers_crossbowmen_cf",
+		  {
+		  "id": "warring_states_chinese_halberdiers_crossbowmen_cf",
           "name": "Combined Formation Halberdiers/Crossbowmen",
           "description": "Combined Formation: up to 50% of each unit may be comprised of Crossbowmen which will form in Close Order costing 14 points per base.",
-    "category": "Persians",      
+    "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
