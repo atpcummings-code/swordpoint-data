@@ -11604,7 +11604,7 @@
             },
             {
               "name": "Open Order",
-              "disables": ["Skirmishers"]
+              "disables": ["Skirmishers"],
               "pointsModifier": -3,
               "equipmentAdded": [],
               "equipmentRemoved": [],
@@ -11615,7 +11615,7 @@
             },
             {
               "name": "Skirmishers",
-              "disables": ["Open Order"]
+              "disables": ["Open Order"],
               "pointsModifier": -5,
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": ["Spear"],
