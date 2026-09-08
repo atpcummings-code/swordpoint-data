@@ -11315,6 +11315,792 @@
       ]
     },
 
+"later_achaemenid_persians": {
+      "armyName": "Later Achaemenid Persians - 420 BC to 320 BC",
+    "armyValidation": [ 
+{ "type": "equipmentUnitCount", "left": { "unitIds": ["later_achaemenid_persians_skirmishers"], "equipment": ["Sling"] }, "right": { "unitIds": ["later_achaemenid_persians_skirmishers"], "equipment": ["Javelins"] }, "expression": "lessThanOrEqual", "ratio": 1 },
+		{ "type": "equipmentBasesCount", "left": { "unitIds": ["later_achaemenid_persians_skirmishers"], "equipment": ["Sling"] }, "right": { "unitIds": ["later_achaemenid_persians_skirmishers"], "equipment": ["Javelin"] }, "expression": "lessThanOrEqual", "ratio": 1 } 
+	],
+	"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 4
+        },
+       {
+          "id": "Persians",
+          "name": "Persians",
+           "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Levies",
+          "name": "Levies",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "GreekMercenaries",
+          "name": "Greek Mercenaries",
+          "description": "May take a contingent from the Later Hoplite Greek list. This may be led by a Polemarch. Only Mercenary or Levy Hoplites, Peltasts and Psiloi may be used.",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 30
+        },
+      {
+          "id": "AlliesAndAlliedInfantry",
+          "name": "Allies and Allied Infantry",
+        "description": "If the Great KLing is present, teh army may take a contingent from the Classical Indian list: this may consist of 0-1 Cavalry unit, 0-1 Hereditary Infantry and 0-1 elephant and may be led by a Padika. The army may take a contingent of lowland infantry from teh Thracian list that may be led by a chieftain. These represent Bithynians.",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        }
+      ],
+      "units": [
+        {
+          "id": "later_achaemenid_persians_great_king",
+          "name": "Great King",
+          "excludes": ["later_achaemenid_persians_satrapal_general"],
+          "description": "May ride a horse or Heavy Chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_achaemenid_persians_satrapal_general",
+          "name": "Satrapal General",
+          "excludes": ["later_achaemenid_persians_great_king"],
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_achaemenid_persians_satrap",
+          "name": "Satrap",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+1",
+          "pointsPerBase": 15,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_achaemenid_persians_greek_mercenary_polemarch",
+          "name": "Greek Mercenary Polemarch",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "maxCountAllowed": 1,
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "later_achaemenid_persians_kinsmen",
+          "name": "Kinsmen",
+          "description": "Kinsmen have javelins. Superior Fighters. Massed Cavalry. May have light armour (+1). May be Stubborn (+2). May only be included if the Great King is present. May exchange javelins for spear (free).",
+          "category": "Persians",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 21,
+          "requires": {"unitId": "later_achaemenid_persians_great_king","count": 1,"name": "Great King"},   
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Open Order","Superior Fighters","Massed Cavalry"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_achaemenid_persians_heavy",
+          "name": "Heavy Persian Cavalry",
+          "description": "Heavy Persian Cavalry have javelins. Massed Cavalry. May have light armour (+1) or heavy armour (+2) and half barding (+1). May exchange javelins for spear (free).",
+          "category": "Persians",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "requires": {"unitId": "later_achaemenid_persians_great_king","count": 1,"name": "Great King"},   
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Open Order","Massed Cavalry"],
+          "optionalEquipment": [
+             {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "disables": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "disables": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half Barding",
+              "disables": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_achaemenid_persians_persians",
+          "name": "Persians",
+          "description": "Persians have spear and shield. May have light armour (+2) and bow (+2). May upgrade shield to large shield (+2).",
+          "category": "Persians",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_achaemenid_persians_kardakes",
+          "name": "Kardakes",
+          "description": "Kardakes have spear and shield. May be fielded in Open Order at a cost of 9 points per base. May have light armour (+2).  May be fielded as Skirmishers with javelins at a cost of seven points per base. They then may exchange javelins for slings or bows at no cost.",
+          "category": "Persians",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Open Order",
+              "disables": ["Skirmishers"]
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": ["Open Order"]
+              "pointsModifier": -5,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_achaemenid_persians_kardakes_cf",
+          "name": "Combined Formation Kardakes",
+          "description": "Kardakes have spear and shield. May have light armour (+2). May upgrade shield to large shield (+2) and may replace spears with javelins or bows (+2), forming Combined Formation with between one quarter and three quarters archers.",
+    "category": "Persians",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Bowmen","Mixed Spear/Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Bowmen (Front Row)","Mixed Spear/Bowmen (Rear Row)" ]},
+		{ "label": "75%", "disableSubProfiles": ["Mixed Spear/Bowmen (Rear Row)","Spearmen"]}	
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Spear/Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 14,
+              "minBases": 3,
+			  "maxBases": 6,
+          "baseEquipment": ["Spear","Shield","Bow"],
+          "specialRules": ["Close Order"],
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 6,
+          	"pointsPerBase": 12,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "minBases": 1,
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 12,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Close Order"],
+            },
+
+			  {
+              "name": "Mixed Spear/Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 12,
+              "minBases": 1,
+              "maxBases": 6,
+          "baseEquipment": ["Spear", "Shield", "Bow"],
+          "specialRules": ["Close Order"],
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Large Shield (Spearmen)",
+              "targetProfile": ["Spearmen","Mixed Spear/Bowmen (Rear Row)","Mixed Spear/Bowmen (Front Row)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		
+		{
+              "name": "Light Armour (Spearmen)",
+              "targetProfile": ["Spearmen","Mixed Spear/Bowmen (Rear Row)","Mixed Spear/Bowmen (Front Row)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Light Armour (bowmen)",
+              "targetProfile": ["Bow"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]
+        },
+        {
+          "id": "later_achaemenid_persians_scythed_chariot",
+          "name": "Scythed Chariot",
+          "description": "Scythed Chariot have throwing spear and shield. Open Order. Warband. Stubborn. The unit must contain no more bases than the smallest formed Warrior Unit.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+		"maxCountAllowed": 1,
+          "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["later_achaemenid_persians_warriors"] },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+          "Throwing Spear","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Warband","Stubborn"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_achaemenid_persians_nobles",
+          "name": "Nobles",
+          "description": "Nobles have spear. Levies. Superior Fighters. Massed Cavalry. May have light armour (+1) or heavy armour (+2). May have half barding (+1). 0-1 Units of Noble smay have bows (+3, becoming Superior Shooters.  Every second unit may be Nobles.",
+          "category": "Levies",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 20,
+          "requires": { "unitIds": ["later_achaemenid_persians_satrapal","later_achaemenid_persians_colonist"], "name": ["Satrapal","Colonist"], "countPerUnit": 1 },
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Open Order","Levies","Superior Fighters","Massed Cavalry"],
+          "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "disables": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "disables": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half Barding",
+              "disables": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Bow",
+                "maxUnits": 1,
+              "pointsModifier": 3,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Shooters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_achaemenid_persians_satrapal",
+          "name": "Satrapal",
+          "description": "Satrapal have spear. Levies. Massed Cavalry. May have light armour (+1) or heavy armour (+2).",
+          "category": "Levies",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Open Order","Levies","Massed Cavalry"],
+          "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "disables": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "disables": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_achaemenid_persians_colonist",
+          "name": "Colonist",
+          "description": "Colonist have spear. Levies. Massed Cavalry. May have light armour (+1) or heavy armour (+2).",
+          "category": "Levies",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Open Order","Levies","Massed Cavalry"],
+          "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "disables": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "disables": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_achaemenid_persians_takabara",
+          "name": "Takabara",
+          "description": "Takabara have javelins and shield. Levies. Open Order.",
+          "category": "Levies",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order", "Levies"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_achaemenid_persians_mardian_archers",
+          "name": "Mardian Archers",
+          "description": "Mardian Archers have bows. Inferior Fighters. Levies. Open Order. May have light armour (+2). Every second unit from this section may be mardian archers. Mardians may be fielded as Skirmishers at a cost of six points per base.",
+          "category": "Levies",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 8,
+          "requires": { "unitIds": ["later_achaemenid_persians_takabara", "later_achaemenid_persians_satrapal_levies"], "name": ["Takabara","Satrapal Levies"], "countPerUnit": 1 },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order", "Levies","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_achaemenid_persians_satrapal_levies",
+          "name": "Satrapal Levies",
+          "description": "Satrapal Levies have javelins and shield. Levies. Close Order. Inferior Fighters",
+          "category": "Levies",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Close Order", "Levies", "Inferior Fighters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_achaemenid_persians_kyrtian_slingers",
+          "name": "Kyrtian Slingers",
+          "description": "Kyrtian Slingers have sling and shield. Levies. Skirmishers. Inferior Fighters.",
+          "category": "Levies",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "requires": { "unitIds": ["later_achaemenid_persians_skirmishers"], "name": ["Skirmishers"], "countPerUnit": 1 },
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Sling","Shield"],
+          "specialRules": ["Skirmishers", "Levies", "Inferior Fighters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_achaemenid_persians_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Levies. Skirmishers. Inferior Fighters. Every second unit of Skirmishers may replace javelins and shield with bow (-1). There must be at least one unit of Skirmishers for each unit of Kyrtian Slingers.",
+          "category": "Levies",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers", "Levies", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "enabledEvery": 2, 
+              "pointsModifier": -1,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_achaemenid_persians_satrapal_levy_skirmishers",
+          "name": "Satrapal Levy (Skirmishers)",
+          "description": "Satrapal Levy (Skirmishers) have javelins and shield. Levies. Skirmishers. Inferior Fighters. Inferior Shooters Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
+          "category": "Levies",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers", "Levies", "Inferior Fighters","Inferior Shooters"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "enabledEvery": 2, 
+              "pointsModifier": -1,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_achaemenid_persians_lykians",
+          "name": "Lykians",
+          "description": "Lykians have halberd and javelins. Open Order. Warband (rules 1 & 2 only). May have light armour (+2) and shield (+2), or large shield (+4).",
+          "category": "AlliesAndAlliedInfantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Halberd"],
+          "specialRules": ["Open Order", "Warband (rules 1 & 2 only)"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "disables": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "disables": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_achaemenid_persians_carians",
+          "name": "Carians",
+          "description": "Carians have spear and large shield. Inferior Fighters. Warband (rules 1 & 2 only). May have light armour (+2).",
+          "category": "AlliesAndAlliedInfantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": ["Close Order", "Warband (rules 1 & 2 only)","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+      ]
+    },
+	  
 "syracusan": {
       "armyName": "Syracusan - 400 BC to 210 BC",
     
