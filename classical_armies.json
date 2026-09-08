@@ -11317,11 +11317,7 @@
 
 "later_achaemenid_persians": {
       "armyName": "Later Achaemenid Persians - 420 BC to 320 BC",
-    "armyValidation": [ 
-{ "type": "equipmentUnitCount", "left": { "unitIds": ["later_achaemenid_persians_skirmishers"], "equipment": ["Sling"] }, "right": { "unitIds": ["later_achaemenid_persians_skirmishers"], "equipment": ["Javelins"] }, "expression": "lessThanOrEqual", "ratio": 1 },
-		{ "type": "equipmentBasesCount", "left": { "unitIds": ["later_achaemenid_persians_skirmishers"], "equipment": ["Sling"] }, "right": { "unitIds": ["later_achaemenid_persians_skirmishers"], "equipment": ["Javelin"] }, "expression": "lessThanOrEqual", "ratio": 1 } 
-	],
-	"categories": [
+    	"categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
