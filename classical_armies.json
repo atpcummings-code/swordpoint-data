@@ -13576,6 +13576,7 @@
             },
             {
               "name": "Skirmishers",
+				"disables": ["Light Armour","Heavy Armour"],
               "pointsModifier": 0,
               "equipmentAdded": [],
               "equipmentRemoved": [],
