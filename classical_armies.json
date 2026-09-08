@@ -13449,9 +13449,7 @@
 
 	  "later_hoplite_greek_sparta": {
       "armyName": "Later Hoplite Greek Sparta - 400 BC to 275 BC",
-  "armyValidation": [ 
-{ "ids": ["later_hoplite_greek_sparta_crossbows"], "expression": "lessThanOrEqualTo", "ratio": 1, "compareWith": ["later_hoplite_greek_sparta_archers"], "countBy": "bases" } 
-    ],
+
  	"categories": [
         {
           "id": "Commanders",
@@ -13744,9 +13742,7 @@
 
 	  "later_hoplite_greek_thebes": {
       "armyName": "Later Hoplite Greek Thebes - 400 BC to 275 BC",
-  "armyValidation": [ 
-{ "ids": ["later_hoplite_greek_thebes_crossbows"], "expression": "lessThanOrEqualTo", "ratio": 1, "compareWith": ["later_hoplite_greek_thebes_archers"], "countBy": "bases" } 
-    ],
+
  	"categories": [
         {
           "id": "Commanders",
