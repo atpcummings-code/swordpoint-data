@@ -12095,6 +12095,1032 @@
         }
       ]
     },
+
+"warring_states_chinese": {
+      "armyName": "Warring States Chinese - 403 BC to 206 BC",
+  "armyValidation": [ 
+{ "ids": ["warring_states_chinese_crossbows"], "expression": "lessThanOrEqualTo", "ratio": 1, "compareWith": ["warring_states_chinese_archers"], "countBy": "bases" } 
+    ],
+ 	"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 40
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 40,
+          "max": 100
+        }
+      ],
+      "units": [
+        {
+          "id": "warring_states_chinese_general",
+          "name": "General",
+          "description": "May ride a horse or join a chariot unit. May have Stratagem rule.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Stratagem",
+              "pointsModifier": 50,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stratagem"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "warring_states_chinese_colonel",
+          "name": "Colonel",
+          "description": "May ride a horse or join a chariot unit",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "warring_states_chinese_light_chariots",
+          "name": "Light Chariots",
+          "description": "Light Chariots have a driver and crewman armed with light armour and halberd. Superior Fighters. Light chariots.",
+          "category": "Cavalry",
+          "type": "Chariot",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 28, 
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Halberd","Light Armour"],
+          "specialRules": ["Open Order","Superior Fighters","Light Chariots"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "warring_states_chinese_heavy_chariots",
+          "name": "Heavy Chariots",
+          "description": "Heavy Chariots have a driver and two crewman armed with light armour. One has crossbow, the other halberd. Superior Fighters. Superior Shooters. Heavy chariots. May have heavy armour (+2).",
+          "category": "Cavalry",
+          "type": "Chariot",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 39, 
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Halberd","Crossbow","Light Armour"],
+          "specialRules": ["Open Order","Superior Fighters","Superior Shooters","Light Chariots"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+        {
+          "id": "warring_states_chinese_chariot_runners",
+          "name": "Chariot Runners",
+          "description": "Chariot Runners have a shield. Skirmishers. Escorts. May have light armour (+1) and may exchange shield for halberd (free). May not be more units of chariot runners than there are of chariots and maximum unit base size is three bases.",
+          "category": "Cavalry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "requires": {"unitId": ["warring_states_chinese_light_chariots","warring_states_chinese_heavy_chariots"],"count": 1,"name": ["Ligt Chariots","heavy Chariots"]},
+          "minBases": 2,
+          "maxBases": 3,
+          "baseEquipment": ["Shield"],
+          "specialRules": ["Skirmishers", "Escorts"],
+          "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Halberd",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "warring_states_chinese_lancers",
+          "name": "Lancers",
+          "description": "Lancers have halberd or spear. May have light armour (+1). May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "disables": "Halberd",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Halberd",
+              "disables": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "warring_states_chinese_cavalry_archers",
+          "name": "Cavalry Archers",
+          "description": "Cavalry Archers have bow or light crossbows. May have light armour (+1). May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Light Crossbow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Crossbow",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Light Crossbow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "warring_states_chinese_guards",
+          "name": "Guards",
+          "description": "Guards have heavy armour and shield. Superior Fighters. Drilled. May be Stubborn (+2) and may have large shield (+2) and spear (free). May exchange shield for Two-handed Sword (free.).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 29,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Heavy Armour","Shield"],
+          "specialRules": ["Close Order","Superior Fighters","Drilled"],
+          "optionalEquipment": [
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "disables": "Two-handed Sword"
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Two-handed Sword",
+              "disables": "Large Shield",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Two-handed Sword"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "warring_states_chinese_halberdiers",
+          "name": "Halberdiers",
+          "description": "Halberdiers have light armour and halberd.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Halberd"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "warring_states_chinese_halberdiers_archers_cf",
+          "name": "Combined Formation Halberdiers/Archers",
+          "description": "Combined Formation: up to 50% of each unit may be comprised of Archers which will form in Close Order costing 14 points per base.",
+    "category": "Persians",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Archers","Halberdiers/Archers (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Halberdiers/Archers (Front Row)","Halberdiers/Archers (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Halberdiers/Archers (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 3,
+			  "maxBases": 6,
+          "baseEquipment": ["Halberd", "Light Armour","Bow"],
+          "specialRules": ["Close Order"],
+            },
+			  {
+              "name": "Halberdiers",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 7,
+          	"pointsPerBase": 16,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Halberd", "Light Armour"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Archers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "minBases": 1,
+              "defence": 7,
+              "cohesion": 7,
+              "pointsPerBase": 14,
+		      "compareWithSubProfile": { "name": "Halberdiers", "expression": "lessThanOrEqual", "ratio": 1 },
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Close Order"],
+            },
+
+			  {
+              "name": "Halberdiers/Archers (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Halberdiers", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 1,
+              "maxBases": 6,
+          "baseEquipment": ["Halberd", "Light Armour","Bow"],
+          "specialRules": ["Close Order"],
+            }
+            
+            ],
+	"optionalEquipment": []
+        },{
+          "id": "warring_states_chinese_halberdiers_archers_cf",
+          "name": "Combined Formation Halberdiers/Archers",
+          "description": "Combined Formation: up to 50% of each unit may be comprised of Archers which will form in Close Order costing 14 points per base.",
+    "category": "Persians",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Archers","Halberdiers/Archers (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Halberdiers/Archers (Front Row)","Halberdiers/Archers (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Halberdiers/Archers (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 3,
+			  "maxBases": 6,
+          "baseEquipment": ["Halberd", "Light Armour","Bow"],
+          "specialRules": ["Close Order"],
+            },
+			  {
+              "name": "Halberdiers",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 7,
+          	"pointsPerBase": 16,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Halberd", "Light Armour"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Archers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "minBases": 1,
+              "defence": 7,
+              "cohesion": 7,
+              "pointsPerBase": 14,
+		      "compareWithSubProfile": { "name": "Halberdiers", "expression": "lessThanOrEqual", "ratio": 1 },
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Close Order"],
+            },
+
+			  {
+              "name": "Halberdiers/Archers (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Halberdiers", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 1,
+              "maxBases": 6,
+          "baseEquipment": ["Halberd", "Light Armour","Bow"],
+          "specialRules": ["Close Order"],
+            }
+            
+            ],
+	"optionalEquipment": []
+        },
+        {
+          "id": "warring_states_chinese_halberdiers_crossbowmen_cf",
+          "name": "Combined Formation Halberdiers/Crossbowmen",
+          "description": "Combined Formation: up to 50% of each unit may be comprised of Crossbowmen which will form in Close Order costing 14 points per base.",
+    "category": "Persians",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Crossbowmen","Halberdiers/Crossbowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Halberdiers/Crossbowmen (Front Row)","Halberdiers/Crossbowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Halberdiers/Crossbowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 3,
+			  "maxBases": 6,
+          "baseEquipment": ["Halberd", "Light Armour","Crossbow"],
+          "specialRules": ["Close Order"],
+            },
+			  {
+              "name": "Halberdiers",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 7,
+          	"pointsPerBase": 16,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Halberd", "Light Armour"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Crossbowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "minBases": 1,
+              "defence": 7,
+              "cohesion": 7,
+              "pointsPerBase": 16,
+		      "compareWithSubProfile": { "name": "Halberdiers", "expression": "lessThanOrEqual", "ratio": 1 },
+          "baseEquipment": ["Crossbow"],
+          "specialRules": ["Close Order"],
+            },
+
+			  {
+              "name": "Halberdiers/Crossbowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Halberdiers", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 1,
+              "maxBases": 6,
+          "baseEquipment": ["Halberd", "Light Armour","Crossbow"],
+          "specialRules": ["Close Order"],
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Crossbow (Crossbowmen)",
+              "targetProfile": ["Crossbowmen"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Crossbow"],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Crossbow (Mixed Halberdiers/Crossbowmen)",
+              "targetProfile": ["Halberdiers/Crossbowmen (Front Row)","Halberdiers/Crossbowmen (Front Row)"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Crossbow"],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
+		
+		{
+              "name": "Light Armour (Halberdiers)",
+              "targetProfile": ["Halberdiers","Halberdiers/Crossbowmen (Rear Row)","Halberdiers/Crossbowmen (Front Row)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Light Armour (Crossbowmen)",
+              "targetProfile": ["Bow"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]
+        },
+        {
+          "id": "warring_states_chinese_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have spear and large shield. May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Halberd"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "warring_states_chinese_spearmen_archers_cf",
+          "name": "Combined Formation Spearmen/Archers",
+          "description": "Combined Formation: up to 50% of each unit may be comprised of Archers which will form in Close Order costing 14 points per base.",
+    "category": "Persians",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Archers","Spearmen/Archers (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Spearmen/Archers (Front Row)","Spearmen/Archers (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Spearmen/Archers (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 3,
+			  "maxBases": 6,
+          "baseEquipment": ["Spear", "Large Shield","Bow"],
+          "specialRules": ["Close Order"],
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+          	"cohesion": 7,
+          	"pointsPerBase": 16,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Archers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "minBases": 1,
+              "defence": 7,
+              "cohesion": 7,
+              "pointsPerBase": 14,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Close Order"],
+            },
+
+			  {
+              "name": "Spearmen/Archers (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 1,
+              "maxBases": 6,
+          "baseEquipment": ["Spear", "Large Shield","Bow"],
+          "specialRules": ["Close Order"],
+            }
+            
+            ],
+	"optionalEquipment": []
+        },
+        {
+          "id": "warring_states_chinese_spearmen_crossbowmen_cf",
+          "name": "Combined Formation Spearmen/Crossbowmen",
+          "description": "Combined Formation: up to 50% of each unit may be comprised of Crossbowmen which will form in Close Order costing 14 points per base.",
+    "category": "Persians",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Crossbowmen","Spearmen/Crossbowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Spearmen/Crossbowmen (Front Row)","Spearmen/Crossbowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Spearmen/Crossbowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 3,
+			  "maxBases": 6,
+           "baseEquipment": ["Spear", "Large Shield","Crossbow"],
+          "specialRules": ["Close Order"],
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+          	"cohesion": 7,
+          	"pointsPerBase": 16,
+              "minBases": 0,
+              "maxBases": 12,
+           "baseEquipment": ["Spear", "Large Shield"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Crossbowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "minBases": 1,
+              "defence": 7,
+              "cohesion": 7,
+              "pointsPerBase": 16,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+          "baseEquipment": ["Crossbow"],
+          "specialRules": ["Close Order"],
+            },
+
+			  {
+              "name": "Spearmen/Crossbowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 1,
+              "maxBases": 6,
+           "baseEquipment": ["Spear", "Large Shield","Crossbow"],
+          "specialRules": ["Close Order"],
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Crossbow (Crossbowmen)",
+              "targetProfile": ["Crossbowmen"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Crossbow"],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Crossbow (Mixed Spearmen/Crossbowmen)",
+              "targetProfile": ["Spearmen/Crossbowmen (Front Row)","Spearmen/Crossbowmen (Front Row)"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Crossbow"],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
+		
+		{
+              "name": "Light Armour (Spearmen)",
+              "targetProfile": ["Spearmen","Spearmen/Crossbowmen (Rear Row)","Spearmen/Crossbowmen (Front Row)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Light Armour (Crossbowmen)",
+              "targetProfile": ["Bow"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]
+        },
+        
+         {
+          "id": "warring_states_chinese_swordsmen",
+          "name": "Swordsmen",
+          "description": "Swordsmen have light armour and large shield. Open Order. one unit may be upgraded to Elite Infantry Superior Fighters at a cost of three points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Large Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Elite Troops",
+              "maxUnits": 1,
+              "pointsModifier": 3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "warring_states_chinese_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have shield. Skirmishers.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Shield"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "warring_states_chinese_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Open Order. May have light armour (+2). May be fielded as Skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "warring_states_chinese_crossbows",
+          "name": "Crossbows",
+          "description": "Crossbows have a crossbow. Open Order. May have light armour (+2). May be fielded as Skirmishers at a cost of eight points per base. There may not be more crossbows than bows in the army.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Crossbow"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "warring_states_chinese_mass_levy",
+          "name": "Mass Levy",
+          "description": "Mass Levy have halberd. Inferior Fighters. Levies.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Halberd"],
+          "specialRules": ["Close Order","Levies","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "warring_states_chinese_kardakes_cf",
+          "name": "Combined Formation Kardakes",
+          "description": "Kardakes have spear and shield. May have light armour (+2). May upgrade shield to large shield (+2) and may replace spears with javelins or bows (+2), forming Combined Formation with between one quarter and three quarters archers.",
+    "category": "Persians",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Bowmen","Mixed Spear/Bowmen (Front Row)"]},
+		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Bowmen (Front Row)","Mixed Spear/Bowmen (Rear Row)" ]},
+		{ "label": "75%", "disableSubProfiles": ["Mixed Spear/Bowmen (Rear Row)","Spearmen"]}	
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Spear/Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 14,
+              "minBases": 3,
+			  "maxBases": 6,
+          "baseEquipment": ["Spear","Shield","Bow"],
+          "specialRules": ["Close Order"],
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 6,
+          	"pointsPerBase": 12,
+              "minBases": 0,
+              "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "minBases": 1,
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 12,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+          "baseEquipment": ["Bow", "Shield"],
+          "specialRules": ["Close Order"],
+            },
+
+			  {
+              "name": "Mixed Spear/Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 12,
+              "minBases": 1,
+              "maxBases": 6,
+          "baseEquipment": ["Spear", "Shield", "Bow"],
+          "specialRules": ["Close Order"],
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Large Shield (Spearmen)",
+              "targetProfile": ["Spearmen","Mixed Spear/Bowmen (Rear Row)","Mixed Spear/Bowmen (Front Row)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+		
+		{
+              "name": "Light Armour (Spearmen)",
+              "targetProfile": ["Spearmen","Mixed Spear/Bowmen (Rear Row)","Mixed Spear/Bowmen (Front Row)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Light Armour (bowmen)",
+              "targetProfile": ["Bow"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]
+        },
+        
+      ]
+    },
 	  
 "syracusan": {
       "armyName": "Syracusan - 400 BC to 210 BC",
