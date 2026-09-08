@@ -12560,55 +12560,7 @@
             }
             
             ],
-	"optionalEquipment": [
-  		{
-              "name": "Crossbow (Crossbowmen)",
-              "targetProfile": ["Crossbowmen"],
-              "pointsModifier": 2,
-              "equipmentAdded": ["Crossbow"],
-              "equipmentRemoved": ["Bow"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-{
-              "name": "Crossbow (Mixed Halberdiers/Crossbowmen)",
-              "targetProfile": ["Halberdiers/Crossbowmen (Front Row)","Halberdiers/Crossbowmen (Front Row)"],
-              "pointsModifier": 0,
-              "equipmentAdded": ["Crossbow"],
-              "equipmentRemoved": ["Bow"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-
-		
-		{
-              "name": "Light Armour (Halberdiers)",
-              "targetProfile": ["Halberdiers","Halberdiers/Crossbowmen (Rear Row)","Halberdiers/Crossbowmen (Front Row)"],
-              "pointsModifier": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-{
-              "name": "Light Armour (Crossbowmen)",
-              "targetProfile": ["Bow"],
-              "pointsModifier": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-
-]
+	"optionalEquipment": []
         },
         {
           "id": "warring_states_chinese_spearmen",
@@ -12629,7 +12581,7 @@
           "id": "warring_states_chinese_spearmen_archers_cf",
           "name": "Combined Formation Spearmen/Archers",
           "description": "Combined Formation: up to 50% of each unit may be comprised of Archers which will form in Close Order costing 14 points per base.",
-    "category": "Persians",      
+    "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
@@ -12693,7 +12645,7 @@
           "id": "warring_states_chinese_spearmen_crossbowmen_cf",
           "name": "Combined Formation Spearmen/Crossbowmen",
           "description": "Combined Formation: up to 50% of each unit may be comprised of Crossbowmen which will form in Close Order costing 14 points per base.",
-    "category": "Persians",      
+    "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
@@ -12752,30 +12704,7 @@
             
             ],
 	"optionalEquipment": [
-  		{
-              "name": "Crossbow (Crossbowmen)",
-              "targetProfile": ["Crossbowmen"],
-              "pointsModifier": 2,
-              "equipmentAdded": ["Crossbow"],
-              "equipmentRemoved": ["Bow"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-{
-              "name": "Crossbow (Mixed Spearmen/Crossbowmen)",
-              "targetProfile": ["Spearmen/Crossbowmen (Front Row)","Spearmen/Crossbowmen (Front Row)"],
-              "pointsModifier": 0,
-              "equipmentAdded": ["Crossbow"],
-              "equipmentRemoved": ["Bow"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-
-		
+  		
 		{
               "name": "Light Armour (Spearmen)",
               "targetProfile": ["Spearmen","Spearmen/Crossbowmen (Rear Row)","Spearmen/Crossbowmen (Front Row)"],
@@ -12787,18 +12716,6 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
-{
-              "name": "Light Armour (Crossbowmen)",
-              "targetProfile": ["Bow"],
-              "pointsModifier": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-
 ]
         },
         
