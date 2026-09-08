@@ -11480,7 +11480,6 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 17,
-          "requires": {"unitId": "later_achaemenid_persians_great_king","count": 1,"name": "Great King"},   
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": ["Javelins"],
