@@ -13478,8 +13478,8 @@
           "id": "LightTroops",
           "name": "LightTroops",
            "constraintType": "percentage",
-          "min": 30,
-          "max": 100
+          "min": 0,
+          "max": 25
         },
         {
           "id": "Allies",
