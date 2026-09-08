@@ -11715,7 +11715,7 @@
               "cohesionModifier": 0
             },
 {
-              "name": "Light Armour (bowmen)",
+              "name": "Light Armour (Bowmen)",
               "targetProfile": ["Bow"],
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
