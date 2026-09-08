@@ -12215,7 +12215,7 @@
           "defence": 6,
           "cohesion": 5,
           "pointsPerBase": 6,
-          "requires": {"unitId": ["warring_states_chinese_light_chariots","warring_states_chinese_heavy_chariots"],"count": 1,"name": ["Ligt Chariots","heavy Chariots"]},
+          "requires": {"unitId": ["warring_states_chinese_light_chariots","warring_states_chinese_heavy_chariots"],"countPerUnit": 1,"name": ["Ligt Chariots","heavy Chariots"]},
           "minBases": 2,
           "maxBases": 3,
           "baseEquipment": ["Shield"],
