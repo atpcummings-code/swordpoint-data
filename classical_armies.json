@@ -15322,6 +15322,295 @@
         
       ]
     },
+
+"later_hoplite_greek_epirus": {
+      "armyName": "Later Hoplite Greek Epirus - 400 BC to 275 BC",
+
+ 	"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 4
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "LightTroops",
+          "name": "LightTroops",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+      {
+          "id": "Allies",
+          "name": "Allies",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+        
+      ],
+      "units": [
+                {
+          "id": "later_hoplite_greek_epirus_polemarch",
+          "name": "Polemarch",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_hoplite_greek_epirus_xenagos",
+          "name": "Xenagos",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "later_hoplite_greek_epirus_greek_horse",
+          "name": "Greek Horse",
+          "description": "Greek Horse have javelins. May have light armour (+1) or heavy armour (+2). May exchange javelins for spear (free). Unarmoured cavalry may be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "disables": ["Heavy Armour","Skirmishers"],
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "disables": ["Light Armour","Skirmishers"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        
+        {
+          "id": "later_hoplite_greek_epirus_regular_hoplites",
+          "name": "Regular Hoplites",
+          "description": "Regular Hoplites have spear and large shield. May take light armour (+2). Phalanx. In eunit may be upgraded to Superior Fighters (+4).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": ["Close Order","Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Superior Fighters",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_hoplite_greek_epirus_mercenary_hoplites",
+          "name": "Mercenary Hoplites",
+          "description": "Hoplites have spear and large shield. May take light armour (+2). Trained Phalanx.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": [
+            
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_hoplite_greek_epirus_militia_hoplites",
+          "name": "Militia Hoplites",
+          "description": "Hoplites have spear and large shield. Phalanx. Inferior Fighters. Levies",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": ["Close Order","Phalanx", "Inferior Fighters","Levies"],
+          "optionalEquipment": [ ]
+        },
+        {
+          "id": "later_hoplite_greek_epirus_peltasts",
+          "name": "Peltasts",
+          "description": "Peltasts have javelins and shield. They are Open Order. May add spear (free). May be fielded as Skirmishers at seven points per base.",
+          "category": "LightTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_hoplite_greek_epirus_cretans",
+          "name": "Cretans",
+          "description": "Cretans have bow and shield. Superior Shooters. Skirmishers. This unit may have a maximum of four bases.",
+          "category": "LightTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 10,
+          "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 4,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_hoplite_greek_epirus_psiloi",
+          "name": "Psiloi",
+          "description": "Psiloi have javelins and shield. Inferior Fighters. Skirmishers. Up to half of all Psiloi units may replace javelins with bow or sling (free)",
+          "category": "LightTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 4,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": 0,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+        
+      ]
+    },
 	  
 "parthian": {
       "armyName": "Parthian - 250 BC to 225 AD",
