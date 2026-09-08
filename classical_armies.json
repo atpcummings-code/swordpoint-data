@@ -13831,7 +13831,7 @@
           "optionalEquipment": [
             {
               "name": "Light Armour",
-              "enableHidden": "Elite Troops",
+              "enableHidden": "Elite Upgrade",
               "disables": ["Heavy Armour","Skirmishers"],
               "pointsModifier": 1,
               "equipmentAdded": ["Light Armour"],
@@ -13865,7 +13865,7 @@
             },
             {
               "name": "Elite Upgrade",
-              "hiddenUntilEnabled": "hidden"
+              "hiddenUntilEnabled": "hidden",
               "pointsModifier": 3,
               "equipmentAdded": [],
               "equipmentRemoved": [],
