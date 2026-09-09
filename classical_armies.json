@@ -23332,7 +23332,7 @@
     },
 
 "middle_imperial_rome": {
-             "armyName": "Early Imperial Roman (Later) - 110 AD to 193 AD",
+             "armyName": "Middle Imperial Roman - 193 AD to 350 AD",
   "armyValidation": [ 
 
 { "type": "requiresIfPresent", "ifUnitIds": ["middle_imperial_rome_equites_singulares_or_scholae","middle_imperial_rome_equites_cataphractii","middle_imperial_rome_light_horse","middle_imperial_rome_horse_archers","middle_imperial_rome_lancers","middle_imperial_rome_dromedarii"],  "count": 1, "thenRequire": ["middle_imperial_rome_equites_alares"] }
