@@ -20515,6 +20515,307 @@
       ]
     },
 
+"late_republican_rome": {
+       "armyName": "Late Republican Roman - 105 BC to 30 BC",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+         {
+          "id": "Infantry",
+          "name": "Legionary Infantry and Skirmishers",
+           "description": "",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+         {
+          "id": "Allies",
+          "name": "Allies",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+        {
+          "id": "late_republican_rome_consul",
+          "name": "Consul",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "excludes": ["late_republican_rome_triumvir"],
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "late_republican_rome_triumvir",
+          "name": "Triumvir",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+           "excludes": ["late_republican_rome_consul"],
+          "attacks": 1,
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "late_republican_rome_legate",
+          "name": "Legate",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+1",
+          "cohesion": "+2",
+          "pointsPerBase": 15,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "late_republican_rome_spanish_cavalry",
+          "name": "Spanish Cavalry",
+          "description": "Spanish Cavalry have spear and shield. May have light armour (+1) and javelins (+1). If unarmoured may be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "disables": "Skirmishers",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Light Armour",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "late_republican_rome_gallic_or_german_cavalry",
+          "name": "Gallic or German Cavalry",
+          "description": "Gallic or German Cavalry have spear and shield. Superior Fighters. May have light armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order","Superior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+         {
+          "id": "late_republican_rome_numidian_cavalry",
+          "name": "Numidian Cavalry",
+          "description": "Numidian Cavalry have javelins and shield. Superior Shooters. Evade. May be fielded as Skirmishers with Parthian Shot.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order","Superior Shooters","Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers","Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "late_republican_rome_raw_legionaries",
+          "name": "Raw Legionaries",
+          "description": "Raw Legionaries have light armour, large shield and heavy throwing spear.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 23,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Heavy Throwing Spear","Large Shield", "Light Armour"],
+          "specialRules": ["Close Order","Stamina"],
+          "optionalEquipment": []
+        },
+          {
+          "id": "late_republican_rome_seasoned_legionaries",
+          "name": "Seasoned Legionaries",
+          "description": "Seasoned Legionaries have light armour, large shield and heavy throwing spear. Drilled. May be Veteran (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 26,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Heavy Throwing Spear","Large Shield", "Light Armour"],
+          "specialRules": ["Close Order","Stamina","Drilled"],
+          "optionalEquipment": [
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "late_republican_rome_elite_legionaries",
+          "name": "Elite Legionaries",
+          "description": "Elite Legionaries have light armour, large shield and heavy throwing spear. Superior Fighters. Drilled. Stubborn. May be Veteran (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 36,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Heavy Throwing Spear","Large Shield", "Light Armour"],
+          "specialRules": ["Close Order","Stamina","Drilled","Stubborn", "Superior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "late_republican_rome_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins and shield. Inferior Fighters. Skirmishers.",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "late_republican_rome_slingers",
+          "name": "Slingers",
+          "description": "Slingers have sling and shield. Inferior Fighters. Skirmishers.",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Sling","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "late_republican_rome_balearic_slingers",
+          "name": "Balearic Slingers",
+          "description": "Balearic Slingers have sling and shield. Superior Shooters. Skirmishers.  A Balearic unit must contain no more bases than the smallest other slinger unit.",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 10,
+			"basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["late_republican_rome_slingers"] },
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Sling","Shield"],
+          "specialRules": ["Skirmishers","Superior Shooters"],
+          "optionalEquipment": []
+        }
+
+
+        
+      ]
+},
+	  
 "british_tribes": {
       "armyName": "British Tribes - 100 BC to 75 AD",
     "armyValidation": [ { "ids": ["british_tribes_light_cavalry_escorts"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["british_tribes_noble_chariots"], "countBy": "units" },{ "type": "equipmentUnitCount", "left": { "unitIds": ["british_tribes_skirmishers"], "equipment": ["Sling"] }, "right": { "unitIds": ["british_tribes_skirmishers"], "equipment": ["Javelins"] }, "expression": "lessThanOrEqual", "ratio": 1 }  ],
