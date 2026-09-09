@@ -21832,14 +21832,14 @@
           "name": "Archers",
           "description": "Archers have bow. Open Order. May have light armour (+2) and be Drilled (+3) and Veteran (+2). One unit maybe upgraded to Elite (C8 +4 points).",
           "category": "Infantry",
-          "type": "Skirmishers",
+          "type": "Infantry",
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 8,
-          "minBases": 2,
-          "maxBases": 6,
+          "minBases": 3,
+          "maxBases": 12,
           "baseEquipment": ["Throwing Spear","Shield"],
-          "specialRules": ["Skirmishers"],
+          "specialRules": ["Open Order"],
           "optionalEquipment": [
          
             {
