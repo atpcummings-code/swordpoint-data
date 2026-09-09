@@ -17096,7 +17096,7 @@
 "polybian_republican_rome": {
       "armyName": "Polybian Republican Rome - 210 BC to 105 BC",
 "armyValidation": [ 
-{ "ids": ["polybian_republican_rome_balearic_slingers"], "expression": "greaterThanOrEqual", "ratio": 1, "compareWith": ["polybian_republican_rome_slingers"], "countBy": "bases" },
+{ "ids": ["polybian_republican_rome_balearic_slingers"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["polybian_republican_rome_slingers"], "countBy": "bases" },
 { "ids": ["polybian_republican_rome_hastati"], "expression": "greaterThanOrEqual", "ratio": 1, "compareWith": ["polybian_republican_rome_principes"], "countBy": "units" }, 
 { "ids": ["polybian_republican_rome_principes"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["polybian_republican_rome_triarii"], "countBy": "units" },
 { "ids": ["polybian_republican_rome_rorarii"], "expression": "greaterThanOrEqual", "ratio": 0.5, "compareWith": ["polybian_republican_rome_triarii"], "countBy": "units" },
