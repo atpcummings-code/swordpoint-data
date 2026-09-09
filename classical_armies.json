@@ -21372,7 +21372,10 @@
 "early_imperial_rome_early": {
              "armyName": "Early Imperial Roman (Early) - 30 BC to 110 AD",
   "armyValidation": [ 
-{ "ids": ["early_imperial_rome_centurion"], "expression": "greaterThan", "ratio": 1, "compareWith": ["early_imperial_rome_legate"], "countBy": "units" } 
+{ "ids": ["early_imperial_rome_centurion"], "expression": "greaterThan", "ratio": 1, "compareWith": ["early_imperial_rome_legate"], "countBy": "units" },
+	  { "ids": ["early_imperial_rome_archers"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["early_imperial_rome_archers", "early_imperial_rome_auxiliaries
+", "early_imperial_rome_light_cohort
+"], "countBy": "bases" } 
     ],
       "categories": [
         {
