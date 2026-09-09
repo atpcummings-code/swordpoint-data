@@ -17325,7 +17325,7 @@
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": ["Javelins","Shield"],
-          "specialRules": ["Skirmishers"],
+          "specialRules": ["Skirmishers","Stamina"],
           "optionalEquipment": [
            {
               "name": "Throwing Spear",
@@ -17351,7 +17351,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Throwing Spear","Large Shield"],
-          "specialRules": ["Close Order"],
+          "specialRules": ["Close Order","Stamina"],
           "optionalEquipment": [
              {
               "name": "Light Armour",
@@ -17387,7 +17387,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Light Armour","Heavy Throwing Spear","Large Shield"],
-          "specialRules": ["Close Order"],
+          "specialRules": ["Close Order","Stamina"],
           "optionalEquipment": [
              {
               "name": "Stubborn",
@@ -17424,7 +17424,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Light Armour","Spear","Large Shield"],
-          "specialRules": ["Close Order","Drilled","Stubborn"],
+          "specialRules": ["Close Order","Drilled","Stubborn","Stamina"],
           "optionalEquipment": []
         },
         {
