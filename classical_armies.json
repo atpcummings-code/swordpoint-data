@@ -23611,7 +23611,7 @@
               "pointsModifier": 1,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Stamina"],,
+              "rulesAdded": ["Stamina"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -23697,7 +23697,7 @@
               "pointsModifier": 1,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Stamina"],,
+              "rulesAdded": ["Stamina"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -23785,7 +23785,7 @@
               "pointsModifier": 1,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Stamina"],,
+              "rulesAdded": ["Stamina"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
