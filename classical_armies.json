@@ -17584,7 +17584,7 @@
           "baseEquipment": ["Halberd"],
           "specialRules": ["Open Order"],
           "optionalEquipment": [
-            {            {
+{
               "name": "Light Armour",
               "pointsModifier": 1,
               "equipmentAdded": ["Light Armour"],
