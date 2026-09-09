@@ -21373,7 +21373,8 @@
              "armyName": "Early Imperial Roman (Early) - 30 BC to 110 AD",
   "armyValidation": [ 
 { "ids": ["early_imperial_rome_early_centurion"], "expression": "greaterThan", "ratio": 1, "compareWith": ["early_imperial_rome_early_legate"], "countBy": "units" },
-{ "ids": ["early_imperial_rome_early_archers"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["early_imperial_rome_early_archers", "early_imperial_rome_early_auxiliaries", "early_imperial_rome_early_light_cohort"], "countBy": "bases" } ,{ "type": "requiresIfPresent", "ifUnitIds": ["early_imperial_rome_early_cohort_cavalry", "early_imperial_rome_early_horse_archers", "early_imperial_rome_early_lancers","early_imperial_rome_early_numidian_cavalry"],  "count": 1, "thenRequire": ["early_imperial_rome_early_equites_alares"] } 
+{ "ids": ["early_imperial_rome_early_archers"], "expression": "lessThanOrEqual", "ratio": 0.5, "compareWith": [ "early_imperial_rome_early_auxiliaries", "early_imperial_rome_early_light_cohort"], "countBy": "bases" } ,
+{ "type": "requiresIfPresent", "ifUnitIds": ["early_imperial_rome_early_cohort_cavalry", "early_imperial_rome_early_horse_archers", "early_imperial_rome_early_lancers","early_imperial_rome_early_numidian_cavalry"],  "count": 1, "thenRequire": ["early_imperial_rome_early_equites_alares"] } 
     
     ],
       "categories": [
