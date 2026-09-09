@@ -23519,7 +23519,7 @@
           "baseEquipment": ["Bow"],
           "specialRules": ["Open Order","Inferior Fighters"],
           "optionalEquipment": [
-            {{
+            {
               "name": "Skirmishers",
               "pointsModifier": 0,
               "equipmentAdded": [],
