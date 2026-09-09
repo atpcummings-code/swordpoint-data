@@ -17092,6 +17092,393 @@
         }
       ]
     },
+
+"polybian_republican_rome": {
+      "armyName": "Polybia Republican Rome - 210 BC to 105 BC",
+"armyValidation": [ 
+{ "ids": ["polybian_republican_rome_balearic_slingers"], "expression": "greaterThanOrEqual", "ratio": 1, "compareWith": ["polybian_republican_rome_slingers"], "countBy": "bases" },
+{ "ids": ["polybian_republican_rome_hastati"], "expression": "greaterThanOrEqual", "ratio": 1, "compareWith": ["polybian_republican_rome_principes"], "countBy": "units" }, 
+{ "ids": ["polybian_republican_rome_principes"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["polybian_republican_rome_triarii"], "countBy": "units" },
+{ "ids": ["polybian_republican_rome_rorarii"], "expression": "greaterThanOrEqual", "ratio": 0.5, "compareWith": ["polybian_republican_rome_triarii"], "countBy": "units" },
+{ "ids": ["polybian_republican_rome_extraordinarii"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["polybian_republican_rome_italian_spearmen"], "countBy": "bases" } 
+    ],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+         {
+          "id": "Infantry",
+          "name": "Roman and Latin Troops",
+           "description": "",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        ,
+         {
+          "id": "Skirmishers",
+          "name": "Skirmishers",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        },
+         {
+          "id": "Allies",
+          "name": "Allies",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+        {
+          "id": "polybian_republican_rome_consul",
+          "name": "Consul",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "excludes": ["polybian_republican_rome_dictator"],
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "polybian_republican_rome_dictator",
+          "name": "Dictator",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+           "excludes": ["polybian_republican_rome_consul"],
+          "attacks": 1,
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "polybian_republican_rome_tribune",
+          "name": "Tribune",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "polybian_republican_rome_roman_and_latin_horse",
+          "name": "Roman and Latin Horse",
+          "description": "Roman and Latin Horse have light armour, spear and shield. May have javelins (+1). Units should not be more than 4 bases strong.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 4,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "polybian_republican_rome_spanish_cavalry",
+          "name": "Spanish Cavalry",
+          "description": "Spanish Cavalry have spear and shield. May have light armour (+1) and javelins (+1). If unarmoured may be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "disables": "Skirmishers",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Light Armour",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "polybian_republican_rome_gallic_or_german_cavalry",
+          "name": "Gallic or German Cavalry",
+          "description": "Gallic or German Cavalry have spear and shield. Superior Fighters. May have light armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order","Superior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+         {
+          "id": "polybian_republican_rome_numidian_cavalry",
+          "name": "Numidian Cavalry",
+          "description": "Numidian Cavalry have javelins and shield. Superior Shooters. Evade. May be fielded as Skirmishers with Parthian Shot.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order","Superior Shooters","Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers","Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "polybian_republican_rome_velites",
+          "name": "Velites",
+          "description": "Velites have javelins and shield. Skirmishers. They may have throwing spears (+1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": [
+           {
+              "name": "Throwing Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+          {
+          "id": "polybian_republican_rome_hastati",
+          "name": "Hastati",
+          "description": "Hastati have throwing spear and large shield. They may have light armour (+2) and may be Drilled (+3).  There must be at least one unit of Hastati for each unit of Principes in the army.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Large Shield"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Drilled",
+              "pointsModifier": 3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "polybian_republican_rome_principes",
+          "name": "Principes",
+          "description": "Principes have light armour, heavy throwing spear and large shield. They may be Drilled (+3) and Stubborn (+2). There must be one unit of Principes for every unit two Triarri in the army.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","HEavy Throwing Spear","Large Shield"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": [
+             {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Drilled",
+              "pointsModifier": 3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "polybian_republican_rome_triarii",
+          "name": "Triarii",
+          "description": "Triarii have light armour, spear and large shield. Drilled. Stubborn.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "minCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Spear","Large Shield"],
+          "specialRules": ["Close Order","Drilled","Stubborn"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "polybian_republican_rome_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins and shield. Inferior Fighters. Skirmishers",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "polybian_republican_rome_slingers",
+          "name": "Slingers",
+          "description": "Slingers have either sling and shield. Inferior Fighters. Skirmishers.",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Sling","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "polybian_republican_rome_balearic_slingers",
+          "name": "Balearic Slingers",
+          "description": "Balearic Slingers have sling and shield. Superior Shooters. Skirmishers.  A Balearic unit must contain no more bases than the smallest other slinger unit.",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 10,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Sling","Shield"],
+          "specialRules": ["Skirmishers","Superior Shooters"],
+          "optionalEquipment": []
+        }
+
+
+        
+      ]
+},
 	  
 "xiongnu": {
       "armyName": "Xiongnu - 200 BC to 200 AD",
