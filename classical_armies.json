@@ -21712,7 +21712,7 @@
           "optionalEquipment": [
             {
               "name": "Open Order",
-              "disables": ["Javelins","Heavy Throwing Spear"],
+              "disables": ["Javelins","Heavy Throwing Spear","Drilled"],
               "pointsModifier": -3,
               "equipmentAdded": [],
               "equipmentRemoved": [],
