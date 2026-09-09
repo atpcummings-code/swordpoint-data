@@ -16205,7 +16205,7 @@
         {
           "id": "early_republican_rome_consul",
           "name": "Consul",
-          "description": "May ride a horsel.",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
