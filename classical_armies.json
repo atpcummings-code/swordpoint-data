@@ -7,7 +7,7 @@
       { "ids": ["scythian_warriors"], "expression": "greaterThan", "ratio": 1, "compareWith": ["scythian_senior_nobles", "scythian_nobles"] } 
     ],
       "categories": [
-        {E
+        {
 			
           "id": "Commanders",
           "name": "Commanders",
