@@ -21947,7 +21947,7 @@
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": ["Javelins","Shield"],
-          "specialRules": ["Skirmishers""],
+          "specialRules": ["Skirmishers"],
           "optionalEquipment": [
             {
               "name": "Sling",
