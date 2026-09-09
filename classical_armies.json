@@ -17386,7 +17386,7 @@
           "pointsPerBase": 23,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Light Armour","HEavy Throwing Spear","Large Shield"],
+          "baseEquipment": ["Light Armour","Heavy Throwing Spear","Large Shield"],
           "specialRules": ["Close Order"],
           "optionalEquipment": [
              {
