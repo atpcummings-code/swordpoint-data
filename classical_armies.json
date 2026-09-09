@@ -23731,7 +23731,7 @@
             },
             {
               "name": "Superior Fighters",
-              "hiddenUntilEnabled": "hidden,"
+              "hiddenUntilEnabled": "hidden"
               "pointsModifier": 4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
