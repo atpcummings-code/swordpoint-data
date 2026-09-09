@@ -22258,8 +22258,8 @@
           "defence": 4,
           "cohesion": 7,
           "pointsPerBase": 23,
-          "minBases": 2,
-          "maxBases": 6,
+          "minBases": 3,
+          "maxBases": 12,
           "baseEquipment": ["Heavy Throwing Spear","Large Shield", "Light Armour"],
           "specialRules": ["Close Order","Stamina"],
           "optionalEquipment": []
@@ -22273,8 +22273,8 @@
           "defence": 4,
           "cohesion": 7,
           "pointsPerBase": 26,
-          "minBases": 2,
-          "maxBases": 6,
+          "minBases": 3,
+          "maxBases": 12,
           "baseEquipment": ["Heavy Throwing Spear","Large Shield", "Light Armour"],
           "specialRules": ["Close Order","Stamina","Drilled"],
           "optionalEquipment": [
@@ -22299,8 +22299,8 @@
           "defence": 4,
           "cohesion": 8,
           "pointsPerBase": 34,
-          "minBases": 2,
-          "maxBases": 6,
+          "minBases": 3,
+          "maxBases": 12,
           "baseEquipment": ["Heavy Throwing Spear","Large Shield", "Light Armour"],
           "specialRules": ["Close Order","Stamina","Drilled","Stubborn", "Superior Fighters"],
           "optionalEquipment": [
