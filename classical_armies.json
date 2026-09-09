@@ -21716,7 +21716,7 @@
               "pointsModifier": -3,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": [],
+              "rulesAdded": ["Open Order"],
               "rulesRemoved": ["Close Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
