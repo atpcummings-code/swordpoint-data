@@ -17705,7 +17705,7 @@
               "disables": "Large Shield",
               "pointsModifier": 0,
               "equipmentAdded": [],
-              "equipmentRemoved": "Shield"[],
+              "equipmentRemoved": ["Shield"],
               "rulesAdded": ["Stubborn"],
               "rulesRemoved": [],
               "defenceModifier": 1,
