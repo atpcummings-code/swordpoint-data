@@ -16310,7 +16310,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Spear","Large Shield"],
-          "specialRules": ["Cloe Order"],
+          "specialRules": ["Close Order"],
           "optionalEquipment": [
              {
               "name": "Light Armour",
