@@ -16176,7 +16176,13 @@
 
 "early_republican_rome": {
       "armyName": "Early Republican Rome - 400 BC to 210 BC",
-
+"armyValidation": [ 
+{ "ids": ["early_republican_rome_leves"], "expression": "greaterThanOrEqual", "ratio": 0.333, "compareWith": ["early_republican_rome_hastati"], "countBy": "bases" },
+{ "ids": ["early_republican_rome_hastati"], "expression": "greaterThanOrEqual", "ratio": 1, "compareWith": ["early_republican_rome_principes"], "countBy": "units" }, 
+{ "ids": ["early_republican_rome_principes"], "expression": "greaterThanOrEqual", "ratio": 1, "compareWith": ["early_republican_rome_triarii"], "countBy": "units" },
+{ "ids": ["early_republican_rome_rorarii"], "expression": "greaterThanOrEqual", "ratio": 0.5, "compareWith": ["early_republican_rome_triarii"], "countBy": "units" },
+{ "ids": ["early_republican_rome_extraordinarii"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["early_republican_rome_italian_spearmen"], "countBy": "bases" } 
+    ],
       "categories": [
         {
           "id": "Commanders",
@@ -16404,7 +16410,7 @@
         {
           "id": "early_republican_rome_rorarii",
           "name": "Rorarii",
-          "description": "Rorarii have spear and shield. Inferior Fighters. There should be one Rorarii unit for every two Triarii units in teh army.",
+          "description": "Rorarii have spear and shield. Inferior Fighters. There should be one Rorarii unit for every two Triarii units in the army.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -16463,6 +16469,7 @@
           "defence": 6,
           "cohesion": 8,
           "pointsPerBase": 17,
+          "requires": { "unitId": "early_republican_rome_italian_spearmen", "count": 1, "name": "Spearmen" }, 
           "maxCountAllowed": 1,
           "minBases": 3,
           "maxBases": 12,
@@ -16520,7 +16527,7 @@
 
         
       ]
-},
+}
         
 	  
 "parthian": {
