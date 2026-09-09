@@ -21369,7 +21369,7 @@
       ]
     },
 
-"early_imperial_rome": {
+"early_imperial_rome_early": {
              "armyName": "Early Imperial Roman (Early) - 30 BC to 110 AD",
   "armyValidation": [ 
 { "ids": ["early_imperial_rome_centurion"], "expression": "greaterThan", "ratio": 1, "compareWith": ["early_imperial_rome_legate"], "countBy": "units" } 
@@ -21712,11 +21712,11 @@
           "optionalEquipment": [
             {
               "name": "Open Order",
-              "disables": ["Javelins","Heavy Throwing Spear","Drilled"],
+              "disables": ["Javelins","Heavy Throwing Spear"],
               "pointsModifier": -3,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Open Order"],
+              "rulesAdded": [],
               "rulesRemoved": ["Close Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -21946,7 +21946,7 @@
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": ["Javelins","Shield"],
-          "specialRules": ["Skirmishers"],
+          "specialRules": ["Skirmishers""],
           "optionalEquipment": [
             {
               "name": "Sling",
