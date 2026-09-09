@@ -21369,11 +21369,12 @@
       ]
     },
 
-"early_imperial_rome_early": {
+"early_imperial_rome_early_early": {
              "armyName": "Early Imperial Roman (Early) - 30 BC to 110 AD",
   "armyValidation": [ 
 { "ids": ["early_imperial_rome_early_centurion"], "expression": "greaterThan", "ratio": 1, "compareWith": ["early_imperial_rome_early_legate"], "countBy": "units" },
-{ "ids": ["early_imperial_rome_early_archers"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["early_imperial_rome_early_archers", "early_imperial_rome_early_auxiliaries", "early_imperial_rome_early_light_cohort"], "countBy": "bases" } 
+{ "ids": ["early_imperial_rome_early_archers"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["early_imperial_rome_early_archers", "early_imperial_rome_early_auxiliaries", "early_imperial_rome_early_light_cohort"], "countBy": "bases" } ,{ "type": "requiresIfPresent", "ifUnitIds": ["early_imperial_rome_early_cohort_cavalry", "early_imperial_rome_early_horse_archers", "early_imperial_rome_early_lancers","early_imperial_rome_early_numidian_cavalry"],  "count": 1, "thenRequire": ["early_imperial_rome_early_equites_alares"] } 
+    
     ],
       "categories": [
         {
@@ -21409,7 +21410,7 @@
       ],
       "units": [
         {
-          "id": "early_imperial_rome_general",
+          "id": "early_imperial_rome_early_general",
           "name": "General",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -21424,7 +21425,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_imperial_rome_legate",
+          "id": "early_imperial_rome_early_legate",
           "name": "Legate",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -21438,7 +21439,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_imperial_rome_centurion",
+          "id": "early_imperial_rome_early_centurion",
           "name": "Centurion",
           "description": "May ride a horse. There must be moer Centurions than Legates",
           "category": "Commanders",
@@ -21454,7 +21455,7 @@
         
         
         {
-          "id": "early_imperial_rome_equites_alares",
+          "id": "early_imperial_rome_early_equites_alares",
           "name": "Equites Alares",
           "description": "Equites Alares have light amour, javelins, spear and shield. May be Drilled (+3). One unit of Drilled may be upgraded to Guards (Superior Fighters. Superior Shooters +4). One unit may be upgraded to Legionary Cavalry and be led by a Centurion.",
           "category": "Cavalry",
@@ -21504,7 +21505,7 @@
           ]
         },
         {
-          "id": "early_imperial_rome_cohort_cavalry",
+          "id": "early_imperial_rome_early_cohort_cavalry",
           "name": "Cohort Cavalry",
           "description": "Cohort Cavalry have light armour, javelins, spear and shield. Superior Fighters. Cohort Cavalry shoudl be smaller than the smallest Equites Alares Unit.",
           "category": "Cavalry",
@@ -21514,7 +21515,7 @@
           "pointsPerBase": 21,
           "minBases": 3,
           "maxBases": 8,
-          "basesComparison": { "expression": "lessThan", "compareWith": ["early_imperial_rome_equites_alares"] },
+          "basesComparison": { "expression": "lessThan", "compareWith": ["early_imperial_rome_early_equites_alares"] },
           "baseEquipment": ["Light Armour","Javelins","Spear","Shield"],
           "specialRules": ["Open Order","Superior Fighters"],
           "optionalEquipment": [
@@ -21553,7 +21554,7 @@
           ]
         },
         {
-          "id": "early_imperial_rome_horse_archers",
+          "id": "early_imperial_rome_early_horse_archers",
           "name": "Horse Archers",
           "description": "Horse Archers have a bow. Skirmishers. Inferior Fighters. May have light armour (+1) and shield (+1).",
           "category": "Cavalry",
@@ -21589,7 +21590,7 @@
           ]
         },
         {
-          "id": "early_imperial_rome_lancers",
+          "id": "early_imperial_rome_early_lancers",
           "name": "Lancers",
           "description": "Lancers have light armour and kontos.",
           "category": "Cavalry",
@@ -21605,7 +21606,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_imperial_rome_numidian_cavalry",
+          "id": "early_imperial_rome_early_numidian_cavalry",
           "name": "Numidian or Moors",
           "description": "Numidian or Moors Cavalry have javelins and shield. Skirmishers. Parthian Shot.",
           "category": "Cavalry",
@@ -21621,7 +21622,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_imperial_rome_raw_legionaries",
+          "id": "early_imperial_rome_early_raw_legionaries",
           "name": "Raw Legionaries",
           "description": "Raw Legionaries have light armour, large shield and heavy throwing spear.",
           "category": "Infantry",
@@ -21636,7 +21637,7 @@
           "optionalEquipment": []
         },
           {
-          "id": "early_imperial_rome_seasoned_legionaries",
+          "id": "early_imperial_rome_early_seasoned_legionaries",
           "name": "Seasoned Legionaries",
           "description": "Seasoned Legionaries have light armour, large shield and heavy throwing spear. Drilled. May be Veteran (+2).",
           "category": "Infantry",
@@ -21662,7 +21663,7 @@
           ]
         },
         {
-          "id": "early_imperial_rome_elite_legionaries",
+          "id": "early_imperial_rome_early_elite_legionaries",
           "name": "Elite Legionaries",
           "description": "Elite Legionaries have light armour, large shield and heavy throwing spear. Superior Fighters. Drilled. May be Stubborn (+2) and Veteran (+2).",
           "category": "Infantry",
@@ -21698,7 +21699,7 @@
           ]
         },
         {
-          "id": "early_imperial_rome_auxiliaries",
+          "id": "early_imperial_rome_early_auxiliaries",
           "name": "Auxiliaries",
           "description": "Auxiliaries have a spear and shield. May exchange spear for javelins (+1). May exchange spear for thowing spear (+2), or heavy throwing spear (+4). May have light armour (+2), and may be Drilled (+3) and Veteran (+2). One unit of Auxiliaries may be upgraded to Elite (Superior Fighters. C8 +8 points). May be fielded in Open Order at a cost of eleven points per base, in which case may have throwing spear (+2) and light armour (+2) and may be Veteran (+2).",
           "category": "Infantry",
@@ -21799,7 +21800,7 @@
           ]
         },
         {
-          "id": "early_imperial_rome_light_cohort",
+          "id": "early_imperial_rome_early_light_cohort",
           "name": "Light Cohort",
           "description": "Light Cohorts have throwing spear and shield and are Skirmishers. May have javelins (+1). May not be used with Open Order Auxiliaries.",
           "category": "Infantry",
@@ -21807,7 +21808,7 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 8,
-           "excludesIf": { "unitIds": ["early_imperial_rome_auxiliaries"], "hasEquipment": ["Open Order"], "count": 1 },
+           "excludesIf": { "unitIds": ["early_imperial_rome_early_auxiliaries"], "hasEquipment": ["Open Order"], "count": 1 },
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": ["Throwing Spear","Shield"],
@@ -21826,7 +21827,7 @@
           ]
         },
         {
-          "id": "early_imperial_rome_archers",
+          "id": "early_imperial_rome_early_archers",
           "name": "Archers",
           "description": "Archers have bow. Open Order. May have light armour (+2) and be Drilled (+3) and Veteran (+2). One unit maybe upgraded to Elite (C8 +4 points).",
           "category": "Infantry",
@@ -21884,7 +21885,7 @@
           ]
         },
         {
-          "id": "early_imperial_rome_warriors",
+          "id": "early_imperial_rome_early_warriors",
           "name": "Warriors",
           "description": "Warriors have throwing spear and shield. Warband. May have light armour (+2).",
           "category": "Infantry",
@@ -21910,7 +21911,7 @@
           ]
         },
         {
-          "id": "early_imperial_rome_light_infantry",
+          "id": "early_imperial_rome_early_light_infantry",
           "name": "Light Infantry",
           "description": "Light Infantry have javelins and shield. Open Order. Warband. May have throwing spear (+2).",
           "category": "Infantry",
@@ -21936,7 +21937,7 @@
           ]
         },
         {
-          "id": "early_imperial_rome_skirmishers",
+          "id": "early_imperial_rome_early_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins and shield. Skirmishers. May exchange javelins for sling or bow (free).",
           "category": "Infantry",
