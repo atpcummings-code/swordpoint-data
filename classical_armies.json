@@ -11350,7 +11350,7 @@
       {
           "id": "AlliesAndAlliedInfantry",
           "name": "Allies and Allied Infantry",
-        "description": "If the Great KLing is present, teh army may take a contingent from the Classical Indian list: this may consist of 0-1 Cavalry unit, 0-1 Hereditary Infantry and 0-1 elephant and may be led by a Padika. The army may take a contingent of lowland infantry from teh Thracian list that may be led by a chieftain. These represent Bithynians.",
+        "description": "If the Great KLing is present, the army may take a contingent from the Classical Indian list: this may consist of 0-1 Cavalry unit, 0-1 Hereditary Infantry and 0-1 elephant and may be led by a Padika. The army may take a contingent of lowland infantry from the Thracian list that may be led by a chieftain. These represent Bithynians.",
            "constraintType": "percentage",
           "min": 0,
           "max": 20
