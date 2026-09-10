@@ -19873,6 +19873,257 @@
 		} 
 	  ]
   },
+
+"hasmonean_kingdom_of_judea": {
+             "armyName": "Hasmonean Kingdom of Judea - 168 BC to 37 BC",
+  "armyValidation": [ 
+  { "ids": ["hasmonean_kingdom_of_judea_thureophoroi"], "expression": "lessThan", "ratio": 1, "compareWith": ["hasmonean_kingdom_of_judea_foot_of_the_rising", "hasmonean_kingdom_of_judea_guerrillas"], "countBy": "bases" } 
+    ],
+  "armyValidation": [],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "description": "",
+         "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+         {
+          "id": "Infantry",
+          "name": "Infantry",
+           "description": "",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+         
+      ],
+      "units": [
+        {
+          "id": "hasmonean_kingdom_of_judea_general",
+          "name": "General",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hasmonean_kingdom_of_judea_leader",
+          "name": "Leader",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },   
+        {
+          "id": "hasmonean_kingdom_of_judea_line_cavalry",
+          "name": "Line Cavalry",
+          "description": "Line Cavalry have light armour, spear and shield. May upgrade to heavy armour (+1). May upgrade to C8, Superior Fighters (+4).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Lihght Armour","Spear","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Cohesion Upgrade C8",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            }
+          ]
+        },
+        {
+          "id": "hasmonean_kingdom_of_judea_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Lighht Cavalry have javelins or bow. Evade. May have shield (+1).  May be fielded as Skirmishers with Parthian Shot.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [],
+          "specialRules": ["Open Order","Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers","Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hasmonean_kingdom_of_judea_thureophoroi",
+          "name": "Thureophoroi",
+          "description": "Thureophoroi have javelins, spear and shield. Open Order. They may upgrade to Superior Fighters, C8 (+8). One unit may have ligt armour (+2). They may also form in Close Order at a cost of 16 points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Javelins","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Superior Fighters, C8 Upgrade",
+              "pointsModifier": 8,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            },
+            {
+              "name": "Light Armour",
+              "maxUnits": 1,
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Close Order",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+          ]
+            },
+         {
+          "id": "hasmonean_kingdom_of_judea_foot_of_the_rising",
+          "name": "Foot of the Rising",
+          "description": "Foot of the Rising have javelins and shield. Open Order. They may upgrade to C6 (+2). Troops without the Cohesion upgrade may be fielded as Skirmishers at a cost of six points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Cohesion C6 Upgrade",
+              "disables": "Skirmishers",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Cohesion Upgrade",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            }
+        {
+          "id": "hasmonean_kingdom_of_judea_guerrillas",
+          "name": "Guerrillas",
+          "description": "Guerrillas have bow and shield. Open Order. May be fielded as Skirmishers at a cost of four points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+         
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }  
+      ]
+},
+	  
 "early_german": {
       "armyName": "Early German - 150 BC to 300 AD",
     "armyValidation": [ 
