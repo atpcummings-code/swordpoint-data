@@ -19611,7 +19611,7 @@
       ]
     },
 "maccabean_revolt": {
-  "armyName": "Maccabean Revolt - 168 BC to 10 BC",
+  "armyName": "Maccabean Revolt - 168 BC to 37 BC",
   "categories": [
         {
           "id": "Commanders",
@@ -19682,7 +19682,7 @@
         {
           "id": "maccabean_revolt_light_cavalry",
           "name": "Light Cavalry",
-          "description": "Lighht Cavalry have have javelins or bow. Evade. May have shield (+1).  May be fielded as Skirmishers with Parthian Shot.",
+          "description": "Light Cavalry have have javelins or bow. Evade. May have shield (+1).  May be fielded as Skirmishers with Parthian Shot.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 6,
