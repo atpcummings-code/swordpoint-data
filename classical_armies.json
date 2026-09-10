@@ -19744,7 +19744,7 @@
             },
             {
               "name": "Skirmishers",
-              "disables": "Cohesion Upgrade",
+              "disables": "Cohesion C6 Upgrade",
               "pointsModifier": -3,
               "equipmentAdded": [],
               "equipmentRemoved": [],
@@ -19752,7 +19752,6 @@
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }
             },
         {
           "id": "maccabean_revolt_guerrillas",
