@@ -19713,6 +19713,28 @@
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
+            },
+			  {
+              "name": "Javelins",
+				  "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Bow",
+			  "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
           ]
         },
@@ -19757,7 +19779,7 @@
         {
           "id": "maccabean_revolt_guerrillas",
           "name": "Guerrillas",
-          "description": "Guerrillas have javelins. Inferior Fighters. May have shield. May upgrade to C6 (+4) or C7 (+6), no longer Inferior Fighters, and may be Stubborn.",
+          "description": "Guerrillas have javelins. Inferior Fighters. May have shield (+2). May upgrade to C6 (+4) or C7 (+6), no longer Inferior Fighters, and become Stubborn (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -19791,7 +19813,7 @@
               "cohesionModifier": 2
             },
 			  {
-				 "name": "Skirmishers",
+			"name": "Skirmishers",
 			  "disables": ["Cohesion C7 Upgrade","Cohesion C6 Upgrade","Shield"],
 			  "enableHidden": ["Bow", "Sling","Shield (Skirmishers)"],
               "pointsModifier": -4,
@@ -19838,16 +19860,6 @@
               "cohesionModifier": 0
             },
 		  {
-              "name": "Shield",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Shield"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-			{
               "name": "Shield",
               "pointsModifier": 2,
               "equipmentAdded": ["Shield"],
