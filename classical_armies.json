@@ -19682,7 +19682,7 @@
         {
           "id": "maccabean_revolt_light_cavalry",
           "name": "Light Cavalry",
-          "description": "Light Cavalry have have javelins or bow. Evade. May have shield (+1).  May be fielded as Skirmishers with Parthian Shot.",
+          "description": "Light Cavalry have javelins or bow. Evade. May have shield (+1).  May be fielded as Skirmishers with Parthian Shot.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 6,
@@ -19779,7 +19779,7 @@
         {
           "id": "maccabean_revolt_guerrillas",
           "name": "Guerrillas",
-          "description": "Guerrillas have javelins. Inferior Fighters. May have shield (+2). May upgrade to C6 (+4) or C7 (+6), no longer Inferior Fighters, and become Stubborn (+2).",
+          "description": "Guerrillas have javelins. Inferior Fighters. May have shield (+2). May upgrade to C6 (+4) or C7 (+6), no longer Inferior Fighters, and become Stubborn (+2). Without Conesion upgrade they may be fielded as Skirmishers at a cost of four points per base. with bow or sling, and may have shield (+1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
