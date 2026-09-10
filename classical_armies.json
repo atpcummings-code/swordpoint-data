@@ -19753,11 +19753,11 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
-            }
+            },
         {
           "id": "maccabean_revolt_guerrillas",
           "name": "Guerrillas",
-          "description": "Guerrillas have bow and shield. Open Order. May be fielded as Skirmishers at a cost of eight points per base.",
+          "description": "Guerrillas have javelins. Inferior Fighters. May have shield.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
