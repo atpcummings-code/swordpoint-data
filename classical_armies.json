@@ -19753,6 +19753,8 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
+		  ]
+		 },
         {
           "id": "maccabean_revolt_guerrillas",
           "name": "Guerrillas",
