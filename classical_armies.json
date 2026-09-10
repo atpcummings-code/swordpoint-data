@@ -19879,7 +19879,6 @@
   "armyValidation": [ 
   { "ids": ["hasmonean_kingdom_of_judea_thureophoroi"], "expression": "lessThan", "ratio": 1, "compareWith": ["hasmonean_kingdom_of_judea_foot_of_the_rising", "hasmonean_kingdom_of_judea_guerrillas"], "countBy": "bases" } 
     ],
-  "armyValidation": [],
       "categories": [
         {
           "id": "Commanders",
