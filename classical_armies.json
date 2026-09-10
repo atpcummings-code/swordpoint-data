@@ -19947,7 +19947,7 @@
           "pointsPerBase": 18,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": ["Lihght Armour","Spear","Shield"],
+          "baseEquipment": ["Light Armour","Spear","Shield"],
           "specialRules": ["Open Order"],
           "optionalEquipment": [
             {
