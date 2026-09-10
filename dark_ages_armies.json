@@ -484,13 +484,11 @@
               "cohesionModifier": 0
             }
           ]
-        }
-
-        
+        }     
       ]
     },
 
-		  "franks_post_700": {
+	"franks_post_700": {
       "armyName": "Franks (Post 700) - 701 to 750 AD",
       "categories": [
         {
@@ -919,9 +917,7 @@
               "cohesionModifier": 0
             }
           ]
-        }
-
-        
+        }    
       ]
     },
     "mayan": {
