@@ -19818,7 +19818,7 @@
 			  "enableHidden": ["Bow", "Sling","Shield (Skirmishers)"],
               "pointsModifier": -4,
               "equipmentAdded": [],
-              "equipmentRemoved": [],
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
