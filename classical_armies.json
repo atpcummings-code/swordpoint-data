@@ -19767,7 +19767,7 @@
           "baseEquipment": ["Javelins"],
           "specialRules": ["Close Order","Inferior Fighters"],
           "optionalEquipment": [
-         
+			  },
             {
               "name": "Cohesion C6 Upgrade",
               "disables": ["Skirmishers","Cohesion C7 Upgrade],
