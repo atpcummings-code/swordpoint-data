@@ -19611,9 +19611,8 @@
       ]
     },
 "maccabean_revolt": {
-             "armyName": "Maccabean Revolt - 168 BC to 10 BC",
-  "armyValidation": [],
-      "categories": [
+  "armyName": "Maccabean Revolt - 168 BC to 10 BC",
+  "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
@@ -19768,11 +19767,10 @@
           "maxBases": 12,
           "baseEquipment": ["Javelins"],
           "specialRules": ["Close Order","Inferior Fighters"],
-          "optionalEquipment": []
-			  },
-            {
+          "optionalEquipment": [
+			  {
               "name": "Cohesion C6 Upgrade",
-              "disables": ["Skirmishers","Cohesion C7 Upgrade],
+              "disables": ["Skirmishers","Cohesion C7 Upgrade"],
               "pointsModifier": 6,
               "equipmentAdded": [],
               "equipmentRemoved": [],
@@ -19793,9 +19791,9 @@
               "cohesionModifier": 2
             },
 			  {
-              "name": "Skirmishers",
+				 "name": "Skirmishers",
 			  "disables": ["Cohesion C7 Upgrade","Cohesion C6 Upgrade","Shield"],
-			  "enableHidden!: ["Bow", "Sling","Shield (Skirmishers)"],
+			  "enableHidden": ["Bow", "Sling","Shield (Skirmishers)"],
               "pointsModifier": -4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
@@ -19803,8 +19801,8 @@
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
-		  {
+			  },
+			{
               "name": "Bow",
 			  "hiddenUntilEnabled": "hidden",
 			  "disables": "Sling",
@@ -19859,14 +19857,10 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             }
-			  
-          ]
-        }
-
-
-        
-      ]
-},
+	  ]
+		} 
+	  ]
+  }
 "early_german": {
       "armyName": "Early German - 150 BC to 300 AD",
     "armyValidation": [ 
