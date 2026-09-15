@@ -210,6 +210,291 @@
           ]
         }
       ]
-    }
+    },
+  "old_and_middle_kingdom_egyptian": {
+      "armyName": "Old and Middle Kingdom Egyptian - (2700 BC - 1650 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "description": "The army may take allies from the Libyan list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+            "libyan"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
+      ],
+      "units": [
+        {
+          "id": "old_and_middle_kingdom_egyptian_pharaoh",
+          "name": "Pharaoh",
+          "excludes": [
+            "old_and_middle_kingdom_egyptian_general_vizier"
+          ],
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "old_and_middle_kingdom_egyptian_general_vizier",
+          "name": "General/Vizier",
+          "excludes": [
+            "old_and_middle_kingdom_egyptian_pharaoh"
+          ],
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "old_and_middle_kingdom_egyptian_brigade-commander",
+          "name": "Brigade Commander",
+          "description": ",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "old_and_middle_kingdom_egyptian_line_infantry",
+          "name": "Line Infantry",
+          "description": "Line Infantry have throwing spear and shield. One unit in three may exchange throwing spear and shield for two-handed mace-axe (-2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwng Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Two-handed Mace-axe",
+              "pointsModifier": -2,
+              "enabledEvery": 3,
+              "equipmentAdded": [
+                "Two-handed Mace-axe"
+              ],
+              "equipmentRemoved": [
+                "Throwing Spear", "Shield"
+              ],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "old_and_middle_kingdom_egyptian_archers",
+          "name": "Archers",
+          "description": "Archers have bow.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "old_and_middle_kingdom_egyptian_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins and shield. Open Order. May be fielded aas Skirmishers at a cost of eight points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "old_and_middle_kingdom_egyptian_libyan-and-kushites",
+          "name": "Libyan and Kushites",
+          "description": "Libyan and Kushites have javelins. Open Order, Warband (not rule 3), May be fielded as SKirmishers at a cost of five points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "old_and_middle_kingdom_egyptian_syrians",
+          "name": "Syrians",
+          "description": "Syrians have javelins. Inferior Fighters. Open Order. May replace javelins with bow (free). Warband (not rule 3), May be fielded as SKirmishers at a cost of four points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Open Order", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "old_and_middle_kingdom_egyptian_nubians",
+          "name": "Nubians",
+          "description": "Nubians have Bow. Skirmishers.",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": []
+        },
+{
+          "id": "old_and_middle_kingdom_egyptian_slingers",
+          "name": "Slingers",
+          "description": "Slongers have Sling. Inferior Fighters. Skirnmishers.May have shield (+1).",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Sling"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+
+
+
+    
   }
 }
