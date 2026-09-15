@@ -245,9 +245,7 @@
         {
           "id": "old_and_middle_kingdom_egyptian_pharaoh",
           "name": "Pharaoh",
-          "excludes": [
-            "old_and_middle_kingdom_egyptian_general_vizier"
-          ],
+          "excludes": ["old_and_middle_kingdom_egyptian_general_vizier"],
           "description": "",
           "category": "Commanders",
           "type": "General",
@@ -262,9 +260,7 @@
         {
           "id": "old_and_middle_kingdom_egyptian_general_vizier",
           "name": "General/Vizier",
-          "excludes": [
-            "old_and_middle_kingdom_egyptian_pharaoh"
-          ],
+          "excludes": ["old_and_middle_kingdom_egyptian_pharaoh"],
           "description": "",
           "category": "Commanders",
           "type": "General",
