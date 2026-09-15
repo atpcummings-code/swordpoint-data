@@ -47,6 +47,7 @@
           "attacks": "+3",
           "cohesion": 9,
           "pointsPerBase": 0,
+          "maxAllowed": 1,
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
