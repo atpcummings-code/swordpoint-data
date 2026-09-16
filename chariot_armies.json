@@ -504,19 +504,20 @@
           "max": 6
         },
         {
-          "id": "Infantry",
-          "name": "Infantry",
-          "constraintType": "percentage",
-          "min": 50,
-          "max": 100
-        },
-        {
            "id": "Cavalry",
           "name": "Chariots",
           "constraintType": "percentage",
           "min": 0,
           "max": 15
         }
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        }
+        
       ],
       "units": [
         {
@@ -709,7 +710,7 @@
           "baseEquipment": [
           ],
           "specialRules": [
-            "Skirmishers"
+            "Skirmishers"E
           ],
           "optionalEquipment": [
             {
