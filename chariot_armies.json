@@ -749,6 +749,519 @@
           ]
         }
       ]
+  },
+    "elam_late_period": {
+      "armyName": "Elam (Late Period) - (1500 BC - 900 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+           "id": "Cavalry",
+          "name": "Chariots",
+          "constraintType": "percentage",
+          "min": 10,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "elam_late_period_king_general",
+          "name": "King/General",
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "elam_late_period_noble",
+          "name": "Noble",
+          "description": "",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "elam_late_period_heavy_chariots",
+          "name": "Heavy Chariots",
+          "description": "Heavy Chariots have a single armed driver/crewman. Throw 2d6 in combat/ May be upgraded to Superior Fighters (+2).",
+          "category": "Cavalry",
+          "type": "Chariots",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [],
+          "specialRules": [
+            "Heavy Chariots"
+          ],
+           "optionalEquipment": [
+            {
+              "name": "Superior Fighters",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "elam_late_period_chariot_rider_archers",
+          "name": "Archers (Chariot Riders)",
+          "description": "Archers have Bow. Open order. May be fielded as Skirmishers at a cost of six points per base.",
+          "category": "Cavalry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order", "Riding Horses"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "elam_late_period_cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have spear and bow. May be fielded as Skirmishers. ",
+          "category": "Cavalry",
+          "type": "Chariots",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "maxCountAllowed": 3,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear", "Bow"],
+          "specialRules": [
+  
+          ],
+           "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "elam_late_period_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins. Open Order. May be fielded as Skirmishers at a cost of six points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+                {
+          "id": "elam_late_period_archers",
+          "name": "Archers",
+          "description": "Archers have bow. Open Order. May be fielded as Skirmishers at a cost of six points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "elam_late_period_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers and javelkins, sling or bow. Skirmishers",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "disables": ["Bow", "Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "disables": ["Bow", "Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": ["Sling", "Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+      ]
+  },
+    "elam_later_period": {
+      "armyName": "Elam (Later Period) - (900 BC - 700 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+           "id": "Cavalry",
+          "name": "Chariots",
+          "constraintType": "percentage",
+          "min": 10,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "elam_later_period_king_general",
+          "name": "King/General",
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "elam_later_period_noble",
+          "name": "Noble",
+          "description": "",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "elam_later_period_heavy_chariots",
+          "name": "Heavy Chariots",
+          "description": "Heavy Chariots have a single armed driver/crewman. Throw 2d6 in combat/ May be upgraded to Superior Fighters (+2).",
+          "category": "Cavalry",
+          "type": "Chariots",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [],
+          "specialRules": [
+            "Heavy Chariots"
+          ],
+           "optionalEquipment": [
+            {
+              "name": "Superior Fighters",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "elam_later_period_chariot_rider_archers",
+          "name": "Archers (Chariot Riders)",
+          "description": "Archers have Bow. Open order. May be fielded as Skirmishers at a cost of six points per base.",
+          "category": "Cavalry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order", "Riding Horses"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "elam_later_period_cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have spear and bow. May be fielded as Skirmishers. ",
+          "category": "Cavalry",
+          "type": "Chariots",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear", "Bow"],
+          "specialRules": [
+  
+          ],
+           "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "elam_later_period_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins. Open Order. May be fielded as Skirmishers at a cost of six points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+                {
+          "id": "elam_later_period_archers",
+          "name": "Archers",
+          "description": "Archers have bow. Open Order. May be fielded as Skirmishers at a cost of six points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "elam_later_period_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers and javelkins, sling or bow. Skirmishers",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "disables": ["Bow", "Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "disables": ["Bow", "Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": ["Sling", "Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+      ]
   }
 
 
