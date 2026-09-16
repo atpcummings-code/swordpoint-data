@@ -509,7 +509,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 15
-        }
+        },
         {
           "id": "Infantry",
           "name": "Infantry",
