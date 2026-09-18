@@ -16892,7 +16892,7 @@
             },
             {
               "name": "Skirmishers",
-              "hiddenUntilEnabled": ["hidden"],
+              "hiddenUntilEnabled": "hidden",
               "pointsModifier": -9,
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": ["Pike"],
