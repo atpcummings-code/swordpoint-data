@@ -17031,6 +17031,473 @@
         }
 		  ]
         },
+         "macedon_late": {
+      "armyName": "Macedon (Late) - 359 BC to 323 BC",
+"armyValidation": [
+    { "type": "equipmentBasesCount", "left": { "unitIds": ["macedon_late_cretans"] }, "right": { "unitIds": ["macedon_late_agrianians","macedon_late_mercenaries","macedon_late_skirmishers"] }, "expression": "lessThanOrEqual", "ratio": 1 },
+  { "type": "categoryCompositionOverride", "ifUnitIds": ["macedon_late_philipii"], "targetCategory": "Cavalry", "override": { "constraintType": "percentage", "min": 0, "max": 25 } }
+  ],
+ 	"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+        {
+          "id": "macedon_late_philipii",
+          "name": "Phillip II",
+          "description": "May ride a horse.",
+			"excludes": ["macedon_late_alexander","macedon_late_strategos"],
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+{
+          "id": "macedon_late_alexander",
+          "name": "Alexander",
+          "description": "May ride a horse.",
+			"excludes": ["macedon_late_philipii","macedon_late_strategos"],
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Stratagem",
+              "pointsModifier": 50,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stratagem"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "macedon_late_strategos",
+          "name": "Strategos",
+          "description": "May ride a horse.",
+			"excludes": ["macedon_late_alexander","macedon_late_philipii"],
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "macedon_late_hipparch",
+          "name": "Hipparch",
+          "excludes": ["macedon_late_hipparch"],
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+ {
+          "id": "macedon_late_taxiarch",
+          "name": "Taxiarch",
+          "excludes": ["macedon_late_taxiarch"],
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },      
+        {
+          "id": "macedon_late_macedonian_companion_cavalry",
+          "name": "Macedonian Companion Cavalry",
+          "description": "Macedonian Companion Cavalry have light armour and spear. Superior Fighters. May upgrade to heavy armour (+1). May be Veteran (+1). One unit may be Stubborn (+2). ",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 9,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Spear"],
+          "specialRules": ["Open Order", "Superior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "maxUnits": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "macedon_late_persian_companions",
+          "name": "Persian Companions",
+          "description": "Persian Companions have light armour and spear. Superior Fighters. May upgrade to heavy armour (+1). May be Veteran (+1). One Macedonian Companion Cavalry unit may be Stubborn (+2).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 21,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Spear"],
+          "specialRules": ["Open Order", "Superior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "macedon_late_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins. May have spears (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+           {
+             "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "macedon_late_dahae_scythians",
+          "name": "Dahae/Scythians",
+          "description": "Dahae/Scythians have javelins or bow. Skirmishers. Superior Shooters. Parthian Shot",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [],
+          "specialRules": ["Skirmishers","Superior Shooters","Parthian Shot"],
+           "optionalEquipment": [
+
+             {
+              "name": "Bow",
+               "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+               "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "macedon_late_hypaspists",
+          "name": "Hypaspists",
+          "description": "Hypaspists have pike and shield. They may have light armour (+2). Superior Fighters. Trained Phalanx.  Drilled. One unit may be Stubborn (+2). May be Veteran (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 31,
+          "minBases": 3,
+          "maxBases": 12,
+          "requires": {
+            "unitId": "macedon_late_phalangites",
+            "count": 2,
+            "name": "Phalangites",
+            "perUnit": true
+          },
+          "baseEquipment": ["Pike","Shield"],
+          "specialRules": ["Close Order","Superior Fighters","Drilled","Trained Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "maxUnits": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "macedon_late_phalangites",
+          "name": "Phalangites",
+          "description": "Phalangites have pike and shield. Trained Phalanx. May have light armour (+2). Maybe Drilled (+3). At least one unit of Phalangites must be fielded.   Drilled. One unit may be Stubborn (+2). May be Veteran (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 31,
+          "minCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Drilled",
+              "pointsModifier": 3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+        {
+          "id": "macedon_late_agrianians",
+          "name": "Agrianians",
+          "description": "Agrianians have javelin and shield. Skirmishers. May replace javelins with sling (free). There may be one unit of Agrianians for every two units of other Skirmishers.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 10,
+          "minBases": 2,
+          "maxBases": 6,
+          "requires": {
+            "unitId": ["macedon_late_cretans","macedon_late_mercenaries","macedon_late_skirmishers"],
+            "count": 2,
+            "name": ["Cretans","Mercenaries","Skirmishers"],
+            "perUnit": true
+          },
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "macedon_late_cretans",
+          "name": "Cretans",
+          "description": "Cretans have bow and shield. Superior Shooters. Skirmishers.  the unit may not be the largest unit of Skirmishers in the army.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 10,
+          "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Skirmishers","Superior Shooters"],
+          "optionalEquipment": []
+        },
+{
+          "id": "macedon_late_mercenaries",
+          "name": "Mercenaries",
+          "description": "Mercenaries have javelin and shield. Skirmishers.Inferior Fighters.  Every second unit of Mercenaries may replace javelins and shield with bow (-1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "macedon_late_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelin and shield. Skirmishers.Inferior Fighters.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": []
+        }
+		  ]
+        },
         
 	  
    "pergamene": {
