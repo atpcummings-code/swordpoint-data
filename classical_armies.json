@@ -16915,12 +16915,6 @@
           "minCountAllowed": 1,
           "minBases": 3,
           "maxBases": 12,
-          "requires": {
-            "unitId": "macedon_early_phalangites",
-            "count": 1,
-            "name": "Phalangites",
-            "perUnit": true
-          },
           "baseEquipment": ["Pike","Shield"],
           "specialRules": ["Close Order","Superior Fighters","Drilled","Trained Phalanx"],
           "optionalEquipment": [
