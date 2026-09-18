@@ -16885,8 +16885,8 @@
               "pointsModifier": -10,
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": ["Pike"],
-              "rulesAdded": ["Stubborn","Open Order"],
-              "rulesRemoved": ["Close Order", "Trained Phalanx"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order","Trained Phalanx"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
