@@ -16892,7 +16892,7 @@
             },
             {
               "name": "Skirmishers",
-              "hiddenUntilEnabled": "Hidden",
+              "hiddenUntilEnabled": ["hidden"],
               "pointsModifier": -9,
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": ["Pike"],
@@ -16916,54 +16916,29 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Pike","Shield"],
-          "specialRules": ["Close Order","Superior Fighters","Drilled","Trained Phalanx"],
+          "specialRules": ["Close Order","Trained Phalanx"],
           "optionalEquipment": [
             {
-              "name": "Stubborn",
-              "pointsModifier": 2,
-              "maxUnits": 1,
+              "name": "Drilled",
+              "pointsModifier": 3,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Stubborn"],
+              "rulesAdded": ["Drilled"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
             {
-              "name": "Spear and Large Shield Option",
-              "pointsModifier": 0,
-              "disables": ["Javelins and Shield Option"],
-              "equipmentAdded": ["Spear", "Large Shield"],
-              "equipmentRemoved": ["Pike","Shield"],
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-            },
-            {
-              "name": "Javelins and Shield Option",
-              "disables": ["Spear and Large Shield Option"],
-              "enableHidden": "Skirmishers",
-              "pointsModifier": -10,
-              "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": ["Pike"],
-              "rulesAdded": ["Open Order"],
-              "rulesRemoved": ["Close Order", "Trained Phalanx","Stubborn"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Skirmishers",
-              "hiddenUntilEnabled": "hidden",
-              "pointsModifier": -9,
-              "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": ["Pike"],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Drilled", "Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-          ]
+            }
+		  ]
         },
         {
           "id": "macedon_early_agrianians",
