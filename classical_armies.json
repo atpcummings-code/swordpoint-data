@@ -16533,7 +16533,7 @@
       "armyName": "Macedon (Early) - 359 BC to 323 BC",
 "armyValidation": [
     { 
-"ids": [""macedon_early_cretans""], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["macedon_early_agrianians","macedon_early_mercenaries","macedon_early_skirmishers"], "countBy": "bases" },
+"ids": ["macedon_early_cretans"], "expression": "lessThanOrEqual", "ratio": 1, "compareWith": ["macedon_early_agrianians","macedon_early_mercenaries","macedon_early_skirmishers"], "countBy": "bases" },
   { "type": "categoryCompositionOverride", "ifUnitIds": ["macedon_early_philipii"], "targetCategory": "Cavalry", "override": { "constraintType": "percentage", "min": 0, "max": 25 } }
   ],
  	"categories": [
