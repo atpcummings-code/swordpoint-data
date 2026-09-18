@@ -16883,7 +16883,7 @@
             {
               "name": "Javelins and Shield Option",
               "disables": ["Spear and Large Shield Option"],
-              "enableHidden": "Skirmishers"
+              "enableHidden": "Skirmishers",
               "pointsModifier": -10,
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": ["Pike"],
@@ -16894,7 +16894,7 @@
             },
             {
               "name": "Skirmishers",
-              "hiddenUntilEnabled": "Hidden"
+              "hiddenUntilEnabled": "Hidden",
               "pointsModifier": -9,
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": ["Pike"],
