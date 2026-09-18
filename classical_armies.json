@@ -16658,7 +16658,7 @@
         {
           "id": "macedon_early_macedonian_companion_cavalry",
           "name": "Macedonian Companion Cavalry",
-          "description": "Macedonian Companion Cavalry have light armour and spear. Superior Fighters. May upgrade to heavy armour (_1). May be Veteran (+1). One Macedonian Companion Cavalry unit may be Stubborn (+2).",
+          "description": "Macedonian Companion Cavalry have light armour and spear. Superior Fighters. May upgrade to heavy armour (+1). May be Veteran (+1). One Macedonian Companion Cavalry unit may be Stubborn (+2).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 5,
