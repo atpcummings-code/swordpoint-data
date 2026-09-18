@@ -16532,7 +16532,11 @@
  "macedon_early": {
       "armyName": "Macedon (Early) - 359 BC to 323 BC",
 "armyValidation": [
-    { "type": "equipmentBasesCount", "left": { "unitIds": ["macedon_early_cretans"] }, "right": { "unitIds": ["macedon_early_agrianians"]}, "expression": "lessThanOrEqual", "ratio": 1 },
+ { "type": "equipmentBasesCount", "left": { "unitIds": ["macedon_early_cretans"], "equipment": ["Bow"] }, "right": { "unitIds": ["macedon_early_agrianians"], "equipment": ["Sling"]}, "expression": "lessThanOrEqual", "ratio": 1 },
+{ "type": "equipmentBasesCount", "left": { "unitIds": ["macedon_early_cretans"], "equipment": ["Bow"] }, "right": { "unitIds": ["macedon_early_agrianians"], "equipment": ["Javelins"]}, "expression": "lessThanOrEqual", "ratio": 1 },
+{ "type": "equipmentBasesCount", "left": { "unitIds": ["macedon_early_cretans"], "equipment": ["Bow"] }, "right": { "unitIds": ["macedon_early_mercenaries"], "equipment": ["Javelins"]}, "expression": "lessThanOrEqual", "ratio": 1 },
+{ "type": "equipmentBasesCount", "left": { "unitIds": ["macedon_early_cretans"], "equipment": ["Bow"] }, "right": { "unitIds": ["macedon_early_mercenaries"], "equipment": ["Bow"]}, "expression": "lessThanOrEqual", "ratio": 1 },
+{ "type": "equipmentBasesCount", "left": { "unitIds": ["macedon_early_cretans"], "equipment": ["Bow"] }, "right": { "unitIds": ["macedon_early_skirmishers"], "equipment": ["Javelins"]}, "expression": "lessThanOrEqual", "ratio": 1 },
   { "type": "categoryCompositionOverride", "ifUnitIds": ["macedon_early_philipii"], "targetCategory": "Cavalry", "override": { "constraintType": "percentage", "min": 0, "max": 25 } }
   ],
  	"categories": [
