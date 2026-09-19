@@ -5471,7 +5471,7 @@
         {
           "id": "thracian_getae_lowland_warriors",
           "name": "Lowland Warriors",
-          "description": "Lowland Warriors have javelins and shield. Open Order. Warband. May add Spear (free).Every second unit may instead be fielded as Skirmishers at a cost of six points per base..  Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
+          "description": "Lowland Warriors have javelins and shield. Open Order. Warband. May add Spear (free).Every second unit may instead be fielded as Skirmishers at a cost of six points per base.  Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -5662,7 +5662,7 @@
         {
           "id": "thracian_highland_tribes_lowland_warriors",
           "name": "Lowland Warriors",
-          "description": "Lowland Warriors have javelins and shield. Open Order. Warband. May add Spear (free).Every second unit may instead be fielded as Skirmishers at a cost of six points per base..  Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
+          "description": "Lowland Warriors have javelins and shield. Open Order. Warband. May add Spear (free).Every second unit may instead be fielded as Skirmishers at a cost of six points per base.  Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -5739,7 +5739,7 @@
         {
           "id": "thracian_highland_tribes_highland_warriors",
           "name": "Highland Warriors",
-          "description": "Highland Warriors have javelins and shield. Open Order. Warband. May add Halberd (+2).Every second unit may instead be fielded as Skirmishers at a cost of seven points per base..  Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
+          "description": "Highland Warriors have javelins and shield. Open Order. Warband. May add Halberd (+2).Every second unit may instead be fielded as Skirmishers at a cost of seven points per base.  Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -6077,7 +6077,7 @@
         {
           "id": "thracian_coalition_lowland_warriors",
           "name": "Lowland Warriors",
-          "description": "Lowland Warriors have javelins and shield. Open Order. Warband. May add Spear (free).Every second unit may instead be fielded as Skirmishers at a cost of six points per base..  Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
+          "description": "Lowland Warriors have javelins and shield. Open Order. Warband. May add Spear (free).Every second unit may instead be fielded as Skirmishers at a cost of six points per base.  Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -6153,7 +6153,7 @@
         {
           "id": "thracian_coalition_highland_warriors",
           "name": "Highland Warriors",
-          "description": "Highland Warriors have javelins and shield. Open Order. Warband. May add Halberd (+2).Every second unit may instead be fielded as Skirmishers at a cost of seven points per base..  Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
+          "description": "Highland Warriors have javelins and shield. Open Order. Warband. May add Halberd (+2).Every second unit may instead be fielded as Skirmishers at a cost of seven points per base.  Every second unit of Skirmishers may replace javelins and shield with bow (-1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -11149,7 +11149,7 @@
         {
           "id": "campanian_oscan_horse",
           "name": "Oscan Horse",
-          "description": "Oscan Horse have javelins. Superior Fighters. May have light armour (+1), and shield (+1). May exchange javelins for spear (free)..",
+          "description": "Oscan Horse have javelins. Superior Fighters. May have light armour (+1), and shield (+1). May exchange javelins for spear (free).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 6,
@@ -18258,7 +18258,7 @@
         {
           "id": "lysimachid_successor_macedonian_companions",
           "name": "Macedonian Companions",
-          "description": "Macedonian Companions have light armour and spear.. Superior Fighters. May upgrade to heavy armour (+1)",
+          "description": "Macedonian Companions have light armour and spear. Superior Fighters. May upgrade to heavy armour (+1)",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 5,
@@ -26529,7 +26529,7 @@
         {
           "id": "middle_imperial_rome_light_horse",
           "name": "Light Horse",
-          "description": "Light Horse have javelins and shield. May be fielded as Skirmishers at a cost of 17 points per base..",
+          "description": "Light Horse have javelins and shield. May be fielded as Skirmishers at a cost of 17 points per base.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 5,
