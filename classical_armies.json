@@ -15,7 +15,6 @@
           "min": 0,
           "max": 6
         },
-       
         {
           "id": "Cavalry",
           "name": "Cavalry",
@@ -19218,7 +19217,7 @@
         {
           "id": "eumenid_successor_elephant",
           "name": "Elephant",
-          "description": "The mahout is unarmed; the single crewman has light armour and pike. The elephant is a Superior Fighter.",
+          "description": "The mahout is unarmed; the single crewman has light armour and pike. The elephant and crew are Superior Fighters.",
           "category": "Elephants",
           "type": "Elephants",
           "minBases": 1,
@@ -19244,6 +19243,7 @@
                 
               },
 				"baseEquipment": ["Pike","Light Armour"],
+				"specialRules": ["Superior Fighters"],
               "pointsPerBase": 0
             },
 			  
