@@ -16994,7 +16994,7 @@
 {
           "id": "macedon_early_mercenaries",
           "name": "Mercenaries",
-          "description": "Mercenaries have javelin and shield. Skirmishers.Inferior Fighters.  Every second unit of Mercenaries may replace javelins and shield with bow (-1).",
+          "description": "Mercenaries have javelin and shield. Skirmishers. Inferior Fighters.  Every second unit of Mercenaries may replace javelins and shield with bow (-1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -17021,7 +17021,7 @@
         {
           "id": "macedon_early_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelin and shield. Skirmishers.Inferior Fighters.",
+          "description": "Skirmishers have javelin and shield. Skirmishers. Inferior Fighters.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -17466,7 +17466,7 @@
 {
           "id": "macedon_late_mercenaries",
           "name": "Mercenaries",
-          "description": "Mercenaries have javelin and shield. Skirmishers.Inferior Fighters.  Every second unit of Mercenaries may replace javelins and shield with bow (-1).",
+          "description": "Mercenaries have javelin and shield. Skirmishers. Inferior Fighters.  Every second unit of Mercenaries may replace javelins and shield with bow (-1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -17493,7 +17493,7 @@
         {
           "id": "macedon_late_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelin and shield. Skirmishers.Inferior Fighters.",
+          "description": "Skirmishers have javelin and shield. Skirmishers. Inferior Fighters.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
