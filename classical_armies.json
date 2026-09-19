@@ -17512,7 +17512,8 @@
       "armyName": "Macedon Successor - 323 BC to 260 BC",
 "armyValidation": [
 
-  { "type": "categoryCompositionOverride", "ifUnitIds": ["macedonian_successor_philipii"], "targetCategory": "Cavalry", "override": { "constraintType": "percentage", "min": 0, "max": 25 } }
+  { "type": "categoryCompositionOverride", "ifUnitIds": ["macedonian_successor_philipii"], "targetCategory": "Cavalry", "override": { "constraintType": "percentage", "min": 0, "max": 25 } },
+	{ "type": "conditionalUnitSwap", "ifUnitIds": ["macedonian_successor_galations"], "hide": ["macedonian_successor_elephant"], "show": ["macedonian_successor_elephant_howdah"] }
   ],
 "unitCountValidation": [
 
@@ -18046,49 +18047,12 @@
         {
           "id": "macedonian_successor_elephant",
           "name": "Elephant",
-          "description": "The mahout is unarmed; the single crewman has light armour and pike. Teh lepehant is a Superior Fighter. If galations are usd , add a howdah and two additional crewmen, armed with bows or javelins, for 12 points.",
+          "description": "The mahout is unarmed; the single crewman has light armour and pike. The elpehant is a Superior Fighter. If galations are used, add a howdah and two additional crewmen, armed with bows or javelins, for 12 points.",
           "category": "Elephants",
           "type": "Elephants",
           "minBases": 1,
           "maxBases": 1,
-          "optionalEquipment": [
-            {
-              "name": "Third Crewman",
-              "disables": "Type 2 Crew",
-              "applyToAllUnits": true,
-              "pointsModifier": 4,
-              "targetProfile": "Crewmen",
-              "equipmentAdded": ["Third Crewman"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Bow",
-              "disables": "Javelins",
-              "applyToAllUnits": true,
-              "pointsModifier": 0,
-              "targetProfile": "Crewmen",
-              "equipmentAdded": ["Bow"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Javelins",
-              "disables": "Bow",
-              "applyToAllUnits": true,
-              "pointsModifier": 0,
-              "targetProfile": "Crewmen",
-              "equipmentAdded": ["Javelins"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ],
+          "optionalEquipment": [],
           "subProfiles": [
             {
               "name": "Elephant",
@@ -18107,6 +18071,80 @@
                 "D": 5,
                 "C": 7,
                 "baseEquipment": ["Pike","Light Armour",],
+              },
+              "pointsPerBase": 0
+            },
+            {
+              "name": "Mahout",
+              "stats": {
+                "D": 6,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+		  {
+          "id": "macedonian_successor_elephant_howdah",
+          "name": "Elephant",
+		   "hiddenByDefault": true,
+          "description": "The mahout is unarmed; the single crewman has light armour and pike. The elpehant is a Superior Fighter. As Galation chosen the elephant now has howdah and two additional crewmen, armed with bows or javelins, for 12 points.",
+          "category": "Elephants",
+          "type": "Elephants",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+             {
+              "name": "Bow",
+              "disables": "Javelins",
+              "applyToAllUnits": true,
+              "pointsModifier": 0,
+              "targetProfile": "2 Extra Crewmen",
+              "equipmentAdded": ["Bow"],
+              "rulesAdded": ["2 Extra Crewmen"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "disables": "Bow",
+              "applyToAllUnits": true,
+              "pointsModifier": 0,
+              "targetProfile": "2 Extra Crewmen",
+              "equipmentAdded": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Elephant",
+              "stats": {
+                "D": 3,
+                "C": 4
+              },
+              "pointsPerBase": 68,
+              "specialRules": ["Terror","Superior Fighters"]
+            },
+            {
+              "name": "Crewmen",
+              "stats": {
+                "D": 4,
+                "C": 7,
+                "baseEquipment": ["Pike","Light Armour"],
+				"specialRules": ["Howdah"]
+              },
+              "pointsPerBase": 0
+            },
+			  {
+              "name": "2 Extra Crewmen",
+              "stats": {
+                "D": 4,
+                "C": 7,
+				"specialRules": ["Howdah"]
               },
               "pointsPerBase": 0
             },
