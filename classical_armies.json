@@ -17599,7 +17599,7 @@
         {
           "id": "macedonian_successor_macedonian_companions",
           "name": "Macedonian Companions",
-          "description": "Macedonian Companions have light armour and spear and may upgrade to heavy armour (+1). Superior Fighters. One unit may be Stubborn (+2).",
+          "description": "Macedonian Companions have light armour and spear and may upgrade to heavy armour (+1). Superior Fighters. One unit may be Stubborn (+2). May be Used to Elephants (+1).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 5,
@@ -17646,7 +17646,7 @@
         {
           "id": "macedonian_successor_macedonian_and_greek_cavalry",
           "name": "Macedonian and Greek Cavalry",
-          "description": "Macedonian and Greek Cavalry have light armour and spear and may upgrade to heavy armour (+1). ",
+          "description": "Macedonian and Greek Cavalry have light armour and spear and may upgrade to heavy armour (+1). May be Used to Elephants (+1).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 5,
@@ -17682,7 +17682,7 @@
         {
           "id": "macedonian_successor_greek_and_aetolian_cavalry",
           "name": "Greek and Aetolian Cavalry",
-          "description": "Greek and Aetolian Cavalry have javelins. Skirmishers. May have spears (+1).",
+          "description": "Greek and Aetolian Cavalry have javelins. Skirmishers. May have spears (+1). May be Used to Elephants (+1).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 6,
