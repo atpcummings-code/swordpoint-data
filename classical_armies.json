@@ -18953,8 +18953,8 @@
         }, 
         {
           "id": "eumenid_successor_light_cavalry",
-          "name": "Greek Cavalry",
-          "description": "Greek Cavalry have javelins and spears. Skirmishers. Parthian SHot.",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins and spears. Skirmishers. Parthian SHot.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 6,
