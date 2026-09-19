@@ -18701,7 +18701,7 @@
 "armyValidation": [],
 "unitCountValidation": [
 
-{ "ids": ["eumenid_successor_seasoned_phalangites","eumenid_successor_seasoned_phalangites"], "count": 1, "expression": "greaterThanOrEqual" }
+{ "ids": ["eumenid_successor_seasoned_phalangites","eumenid_successor_phalangites"], "count": 1, "expression": "greaterThanOrEqual" }
 ],		  
  	"categories": [
         {
