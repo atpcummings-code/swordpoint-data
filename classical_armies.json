@@ -18070,10 +18070,11 @@
               "stats": {
                 "D": 5,
                 "C": 7,
-                "baseEquipment": ["Pike","Light Armour",],
+                "baseEquipment": ["Pike","Light Armour"]
               },
               "pointsPerBase": 0
             },
+			  
             {
               "name": "Mahout",
               "stats": {
