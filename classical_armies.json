@@ -18926,7 +18926,30 @@
           "maxBases": 6,
           "baseEquipment": [],
           "specialRules": ["Skirmishers","Superior Shooters","Parthian Shot"],
-          "optionalEquipment": []
+          "optionalEquipment": [
+			  {
+              "name": "Bow",
+			  "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Javelins",
+			  "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
         }, 
         {
           "id": "eumenid_successor_light_cavalry",
