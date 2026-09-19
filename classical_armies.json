@@ -18347,7 +18347,7 @@
             {
               "name": "Spear",
               "disables": "Exchange Javelins for Spear",
-              "pointsModifier": `,
+              "pointsModifier": 1,
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": [],
               "rulesAdded": [],
