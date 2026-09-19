@@ -19846,6 +19846,377 @@
 		  ]
         },
 
+	  "twilight_of_greece": {
+      "armyName": "Twilight of Greece - 300 BC to 146 BC",
+"armyValidation": [],
+"unitCountValidation": [
+
+{ "ids": ["twilight_of_greece_phalangites","twilight_of_greece_thureophoroi"], "count": 1, "expression": "greaterThanOrEqual" }
+],		  
+ 	"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+      {
+          "id": "Allies",
+          "name": "Allies",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        }
+      ],
+      "units": [
+        {
+          "id": "twilight_of_greece_strategos",
+          "name": "Strategos",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "twilight_of_greece_hipparch",
+          "name": "Hipparch",
+          "excludes": ["twilight_of_greece_hipparch"],
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+ {
+          "id": "twilight_of_greece_taxiarch",
+          "name": "Taxiarch",
+          "excludes": ["twilight_of_greece_taxiarch"],
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },      
+        
+        {
+          "id": "twilight_of_greece_line_cavalry",
+          "name": "Line Cavalry",
+          "description": "Line Cavalry have light armour and spear. May upgrade to heavy armour (+1). They may have shield (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },  
+       
+         {
+          "id": "twilight_of_greece_tarentine_cavalry",
+          "name": "Tarentine Cavalry",
+          "description": "Tarentine Cavalry have javelins and large spears. Skirmishers. Superior Shooters. Parthian SHot.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Large Shield","Javelins"],
+          "specialRules": ["Skirmishers","Parthian Shot","Superior Shooters"],
+          "optionalEquipment": []
+        },
+         {
+          "id": "twilight_of_greece_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins and shield.. Skirmishers. Parthian Shot. ",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Parthian Shot"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "twilight_of_greece_agema",
+          "name": "Agema",
+          "description": "Agema have pike and shield. Superior Fighters. Trained Phalanx.They may instead be fielded with spear and large shield as Hoplites at the same points cost. Either variant may have light armour (+2). May be fielded as Open Order (no longer Trained Phalanx) with spear, javelins and shield at 18 points per base. They may still have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield"],
+          "specialRules": ["Close Order","Superior Fighters","Trained Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Deployed as Hoplites",
+              "disables": "Open Order",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear","Javelins","Large Shield"],
+              "equipmentRemoved": ["Pike", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": ["Trained Phalanx"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Open Order"
+              "disables": "Deployed as Hoplites",,
+              "pointsModifier": -*10,
+              "equipmentAdded": ["Spear","Large Shield"],
+              "equipmentRemoved": ["Pike", "Shield"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "twilight_of_greece_phalangites",
+          "name": "Phalangites",
+          "description": "Phalangites have pike and shield. Trained Phalanx. May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": [
+          
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "twilight_of_greece_thureophoroi",
+          "name": "Thureophoroi",
+          "description": "Thureophoroi have javelins, spear and shield. Open Order. 0-2 units may have light armour (+2) as Thorakitai. May be fielded in Close Order at a cost of 16 points per base, or  may be fielded as Skirmishers at a cost of eight points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Spear","Shield"],
+          "specialRules": ["open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "maxUnits": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Close Order",
+              "disables": "Skirmishers",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Close Order",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "twilight_of_greece_hoplites",
+          "name": "Hoplites",
+          "description": "Hoplites have spear and large shield. Trained Phalanx. They may have light armour (+2) ",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "maxUnits": 2,
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "twilight_of_greece_mercenaries",
+          "name": "Mercenaries",
+          "description": "Mercenaries have javelin and shield. Skirmishers. Inferior Fighters.  May replace javelins and shield with bow or sling (-1)",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "twilight_of_greece_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelin and shield. Skirmishers. Inferior Fighters. Down grade Skirmishers to levies (-1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Levies",
+              "pointsModifier": -1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Levies"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        }
+		  ]
+        },
 	  
    "pergamene": {
              "armyName": "Pergamene - 281 BC to 133 BC",
