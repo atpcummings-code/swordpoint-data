@@ -17514,7 +17514,7 @@
 
   { "type": "categoryCompositionOverride", "ifUnitIds": ["macedonian_succeessor_philipii"], "targetCategory": "Cavalry", "override": { "constraintType": "percentage", "min": 0, "max": 25 } }
   ],
-unitCountValidation[
+"unitCountValidation": [
 
 { "ids": ["macedonian_succeessor_veterans", "macedonian_succeessor_seasoned_phalangites", "macedonian_succeessor_phalangites"], "count": 1, "expression": "greaterThanOrEqual" }
 ],		  
