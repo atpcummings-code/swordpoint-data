@@ -17512,11 +17512,11 @@
       "armyName": "Macedon Successor - 323 BC to 260 BC",
 "armyValidation": [
 
-  { "type": "categoryCompositionOverride", "ifUnitIds": ["macedonian_succeessor_philipii"], "targetCategory": "Cavalry", "override": { "constraintType": "percentage", "min": 0, "max": 25 } }
+  { "type": "categoryCompositionOverride", "ifUnitIds": ["macedonian_successor_philipii"], "targetCategory": "Cavalry", "override": { "constraintType": "percentage", "min": 0, "max": 25 } }
   ],
 "unitCountValidation": [
 
-{ "ids": ["macedonian_succeessor_veterans", "macedonian_succeessor_seasoned_phalangites", "macedonian_succeessor_phalangites"], "count": 1, "expression": "greaterThanOrEqual" }
+{ "ids": ["macedonian_successor_veterans", "macedonian_successor_seasoned_phalangites", "macedonian_successor_phalangites"], "count": 1, "expression": "greaterThanOrEqual" }
 ],		  
  	"categories": [
         {
@@ -17551,7 +17551,7 @@
       ],
       "units": [
         {
-          "id": "macedonian_succeessor_king_or_strategos",
+          "id": "macedonian_successor_king_or_strategos",
           "name": "King or Strategos",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -17566,9 +17566,9 @@
           "optionalEquipment": []
         },
         {
-          "id": "macedonian_succeessor_hipparch",
+          "id": "macedonian_successor_hipparch",
           "name": "Hipparch",
-          "excludes": ["macedonian_succeessor_hipparch"],
+          "excludes": ["macedonian_successor_hipparch"],
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
@@ -17581,9 +17581,9 @@
           "optionalEquipment": []
         },
  {
-          "id": "macedonian_succeessor_taxiarch",
+          "id": "macedonian_successor_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["macedonian_succeessor_taxiarch"],
+          "excludes": ["macedonian_successor_taxiarch"],
           "description": "",
           "category": "Commanders",
           "type": "General",
@@ -17596,7 +17596,7 @@
           "optionalEquipment": []
         },      
         {
-          "id": "macedonian_succeessor_macedonian_companions",
+          "id": "macedonian_successor_macedonian_companions",
           "name": "Macedonian Companions",
           "description": "Macedonian Companions have light armour and spear and may upgrade to heavy armour (+1). Superior Fighters. One unit may be Stubborn (+2).",
           "category": "Cavalry",
@@ -17643,7 +17643,7 @@
           ]
         },
         {
-          "id": "macedonian_succeessor_macedonian_and_greek_cavalry",
+          "id": "macedonian_successor_macedonian_and_greek_cavalry",
           "name": "Macedonian and Greek Cavalry",
           "description": "Macedonian and Greek Cavalry have light armour and spear and may upgrade to heavy armour (+1). ",
           "category": "Cavalry",
@@ -17679,7 +17679,7 @@
           ]
         },
         {
-          "id": "macedonian_succeessor_greek_and_aetolian_cavalry",
+          "id": "macedonian_successor_greek_and_aetolian_cavalry",
           "name": "Greek and Aetolian Cavalry",
           "description": "Greek and Aetolian Cavalry have javelins. Skirmishers. May have spears (+1).",
           "category": "Cavalry",
@@ -17714,7 +17714,7 @@
           ]
         },       
         {
-          "id": "macedonian_succeessor_veterans",
+          "id": "macedonian_successor_veterans",
           "name": "Veterans",
           "description": "Veterans have pike and shield. Superior Fighters. Trained Phalanx. May have light armour (+2). May be Drilled (+3) and Veteran (+2). One unit may be Stubborn (+2). There may be one unit of Veterans for every unit of other Phalangites in the army.",
           "category": "Infantry",
@@ -17725,7 +17725,7 @@
           "minBases": 3,
           "maxBases": 12,
           "requires": {
-            "unitId": ["macedonian_succeessor_phalangites","macedonian_succeessor_seasoned_phalangites"],
+            "unitId": ["macedonian_successor_phalangites","macedonian_successor_seasoned_phalangites"],
             "count": 1,
             "name": ["Phalangites","Seasoned Phalangites"],
             "perUnit": true
@@ -17777,7 +17777,7 @@
           ]
         },
         {
-          "id": "macedonian_succeessor_seasoned_phalangites",
+          "id": "macedonian_successor_seasoned_phalangites",
           "name": "Seasoned Phalangites",
           "description": "Seasoned Phalangites have pike and shield. Trained Phalanx. May have light armour (+2). May be Drilled (+3).",
           "category": "Infantry",
@@ -17813,7 +17813,7 @@
           ]
         },
         {
-          "id": "macedonian_succeessor_phalangites",
+          "id": "macedonian_successor_phalangites",
           "name": "Phalangites",
           "description": "Phalangites have pike and shield. Trained Phalanx.",
           "category": "Infantry",
@@ -17828,7 +17828,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "macedonian_succeessor_greek_hoplites",
+          "id": "macedonian_successor_greek_hoplites",
           "name": "Greek Hoplites",
           "description": "Greek Hoplites have spear and large shield. Trained Phalanx. May have light armour (+2).",
           "category": "Infantry",
@@ -17855,7 +17855,7 @@
 		  ]
         },
         {
-          "id": "macedonian_succeessor_thracians",
+          "id": "macedonian_successor_thracians",
           "name": "Thracians",
           "description": "Thracians have javelins and shield. Open Order. Warband. May have spear (free) or halberd (+2).",
           "category": "Infantry",
@@ -17893,7 +17893,7 @@
 		  ]
         },
         {
-          "id": "macedonian_succeessor_thureophoroi",
+          "id": "macedonian_successor_thureophoroi",
           "name": "Thureophoroi",
           "description": "Thureophoroi have javelins, spear and shield. Open Order. May be fielded in Close Order at a cost of 16 points per base, or  may be fielded as Skirmishers at a cost of eight points per base.",
           "category": "Infantry",
@@ -17931,7 +17931,7 @@
 		  ]
         },
         {
-          "id": "macedonian_succeessor_aetolians",
+          "id": "macedonian_successor_aetolians",
           "name": "Aetolians",
           "description": "Aetolians have throwing spear and shield. Open Order. Warband.",
           "category": "Infantry",
@@ -17946,7 +17946,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "macedonian_succeessor_galations",
+          "id": "macedonian_successor_galations",
           "name": "Galations",
           "description": "Galations have throwing spear and shield. Warband. Stubborn",
           "category": "Infantry",
@@ -17962,7 +17962,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "macedonian_succeessor_cretans",
+          "id": "macedonian_successor_cretans",
           "name": "Cretans",
           "description": "Cretans have bow and shield. Superior Shooters. Skirmishers.",
           "category": "Infantry",
@@ -17978,7 +17978,7 @@
           "optionalEquipment": []
         },
 {
-          "id": "macedonian_succeessor_mercenaries",
+          "id": "macedonian_successor_mercenaries",
           "name": "Mercenaries",
           "description": "Mercenaries have javelin and shield. Skirmishers. Inferior Fighters.  Every second unit of Mercenaries may replace javelins and shield with bow or sling (-1).",
           "category": "Infantry",
@@ -18018,7 +18018,7 @@
           ]
         },
         {
-          "id": "macedonian_succeessor_skirmishers",
+          "id": "macedonian_successor_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelin and shield. Skirmishers. Inferior Fighters. Down grade Skirmishers to levies and Inferior shooters (-2).",
           "category": "Infantry",
@@ -18044,7 +18044,7 @@
           ]
         },
         {
-          "id": "macedonian_succeessor_elephant",
+          "id": "macedonian_successor_elephant",
           "name": "Elephant",
           "description": "The mahout is unarmed; the single crewman has light armour and pike. Teh lepehant is a Superior Fighter. If galations are usd , add a howdah and two additional crewmen, armed with bows or javelins, for 12 points.",
           "category": "Elephants",
