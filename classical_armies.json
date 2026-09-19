@@ -20034,7 +20034,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Open Order"
+              "name": "Open Order",
               "disables": "Deployed as Hoplites",
               "pointsModifier": -10,
               "equipmentAdded": ["Spear","Large Shield"],
