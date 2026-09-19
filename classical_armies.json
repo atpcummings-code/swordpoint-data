@@ -18070,8 +18070,9 @@
               "stats": {
                 "D": 5,
                 "C": 7,
-                "baseEquipment": ["Pike","Light Armour"]
+                
               },
+				"baseEquipment": ["Pike","Light Armour"],
               "pointsPerBase": 0
             },
 			  
@@ -18135,9 +18136,9 @@
               "stats": {
                 "D": 4,
                 "C": 7,
-                "baseEquipment": ["Pike","Light Armour"],
-				"specialRules": ["Howdah"]
-              },
+                },
+			"baseEquipment": ["Pike","Light Armour"],
+			"specialRules": ["Howdah"],
               "pointsPerBase": 0
             },
 			  {
@@ -18145,8 +18146,8 @@
               "stats": {
                 "D": 4,
                 "C": 7,
-				"specialRules": ["Howdah"]
-              },
+				},
+			"specialRules": ["Howdah"],
               "pointsPerBase": 0
             },
             {
