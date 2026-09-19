@@ -20035,7 +20035,7 @@
             },
             {
               "name": "Open Order"
-              "disables": "Deployed as Hoplites",,
+              "disables": "Deployed as Hoplites",
               "pointsModifier": -*10,
               "equipmentAdded": ["Spear","Large Shield"],
               "equipmentRemoved": ["Pike", "Shield"],
