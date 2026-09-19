@@ -18098,7 +18098,7 @@
               },
               "pointsPerBase": 56,
               "specialRules": [
-                "Terror"
+                "Terror","Superior Fighters"
               ]
             },
             {
@@ -18106,7 +18106,7 @@
               "stats": {
                 "D": 5,
                 "C": 7,
-                "equipmentAdded": ["Pike","Light Armour",],
+                "baseEquipment": ["Pike","Light Armour",],
               },
               "pointsPerBase": 0
             },
