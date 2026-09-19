@@ -18103,7 +18103,7 @@
               "pointsModifier": 0,
               "targetProfile": "2 Extra Crewmen",
               "equipmentAdded": ["Bow"],
-              "rulesAdded": ["2 Extra Crewmen"],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
