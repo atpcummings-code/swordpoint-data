@@ -23622,7 +23622,7 @@
           "id": "bactrian_greek_taxiarch",
           "name": "Taxiarch",
           "excludes": ["bactrian_greek_taxiarch"],
-          "description": "ay ride a horse.",
+          "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
           "attacks": "+2",
