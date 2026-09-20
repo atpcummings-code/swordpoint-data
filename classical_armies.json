@@ -22644,7 +22644,7 @@
           "name": "Allies",
            "constraintType": "percentage",
           "min": 0,
-          "max": 200
+          "max": 20
         }
       
       ],
