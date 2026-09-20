@@ -20811,7 +20811,7 @@
           "type": "Elephants",
           "minBases": 1,
           "maxBases": 1,
-		 "excludesIf": [ { "unitIds": ["seleucid_successor_early_macedonian_agema","seleucid_successor_early_line_cavalry"], "hasEquipment": ["Cataphracts (After 205 BC only)"], "count": 1 } ],
+		 "excludesIf": { "unitIds": ["seleucid_successor_early_macedonian_agema","seleucid_successor_early_line_cavalry"], "hasEquipment": ["Cataphracts (After 205 BC only)"], "count": 1 },
           "optionalEquipment": [],
           "subProfiles": [
             {
