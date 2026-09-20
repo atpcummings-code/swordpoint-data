@@ -20217,6 +20217,724 @@
         }
 		  ]
         },
+
+ "seleucid_successor_early": {
+      "armyName": "Seleucid Successor - 300 BC to 147 BC",
+"armyValidation": [],
+"unitCountValidation": [
+
+{ "ids": ["seleucid_successor_early_seasoned_phalangites","seleucid_successor_early_settler_local_phalangites"], "count": 1, "expression": "greaterThanOrEqual" }
+],		  
+ 	"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+      {
+          "id": "Elephants",
+          "name": "Elephants",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 500,
+          "countPerThreshold": 1,
+          "rounding": "down",
+        },
+      {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        }
+      ],
+      "units": [
+        {
+          "id": "seleucid_successor_early_strategos",
+          "name": "Strategos",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "seleucid_successor_early_hipparch",
+          "name": "Hipparch",
+          "excludes": ["seleucid_successor_early_hipparch"],
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+ {
+          "id": "seleucid_successor_early_taxiarch",
+          "name": "Taxiarch",
+          "excludes": ["seleucid_successor_early_taxiarch"],
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },      
+        {
+          "id": "seleucid_successor_early_macedonian_companions",
+          "name": "Macedonian Companions",
+          "description": "Macedonian Companions have light armour and spear, may upgrade to heavy armour (+1) and half-barding (+1). Superior Fighters. Used to Elephants.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 9,
+          "pointsPerBase": 24,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Spear"],
+          "specialRules": ["Open Order", "Superior Fighters","Used to Elephants"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half-barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half-barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+         {
+          "id": "seleucid_successor_early_macedonian_agema",
+          "name": "Macedonian Agema",
+          "description": "Macedonian Agema have light armour and spear. Superior Fighters. May upgrade to heavy armour (+1) and half-barding (+1). Used to Elephants.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Spear"],
+          "specialRules": ["Open Order", "Superior Fighters","Used to Elephants"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half-barding",
+              "disables": "Half-barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half-barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Cataphracts (After 205 BC only)",
+              "disables": ["Half-barding","Heavy Armour"],
+              "enableHidden": "Kontos",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Full Metal Barding","Cataphract Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order", "Massed Cavalry","Cataphracts"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Kontos",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Kontos"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+        {
+          "id": "seleucid_successor_early_line_cavalry",
+          "name": "Line Cavalry",
+          "description": "Line Cavalry have light armour and spear. May upgrade to heavy armour (+1) and half-barding (+1). Used to Elephants.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear"],
+          "specialRules": ["Open Order","Used to Elephants"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "disables": "Cataphracts (After 205 BC only)",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half-barding",
+              "disables": "Cataphracts (After 205 BC only)",
+              "disables": "Half-barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half-barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Cataphracts (After 205 BC only)",
+              "disables": ["Half-barding","Heavy Armour"],
+              "enableHidden": "Kontos",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Full Metal Barding","Cataphract Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order", "Massed Cavalry","Cataphracts"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Kontos",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Kontos"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        }, 
+        
+        {
+          "id": "seleucid_successor_early_dahae_scythians",
+          "name": "Dahae/Scythians",
+          "description": "Dahae/Scythians have javelins or bow. Skirmishers. Superior Shooters. Parthian Shot. Used to Elephants.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [],
+          "specialRules": ["Skirmishers","Superior Shooters","Parthian Shot","Used to Elephants"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+			  "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Javelins",
+			  "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }, 
+        {
+          "id": "seleucid_successor_early_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins and spears. Skirmishers. Parthian Shot. May have spears (+1). Used to Elephants.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Spear"],
+          "specialRules": ["Skirmishers","Parthian Shot","Used to Elephants"],
+          "optionalEquipment": []
+        },
+                 {
+          "id": "seleucid_successor_early_argyraspids",
+          "name": "Argyraspids",
+          "description": "Argyraspidshave pike and shield. Superior Fighters. Stubborn. Trained Phalanx. May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 30,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield"],
+          "specialRules": ["Close Order","Superior Fighters","Trained Phalanx","Stubborn"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "seleucid_successor_early_phalangites",
+          "name": "Phalangites",
+          "description": "Phalangites have pike and shield. Trained Phalanx. May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "seleucid_successor_early_thorakitai",
+          "name": "Thorakitai",
+          "description": "Thorakitai have light armour, javelins, spear and shield. Open Order. May be fielded in Close Order at a cost of 18 points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Spear","Shield","Light Armour"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Close Order",
+              "disables": "Skirmishers",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+{
+          "id": "seleucid_successor_early_thureophoroi",
+          "name": "Thureophoroi",
+          "description": "Thureophoroi have javelins, spear and shield. Open Order. May be fielded in Close Order at a cost of 16 points per base, or  may be fielded as Skirmishers at a cost of eight points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Spear","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Close Order",
+              "disables": "Skirmishers",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Close Order",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+        
+        {
+          "id": "seleucid_successor_early_levy_archers",
+          "name": "Levy Archers",
+          "description": "Levy Archers have hand weapon and bow. Levies.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Close Order","Levies"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "seleucid_successor_early_cretans",
+          "name": "Cretans",
+          "description": "Cretans have bow and shield. Superior Shooters. Skirmishers.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 10,
+          "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 4,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Skirmishers","Superior Shooters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "seleucid_successor_elephant_escorts",
+          "name": "Elephant Escorts",
+          "description": "Elephant Escorts have javelins and shield. Inferior Fighters. Skirmishers. May replace javelins and shield with bow or sling (-1). Escorts.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers", "Inferior Fighters","Escorts"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },    
+        {
+          "id": "seleucid_successor_mercenaries",
+          "name": "Mercenaries",
+          "description": "Mercenaries have javelins and shield. Inferior Fighters. Skirmishers. May replace javelins and shield with bow or sling (-1).",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        }, 
+        {
+          "id": "seleucid_successor_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers. May replace javelins and shield with bow or sling (-1).",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        }, 
+        
+        {
+          "id": "seleucid_successor_early_elephant_early",
+          "name": "Indian Elephant (E)",
+          "description": "The mahout is unarmed; the single crewman has light armour and pike. Elephants are Superior Fighters.",
+          "category": "Elephants",
+          "type": "Elephants",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [],
+          "subProfiles": [
+            {
+              "name": "Elephant",
+              "stats": {
+                "D": 3,
+                "C": 4
+              },
+              "pointsPerBase": 56,
+              "specialRules": [
+                "Terror","Superior Fighters"
+              ]
+            },
+            {
+              "name": "Crewmen",
+              "stats": {
+                "D": 5,
+                "C": 7,
+                
+              },
+				"baseEquipment": ["Pike","Light Armour"],
+              "specialRules": [],
+              "pointsPerBase": 0
+            },
+			  
+            {
+              "name": "Mahout",
+              "stats": {
+                "D": 6,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+        {
+          "id": "seleucid_successor_early_elephant_late",
+          "name": "Indian Elephant (L)",
+          "description": "Unarmed mahout abd two crewmen in howdah with light armour and javelins. One crewman may exchange javelins for bow (free). May have barding (+4) and a third crewman (+4). Elephants are Superior Fighters.",
+          "category": "Elephants",
+          "type": "Elephants",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "pointsModifier": 4,
+              "targetProfile": "Crewmen",
+              "equipmentAdded": ["1 Extra Crew"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Barding",
+              "pointsModifier": 4,
+              "targetProfile": "Elephant",
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+          ],
+          "subProfiles": [
+            {
+              "name": "Elephant",
+              "stats": {
+                "D": 3,
+                "C": 4
+              },
+              "pointsPerBase": 64,
+              "specialRules": ["Terror","Superior Fighters"]
+            },
+            {
+              "name": "Crewmen",
+              "stats": {
+                "D": 4,
+                "C": 7,
+                
+              },
+				"baseEquipment": ["Pike","Light Armour"],
+              "specialRules": ["Howdah"],
+              "pointsPerBase": 0
+            },
+			  
+            {
+              "name": "Mahout",
+              "stats": {
+                "D": 6,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+        {
+          "id": "seleucid_successor_early_scythed_chariots",
+          "name": "Scythed Chariots",
+          "description": "Driver has heavy armour. Scythed Chariot.",
+          "maxCountAllowed": 3,
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [],
+          "subProfiles": [
+            {
+              "name": "Scythed Chariot",
+              "stats": {
+                "D": 3
+              },
+              "pointsPerBase": 25,
+              "specialRules": ["Scythed Chariot","Used to Elephants"]
+            },
+            {
+              "name": "Driver",
+              "stats": {
+                "C": 7
+              },
+				"baseEquipment": [],
+              "specialRules": [],
+              "pointsPerBase": 0
+            }
+          ]
+        }
+		  ]
+        },
 	  
    "pergamene": {
              "armyName": "Pergamene - 281 BC to 133 BC",
