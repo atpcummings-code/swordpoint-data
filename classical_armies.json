@@ -20805,13 +20805,13 @@
         
         {
           "id": "seleucid_successor_early_elephant_early",
-          "name": "Indian Elephant (E)2",
+          "name": "Indian Elephant (E)",
           "description": "The mahout is unarmed; the single crewman has light armour and pike. Elephants are Superior Fighters. Only available before 290 BC.",
           "category": "Elephants",
           "type": "Elephants",
           "minBases": 1,
           "maxBases": 1,
-		 "excludesIf": { "unitIds": ["seleucid_successor_early_macedonian_agema","seleucid_successor_early_line_cavalry"], "hasEquipment": ["Cataphracts (After 205 BC only)"], "count": 1 },
+		  "excludesIf": [ { "unitIds": ["seleucid_successor_early_macedonian_agema","seleucid_successor_early_line_cavalry"], "hasEquipment": ["Cataphracts"], "count": 1 }, { "unitIds": ["seleucid_successor_early_argyraspids"], "hasEquipment": ["Large Shields"], "count": 1 },{ "unitIds": ["seleucid_successor_early_elephant_late"], "count": 1 } ],
           "optionalEquipment": [],
           "subProfiles": [
             {
