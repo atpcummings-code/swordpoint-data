@@ -22615,10 +22615,7 @@
 "later_macedonian": {
       "armyName": "Later Macedonian - 260 BC to 148 BC",
 "armyValidation": [],
-"unitCountValidation": [
-
-{ "ids": ["later_macedonian_phalangites","later_macedonian_egyptian_phalangites"], "count": 1, "expression": "greaterThanOrEqual" }
-],	
+"unitCountValidation": [],	
   
 "categories": [
         {
