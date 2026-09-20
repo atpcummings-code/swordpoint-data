@@ -20988,7 +20988,7 @@
       ],
       "units": [
         {
-          "id": "seleucid_successor_early_strategos",
+          "id": "seleucid_successor_late_strategos",
           "name": "Strategos",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -21003,9 +21003,9 @@
           "optionalEquipment": []
         },
         {
-          "id": "seleucid_successor_early_hipparch",
+          "id": "seleucid_successor_late_hipparch",
           "name": "Hipparch",
-          "excludes": ["seleucid_successor_early_hipparch"],
+          "excludes": ["seleucid_successor_late_hipparch"],
           "description": "Rides a horse.",
           "category": "Commanders",
           "type": "General",
@@ -21018,9 +21018,9 @@
           "optionalEquipment": []
         },
  {
-          "id": "seleucid_successor_early_taxiarch",
+          "id": "seleucid_successor_late_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["seleucid_successor_early_taxiarch"],
+          "excludes": ["seleucid_successor_late_taxiarch"],
           "description": "",
           "category": "Commanders",
           "type": "General",
@@ -21033,7 +21033,7 @@
           "optionalEquipment": []
         },      
         {
-          "id": "seleucid_successor_early_macedonian_companions",
+          "id": "seleucid_successor_late_macedonian_companions",
           "name": "Macedonian Companions",
           "description": "Macedonian Companions have light armour and spear, may upgrade to heavy armour (+1) and half-barding (+1). Superior Fighters. Used to Elephants.",
           "category": "Cavalry",
@@ -21070,7 +21070,7 @@
           ]
         },
          {
-          "id": "seleucid_successor_early_macedonian_agema",
+          "id": "seleucid_successor_late_macedonian_agema",
           "name": "Macedonian Agema",
           "description": "Macedonian Agema have light armour and spear. Superior Fighters. May upgrade to heavy armour (+1) and half-barding (+1). Used to Elephants. May be Cataphracts (+4).",
           "category": "Cavalry",
@@ -21131,7 +21131,7 @@
           ]
         },
         {
-          "id": "seleucid_successor_early_line_cavalry",
+          "id": "seleucid_successor_late_line_cavalry",
           "name": "Line Cavalry",
           "description": "Line Cavalry have light armour and spear. May upgrade to heavy armour (+1) and half-barding (+1). Used to Elephants. May be Cataphracts (+4).",
           "category": "Cavalry",
@@ -21194,7 +21194,7 @@
         }, 
         
         {
-          "id": "seleucid_successor_early_dahae_scythians",
+          "id": "seleucid_successor_late_dahae_scythians",
           "name": "Dahae/Scythians",
           "description": "Dahae/Scythians have javelins or bow. Skirmishers. Superior Shooters. Parthian Shot. Used to Elephants.",
           "category": "Cavalry",
@@ -21232,7 +21232,7 @@
           ]
         }, 
         {
-          "id": "seleucid_successor_early_light_cavalry",
+          "id": "seleucid_successor_late_light_cavalry",
           "name": "Light Cavalry",
           "description": "Light Cavalry have javelins and spears. Skirmishers. Parthian Shot. May have spears (+1). Used to Elephants.",
           "category": "Cavalry",
@@ -21247,7 +21247,7 @@
           "optionalEquipment": []
         },
                  {
-          "id": "seleucid_successor_early_argyraspids",
+          "id": "seleucid_successor_late_argyraspids",
           "name": "Argyraspids",
           "description": "Argyraspidshave pike and shield. Superior Fighters. Stubborn. Trained Phalanx. May have light armour (+2). Optionally, May be fielded with light armour, heavy throwing spear and large shield at 31 points per base. They lose the Trained Phalanx rule.",
           "category": "Infantry",
@@ -21286,7 +21286,7 @@
           ]
         },
         {
-          "id": "seleucid_successor_early_phalangites",
+          "id": "seleucid_successor_late_phalangites",
           "name": "Phalangites",
           "description": "Phalangites have pike and shield. Trained Phalanx. May have light armour (+2).",
           "category": "Infantry",
@@ -21313,7 +21313,7 @@
           ]
         },
         {
-          "id": "seleucid_successor_early_thorakitai",
+          "id": "seleucid_successor_late_thorakitai",
           "name": "Thorakitai",
           "description": "Thorakitai have light armour, javelins, spear and shield. Open Order. May be fielded in Close Order at a cost of 18 points per base.",
           "category": "Infantry",
@@ -21340,7 +21340,7 @@
 		  ]
         },
 {
-          "id": "seleucid_successor_early_thureophoroi",
+          "id": "seleucid_successor_late_thureophoroi",
           "name": "Thureophoroi",
           "description": "Thureophoroi have javelins, spear and shield. Open Order. May be fielded in Close Order at a cost of 16 points per base, or  may be fielded as Skirmishers at a cost of eight points per base.",
           "category": "Infantry",
@@ -21378,7 +21378,7 @@
 		  ]
         },
         {
-          "id": "seleucid_successor_early_citizen_militia",
+          "id": "seleucid_successor_late_citizen_militia",
           "name": "Citizen Militia",
           "description": "Citizen Militia have javelins, spear and shield. Open Order/ May fight in Close Order costing 14 points per base. ",
           "category": "Infantry",
@@ -21405,7 +21405,7 @@
         },
         
         {
-          "id": "seleucid_successor_early_levy_archers",
+          "id": "seleucid_successor_late_levy_archers",
           "name": "Levy Archers",
           "description": "Levy Archers have hand weapon and bow. Levies.",
           "category": "Infantry",
@@ -21421,7 +21421,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "seleucid_successor_early_cretans",
+          "id": "seleucid_successor_late_cretans",
           "name": "Cretans",
           "description": "Cretans have bow and shield. Superior Shooters. Skirmishers.",
           "category": "Infantry",
@@ -21557,14 +21557,14 @@
           ]
         }, 
         {
-          "id": "seleucid_successor_early_elephant_late",
+          "id": "seleucid_successor_late_elephant_late",
           "name": "Indian Elephant (L)",
           "description": "Unarmed mahout abd two crewmen in howdah with light armour and javelins. One crewman may exchange javelins for bow (free). May have barding (+4) and a third crewman (+4). Elephants are Superior Fighters. This elephant is taken from 290 BC and later.",
           "category": "Elephants",
           "type": "Elephants",
           "minBases": 1,
           "maxBases": 1,
-		  "excludesIf": { "unitIds": ["seleucid_successor_early_elephant_early"], "count": 1 },
+		  "excludesIf": { "unitIds": ["seleucid_successor_late_elephant_early"], "count": 1 },
           "optionalEquipment": [
             {
               "name": "1 Extra Crew",
@@ -21622,7 +21622,7 @@
           ]
         },
         {
-          "id": "seleucid_successor_early_scythed_chariots",
+          "id": "seleucid_successor_late_scythed_chariots",
           "name": "Scythed Chariots",
           "description": "Driver has heavy armour. Scythed Chariot.",
           "maxCountAllowed": 3,
