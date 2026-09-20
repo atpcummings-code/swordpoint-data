@@ -22581,8 +22581,7 @@
           "baseEquipment": ["Bow","Shield"],
           "specialRules": ["Skirmishers","Superior Shooters"],
           "optionalEquipment": [
-
-            {
+			  {
               "name": "Bow",
               "disables": "Javelins and Shield",
               "pointsModifier": 0,
@@ -23575,10 +23574,10 @@
           "id": "Elephants",
           "name": "Elephants",
           "constraintType": "pointsRatio",
-          "pointsThreshold": 33,
+          "pointsThreshold": 333,
           "countPerThreshold": 1,
           "rounding": "down",
-        }
+        },
   {
           "id": "Allies",
           "name": "Allies",
