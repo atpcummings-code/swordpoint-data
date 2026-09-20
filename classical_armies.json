@@ -21655,7 +21655,7 @@
         },
 
 "ptolemaic_egyptian": {
-      "armyName": "Seleucid Successor (late) - 148 BC to 75 BC",
+      "armyName": "Ptolemaic Egyptian - 300 BC to 40 BC",
 "armyValidation": [],
 "unitCountValidation": [
 
@@ -22034,7 +22034,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "seleucid_successor_elephant_escorts",
+          "id": "ptolemaic_egyptian_elephant_escorts",
           "name": "Elephant Escorts",
           "description": "Elephant Escorts have javelins and shield. Skirmishers. Escorts. May replace javelins and shield with bow or sling (-1).",
           "category": "Infantry",
@@ -22074,7 +22074,7 @@
           ]
         },    
         {
-          "id": "seleucid_successor_mercenaries",
+          "id": "ptolemaic_egyptian_mercenaries",
           "name": "Mercenaries",
           "description": "Mercenaries have javelins and shield. Inferior Fighters. Skirmishers. May replace javelins and shield with bow or sling (-1).",
           "category": "Infantry",
@@ -22114,7 +22114,7 @@
           ]
         }, 
         {
-          "id": "seleucid_successor_skirmishers",
+          "id": "ptolemaic_egyptian_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers. May replace javelins and shield with bow or sling (-1).",
           "category": "Infantry",
