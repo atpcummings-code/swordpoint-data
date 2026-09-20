@@ -20540,12 +20540,24 @@
           "optionalEquipment": [
             {
               "name": "Light Armour",
+              "disables": "Optional deployment after 185 BC",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Optional deployment after 185 BC",
+              "disables": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour", "Heavy Throwing Spear", "large Shield"],
+              "equipmentRemoved": ["Pike","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": ["Trained Phalanx"],
+              "defenceModifier": -2,
               "cohesionModifier": 0
             }
           ]
