@@ -20816,6 +20816,7 @@
           "type": "Elephants",
           "minBases": 1,
           "maxBases": 1,
+		   "excludesIf": { "unitIds": ["seleucid_successor_early_elephant_late"], "count": 1 },
           "optionalEquipment": [],
           "subProfiles": [
             {
@@ -20859,6 +20860,7 @@
           "type": "Elephants",
           "minBases": 1,
           "maxBases": 1,
+		  "excludesIf": { "unitIds": ["seleucid_successor_early_elephant_early"], "count": 1 },
           "optionalEquipment": [
             {
               "name": "1 Extra Crew",
