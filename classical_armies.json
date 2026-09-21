@@ -3,8 +3,8 @@
  "scythian": {
       "armyName": "Scythian - 700 BC to 300 BC",
     "armyValidation": [ 
-      { "ids": ["scythian_warriors"], "expressEion": "greaterThanOrEqual", "ratio": 2, "compareWith": ["scythian_senior_nobles", "scythian_nobles"], "countBy": "units" },
-      { "ids": ["scythian_warriors"], "expressiEon": "greaterThan", "ratio": 1, "compareWith": ["scythian_senior_nobles", "scythian_nobles"] } 
+      { "ids": ["scythian_warriors"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["scythian_senior_nobles", "scythian_nobles"], "countBy": "units" },
+      { "ids": ["scythian_warriors"], "expression": "greaterThan", "ratio": 1, "compareWith": ["scythian_senior_nobles", "scythian_nobles"] } 
     ],
     "categories": [
         {
@@ -22534,12 +22534,13 @@
         {
           "id": "pyrrhic_elephant_early",
           "name": "Indian Elephant",
-          "description": "The mahout is unarmed; the two crewman has light armour and javelins and fighgt from an howdah. The elephant is a Superior Fighters.",
+          "description": "The mahout is unarmed; the two crewman has light armour and javelins and fight from an howdah. The elephant is a Superior Fighters.",
           "category": "Elephants",
           "type": "Elephants",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [],
+			"minCountAllowed": 1,
           "subProfiles": [
             {
               "name": "Elephant",
