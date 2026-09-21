@@ -21671,6 +21671,8 @@
         {
           "id": "Infantry",
           "name": "Infantry",
+			"description": "If any preent the army must include a Wagon Tabor.",
+          "constraintType": "percentage",
           "constraintType": "percentage",
           "min": 0,
           "max": 15
@@ -21678,6 +21680,8 @@
         {
           "id": "Cavalry",
           "name": "Cavalry",
+			"description": "Nobles may not outnumber the total(bases) of all other cavalry.",
+          "constraintType": "percentage",
           "constraintType": "percentage",
           "min": 0,
           "max": 100
