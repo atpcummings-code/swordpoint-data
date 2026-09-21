@@ -22046,8 +22046,8 @@
 "armyValidation": [],
    "unitCountValidation": [ 
 { "ids": ["pyrrhic_rhodian_slingers"], "compareWith": ["pyrrhic_italian_skirmishers"], "expression": "lessThan", "ratio": 1, "countBy": "bases" }, 
-{ "ids": ["pyrrhic_rhodian_slingers"], "compareWith": ["pyrrhic_cretan_archers"], "expression": "lessThanl", "ratio": 1, "countBy": "bases" },
-{ "ids": ["pyrrhic_rhodian_slingers"], "compareWith": ["pyrrhic_mercenary_skirmishers"], "expression": "lessThanl", "ratio": 1, "countBy": "bases" }
+{ "ids": ["pyrrhic_rhodian_slingers"], "compareWith": ["pyrrhic_cretan_archers"], "expression": "lessThan", "ratio": 1, "countBy": "bases" },
+{ "ids": ["pyrrhic_rhodian_slingers"], "compareWith": ["pyrrhic_mercenary_skirmishers"], "expression": "lessThan", "ratio": 1, "countBy": "bases" }
 ],
 "categories": [
         {
