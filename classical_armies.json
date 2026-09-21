@@ -21656,6 +21656,10 @@
 
 "sarmatian": {
       "armyName": "Sarmatian - 300 BC to 200 AD",
+	"unitCountValidation": [
+
+{ "ids": ["sarmatian_nobles"], "compareWith": ["sarmatian_light_cavalry", "sarmatian_horse_archers"], "expression": "lessThanOrEqual", "ratio": 1, "countBy": "bases" }
+],
       "categories": [
         {
           "id": "Commanders",
