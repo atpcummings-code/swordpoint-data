@@ -22501,9 +22501,9 @@
           "optionalEquipment": []
         }, 
         {
-          "id": "pyrrhic_italiots",
-          "name": "Italiots",
-          "description": "Italiots light armour, large shield and spear. Phalanx.",
+          "id": "pyrrhic_italiotes",
+          "name": "Italiotes",
+          "description": "Italiotes light armour, large shield and spear. Phalanx.",
           "category": "Allies",
           "type": "Infantry",
           "defence": 4,
