@@ -22357,7 +22357,7 @@
           "baseEquipment": ["Javelins","Shield"],
           "specialRules": ["Open Order","Evade"],
           "optionalEquipment": [
-            {{
+            {
               "name": "Skirmishers",
               "pointsModifier": -6,
               "equipmentAdded": [],
