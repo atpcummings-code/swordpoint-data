@@ -21962,6 +21962,11 @@
           "defence": 7,
           "cohesion": 5,
           "pointsPerBase": 4,
+			"requires": {
+            "unitId": "sarmatian_wagons",
+            "count": 1,
+            "name": "Wagons"
+          },
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": ["Bow"],
