@@ -21633,7 +21633,7 @@
         {
           "id": "sarmatian_nobles",
           "name": "Nobles",
-          "description": "Nobles have a kontos. Superior Fighters. Special Deployment. Shock Cavalry. May have light armour (+1), heavy armour (+2), bow (+1) and cloth barding (-2). Troops with CLoth Barding are Massed Cavalry but no longer Shock Cavalry.",
+          "description": "Nobles have a kontos. Superior Fighters. Special Deployment. Shock Cavalry. May have light armour (+1), heavy armour (+2), bow (+1) and cloth barding (-2). Troops with Cloth Barding are Massed Cavalry but no longer Shock Cavalry.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 6,
@@ -21695,7 +21695,7 @@
         {
           "id": "sarmatian_light_cavalry",
           "name": "Light Cavalry",
-          "description": "Light Cavalry have a bow. Special Deployment. May have light armour (+1), kontos (+2) or spear and shield (+2). May form combine dunits with Cloth Barded Nobles.",
+          "description": "Light Cavalry have a bow. Special Deployment. May have light armour (+1), kontos (+2) or spear and shield (+2). May form combined units with Cloth Barded Nobles.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 6,
@@ -21744,6 +21744,114 @@
             }
           ]
         },
+
+{
+          "id": "sarmatian_nobles_cf",
+          "name": "Combined Formation Nobles/Light Cavalry",
+          "description": "Nobles have a kontos. Superior Fighters. Special Deployment. Massed Cavalry. Cloth Barding.. May have light armour (+1), heavy armour (+2), bow (+1). Light Cavalry have a bow. Special Deployment. May have light armour (+1), kontos (+2) or spear and shield (+2). May form combined units with Cloth Barded Nobles.",
+          "category": "Cavalry",
+          "type": "Commander",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Nobles",
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 23,
+              "minBases": 3,
+              "maxBases": 8,
+              "baseEquipment": ["Kontos", "Cloth Barding"],
+              "specialRules": ["Close Order", "Superior Fighters","Special Deployment","Massed Cavalry"]
+            },
+            {
+              "name": "Light Cavalry",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order","Special Deployment"]
+            }
+            
+            ],
+"optionalEquipment": [
+            {
+              "name": "Light Armour (Nobles)",
+	      "disables": "Heavy Armour (Nobles)",
+              "targetProfile": "Nobles",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Heavy Armour (Nobles)",
+	      "disables": "Light Armour (Nobles)",
+              "targetProfile": "Nobles",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow (Nobles)",
+              "targetProfile": "Nobles",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Light Armour (Light Cavalry)",
+              "targetProfile": "Light Cavalry",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+
+            {
+              "name": "Kontos (Light Cavalry)",
+	      "disables": "Spear and Shield",
+              "targetProfile": "Light Cavalry",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Kontos"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear and Shield",
+	      "disables": "Kontos",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Spear","Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            ]
+            }, 
+		  
         {
           "id": "sarmatian_horse_archers",
           "name": "Horse Archers",
