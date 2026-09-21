@@ -22383,7 +22383,7 @@
           "baseEquipment": ["Javelins","Shield"],
           "specialRules": ["Open Order","Inferior Fighters"],
           "optionalEquipment": [
-            {{
+            {
               "name": "Skirmishers",
               "pointsModifier": -4,
               "equipmentAdded": [],
