@@ -22410,7 +22410,7 @@
           "specialRules": ["Skirmishers"],
           "optionalEquipment": [
             {
-              "name": "Bow"
+              "name": "Bow",
               "pointsModifier": -1,
               "equipmentAdded": ["Bow"],
               "equipmentRemoved": ["Javelins","Shield"],
