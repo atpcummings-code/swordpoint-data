@@ -22526,14 +22526,14 @@
         {
           "id": "pyrrhic_elephant_early",
           "name": "Indian Elephant",
-          "description": "The mahout is unarmed; the two crewman has light armour and javelins and fight from an howdah. The elephant is a Superior Fighters.",
+          "description": "The mahout is unarmed; the two crewman has light armour and javelins and fight from an howdah. The elephant is a Superior Fighters. A minimum of one elephant must be taken.",
           "category": "Allies",
           "type": "Elephants",
 			"maxPerPointsLimit": { "pointsThreshold": 400, "rounding": "down" },
+			"minCountAllowed": 1,
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [],
-			"minCountAllowed": 1,
           "subProfiles": [
             {
               "name": "Elephant",
