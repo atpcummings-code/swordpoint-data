@@ -22079,14 +22079,6 @@
           "max": 25
         },
       {
-          "id": "Elephants",
-          "name": "Elephants",
-          "constraintType": "pointsRatio",
-          "pointsThreshold": 400,
-          "countPerThreshold": 1,
-          "rounding": "down",
-        },
-      {
           "id": "Allies",
           "name": "Special Troops and Allies",
           "constraintType": "percentage",
@@ -22535,8 +22527,9 @@
           "id": "pyrrhic_elephant_early",
           "name": "Indian Elephant",
           "description": "The mahout is unarmed; the two crewman has light armour and javelins and fight from an howdah. The elephant is a Superior Fighters.",
-          "category": "Elephants",
+          "category": "Allies",
           "type": "Elephants",
+			"maxPerPointsLimit": { "pointsThreshold": 400, "rounding": "down" },
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [],
