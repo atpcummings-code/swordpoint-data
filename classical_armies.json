@@ -28108,6 +28108,7 @@
           "defence": 5,
           "cohesion": 6,
           "pointsPerBase": 16,
+		  "maxCountAllowed": 2,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": [
