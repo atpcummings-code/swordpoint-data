@@ -27504,7 +27504,7 @@
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 4
+          "max": 6
         },
        
         {
