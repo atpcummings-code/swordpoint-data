@@ -27602,7 +27602,7 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-          "Heavy Armour"
+          "Heavy Armour","kontos"
           ],
           "specialRules": [
             "Open Order","Superior Fighters"
