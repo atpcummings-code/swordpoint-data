@@ -20581,7 +20581,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "seleucid_successor_elephant_escorts",
+          "id": "seleucid_successor_early_elephant_escorts",
           "name": "Elephant Escorts",
           "description": "Elephant Escorts have javelins and shield. Inferior Fighters. Skirmishers. May replace javelins and shield with bow or sling (-1). Escorts.",
           "category": "Infantry",
@@ -20621,7 +20621,7 @@
           ]
         },    
         {
-          "id": "seleucid_successor_mercenaries",
+          "id": "seleucid_successor_early_mercenaries",
           "name": "Mercenaries",
           "description": "Mercenaries have javelins and shield. Inferior Fighters. Skirmishers. May replace javelins and shield with bow or sling (-1).",
           "category": "Infantry",
@@ -20661,7 +20661,7 @@
           ]
         }, 
         {
-          "id": "seleucid_successor_skirmishers",
+          "id": "seleucid_successor_early_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers. May replace javelins and shield with bow or sling (-1).",
           "category": "Infantry",
@@ -21335,7 +21335,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "seleucid_successor_elephant_escorts",
+          "id": "seleucid_successor_late_elephant_escorts",
           "name": "Elephant Escorts",
           "description": "Elephant Escorts have javelins and shield. Inferior Fighters. Skirmishers. May replace javelins and shield with bow or sling (-1). Escorts.",
           "category": "Infantry",
@@ -21375,7 +21375,7 @@
           ]
         },    
         {
-          "id": "seleucid_successor_mercenaries",
+          "id": "seleucid_successor_late_mercenaries",
           "name": "Mercenaries",
           "description": "Mercenaries have javelins and shield. Inferior Fighters. Skirmishers. May replace javelins and shield with bow or sling (-1).",
           "category": "Infantry",
@@ -21415,7 +21415,7 @@
           ]
         }, 
         {
-          "id": "seleucid_successor_skirmishers",
+          "id": "seleucid_successor_late_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers. May replace javelins and shield with bow or sling (-1).",
           "category": "Infantry",
