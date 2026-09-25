@@ -29910,6 +29910,396 @@
       ]
     },
 
+	  "pontic": {
+      "armyName": "Pontic - 110 BC to 47 BC",
+"armyValidation": [],
+"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+        {
+          "id": "pontic_king",
+          "name": "King",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "pontic_noble",
+          "name": "Noble",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },      
+        {
+          "id": "pontic_cavalry",
+          "name": "Pontic Cavalry",
+          "description": "Pontic Cavalry  have light armour, spear and shield. Superior Fighters.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Spear","Shield"],
+          "specialRules": ["Open Order", "Superior Fighters"],
+          "optionalEquipment": []
+        },
+         {
+          "id": "pontic_sarmation_noble_cavalry",
+          "name": "Sarmation Noble Cavalry",
+          "description": "Sarmation Noble Cavalry have heavy armour, bow and kontos. Superior Fighters. Superior Shooters. May have barding (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 24,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Heavy Armour", "Kontos","Bow"],
+          "specialRules": ["Open Order", "Superior Fighters","Superior Shooters"],
+          "optionalEquipment": [
+            {
+              "name": "Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        
+        {
+          "id": "pontic_horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Archers have a bow. Inferior Fighters. Nomad Cavalry. May have shield (+1) and spear (+1). May be fielded as Skirmsihers",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order","Nomad Cavalry"],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }, 
+        {
+          "id": "pontic_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins and shield. Inferior Fighters. Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": []
+        },
+
+{
+          "id": "pontic_scythed_chariots",
+          "name": "Scythed Chariots",
+          "description": "Driver has heavy armour. Scythed Chariot.",
+          "maxCountAllowed": 4,
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [],
+          "subProfiles": [
+            {
+              "name": "Scythed Chariot",
+              "stats": {
+                "D": 3
+              },
+              "pointsPerBase": 25,
+              "specialRules": ["Scythed Chariot"]
+            },
+            {
+              "name": "Driver",
+              "stats": {
+                "C": 7
+              },
+				"baseEquipment": [],
+              "specialRules": [],
+              "pointsPerBase": 0
+            }
+          ]
+        },
+
+        
+        {
+          "id": "pontic_phalanx",
+          "name": "Phalanx",
+          "description": "Phalanx have pike and shield. Trained Phalanx. May have light armour (+2). At least one phalanx must be fielded.  LAte in the period phalanx infantry may instead be fielded with large shield and heavy throwing spear, and are no longer Trained Phalanx.  If this option is taken Levy Phalanx should not be used.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Alternate Deployment (late period)",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Heavy Throwing Spear","Large Shield"],
+              "equipmentRemoved": ["Pike","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": ["Trained Phalanx"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "pontic_levy_phalanx",
+          "name": "Levy Phalanx",
+          "description": "Levy Phalanx have pike and shield. Phalanx. Levies.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 12,
+          "excludesIf": { "unitIds": ["pontic_phalanx"], "hasEquipment": ["Large Shield"], "count": 1 },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield"],
+          "specialRules": ["Close Order","Phalanx", "Levies"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "pontic_thureophoroi",
+          "name": "Thureophoroi",
+          "description": "Thureophoroi have javelins, spear and shield. Open Order. May be fielded in Close Order at a cost of 16 points per base, or  may be fielded as Skirmishers at a cost of eight points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Spear","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Close Order",
+              "disables": "Skirmishers",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Close Order",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+        {
+          "id": "pontic_galatians",
+          "name": "Galatians",
+          "description": "Galatians have throwing spear and shield. Warband.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Shield"],
+          "specialRules": ["Close Order","Warband"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "pontic_mountain_infantry",
+          "name": "Mountain Infantry",
+          "description": "Mountain Infantry have javelins and shield. Open Order.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "pontic_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Inferior Fighters. Open Order. Maybe fielded as Skirmishers at a cost of five points per base..",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+       
+        {
+          "id": "pontic_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers. May exchange javelins for sling (free.).",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers", "Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+		  ]
+        },
+
 "late_republican_rome": {
        "armyName": "Late Republican Roman - 105 BC to 30 BC",
       "categories": [
