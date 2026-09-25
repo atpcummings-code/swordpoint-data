@@ -27792,6 +27792,415 @@
         
       ]
     },
+
+"middle_armenia": {
+      "armyName": "Middle Armenia - 90 BC to 200 AD",
+    
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry and Skirmishers",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 30
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        }
+      ],
+      "units": [
+        {
+          "id": "middle_armenia_general",
+          "name": "General",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_armenia_noble",
+          "name": "Noble",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_armenia_armenian_cataphracts",
+          "name": "Armenian Cataphracts",
+          "description": "Armenian Cataphracts have cataphract armour, barding and kontos. Superior Fighters. Massed Cavalry.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 2,
+          "cohesion": 7,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Kontos","Cataphracts Armour","Barding"
+          ],
+          "specialRules": [
+            "Close Order","Superior Fighters","Massed Cavalry"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_armenia_iberian_cavalry",
+          "name": "Iberian Cavalry",
+          "description": "Iberian Cavalry have heavy armour and kontos. Superior Fighters. May have half-barding or barding (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Heavy Armour"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Half-barding",
+              "disables": "Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half-barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Barding",
+              "disables": "Half-barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "middle_armenia_armenian_horse_archers",
+          "name": "Armenian Horse Archers",
+          "description": "Armenian Horse Archers have bow. Parthian Shot. Skirmishers.",
+          "category": "Cavalry",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+          "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers","Parthian Shot"
+          ],
+          "optionalEquipment": []
+        },
+
+        {
+          "id": "middle_armenia_mardian_horse_archers",
+          "name": "Mardian Horse Archers",
+          "description": "Mardian Horse Archers have bow. Parthian Shot. Skirmishers.May have shield (+1).",
+          "category": "Cavalry",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+          "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers","Parthian Shot"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+ {
+          "id": "middle_armenia_cappadocian_cavalry",
+          "name": "Cappadocian Cavalry",
+          "description": "Cappadocian Cavalry have javelins and shield. Skirmishers. May have spear (+1).",
+          "category": "Cavalry",
+          "type": "Skirmishers",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+          "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "middle_armenia_arab_cavalry",
+          "name": "Arab Cavalry",
+          "description": "Arab Cavalry have javelins and shield. Skirmishers.",
+          "category": "Cavalry",
+          "type": "Skirmishers",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+          "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_armenia_arab_camelry",
+          "name": "Arab Camelry",
+          "description": "Arab Camelry have javelins and shield. May have spear (+1).",
+          "category": "Cavalry",
+          "type": "Skirmishers",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+        
+          {
+          "id": "middle_armenia_iberian",
+          "name": "Iberian",
+          "description": "Iberian have spear and shield. Open Order. May exchange spear for throwing spear (+1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield","Spear"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Throwing Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "middle_armenia_hillmen",
+          "name": "Hillmen",
+          "description": "Hillmen have throwing spear and shield. Open Order.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield","Throwing Spear"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_armenia_imitation_legionaries",
+          "name": "Imitation Legionaries",
+          "description": "Imitation Legionaries have throwing spear and large shield. May have light armour (+2). May upgrade to heavy throwing spear (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Large Shield","Throwing Spear"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "middle_armenia_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins and shield. Inferior Fighters. Skirmishers.",
+          "category": "Infantry",
+			"type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Shield","Javelins"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_armenia_slingers",
+          "name": "Slingers",
+          "description": "Slingers have sling and shield. Inferior Fighters. Skirmishers.",
+          "category": "Infantry",
+			"type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Shield","Sling"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_armenia_archers",
+          "name": "Archers",
+          "description": "Archers have bow. Inferior Fighters. Skirmishers.",
+          "category": "Infantry",
+			"type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        }
+        
+      ]
+    },
+	  
 "maccabean_revolt": {
   "armyName": "Maccabean Revolt - 168 BC to 37 BC",
   "categories": [
