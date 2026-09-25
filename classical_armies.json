@@ -29937,7 +29937,7 @@
         },
         {
           "id": "Allies",
-          "name": "Allies and Mercenaries",
+          "name": "Allies",
           "constraintType": "percentage",
           "min": 0,
           "max": 25
