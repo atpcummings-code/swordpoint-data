@@ -35221,7 +35221,6 @@
           "description": "The mahout and two crewmen have light armour, and the crew have javelins or bows. May have shields (+1). There may be a third crewman at (+4). The crew fight from an howdah. The elephant is a Superior Fighter.",
           "category": "Elephants",
           "type": "Elephants",
-          "minCountAllowed": 1,
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
