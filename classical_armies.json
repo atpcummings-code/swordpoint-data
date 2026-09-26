@@ -23838,19 +23838,7 @@
           "maxBases": 12,
           "baseEquipment": ["Throwing Spear","Shield"],
           "specialRules": ["Close Order","Warband"],
-          "optionalEquipment": [
-            {
-              "name": "Light Armour",
-              "enabledEvery": 2,
-              "pointsModifier": 2,
-              "equipmentAdded": ["Spear"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
+          "optionalEquipment": []
         },
          {
           "id": "galatian_settled_period_cappadocians",
