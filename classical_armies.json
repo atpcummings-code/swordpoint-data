@@ -23702,15 +23702,14 @@
           "defence": 6,
           "cohesion": 6,
           "pointsPerBase": 16,
-           "requires": {"unitId": "galatian_invasion_period_noble_chariots","count": 1, "name": "Noble Chariots", "perUnit": true},
+           "requires": {"unitId": "galatian_invasion_period_noble_chariots","count": 1, "name": "Noble Chariots"},
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Throwing Spear","Shield"],
           "specialRules": ["Close Order","Warband","Stubborn"],
           "optionalEquipment": []
-        }
-        
-		  ]
+      }
+          ]
         },
 	  
 "later_macedonian": {
