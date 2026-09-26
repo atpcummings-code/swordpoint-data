@@ -23884,6 +23884,189 @@
         
 		  ]
         },
+
+ "galatian_roman_influence": {
+      "armyName": "Galatian Roman Influence - 180 BC to 25 BC",
+"armyValidation": [],
+   "unitCountValidation": [ { "ids": ["galatian_roman_influence_imitation_legionaries"], "compareWith": ["galatian_roman_influence_warriors", "galatian_roman_influence_cappadocians"], "expression": "lessThanOrEqual", "ratio": 0.5 } ],
+"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+      {
+          "id": "Skirmishers",
+          "name": "Skirmishers",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        }
+      ],
+      "units": [
+        {
+          "id": "galatian_roman_influence_high_chieftain",
+          "name": "High Chieftain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+ {
+          "id": "galatian_roman_influence_tetrarch",
+          "name": "Tetrarch",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },    
+        {
+          "id": "galatian_roman_influence_noble_cavalry",
+          "name": "Noble Cavalry",
+          "description": "Noble Cavalry have spear, shield and light armour. Superior Fighters.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Spear","Shield"],
+          "specialRules": ["Open Order", "Superior Fighters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "galatian_roman_influence_cappadocian_cavalry",
+          "name": "Cappadocian Cavalry",
+          "description": "Cappadocian Cavalry have javelins and shield. May have spear (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+         
+        {
+          "id": "galatian_roman_influence_warriors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Warband. Up to half all warrior units may have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Shield"],
+          "specialRules": ["Close Order","Warband"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "galatian_roman_influence_imitation_legionaries",
+          "name": "Imitation Legionaries",
+          "description": "Imitation Legionaries have heavy throwing spear, light armour and large shield.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 6,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Large Shield","Light Armour"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": []
+        },
+         {
+          "id": "galatian_roman_influence_cappadocians",
+          "name": "Cappadocians",
+          "description": "Cappadocians have javelins and shield. Open Order.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "galatian_roman_influence_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers. May have shield (+1).",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 3,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+		  ]
+        },
+	  
 	  
 "later_macedonian": {
       "armyName": "Later Macedonian - 260 BC to 148 BC",
