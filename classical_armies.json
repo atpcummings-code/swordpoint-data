@@ -34118,7 +34118,7 @@
 	          "pointsPerBase": 14,
 				  "minBases": 1,
               "maxBases": 6,
-              "baseEquipment": ["Large Shield"", "Spear", "Bow"],
+              "baseEquipment": ["Large Shield", "Spear", "Bow"],
               "specialRules": ["Close Order"]
             }
             
