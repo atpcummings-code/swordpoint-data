@@ -34297,7 +34297,7 @@
         {
           "id": "sassanid_persia_early_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have a sling and shield. Skirmishers. Inferior Fighters. May replace sling with javelins or bow (free)." 
+          "description": "Skirmishers have a sling and shield. Skirmishers. Inferior Fighters. May replace sling with javelins or bow (free).", 
           "category": "Infantry",
           "type": "Skirmishers",
           "defence": 6,
