@@ -33750,7 +33750,7 @@
 "armyValidation": [ 
   { "ids": ["sassanid_persia_early_iranians", "sassanid_persia_early_horse_archers", "sassanid_persia_early_huns"], "compareWith": ["sassanid_persia_early_azatan_noble_cavalry", "sassanid_persia_early_cataphracts"], "expression": "greaterThanOrEqual", "ratio": 1 },
   { "ids": ["sassanid_persia_early_daylami_archers"], "compareWith": ["sassanid_persia_early_daylami_spearmen"], "expression": "lessThanOrEqual", "ratio": 1 } 
-] 
+], 
 "categories": [
         {
           "id": "Commanders",
