@@ -23995,7 +23995,7 @@
         {
           "id": "galatian_roman_influence_warriors",
           "name": "Warriors",
-          "description": "Warriors have throwing spear and shield. Warband. Up to half all warrior units may have light armour (+2).",
+          "description": "Warriors have throwing spear and shield. Warband.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -24010,7 +24010,7 @@
         {
           "id": "galatian_roman_influence_imitation_legionaries",
           "name": "Imitation Legionaries",
-          "description": "Imitation Legionaries have heavy throwing spear, light armour and large shield.",
+          "description": "Imitation Legionaries have heavy throwing spear, light armour and large shield. Up to half the formed Infantry Units may be Imitation Legionaries.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 4,
