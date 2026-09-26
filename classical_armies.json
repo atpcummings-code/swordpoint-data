@@ -34677,7 +34677,7 @@
 },
 
 "sassanid_persia_late": {
-      "armyName": "Sassanid Persia (Early) - 220 AD to 637 AD",
+      "armyName": "Sassanid Persia (Late) - 220 AD to 637 AD",
 "armyValidation": [ 
   { "ids": ["sassanid_persia_late_iranians", "sassanid_persia_late_horse_archers", "sassanid_persia_late_huns"], "compareWith": ["sassanid_persia_late_azatan_noble_cavalry", "sassanid_persia_late_cataphracts"], "expression": "greaterThanOrEqual", "ratio": 1 },
   { "ids": ["sassanid_persia_late_daylami_archers"], "compareWith": ["sassanid_persia_late_daylami_spearmen"], "expression": "lessThanOrEqual", "ratio": 1 } 
@@ -34717,8 +34717,7 @@
           "constraintType": "pointsRatio",
           "pointsThreshold": 400,
           "countPerThreshold": 1,
-          "rounding": "down",
-          "countOffset": 1
+          "rounding": "down"
         }
       ],
       "units": [
