@@ -23888,7 +23888,7 @@
  "galatian_roman_influence": {
       "armyName": "Galatian Roman Influence - 180 BC to 25 BC",
 "armyValidation": [],
-   "unitCountValidation": [ { "ids": ["galatian_roman_influence_imitation_legionaries"], "compareWith": ["galatian_roman_influence_warriors", "galatian_roman_influence_cappadocians"], "expression": "lessThanOrEqual", "ratio": 0.5 } ],
+   "unitCountValidation": [ { "ids": ["galatian_roman_influence_imitation_legionaries"], "compareWith": ["galatian_roman_influence_imitation_legionaries", "galatian_roman_influence_warriors", "galatian_roman_influence_cappadocians"], "expression": "lessThanOrEqual", "ratio": 0.5 }, { "ids": ["galatian_roman_influence_warriors"], "compareWith": ["galatian_roman_influence_imitation_legionaries", "galatian_roman_influence_warriors", "galatian_roman_influence_cappadocians"], "expression": "lessThanOrEqual", "ratio": 0.5 }, { "ids": ["galatian_roman_influence_cappadocians"], "compareWith": ["galatian_roman_influence_imitation_legionaries", "galatian_roman_influence_warriors", "galatian_roman_influence_cappadocians"], "expression": "lessThanOrEqual", "ratio": 0.5 } ],
 "categories": [
         {
           "id": "Commanders",
