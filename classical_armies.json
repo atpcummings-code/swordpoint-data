@@ -24070,7 +24070,7 @@
 	  "later_carthaginian_italy": {
       "armyName": "Later Carthaginian (Invasion of Italy - 270 BC to 203 BC",
     "armyValidation": [ 
-{ "ids": ["later_carthaginian_italy_balearic_slingers"], "compareWith": ["later_carthaginian_italy_slingers"], "expression": "lessThanOrEqual", "ratio": 1 }, { "ids": ["later_carthaginian_italy_balearic_slingers"], "compareWith": ["later_carthaginian_italy_javelinmen"], "expression": "lessThanOrEqual", "ratio": 1 }, { "ids": ["later_carthaginian_italy_balearic_slingers"], "compareWith": ["later_carthaginian_italy_caetrati"], "expression": "lessThanOrEqual", "ratio": 1 } ],
+{ "ids": ["later_carthaginian_italy_balearic_slingers"], "compareWith": ["later_carthaginian_italy_slingers"], "expression": "lessThanOrEqual", "ratio": 1 } ],
       "categories": [
         {
           "id": "Commanders",
@@ -24696,7 +24696,7 @@
         {
           "id": "later_carthaginian_italy_balearic_slingers",
           "name": "Balearic Slingers",
-          "description": "Balearic Slingers have sling and shield. Superior Shooters. Skirmishers.",
+          "description": "Balearic Slingers have sling and shield. Superior Shooters. Skirmishers. Cannot be larger than anyother slinger unit in teh army.",
           "category": "Infantry",          
 			"type": "Infantry",
           "defence": 6,
