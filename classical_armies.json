@@ -4032,6 +4032,7 @@
           "defence": 7,
           "cohesion": 6,
           "pointsPerBase": 5,
+			"minCountAllowed": 1,
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": ["Sling"],
