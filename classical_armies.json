@@ -5284,6 +5284,7 @@
           "defence": 5,
           "cohesion": 8,
           "pointsPerBase": 24,
+		  "requires": { "unitIds": ["thracian_getae_getae", "thracian_getae_warriors"], "count": 1, "name": ["Getae","Warriors"] }, 
           "minBases": 3,
 			"maxBases": 8,
           "baseEquipment": [
@@ -5891,6 +5892,7 @@
           "defence": 5,
           "cohesion": 8,
           "pointsPerBase": 24,
+			"requires": { "unitIds": ["thracian_coalition_getae", "thracian_coalition_warriors"], "count": 1, "name": ["Getae","Warriors"] }, 
           "minBases": 3,
 			"maxBases": 8,
           "baseEquipment": [
@@ -5947,6 +5949,7 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 20,
+			"requires": { "unitIds": ["thracian_coalition_nobles", "thracian_coalition_warriors"], "count": 2, "name": ["Nobles","Warriors"] },  
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [],
