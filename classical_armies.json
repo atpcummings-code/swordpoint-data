@@ -5892,7 +5892,7 @@
           "defence": 5,
           "cohesion": 8,
           "pointsPerBase": 24,
-			"requires": { "unitIds": ["thracian_coalition_getae", "thracian_coalition_warriors"], "count": 1, "name": ["Getae","Warriors"] "perUnit": true}, 
+			"requires": { "unitIds": ["thracian_coalition_getae", "thracian_coalition_warriors"], "count": 1, "name": ["Getae","Warriors"], "perUnit": true}, 
           "minBases": 3,
 			"maxBases": 8,
           "baseEquipment": [
