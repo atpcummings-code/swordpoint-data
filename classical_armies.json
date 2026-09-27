@@ -24066,7 +24066,733 @@
         
 		  ]
         },
-	  
+
+	  "later_carthaginian_italy": {
+      "armyName": "Later Carthaginian (Invasion of Italy - 270 BC to 203 BC",
+    "armyValidation": [ 
+{ "ids": ["later_carthaginian_italy_balearic_slingers"], "compareWith": ["later_carthaginian_italy_slingers"], "expression": "lessThanOrEqual", "ratio": 1 }, { "ids": ["later_carthaginian_italy_balearic_slingers"], "compareWith": ["later_carthaginian_italy_javelinmen"], "expression": "lessThanOrEqual", "ratio": 1 }, { "ids": ["later_carthaginian_italy_balearic_slingers"], "compareWith": ["later_carthaginian_italy_caetrati"], "expression": "lessThanOrEqual", "ratio": 1 } ],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry and Chariots",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 40
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 40,
+          "max": 100
+        },
+         {
+          "id": "Elephants",
+          "name": "Elephants",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 333,
+          "countPerThreshold": 1,
+          "rounding": "down"
+        }
+      ],
+      "units": [
+        {
+          "id": "later_carthaginian_italy_hannibal",
+          "name": "Hannibal",
+          "description": "May ride a horse. May have the Stratagem rule (+50).",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "excludes": ["later_carthaginian_italy_general"],
+          "attacks": "+2",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Stratagem",
+              "pointsModifier": 50,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stratagem"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_carthaginian_italy_general",
+          "name": "General",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "excludes": ["later_carthaginian_italy_hannibal"],
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_carthaginian_italy_sub_general",
+          "name": "Sub General",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_carthaginian_italy_punic_cavalry",
+          "name": "Punic Cavalry",
+          "description": "Punic Cavalry have spear and shield. May have light armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear","Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_carthaginian_italy_companion_cavalry",
+          "name": "Companion Cavalry",
+          "description": "Companion Cavalry have spear and shield. Superior Fighters. May have light armour (+1) and javelins (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Spear","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_carthaginian_italy_spanish_cavalry",
+          "name": "Spanish Cavalry",
+          "description": "Spanish Cavalry have spear and shield. May have light armour (+1) and javelins (+1). Armoured Spanish Cavalry may upgrade to Superior Fighters (+2) and/or Superior Shooters (+2). Unarmoured may be fieled as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear","Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "disables": "Skirmishers",
+              "enableHidden": ["Superior Shooters","Superior Fighters"],
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Superior Fighters",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Superior Shooters",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Shooters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Light Armour",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_carthaginian_italy_gallic_cavalry",
+          "name": "Gallic Cavalry",
+          "description": "Gallic Cavalry have spear and shield. Superior Fighters. May have light armour (+1) and javelins (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+          "Spear","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_carthaginian_italy_numidian_cavalry",
+          "name": "Numidian Cavalry",
+          "description": "Numidian Cavalry have javelins and shield. Inferior Fighters. Superior Shooters. Evade. There must be at least ome Numidian Cavalry unit in the army. May be fielded as Skirmishers with Parthian Shot.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Jvelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Inferior Fighters","Superior Shooters","Evade"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+          {
+          "id": "later_carthaginian_italy_african_spearmen",
+          "name": "African Spearmen",
+          "description": "African Spearmen have light armour, large shield and spear. May upgrade to veterans C8, Superior Fighters. Veteran. (+10), Such upgraded units may be Drilled (+3) and Stubborn (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Large Shield","Spear","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Veterans Upgrade",
+              "enableHidden": ["Drilled","Stubborn"],
+              "pointsModifier": 10,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters","Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            },
+            {
+              "name": "Drilled",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_carthaginian_italy_scutarii",
+          "name": "Scutarii",
+          "description": "Scutarii have throwing spear and shield. Evade. May have light armour (+2). May upgrade to heavy throwing spear (+0) but loose Evade if the do. May be Veteran (+2), such Veteran units may upgrade shield to Large SHield (+2).",
+          "category": "Infantry",
+			"type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield","Throwing Spear"
+          ],
+          "specialRules": [
+            "Close Order""
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Throwing Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": ["Evade"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "enableHidden": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_carthaginian_italy_italians",
+          "name": "Italians",
+          "description": "Italians have throwing spear and large shield. Open Order. May have light armour (+2).  May be Veteran (+2).",
+          "category": "Infantry",
+			"type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Large Shield","Throwing Spear"
+          ],
+          "specialRules": [
+            "Open Order""
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_carthaginian_italy_gauls",
+          "name": "Gauls",
+          "description": "Gauls have throwing spear and shield. Warband. May have light armour (+2).  May be Veteran (+2).",
+          "category": "Infantry",
+			"type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield","Throwing Spear"
+          ],
+          "specialRules": [
+            "Close Order","Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_carthaginian_italy_ligurians",
+          "name": "Ligurians",
+          "description": "Ligurians have throwing spear and shield. Warband. Open Order. May have javelinsr (+2).  May be Veteran (+2).",
+          "category": "Infantry",
+			"type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield","Throwing Spear"
+          ],
+          "specialRules": [
+            "Open Order","Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "enableHidden": ["Large Shield","Light Armour"],
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Large Shield",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_carthaginian_italy_caetrati",
+          "name": "Caetrati",
+          "description": "Caetrati have javelins and shield. Skirmishers.",
+          "category": "Infantry",          
+			"type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skrimishers"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_carthaginian_italy_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins and shield. Inferior Fighters. Skirmishers.",
+          "category": "Infantry",          
+			"type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skrimishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_carthaginian_italy_slingers",
+          "name": "Slingers",
+          "description": "Slingers have sling and shield. Inferior Fighters. Skirmishers.",
+          "category": "Infantry",          
+			"type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Sling","Shield"
+          ],
+          "specialRules": [
+            "Skrimishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_carthaginian_italy_balearic_slingers",
+          "name": "Balearic Slingers",
+          "description": "Balearic Slingers have sling and shield. Superior Shooters. Skirmishers.",
+          "category": "Infantry",          
+			"type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 10,
+          "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Sling","Shield"
+          ],
+          "specialRules": [
+            "Skrimishers","Superior Shooters"
+          ],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "later_carthaginian_italy_african_elephant",
+          "name": "African Elephant",
+          "description": "Unarmed mahout and two crewmen with javelins. A third crewman may be added (+4). All crew may have light armour (+1). The elephant may be fitted with an Howdah (+4).",
+          "category": "Elephants",
+          "type": "Elephants",
+          "minBases": 1,
+          "maxBases": 1,
+	  "maxCountAllowed": 1,
+          "optionalEquipment": [
+            {
+              "name": "Howdah",
+              "pointsModifier": 4,
+              "targetProfile": ["Crew"],
+              "equipmentAdded": ["Howdah"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Third Crewman",
+              "pointsModifier": 4,
+              "targetProfile": "Crew",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Third Crewman"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "targetProfile": "Crew",
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Elephant",
+              "stats": {
+                "D": 3,
+                "C": 4
+              },
+              "pointsPerBase": 60,
+              "specialRules": ["Terror"]
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 6,
+                "C": 7,
+                
+              },
+	      "baseEquipment": ["Javelins"],
+              "specialRules": [],
+              "pointsPerBase": 0
+            },		  
+            {
+              "name": "Mahout",
+              "stats": {
+                "D": 6,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        }
+        
+      ]
+    },
+
 	  
 "later_macedonian": {
       "armyName": "Later Macedonian - 260 BC to 148 BC",
