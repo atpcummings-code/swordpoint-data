@@ -2217,7 +2217,7 @@
             {
               "name": "Skirmishers",
               "disables": "Shield",
-              "enableHidden": "Shield (Skirmishers)"
+              "enableHidden": "Shield (Skirmishers)",
               "pointsModifier": -3,
               "equipmentAdded": [],
               "rulesAdded": ["Skirmishers"],
