@@ -2177,7 +2177,7 @@
           "specialRules": ["Close Order"],
 	  "combinedFormation": 
 		[
-		{ { "label": "50%", "disableSubProfiles": ["Spearmen/Bowmen (Front Row)","Spearmen/Bowmen (Rear Row)" ]}
+		{ "label": "50%", "disableSubProfiles": ["Spearmen/Bowmen (Front Row)","Spearmen/Bowmen (Rear Row)" ]}
 		],
           "subProfiles": [
              {
