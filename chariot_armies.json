@@ -1816,7 +1816,7 @@
               "name": "Bow",
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
-              "equipmentRemoved":["Javelins"]
+              "equipmentRemoved":["Javelins"],
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
