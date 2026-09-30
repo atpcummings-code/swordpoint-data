@@ -2343,6 +2343,26 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
+            },
+			  {
+              "name": "Javelins",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Bow",
+              "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
           ]
         },
