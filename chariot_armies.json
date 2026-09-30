@@ -1262,7 +1262,633 @@
           ]
         }
       ]
-  }
+  },
+     "hittite_empire": {
+      "armyName": "Hittite Empire - (1525 BC - 800 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Chariots",
+          "name": "Cavalry & Chariots",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        }
+      ],
+      "units": [
+        {
+          "id": "hittite_empire_great_king",
+          "name": "Great King",
+          "description": "May ride in a chariot.",
+          "excludes": ["hittite_empire_prince"],
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hittite_empire_prince",
+          "name": "Prince",
+          "description": "May ride in a chariot.",
+          "excludes": ["hittite_empire_great_king"],
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hittite_empire_vassal_king",
+          "name": "Chief",
+          "description": "May ride in a chariot.  A Vassal king acts as an Army General for all troops of his nationality, being Hurrian, Syrian, Phoenician or Lukka.  They take a Cohesion test upon his death, but do not test if the Hittite C-in-C dies.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 25,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Hurrian Vassal King",
+              "disables": ["Syrian Vassal King","Phoenician Vassal King","Lukka Vassal King"],
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Hurrian Vassal King"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Lukka Vassal King",
+              "disables": ["Syrian Vassal King","Phoenician Vassal King","Hurrian Vassal King"],
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Lukka Vassal King"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Syrian Vassal King",
+              "disables": ["Hurrian Vassal King","Phoenician Vassal King","Lukka Vassal King"],
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Syrian Vassal King"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Phoenician Vassal King",
+              "disables": ["Syrian Vassal King","Hurrian Vassal King","Lukka Vassal King"],
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Phoenician Vassal King"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hittite_empire_vassal_king",
+          "name": "Chief",
+          "description": "May ride in a chariot.  A Vassal king acts as an Army General for all troops of his nationality, being Hurrian, Syrian, Phoenician or Lukka.  They take a Cohesion test upon his death, but do not test if the Hittite C-in-C dies.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hittite_empire_hittite_chariots",
+          "name": "Hittite Chariots",
+          "description": "Hittite Chariots have a driver and a crewman armed with spear, javelins, light armour and shield. Superior Fighters. Light Chariots.They may add a second crewman for +8 points, such a unit may then shoot and fight with an extra D6 for every two Chariots engaging, rounding up. May be Shock Cavalry (against Infantry only) (+4). One unit may be fielded as Guards (C9, Veteran, +3).",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear","Javelins",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Superior Fighters",
+            "Open Order",
+            "Light Chariots"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Extra Crewman",
+              "pointsModifier": 8,
+              "equipmentAdded": [],
+              "rulesAdded": ["Extra Crewman"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shock Cavalry",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "rulesAdded": ["Shock Cavalry"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Guards",
+              "pointsModifier": 3,
+              "equipmentAdded": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            }
+          ]
+        },
+        {
+          "id": "hittite_empire_maryannu_chariots",
+          "name": "Maryannu Chariots",
+          "description": "Maryannu Chariots have a driver and a crewman armed with bow, light armour and shield. Superior Fighters. Superior Shooters. Light Chariots. May have spear (+1). Maryannu were the nobilitty of the Hurrian, Syrian or Phoenician subject kingdoms.",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear","Javelins",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Superior Fighters","Superior Shooters"
+            "Open Order",
+            "Light Chariots"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Extra Crewman",
+              "pointsModifier": 8,
+              "equipmentAdded": [],
+              "rulesAdded": ["Extra Crewman"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shock Cavalry",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "rulesAdded": ["Shock Cavalry"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Hurrian",
+              "disables": ["Syrian","Phoenician"],
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Hurrian"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+                        {
+              "name": "Syrian",
+              "disables": ["Hurrian","Phoenician"],
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Syrian"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Phoenician ",
+              "disables": ["Syrian","Hurrian"],
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Phoenician"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "hittite_empire_hittite_chariot_runners",
+          "name": "Hittite Chariot Runners",
+          "description": "Hittite Chariot Runners have javelins and shield. Open Order. Escorts. May be fielded as Skirmishers at a cost of 9 points per base. ",
+          "category": "Chariots",
+          "type": "escorts",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": [
+            "Open Order","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers ",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hittite_empire_chariot_runners",
+          "name": "Chariot Runners",
+          "description": "Chariot Runners have javelins and shield. Open Order. Escorts. May be fielded as Skirmishers at a cost of 8 points per base. ",
+          "category": "Chariots",
+          "type": "escorts",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": [
+            "Open Order","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers ",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Hurrian",
+              "disables": ["Syrian","Phoenician"],
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Hurrian"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+                        {
+              "name": "Syrian",
+              "disables": ["Hurrian","Phoenician"],
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Syrian"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Phoenician ",
+              "disables": ["Syrian","Hurrian"],
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Phoenician"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hittite_empire_cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have a bow. Inferior Fighters. May be fielded as Skirmishers. They appear only in the last 100 or so years of the list.",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 15,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Inferior Fighters",
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers ",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "hittite_empire_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have a spear and shield",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+         {
+          "id": "hittite_empire_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Inferior Fighters. Open Order. May be fielded as Skirmishers at a cost of five points per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers ",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hittite_empire_phoenicians",
+          "name": "Phoenicians",
+          "description": "Phoenicians have a bow and javelins. May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow","Javelins"
+          ],
+          "specialRules": [
+            "Close Order","Phoenicians"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "hittite_empire_lukka",
+          "name": "Lukka (Sea Peoples)",
+          "description": "Lukka have javelins and shield. Warband (rule 3 does not apply). May have light armour (+2) and may be Superior Fighters (+4).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow","Javelins"
+          ],
+          "specialRules": [
+            "Close Order","Lukka", "Warband (not rule 3)"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Superior Fighters",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hittite_empire_habiru",
+          "name": "Habiru",
+          "description": "Habiru have javelins. Superior Fighters. Superior Shooters. Open Order. Warband (rule 3 does not apply). May be fielded as Skirmishers at a cost of ten points per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Open Order","Lukka", "Warband (not rule 3)", "Superior Fighters","Superior Shooters"
+          ],
+          "optionalEquipment": [
+            
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order", "Warband (not rule 3)"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+{
+          "id": "hittite_empire_syrians",
+          "name": "Syrians",
+          "description": "Syrians have javelins. Open Order. May exchange javelins for bow (free). May be fielded as Skirmishers at a cost of five ponts per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Open Order","Syrian"
+          ],
+          "optionalEquipment": [
+            
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved":["Javelins"]
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hittite_empire_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have bow, sling or javelins. Inferior Fighters. Skirmishers. May have shield (+1).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved":[]
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": ["Sling","Javelins"]
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved":[]
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Sling",
+              "disables": ["Bow","Javelins"]
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved":[]
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "disables": ["Sling","Bow"]
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved":[]
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
+    },
 
 
 
