@@ -2230,7 +2230,7 @@
               "pointsModifier": 2,
               "equipmentAdded": ["Shield"],
               "rulesAdded": [],
-              "rulesRemoved": ["],
+              "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
@@ -2240,7 +2240,7 @@
               "pointsModifier": 1,
               "equipmentAdded": ["Shield"],
               "rulesAdded": [],
-              "rulesRemoved": ["],
+              "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
             }
@@ -2262,7 +2262,7 @@
             "Javelins"
           ],
           "specialRules": [
-            "Skirmishera", "SInferior Fighters"
+            "Skirmishera", "Inferior Fighters"
           ],
           "optionalEquipment": []
         },
