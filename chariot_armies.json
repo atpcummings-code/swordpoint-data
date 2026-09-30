@@ -2166,36 +2166,68 @@
           ]
         },
         {
-          "id": "israelite_later_zubulanites",
-          "name": "Zubulanites",
-          "description": "Zubulanites half have javelins and shield.  Superior Fighters. Open Order. Warband (rule 3 doe snot apply). May be fielded as Skirmishers at a cost of nine points per base.",
-          "category": "Infantry",
-          "type": "Formed",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 14,
+          "id": "israelite_later_zubulanites_cf",
+          "name": "Combined Formation Zubulanites",
+          "description": "Zubulanites: half have spear and shield.; half exchange spear and shield for bow (free). Open Order. Combined Formation.",
+    "category": "Infantry",      
+	"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [
-            "Javelins",
-            "Shield"
-          ],
-          "specialRules": [
-            "Open Order", "Superior Fighters",
-            "Warband (not rule 3)"
-          ],
-          "optionalEquipment": [
+          "baseEquipment": [],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		{ { "label": "50%", "disableSubProfiles": ["Spearmen/Bowmen (Front Row)","Spearmen/Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Spearmen/Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+	      "pointsPerBase": 9,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear", "Bow"],
+              "specialRules": ["Open Order"]
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 6,
+          	"pointsPerBase": 9,
+              "minBases": 3,
+              "maxBases": 12,
+          "baseEquipment": ["Shield", "Spear"],
+          "specialRules": ["Open Order"],
+            },
             {
-              "name": "Skirmishers",
-              "pointsModifier": -5,
-              "equipmentAdded": [],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
+              "name": "Bowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 9,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Open Order"]
+            },
+
+			  {
+              "name": "Spearmen/Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 9,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear", "Bow"],
+              "specialRules": ["Open Order"]
             }
-          ]
-        },
+            
+            ],
+	"optionalEquipment": []    
+},
         {
           "id": "israelite_later_benjaminites",
           "name": "Benjaminites",
