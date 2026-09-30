@@ -31779,7 +31779,7 @@
         {
           "id": "pontic_archers",
           "name": "Archers",
-          "description": "Archers have a bow. Inferior Fighters. Open Order. Maybe fielded as Skirmishers at a cost of five points per base..",
+          "description": "Archers have a bow. Inferior Fighters. Open Order. Maybe fielded as Skirmishers at a cost of four points per base..",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -31792,7 +31792,7 @@
           "optionalEquipment": [
             {
               "name": "Skirmishers",
-              "pointsModifier": 0,
+              "pointsModifier": -2,
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": ["Skirmishers"],
