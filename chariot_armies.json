@@ -1472,24 +1472,6 @@
           ],
           "optionalEquipment": [
             {
-              "name": "Extra Crewman",
-              "pointsModifier": 8,
-              "equipmentAdded": [],
-              "rulesAdded": ["Extra Crewman"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Shock Cavalry",
-              "pointsModifier": 4,
-              "equipmentAdded": [],
-              "rulesAdded": ["Shock Cavalry"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
               "name": "Hurrian",
               "disables": ["Syrian","Phoenician"],
               "pointsModifier": 0,
