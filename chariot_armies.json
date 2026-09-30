@@ -1845,7 +1845,7 @@
               "name": "Shield",
               "pointsModifier": 1,
               "equipmentAdded": ["Shield"],
-              "equipmentRemoved":[]
+              "equipmentRemoved":[],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -1853,10 +1853,10 @@
             },
             {
               "name": "Bow",
-              "disables": ["Sling","Javelins"]
+              "disables": ["Sling","Javelins"],
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
-              "equipmentRemoved":[]
+              "equipmentRemoved":[],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1864,10 +1864,10 @@
             },
              {
               "name": "Sling",
-              "disables": ["Bow","Javelins"]
+              "disables": ["Bow","Javelins"],
               "pointsModifier": 0,
               "equipmentAdded": ["Sling"],
-              "equipmentRemoved":[]
+              "equipmentRemoved":[],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1875,10 +1875,10 @@
             },
              {
               "name": "Javelins",
-              "disables": ["Sling","Bow"]
+              "disables": ["Sling","Bow"],
               "pointsModifier": 0,
               "equipmentAdded": ["Javelins"],
-              "equipmentRemoved":[]
+              "equipmentRemoved":[],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
