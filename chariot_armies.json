@@ -1331,7 +1331,7 @@
         },
         {
           "id": "hittite_empire_vassal_king",
-          "name": "Chief",
+          "name": "Vassal King",
           "description": "May ride in a chariot.  A Vassal king acts as an Army General for all troops of his nationality, being Hurrian, Syrian, Phoenician or Lukka.  They take a Cohesion test upon his death, but do not test if the Hittite C-in-C dies.",
           "category": "Commanders",
           "type": "other",
