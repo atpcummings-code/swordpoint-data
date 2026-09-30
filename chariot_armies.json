@@ -12,7 +12,7 @@
         },
         {
           "id": "Chariots",
-          "name": "Chariots",
+          "name": "Chariots",E
           "constraintType": "percentage",
           "min": 0,
           "max": 20
@@ -2238,7 +2238,6 @@
           "defence": 7,
           "cohesion": 6,
           "pointsPerBase": 12,
-		  "maxCountAllowed": 1,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": [
