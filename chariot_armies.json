@@ -1871,7 +1871,472 @@
         
       ]
     },
+    "israelite_later": {
+      "armyName": "Israelite (Later) - (1000 BC - 600 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Chariots",
+          "name": "Cavalry and Chariots",
+          "constraintType": "percentage",
+          "min": 10,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "description": "The army may take allies from the Arab Nomad List.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50,
+          "alliedArmyKeys": [
+            "arab_nomad"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
+      ],
+      "units": [
+        {
+          "id": "israelite_later_king",
+          "name": "King",
+          "description": "May join a chariot unit.",
+          "excludes": ["israelite_later_general"],
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "israelite_later_general",
+          "name": "General",
+          "description": "May join a chariot unit.",
+          "excludes": ["israelite_later_king"],
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "israelite_later_senior_officer",
+          "name": "Senior Officer",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "israelite_later_chariots",
+          "name": "Chariots",
+          "description": "Chariots have a driver and one crewman armed with bow, light armour and shield.  Superior Fighters. Superior Shooters. Light Chariots. May have Spear (+1)",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow",
+            "Shield",
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters",
+            "Superior Shooters",
+            "Light Chariots"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+{
+          "id": "israelite_later_chariot_runners",
+          "name": "Chariot Runners",
+          "description": "Chariot Runners have javelins and shield. Open Order. Escorts. May be fielded as Skirmishers at a cost of nine points per base. May not be more units of Chariot Runners than there are of Chariots.",
+          "category": "Chariots",
+          "type": "escorts",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "excludes": ["israelite_later_cavalry"],
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": [
+            "Open Order","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers ",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "israelite_later_cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have a spear. Inferior Fighters. Escorts. May be fielded as Skirmishers. May not be taken if infantry Chariot Runners are used.",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "maxCountAllowed": 1,
+          "excludes": ["israelite_later_chariot_runners"],
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Spear"
+          ],
+          "specialRules": [
+            "Open Order","Inferior Fighters",
+            "Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+   
+        {
+          "id": "israelite_later_judean_spearmen",
+          "name": "Judean Spearmen",
+          "description": "Judean Spearmen have spear and shield. Superior Fighters. Stubborn. Warband (rule 3 does not apply).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": [
+            "Superior Fighters",
+            "Close Order",
+            "Warband (not rule 3)","Stubborn"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "israelite_later_danites",
+          "name": "Danites",
+          "description": "Danites have light armour, spear and shield.  Warband (rule 3 does not apply). May have javelins (+2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Light Armour",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Warband (not rule 3)"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "israelite_later_gibborim",
+          "name": "Gibborim",
+          "description": "Gibborim have light armour and shield.  Superior Fighters. Stubborn. May have spear (free) or javelins (+2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Light Armour",
+            "Shield"
+          ],
+          "specialRules": [
+            "Close Order", "Stubborn",
+            "Warband (not rule 3)"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "disables": "Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+       {
+          "id": "israelite_later_gadites",
+          "name": "Gadites",
+          "description": "Gadites have javelins and shield.  Superior Fighters. Open Order. Warband (rule 3 doe snot apply). May be fielded as Skirmishers at a cost of nine points per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order", "Superior Fighters",
+            "Warband (not rule 3)"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "israelite_later_zubulanites",
+          "name": "Zubulanites",
+          "description": "Zubulanites half have javelins and shield.  Superior Fighters. Open Order. Warband (rule 3 doe snot apply). May be fielded as Skirmishers at a cost of nine points per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order", "Superior Fighters",
+            "Warband (not rule 3)"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "israelite_later_benjaminites",
+          "name": "Benjaminites",
+          "description": "Benjaminites have a bow or sling. Superior Shooters. Open Order. May have shield (+2). May be fielded as Skirmishers at a cost of eight points per base. (nine if shielded).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            
+          ],
+          "specialRules": [
+            "Open Order", "Superior Shooters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "disables": "Shield",
+              "enableHidden": "Shield (Skirmishers)"
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": ["],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield (Skirmishers)",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": ["],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
 
+        {
+          "id": "israelite_later_issachar",
+          "name": "Issachar",
+          "description": "Issachar have javelins. Inferior Fighters. Skirmishers.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Skirmishera", "SInferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "israelite_later_philistines",
+          "name": "Philistines",
+          "description": "Philistines have javelins, light armour and shield. Stubborn.",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Light Armour","Shield"
+          ],
+          "specialRules": [
+            "Close Order","Stubborn"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "israelite_later_phoenicians",
+          "name": "Phoenicians",
+          "description": "Phoenicians have javelins or bow. May have light armour (+2).",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+       
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": ["],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+                {
+          "id": "israelite_later_edomites",
+          "name": "Edomites",
+          "description": "Edomites have javelins. Inferior Fighters. Skirmishers.",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+        "Javelins"
+          ],
+          "specialRules": [
+            "Inferior Fighters","Skirmishers"
+          ],
+          "optionalEquipment": []
+        }
+        
+      ]
+    }
+ 
 
 
 
