@@ -12,7 +12,7 @@
         },
         {
           "id": "Chariots",
-          "name": "Chariots",E
+          "name": "Chariots",
           "constraintType": "percentage",
           "min": 0,
           "max": 20
