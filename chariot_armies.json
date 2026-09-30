@@ -1492,7 +1492,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Phoenician ",
+              "name": "Phoenician",
               "disables": ["Syrian","Hurrian"],
               "pointsModifier": 0,
               "equipmentAdded": [],
