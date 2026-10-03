@@ -1709,7 +1709,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": [
-            "Bow","Javelins"
+            "Javelins"
           ],
           "specialRules": [
             "Close Order","Lukka", "Warband (not rule 3)"
