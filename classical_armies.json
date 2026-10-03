@@ -21691,7 +21691,7 @@
               "equipmentRemoved": [],
               "rulesAdded": ["Close Order","Massed Cavalry"],
               "rulesRemoved": ["Open Order","Shock Cavalry"],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
               "cohesionModifier": 0
             }
           ]
