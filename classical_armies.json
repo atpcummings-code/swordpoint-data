@@ -414,7 +414,7 @@
        { "type": "equipmentBasesCount", "left": { "unitIds": ["etruscan_skirmishers"], "equipment": ["Sling"] }, "expression": "lessThanOrEqual", "ratio": 1, "right": { "unitIds": ["etruscan_skirmishers"], "equipment": ["Javelins"] } } 
     ],
 
-	"alliedArmyKeys": [{"key": ["early_rome"],"disables": ["italian_hill_tribes","gallic"]}, {"key": ["italian_hill_tribes","gallic"],"disables": ["early_rome"]}],
+	"alliedArmyKeys": [{"key": "early_rome","disables": ["italian_hill_tribes","gallic"]}, {"key": ["italian_hill_tribes","gallic"],"disables": ["early_rome"]}],
 "maxAlliedArmiesAllowed": 2,
 
       "categories": [
