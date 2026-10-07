@@ -444,7 +444,7 @@
 			 "description":"May take allies from the Early Rome, Italian Hill Tribes or Gallic lists, and may take allies from both the latter two at the same time.",
           "min": 0,
           "max": 50,
-			"alliedArmyKeys": [{"key": "early_rome","disables": ["italian_hill_tribes","gallic"]}, {"key": ["italian_hill_tribes","gallic"],"disables": ["early_rome"]}],
+			"alliedArmyKeys": [{"key": "early_rome"}, {"key": ["italian_hill_tribes","gallic"]}],
 "maxAlliedArmiesAllowed": 2
         }
       ],
