@@ -30366,7 +30366,7 @@
         },
         {
           "id": "middle_japanese_retainers",
-                "name": "Retainers",
+        "name": "Retainers",
           "description": "Retainers have either spear, or bow, or Naginata (Halberd) (+2). Open Order. May have light armour (+2). Bow armed Units may have Pavise (+2) for front rank only.",
           "category": "Infantry",
 			"type": "Infantry",
@@ -30391,7 +30391,7 @@
                 "D": 7,
                 "C": 6
               },
-              "pointsPerBase": 12,
+              "pointsPerBase": 9,
               "baseEquipment": [],
               "specialRules": ["Open Order"],
 				"maxBases": 6
@@ -30749,8 +30749,8 @@
         },
         {
           "id": "late_japanese_retainers",
-                "name": "Retainers",
-          "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2). May have Pavise (+2) for front rank only.",
+          "name": "Retainers",
+          "description": "Retainers have either spear, or bow, or Naginata (Halberd) (+2). Open Order. May have light armour (+2). Bow armed Units may have Pavise (+2) for front rank only. May exchange spear for pike (+5) representing troops armed with Yari,  becoming Close Order ",
           "category": "Infantry",
 			"type": "Infantry",
           "minBases": 3,
@@ -30763,9 +30763,10 @@
                 "C": 7
               },
               "pointsPerBase": 9,
-              "baseEquipment": ["Bow"],
+              "baseEquipment": [],
               "specialRules": ["Open Order"],
-          	"minBases": 3
+          	"minBases": 3,
+				"maxBases": 6
             },
             {
               "name": "Retainers (Rear Rank)",
@@ -30773,15 +30774,17 @@
                 "D": 7,
                 "C": 6
               },
-              "pointsPerBase": 12,
-              "baseEquipment": ["Bow"],
-              "specialRules": ["Open Order"]
+              "pointsPerBase": 9,
+              "baseEquipment": [],
+              "specialRules": ["Open Order"],
+				"maxBases": 6
             }
           ],
           "optionalEquipment": [
             {
               "name": "Pavise",
               "pointsPerBase": 2,
+				"hiddenUntilEnabled": "hidden",
 				"maxBases": 6,
               "targetProfile": "Retainers (Front Rank)",
               "equipmentAdded": ["Pavise"],
@@ -30789,7 +30792,8 @@
             },
 {
               "name": "Spear",
-              "disables": ["Bow", "Halberd"],
+              "disables": ["Bow", "Naginata (Halberd)"],
+			  "enableHidden": ["Yari (Pike)"],
               "pointsModifier": 0,
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": [],
@@ -30800,8 +30804,9 @@
             },
              {
               "name": "Bow",
-              "disables": ["Spear", "Halberd"],
-              "pointsModifier": 0,
+              "disables": ["Spear", "Naginata (Halberd)"],
+			  "enableHidden": ["Pavise"],
+              "pointsModifier": 2,
               "equipmentAdded": ["Bow"],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -30810,10 +30815,10 @@
               "cohesionModifier": 0
             },
               {
-              "name": "Halberd",
+              "name": "Naginata (Halberd)",
               "disables": ["Spear", "Bow"],
               "pointsModifier": 2,
-              "equipmentAdded": ["Halberd"],
+              "equipmentAdded": ["Naginata (Halberd)"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -30830,17 +30835,17 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
- {
-              "name": "Pike (Yari)",
-              "disables": ["Spear","Halberd"],
+			  {
+              "name": "Yari (Pike)",
+				  "hiddenUntilEnabled": "hidden",
               "pointsModifier": 5,
-              "equipmentAdded": ["Pike (Yari)"],
-              "equipmentRemoved": ["Spear"],
+              "equipmentAdded": [Yari (Pike)],
+              "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            }
+            },
           ]
         },
         {
