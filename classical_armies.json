@@ -1558,7 +1558,11 @@
 "description": "May choose Allies from Minor States in this list, or from Syracusan or Thracian list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"alliedArmyKeys": [
+{"key": "syracusan"}, {"key": "early_hoplite_greek_minor_states"}, {"key": "thracian_getae"}, {"key": "thracian_highland_tribes"}, {"key": "thracian_coalition"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
