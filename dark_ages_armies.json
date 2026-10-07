@@ -30399,7 +30399,7 @@
             {
               "name": "Pavise",
               "pointsPerBase": 2,
-				"hiddenUntilEnabled": "hidden";
+				"hiddenUntilEnabled": "hidden",
 				"maxBases": 6,
               "targetProfile": "Retainers (Front Rank)",
               "equipmentAdded": ["Pavise"],
