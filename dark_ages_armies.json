@@ -30840,7 +30840,7 @@
 				  "hiddenUntilEnabled": "hidden",
               "pointsModifier": 5,
               "equipmentAdded": ["Yari (Pike)"],
-              "equipmentRemoved": [],
+              "equipmentRemoved": ["Spear"],
               "rulesAdded": ["Close Order"],
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
