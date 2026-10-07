@@ -9,7 +9,7 @@
     "categories": [
         {
 	 	"id": "Commanders",
-          "name": "Commanders",E
+          "name": "Commanders",
           "constraintType": "count",
           "min": 0,
           "max": 6
