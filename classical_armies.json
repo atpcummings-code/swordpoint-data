@@ -11310,8 +11310,13 @@
           "id": "Allies",
           "name": "Allies",
            "constraintType": "percentage",
+			 "description":" The armymay take allies from the Early Republican Rome, Italian Hill Tribes and Pyrrhic lists. 
           "min": 0,
-          "max": 25
+          "max": 25,
+			 "alliedArmyKeys": [
+{"key": "pyrrhic"}, {"key": "italian_hill_tribes"}, {"key": "early_republican_rome"}
+],
+"maxAlliedArmiesAllowed": 1
         },
       ],
       "units": [
