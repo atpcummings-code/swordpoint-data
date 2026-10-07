@@ -30380,7 +30380,7 @@
                 "C": 7
               },
               "pointsPerBase": 9,
-              "baseEquipment": ["Bow"],
+              "baseEquipment": [""],
               "specialRules": ["Open Order"],
           	"minBases": 3
             },
@@ -30391,7 +30391,7 @@
                 "C": 6
               },
               "pointsPerBase": 12,
-              "baseEquipment": ["Bow"],
+              "baseEquipment": [""],
               "specialRules": ["Open Order"]
             }
           ],
