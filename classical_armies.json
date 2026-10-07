@@ -2544,7 +2544,7 @@
         {
           "id": "Allies",
           "name": "Allies",
-"description": "May select from the Syracusan, Italian Hill Tribes or SOuthern Italian lists.",
+"description": "May select from the Syracusan, Italian Hill Tribes or Southern Italian lists.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
@@ -8019,10 +8019,16 @@
         },
         {
           "id": "Allies",
+			"description": "The army may take allies from the Early Republican Rome. Italian Hill Tribes and Pyrrhic lists.",
           "name": "Allies and Mercenaries",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"alliedArmyKeys": [
+{"key": "early_republican_rome"}, {"key": "italian_hill_tribes
+"}, {"key": "pyrrhic"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
