@@ -1856,7 +1856,11 @@
 "description": "May choose Allies from Minor States in this list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"alliedArmyKeys": [
+ {"key": "early_hoplite_greek_minor_states"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -2539,7 +2543,11 @@
 "description": "May select from the Syracusan, Italian Hill Tribes or SOuthern Italian lists.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"alliedArmyKeys": [
+{"key": "syracusan"}, {"key": "italian_hill_tribes"}, {"key": "southern_italian"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -2874,14 +2882,6 @@
           "id": "LightTroops",
 "description": "",
           "name": "Light Troops",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 25
-        },
-        {
-          "id": "Allies",
-          "name": "Allies",
-"description": "May choose Allies from Minor States in this list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25
