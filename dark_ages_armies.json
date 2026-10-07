@@ -30367,7 +30367,7 @@
         {
           "id": "middle_japanese_retainers",
                 "name": "Retainers",
-          "description": "Retainers have either spear, or bow, or halberd (+2). Open Order. May have light armour (+2). May have Pavise (+2) for front rank only.",
+          "description": "Retainers have either spear, or bow, or Naginata (Halberd) (+2). Open Order. May have light armour (+2). Bow armed Units may have Pavise (+2) for front rank only.",
           "category": "Infantry",
 			"type": "Infantry",
           "minBases": 3,
@@ -30399,6 +30399,7 @@
             {
               "name": "Pavise",
               "pointsPerBase": 2,
+				"hiddenUntilEnabled": "hidden";
 				"maxBases": 6,
               "targetProfile": "Retainers (Front Rank)",
               "equipmentAdded": ["Pavise"],
@@ -30406,7 +30407,7 @@
             },
 {
               "name": "Spear",
-              "disables": ["Bow", "Halberd"],
+              "disables": ["Bow", "Naginata (Halberd)"],
               "pointsModifier": 0,
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": [],
@@ -30417,7 +30418,8 @@
             },
              {
               "name": "Bow",
-              "disables": ["Spear", "Halberd"],
+              "disables": ["Spear", "Naginata (Halberd)"],
+			  "enableHidden": ["Pavise"],
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
               "equipmentRemoved": [],
@@ -30427,10 +30429,10 @@
               "cohesionModifier": 0
             },
               {
-              "name": "Halberd",
+              "name": "Naginata (Halberd)",
               "disables": ["Spear", "Bow"],
               "pointsModifier": 2,
-              "equipmentAdded": ["Halberd"],
+              "equipmentAdded": ["Naginata (Halberd)"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
