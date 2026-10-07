@@ -15797,7 +15797,7 @@
           "id": "Allies",
           "name": "Allies",
            "constraintType": "percentage",
-		  "description": May take allies from Later Hoplite Greek - Sparta or Thebes, but not both.",
+		  "description": "May take allies from Later Hoplite Greek - Sparta or Thebes, but not both.",
           "min": 0,
           "max": 25,
 		  "alliedArmyKeys": [
