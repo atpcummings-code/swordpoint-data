@@ -13586,7 +13586,12 @@
           "name": "Allies",
            "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"description": " May choose allies from the Later Hoplite Greek - Minor States list",
+			"alliedArmyKeys": [
+{"key": "later_hoplite_greek_minor_states"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -13878,7 +13883,12 @@
           "name": "Allies",
            "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"description": " May choose allies from the Later Hoplite Greek - Minor States list",
+			"alliedArmyKeys": [
+{"key": "later_hoplite_greek_minor_states"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -14179,7 +14189,12 @@
           "name": "Allies",
            "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"description": " May choose allies from the Later Hoplite Greek - Minor States list",
+			"alliedArmyKeys": [
+{"key": "later_hoplite_greek_minor_states"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -14823,9 +14838,21 @@
       {
           "id": "Allies",
           "name": "Allies",
+		  "description": "May select allies from one other greek city state.",
            "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+		  "alliedArmyKeys": [
+{"key": "later_hoplite_greek_sparta"},
+{"key": "later_hoplite_greek_thebes"},
+{"key": "later_hoplite_greek_athens"},
+{"key": "later_hoplite_greek_thessaly"},
+{"key": "later_hoplite_greek_magna_graecia"},
+{"key": "later_hoplite_greek_epirus"},
+{"key": "later_hoplite_greek_tegea"},
+{"key": "later_hoplite_greek_minor_states"}
+],
+"maxAlliedArmiesAllowed": 1
         }
         
       ],
@@ -14972,7 +14999,7 @@
         {
           "id": "later_hoplite_greek_kyrenean_mercenary_hoplites",
           "name": "Mercenary Hoplites",
-          "description": "Hoplites have spear and large shield. May take light armour (+2). Trained Phalanx.",
+          "description": "Hoplites have spear and large shield. May take light armour (+2). Trained Phalanx. One unit may be upgraded to Elite (C8, Drilled, Superior Fighters",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -14993,6 +15020,16 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
+            },
+			   {
+              "name": "Elite",
+              "pointsModifier": 11,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters", "Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
             }
           ]
         },
@@ -15145,9 +15182,16 @@
       {
           "id": "Allies",
           "name": "Allies",
+		   "description": "May select allies from the Syracusan, Italian Hill Tribes or Southern Italian lists.",
            "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+		  "alliedArmyKeys": [
+{"key": "italian_hill_tribes"},
+{"key": "syracusan"},
+{"key": "southern_italian"}
+],
+"maxAlliedArmiesAllowed": 1
         }
         
       ],
@@ -15458,9 +15502,15 @@
       {
           "id": "Allies",
           "name": "Allies",
+		  "description": "May take Illyurains (not slave troops) or Later Hoplite Greeks - Minor States.",
            "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+		  "alliedArmyKeys": [
+{"key": "Illyrians", "excludesUnits": ["illyrians_slaves"]},
+{"key": "later_hoplite_greek_minor_states"}
+],
+"maxAlliedArmiesAllowed": 1
         }
         
       ],
@@ -15747,8 +15797,14 @@
           "id": "Allies",
           "name": "Allies",
            "constraintType": "percentage",
+		  "description": May take allies from Later Hoplite Greek - Sparta or Thebes, but not both.",
           "min": 0,
-          "max": 25
+          "max": 25,
+		  "alliedArmyKeys": [
+{"key": "later_hoplite_greek_sparta"},
+{"key": "later_hoplite_greek_thebes"}
+],
+"maxAlliedArmiesAllowed": 1
         }
         
       ],
@@ -15861,6 +15917,7 @@
             {
               "name": "Superior Fighters",
               "pointsModifier": 4,
+				"enabledEvery": 3,
               "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": ["Superior Fighters"],
@@ -16013,13 +16070,6 @@
         {
           "id": "LightTroops",
           "name": "LightTroops",
-           "constraintType": "percentage",
-          "min": 0,
-          "max": 25
-        },
-      {
-          "id": "Allies",
-          "name": "Allies",
            "constraintType": "percentage",
           "min": 0,
           "max": 25
