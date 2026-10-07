@@ -414,7 +414,7 @@
        { "type": "equipmentBasesCount", "left": { "unitIds": ["etruscan_skirmishers"], "equipment": ["Sling"] }, "expression": "lessThanOrEqual", "ratio": 1, "right": { "unitIds": ["etruscan_skirmishers"], "equipment": ["Javelins"] } } 
     ],
 
-	"alliedArmyKeys": ["early_rome"],
+	"alliedArmyKeys": ["key": "early_rome"],
 "maxAlliedArmiesAllowed": 2,
 
       "categories": [
