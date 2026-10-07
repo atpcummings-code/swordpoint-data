@@ -9428,7 +9428,7 @@
           "id": "Allies",
           "name": "Allies",
           "constraintType": "percentage",
-			"description":"A Gallic army may take allies from teh Etruscan or Italian Hill Tribes lists.
+			"description":"A Gallic army may take allies from teh Etruscan or Italian Hill Tribes lists.",
           "min": 0,
           "max": 25,
 			"alliedArmyKeys": [
