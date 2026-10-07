@@ -9428,8 +9428,13 @@
           "id": "Allies",
           "name": "Allies",
           "constraintType": "percentage",
+			"description":"A Gallic army may take allies from teh Etruscan or Italian Hill Tribes lists.
           "min": 0,
-          "max": 25
+          "max": 25,
+			"alliedArmyKeys": [
+{"key": "etruscan"}, {"key": "italian_hill_tribes"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -9710,7 +9715,7 @@
       ],
       "units": [
         {
-          "id": "early_carthaginian_general",
+          "id": "early_carthaginian_earlier_general",
           "name": "General",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -9725,7 +9730,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_carthaginian_officer",
+          "id": "early_carthaginian_earlier_officer",
           "name": "Officer",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -9739,7 +9744,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_carthaginian_Heavy_cavalry",
+          "id": "early_carthaginian_Heavy_earlier_cavalry",
           "name": "Heavy Cavalry",
           "description": "Heavy Cavalry have javelins. May have light armour (+1).",
           "category": "Cavalry",
@@ -9769,7 +9774,7 @@
           ]
         },
         {
-          "id": "early_carthaginian_heavy_chariots",
+          "id": "early_carthaginian_heavy_earlier_chariots",
           "name": "Heavy Chariots",
           "description": "Heavy Chariots have driver and two crewmen with light armour, spear, javelins and shield. Superior Fighters. Superior SHooters. Heavy Chariots.",
           "category": "Cavalry",
@@ -9789,7 +9794,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_carthaginian_light_cavalry",
+          "id": "early_carthaginian_earlier_light_cavalry",
           "name": "Light Cavalry",
           "description": "Light Cavalry have javelins. Inferior Fighters. Skirmishers.",
           "category": "Cavalry",
@@ -9808,7 +9813,7 @@
           "optionalEquipment": []
         },
           {
-          "id": "early_carthaginian_citizen_phalanx",
+          "id": "early_carthaginian_earlier_citizen_phalanx",
           "name": "Citizen Phalanx",
           "description": "Citizen Phalanx have spear and large shield. Phalanx. May take light armour (+2). The army must contain at least one unit of Citizen Phalanx.",
           "category": "Infantry",
@@ -9839,7 +9844,7 @@
           ]
         },
         {
-          "id": "early_carthaginian_north_african_levy",
+          "id": "early_carthaginian_earlier_north_african_levy",
           "name": "North African Levy",
           "description": "North African Levy have spear and large shield. Inferior Fighters. Phalanx. Levies.",
                     "category": "Infantry",
@@ -9858,7 +9863,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_carthaginian_mercenary_hoplites",
+          "id": "early_carthaginian_earlier_mercenary_hoplites",
           "name": "Mercenary Hoplites",
           "description": "Mercenary Hoplites have spear and large shield. Phalanx. May take light armour (+2).",
                     "category": "Mercenaries",
@@ -9889,7 +9894,7 @@
         },
         
         {
-          "id": "early_carthaginian_skirmishers",
+          "id": "early_carthaginian_earlier_skirmishers",
           "name": "Skrimishers",
           "description": "Skrimishers have javelins. Inferior Fighters. Skirmishers. May replace javelins with bow or sling (free).",
                     "category": "Mercenaries",          
@@ -9932,7 +9937,7 @@
         },
         
         {
-          "id": "early_carthaginian_spanish_infantry",
+          "id": "early_carthaginian_earlier_spanish_infantry",
           "name": "Spanish Infantry",
           "description": "Spanish Infantry have javelins and shield. Open Order. Warband. They may have light armour (+2) and every second unit may have throwing spear (+2).",
                             "category": "Mercenaries",
@@ -9974,7 +9979,7 @@
         },
 
         {
-          "id": "early_carthaginian_sardinians",
+          "id": "early_carthaginian_earlier_sardinians",
           "name": "Sardinians",
           "description": "Sardinians have javelins and shield. Warband.",
                             "category": "Mercenaries",
@@ -9993,7 +9998,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "early_carthaginian_celts",
+          "id": "early_carthaginian_earlier_celts",
           "name": "Celts",
           "description": "Celts have throwing spear and shield. Warband. Both may be fielded in Open Order at a cost of eleven points per base. May take light armour (+2).",
                               "category": "Mercenaries",
@@ -10033,7 +10038,7 @@
           ]
         },
         {
-          "id": "early_carthaginian_ligurians",
+          "id": "early_carthaginian_earlier_ligurians",
           "name": "Ligurians",
           "description": "Ligurians have throwing spear and shield. Warband. Both may be fielded in Open Order at a cost of eleven points per base. May have javelins (+2).",
                              "category": "Mercenaries",
@@ -10079,7 +10084,9 @@
 	  
 "early_carthaginian": {
       "armyName": "Early Carthaginian - 500 BC to 270 BC",
-    
+     "armyValidation": [ 
+{ "ids": ["early_carthaginian_greek_skirmishers"], "expression": "lessThanOrEqual", "ratio": 0.5, "compareWith": ["early_carthaginian_skirmishers"], "countBy": "bases" }
+],
       "categories": [
         {
           "id": "Commanders",
