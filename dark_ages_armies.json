@@ -30839,7 +30839,7 @@
               "name": "Yari (Pike)",
 				  "hiddenUntilEnabled": "hidden",
               "pointsModifier": 5,
-              "equipmentAdded": [Yari (Pike)],
+              "equipmentAdded": ["Yari (Pike)"],
               "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
               "rulesRemoved": ["Open Order"],
