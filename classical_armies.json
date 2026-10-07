@@ -444,6 +444,7 @@
           "id": "Allies",
           "name": "Allies",
           "constraintType": "percentage",
+			 "description":"May take allies from the Early Rome, Italian Hill Tribes or Gallic lists, and may take allies from both the latter two at the same time.",
           "min": 0,
           "max": 50
         }
