@@ -4214,6 +4214,21 @@
             }
 		  ]
         },
+		  {
+          "id": "persians_and_medes_cyrus_camel_mounted_archers",
+          "name": "Camel Mounted Archers",
+          "description": "Two riders armed with bows. They are treated as normal camelry figures. They may shoot with one extra D^ for every two bases shooting (roun up).",
+          "category": "Allies",
+          "type": "Camels",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order."],
+          "optionalEquipment": []
+        },
         
       ]
     },
@@ -5305,6 +5320,79 @@
             }
 		  ]
         },
+{
+          "id": "early_hoplite_greek_sparta_mercenary_hoplites",
+          "name": "Mercenary Hoplites",
+          "description": "Mercenary Hoplites have spear, and large shield. Phalanx. May take Light armour (+2), or heavy armour (+4). May upgrde to Superior Fighters, Trained Phalanx (+6) as Elites such as Spartans.",
+          "category": "Allies",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+"maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear", "Large Shield"],
+          "specialRules": ["Close Order","Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "disables": "Heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "disables": "Light Armour",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Elite Hoplites",
+              "pointsModifier": 6,
+              "equipmentAdded": [],
+			  "minUnits": 1,
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters", "Trained Phalanx"],
+              "rulesRemoved": ["Phalanx"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "later_achaemenid_persians_scythed_chariot",
+          "name": "Scythed Chariot",
+          "description": "Scythed Chariot have throwing spear and shield. Open Order. Warband. Stubborn. The unit must contain no more bases than the smallest formed Warrior Unit.",
+          "category": "Allies",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+		"maxCountAllowed": 2,
+          "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["later_achaemenid_persians_warriors"] },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+          "Throwing Spear","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Warband","Stubborn"
+          ],
+          "optionalEquipment": []
+        },
+
+		  
         
       ]
     },
