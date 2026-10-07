@@ -415,7 +415,7 @@
     ],
 
 	"alliedArmyKeys": [{"key": ["early_rome"],"disables": ["italian_hill_tribes","gallic"]}, {"key": ["italian_hill_tribes","gallic"],"disables": ["early_rome"]}],
-"maxAlliedArmiesAllowed": 2
+"maxAlliedArmiesAllowed": 2,
 
       "categories": [
         {
