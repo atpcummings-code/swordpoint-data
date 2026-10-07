@@ -1033,8 +1033,14 @@
           "id": "Allies",
           "name": "Allies",
           "constraintType": "percentage",
+			"description": "May take allies of Etruscans or Italian Hill Tribes.",
           "min": 0,
-          "max": 20
+          "max": 20,
+		  "alliedArmyKeys": [
+			{"key": "italian_hill_tribes"}, {"key": "etruscan"}
+		   ],
+
+"maxAlliedArmiesAllowed": 2
         }
       ],
       "units": [
