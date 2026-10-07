@@ -1250,7 +1250,11 @@
 "description": "May choose Allies from other Greek States in the Early Hoplite Greek List, or from Syracusan list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"alliedArmyKeys": [
+{"key": "early_hoplite_greek_athens"}, {"key": "early_hoplite_greek_thebes"}, {"key": "early_hoplite_greek_thebes_pw"}, {"key": "early_hoplite_greek_magna_graecia"}, {"key": "early_hoplite_greek_minor_states"},{"key": "syracusan"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
