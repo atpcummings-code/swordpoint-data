@@ -30382,7 +30382,8 @@
               "pointsPerBase": 9,
               "baseEquipment": [],
               "specialRules": ["Open Order"],
-          	"minBases": 3
+          	"minBases": 3,
+				"maxBases": 6
             },
             {
               "name": "Retainers (Rear Rank)",
@@ -30392,7 +30393,8 @@
               },
               "pointsPerBase": 12,
               "baseEquipment": [],
-              "specialRules": ["Open Order"]
+              "specialRules": ["Open Order"],
+				"maxBases": 6
             }
           ],
           "optionalEquipment": [
@@ -30420,7 +30422,7 @@
               "name": "Bow",
               "disables": ["Spear", "Naginata (Halberd)"],
 			  "enableHidden": ["Pavise"],
-              "pointsModifier": 0,
+              "pointsModifier": 2,
               "equipmentAdded": ["Bow"],
               "equipmentRemoved": [],
               "rulesAdded": [],
