@@ -5412,7 +5412,9 @@
               "specialRules": [],
               "pointsPerBase": 0
             }
+		  ]
         }
+	
 
 		  
         
@@ -11950,7 +11952,7 @@
 
 ]
         },
-        {
+         {
           "id": "later_achaemenid_persians_scythed_chariot",
           "name": "Scythed Chariots",
           "description": "Driver has heavy armour. Scythed Chariot.",
@@ -11978,6 +11980,7 @@
               "specialRules": [],
               "pointsPerBase": 0
             }
+		  ]
         },
         {
           "id": "later_achaemenid_persians_nobles",
