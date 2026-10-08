@@ -5398,7 +5398,7 @@
             {
               "name": "Scythed Chariot",
               "stats": {
-                "D": 3
+                
               },
               "pointsPerBase": 25,
               "specialRules": ["Scythed Chariot","Used to Elephants"]
@@ -5406,6 +5406,7 @@
             {
               "name": "Driver",
               "stats": {
+				"D": 3,
                 "C": 7
               },
 				"baseEquipment": [],
@@ -11966,7 +11967,7 @@
             {
               "name": "Scythed Chariot",
               "stats": {
-                "D": 3
+                
               },
               "pointsPerBase": 25,
               "specialRules": ["Scythed Chariot","Used to Elephants"]
@@ -11974,6 +11975,7 @@
             {
               "name": "Driver",
               "stats": {
+				  "D": 3,
                 "C": 7
               },
 				"baseEquipment": [],
@@ -21105,7 +21107,7 @@
             {
               "name": "Scythed Chariot",
               "stats": {
-                "D": 3
+               
               },
               "pointsPerBase": 25,
               "specialRules": ["Scythed Chariot","Used to Elephants"]
@@ -21113,6 +21115,7 @@
             {
               "name": "Driver",
               "stats": {
+				   "D": 3,
                 "C": 7
               },
 				"baseEquipment": [],
@@ -21806,7 +21809,7 @@
             {
               "name": "Scythed Chariot",
               "stats": {
-                "D": 3
+              
               },
               "pointsPerBase": 25,
               "specialRules": ["Scythed Chariot","Used to Elephants"]
@@ -21814,6 +21817,7 @@
             {
               "name": "Driver",
               "stats": {
+				  "D": 3,
                 "C": 7
               },
 				"baseEquipment": [],
@@ -23934,7 +23938,7 @@
             {
               "name": "Scythed Chariot",
               "stats": {
-                "D": 3
+                
               },
               "pointsPerBase": 25,
               "specialRules": ["Scythed Chariot"]
@@ -23942,7 +23946,8 @@
             {
               "name": "Driver",
               "stats": {
-                "C": 7
+                "D": 3,
+				  "C": 7
               },
 				"baseEquipment": [],
               "specialRules": [],
@@ -31895,7 +31900,7 @@
             {
               "name": "Scythed Chariot",
               "stats": {
-                "D": 3
+                
               },
               "pointsPerBase": 25,
               "specialRules": ["Scythed Chariot"]
@@ -31903,7 +31908,8 @@
             {
               "name": "Driver",
               "stats": {
-                "C": 7
+                "D": 3,
+				  "C": 7
               },
 				"baseEquipment": [],
               "specialRules": [],
