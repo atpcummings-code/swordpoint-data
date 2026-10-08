@@ -16754,12 +16754,13 @@
            "constraintType": "percentage",
           "min": 0,
           "max": 25,
+			"description":"The army may take allied  contingents from any or all of the Illyrian, Thracian Highland Tribes or Later Hoplite Greek - Athens Lists.",
 			"alliedArmyKeys": [
 {"key": "thracian_highland_tribes"}, 
 {"key": "later_hoplite_greek_athens"},
 {"key": "illyrians"}
 ],
-"maxAlliedArmiesAllowed": 1
+"maxAlliedArmiesAllowed": 3
         }
       ],
       "units": [
@@ -18437,6 +18438,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
+		  "description": "May have allies from the Thracian Getae (lowland) list.",
 		  "alliedArmyKeys": [
 {"key": "thracian_getae"}, 
 
@@ -20114,9 +20116,15 @@
       {
           "id": "Allies",
           "name": "Allies",
+		  "description":"May have allied contingents from the Illrians and Thracian Highland Tribes lists",
           "constraintType": "percentage",
           "min": 0,
-          "max": 20
+          "max": 20,
+		  "alliedArmyKeys": [
+{"key": "illyrians"},
+{"key": "thracian_highland_tribes"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -20489,10 +20497,16 @@
         },
       {
           "id": "Allies",
+		  "description":"May have allied contingents from the Settled Galatian (after 280 BC) and Thracian Getae lists.",
           "name": "Allies and Mercenaries",
           "constraintType": "percentage",
           "min": 0,
-          "max": 33
+          "max": 33,
+		  "alliedArmyKeys": [
+{"key": "thracian_getae"},
+{"key": "galatian_settled_period"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -21919,6 +21933,7 @@
         {
           "id": "Allies",
           "name": "Allies",
+			"description": "May take cavalry from teh Early German, Dacian or Alan Lists.",
           "constraintType": "percentage",
           "min": 0,
           "max": 10,
@@ -22411,6 +22426,7 @@
         },
       {
           "id": "Allies",
+		  "description":"",
           "name": "Special Troops and Allies",
           "constraintType": "percentage",
           "min": 0,
