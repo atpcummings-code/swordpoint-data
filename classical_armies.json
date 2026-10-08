@@ -23549,7 +23549,7 @@
           "min": 0,
           "max": 50,
 			"alliedArmyKeys": [
-{"key": "twilight_of_greece"}
+{"key": "twilight_of_greece"},
 {"key": "galatian_settled_period", "excludesUnits": ["galatian_settled_period_noble_chariots"]}
 ],
 "maxAlliedArmiesAllowed": 1
