@@ -22426,11 +22426,16 @@
         },
       {
           "id": "Allies",
-		  "description":"",
+		  "description":"The army may take allied units from teh Southern Italian list.  Galatian Invasion Period  allies may be used instead, in which case Tarentine and Itlian troops may not be included - this represents Pyrrhus' army in Greece.",
           "name": "Special Troops and Allies",
           "constraintType": "percentage",
           "min": 0,
-          "max": 50
+          "max": 50,
+		  "alliedArmyKeys": [
+{"key": "southern_italian"}
+{"key": "galatian_invasion_period", "excludesUnits": ["galatian_invasion_period_noble_chariots"]}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -23539,10 +23544,15 @@
         {
           "id": "Allies",
           "name": "Allies",
-           "description": "",
+           "description": "The army may have allied contingents from teh Twilight of Greece and Galatian Settled Period (No chariots).",
           "constraintType": "percentage",
           "min": 0,
-          "max": 50
+          "max": 50,
+			"alliedArmyKeys": [
+{"key": "twilight_of_greece"}
+{"key": "galatian_settled_period", "excludesUnits": ["galatian_settled_period_noble_chariots"]}
+],
+"maxAlliedArmiesAllowed": 1
         },
         {
           "id": "Elephants",
