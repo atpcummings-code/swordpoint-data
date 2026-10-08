@@ -23914,9 +23914,15 @@
       {
           "id": "Allies",
           "name": "Allies",
+		  "description": "May take allies from teh Twilight of Grece list (Cavavlry, Thureophoroi and skirmishers only).",
           "constraintType": "percentage",
           "min": 0,
-          "max": 20
+          "max": 20,
+		  "alliedArmyKeys": [
+{"key": "twilight_of_greece","excludesUnits": ["twilight_of_greece_phalangites","twilight_of_greece_hoplites","twilight_of_greece_mercenaries"]}
+
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -24105,9 +24111,15 @@
       {
           "id": "Allies",
           "name": "Allies",
+		  "description": "May take allies from the Seleucid (Early) and Pontic Lists, but must take at least 1 unit from each if taken.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 40
+          "max": 40,
+		   "alliedArmyKeys": [
+		  { "key": "pontic", "minUnits": 1, "requiresAlly": "seleucid_successor_early" },
+		  { "key": "seleucid_successor_early", "minUnits": 1, "requiresAlly": "pontic" }
+],
+		  		  "maxAlliedArmiesAllowed": 2
         }
       ],
       "units": [
