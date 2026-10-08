@@ -21924,8 +21924,8 @@
           "max": 10,
 			"alliedArmyKeys": [
 {"key": "early_german", "excludesUnits": ["early_german_warriors","early_german_fanatics","early_german_skirmishers","early_german_cavalry_supports"]},
-{"key": "alans"}, "alans_warriors","alans_wagons"]},
-{"key": "dacian", "dacian_warriors","dacian_falxmen","dacian_archers","dacian_youth"]}
+{"key": "alans", "excludesUnits": ["alans_warriors","alans_wagons"]},
+{"key": "dacian", "excludesUnits": ["dacian_warriors","dacian_falxmen","dacian_archers","dacian_youth"]}
 ],
 "maxAlliedArmiesAllowed": 1
         }
