@@ -5111,7 +5111,7 @@
               "cohesion": 5,
 	          "pointsPerBase": 14,
               "minBases": 3,
-              "maxBases": 6,,
+              "maxBases": 6,
               "baseEquipment": ["Spear", "Bow"],
          "specialRules": ["Close Order","Inferior Fighters","Inferior Shooters","Levies"],
             }
