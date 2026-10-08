@@ -22432,7 +22432,7 @@
           "min": 0,
           "max": 50,
 		  "alliedArmyKeys": [
-{"key": "southern_italian"}
+{"key": "southern_italian"},
 {"key": "galatian_invasion_period", "excludesUnits": ["galatian_invasion_period_noble_chariots"]}
 ],
 "maxAlliedArmiesAllowed": 1
