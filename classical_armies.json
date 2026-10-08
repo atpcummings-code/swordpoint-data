@@ -16497,7 +16497,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Spear","Large Shield"],
-          "specialRules": ["Close Order"],
+          "specialRules": ["Close Order","Stamina"],
           "optionalEquipment": [
              {
               "name": "Light Armour",
@@ -16533,7 +16533,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Light Armour","Spear","Large Shield"],
-          "specialRules": ["Close Order"],
+          "specialRules": ["Close Order","Stamina"],
           "optionalEquipment": [
              {
               "name": "Stubborn",
@@ -16580,7 +16580,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Light Armour","Spear","Large Shield"],
-          "specialRules": ["Close Order","Drilled"],
+          "specialRules": ["Close Order","Drilled","Stamina"],
           "optionalEquipment": [
              {
               "name": "Stubborn",
@@ -16753,7 +16753,13 @@
           "name": "Allies",
            "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"alliedArmyKeys": [
+{"key": "thracian_highland_tribes"}, 
+{"key": "later_hoplite_greek_athens"},
+{"key": "illyrians"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -17087,7 +17093,7 @@
               "equipmentAdded": ["Javelins"],
               "equipmentRemoved": ["Pike"],
               "rulesAdded": [],
-              "rulesRemoved": ["Drilled"],
+              "rulesRemoved": ["Drilled","Stubborn"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
@@ -17260,7 +17266,13 @@
           "name": "Allies",
            "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"alliedArmyKeys": [
+{"key": "thracian_highland_tribes"}, 
+{"key": "later_hoplite_greek_athens"},
+{"key": "illyrians"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -17631,6 +17643,16 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
+            },
+			  {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
           ]
         },
@@ -17648,7 +17670,18 @@
           "maxBases": 6,
           "baseEquipment": ["Bow","Shield"],
           "specialRules": ["Skirmishers","Superior Shooters"],
-          "optionalEquipment": []
+          "optionalEquipment": [
+			  {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
         },
 {
           "id": "macedon_late_mercenaries",
@@ -17673,6 +17706,16 @@
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
