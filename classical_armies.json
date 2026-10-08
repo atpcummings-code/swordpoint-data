@@ -11944,24 +11944,32 @@
         },
         {
           "id": "later_achaemenid_persians_scythed_chariot",
-          "name": "Scythed Chariot",
-          "description": "Scythed Chariot have throwing spear and shield. Open Order. Warband. Stubborn. The unit must contain no more bases than the smallest formed Warrior Unit.",
-          "category": "Infantry",
-          "type": "Infantry",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 16,
-		"maxCountAllowed": 1,
-          "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["later_achaemenid_persians_warriors"] },
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": [
-          "Throwing Spear","Shield"
-          ],
-          "specialRules": [
-            "Open Order","Warband","Stubborn"
-          ],
-          "optionalEquipment": []
+          "name": "Scythed Chariots",
+          "description": "Driver has heavy armour. Scythed Chariot.",
+          "maxCountAllowed": 3,
+          "category": "Allies",
+          "type": "Cavalry",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [],
+          "subProfiles": [
+            {
+              "name": "Scythed Chariot",
+              "stats": {
+                "D": 3
+              },
+              "pointsPerBase": 25,
+              "specialRules": ["Scythed Chariot","Used to Elephants"]
+            },
+            {
+              "name": "Driver",
+              "stats": {
+                "C": 7
+              },
+				"baseEquipment": [],
+              "specialRules": [],
+              "pointsPerBase": 0
+            }
         },
         {
           "id": "later_achaemenid_persians_nobles",
