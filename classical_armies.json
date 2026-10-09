@@ -31542,9 +31542,22 @@
         {
           "id": "Allies",
           "name": "Allies",
+			"description": "May take allies frfrom one only of: Bactrian Greek (Infantry Only), the Alan list: or teh Classical Indian list, including up to one elephantper 250 points.",
            "constraintType": "percentage",
           "min": 0,
-          "max": 40
+          "max": 40,
+			"alliedArmyKeys": [
+{"key": "bactrian_greek", "excludesUnits": ["bactrian_greek_cleruch_cavalry",
+"bactrian_greek_scythian_nobles",
+"bactrian_greek_bactrian_cavalry",
+"bactrian_greek_scythians",
+"bactrian_greek_elephant_escorts",
+"bactrian_greek_elephant",
+"bactrian_greek_companions"]},
+{"key": "alans"},
+{"key": "classical_indian"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
