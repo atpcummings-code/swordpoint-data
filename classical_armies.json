@@ -29109,7 +29109,7 @@
           "max": 25,
 			 "description": "May take allies from teh Sarmation list.",
 			 "alliedArmyKeys": [
-{"key": "sarmation"}
+{"key": "sarmatian"}
 
 ],
 "maxAlliedArmiesAllowed": 1
