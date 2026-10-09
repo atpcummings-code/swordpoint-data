@@ -16826,7 +16826,6 @@
         {
           "id": "macedon_early_hipparch",
           "name": "Hipparch",
-          "excludes": ["macedon_early_hipparch"],
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "Commanders",
@@ -16841,7 +16840,6 @@
  {
           "id": "macedon_early_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["macedon_early_taxiarch"],
           "description": "",
           "category": "Commanders",
           "type": "Commanders",
@@ -17339,7 +17337,6 @@
         {
           "id": "macedon_late_hipparch",
           "name": "Hipparch",
-          "excludes": ["macedon_late_hipparch"],
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "Commanders",
@@ -17354,7 +17351,6 @@
  {
           "id": "macedon_late_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["macedon_late_taxiarch"],
           "description": "",
           "category": "Commanders",
           "type": "Commanders",
@@ -17800,7 +17796,6 @@
         {
           "id": "macedonian_successor_hipparch",
           "name": "Hipparch",
-          "excludes": ["macedonian_successor_hipparch"],
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "Commanders",
@@ -17815,7 +17810,6 @@
  {
           "id": "macedonian_successor_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["macedonian_successor_taxiarch"],
           "description": "",
           "category": "Commanders",
           "type": "Commanders",
@@ -18465,7 +18459,6 @@
         {
           "id": "lysimachid_successor_hipparch",
           "name": "Hipparch",
-          "excludes": ["lysimachid_successor_hipparch"],
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "Commanders",
@@ -18480,7 +18473,6 @@
  {
           "id": "lysimachid_successor_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["lysimachid_successor_taxiarch"],
           "description": "",
           "category": "Commanders",
           "type": "Commanders",
@@ -18997,7 +18989,6 @@
         {
           "id": "eumenid_successor_hipparch",
           "name": "Hipparch",
-          "excludes": ["eumenid_successor_hipparch"],
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "Commanders",
@@ -19012,7 +19003,6 @@
  {
           "id": "eumenid_successor_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["eumenid_successor_taxiarch"],
           "description": "",
           "category": "Commanders",
           "type": "Commanders",
@@ -19562,7 +19552,6 @@
         {
           "id": "antigonid_successor_hipparch",
           "name": "Hipparch",
-          "excludes": ["antigonid_successor_hipparch"],
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "Commanders",
@@ -19577,7 +19566,6 @@
  {
           "id": "antigonid_successor_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["antigonid_successor_taxiarch"],
           "description": "",
           "category": "Commanders",
           "type": "Commanders",
@@ -20146,7 +20134,6 @@
         {
           "id": "twilight_of_greece_hipparch",
           "name": "Hipparch",
-          "excludes": ["twilight_of_greece_hipparch"],
           "description": "Rides a horse.",
           "category": "Commanders",
           "type": "Commanders",
@@ -20161,7 +20148,6 @@
  {
           "id": "twilight_of_greece_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["twilight_of_greece_taxiarch"],
           "description": "",
           "category": "Commanders",
           "type": "Commanders",
@@ -22457,7 +22443,6 @@
         {
           "id": "pyrrhic_hipparch",
           "name": "Hipparch",
-          "excludes": ["pyrrhic_hipparch"],
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "Commanders",
@@ -22472,7 +22457,6 @@
  {
           "id": "pyrrhic_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["pyrrhic_taxiarch"],
           "description": "",
           "category": "Commanders",
           "type": "Commanders",
@@ -22981,7 +22965,6 @@
         {
           "id": "ptolemaic_egyptian_hipparch",
           "name": "Hipparch",
-          "excludes": ["ptolemaic_egyptian_hipparch"],
           "description": "Rides a horse.",
           "category": "Commanders",
           "type": "Commanders",
@@ -22996,7 +22979,6 @@
  {
           "id": "ptolemaic_egyptian_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["ptolemaic_egyptian_taxiarch"],
           "description": "",
           "category": "Commanders",
           "type": "Commanders",
@@ -25482,7 +25464,6 @@
         {
           "id": "later_macedonian_hipparch",
           "name": "Hipparch",
-          "excludes": ["later_macedonian_hipparch"],
           "description": "Rides a horse.",
           "category": "Commanders",
           "type": "Commanders",
@@ -25497,7 +25478,6 @@
  {
           "id": "later_macedonian_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["later_macedonian_taxiarch"],
           "description": "",
           "category": "Commanders",
           "type": "Commanders",
@@ -26422,7 +26402,6 @@
         {
           "id": "bactrian_greek_hipparch",
           "name": "Hipparch",
-          "excludes": ["bactrian_greek_hipparch"],
           "description": "Rides a horse.",
           "category": "Commanders",
           "type": "Commanders",
@@ -26437,7 +26416,6 @@
  {
           "id": "bactrian_greek_taxiarch",
           "name": "Taxiarch",
-          "excludes": ["bactrian_greek_taxiarch"],
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "Commanders",
