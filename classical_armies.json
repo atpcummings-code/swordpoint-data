@@ -25439,9 +25439,15 @@
   {
           "id": "Allies",
           "name": "Allies",
+	  "description": "May have allies from teh Twilight of Greece list.",
            "constraintType": "percentage",
           "min": 0,
-          "max": 20
+          "max": 20,
+	  "alliedArmyKeys": [
+{"key": "twilight_of_greece"}
+
+],
+"maxAlliedArmiesAllowed": 1
         }
       
       ],
@@ -25807,9 +25813,15 @@
         {
           "id": "Allies",
           "name": "Allies",
+			"description": "May have an allied contingent from the Armenian list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"alliedArmyKeys": [
+{"key": "middle_armenia"}
+
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
