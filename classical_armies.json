@@ -27281,9 +27281,15 @@
          {
           "id": "Allies",
           "name": "Allies",
+			 "description": "May have allies from the Xiongnu list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			 "alliedArmyKeys": [
+{"key": "xiongnu"}
+
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -28493,9 +28499,9 @@
           ],
           "optionalEquipment": [
             {
-              "name": "Javelins-Shield",
+              "name": "Javelins and Shield",
               "disables": ["Throwing Spear-Shield","Skirmishers (Bow)","Skirmishers (Javelins)"],
-              "pointsModifier": 2,
+              "pointsModifier": 0,
               "equipmentAdded": ["Javelins","Shield"],
               "equipmentRemoved": ["Bow"],
               "rulesAdded": [],
@@ -28504,7 +28510,7 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Throwing Spear-Shield",
+              "name": "Throwing Spear and Shield",
               "disables": ["Javelins-Shield","Skirmishers (Bow)","Skirmishers (Javelins)"],
               "pointsModifier": 2,
               "equipmentAdded": ["Throwing Spear","Shield",],
@@ -29100,7 +29106,13 @@
           "name": "Allies",
            "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			 "description": "May take allies from teh Sarmation list.",
+			 "alliedArmyKeys": [
+{"key": "sarmation"}
+
+],
+"maxAlliedArmiesAllowed": 1
         },
       ],
       "units": [
@@ -29340,12 +29352,13 @@
           "type": "Wagons",
           "maxCountAllowed": 1,
           "minBases": 0,
-          "maxBases": 12,
+          "maxBases": 5,
           "subProfiles": [
             {
               "name": "Wagons",
               "stats": {},
               "pointsPerBase": 10,
+				"maxBases": 5,
               "specialRules": [
                 "Wagon Tabor"
               ]
@@ -29357,6 +29370,7 @@
                 "C": 7
               },
               "pointsPerBase": 18,
+				"maxBases": 5,
               "baseEquipment": [
                 "Javelins"
               ],
