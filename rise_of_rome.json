@@ -780,7 +780,7 @@
           "id": "senones_insubres_and_boii_skirmishers",
           "name": "Skirmishers",
           "description": " Javelins and shield. May exchange javelins for sling or bow (free). There may not be more bow units than sling units, and sling or bow units may not be larger than the smallest javelin unit in the army; there must be at least one javelin unit.",
-           "category": "Infantry",
+           "category": "Skirmishers",
           "type": "Skirmishers",
           "defence": 6,
           "cohesion": 5,
