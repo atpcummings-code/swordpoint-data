@@ -505,7 +505,7 @@
 { "type": "equipmentBasesCount", "left": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Sling"] }, "expression": "lessThanOrEqual", "right": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Javelins"] } }, 
 { type: "equipmentUnitCount", left: { unitIds: ["senones_insubres_and_boii_skirmishers"], equipment: ["Javelins"] }, expression: "greaterThanOrEqual", value: 1 }
 
-]
+],
       "categories": [
         {
           "id": "Commanders",
