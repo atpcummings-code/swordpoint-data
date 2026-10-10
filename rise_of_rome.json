@@ -898,7 +898,7 @@
         },
         {
           "id": "samnites_warriors",
-          "name": "Warriros",
+          "name": "Warriors",
           "description": "Warriors have javelins and shield. May have spears (+1) and light armour (+1).",
           "category": "Cavalry",
           "type": "Cavalry",
