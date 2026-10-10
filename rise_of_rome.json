@@ -390,7 +390,7 @@
           "pointsPerBase": 0,
           "minBases": 0,
           "maxBases": 1,
-          "specialRules": ["Devotio"],
+          "specialRules": [],
           "optionalEquipment": []
         },
         {
