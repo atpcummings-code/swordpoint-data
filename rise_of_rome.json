@@ -1011,10 +1011,10 @@
           ]
         },
         {
-          "id": "samnites_leves",
-          "name": "Leves",
+          "id": "samnites_skirmishers",
+          "name": "Skirmishers",
           "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers.",
-          "category": "Infantry",
+          "category": "Skirmishers",
           "type": "Skirmishers",
           "defence": 6,
           "cohesion": 5,
