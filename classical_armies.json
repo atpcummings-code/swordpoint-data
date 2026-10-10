@@ -19181,7 +19181,7 @@
         {
           "id": "eumenid_successor_light_cavalry",
           "name": "Light Cavalry",
-          "description": "Light Cavalry have javelins and spears. Skirmishers. Parthian SHot.",
+          "description": "Light Cavalry have javelins and spears. Skirmishers. Parthian Shot.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 6,
@@ -19696,7 +19696,7 @@
         {
           "id": "antigonid_successor_greek_cavalry",
           "name": "Greek Cavalry",
-          "description": "Greek Cavalry have light armour and javelins. May upgrade to heavy armour (+1). One unit may instead have shield and be fielded as Skirmishers with Parthian SHot at a cost of 20 pointsper base.",
+          "description": "Greek Cavalry have light armour and javelins. May upgrade to heavy armour (+1). One unit may instead have shield and be fielded as Skirmishers with Parthian Shot at a cost of 20 pointsper base.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 5,
@@ -19799,7 +19799,7 @@
          {
           "id": "antigonid_successor_tarentines",
           "name": "Tarentines",
-          "description": "Tarentines have javelins and large spears. Skirmishers. Parthian SHot.",
+          "description": "Tarentines have javelins and large spears. Skirmishers. Parthian Shot.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 4,
@@ -20200,7 +20200,7 @@
          {
           "id": "twilight_of_greece_tarentine_cavalry",
           "name": "Tarentine Cavalry",
-          "description": "Tarentine Cavalry have javelins and large spears. Skirmishers. Superior Shooters. Parthian SHot.",
+          "description": "Tarentine Cavalry have javelins and large spears. Skirmishers. Superior Shooters. Parthian Shot.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 4,
@@ -22855,7 +22855,7 @@
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": ["Javelins","Large Shield"],
-          "specialRules": ["Skirmishers","Parthian SHot"],
+          "specialRules": ["Skirmishers","Parthian Shot"],
           "optionalEquipment": []
         }, 
         
