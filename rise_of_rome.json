@@ -494,11 +494,13 @@
         }
       ]
     },
+	
+	  
 	  "senones_insubres_and_boii": 
 	{
       "armyName": "Senones , Insubres and Boii 600 BC to 220 BC",
       "armyValidation": [ 
-{ "type": "equipmentUnitCount", "left": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Bow"] }, "expression": "lessThanOrEqual", "right": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Sling"] }, "ratio": 1 },
+{ "type": "equipmentUnitCount", "left": { "unitIds": ["senones_insubres_and_boii_skirmishers""], "equipment": ["Bow"] }, "expression": "lessThanOrEqual", "right": { "unitIds": ["senones_insubres_and_boii_skirmishers""], "equipment": ["Sling"] }, "ratio": 1 },
 { "type": "equipmentBasesCount", "left": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Bow"] }, "expression": "lessThanOrEqual", "right": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Javelins"] } }, 
 { "type": "equipmentBasesCount", "left": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Sling"] }, "expression": "lessThanOrEqual", "right": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Javelins"] } }, 
 { type: "equipmentUnitCount", left: { unitIds: ["senones_insubres_and_boii_skirmishers"], equipment: ["Javelins"] }, expression: "greaterThanOrEqual", value: 1 }
@@ -645,41 +647,101 @@
           ],
           "optionalEquipment": []
         },
-        {
+        {{
           "id": "senones_insubres_and_boii_warband",
           "name": "Warband",
-          "description": "Warband have throwing spear and shield. Warband.",
-          "category": "Infantry",
-          "type": "Infantry",
-          "defence": 6,
-          "cohesion": 5,
-          "pointsPerBase": 14,
-          "excludesIf": { "unitIds": ["senones_insubres_and_boii_warriors"],"count": 1 },
+          "description": "Warband have throwing spear and shield. WArband. Up to half the bases may have light armour (+2).",
+    "category": "Infantry",      
+	"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Throwing Spear","Shield"],
-          "specialRules": [
-            "Close Order","Warband"
-          ],
-          "optionalEquipment": []
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Close Order"],
+          "subProfiles": [
+            {
+              "name": "Warband (Front Rank)",
+            	"defence": 6,
+          	"cohesion": 5,
+          	"pointsPerBase": 14,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Warband (Rear Rank)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 5,
+              "pointsPerBase": 14,
+              "minBases": 3,
+              "maxBases": 6,
+              "maxPercentage": 50,
+              "baseEquipment": ["Throwing Spear", "Shield"],
+              "specialRules": ["Close Order"],
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Light Armour",
+              "targetProfile": "Warband (Front Rank)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }]
         },
         {
           "id": "senones_insubres_and_boii_warriors",
           "name": "Warriors",
-          "description": "Warriors have throwing spear and shield",
-          "category": "Infantry",
-          "type": "Infantry",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 16,
-          "excludesIf": { "unitIds": ["senones_insubres_and_boii_warband"],"count": 1 },
+          "description": "Warriors have throwing spear and shield. Up to half the bases may have light armour (+2).",
+    "category": "Infantry",      
+	"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Throwing Spear","Shield"],
-          "specialRules": [
-            "Close Order"
-          ],
-          "optionalEquipment": []
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Close Order"],
+          "subProfiles": [
+            {
+              "name": "Warriors (Front Rank)",
+            	"defence": 6,
+          	"cohesion": 7,
+          	"pointsPerBase": 16,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Throwing Spear", "Shield"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Warriors (Rear Rank)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 16,
+              "minBases": 3,
+              "maxBases": 6,
+              "maxPercentage": 50,
+              "baseEquipment": ["Throwing Spear", "Shield"],
+              "specialRules": ["Close Order"],
+            }
+            
+            ],
+	"optionalEquipment": [
+  		{
+              "name": "Light Armour",
+              "targetProfile": "Warriors (Front Rank)",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }]
         },
         {
           "id": "senones_insubres_and_boii_gaesati",
