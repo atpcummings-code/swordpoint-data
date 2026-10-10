@@ -31839,7 +31839,9 @@
 
 	  "pontic": {
       "armyName": "Pontic - 110 BC to 47 BC",
-"armyValidation": [],
+"armyValidation": [
+	{ "ids": ["pontic_phalanx", "pontic_levy_phalanx"], "expression": "greaterThanOrEqual", "value": 1, "countBy": "units" } 
+],
 "categories": [
         {
           "id": "Commanders",
@@ -31865,9 +31867,16 @@
         {
           "id": "Allies",
           "name": "Allies",
+			"description": "A Pontic army may take allies from the Thracian (Getae),Armenian (Middle) and Dacian lists, though Armenian and Dacians cannot be taken together.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"alliedArmyKeys": [
+{"key": "dacian"},
+{"key": "middle_armenia"},
+{"key": "dacian"}
+],
+"maxAlliedArmiesAllowed": 2
         }
       ],
       "units": [
@@ -32257,9 +32266,16 @@
          {
           "id": "Allies",
           "name": "Allies",
+			 "description": "May have allied contingents from teh Numidian, PErgamene and Armenia (Middle) lists. It may also include 0-2 units of Warrios from the Illyrian list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			 "alliedArmyKeys": [
+{"key": "numidian"},
+{"key": "middle_armenia"},
+{"key": "pergamene"}
+],
+"maxAlliedArmiesAllowed": 3
         }
       ],
       "units": [
@@ -32522,6 +32538,61 @@
           "baseEquipment": ["Sling","Shield"],
           "specialRules": ["Skirmishers","Superior Shooters"],
           "optionalEquipment": []
+        },
+		  {
+          "id": "illyrians_warriors",
+          "name": "Warriors",
+          "description": "Warriors have javelins, throwing spear and shield. Open Order. Warband. May upgrade to large shield (+2). One unit may have light amrour (+2). Units without armour or large shield  may be fielded as Skirmishers at a cost of eight points per base, these are not Warband.",
+          "category": "Allies",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+			   "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Shield","Throwing Spear"
+          ],
+          "specialRules": [
+            "Open Order","Warband"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "disables": "Skirmishers",
+              "pointsModifier": 2,
+              "maxUnits": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Large Shield",
+               "disables": "Skirmishers",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+               "disables": ["Large Shield","Light Armour"],
+              "pointsModifier": -6,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": ["Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
         }
 
 
