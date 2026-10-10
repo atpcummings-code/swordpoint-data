@@ -77,7 +77,7 @@
         {
           "id": "roman_tribal_army_noble_infantry",
           "name": "Noble Infantry",
-          "description": "Noble Infantry have spear and large shield. Open Order. May be Superior Fighters (+4) and have light armour (+2).",
+          "description": "Noble Infantry have spear and large shield. Open Order. May be Superior fighters (+4) and have light armour (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -93,11 +93,11 @@
           ],
           "optionalEquipment": [
             {
-              "name": "Superior Fighters",
+              "name": "Superior fighters",
               "pointsModifier": 4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Superior Fighters"],
+              "rulesAdded": ["Superior fighters"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -117,7 +117,7 @@
         {
           "id": "roman_tribal_army_tribal_infantry",
           "name": "Tribal Infantry",
-          "description": " Tribal Infantry have spear and large shield. Open Order. May be ﬁelded as Skirmishers at a cost of 7 points per base",
+          "description": " Tribal Infantry have spear and large shield. Open Order. May be fielded as Skirmishers at a cost of 7 points per base",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -239,7 +239,7 @@
         {
           "id": "roman_state_army_dismounted_equites",
           "name": "Equites",
-          "description": "Dismounted Equites have light armour, spear and large shield. Open Order. Riding horses. May be upgraded to Superior Fighters (+4). Max 5 bases, may not be fielded with Equites.",
+          "description": "Dismounted Equites have light armour, spear and large shield. Open Order. Riding horses. May be upgraded to Superior fighters (+4). Max 5 bases, may not be fielded with Equites.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 4,
@@ -253,11 +253,11 @@
           "specialRules": ["Open Order", "Riding Horses"],
           "optionalEquipment": [
             {
-              "name": "Superior Fighters",
+              "name": "Superior fighters",
               "pointsModifier": 4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Superior Fighters"],
+              "rulesAdded": ["Superior fighters"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -267,7 +267,7 @@
         {
           "id": "roman_state_army_principes",
           "name": "Principes",
-          "description": " Principes have light armour, spear and large shield. Open Order. May be upgraded to Superior Fighters (+4).",
+          "description": " Principes have light armour, spear and large shield. Open Order. May be upgraded to Superior fighters (+4).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 4,
@@ -282,11 +282,11 @@
           ],
           "optionalEquipment": [
             {
-              "name": "Superior Fighters",
+              "name": "Superior fighters",
               "pointsModifier": 4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Superior Fighters"],
+              "rulesAdded": ["Superior fighters"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -296,7 +296,7 @@
         {
           "id": "roman_state_army_hastati",
           "name": "Hsatati",
-          "description": "Hastati have spear and large shield. Open Order. May downgrade to Shield (D6) at -2 points per base. May be ﬁelded as Skirmishers at a cost of 7 points per base (6 points if D6).",
+          "description": "Hastati have spear and large shield. Open Order. May downgrade to Shield (D6) at -2 points per base. May be fielded as Skirmishers at a cost of 7 points per base (6 points if D6).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -427,7 +427,7 @@
         {
           "id": "the_aequi_and_volsci_tribal_infantry",
           "name": "Tribal Infantry",
-          "description": " Tribal Infantry have large shield and javelins. Open Order. Up to three units may have light armour (+2). One unit may be Superior Fighters (+4). Troops without upgrades may be ﬁelded as Skirmishers at a cost of 7 points per base.",
+          "description": " Tribal Infantry have large shield and javelins. Open Order. Up to three units may have light armour (+2). One unit may be Superior fighters (+4). Troops without upgrades may be fielded as Skirmishers at a cost of 7 points per base.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -452,19 +452,19 @@
               "cohesionModifier": 0
             },
             {
-              "name": "Superior Fighters",
+              "name": "Superior fighters",
               "pointsModifier": 4,
               "maxUnits": 1,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Superior Fighters"],
+              "rulesAdded": ["Superior fighters"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
             {
               "name": "Skirmishers",
-              "disables": ["Superior Fighters", "Light Armour"],
+              "disables": ["Superior fighters", "Light Armour"],
               "pointsModifier": -5,
               "equipmentAdded": [],
               "equipmentRemoved": [],
@@ -598,7 +598,7 @@
         {
           "id": "senones_insubres_and_boii_noble_cavalry",
           "name": "Noble Cavalry",
-          "description": "Noble Cavalry have spear, shield, and light armour. Superior Fighters.",
+          "description": "Noble Cavalry have spear, shield, and light armour. Superior fighters.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 4,
@@ -608,14 +608,14 @@
           "maxBases": 8,
           "baseEquipment": ["Spear","Shield","Light Armour"],
           "specialRules": [
-            "Open Order","Superior Fighters"
+            "Open Order","Superior fighters"
           ],
           "optionalEquipment": []
         },
         {
           "id": "senones_insubres_and_boii_noble_chariots",
           "name": "Noble Chariots",
-          "description": "Noble Chariots have an unarmed driver and one warrior crewman with javelins, light armour, and shield. Light Chariots. Superior Fighters.",
+          "description": "Noble Chariots have an unarmed driver and one warrior crewman with javelins, light armour, and shield. Light Chariots. Superior fighters.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 3,
@@ -625,7 +625,7 @@
           "maxBases": 8,
           "baseEquipment": ["Javelins","Shield","Light Armour"],
           "specialRules": [
-            "Open Order","Superior Fighters", "Light Chariot"
+            "Open Order","Superior fighters", "Light Chariot"
           ],
           "optionalEquipment": []
         },
@@ -936,7 +936,7 @@
         {
           "id": "samnites_extraordinarii",
           "name": "Extraordinarii",
-          "description": "Extraordinarii have throwing spear, light armour and large shield. Superior Fighters. Open Order. May have javelins (+2) and be Drilled (+3).",
+          "description": "Extraordinarii have throwing spear, light armour and large shield. Superior fighters. Open Order. May have javelins (+2) and be Drilled (+3).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 4,
@@ -947,7 +947,7 @@
           "maxBases": 12,
           "baseEquipment": ["Throwing Spear","Light Armour","Large Shield"],
           "specialRules": [
-            "Open Order","Superior Fighters"
+            "Open Order","Superior fighters"
           ],
           "optionalEquipment": [
             {
@@ -1013,7 +1013,7 @@
         {
           "id": "samnites_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers.",
+          "description": "Skirmishers have javelins and shield. Inferior fighters. Skirmishers.",
           "category": "Skirmishers",
           "type": "Skirmishers",
           "defence": 6,
@@ -1023,7 +1023,7 @@
           "maxBases": 6,
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": [
-            "Skirmishers","Inferior Fighters"
+            "Skirmishers","Inferior fighters"
           ],
           "optionalEquipment": []
         }
@@ -1256,7 +1256,7 @@
         {
           "id": "early_republican_legionary_army_triarii",
           "name": "Triarii",
-          "description": "Triarii have light armour, spear, and large shield. Drilled. May be Superior Fighters (+4) and Stubborn (+2).",
+          "description": "Triarii have light armour, spear, and large shield. Drilled. May be Superior fighters (+4) and Stubborn (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 4,
@@ -1271,11 +1271,11 @@
           ],
           "optionalEquipment": [
             {
-              "name": "Superior Fighters",
+              "name": "Superior fighters",
               "pointsModifier": 4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Superior Fighters"],
+              "rulesAdded": ["Superior fighters"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -1295,7 +1295,7 @@
         {
           "id": "early_republican_legionary_army_rorarii",
           "name": "Rorarii",
-          "description": "Rorarii have javelins and spear. Inferior Fighters. Skirmishers. These units are used until the end of the war against Pyrrhos.",
+          "description": "Rorarii have javelins and spear. Inferior fighters. Skirmishers. These units are used until the end of the war against Pyrrhos.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -1305,14 +1305,14 @@
           "maxBases": 6,
           "baseEquipment": ["Spear","Javelins"],
           "specialRules": [
-            "Skirmishers","Inferior Fighters"
+            "Skirmishers","Inferior fighters"
           ],
           "optionalEquipment": []
         },
         {
           "id": "early_republican_legionary_army_leves",
           "name": "Leves",
-          "description": "Leves have javelins and shield. Inferior Fighters. Skirmishers. There must be one base of Leves for every three bases of Hastati in the army. These troops should be used in armies after the war against Pyrrhos.",
+          "description": "Leves have javelins and shield. Inferior fighters. Skirmishers. There must be one base of Leves for every three bases of Hastati in the army. These troops should be used in armies after the war against Pyrrhos.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -1322,14 +1322,14 @@
           "maxBases": 6,
           "baseEquipment": ["Shield","Javelins"],
           "specialRules": [
-            "Skirmishers","Inferior Fighters"
+            "Skirmishers","Inferior fighters"
           ],
           "optionalEquipment": []
         },
         {
           "id": "early_republican_legionary_army_extraordinarii",
           "name": "Extraordinarii",
-          "description": "Extraordinarii have throwing spear and shield. Superior Fighters. Open Order. They may have light armour (+2) and large shield (+2). The Extraordinarii unit may not be larger than any of the Italian spearmen units, and cannot be used if there are none of these present",
+          "description": "Extraordinarii have throwing spear and shield. Superior fighters. Open Order. They may have light armour (+2) and large shield (+2). The Extraordinarii unit may not be larger than any of the Italian spearmen units, and cannot be used if there are none of these present",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -1341,7 +1341,7 @@
           "maxBases": 12,
           "baseEquipment": ["Throwing Spear","Shield"],
           "specialRules": [
-            "Open Order","Superior Fighters"
+            "Open Order","Superior fighters"
           ],
           "optionalEquipment": [
            {
@@ -1410,7 +1410,7 @@
         {
           "id": "early_republican_legionary_army_leves",
           "name": "Leves",
-          "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers.",
+          "description": "Skirmishers have javelins and shield. Inferior fighters. Skirmishers.",
           "category": "Infantry",
           "type": "Skirmishers",
           "defence": 6,
@@ -1420,7 +1420,7 @@
           "maxBases": 6,
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": [
-            "Skirmishers","Inferior Fighters"
+            "Skirmishers","Inferior fighters"
           ],
           "optionalEquipment": []
         }
@@ -1508,7 +1508,7 @@
         {
           "id": "magna_graecia_heavy_cavalry",
           "name": "Heavy Cavalry",
-          "description": "Heavy Cavalry have javelins. May have light armour (+1). One unit may upgrade to C8, Superior Fighters, (+4) as Elite troops.",
+          "description": "Heavy Cavalry have javelins. May have light armour (+1). One unit may upgrade to C8, Superior fighters, (+4) as Elite troops.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 6,
@@ -1536,7 +1536,7 @@
               "pointsModifier": 4,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
-              "rulesAdded": ["Superior Fighters"],
+              "rulesAdded": ["Superior fighters"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 1
@@ -1546,7 +1546,7 @@
         {
           "id": "magna_graecia_light_cavalry",
           "name": "Light Cavalry",
-          "description": "Light Cavalry have javelins. Skirmishers. Inferior Fighters.",
+          "description": "Light Cavalry have javelins. Skirmishers. Inferior fighters.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 6,
@@ -1555,13 +1555,13 @@
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": ["Javelins"],
-          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "specialRules": ["Skirmishers","Inferior fighters"],
           "optionalEquipment": []
         },
         {
           "id": "magna_graecia_tarentines",
           "name": "Tarentines",
-          "description": "Tarentines have javelins and large shield. Skirmishers. Inferior Fighters. Parthian Shot.",
+          "description": "Tarentines have javelins and large shield. Skirmishers. Inferior fighters. Parthian Shot.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 4,
@@ -1570,7 +1570,7 @@
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": ["Javelins","Large Shield"],
-          "specialRules": ["Skirmishers","Inferior Fighters","Parthian Shot"],
+          "specialRules": ["Skirmishers","Inferior fighters","Parthian Shot"],
           "optionalEquipment": []
         },
         
@@ -1619,7 +1619,7 @@
         {
           "id": "magna_graecia_army_regular_mercenary_hoplites",
           "name": "Mercenary Hoplites",
-          "description": "Mercenary Hoplites have spear and large shield. Phalanx. May take light armour (+2) or heavy armour (+4). May upgrade to Trained Phalanx (+2) and may be Veteran (+1). One unit may upgrade to Superior Fighters, Trained Phalanx, Veteran (+7) as elite troops.",
+          "description": "Mercenary Hoplites have spear and large shield. Phalanx. May take light armour (+2) or heavy armour (+4). May upgrade to Trained Phalanx (+2) and may be Veteran (+1). One unit may upgrade to Superior fighters, Trained Phalanx, Veteran (+7) as elite troops.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -1682,7 +1682,7 @@
               "maxUnits": 1,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Veteran", "Superior Fighters","Trained Phalanx"],
+              "rulesAdded": ["Veteran", "Superior fighters","Trained Phalanx"],
               "rulesRemoved": ["Phalanx"],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -1692,7 +1692,7 @@
 {
           "id": "magna_graecia_army_regular_militia_hoplites",
           "name": "Militia Hoplites",
-          "description": "Militia Hoplites have spear and large shield. Inferior Fighters. Phalanx. Levy.",
+          "description": "Militia Hoplites have spear and large shield. Inferior fighters. Phalanx. Levy.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -1702,7 +1702,7 @@
           "maxBases": 12,
           "baseEquipment": ["Spear","Large Shield"],
           "specialRules": [
-            "Close Order","Phalanx","Inferior Fighters","Levy"
+            "Close Order","Phalanx","Inferior fighters","Levy"
           ],
           "optionalEquipment": []
         },
@@ -1711,7 +1711,7 @@
         {
           "id": "magna_graecia_peltasts",
           "name": "Peltasts",
-          "description": "Peltasts have javelins and shield. Open Order. May be ﬁelded as Skirmishers at a cost of 7 points per base.",
+          "description": "Peltasts have javelins and shield. Open Order. May be fielded as Skirmishers at a cost of 7 points per base.",
           "category": "LightTroops",
           "type": "Infantry",
           "defence": 6,
@@ -1775,7 +1775,7 @@
         {
           "id": "magna_graecia_mercenary_skirmishers",
           "name": "Mercenary Skirmishers",
-          "description": "Mercenary Skirmishers have javelins and shield. Inferior Fighters. Skirmishers.",
+          "description": "Mercenary Skirmishers have javelins and shield. Inferior fighters. Skirmishers.",
           "category": "LightTroops",
           "type": "Infantry",
           "defence": 6,
@@ -1785,14 +1785,14 @@
           "maxBases": 4,
           "baseEquipment": ["Javelins","Shield"],
           "specialRules": [
-            "Skirmishers","Inferior Fighetrs"
+            "Skirmishers","Inferior fighetrs"
           ],
           "optionalEquipment": []
         },
         {
           "id": "magna_graecia_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers.",
+          "description": "Skirmishers have javelins. Inferior fighters. Skirmishers.",
           "category": "LightTroops",
           "type": "Infantry",
           "defence": 7,
@@ -1802,7 +1802,7 @@
           "maxBases": 4,
           "baseEquipment": ["Javelins"],
           "specialRules": [
-            "Skirmishers","Inferior Fighetrs"
+            "Skirmishers","Inferior fighetrs"
           ],
           "optionalEquipment": [
             {
@@ -1840,7 +1840,7 @@
         {
           "id": "magna_graecia_army_triarii",
           "name": "Triarii",
-          "description": "Triarii have light armour, spear, and large shield. Drilled. May be Superior Fighters (+4) and Stubborn (+2).",
+          "description": "Triarii have light armour, spear, and large shield. Drilled. May be Superior fighters (+4) and Stubborn (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 4,
@@ -1855,11 +1855,11 @@
           ],
           "optionalEquipment": [
             {
-              "name": "Superior Fighters",
+              "name": "Superior fighters",
               "pointsModifier": 4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
-              "rulesAdded": ["Superior Fighters"],
+              "rulesAdded": ["Superior fighters"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -1879,7 +1879,7 @@
         {
           "id": "magna_graecia_army_rorarii",
           "name": "Rorarii",
-          "description": "Rorarii have javelins and spear. Inferior Fighters. Skirmishers. These units are used until the end of the war against Pyrrhos.",
+          "description": "Rorarii have javelins and spear. Inferior fighters. Skirmishers. These units are used until the end of the war against Pyrrhos.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -1889,14 +1889,14 @@
           "maxBases": 6,
           "baseEquipment": ["Spear","Javelins"],
           "specialRules": [
-            "Skirmishers","Inferior Fighters"
+            "Skirmishers","Inferior fighters"
           ],
           "optionalEquipment": []
         },
         {
           "id": "magna_graecia_army_leves",
           "name": "Leves",
-          "description": "Leves have javelins and shield. Inferior Fighters. Skirmishers. There must be one base of Leves for every three bases of Hastati in the army. These troops should be used in armies after the war against Pyrrhos.",
+          "description": "Leves have javelins and shield. Inferior fighters. Skirmishers. There must be one base of Leves for every three bases of Hastati in the army. These troops should be used in armies after the war against Pyrrhos.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -1906,14 +1906,14 @@
           "maxBases": 6,
           "baseEquipment": ["Shield","Javelins"],
           "specialRules": [
-            "Skirmishers","Inferior Fighters"
+            "Skirmishers","Inferior fighters"
           ],
           "optionalEquipment": []
         },
         {
           "id": "magna_graecia_army_extraordinarii",
           "name": "Extraordinarii",
-          "description": "Extraordinarii have throwing spear and shield. Superior Fighters. Open Order. They may have light armour (+2) and large shield (+2). The Extraordinarii unit may not be larger than any of the Italian spearmen units, and cannot be used if there are none of these present",
+          "description": "Extraordinarii have throwing spear and shield. Superior fighters. Open Order. They may have light armour (+2) and large shield (+2). The Extraordinarii unit may not be larger than any of the Italian spearmen units, and cannot be used if there are none of these present",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -1924,7 +1924,7 @@
           "maxBases": 12,
           "baseEquipment": ["Throwing Spear","Shield"],
           "specialRules": [
-            "Open Order","Superior Fighters"
+            "Open Order","Superior fighters"
           ],
           "optionalEquipment": [
            {
@@ -1993,7 +1993,7 @@
         {
           "id": "magna_graecia_army_leves",
           "name": "Leves",
-          "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers.",
+          "description": "Skirmishers have javelins and shield. Inferior fighters. Skirmishers.",
           "category": "Infantry",
           "type": "Skirmishers",
           "defence": 6,
@@ -2003,7 +2003,7 @@
           "maxBases": 6,
           "baseEquipment": ["Javelins", "Shield"],
           "specialRules": [
-            "Skirmishers","Inferior Fighters"
+            "Skirmishers","Inferior fighters"
           ],
           "optionalEquipment": []
         }
