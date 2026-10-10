@@ -273,7 +273,7 @@
           "defence": 4,
           "cohesion": 7,
           "pointsPerBase": 14,
-          "minCountAllowed": 2,
+          "maxCountAllowed": 2,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Spear","Light Armour","Large Shield"],
