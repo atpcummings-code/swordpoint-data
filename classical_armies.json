@@ -33046,7 +33046,7 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 8,
-           "excludesIf": [{ "unitIds": ["early_imperial_rome_early_auxiliaries"], "hasEquipment": ["Open Order"], "count": 1 },{ "unitIds": ["british_tribes_fanatics"], "hasEquipment": ["Shield"], "count": 1 }],
+			"excludesIf": { "unitIds": ["early_imperial_rome_early_auxiliaries","british_tribes_fanatics"],"count": 1 },
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": ["Throwing Spear","Shield"],
