@@ -1,1 +1,166 @@
+{
+  "armies": { 
+    
+    "roman_tribal_army": 
+	{
+      "armyName": "Roman Tribal Army - 753 BC to c.550 BC",
 
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "count",
+          "min": 0,
+          "max": 1
+        },
+         {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 100
+        },
+      ],
+      "units": [
+        {
+          "id": "roman_tribal_army_king",
+          "name": "King",
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": ["Devotio"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "roman_tribal_army_clan-chief",
+          "name": "Clan Chief",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "roman_tribal_army_cavalry",
+          "name": "Cavalry",
+          "description": "Tribal cavalry have spear and shield. The unit may not comprise more than 3 bases.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 3,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "roman_tribal_army_noble_infantry",
+          "name": "Noble Infantry",
+          "description": "Noble Infantry have spear and large shield. Open Order. May be Superior Fighters (+4) and have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Superior Fighters",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "roman_tribal_army_tribal_infantry",
+          "name": "Tribal Infantry",
+          "description": " Tribal Infantry have spear and large shield. Open Order. May be ﬁelded as Skirmishers at a cost of 7 points per base",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+           {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "roman_tribal_army_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Skirmishers",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "requires": { "unitIds": ["roman_tribal_army_warriors", "roman_tribal_army_falxmen"], "name": ["Warriors", "Falxmen"], "countPerUnit": 2 },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        }
+      ]
+    }
+  }
+}
