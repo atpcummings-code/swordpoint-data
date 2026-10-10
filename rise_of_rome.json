@@ -1028,6 +1028,403 @@
           "optionalEquipment": []
         }
       ]
+    },
+	    "early_republican_legionary_army": 
+	{
+      "armyName": "Early Republican Legionary Army - c.360 BC to c.210 BC",
+"armyValidation": [
+{ "ids": ["early_republican_legionary_army_hastati"], "expression": "greaterThanOrEqual", "compareWith": ["early_republican_legionary_army_principes"], "ratio": 1, "countBy": "units" },
+{ "ids": ["early_republican_legionary_army_principes"], "expression": "greaterThanOrEqual", "compareWith": ["early_republican_legionary_army_triarii"], "ratio": 1, "countBy": "units" },
+  { "ids": ["early_republican_legionary_army_leves"], "expression": "greaterThanOrEqual", "compareWith": ["early_republican_legionary_army_hastati"], "ratio": 0.333, "countBy": "bases" },
+  { "ids": ["early_republican_legionary_army_extraordinarii"], "expression": "lessThanOrEqual", "compareWith": ["early_republican_legionary_army_italian_spearmen"], "ratio": 1, "countBy": "bases" } 
+  
+],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       
+      
+         {
+          "id": "Infantry",
+          "name": "Roman and Latin Troops",
+          "constraintType": "percentage",
+          "min": 40,
+          "max": 100
+        },
+                   {
+          "id": "Allies",
+          "name": "Allies",
+            "description":"The army may have allied contingents from the Italian Hill Tribes, Campanian, Gallic, or Magna Graecia lists ",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50,
+             "alliedArmyKeys": [
+            {"key": "italian_hill_tribes", "supplement":"classical_armies"},
+            {"key": "gallic", "supplement":"classical_armies"},
+            {"key": "campanian", "supplement":"classical_armies"},
+            {"key": "later_hoplite_greek_magna_graecia", "supplement":"classical_armies"}               
+          ],
+"maxAlliedArmiesAllowed": 1
+        }
+      ],
+      "units": [
+        {
+          "id": "early_republican_legionary_consul",
+          "name": "Consul",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "excludes": ["early_republican_legionary_dictator"],
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": ["Devotio"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_republican_legionary_dictator",
+          "name": "Dictator",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+1",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "excludes": ["early_republican_legionary_consul"],
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": ["Devotio"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_republican_legionary_army_tribune",
+          "name": "Tribune",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_republican_legionary_army_roman_equites_and_latin_horse",
+          "name": "Roman Equites and Latin Horse",
+          "description": "Roman Equites and Latin Horse have light armour, spear and shield. May have javelins (+1). Units should not be more than four bases strong.",
+          "category": "Infantry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 4,
+          "baseEquipment": ["Spear","Shield","Light Armour"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+         
+              {
+              "name": "Javelins",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "early_republican_legionary_army_hastati",
+          "name": "Hastati",
+          "description": "Hastati have spear and large shield. They may have light armour (+2) and may be Drilled (+3). At an unknown point early in the period, they exchanged spear for heavy throwing spear (+4). There must be one unit of Hastati for each unit of Principes in the army.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": [
+            "Close Order","Stamina"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Drilled",
+              "pointsModifier": 3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Throwing Spear",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_republican_legionary_army_principes",
+          "name": "Principes",
+          "description": "Principes have light armour, spear, and large shield. They may be Drilled (+3) and Stubborn (+2). From the end of the  war against Pyrrhos, they replace spear with heavy throwing spear (+4). There must be one unit of Principes for every unit of Triarii in the army.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Light Armour","Large Shield"],
+          "specialRules": [
+            "Close Order","Stamina"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Drilled",
+              "pointsModifier": 3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Throwing Spear",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Heavy Throwing Spear"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_republican_legionary_army_triarii",
+          "name": "Triarii",
+          "description": "Triarii have light armour, spear, and large shield. Drilled. May be Superior Fighters (+4) and Stubborn (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Light Armour","Large Shield"],
+          "specialRules": [
+            "Close Order","Drilled","Stamina"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Superior Fighters",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "early_republican_legionary_army_rorarii",
+          "name": "Rorarii",
+          "description": "Rorarii have javelins and spear. Inferior Fighters. Skirmishers. These units are used until the end of the war against Pyrrhos.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Spear","Javelins"],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_republican_legionary_army_leves",
+          "name": "Leves",
+          "description": "Leves have javelins and shield. Inferior Fighters. Skirmishers. There must be one base of Leves for every three bases of Hastati in the army. These troops should be used in armies after the war against Pyrrhos.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Shield","Javelins"],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_republican_legionary_army_extraordinarii",
+          "name": "Extraordinarii",
+          "description": "Extraordinarii have throwing spear and shield. Superior Fighters. Open Order. They may have light armour (+2) and large shield (+2). The Extraordinarii unit may not be larger than any of the Italian spearmen units, and cannot be used if there are none of these present",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 17,
+          "mmaxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Shield"],
+          "specialRules": [
+            "Open Order","Superior Fighters"
+          ],
+          "optionalEquipment": [
+           {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "early_republican_legionary_army_italian_spearmen",
+          "name": "Italian Spearmen",
+          "description": "Italian Spearmen have a throwing spear and shield. Open Order. May have large shield (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+           {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+
+        
+        {
+          "id": "early_republican_legionary_army_leves",
+          "name": "Leves",
+          "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers.",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        }
+      ]
     }
 
 
