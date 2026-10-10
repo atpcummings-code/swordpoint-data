@@ -1677,7 +1677,7 @@
             },
             {
               "name": "Elite Troops",
-              "disbales": ["Veteran","Trained Phalanx"]
+              "disbales": ["Veteran","Trained Phalanx"],
               "pointsModifier": 7,
               "maxUnits": 1,
               "equipmentAdded": [],
