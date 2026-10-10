@@ -145,17 +145,16 @@
           "id": "roman_tribal_army_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins. Skirmishers",
-          "category": "Infantry",
+           "category": "Infantry",
           "type": "Skirmishers",
           "defence": 7,
           "cohesion": 5,
           "pointsPerBase": 5,
-          "requires": { "unitIds": ["roman_tribal_army_warriors", "roman_tribal_army_falxmen"], "name": ["Warriors", "Falxmen"], "countPerUnit": 2 },
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Bow"],
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
           "specialRules": [
-            "Open Order"
+            "Skirmishers"
           ],
           "optionalEquipment": []
         }
