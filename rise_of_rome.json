@@ -349,7 +349,151 @@
           "optionalEquipment": []
         }
       ]
-    }
+    },
+	  "the_aequi_and_volsci": 
+	{
+      "armyName": "The Aequi and Volsci c.550 BC to 340 BC",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "count",
+          "min": 0,
+          "max": 1
+        },
+         {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 100
+        },
+      ],
+      "units": [
+        {
+          "id": "the_aequi_and_volsci_warlord",
+          "name": "Warlord",
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": ["Devotio"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_aequi_and_volsci_clan_chief",
+          "name": "Clan Chief",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_aequi_and_volsci_cavalry",
+          "name": "Cavalry",
+          "description": "Tribal Cavalry have light armour, spear and shield. The unit may not comprise more than four bases",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 4,
+          "baseEquipment": ["Spear","Shield","Light Armour"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "the_aequi_and_volsci_tribal_infantry",
+          "name": "Tribal Infantry",
+          "description": " Tribal Infantry have large shield and javelins. Open Order. Up to three units may have light armour (+2). One unit may be Superior Fighters (+4). Troops without upgrades may be ﬁelded as Skirmishers at a cost of 7 points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Large Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+           {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+             "maxUnits": 3,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Superior Fighters",
+              "pointsModifier": 4,
+              "maxUnits": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": ["Superior Fighters", "Light Armour"],
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "the_aequi_and_volsci_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Skirmishers",
+           "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": []
+        }
+      ]
+    },
 
 
 
