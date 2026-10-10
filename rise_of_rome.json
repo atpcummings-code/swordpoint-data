@@ -2008,7 +2008,557 @@
           "optionalEquipment": []
         }
       ]
-    }
+    },
+
+	  "pyrrhos": {
+      "armyName": "Pyrrhos - 281 BC to 275 BC",
+"armyValidation": [],
+   "unitCountValidation": [ 
+{ "ids": ["pyrrhos_epirote_and_mercenary_phalanx"], "expression": "lessThanOrEqual", "compareWith": ["pyrrhos_macedonian_phalanx", "pyrrhos_agema"], "ratio": 1, "countBy": "units" } 
+],
+"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 30
+        },
+        {
+          "id": "Phalanx",
+          "name": "Phalanx",
+           "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+  {
+          "id": "LightInfantry",
+          "name": "Light Infantry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+      {
+          "id": "Allies",
+		  "description":"Up to 50%. One elephant may be taken for 300 points. At least one must be taken. The army may take allied units from the Magna Graecia list above, representing Tarentine units, and the Italian Hill Tribes and Southern Italian lists from the Classical Armies supplement, representing Samnites, Lucanians, and Bruttians.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50,
+		  "alliedArmyKeys": [
+{"key": "southern_italian", "supplement":"classical_armies"},
+{"key": "later_hoplite_greek_magna_graecia", "supplement":"classical_armies"},
+{"key": "italian_hill_tribes", "supplement":"classical_armies"},
+],
+"maxAlliedArmiesAllowed": 3
+        }
+      ],
+      "units": [
+        {
+          "id": "pyrrhos_pyrrhos",
+          "name": "Pyrrhos",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "pyrrhos_hipparch",
+          "name": "Hipparch",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+ {
+          "id": "pyrrhos_taxiarch",
+          "name": "Taxiarch",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },      
+        {
+          "id": "pyrrhos_agema",
+          "name": "Agema",
+          "description": "Agema have light armour and spear. Superior Fighters. Wedge. Stubborn. Used to Elephants. They may have heavy armour (+1). May be Veteran (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Spear"],
+          "specialRules": ["Open Order", "Superior Fighters","Used to Elephants","Stubborn","Wedge"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+         {
+          "id": "pyrrhos_thessalians",
+          "name": "Thessalians",
+          "description": "Thessalians have light armour, spear and javelins. Superior Fighters. Superior Shooters. Wedge. Used to Elephants. They may have heavy armour (+1). May be Veteran (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Spear", "Javelins"],
+          "specialRules": ["Open Order", "Superior Fighters","Superior Shooters","Used to Elephants","Wedge"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "pyrrhos_macedonian_and_epirot_cavalry",
+          "name": "Macedonian and Epirot Cavalry",
+          "description": "Macedonian and Epirot Cavalry have light armour and spear.  Superior Fighters. Wedge. Used to Elephants. They may have heavy armour (+1).May be Veteran (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Spear", "Javelins"],
+          "specialRules": ["Open Order", "Superior Fighters","Used to Elephants","Wedge"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "pyrrhos_mercenary_horse",
+          "name": "Mercenary Horse",
+          "description": "Mercenary Horse have javelins. Inferior Fighters. Used to Elephants. May have shield (+1). May be ﬁelded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Open Order","Used to Elephants","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        }, 
+        
+        
+                 {
+          "id": "pyrrhos_agema",
+          "name": "Agema",
+          "description": "Agema have light armour, pike, and shield. Trained Phalanx. Superior Fighters. Veteran. May be upgraded to C9 (+4) and Stubborn (+2)",
+          "category": "Phalanx",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 32,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield","Light Armour"],
+          "specialRules": ["Close Order","Superior Fighters","Trained Phalanx","Veteran"],
+          "optionalEquipment": [
+            {
+              "name": "Upgrade to C9",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "pyrrhos_macedonian_phalanx",
+          "name": "Macedonian Phalanx",
+          "description": "Macedonians have pike, light armour and shield. Trained Phalanx. May be Veteran (+1)",
+          "category": "Phalanx",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield","Light Armour"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+         {
+          "id": "pyrrhos_epirote_and_mercenary_phalanx",
+          "name": "Epirote and Mercenary Phalanx",
+          "description": "Epirotes have pike, light armour and shield. Trained Phalanx. May be Veteran (+1).",
+          "category": "Phalanx",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield","Light Armour"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "pyrrhos_aetolian_peltasts",
+          "name": "Aetolian Peltasts",
+          "description": "Aetolian Peltasts have javelins and shield. Open Order. Evade. May be ﬁelded as Skirmishers at a cost of 7 points per base.",
+          "category": "LightInfantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 13,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order","Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -6,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+        {
+          "id": "pyrrhos_peltasts",
+          "name": "Peltasts",
+          "description": "Peltasts have javelins and shield. Open Order. Inferior Fighters. May be fielded as Skirmishers at a cost of 4 points per base.",
+          "category": "LightInfantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+        {
+          "id": "pyrrhos_mercenary_skirmishers",
+          "name": "Mercenary Skirmishers",
+          "description": "Mercenary Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. Every second Mercenary skirmisher unit may exchange javelins and shield for bow (-1). ",
+          "category": "LightInfantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+        
+        {
+          "id": "pyrrhos_cretan_archers",
+          "name": "Cretan Archers",
+          "description": " Cretan Archers have bow and shield. Skirmishers. Superior Shooters.",
+          "category": "LightInfantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 10,
+          "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Skirmishers","Superior Shooters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "pyrrhos_italian_skirmishers",
+          "name": "Italian Skirmishers",
+          "description": "Italian Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. Inferior Shooters.",
+          "category": "LightInfantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters","Inferior Shooters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "pyrrhos_rhodian_slingers",
+          "name": "Rhodian Slingers",
+          "description": "Rhodian slingers have sling and shield. Skirmishers. Inferior Fighters. This unit must be the smallest skirmish unit in the army.",
+          "category": "LightInfantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Sling", "Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": []
+        },
+       
+        {
+          "id": "pyrrhos_retrained_tarentines",
+          "name": "Retrained Tarentines",
+          "description": " Retrained Tarentines have light armour, pike and shield. Trained Phalanx.",
+          "category": "Allies",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Shield","Pike"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": []
+        }, 
+        
+        {
+          "id": "pyrrhos_tarentine_cavalry",
+          "name": "Tarentine Cavalry",
+          "description": "Tarentines have javelins and large shield. Skirmishers. Inferior Fighters. Parthian Shot.",
+          "category": "Allies",
+          "type": "Skirmishers",
+          "defence": 4,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Large Shield"],
+          "specialRules": ["Skirmishers","Parthian Shot","Inferior Fighters"],
+          "optionalEquipment": []
+        }, 
+        
+        {
+          "id": "pyrrhos_elephant",
+          "name": "Indian Elephant",
+          "description": "Unarmed Mahout; the two crew have light armour, javelins, and shields hung on the outside of the elephant’s howdah. Superior Fighters. The elephants may benefit from the Escorts rule.",
+          "category": "Allies",
+          "type": "Elephants",
+			"maxPerPointsLimit": { "pointsThreshold": 300, "rounding": "down" },
+			"minCountAllowed": 1,
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "Elephant Escorts on Elephant Base",
+              "pointsModifier": 10,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Escorts"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Elephant",
+              "stats": {
+                "D": 3,
+                "C": 4
+              },
+              "pointsPerBase": 64,
+              "specialRules": [
+                "Terror","Superior Fighters"
+              ]
+            },
+            {
+              "name": "Crewmen",
+              "stats": {
+                "D": 3,
+                "C": 7,
+                
+              },
+				"baseEquipment": ["Javelins","Light Armour"],
+              "specialRules": ["Howdah"],
+              "pointsPerBase": 0
+            },
+			  
+            {
+              "name": "Mahout",
+              "stats": {
+                "D": 6,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        }
+		  ]
+        }
 
 
 
