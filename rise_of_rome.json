@@ -26,7 +26,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 100
-        },
+        }
       ],
       "units": [
         {
@@ -187,7 +187,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 100
-        },
+        }
       ],
       "units": [
         {
@@ -375,7 +375,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 100
-        },
+        }
       ],
       "units": [
         {
@@ -503,7 +503,7 @@
 { "type": "equipmentUnitCount", "left": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Bow"] }, "expression": "lessThanOrEqual", "right": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Sling"] }, "ratio": 1 },
 { "type": "equipmentBasesCount", "left": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Bow"] }, "expression": "lessThanOrEqual", "right": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Javelins"] } }, 
 { "type": "equipmentBasesCount", "left": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Sling"] }, "expression": "lessThanOrEqual", "right": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Javelins"] } }, 
-{ type: "equipmentUnitCount", left: { unitIds: ["senones_insubres_and_boii_skirmishers"], equipment: ["Javelins"] }, expression: "greaterThanOrEqual", value: 1 }
+{ "type": "equipmentUnitCount", "left": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Javelins"] }, "expression": "greaterThanOrEqual", "value": 1 }
 ],
       "categories": [
         {
@@ -664,7 +664,7 @@
               "minBases": 3,
               "maxBases": 6,
           "baseEquipment": ["Throwing Spear", "Shield"],
-          "specialRules": ["Close Order"],
+          "specialRules": ["Close Order"]
             },
             {
               "name": "Warband (Rear Rank)",
@@ -676,11 +676,10 @@
               "maxBases": 6,
               "maxPercentage": 50,
               "baseEquipment": ["Throwing Spear", "Shield"],
-              "specialRules": ["Close Order"],
+              "specialRules": ["Close Order"]
             }
-            
             ],
-	"optionalEquipment": [
+      	"optionalEquipment": [
   		{
               "name": "Light Armour",
               "targetProfile": "Warband (Front Rank)",
@@ -712,7 +711,7 @@
               "minBases": 3,
               "maxBases": 6,
           "baseEquipment": ["Throwing Spear", "Shield"],
-          "specialRules": ["Close Order"],
+          "specialRules": ["Close Order"]
             },
             {
               "name": "Warriors (Rear Rank)",
@@ -724,7 +723,7 @@
               "maxBases": 6,
               "maxPercentage": 50,
               "baseEquipment": ["Throwing Spear", "Shield"],
-              "specialRules": ["Close Order"],
+              "specialRules": ["Close Order"]
             }
             
             ],
