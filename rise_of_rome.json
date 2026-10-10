@@ -4,7 +4,7 @@
     "roman_tribal_army": 
 	{
       "armyName": "Roman Tribal Army - 753 BC to c.550 BC",
-
+E
       "categories": [
         {
           "id": "Commanders",
@@ -46,7 +46,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "roman_tribal_army_clan-chief",
+          "id": "roman_tribal_army_clan_chief",
           "name": "Clan Chief",
           "description": "",
           "category": "Commanders",
@@ -162,5 +162,9 @@
         }
       ]
     }
+
+
+
+	  
   }
 }
