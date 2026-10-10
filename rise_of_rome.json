@@ -159,6 +159,195 @@
           "optionalEquipment": []
         }
       ]
+    },
+	  "roman_state_army": 
+	{
+      "armyName": "Roman State Army - c.550 BC to c.360 BC",
+
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+       
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "count",
+          "min": 0,
+          "max": 2
+        },
+         {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 100
+        },
+      ],
+      "units": [
+        {
+          "id": "roman_state_army_king_dictator-consul",
+          "name": "King, Dictator or Consul",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": ["Devotio"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "roman_state_army_clan_chief_tribune",
+          "name": "Clan Chief or Military Tribune",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "roman_state_army_equites",
+          "name": "Equites",
+          "description": "Equites have light armour, spear and shield. Max 5 bases, may not be fielded with Dismounted Equites.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "excludesIf": { "unitIds": ["roman_state_army_dismounted_equites"], "count": 1 },
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 5,
+          "baseEquipment": ["Spear","Shield","Light Armour"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "roman_state_army_dismounted_equites",
+          "name": "Equites",
+          "description": "Dismounted Equites have light armour, spear and large shield. Open Order. Riding horses. May be upgraded to Superior Fighters (+4). Max 5 bases, may not be fielded with Equites.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "excludesIf": { "unitIds": ["roman_state_army_equites"], "count": 1 },
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 5,
+          "baseEquipment": ["Spear","Large Shield","Light Armour"],
+          "specialRules": ["Open Order", "Riding Horses"],
+          "optionalEquipment": [
+            {
+              "name": "Superior Fighters",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "roman_state_army_principes",
+          "name": "Principes",
+          "description": " Principes have light armour, spear and large shield. Open Order. May be upgraded to Superior Fighters (+4).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Light Armour","Large Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Superior Fighters",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "roman_state_army_hastati",
+          "name": "Hsatati",
+          "description": "Hastati have spear and large shield. Open Order. May downgrade to Shield (D6) at -2 points per base. May be ﬁelded as Skirmishers at a cost of 7 points per base (6 points if D6).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+           {
+              "name": "Downgrade to Shield",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": ["Large Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "roman_state_army_leves",
+          "name": "Leves",
+          "description": "Leves have javelins. Skirmishers",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": []
+        }
+      ]
     }
 
 
