@@ -504,7 +504,6 @@
 { "type": "equipmentBasesCount", "left": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Bow"] }, "expression": "lessThanOrEqual", "right": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Javelins"] } }, 
 { "type": "equipmentBasesCount", "left": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Sling"] }, "expression": "lessThanOrEqual", "right": { "unitIds": ["senones_insubres_and_boii_skirmishers"], "equipment": ["Javelins"] } }, 
 { type: "equipmentUnitCount", left: { unitIds: ["senones_insubres_and_boii_skirmishers"], equipment: ["Javelins"] }, expression: "greaterThanOrEqual", value: 1 }
-
 ],
       "categories": [
         {
@@ -647,8 +646,7 @@
           ],
           "optionalEquipment": []
         },
-        {{
-          "id": "senones_insubres_and_boii_warband",
+        {          "id": "senones_insubres_and_boii_warband",
           "name": "Warband",
           "description": "Warband have throwing spear and shield. WArband. Up to half the bases may have light armour (+2).",
     "category": "Infantry",      
