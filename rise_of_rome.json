@@ -1425,6 +1425,589 @@
           "optionalEquipment": []
         }
       ]
+    },
+	    "magna_graecia": 
+	{
+      "armyName": "Magna Graecia - 600 BC to 275 BC",
+"armyValidation": [],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 4
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 15
+        },
+      
+         {
+          "id": "Infantry",
+          "name": "Roman and Latin Troops",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        {
+          "id": "LightTroops",
+          "name": "Light Troops",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+                   {
+          "id": "Allies",
+          "name": "Allies",
+            "description":"The army may have allied contingents from the Italian Hill Tribesor SOuthern Italian lists ",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+             "alliedArmyKeys": [
+            {"key": "italian_hill_tribes", "supplement":"classical_armies"},
+            {"key": "southern_italian", "supplement":"classical_armies"}              
+          ],
+"maxAlliedArmiesAllowed": 1
+        }
+      ],
+      "units": [
+        {
+          "id": "magna_graecia_king_or_strategos",
+          "name": "King or Strategos",
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "magna_graecia_army_hero",
+          "name": "Hero",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "magna_graecia_heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have javelins. May have light armour (+1). One unit may upgrade to C8, Superior Fighters, (+4) as Elite troops.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+         
+              {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Elite Troops",
+               "maxUnits": 1,
+              "pointsModifier": 4,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            }
+          ]
+        },
+        {
+          "id": "magna_graecia_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins. Skirmishers. Inferior Fighters.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 13,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "magna_graecia_tarentines",
+          "name": "Tarentines",
+          "description": "Tarentines have javelins and large shield. Skirmishers. Inferior Fighters. Parthian Shot.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Large Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters","Parthian Shot"],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "magna_graecia_army_regular_hoplites",
+          "name": "Regular Hoplites",
+          "description": "Regular Hoplites have spear and large shield. Phalanx.  May take light armour (+2) or heavy armour (+4). ",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": [
+            "Close Order","Phalanx"
+          ],
+          "optionalEquipment": [
+         
+            {
+              "name": "Light Armour",
+              "disables": "heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "disables": "Light Armour",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+        {
+          "id": "magna_graecia_army_regular_mercenary_hoplites",
+          "name": "Mercenary Hoplites",
+          "description": "Mercenary Hoplites have spear and large shield. Phalanx. May take light armour (+2) or heavy armour (+4). May upgrade to Trained Phalanx (+2) and may be Veteran (+1). One unit may upgrade to Superior Fighters, Trained Phalanx, Veteran (+7) as elite troops.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": [
+            "Close Order","Phalanx"
+          ],
+          "optionalEquipment": [
+         
+            {
+              "name": "Light Armour",
+              "disables": "heavy Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Heavy Armour",
+              "disables": "Light Armour",
+              "pointsModifier": 4,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Trained Phalanx",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Trained Phalanx"],
+              "rulesRemoved": ["Phalanx"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Elite Troops",
+              "disbales": ["Veteran","Trained Phalanx"]
+              "pointsModifier": 7,
+              "maxUnits": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran", "Superior Fighters","Trained Phalanx"],
+              "rulesRemoved": ["Phalanx"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "magna_graecia_army_regular_militia_hoplites",
+          "name": "Militia Hoplites",
+          "description": "Militia Hoplites have spear and large shield. Inferior Fighters. Phalanx. Levy.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": [
+            "Close Order","Phalanx","Inferior Fighters","Levy"
+          ],
+          "optionalEquipment": []
+        },
+
+        
+        {
+          "id": "magna_graecia_peltasts",
+          "name": "Peltasts",
+          "description": "Peltasts have javelins and shield. Open Order. May be ﬁelded as Skirmishers at a cost of 7 points per base.",
+          "category": "LightTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "magna_graecia_rhodians",
+          "name": "Rhodians",
+          "description": "Rhodians have sling and shield. Skirmishers.",
+          "category": "LightTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Sling","Shield"],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": []
+        },
+{
+          "id": "magna_graecia_cretans",
+          "name": "Cretans",
+          "description": "Cretans have bow and shield. Superior Shooters. Skirmishers. The unit should not be more than four bases strong.",
+          "category": "LightTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 4,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": [
+            "Skirmishers","Superior Shooters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "magna_graecia_mercenary_skirmishers",
+          "name": "Mercenary Skirmishers",
+          "description": "Mercenary Skirmishers have javelins and shield. Inferior Fighters. Skirmishers.",
+          "category": "LightTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 4,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": [
+            "Skirmishers","Inferior Fighetrs"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "magna_graecia_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers.",
+          "category": "LightTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 4,
+          "baseEquipment": ["Javelins"],
+          "specialRules": [
+            "Skirmishers","Inferior Fighetrs"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "enabledEvery": 2,
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Sling",
+              "disables": "Bow",
+                "enabledEvery": 2,
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+
+
+
+
+        
+        {
+          "id": "magna_graecia_army_triarii",
+          "name": "Triarii",
+          "description": "Triarii have light armour, spear, and large shield. Drilled. May be Superior Fighters (+4) and Stubborn (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Light Armour","Large Shield"],
+          "specialRules": [
+            "Close Order","Drilled","Stamina"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Superior Fighters",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "magna_graecia_army_rorarii",
+          "name": "Rorarii",
+          "description": "Rorarii have javelins and spear. Inferior Fighters. Skirmishers. These units are used until the end of the war against Pyrrhos.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Spear","Javelins"],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "magna_graecia_army_leves",
+          "name": "Leves",
+          "description": "Leves have javelins and shield. Inferior Fighters. Skirmishers. There must be one base of Leves for every three bases of Hastati in the army. These troops should be used in armies after the war against Pyrrhos.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Shield","Javelins"],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "magna_graecia_army_extraordinarii",
+          "name": "Extraordinarii",
+          "description": "Extraordinarii have throwing spear and shield. Superior Fighters. Open Order. They may have light armour (+2) and large shield (+2). The Extraordinarii unit may not be larger than any of the Italian spearmen units, and cannot be used if there are none of these present",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 17,
+          "mmaxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Shield"],
+          "specialRules": [
+            "Open Order","Superior Fighters"
+          ],
+          "optionalEquipment": [
+           {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "magna_graecia_army_italian_spearmen",
+          "name": "Italian Spearmen",
+          "description": "Italian Spearmen have a throwing spear and shield. Open Order. May have large shield (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Shield"],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+           {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+
+        
+        {
+          "id": "magna_graecia_army_leves",
+          "name": "Leves",
+          "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers.",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        }
+      ]
     }
 
 
