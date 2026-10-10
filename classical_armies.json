@@ -33461,9 +33461,15 @@
          {
           "id": "Allies",
           "name": "Allies",
+			 "description":"May have allies from the Amrenian (Middle) or Maccabean Revolt lists.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			 "alliedArmyKeys": [
+{"key": "maccabean_revolt"},
+{"key": "middle_armenia"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -34073,9 +34079,14 @@
          {
           "id": "Allies",
           "name": "Allies",
+			 "description":"May have allies from teh Sarmatian list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 20
+          "max": 20,
+			 "alliedArmyKeys": [
+{"key": "sarmatian"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -35422,9 +35433,14 @@
          {
           "id": "Allies",
           "name": "Allies",
+			 "description":"May have allies from teh Palmyran list.",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			 "alliedArmyKeys": [
+{"key": "palmyran"}
+],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
@@ -36018,7 +36034,7 @@
 },
 
 "sassanid_persia_early": {
-      "armyName": "Sassanid Persia (Early) - 220 AD to 637 AD",
+      "armyName": "Sassanid Persia (Early) - 220 AD to 450 AD",
 "armyValidation": [ 
   { "ids": ["sassanid_persia_early_iranians", "sassanid_persia_early_horse_archers", "sassanid_persia_early_huns"], "compareWith": ["sassanid_persia_early_azatan_noble_cavalry", "sassanid_persia_early_cataphracts"], "expression": "greaterThanOrEqual", "ratio": 1 },
   { "ids": ["sassanid_persia_early_daylami_archers"], "compareWith": ["sassanid_persia_early_daylami_spearmen"], "expression": "lessThanOrEqual", "ratio": 1 } 
@@ -36247,6 +36263,16 @@
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Formed (Open Order)",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Open Order", "Evade"],
+              "rulesRemoved": ["Skirmishers","Nomad Cavalry"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
@@ -36949,7 +36975,7 @@
 },
 
 "sassanid_persia_late": {
-      "armyName": "Sassanid Persia (Late) - 220 AD to 637 AD",
+      "armyName": "Sassanid Persia (Late) - 450 AD to 637 AD",
 "armyValidation": [ 
   { "ids": ["sassanid_persia_late_iranians", "sassanid_persia_late_horse_archers", "sassanid_persia_late_huns"], "compareWith": ["sassanid_persia_late_azatan_noble_cavalry", "sassanid_persia_late_cataphracts"], "expression": "greaterThanOrEqual", "ratio": 1 },
   { "ids": ["sassanid_persia_late_daylami_archers"], "compareWith": ["sassanid_persia_late_daylami_spearmen"], "expression": "lessThanOrEqual", "ratio": 1 } 
