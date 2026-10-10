@@ -1035,8 +1035,7 @@
 "armyValidation": [
 { "ids": ["early_republican_legionary_army_hastati"], "expression": "greaterThanOrEqual", "compareWith": ["early_republican_legionary_army_principes"], "ratio": 1, "countBy": "units" },
 { "ids": ["early_republican_legionary_army_principes"], "expression": "greaterThanOrEqual", "compareWith": ["early_republican_legionary_army_triarii"], "ratio": 1, "countBy": "units" },
-  { "ids": ["early_republican_legionary_army_leves"], "expression": "greaterThanOrEqual", "compareWith": ["early_republican_legionary_army_hastati"], "ratio": 0.333, "countBy": "bases" },
-  { "ids": ["early_republican_legionary_army_extraordinarii"], "expression": "lessThanOrEqual", "compareWith": ["early_republican_legionary_army_italian_spearmen"], "ratio": 1, "countBy": "bases" } 
+  { "ids": ["early_republican_legionary_army_leves"], "expression": "greaterThanOrEqual", "compareWith": ["early_republican_legionary_army_hastati"], "ratio": 0.333, "countBy": "bases" }
   
 ],
       "categories": [
@@ -1336,6 +1335,7 @@
           "defence": 6,
           "cohesion": 8,
           "pointsPerBase": 17,
+			"basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["early_republican_legionary_army_italian_spearmen"], "ratio": 1 } 
           "mmaxCountAllowed": 1,
           "minBases": 3,
           "maxBases": 12,
