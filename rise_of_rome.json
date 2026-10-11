@@ -4247,8 +4247,8 @@
       "armyName": "Republican Legionary Army - 210 BC to 108 BC",
 "armyValidation": [
 { "ids": ["republican_legionary_army_hastati"], "expression": "greaterThanOrEqual", "compareWith": ["republican_legionary_army_principes"], "ratio": 1, "countBy": "units" },
-{ "ids": ["republican_legionary_army_principes"], "expression": "greaterThanOrEqual", "compareWith": ["republican_legionary_army_triarii"], "ratio": 0.5, "countBy": "units" },
-  { "ids": ["republican_legionary_army_leves"], "expression": "greaterThanOrEqual", "compareWith": ["republican_legionary_army_hastati"], "ratio": 0.333, "countBy": "bases" }
+{ "ids": ["republican_legionary_army_principes"], "expression": "greaterThanOrEqual", "compareWith": ["republican_legionary_army_triarii"], "ratio": 2, "countBy": "units" }
+  
   
 ],
       "categories": [
