@@ -3185,8 +3185,7 @@
     },
 	    "carthaginian_expeditionary_force": {
       "armyName": "Carthaginian Expeditionary Force - 2218 BC",
-    "armyValidation": [ 
-{ "ids": ["carthaginian_expeditionary_force_balearic_slingers"], "compareWith": ["carthaginian_expeditionary_force_slingers"], "expression": "lessThanOrEqual", "ratio": 1 } ],
+    "armyValidation": [],
       "categories": [
         {
           "id": "Commanders",
