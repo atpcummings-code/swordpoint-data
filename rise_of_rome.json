@@ -3209,7 +3209,7 @@
            "constraintType": "percentage",
           "min": 40,
           "max": 100
-        }
+        },
          {
           "id": "Elephants",
           "name": "Elephants",
