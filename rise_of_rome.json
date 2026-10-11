@@ -1066,7 +1066,7 @@
             {"key": "italian_hill_tribes", "supplement":"classical_armies"},
             {"key": "gallic", "supplement":"classical_armies"},
             {"key": "campanian", "supplement":"classical_armies"},
-            {"key": "later_hoplite_greek_magna_graecia", "supplement":"classical_armies"}               
+            {"key": "magna_graecia"}               
           ],
 "maxAlliedArmiesAllowed": 1
         }
