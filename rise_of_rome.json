@@ -2047,6 +2047,7 @@
         },
       {
           "id": "Allies",
+		  "name": "Special Troops and Allies",
 		  "description":"Up to 50%. One elephant may be taken for 300 points. At least one must be taken. The army may take allied units from the Magna Graecia list above, representing Tarentine units, and the Italian Hill Tribes and Southern Italian lists from the Classical Armies supplement, representing Samnites, Lucanians, and Bruttians.",
           "constraintType": "percentage",
           "min": 0,
