@@ -2573,8 +2573,7 @@
         },
 	    "carthaginian_army": {
       "armyName": "Carthaginian Army - 270 BC to 241 BC",
-    "armyValidation": [ 
-{ "ids": ["carthaginian_army_balearic_slingers"], "compareWith": ["carthaginian_army_slingers"], "expression": "lessThanOrEqual", "ratio": 1 } ],
+    "armyValidation": [],
       "categories": [
         {
           "id": "Commanders",
