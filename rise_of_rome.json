@@ -2053,7 +2053,7 @@
           "max": 50,
 		  "alliedArmyKeys": [
 {"key": "southern_italian", "supplement":"classical_armies"},
-{"key": "later_hoplite_greek_magna_graecia", "supplement":"classical_armies"},
+{"key": "magna_graecia"},
 {"key": "italian_hill_tribes", "supplement":"classical_armies"},
 ],
 "maxAlliedArmiesAllowed": 3
