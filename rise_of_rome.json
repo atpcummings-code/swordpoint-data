@@ -3361,14 +3361,13 @@
         },
 {
           "id": "carthaginian_expeditionary_force_spanish_cavalry",
-          "name": "Spanish Cavalry",
+          "name": "Gallic Cavalry",
           "description": "Gallic Cavalry have spear and shield. Superior Fighters. May have Light Armour (+1) and javelins (+1).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 5,
           "cohesion": 7,
           "pointsPerBase": 19,
-          "minCountAllowed": 1,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
