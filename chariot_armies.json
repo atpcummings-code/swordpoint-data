@@ -3046,7 +3046,7 @@
               "disables": ["Sling", "Javelins"],
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
-              "equipmentRemoved": []
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -3057,7 +3057,7 @@
               "disables": ["Bow", "Javelins"],
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
-              "equipmentRemoved": []
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -3068,7 +3068,7 @@
               "disables": ["Sling", "Bow"],
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
-              "equipmentRemoved": []
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -3176,7 +3176,7 @@
               "name": "Bow",
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
-              "equipmentRemoved": ["Javelins"]
+              "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -3206,7 +3206,7 @@
               "name": "Javelins",
               "pointsModifier": 0,
               "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": ["Bow"]
+              "equipmentRemoved": ["Bow"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -3295,7 +3295,7 @@
               "disables": ["Sling", "Javelins"],
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
-              "equipmentRemoved": []
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -3306,7 +3306,7 @@
               "disables": ["Bow", "Javelins"],
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
-              "equipmentRemoved": []
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -3317,7 +3317,7 @@
               "disables": ["Sling", "Bow"],
               "pointsModifier": 0,
               "equipmentAdded": ["Bow"],
-              "equipmentRemoved": []
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
