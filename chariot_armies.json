@@ -3515,6 +3515,7 @@
               "defence": 5,
               "cohesion": 5,
 	          "pointsPerBase": 12,
+				   "minBases": 3,
               "maxBases": 6,
               "baseEquipment": ["Large Shield", "Spear", "Bow"],
               "specialRules": ["Close Order"]
