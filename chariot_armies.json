@@ -2886,7 +2886,7 @@
         {
           "id": "nubian_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelins and shield. May exchange javelins and shield for bow (-1).",
+          "description": "Skirmishers have javelins and shield. May exchange javelins and shield for bow (-1). Skirmishers.",
           "category": "Infantry",
           "type": "Skrimishers",
           "defence": 6,
