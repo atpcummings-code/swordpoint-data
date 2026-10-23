@@ -2269,7 +2269,7 @@
           "min": 0,
           "max": 50,
           "alliedArmyKeys": [
-            "arab_nomads"
+            "arab_nomads_late"
           ],
           "maxAlliedArmiesAllowed": 1
         }
