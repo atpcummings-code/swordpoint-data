@@ -3090,8 +3090,8 @@
           "max": 8
         },
         {
-          "id": "Infantry",
-          "name": "Infantry",
+          "id": "Camels",
+          "name": "Camels",
           "constraintType": "percentage",
           "min": 0,
           "max": 30
