@@ -3801,8 +3801,8 @@
         
         {
           "id": "libyan_skirmishers",
-          "name": "Slingers",
-          "description": "Slingers have Javelins. Inferior Fighters. Skirmishers.",
+          "name": "Skirmishers",
+          "description": "Skirmishers have Javelins. Inferior Fighters. Skirmishers.",
           "category": "Infantry",
           "type": "Skrimishers",
           "defence": 7,
