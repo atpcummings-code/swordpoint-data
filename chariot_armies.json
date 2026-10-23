@@ -2905,7 +2905,7 @@
               "name": "Bow",
               "pointsModifier": -1,
               "equipmentAdded": ["Bow"],
-              "equipmentRemoved": ["Javelins", "Shield"]
+              "equipmentRemoved": ["Javelins", "Shield"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 1,
