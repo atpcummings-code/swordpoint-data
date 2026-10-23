@@ -2934,6 +2934,7 @@
           "min": 25,
           "max": 100
         }
+	  ],
       "units": [
         {
           "id": "arab_nomads_early_sheikh",
@@ -3103,6 +3104,7 @@
           "min": 25,
           "max": 100
         }
+	  ],
       "units": [
         {
           "id": "arab_nomads_late_sheikh",
