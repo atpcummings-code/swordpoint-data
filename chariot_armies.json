@@ -3729,7 +3729,7 @@
             "name": "Warriors",
             "perUnit": true
           },
-			 "basesComparison": { "expression": "lessThanOrEqualTo", "compareWith": ["libyan_warriors"] },
+			 "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["libyan_warriors"] },
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": [
