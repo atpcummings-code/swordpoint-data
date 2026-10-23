@@ -3077,6 +3077,254 @@
         }
         
       ]
+    },
+	   "arab_nomads_late": {
+      "armyName": "Arab Nomads (early)- (1100 BC - 700 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 30
+        },
+        
+           {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        }
+      "units": [
+        {
+          "id": "arab_nomads_late_sheikh",
+          "name": "Warlord",
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        { 
+          "id": "arab_nomads_late_chief",
+          "name": "Chief",
+          "description": "",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "arab_nomads_late_mounted_archers",
+          "name": "Mounted Archers",
+          "description": "Mounted Archers have two riders armed with bows. They ae treated as normal camelry figures.  They may shoot with on extra D6 for every two bases shooting (round up). Open Order",
+          "category": "Camels",
+          "type": "Camels",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "arab_nomads_late_Wariors",
+          "name": "Warriors",
+          "description": "Warriors have javelins. They may exchange this for bow (free). Open Order",
+          "category": "Camels",
+          "type": "Camels",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"]
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "arab_nomads_late_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have bow. Skirmishers. May exchange bow for javleins (free).",
+          "category": "Camels",
+          "type": "Camels",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 13,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": ["Bow"]
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "arab_nomads_late_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelin. Open Order. May be fielded as Skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "arab_nomads_late_archers",
+          "name": "Archers",
+          "description": "Archers have bow. Open Order. May be fielded as Skirmishers at a cost of six points per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "arab_nomads_late_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have either bow, javelins or sling. Inferior Fighters. Skirmishers.",
+          "category": "Infantry",
+          "type": "Skrimishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            
+          ],
+          "specialRules": [
+            "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": ["Sling", "Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": []
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": ["Bow", "Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": []
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "disables": ["Sling", "Bow"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": []
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
     }
  
 
