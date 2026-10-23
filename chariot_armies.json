@@ -2801,7 +2801,7 @@
           "description": "",
           "category": "Commanders",
           "type": "General",
-          "attacks": "+2",
+          "attacks": "+3",
           "cohesion": 9,
           "pointsPerBase": 0,
           "maxCountAllowed": 1,
