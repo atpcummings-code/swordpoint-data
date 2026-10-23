@@ -3607,8 +3607,12 @@
         
       ]
     },
-	    "libyan": {
+	     "libyan": {
       "armyName": "Libyan - (2500 BC - 500 BC)",
+    "armyValidation": [
+{ "ids": ["libyan_meshwesh"], "expression": "lessThanOrEqual", "compareWith": ["libyan_warriors"], "ratio": 0.5 }
+],
+
       "categories": [
         {
           "id": "Commanders",
@@ -3723,12 +3727,6 @@
           "defence": 7,
           "cohesion": 7,
           "pointsPerBase": 14,
-           "requires": {
-            "unitId": "libyan_warriors",
-            "count": 2,
-            "name": "Warriors",
-            "perUnit": true
-          },
           "basesComparison": { "expression": "lessThanOrEqualTo", "compareWith": ["libyan_meshwesh", "libyan_warriors"] },
           "minBases": 3,
           "maxBases": 12,
