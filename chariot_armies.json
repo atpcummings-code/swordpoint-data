@@ -2123,6 +2123,7 @@
               "defence": 6,
               "cohesion": 6,
               "pointsPerBase": 9,
+				 "minBases": 3,
 		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
               "baseEquipment": ["Bow"],
               "specialRules": ["Open Order"]
@@ -2135,6 +2136,7 @@
               "defence": 6,
               "cohesion": 6,
 	          "pointsPerBase": 9,
+				   "minBases": 3,
               "maxBases": 6,
               "baseEquipment": ["Shield", "Spear", "Bow"],
               "specialRules": ["Open Order"]
