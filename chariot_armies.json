@@ -1896,7 +1896,7 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [
-            "arab_nomads"
+            "arab_nomads_late"
           ],
           "maxAlliedArmiesAllowed": 1
         }
