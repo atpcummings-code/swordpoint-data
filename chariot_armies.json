@@ -2936,7 +2936,7 @@
         }
       "units": [
         {
-          "id": "arab_nomads_sheikh",
+          "id": "arab_nomads_early_sheikh",
           "name": "Warlord",
           "description": "",
           "category": "Commanders",
@@ -2951,7 +2951,7 @@
           "optionalEquipment": []
         },
         { 
-          "id": "arab_nomads_chief",
+          "id": "arab_nomads_early_chief",
           "name": "Chief",
           "description": "",
           "category": "Commanders",
@@ -2965,7 +2965,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "arab_nomads_javelinmen",
+          "id": "arab_nomads_early_javelinmen",
           "name": "Javelinmen",
           "description": "Javelinmen have javelin. Open Order. May be fielded as Skirmishers at a cost of seven points per base.",
           "category": "Infantry",
@@ -2994,7 +2994,7 @@
           ]
         },
         {
-          "id": "arab_nomads_archers",
+          "id": "arab_nomads_early_archers",
           "name": "Archers",
           "description": "Archers have bow. Open Order. May be fielded as Skirmishers at a cost of six points per base.",
           "category": "Infantry",
@@ -3023,7 +3023,7 @@
           ]
         },
         {
-          "id": "arab_nomads_skirmishers",
+          "id": "arab_nomads_early_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have either bow, javelins or sling. Inferior Fighters. Skirmishers.",
           "category": "Infantry",
