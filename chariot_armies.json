@@ -2938,7 +2938,7 @@
       "units": [
         {
           "id": "arab_nomads_early_sheikh",
-          "name": "Warlord",
+          "name": "Sheikh",
           "description": "",
           "category": "Commanders",
           "type": "General",
@@ -3108,7 +3108,7 @@
       "units": [
         {
           "id": "arab_nomads_late_sheikh",
-          "name": "Warlord",
+          "name": "Sheikh",
           "description": "",
           "category": "Commanders",
           "type": "General",
