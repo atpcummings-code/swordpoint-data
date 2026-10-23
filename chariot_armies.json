@@ -1903,10 +1903,10 @@
       ],
       "units": [
         {
-          "id": "israelite_later_king",
+          "id": "israelite_early_king",
           "name": "King",
           "description": "May join a chariot unit.",
-          "excludes": ["israelite_later_general"],
+          "excludes": ["israelite_early_general"],
           "category": "Commanders",
           "type": "General",
           "attacks": "+2",
@@ -1919,10 +1919,10 @@
           "optionalEquipment": []
         },
         {
-          "id": "israelite_later_general",
+          "id": "israelite_early_general",
           "name": "General",
           "description": "May join a chariot unit.",
-          "excludes": ["israelite_later_king"],
+          "excludes": ["israelite_early_king"],
           "category": "Commanders",
           "type": "General",
           "attacks": "+3",
@@ -1935,7 +1935,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "israelite_later_senior_officer",
+          "id": "israelite_early_senior_officer",
           "name": "Senior Officer",
           "description": "May ride in a chariot.",
           "category": "Commanders",
@@ -1964,7 +1964,7 @@
           "optionalEquipment": []
         },   
         {
-          "id": "israelite_later_judean_spearmen",
+          "id": "israelite_early_judean_spearmen",
           "name": "Judean Spearmen",
           "description": "Judean Spearmen have spear and shield. Superior Fighters. Stubborn. Warband (rule 3 does not apply).",
           "category": "Infantry",
@@ -1986,7 +1986,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "israelite_later_danites",
+          "id": "israelite_early_danites",
           "name": "Danites",
           "description": "Danites have light armour, spear and shield.  Warband (rule 3 does not apply). May have javelins (+2).",
           "category": "Infantry",
@@ -2007,7 +2007,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "israelite_later_gibborim",
+          "id": "israelite_early_gibborim",
           "name": "Gibborim",
           "description": "Gibborim have light armour and shield.  Superior Fighters. Stubborn. May have spear (free) or javelins (+2).",
           "category": "Infantry",
@@ -2050,7 +2050,7 @@
           ]
         },
        {
-          "id": "israelite_later_gadites",
+          "id": "israelite_early_gadites",
           "name": "Gadites",
           "description": "Gadites have javelins and shield.  Superior Fighters. Open Order. Warband (rule 3 doe snot apply). May be fielded as Skirmishers at a cost of nine points per base.",
           "category": "Infantry",
@@ -2081,7 +2081,7 @@
           ]
         },
         {
-          "id": "israelite_later_zubulanites_cf",
+          "id": "israelite_early_zubulanites_cf",
           "name": "Combined Formation Zubulanites",
           "description": "Zubulanites: half have spear and shield.; half exchange spear and shield for bow (free). Open Order. Combined Formation.",
     "category": "Infantry",      
@@ -2144,7 +2144,7 @@
 	"optionalEquipment": []    
 },
         {
-          "id": "israelite_later_benjaminites",
+          "id": "israelite_early_benjaminites",
           "name": "Benjaminites",
           "description": "Benjaminites have a bow or sling. Superior Shooters. Open Order. May have shield (+2). May be fielded as Skirmishers at a cost of eight points per base. (nine if shielded).",
           "category": "Infantry",
@@ -2216,7 +2216,7 @@
         },
 
         {
-          "id": "israelite_later_issachar",
+          "id": "israelite_early_issachar",
           "name": "Issachar",
           "description": "Issachar have javelins. Inferior Fighters. Skirmishers.",
           "category": "Infantry",
