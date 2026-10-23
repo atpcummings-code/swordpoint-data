@@ -2793,7 +2793,8 @@
           "min": 80,
           "max": 100
         }
-      "units": [
+	  ],
+		  "units": [
         {
           "id": "nubian_warlord",
           "name": "Warlord",
