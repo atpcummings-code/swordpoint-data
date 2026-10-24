@@ -3578,7 +3578,7 @@
         {
           "id": "minoan_and_early_mycenaean_libyans",
           "name": "Libyans",
-          "description": "Libyans have javelins. Inferior Fighters. Open Order. Warband (rule 3 doe snot apply). May be fiedled as Skirnmishes at a costof five points per base.",
+          "description": "Libyans have javelins. Inferior Fighters. Open Order. Warband (rule 3 doe snot apply). May be fielded as Skirnmishes at a costof five points per base.",
           "category": "Allies",
           "type": "Formed",
           "defence": 7,
@@ -4214,6 +4214,254 @@
               "cohesionModifier": 0
             }
           ]
+        }
+        
+      ]
+    },
+	  "hyksos": {
+      "armyName": "Hyksos - (1650 BC - 1550 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Chariots",
+          "name": "Chariots",
+          "constraintType": "percentage",
+          "min": 10,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        
+           {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+	  ],
+      "units": [
+        {
+          "id": "hyksos_warlord_or_pharaoh",
+          "name": "Warlord or Pharaoh",
+          "description": "May ride in a Chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        { 
+          "id": "hyksos_chieftain",
+          "name": "Chieftain",
+          "description": "May ride in a Chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hyksos_chariots",
+          "name": "Chariots",
+          "description": "Chariots have a driver and one crewman armed with a bow, light armour and shield. Superior fighters. Superior SHooters. Light Chariots. May have spear (+1).",
+          "category": "Chariots",
+          "type": "Chariots",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Shield","Light Armour","Bow"
+          ],
+          "specialRules": [
+            "Open Order","Light Chariots", "Superior Fighters", "Superior Shooters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hyksos_chariot_runners",
+          "name": "Chariot Runners",
+          "description": "Chariot Runners have a bow or javelins. Open Order. Escorts. May be fielded as Skirmishers at a cost of eight points per base. There may not be more units of Chariot Runners than there are of Chariots",
+          "category": "Chariots",
+          "type": "Escorts",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "requires": {
+            "unitId": "hyksos_chariots",
+            "count": 1,
+            "name": "Chariots",
+            "perUnit": true
+          },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+
+          ],
+          "specialRules": [
+            "Open Order","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hyksos_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have throwing spear and shield.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+        
+        
+        {
+          "id": "hyksos_archers",
+          "name": "Archers",
+          "description": "Archers have bow.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hyksos_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins. Inferior Fighters. Skirmishers.",
+          "category": "Infantry",
+          "type": "Skrimishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "hyksos_libyans_or_kushites",
+          "name": "Libyans or Kushites",
+          "description": "Libyans or Kushites have javelins. Open Order. Warband (rule 3 doe snot apply). May be fielded as SKirmishers at a cost of five points per base.",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Open Order","Warband (not rule 3)"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "hyksos_arab_slingers",
+          "name": "Arab Slingers",
+          "description": "Arab Slingers have a sling. Inferior Fighters. Skirmishers. May have shield (+1).",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Sling"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
         }
         
       ]
