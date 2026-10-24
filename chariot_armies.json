@@ -4465,8 +4465,323 @@
         }
         
       ]
+    },
+	  "european_bronze_age_late": {
+      "armyName": "European Bronze Age (Late) - (1100 BC - 800 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+        {
+          "id": "Chariots",
+          "name": "Chariots",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 70,
+          "max": 100
+        }
+	  ],
+      "units": [
+        {
+          "id": "european_bronze_age_late_chieftain",
+          "name": "Chieftain",
+          "description": "May ride in a Chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        { 
+          "id": "european_bronze_age_late_elder",
+          "name": "Elder",
+          "description": "May ride in a Chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "european_bronze_age_late_chariots",
+          "name": "Chariots",
+          "description": "Chariots have a driver and one noble armed with spear. javelins. light armour and shield. Superior Fighters. Light Chariots.",
+          "category": "Chariots",
+          "type": "Chariots",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Shield","Light Armour","Spear","Javelins"
+          ],
+          "specialRules": [
+            "Open Order","Light Chariots", "Superior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "european_bronze_age_late_warriors",
+          "name": "Warriors",
+          "description": "Warriors have a spear and shield. Warband (rule 3 does not apply). May have throwing spears (+2) or javelins (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order","Warband (not rule3 )"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Throwing Spear",
+              "disables": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"]
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Javelins",
+              "disables": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": []
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "european_bronze_age_late_tribesmen",
+          "name": "Tribesmen",
+          "description": "Tribesmen have a spear and shield.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "european_bronze_age_late_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins. Inferior Fighters. Skirmishers. Up to two units may exchange javelins for sling (free).",
+          "category": "Infantry",
+          "type": "Skrimishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "pointsModifier": 0,
+              "maxUnits": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": []
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
+    },
+ "european_bronze_age_early": {
+      "armyName": "European Bronze Age (Early) - (1600 BC - 1100 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 70,
+          "max": 100
+        }
+	  ],
+      "units": [
+        {
+          "id": "european_bronze_age_early_chieftain",
+          "name": "Chieftain",
+          "description": "May ride in a Chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        { 
+          "id": "european_bronze_age_early_elder",
+          "name": "Elder",
+          "description": "May ride in a Chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },     
+        {
+          "id": "european_bronze_age_early_warriors",
+          "name": "Warriors",
+          "description": "Warriors have a spear and shield. Warband (rule 3 does not apply). May have throwing spears (+2) or javelins (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order","Warband (not rule3 )"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Throwing Spear",
+              "disables": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear"]
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Javelins",
+              "disables": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": []
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "european_bronze_age_early_tribesmen",
+          "name": "Tribesmen",
+          "description": "Tribesmen have a spear and shield.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "european_bronze_age_early_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins. Inferior Fighters. Skirmishers. Up to two units may exchange javelins for sling (free).",
+          "category": "Infantry",
+          "type": "Skrimishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "pointsModifier": 0,
+              "maxUnits": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": []
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
     }
- 
 
 
 
