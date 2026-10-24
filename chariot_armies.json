@@ -4781,6 +4781,313 @@
         }
         
       ]
+    },
+	  "philistine": {
+      "armyName": "Philistine - (1186 BC - 600 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Chariots",
+          "name": "Chariots",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        }
+	  ],
+      "units": [
+        {
+          "id": "philistine_king",
+          "name": "King",
+          "description": "May ride in a Chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        { 
+          "id": "philistine_hero",
+          "name": "Hero",
+          "description": "May ride in a Chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        }, 
+        { 
+          "id": "philistine_captain",
+          "name": "Captain",
+          "description": "May ride in a Chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "philistine_chariots",
+          "name": "Chariots",
+          "description": "Driver armed with hand weapon and one crewman armed with bow, light armour and shield. Superior Fighters. Light Chariots. May have spear (+1).",
+          "category": "Chariots",
+          "type": "Chariots",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Shield","Light Armour","Bow"
+          ],
+          "specialRules": [
+            "Open Order","Light Chariots", "Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "philistine_chariot_runners",
+          "name": "Chariot Runners",
+          "description": "Chariot Runners have javelins and shield. Open Order. Escorts.  May exchange javelins and shield for bow (-2). May be fielded as Skirmishers at a cost of eight points per base. (seven if bow armed).",
+          "category": "Chariots",
+          "type": "Chariots",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield","Javelins"
+          ],
+          "specialRules": [
+            "Open Order","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Bow",
+              "enablesHidden": "Bow (Skirmishers)"
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+             "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],,
+              "defenceModifier": 0
+            },
+            {
+              "name": "Bow (Skirmishers)",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": -1,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "philistine_city_infantry",
+          "name": "City Infantry",
+          "description": "City Infantry have light armour, javelins and shield. May be Stubborn (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "philistine_archers",
+          "name": "Archers",
+          "description": "Archers have bow. Inferior Fighters. Open Order. May be fielded as Skirmihsers at a cost of five points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order","Inferior fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+             "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],,
+              "defenceModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "philistine_rural_infantry",
+          "name": "Rural Infantry",
+          "description": "Rural Infantry have javelins or bow.  Open Order.",
+          "category": "Infantry",
+          "type": "Skrimishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "philistine_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins, bow or sling. Skirmishers",
+          "category": "Infantry",
+          "type": "Skrimishers",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "disables": ["Bow","Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": ["Javelins","Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": ["Javelins","Bow"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
     }
 
 
