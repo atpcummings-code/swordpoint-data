@@ -4627,7 +4627,7 @@
               "pointsModifier": 0,
               "maxUnits": 2,
               "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": []
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -4771,7 +4771,7 @@
               "pointsModifier": 0,
               "maxUnits": 2,
               "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": []
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
