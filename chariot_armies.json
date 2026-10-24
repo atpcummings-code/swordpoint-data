@@ -5088,6 +5088,248 @@
         }
         
       ]
+    },
+	  "arzawa_or_early_lydian": {
+      "armyName": "Arzawa or Early Lydian - (1185 BC - 615 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Chariots",
+          "name": "Cavalry and Chariots",
+          "constraintType": "percentage",
+          "min": 10,
+          "max": 40
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 40,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        }
+	  ],
+      "units": [
+        {
+          "id": "arzawa_or_early_lydian_general",
+          "name": "General",
+          "description": "May ride in a Chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        { 
+          "id": "arzawa_or_early_lydian_hero",
+          "name": "Hero",
+          "description": "May ride in a Chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        }
+        {
+          "id": "arzawa_or_early_lydian_chariots",
+          "name": "Chariots",
+          "description": "Driver and one crewman armed with spear, javelins, light armour and shield. Superior Fighters. Superior Shooters. Light Chariots.",
+          "category": "Chariots",
+          "type": "Chariots",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Shield","Light Armour","Javelins","Spear"
+          ],
+          "specialRules": [
+            "Open Order","Light Chariots", "Superior Fighters","Superior Shooters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "arzawa_or_early_lydian_cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have javelins. Evade. May be fielded as Skirmishers at a cost of 16 points per base.",
+          "category": "Chariots",
+          "type": "Chariots",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Open Order","Evade"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "arzawa_or_early_lydian_phyrgians",
+          "name": "Phyrgians",
+          "description": "Phyrgians have javelins. Open order. May be fielded as Skirmihsers at a cost of six points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+         {
+          "id": "arzawa_or_early_lydian_cilicians",
+          "name": "Cilicians",
+          "description": "Cilicians have javelins and large shield.. Open order. May be fielded as Skirmihsers at a cost of nine points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Large Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "arzawa_or_early_lydian_archers",
+          "name": "Archers",
+          "description": "Archers have bow. Inferior Fighters. Open Order.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order","Inferior fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "arzawa_or_early_lydian_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Skirmishers",
+          "category": "Infantry",
+          "type": "Skrimishers",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins", "Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "arzawa_or_early_lydian_tribesmen",
+          "name": "Tribesmen",
+          "description": "Tribesmen have a bow. Inferior Fighters. May be fielded as Skirmishers with Parthian Shot",
+          "category": "Allies",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers", "Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
     }
 
 
