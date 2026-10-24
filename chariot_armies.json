@@ -5971,7 +5971,9 @@
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
+            }
+		  ]
+		},
             {
           "id": "syrian_and_canaanite_arab_slingers",
           "name": "Arab Slingers",
@@ -5998,15 +6000,11 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-			}
-
-				
-            ]
             }
           ]
-        },
-        
-      ]
-    }, 
+        }
+    
+    
+
   }
 }
