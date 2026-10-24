@@ -4913,7 +4913,7 @@
             {
               "name": "Skirmishers",
               "disables": "Bow",
-              "enablesHidden": "Bow (Skirmishers)"
+              "enableHidden": "Bow (Skirmishers)",
               "pointsModifier": -4,
               "equipmentAdded": [],
               "equipmentRemoved": [],
