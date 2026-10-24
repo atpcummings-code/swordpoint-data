@@ -2115,7 +2115,7 @@
               "minBases": 3,
               "maxBases": 12,
           "baseEquipment": ["Shield", "Spear"],
-          "specialRules": ["Open Order"],
+          "specialRules": ["Open Order"]
             },
             {
               "name": "Bowmen",
@@ -2569,7 +2569,7 @@
               "minBases": 3,
               "maxBases": 12,
           "baseEquipment": ["Shield", "Spear"],
-          "specialRules": ["Open Order"],
+          "specialRules": ["Open Order"]
             },
             {
               "name": "Bowmen",
@@ -3496,7 +3496,7 @@
               "minBases": 3,
               "maxBases": 12,
           "baseEquipment": ["Large Shield", "Spear"],
-          "specialRules": ["Close Order"],
+          "specialRules": ["Close Order"]
             },
             {
               "name": "Bowmen",
