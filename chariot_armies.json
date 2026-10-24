@@ -4566,7 +4566,7 @@
               "disables": "Javelins",
               "pointsModifier": 2,
               "equipmentAdded": ["Throwing Spear"],
-              "equipmentRemoved": ["Spear"]
+              "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -4577,7 +4577,7 @@
               "disables": "Throwing Spear",
               "pointsModifier": 2,
               "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": []
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -4710,7 +4710,7 @@
               "disables": "Javelins",
               "pointsModifier": 2,
               "equipmentAdded": ["Throwing Spear"],
-              "equipmentRemoved": ["Spear"]
+              "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -4721,7 +4721,7 @@
               "disables": "Throwing Spear",
               "pointsModifier": 2,
               "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": []
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
