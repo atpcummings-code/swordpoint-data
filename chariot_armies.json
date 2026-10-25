@@ -7516,7 +7516,7 @@
               "name": "Exchange Spear for Javelins",
               "pointsModifier": 2,
               "equipmentAdded": ["Javelins"],
-              "equipmentRemove": ["Spear"],
+              "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
