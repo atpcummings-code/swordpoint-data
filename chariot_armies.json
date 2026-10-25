@@ -9065,7 +9065,6 @@
 {
               "name": "Spear",
 "targetProfile": ["Marines","Marines/Archers (Rear Row)","Marines/Archers (Front Row)"],
-              "hiddenUntilEnabled": "hidden",
               "pointsModifier": 0,
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": [],
