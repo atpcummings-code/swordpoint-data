@@ -6779,6 +6779,7 @@
           "defence": 6,
           "cohesion": 8,
           "pointsPerBase": 18,
+			"basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["old_hititte_kingdom_spearmen","old_hititte_kingdom_levy","old_hititte_kingdom_archers","old_hititte_kingdom_javelinmen","old_hititte_kingdom_anatolian_mercenaries"] },
           "maxCountAllowed": 1,
           "minBases": 3,
           "maxBases": 6,
