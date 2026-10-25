@@ -3463,7 +3463,7 @@
         {
           "id": "minoan_and_early_mycenaean_spearmen_cf",
           "name": "Combined Formation Spearmen/Archers",
-          "description": "Archers form up to half the Spearman unit using the Combined Formation rule.  They then cease to be Open ROder and become subject to Warband (not rule 3) costing 10 points per base ",
+          "description": "Archers form up to half the Spearman unit using the Combined Formation rule.  They then cease to be Open Order and become subject to Warband (not rule 3) costing 10 points per base ",
     "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
