@@ -7858,7 +7858,7 @@
                "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": -1,
+              "defenceModifier": 0,
               "cohesionModifier": 0
             },
             {
