@@ -8722,6 +8722,591 @@
         }
         
       ]
+    },
+	   "new_kingdom_egyptian": {
+      "armyName": "New Kingdom Egyptian - (1175 BC - 1070 BC)",
+    
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Chariots",
+          "name": "Cavalry and Chariots",
+          "constraintType": "percentage",
+          "min": 10,
+          "max": 40
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+        {
+          "id": "new_kingdom_egyptian_late_pharaoh",
+          "name": "Pharaoh",
+          "description": "May ride in a chariot or on a horse.",     
+          "excludes": ["new_kingdom_egyptian_late_general_vizier"],
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "new_kingdom_egyptian_late_general_vizier",
+          "name": "General / Vizier",
+          "description": "May ride in a chariot or on a horse.",   
+          "excludes": ["new_kingdom_egyptian_late_pharaoh"],
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "new_kingdom_egyptian_late_brigade_commandern",
+          "name": "Brigade Commander",
+          "description": "May ride in a chariot or on a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "new_kingdom_egyptian_late_chariots",
+          "name": "Chariots",
+          "description": "Chariots have a driver and one crewman armed with bow, light armour and shield. Superior Fighters. Superior Shooters. Light Chariots.",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Bow","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters",
+            "Superior Shooters",
+            "Light Chariots"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "new_kingdom_egyptian_late_chariot_runners",
+          "name": "Chariot Runners",
+          "description": "Chariot Runners have javelins and shield. Open Order. Escorts. May be fielded as Skirmishers at a cost of nine points per base. ",
+          "category": "Chariots",
+          "type": "escorts",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": [
+            "Open Order","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers ",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+         {
+          "id": "new_kingdom_egyptian_late_cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have a bow. Inferior Fighters. Maybe fielded as Skirmishers. ",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 15,
+           "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+                         {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "new_kingdom_egyptian_late_line_infantry",
+          "name": "Line Infantry",
+          "description": "Line Infantry have throwing spear and shield. Up to three units may exchange throwing spear and shield for two-handed mace-axe (-2). One unit may have light armour (+2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Two-handed Mace-axe",
+              "pointsModifier": -2,
+              "maxUnits": 3,
+              "equipmentAdded": ["Two-handed Mace-axe"],
+              "equipmentRemoved": ["Throwing Spear","shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+                "maxUnits": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "new_kingdom_egyptian_late_archers",
+          "name": "Archers",
+          "description": "Archers have a bow.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Close Order"          
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "new_kingdom_egyptian_late_marines",
+          "name": "Marines",
+          "description": "Marines have bow. Superior Fighters. Superior Shooters. May exchange bow for javelins and shield (+2) and may have light armour (+2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Close Order","Superior Fighters","Superior Shooters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins and Shield",
+              "enableHidden": "Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins", "Shield"],
+              "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "new_kingdom_egyptian_late_cf",
+          "name": "Combined Formation Marines",
+          "description": "Archers form up to half the Marines unit using the Combined Formation rule.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Close Order", "Superior Fighters","Superior Shooters"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Archers","Marines/Archers (Front Row)"]},
+			{"label": "50%", "disableSubProfiles": ["Marines/Archers (Front Row)","Marines/Archers (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Marines/Archers (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 8,
+	      "pointsPerBase": 14,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Javelins","Bow"],
+              "specialRules": ["Close Order", "Superior Fighters","Superior Shooters"]
+            },
+			  {
+              "name": "Marines",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 8,
+          	"pointsPerBase": 14,
+              "minBases": 3,
+              "maxBases": 12,
+          "baseEquipment": ["Shield", "Javelins"],
+          "specialRules": ["Close Order", "Superior Fighters","Superior Shooters"]
+            },
+            {
+              "name": "Archers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 8,
+              "pointsPerBase": 10,
+		"minBases": 3,
+		"compareWithSubProfile": { "name": "Marines", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order", "Superior Fighters","Superior Shooters"]
+            },
+
+			  {
+              "name": "Marines/Archers (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Marines", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 8,
+	          "pointsPerBase": 14,
+		"minBases": 3,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Javelins","Bow"],
+              "specialRules": ["Close Order", "Superior Fighters","Superior Shooters"]
+            }
+            
+            ],
+	"optionalEquipment": [
+{
+              "name": "Spear",
+"targetProfile": ["Marines","Marines/Archers (Rear Row)","Marines/Archers (Front Row)"],
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+]    
+},
+{
+          "id": "new_kingdom_egyptian_late_nearim_chariots",
+          "name": "Ne'arim Chariots",
+          "description": "Ne'arim Chariots have a driver and one crewman armed with bow, light armour and shield. Superior Fighters. Superior Shooters. Light Chariots. May have spear (+1).",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Bow","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters",
+            "Superior Shooters",
+            "Light Chariots"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "new_kingdom_egyptian_late_sherden_guard",
+          "name": "Sherden Guard",
+          "description": "Sherden Guard have a shield. Superior Fighters. Stubborn. Open Order. May have javelins (+2) and light armour (+2).",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 19,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order","Stubborn","Superior Fighters","Superior Shooters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+      
+        {
+          "id": "new_kingdom_egyptian_late_sea_peoples",
+          "name": "Sea Peoples",
+          "description": "Sea Peoples have javelins and shield. Warband (rule 3 doe snot apply).  May have light armour (+2).",
+          "category": "Allies",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+         "Javelins","Shield"
+          ],
+          "specialRules": [
+           "Close Order","Warband (not rule 3)"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "new_kingdom_egyptian_late_libyans_and_kushites",
+          "name": "Libyans and Kushites",
+          "description": "Libyans and Kushites have javelins. Open Order. Warband (rule 3 does not apply). May be fielded as Skirmishers at a cost of four points per base.",
+          "category": "Allies",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+         "Javelins"
+          ],
+          "specialRules": [
+           "Open Order","Warband (not rule 3)"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "new_kingdom_egyptian_late_syrians",
+          "name": "Syrians",
+          "description": "Syrians have javelins. Inferior Fighters. Open Order. May replace javelins with bows (free). May be fielded as skirmishers at a cost of four points per base.",
+          "category": "Allies",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+         "Javelins"
+          ],
+          "specialRules": [
+           "Open Order","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "new_kingdom_egyptian_late_nubians",
+          "name": "Nubians",
+          "description": "Nubians have a bow. Skirmishers.",
+          "category": "Allies",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+         "Bow"
+          ],
+          "specialRules": [
+           "Skirmishers"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "new_kingdom_egyptian_late_slingers",
+          "name": "Slingers",
+          "description": "Slingers have a sling. Inferior Fighters. Skirmishers. May have shield (+1).",
+          "category": "Allies",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+         "Sling"
+          ],
+          "specialRules": [
+           "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+
+
+
+
+        
+        
+      ]
     }
 
 
