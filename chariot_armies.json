@@ -7752,6 +7752,343 @@
         }
         
       ]
+    },
+	   "libyan_egyptian": {
+      "armyName": "Libyan Egyptian - (945 BC - 727 BC)",
+    
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Chariots",
+          "name": "Cavalry and Chariots",
+          "constraintType": "percentage",
+          "min": 10,
+          "max": 40
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "libyan_egyptian_pharaoh",
+          "name": "Pharaoh",
+          "description": "May ride in a chariot or on a horse.",          
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "libyan_egyptian_brigade_commander",
+          "name": "Brigade Commander",
+          "description": "May ride in a chariot or on a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "libyan_egyptian_chariots",
+          "name": "Chariots",
+          "description": "Chariots have a driver one crewman armed with bow, light armour and shield. Superior Fighters. Superior Shooters. Light Chariots.",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Bow","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters",
+            "Superior Shooters",
+            "Light Chariots"
+          ],
+          "optionalEquipment": []
+        },
+         {
+          "id": "libyan_egyptian_cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have javelins. May exchange javelins for bow (free). May be fielded as Skirmishers.",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+           "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+             {
+              "name": "Exchange Javelins for Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+               "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers ",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "libyan_egyptian_chariot_runners",
+          "name": "Chariot Runners",
+          "description": "Chariot Runners have javelins and shield. Open Order. Escorts. May exchange javelins and shield for bow (-2).  May be fielded as Skirmishers at a cost of nine points per base. May not be more units of Chariot Runners than there are of Chariots.",
+          "category": "Chariots",
+          "type": "escorts",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+  "requires": {
+            "unitId": "libyan_egyptian_chariots",
+            "count": 1,
+            "name": "Chariots",
+            "perUnit": true
+          },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": [
+            "Open Order","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers ",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Exchange Javelins and Shield for Bow",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+         {
+          "id": "libyan_egyptian_royal_guard",
+          "name": "Royal Guard",
+          "description": "Royal Guard have light armour, throwing spear and shield. May exchange throwing spear and shield for two-handed mace-axe (-2). Superior Fighters.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+           "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order","Superior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Two-handed Mace-axe",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Two-handed Mace-axe"],
+              "equipmentRemoved": ["Throwing Spear","shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        }, 
+        {
+          "id": "libyan_egyptian_libyan_infantry",
+          "name": "Libyan Infantry",
+          "description": "Libyan Infantry have javelins and shield. Open Order.  Warband (rule 3 does not apply).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order","Warband (not rule 3)"
+          ],
+          "optionalEquipment": []
+        },
+{
+          "id": "libyan_egyptian_egyptian_line_infantry",
+          "name": "Egyptian Line Infantry",
+          "description": "Egyptian Line Infantry have thowing spear and shield. May exchange throwing spear and shield for two-handed mace-axe (-2). One unit may have light armour (+2)",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order","Warband (not rule 3)"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Two-handed Mace-axe",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Two-handed Mace-axe"],
+              "equipmentRemoved": ["Throwing Spear","shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+                "maxUnits": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "libyan_egyptian_egyptian_archers",
+          "name": "Eyptian Archers",
+          "description": "Eyptian Archers have a bow.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Close Order"          
+          ],
+          "optionalEquipment": []
+        },
+        
+      
+        {
+          "id": "libyan_egyptian_nubians",
+          "name": "Nubians",
+          "description": "Nubians have javelins or bow. Skirmishers",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+         
+          ],
+          "specialRules": [
+           "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "libyan_egyptian_arabs",
+          "name": "Arabs",
+          "description": "Arabs have javelins. Inferior Fighters. Skirmishers",
+          "category": "Allies",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins"
+          ],
+          "specialRules": [
+            "Inferior Fighters", "Skirmishers"
+          ],
+          "optionalEquipment": []
+        }
+        
+      ]
     }
 
 
