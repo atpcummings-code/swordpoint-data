@@ -6632,7 +6632,7 @@
         },
         {
           "id": "Chariots",
-          "name": "Cavalry and Chariots",
+          "name": "Chariots",
           "constraintType": "percentage",
           "min": 0,
           "max": 25
