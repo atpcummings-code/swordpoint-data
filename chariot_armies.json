@@ -8450,7 +8450,7 @@
         },
         
         {
-          "id": "saite_egyptian_sub_commandern",
+          "id": "saite_egyptian_sub_commander",
           "name": "Sub Commander",
           "description": "May ride in a chariot or on a horse.",
           "category": "Commanders",
@@ -8790,7 +8790,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "new_kingdom_egyptian_late_brigade_commandern",
+          "id": "new_kingdom_egyptian_late_brigade_commander",
           "name": "Brigade Commander",
           "description": "May ride in a chariot or on a horse.",
           "category": "Commanders",
@@ -9368,7 +9368,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "new_kingdom_egyptian_early_brigade_commandern",
+          "id": "new_kingdom_egyptian_early_brigade_commander",
           "name": "Brigade Commander",
           "description": "May ride in a chariot or on a horse.",
           "category": "Commanders",
