@@ -7171,12 +7171,6 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 14,
-  "requires": {
-            "unitId": "mitanni_chariots",
-            "count": 1,
-            "name": "Chariots",
-            "perUnit": true
-          },
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Javelins","Shield"],
