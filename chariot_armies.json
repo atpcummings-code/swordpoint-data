@@ -7968,7 +7968,7 @@
 {
           "id": "libyan_egyptian_egyptian_line_infantry",
           "name": "Egyptian Line Infantry",
-          "description": "Egyptian Line Infantry have thowing spear and shield. May exchange throwing spear and shield for two-handed mace-axe (-2). One unit may have light armour (+2)",
+          "description": "Egyptian Line Infantry have throwing spear and shield. May exchange throwing spear and shield for two-handed mace-axe (-2). One unit may have light armour (+2)",
           "category": "Infantry",
           "type": "Formed",
           "defence": 6,
