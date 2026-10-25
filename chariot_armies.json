@@ -6619,6 +6619,406 @@
         }
         
       ]
+    },
+	   "old_hititte_kingdom": {
+      "armyName": "Old Hititte Kingdom - (1680 BC - 1525 BC)",
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Chariots",
+          "name": "Cavalry and Chariots",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        ,
+        {
+          "id": "Skirmishers",
+          "name": "Skirmishers",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "old_hititte_kingdom_king",
+          "name": "King",
+          "description": "May ride in a chariot.",
+          "excludes": ["old_hititte_kingdom_general"],
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 00,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+                {
+          "id": "old_hititte_kingdom_senior_officer",
+          "name": "Senior Officer",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "old_hititte_kingdom_chariots",
+          "name": "Chariots",
+          "description": "Chariots have a driver and one crewman with light armour, armed with either bow, javelin or spear. All Chariots in a unit must us ethe same weapons. .  Superior Fighters. Superior Shooters. Light Chariots.",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters",
+            "Superior Shooters",
+            "Light Chariots"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "disables": ["Bow", "Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": ["Spear", "Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "disables": ["Bow", "Spear"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "old_hititte_kingdom_chariot_runners",
+          "name": "Chariot Runners",
+          "description": "Chariot Runners have javelins and shield. Open Order. Escorts. May be fielded as Skirmishers at a cost of nine points per base. May not be more units of Chariot Runners than there are of Chariots.",
+          "category": "Chariots",
+          "type": "escorts",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+  "requires": {
+            "unitId": "old_hititte_kingdom_chariots",
+            "count": 1,
+            "name": "Chariots",
+            "perUnit": true
+          },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": [
+            "Open Order","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers ",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "old_hititte_kingdom_guards",
+          "name": "Guards",
+          "description": "Guards have spear and shield. May replace spear and shield with two-handed axe (free). May have light armour (+2) and be Veteran (+2). This unit must be teh smallest infantry in the army, and can have a maxiumum of six bases.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 18,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Spear",
+            "Shield"
+          ],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": [
+            {
+              "name": "Two-handed Axe",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Two-handed Axe"],
+              "equipmentRemoved": ["Spear","shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+   
+        {
+          "id": "old_hititte_kingdom_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have spear. May add shield (+2). Every third unit may have light armour (+2) and be Veteran (+2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "enableHidden": "Veteran",
+              "enabledEvery": 3,
+              "equipmentAdded": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "hiddenUntilEnabled": "hidden",
+              "equipmentAdded": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "old_hititte_kingdom_levy",
+          "name": "Levy",
+          "description": "Levy have a spear. Levy. There can be no more levy bases than spearmen in the army.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["old_hititte_kingdom_spearmen"] },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear"
+          ],
+          "specialRules": [
+            "Close Order","Levy"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "old_hititte_kingdom_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. There can be no more archer bases than spearmen bases in the army.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "basesComparison": { "expression": "lessThanOrEqual", "compareWith": ["old_hititte_kingdom_spearmen"] },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": []
+        },
+       {
+          "id": "old_hititte_kingdom_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have javelins and shield. Open Order. May be fielded as Skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "old_hititte_kingdom_anatolian_mercenaries",
+          "name": "Anatolian Mercenaries",
+          "description": "Anatolian Mercenaries have throwing spear and shield. Open Order",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "old_hititte_kingdom_slingers",
+          "name": "Slingers",
+          "description": "Slingers have a sling. Inferior Fighters. Skirmishers.",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Sling"
+          ],
+          "specialRules": [
+           "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "old_hititte_kingdom_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Inferior Fighters. Skirmishers.",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+             "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "old_hititte_kingdom_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have a javelin and shield. Inferior Fighters. Skirmishers.",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        }
+        
+      ]
     }
 
 
