@@ -7018,6 +7018,343 @@
         }
         
       ]
+    },
+	   "mitanni": {
+      "armyName": "Mitanni - (1600 BC - 1200 BC)",
+    "armyValidation": [ 
+{ "ids": ["mitanni_chariot_runners"], "expression": "lessThanOrEqual", "compareWith": ["mitanni_maryannu_chariots", "mitanni_shepi_sharri_chariots"] } 
+    ],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Chariots",
+          "name": "Chariots",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 60
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 30,
+          "max": 100
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "mitanni_general",
+          "name": "General",
+          "description": "May ride in a chariot.",          
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+                {
+          "id": "mitanni_senior_officer",
+          "name": "Senior Officer",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "mitanni_shepi_sharri_chariots",
+          "name": "Shepi Sharri Chariots",
+          "description": "Shepi Sharri Chariots (Royal Guard) have a driver and one crewman with bow and light armour. Superior Fighters. Superior Shooters. Light Chariots. Veteran. May have spear (+1)",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 4,
+          "cohesion": 9,
+          "pointsPerBase": 27,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Bow"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters",
+            "Superior Shooters",
+            "Light Chariots", "Veteran"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "enableHidden": "Shock Cavalry",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shock Cavalry",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "rulesAdded": ["Shock Cavalry"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "mitanni_maryannu_chariots",
+          "name": "Maryannu Chariots",
+          "description": "Maryannu Chariots have a driver and one crewman with bow and light armour. Superior Fighters. Superior Shooters. Light Chariots. May have spear (+1)",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Bow"
+          ],
+          "specialRules": [
+            "Open Order","Superior Fighters",
+            "Superior Shooters",
+            "Light Chariots"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "enableHidden": "Shock Cavalry",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shock Cavalry",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "rulesAdded": ["Shock Cavalry"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "mitanni_chariot_runners",
+          "name": "Chariot Runners",
+          "description": "Chariot Runners have javelins and shield. Open Order. Escorts. May be fielded as Skirmishers at a cost of nine points per base. May not be more units of Chariot Runners than there are of Chariots.",
+          "category": "Chariots",
+          "type": "escorts",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+  "requires": {
+            "unitId": "mitanni_chariots",
+            "count": 1,
+            "name": "Chariots",
+            "perUnit": true
+          },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": [
+            "Open Order","Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers ",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+          
+        {
+          "id": "mitanni_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have spear And shield.. May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "mitanni_formed_archers",
+          "name": "Formed Archers",
+          "description": "Formed Archers have a bow. May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Close Order"          
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+       {
+          "id": "mitanni_formed_javelinmen",
+          "name": "Formed Javelinmen",
+          "description": "Javelinmen have javelins and shield. Open Order. May be fielded as Skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins",
+            "Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "mitanni_slingers",
+          "name": "Slingers",
+          "description": "Slingers have a sling. Inferior Fighters. Skirmishers.",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Sling"
+          ],
+          "specialRules": [
+           "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "mitanni_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Inferior Fighters. Skirmishers.",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+             "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "mitanni_javelinmen",
+          "name": "Javelinmen",
+          "description": "Javelinmen have a javelin. Inferior Fighters. Skirmishers. May have shield (+1).",
+          "category": "Skirmishers",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
     }
 
 
