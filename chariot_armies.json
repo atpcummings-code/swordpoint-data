@@ -11553,7 +11553,7 @@
 		
 			{"label": "50%", "disableSubProfiles": ["Kisir Sharruti/Kisir Sharruti Missile Troops (Front Row)","Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)" ]},
           { "label": "67%", "disableSubProfiles": ["Kisir Sharruti","Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)" ]}
-        ]
+        ],
           "subProfiles": [
              {
               "name": "Kisir Sharruti/Kisir Sharruti Missile Troops (Front Row)",
