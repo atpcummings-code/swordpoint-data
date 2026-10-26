@@ -3189,7 +3189,7 @@
         {
           "id": "arab_nomads_late_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have bow. Skirmishers. May exchange bow for javleins (free).",
+          "description": "Skirmishers have bow. Skirmishers. May exchange bow for javelins (free).",
           "category": "Camels",
           "type": "Camels",
           "defence": 6,
@@ -5474,7 +5474,7 @@
           "defence": 6,
           "cohesion": 5,
           "pointsPerBase": 10,
-          "minBases": 3,
+          "minBases": 3,E
           "maxBases": 12,
           "baseEquipment": ["Spear","Shield"],
           "specialRules": ["Close Order"],
@@ -11330,8 +11330,1406 @@
         }
         
       ]
+    },
+	   "later_babylonian_late": {
+      "armyName": "Later Babylonian (Late) - (750 BC - 700 BC)",
+
+
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max":6
+        },
+        {
+          "id": "Chariots",
+          "name": "Cavalry and Chariots",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+            "arab_nomads_late"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
+      ],
+      "units": [
+        {
+          "id": "later_babylonian_late_king",
+          "name": "King",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "excludes": ["later_babylonian_late_general"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_babylonian_late_general",
+          "name": "General",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "excludes": ["later_babylonian_late_king"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_babylonian_late_senior_officer",
+          "name": "Senior Officer",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "later_babylonian_late_heavy_chariots",
+          "name": "Light Chariots",
+          "description": "Heavy Chariots have a driver and two crewman armed with spear, light armour and shield. One crewman has a bow. Superior Shooters. Heavy Chariots. They may add a third crewman for +8 points; such a unit may shoot and fight with an extra D6 for every two Chariots engaging, round up. Heavy Chariots may pay an addiitonal +4 points per Chariot and us ethe Shock Cavalry special rule, but only when charging infantry.",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 39,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Spear", "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Shooters","Superior Fighters",m
+            "Heavy Chariots"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Third Crewman",
+              "pointsModifier": 8,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Third Crewman"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shock Cavalry",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Shock Cavalry"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_babylonian_late_cavalry_cf",
+          "name": "Cavalry Combined Formation",
+          "description": "Cavalry have light armour. The front row of bases in a unit have spear, the second row have bow. COmbined Formation. May have cloth barding (+1). May upgrade Cavalry to carry both spear and bow (+1).",
+          "category": "Chariots",
+          "type": "Cavalry",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Front Row",
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 17,
+              "minBases": 3,
+              "maxBases": 4,
+              "baseEquipment": ["Spear"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Rear Row",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 17,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": [
+            {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Cloth Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Spear and Bow",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Spear","Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            ]
+            },  
+
+         
+        {
+          "id": "later_babylonian_late_qurubuti",
+          "name": "Qurubuti",
+          "description": "Qurubuti have light armour, throwing spear and large shield. Superior FIghters. Stubborn",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 30,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Large Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order", "Superior Fighters", "Stubborn"
+          ],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "later_babylonian_late_kisir_sharruti_cf",
+          "name": "Combined Formation Kisir Sharruti",
+          "description": "Kisir Sharruti between half and two thirds of each unit amred iwth spear and shield and teh remainder armed with bow.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		
+			{"label": "50%", "disableSubProfiles": ["Kisir Sharruti/Kisir Sharruti Missile Troops (Front Row)","Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)" ]},
+          { "label": "67%", "disableSubProfiles": ["Kisir Sharruti","Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)" ]}
+        ]
+          "subProfiles": [
+             {
+              "name": "Kisir Sharruti/Kisir Sharruti Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 14,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Kisir Sharruti",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 14,
+              "minBases": 4,
+              "maxBases": 6
+          "baseEquipment": ["Shield", "Spear"],
+          "specialRules": ["Close Order"]
+            },
+            {
+              "name": "Kisir Sharruti Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 7,
+	      "pointsPerBase": 14,
+		"minBases": 2,
+		"compareWithSubProfile": { "name": "Kisir Sharruti", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Kisir Sharruti", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 14,
+		"minBases": 2,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Kisir Sharruti","Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)","Kisir Sharruti/Kisir Sharruti Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+        
+        {
+          "id": "later_babylonian_late_sab_sharri_skirmishers",
+          "name": "Sab Sharri Skirmishers",
+          "description": "Sab Sharri skirmishers have spear and shield. Skirmishers",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Spear","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+                        {
+              "name": "Large Shield",
+              "disables": "Skirmishers",            
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+                   {
+              "name": "Skirmishers",
+              "disables": "Large Shield",            
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+        {
+          "id": "later_babylonian_late_sab_sharri_cf",
+          "name": "Combined Formation Sab Sharri",
+          "description": "Sab Sharri between one half and two thirds of each unit armed with spear and shield and teh remainder armed with bow. Combined Formation. May upgrade shield to large shield (+2).",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Open Order"],
+	  "combinedFormation": 
+		[
+		
+			{"label": "50%", "disableSubProfiles": ["Sab Sharri/Sab Sharri Missile Troops (Front Row)","Sab Sharri/Sab Sharri Missile Troops (Rear Row)" ]},
+          { "label": "67%", "disableSubProfiles": ["Sab Sharri","Sab Sharri/Sab Sharri Missile Troops (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Sab Sharri/Sab Sharri Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 5,
+	      "pointsPerBase": 8,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour","Bow"],
+              "specialRules": ["Open Order"]
+            },
+			  {
+              "name": "Sab Sharri",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+              "cohesion": 5,
+	      "pointsPerBase": 8,
+              "minBases": 4,
+              "maxBases": 6
+          "baseEquipment": ["Shield", "Spear","Light Armour"],
+          "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Sab Sharri Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 5,
+	      "pointsPerBase": 8,
+		"minBases": 2,
+		"compareWithSubProfile": { "name": "Sab Sharri", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Open Order"]
+            },
+
+			  {
+              "name": "Sab Sharri/Sab Sharri Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Sab Sharri", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 5,
+	      "pointsPerBase": 8,
+		"minBases": 2,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour","Bow"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Sab Sharri","Sab Sharri/Sab Sharri Missile Troops (Rear Row)","Sab Sharri/Sab Sharri Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+             
+        {
+          "id": "later_babylonian_late_chaldeans",
+          "name": "Chaldeans",
+          "description": "Chaldeans armed with spear and large shield, May swap to spear and bow (-2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 5,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+         "Spear","Large Shield"
+          ],
+          "specialRules": [
+            "Close Order"         
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear and Bow",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Bow","Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_babylonian_late_chaldeans_cf",
+          "name": "Combined Formation Chaldeans",
+          "description": "Chaldeans between one half and two thirds of each unit armed with spear and shield and the remainder armed with bow. Combined Formation.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		
+			{"label": "50%", "disableSubProfiles": ["Chaldeans/Chaldeans Missile Troops (Front Row)","Chaldeans/Chaldeans Missile Troops (Rear Row)" ]},
+          { "label": "67%", "disableSubProfiles": ["Chaldeans","Chaldeans/Chaldeans Missile Troops (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Chaldeans/Chaldeans Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 5,
+	      "pointsPerBase": 12,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Chaldeans",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+              "cohesion": 5,
+	      "pointsPerBase": 12,
+              "minBases": 4,
+              "maxBases": 6
+          "baseEquipment": ["Shield", "Spear"],
+          "specialRules": ["Close Order"]
+            },
+            {
+              "name": "Chaldeans Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 5,
+	      "pointsPerBase": 12,
+		"minBases": 2,
+		"compareWithSubProfile": { "name": "Chaldeans", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Chaldeans/Chaldeans Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Chaldeans", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 5,
+	      "pointsPerBase": 12,
+		"minBases": 2,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Chaldeans","Chaldeans/Chaldeans Missile Troops (Rear Row)","Chaldeans/Chaldeans Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+        
+        
+       
+        {
+          "id": "later_babylonian_late_chaldean_skirmishers",
+          "name": "Chaldean Skirmishers",
+          "description": "Chaldean Skirmishers have sling or bow. Inferior Fighters. Skirmisers. May have shield (+1).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            
+          ],
+          "specialRules": [
+            "Skirmisers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "arab_nomads_late_mounted_archers",
+          "name": "Mounted Archers",
+          "description": "Mounted Archers have two riders armed with bows. They ae treated as normal camelry figures.  They may shoot with on extra D6 for every two bases shooting (round up). Open Order",
+          "category": "Allies",
+          "type": "Camels",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "arab_nomads_late_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have sling. Inferior Fighters. Skirmishers.",
+          "category": "Allies",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Sling"
+          ],
+          "specialRules": [
+            "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_babylonian_late_lydian_hoplites",
+          "name": "Lydian Hoplites",
+          "description": "Lydian Hoplites have spear, light armour and large shield. Phalanx. ",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Light Armour","Large Shield","Spear"
+          ],
+          "specialRules": [
+            "Close Order","Phalanx"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_babylonian_late_aramaeans",
+          "name": "Aramaeans",
+          "description": "Aramaeans have javelins and shield. Open Order. May exchange javelins and shield for bow (-2). May be fielded as SKirmishers at a cost of seven points per base.",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",            
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_babylonian_late_cimmerian_cavalry",
+          "name": "Cimmerian Cavalry",
+          "description": "Cimmerian Cavalry have have a bow. Evade. May be fielded as Skirmishers with Parthian Shot.",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+			"maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order", "Evade"
+          ],
+          "optionalEquipment": [
+                        {
+              "name": "Skirmishers",            
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers","Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+ 
+      ]
+    },
+ "later_babylonian_late": {
+      "armyName": "Later Babylonian (Late) - (750 BC - 700 BC)",
+
+
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max":6
+        },
+        {
+          "id": "Chariots",
+          "name": "Cavalry and Chariots",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [
+            "arab_nomads_late"
+          ],
+          "maxAlliedArmiesAllowed": 1
+        }
+      ],
+      "units": [
+        {
+          "id": "later_babylonian_late_king",
+          "name": "King",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "excludes": ["later_babylonian_late_general"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_babylonian_late_general",
+          "name": "General",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "excludes": ["later_babylonian_late_king"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "later_babylonian_late_senior_officer",
+          "name": "Senior Officer",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "later_babylonian_late_heavy_chariots",
+          "name": "Light Chariots",
+          "description": "Heavy Chariots have a driver and two crewman armed with spear, light armour and shield. One crewman has a bow. Superior Shooters. Heavy Chariots. They may add a third crewman for +8 points; such a unit may shoot and fight with an extra D6 for every two Chariots engaging, round up. Heavy Chariots may pay an addiitonal +4 points per Chariot and us ethe Shock Cavalry special rule, but only when charging infantry.",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 39,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Spear", "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Shooters","Superior Fighters",m
+            "Heavy Chariots"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Third Crewman",
+              "pointsModifier": 8,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Third Crewman"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shock Cavalry",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Shock Cavalry"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_babylonian_late_cavalry_cf",
+          "name": "Cavalry Combined Formation",
+          "description": "Cavalry have light armour. The front row of bases in a unit have spear, the second row have bow. COmbined Formation. May have cloth barding (+1). May upgrade Cavalry to carry both spear and bow (+1).",
+          "category": "Chariots",
+          "type": "Cavalry",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Front Row",
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 17,
+              "minBases": 3,
+              "maxBases": 4,
+              "baseEquipment": ["Spear"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Rear Row",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 17,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": [
+            {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Cloth Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Spear and Bow",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Spear","Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            ]
+            },  
+
+         
+        {
+          "id": "later_babylonian_late_qurubuti",
+          "name": "Qurubuti",
+          "description": "Qurubuti have light armour, throwing spear and large shield. Superior FIghters. Stubborn",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 30,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Large Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order", "Superior Fighters", "Stubborn"
+          ],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "later_babylonian_late_kisir_sharruti_cf",
+          "name": "Combined Formation Kisir Sharruti",
+          "description": "Kisir Sharruti between half and two thirds of each unit amred iwth spear and shield and teh remainder armed with bow.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		
+			{"label": "50%", "disableSubProfiles": ["Kisir Sharruti/Kisir Sharruti Missile Troops (Front Row)","Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)" ]},
+          { "label": "67%", "disableSubProfiles": ["Kisir Sharruti","Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)" ]}
+        ]
+          "subProfiles": [
+             {
+              "name": "Kisir Sharruti/Kisir Sharruti Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 14,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Kisir Sharruti",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 14,
+              "minBases": 4,
+              "maxBases": 6
+          "baseEquipment": ["Shield", "Spear"],
+          "specialRules": ["Close Order"]
+            },
+            {
+              "name": "Kisir Sharruti Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 7,
+	      "pointsPerBase": 14,
+		"minBases": 2,
+		"compareWithSubProfile": { "name": "Kisir Sharruti", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Kisir Sharruti", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 14,
+		"minBases": 2,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Kisir Sharruti","Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)","Kisir Sharruti/Kisir Sharruti Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+        
+        {
+          "id": "later_babylonian_late_sab_sharri_skirmishers",
+          "name": "Sab Sharri Skirmishers",
+          "description": "Sab Sharri skirmishers have spear and shield. Skirmishers",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Spear","Shield"
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+                        {
+              "name": "Large Shield",
+              "disables": "Skirmishers",            
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+                   {
+              "name": "Skirmishers",
+              "disables": "Large Shield",            
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+        {
+          "id": "later_babylonian_late_sab_sharri_cf",
+          "name": "Combined Formation Sab Sharri",
+          "description": "Sab Sharri between one half and two thirds of each unit armed with spear and shield and teh remainder armed with bow. Combined Formation. May upgrade shield to large shield (+2).",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Open Order"],
+	  "combinedFormation": 
+		[
+		
+			{"label": "50%", "disableSubProfiles": ["Sab Sharri/Sab Sharri Missile Troops (Front Row)","Sab Sharri/Sab Sharri Missile Troops (Rear Row)" ]},
+          { "label": "67%", "disableSubProfiles": ["Sab Sharri","Sab Sharri/Sab Sharri Missile Troops (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Sab Sharri/Sab Sharri Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 5,
+	      "pointsPerBase": 8,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour","Bow"],
+              "specialRules": ["Open Order"]
+            },
+			  {
+              "name": "Sab Sharri",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+              "cohesion": 5,
+	      "pointsPerBase": 8,
+              "minBases": 4,
+              "maxBases": 6
+          "baseEquipment": ["Shield", "Spear","Light Armour"],
+          "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Sab Sharri Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 5,
+	      "pointsPerBase": 8,
+		"minBases": 2,
+		"compareWithSubProfile": { "name": "Sab Sharri", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Open Order"]
+            },
+
+			  {
+              "name": "Sab Sharri/Sab Sharri Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Sab Sharri", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 5,
+	      "pointsPerBase": 8,
+		"minBases": 2,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour","Bow"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Sab Sharri","Sab Sharri/Sab Sharri Missile Troops (Rear Row)","Sab Sharri/Sab Sharri Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+             
+        {
+          "id": "later_babylonian_late_chaldeans",
+          "name": "Chaldeans",
+          "description": "Chaldeans armed with spear and large shield, May swap to spear and bow (-2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 5,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+         "Spear","Large Shield"
+          ],
+          "specialRules": [
+            "Close Order"         
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear and Bow",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Bow","Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_babylonian_late_chaldeans_cf",
+          "name": "Combined Formation Chaldeans",
+          "description": "Chaldeans between one half and two thirds of each unit armed with spear and shield and the remainder armed with bow. Combined Formation.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		
+			{"label": "50%", "disableSubProfiles": ["Chaldeans/Chaldeans Missile Troops (Front Row)","Chaldeans/Chaldeans Missile Troops (Rear Row)" ]},
+          { "label": "67%", "disableSubProfiles": ["Chaldeans","Chaldeans/Chaldeans Missile Troops (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Chaldeans/Chaldeans Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 5,
+	      "pointsPerBase": 12,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Chaldeans",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+              "cohesion": 5,
+	      "pointsPerBase": 12,
+              "minBases": 4,
+              "maxBases": 6
+          "baseEquipment": ["Shield", "Spear"],
+          "specialRules": ["Close Order"]
+            },
+            {
+              "name": "Chaldeans Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 5,
+	      "pointsPerBase": 12,
+		"minBases": 2,
+		"compareWithSubProfile": { "name": "Chaldeans", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Chaldeans/Chaldeans Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Chaldeans", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 5,
+	      "pointsPerBase": 12,
+		"minBases": 2,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Chaldeans","Chaldeans/Chaldeans Missile Troops (Rear Row)","Chaldeans/Chaldeans Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+        
+        
+       
+        {
+          "id": "later_babylonian_late_chaldean_skirmishers",
+          "name": "Chaldean Skirmishers",
+          "description": "Chaldean Skirmishers have sling or bow. Inferior Fighters. Skirmisers. May have shield (+1).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            
+          ],
+          "specialRules": [
+            "Skirmisers","Inferior Fighters"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "arab_nomads_late_mounted_archers",
+          "name": "Mounted Archers",
+          "description": "Mounted Archers have two riders armed with bows. They ae treated as normal camelry figures.  They may shoot with on extra D6 for every two bases shooting (round up). Open Order",
+          "category": "Allies",
+          "type": "Camels",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "arab_nomads_late_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have sling. Inferior Fighters. Skirmishers.",
+          "category": "Allies",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Sling"
+          ],
+          "specialRules": [
+            "Skirmishers", "Inferior Fighters"
+          ],
+          "optionalEquipment": []
+        },
+       
+        {
+          "id": "later_babylonian_late_aramaeans",
+          "name": "Aramaeans",
+          "description": "Aramaeans have javelins and shield. Open Order. May exchange javelins and shield for bow (-2). May be fielded as SKirmishers at a cost of seven points per base.",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": -2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",            
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "later_babylonian_late_cimmerian_cavalry",
+          "name": "Cimmerian Cavalry",
+          "description": "Cimmerian Cavalry have have a bow. Evade. May be fielded as Skirmishers with Parthian Shot.",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order", "Evade"
+          ],
+          "optionalEquipment": [
+                        {
+              "name": "Skirmishers",            
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers","Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }      
+      ]
     }
 
+
+	  
 
 	  
   }
