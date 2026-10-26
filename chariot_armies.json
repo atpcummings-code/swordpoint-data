@@ -5468,13 +5468,13 @@
         {
           "id": "dark_age_greece_late_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have spear and shield. May have javelins (+1), or exchange spear for javelins (+0). May exchange shield for large shield (+2). Up to three units may have light armour (+2). ",
+          "description": "Spearmen have spear and shield. May have javelins (+1), or exchange spear for javelins (+0). May exchange shield for large shield (+2). Up to three units may have light armour (+2).",
           "category": "Infantry",
           "type": "Formed",
           "defence": 6,
           "cohesion": 5,
           "pointsPerBase": 10,
-          "minBases": 3,E
+          "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Spear","Shield"],
           "specialRules": ["Close Order"],
