@@ -6772,7 +6772,7 @@
         {
           "id": "old_hititte_kingdom_guards",
           "name": "Guards",
-          "description": "Guards have spear and shield. May replace spear and shield with two-handed axe (free). May have light armour (+2) and be Veteran (+2). This unit must be teh smallest infantry in the army, and can have a maxiumum of six bases.",
+          "description": "Guards have spear and shield. May replace spear and shield with two-handed axe (free). May have light armour (+2) and be Veteran (+2). This unit must be the smallest infantry in the army, and can have a maxiumum of six bases.",
           "category": "Infantry",
           "type": "Formed",
           "defence": 6,
@@ -7527,7 +7527,7 @@
 {
           "id": "trojan_war_myrmidons",
           "name": "Myrmidons",
-          "description": "Myrmidons have throwing spear, light armour and shield. Superior Fighters. Warband (Rule 3 does not apply). May be Stubborn (+2). The unit must be led by a Hero who cannot leave teh unit.",
+          "description": "Myrmidons have throwing spear, light armour and shield. Superior Fighters. Warband (Rule 3 does not apply). May be Stubborn (+2). The unit must be led by a Hero who cannot leave the unit.",
           "category": "Infantry",
           "type": "Formed",
           "defence": 5,
@@ -11223,7 +11223,7 @@
         {
           "id": "neo_assyrian_mounted_archers",
           "name": "Mounted Archers",
-          "description": "Mounted Archers have light armour and bow. They were conveyed to teh battlefield on carts, and so count as Riding Horses. ",
+          "description": "Mounted Archers have light armour and bow. They were conveyed to the battlefield on carts, and so count as Riding Horses. ",
           "category": "Infantry",
           "type": "Formed",
           "defence": 6,
@@ -11541,7 +11541,7 @@
         {
           "id": "later_babylonian_late_kisir_sharruti_cf",
           "name": "Combined Formation Kisir Sharruti",
-          "description": "Kisir Sharruti between half and two thirds of each unit amred iwth spear and shield and teh remainder armed with bow.",
+          "description": "Kisir Sharruti between half and two thirds of each unit amred iwth spear and shield and the remainder armed with bow.",
     "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
@@ -11664,7 +11664,7 @@
         {
           "id": "later_babylonian_late_sab_sharri_cf",
           "name": "Combined Formation Sab Sharri",
-          "description": "Sab Sharri between one half and two thirds of each unit armed with spear and shield and teh remainder armed with bow. Combined Formation. May upgrade shield to large shield (+2).",
+          "description": "Sab Sharri between one half and two thirds of each unit armed with spear and shield and the remainder armed with bow. Combined Formation. May upgrade shield to large shield (+2).",
     "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
@@ -12250,7 +12250,7 @@
         {
           "id": "later_babylonian_early_kisir_sharruti_cf",
           "name": "Combined Formation Kisir Sharruti",
-          "description": "Kisir Sharruti between half and two thirds of each unit amred iwth spear and shield and teh remainder armed with bow.",
+          "description": "Kisir Sharruti between half and two thirds of each unit amred iwth spear and shield and the remainder armed with bow.",
     "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
@@ -12373,7 +12373,7 @@
         {
           "id": "later_babylonian_early_sab_sharri_cf",
           "name": "Combined Formation Sab Sharri",
-          "description": "Sab Sharri between one half and two thirds of each unit armed with spear and shield and teh remainder armed with bow. Combined Formation. May upgrade shield to large shield (+2).",
+          "description": "Sab Sharri between one half and two thirds of each unit armed with spear and shield and the remainder armed with bow. Combined Formation. May upgrade shield to large shield (+2).",
     "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
