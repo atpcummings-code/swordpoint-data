@@ -12998,58 +12998,7 @@
         },
         
         
-        {
-          "id": "shang_chinese_late_skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have javelins, bow or sling. Skirmishers",
-          "category": "Infantry",
-          "type": "Skirmishers",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 6,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [
-          ],
-          "specialRules": [
-            "Skirmishers"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Javelins",
-              "disables": ["Bow","Sling"],
-              "pointsModifier": 0,
-              "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Bow",
-              "disables": ["Javelins","Sling"],
-              "pointsModifier": 0,
-              "equipmentAdded": ["Bow"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Sling",
-              "disables": ["Javelins","Bow"],
-              "pointsModifier": 0,
-              "equipmentAdded": ["Sling"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        }
+        
         
       ]
     },
@@ -13246,60 +13195,6 @@
             "Close Order","Inferior fighters","Levy"
           ],
           "optionalEquipment": []
-        },
-        
-        
-        {
-          "id": "shang_chinese_early_skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have javelins, bow or sling. Skirmishers",
-          "category": "Infantry",
-          "type": "Skirmishers",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 6,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": [
-          ],
-          "specialRules": [
-            "Skirmishers"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Javelins",
-              "disables": ["Bow","Sling"],
-              "pointsModifier": 0,
-              "equipmentAdded": ["Javelins"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Bow",
-              "disables": ["Javelins","Sling"],
-              "pointsModifier": 0,
-              "equipmentAdded": ["Bow"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Sling",
-              "disables": ["Javelins","Bow"],
-              "pointsModifier": 0,
-              "equipmentAdded": ["Sling"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
         }
         
       ]
