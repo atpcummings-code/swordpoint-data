@@ -11552,7 +11552,7 @@
 		[
 		
 			{"label": "50%", "disableSubProfiles": ["Kisir Sharruti/Kisir Sharruti Missile Troops (Front Row)","Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)" ]},
-          { "label": "67%", "disableSubProfiles": ["Kisir Sharruti","Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)" ]}
+          { "label": "67%", "disableSubProfiles": ["Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)","Kisir Sharruti Missile Troops" ]}
         ],
           "subProfiles": [
              {
@@ -11572,8 +11572,8 @@
             	"defence": 6,
               "cohesion": 7,
 	      "pointsPerBase": 14,
-              "minBases": 4,
-              "maxBases": 6,
+              "minBases": 3,
+              "maxBases": 8,
           "baseEquipment": ["Shield", "Spear"],
           "specialRules": ["Close Order"]
             },
@@ -11592,7 +11592,7 @@
 			  {
               "name": "Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-			  "compareWithSubProfile": { "name": "Kisir Sharruti", "expression": "lessThanOrEqual", "ratio": 1 },
+			  "compareWithSubProfile": { "name": "Kisir Sharruti", "expression": "lessThanOrEqual", "ratio": 0.67 },
               "defence": 6,
               "cohesion": 7,
 	      "pointsPerBase": 14,
@@ -11675,7 +11675,7 @@
 		[
 		
 			{"label": "50%", "disableSubProfiles": ["Sab Sharri/Sab Sharri Missile Troops (Front Row)","Sab Sharri/Sab Sharri Missile Troops (Rear Row)" ]},
-          { "label": "67%", "disableSubProfiles": ["Sab Sharri","Sab Sharri/Sab Sharri Missile Troops (Rear Row)" ]}
+          { "label": "67%", "disableSubProfiles": ["Sab Sharri/Sab Sharri Missile Troops (Rear Row)","Sab Sharri Missile Troops" ]}
 		],
           "subProfiles": [
              {
@@ -11695,8 +11695,8 @@
             	"defence": 6,
               "cohesion": 5,
 	      "pointsPerBase": 8,
-              "minBases": 4,
-              "maxBases": 6,
+              "minBases": 3,
+              "maxBases": 8,
           "baseEquipment": ["Shield", "Spear","Light Armour"],
           "specialRules": ["Open Order"]
             },
@@ -11715,7 +11715,7 @@
 			  {
               "name": "Sab Sharri/Sab Sharri Missile Troops (Rear Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-			  "compareWithSubProfile": { "name": "Sab Sharri", "expression": "lessThanOrEqual", "ratio": 1 },
+			  "compareWithSubProfile": { "name": "Sab Sharri", "expression": "lessThanOrEqual", "ratio": 0.67 },
               "defence": 6,
               "cohesion": 5,
 	      "pointsPerBase": 8,
@@ -11786,7 +11786,7 @@
 		[
 		
 			{"label": "50%", "disableSubProfiles": ["Chaldeans/Chaldeans Missile Troops (Front Row)","Chaldeans/Chaldeans Missile Troops (Rear Row)" ]},
-          { "label": "67%", "disableSubProfiles": ["Chaldeans","Chaldeans/Chaldeans Missile Troops (Rear Row)" ]}
+          { "label": "67%", "disableSubProfiles": ["Chaldeans/Chaldeans Missile Troops (Rear Row)","Chaldeans Missile Troops"]}
 		],
           "subProfiles": [
              {
@@ -11806,8 +11806,8 @@
             	"defence": 5,
               "cohesion": 5,
 	      "pointsPerBase": 12,
-              "minBases": 4,
-              "maxBases": 6,
+              "minBases": 3,
+              "maxBases": 8,
           "baseEquipment": ["Shield", "Spear"],
           "specialRules": ["Close Order"]
             },
@@ -11826,7 +11826,7 @@
 			  {
               "name": "Chaldeans/Chaldeans Missile Troops (Rear Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-			  "compareWithSubProfile": { "name": "Chaldeans", "expression": "lessThanOrEqual", "ratio": 1 },
+			  "compareWithSubProfile": { "name": "Chaldeans", "expression": "lessThanOrEqual", "ratio": 0.67 },
               "defence": 5,
               "cohesion": 5,
 	      "pointsPerBase": 12,
@@ -12281,8 +12281,8 @@
             	"defence": 6,
               "cohesion": 7,
 	      "pointsPerBase": 14,
-              "minBases": 4,
-              "maxBases": 6,
+              "minBases": 3,
+              "maxBases": 8,
           "baseEquipment": ["Shield", "Spear"],
           "specialRules": ["Close Order"]
             },
@@ -12384,7 +12384,7 @@
 		[
 		
 			{"label": "50%", "disableSubProfiles": ["Sab Sharri/Sab Sharri Missile Troops (Front Row)","Sab Sharri/Sab Sharri Missile Troops (Rear Row)" ]},
-          { "label": "67%", "disableSubProfiles": ["Sab Sharri","Sab Sharri/Sab Sharri Missile Troops (Rear Row)" ]}
+          { "label": "67%", "disableSubProfiles": ["Sab Sharri/Sab Sharri Missile Troops (Front Row)","Sab Sharri Missile Troops" ]}
 		],
           "subProfiles": [
              {
@@ -12404,8 +12404,8 @@
             	"defence": 6,
               "cohesion": 5,
 	      "pointsPerBase": 8,
-              "minBases": 4,
-              "maxBases": 6,
+              "minBases": 3,
+              "maxBases": 8,
           "baseEquipment": ["Shield", "Spear","Light Armour"],
           "specialRules": ["Open Order"]
             },
@@ -12424,7 +12424,7 @@
 			  {
               "name": "Sab Sharri/Sab Sharri Missile Troops (Rear Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-			  "compareWithSubProfile": { "name": "Sab Sharri", "expression": "lessThanOrEqual", "ratio": 1 },
+			  "compareWithSubProfile": { "name": "Sab Sharri", "expression": "lessThanOrEqual", "ratio": 0.67 },
               "defence": 6,
               "cohesion": 5,
 	      "pointsPerBase": 8,
@@ -12495,7 +12495,7 @@
 		[
 		
 			{"label": "50%", "disableSubProfiles": ["Chaldeans/Chaldeans Missile Troops (Front Row)","Chaldeans/Chaldeans Missile Troops (Rear Row)" ]},
-          { "label": "67%", "disableSubProfiles": ["Chaldeans","Chaldeans/Chaldeans Missile Troops (Rear Row)" ]}
+          { "label": "67%", "disableSubProfiles": ["Chaldeans/Chaldeans Missile Troops (Front Row)","Chaldeans Missile Troops" ]}
 		],
           "subProfiles": [
              {
@@ -12515,8 +12515,8 @@
             	"defence": 5,
               "cohesion": 5,
 	      "pointsPerBase": 12,
-              "minBases": 4,
-              "maxBases": 6,
+              "minBases": 3,
+              "maxBases": 8,
           "baseEquipment": ["Shield", "Spear"],
           "specialRules": ["Close Order"]
             },
@@ -12535,7 +12535,7 @@
 			  {
               "name": "Chaldeans/Chaldeans Missile Troops (Rear Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-			  "compareWithSubProfile": { "name": "Chaldeans", "expression": "lessThanOrEqual", "ratio": 1 },
+			  "compareWithSubProfile": { "name": "Chaldeans", "expression": "lessThanOrEqual", "ratio": 0.67 },
               "defence": 5,
               "cohesion": 5,
 	      "pointsPerBase": 12,
