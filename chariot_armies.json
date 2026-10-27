@@ -11022,7 +11022,7 @@
 		"minBases": 3,
 		"compareWithSubProfile": { "name": "Kisir Sharruti", "expression": "lessThanOrEqual", "ratio": 1 },
               "baseEquipment": [],
-              "specialRules": ["Close Order", "Superior Fighters","Superior Shooters"]
+              "specialRules": ["Close Order"]
             },
 
 			  {
@@ -11168,7 +11168,7 @@
 		"minBases": 3,
 		"compareWithSubProfile": { "name": "Sab Sharri", "expression": "lessThanOrEqual", "ratio": 1 },
               "baseEquipment": ["Bow"],
-              "specialRules": ["Open Order", "Superior Fighters","Superior Shooters"]
+              "specialRules": ["Open Order"]
             },
 
 			  {
