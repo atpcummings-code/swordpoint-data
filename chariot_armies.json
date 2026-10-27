@@ -10384,7 +10384,7 @@
         {
           "id": "early_assyrian_sabum_kibitum_cf",
           "name": "Combined Formation Sabum Kibitum",
-          "description": "Up to half the unit may replace spear and shield with bow (free) and form the rear rows of a combind formation.",
+          "description": "Up to half the unit may replace spear and shield with bow (free) and form the rear rows of a combined formation.",
     "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
@@ -10544,7 +10544,7 @@
         {
           "id": "early_assyrian_sabum_qallatum_cf",
           "name": "Combined Formation Sabum Qallatum",
-          "description": "Up to half the unit may replace spear and shield with bow (free) and form the rear rows of a combind formation.",
+          "description": "Up to half the unit may replace spear and shield with bow (free) and form the rear rows of a combined formation.",
     "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
@@ -10978,7 +10978,7 @@
         {
           "id": "neo_assyrian_kisir_sharruti_cf",
           "name": "Combined Formation Kisir Sharruti",
-          "description": "Kisir Sharruti have light armour, spear and shield. May upgrade to large shield (+2). Up to half the unit may replace spear and shield with bow or sling (free) and form the rear rows of a combind formation.",
+          "description": "Kisir Sharruti have light armour, spear and shield. May upgrade to large shield (+2). Up to half the unit may replace spear and shield with bow or sling (free) and form the rear rows of a combined formation.",
     "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
