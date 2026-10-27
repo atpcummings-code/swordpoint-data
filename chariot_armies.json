@@ -13198,7 +13198,1606 @@
         }
         
       ]
+    },
+	  "middle_assyrian_late": {
+      "armyName": "Middle Assyrian (Late) - (849 BC - 600 BC)",
+
+
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max":8
+        },
+        {
+          "id": "Chariots",
+          "name": "Cavalry and Chariots",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+        {
+          "id": "middle_assyrian_late_king",
+          "name": "King",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "excludes": ["middle_assyrian_late_general"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_late_general",
+          "name": "General",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "excludes": ["middle_assyrian_late_king"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_late_senior_officer",
+          "name": "Senior Officer",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "middle_assyrian_late_light_chariots",
+          "name": "Light Chariots",
+          "description": "Light chariots have a driver and one crewman armed with spear, light armour and shield. Superior Fighters. Light Chariots. The crewman may have a bow as a Superior Shooters (+3).",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Spear", "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters",
+            "Light Chariots"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": 3,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Shooters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "middle_assyrian_late_chariot_runners",
+          "name": "Chariot Runners",
+          "description": "Chariot Runners have javelins and shield. Open Order. Escorts. May be fielded as Skirmishers at a cost of nine points per base. There may not be more units of Chariot runners than there are of Chariots.",
+          "category": "Chariots",
+          "type": "Cavalry",
+           "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "requires": {
+            "unitId": "middle_assyrian_late_light_chariots",
+            "count": 1,
+            "name": "Chariots",
+            "perUnit": true
+          },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order", "Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },  
+
+         
+        {
+          "id": "middle_assyrian_late_qurubuti",
+          "name": "Qurubuti",
+          "description": "Qurubuti have light armour, throwing spear and large shield. Superior Fighters. Stubborn",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 30,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Large Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order", "Superior Fighters", "Stubborn"
+          ],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "middle_assyrian_late_asharittu",
+          "name": "Asharittu",
+          "description": "Asharittu have light armour, spear and shield. May upgrade to large shield (+2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+                        {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "middle_assyrian_late_asharittu_cf",
+          "name": "Combined Formation Asharittu",
+          "description": "Asharittu have light armour, spear and shield. May upgrade to large shield (+2). Up to half the unit may replace spear and shield with bow (free) and form the rear rows of a combined formation.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Asharittu Missile Troops","Asharittu/Asharittu Missile Troops (Front Row)"]},
+			{"label": "50%", "disableSubProfiles": ["Asharittu/Asharittu Missile Troops (Front Row)","Asharittu/Asharittu Missile Troops (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Asharittu/Asharittu Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour","Bow"],
+              "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Asharittu",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Shield", "Spear","Light Armour"],
+          "specialRules": ["Close Order"]
+            },
+            {
+              "name": "Asharittu Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+		"minBases": 3,
+		"compareWithSubProfile": { "name": "Asharittu", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Asharittu/Asharittu Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Asharittu", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+		"minBases": 3,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour","Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Asharittu","Asharittu/Asharittu Missile Troops (Rear Row)","Asharittu/Asharittu Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+        
+        {
+          "id": "middle_assyrian_late_hupshu",
+          "name": "Hupshu",
+          "description": "Hupshu have light armour, spear and shield. Open Order. May upgrade to large shield (+2). Without the Shield Upgrade they may be fielded as Skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+                        {
+              "name": "Large Shield",
+              "disables": "Skirmishers",            
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+                   {
+              "name": "Skirmishers",
+              "disables": "Large Shield",            
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+        {
+          "id": "middle_assyrian_late_hupshu_cf",
+          "name": "Combined Formation Hupshu",
+          "description": "Hupshu have light armour, spear and shield. May upgrade to large shield (+2). Up to half the unit may replace spear and shield with bow or sling (free) and form the rear rows of a combined formation.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Open Order"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Hupshu Missile Troops","Hupshu/Hupshu Missile Troops (Front Row)"]},
+			{"label": "50%", "disableSubProfiles": ["Hupshu/Hupshu Missile Troops (Front Row)","Hupshu/Hupshu Missile Troops (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Hupshu/Hupshu Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour"],
+              "specialRules": ["Open Order"]
+            },
+			  {
+              "name": "Hupshu",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Shield", "Spear","Light Armour"],
+          "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Hupshu Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+		"minBases": 3,
+		"compareWithSubProfile": { "name": "Hupshu", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": [],
+              "specialRules": ["Open Order"]
+            },
+
+			  {
+              "name": "Hupshu/Hupshu Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Hupshu", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 5,
+	      "pointsPerBase": 9,
+		"minBases": 3,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Hupshu","Hupshu/Hupshu Missile Troops (Rear Row)","Hupshu/Hupshu Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+      {
+              "name": "Sling",
+		"disables": "Bow",
+"targetProfile": ["Hupshu Missile Troops","Hupshu/Hupshu Missile Troops (Rear Row)","Hupshu/Hupshu Missile Troops (Front Row)"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Bow",
+		"disables": "Sling",
+"targetProfile": ["Hupshu Missile Troops","Hupshu/Hupshu Missile Troops (Rear Row)","Hupshu/Hupshu Missile Troops (Front Row)"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+             
+        {
+          "id": "middle_assyrian_late_archers",
+          "name": "Archers",
+          "description": "Archers have light armour and bow. ",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order"         
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_late_mounted_archers",
+          "name": "Mounted Archers",
+          "description": "Mounted Archers have light armour and bow. They were conveyed to the battlefield on carts, and so count as Riding Horses. ",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order","Riding Horses"        
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_late_urartians",
+          "name": "Urartians",
+          "description": "Urartians have spear and shield. Warband (rule 3 does not appply).",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order","Warband (not rule 3)"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_late_aramaeans",
+          "name": "Aramaeans",
+          "description": "Aramaeans have javelins and shield. Open Order. May exchange javelins for bow (free). May be fielded as SKirmishers at a cost of seven points per base.",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",            
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "middle_assyrian_late_cimmerian_cavalry",
+          "name": "Cimmerian Cavalry",
+          "description": "Cimmerian Cavalry have have a bow. May be fielded as Skirmishers.",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+                        {
+              "name": "Skirmishers",            
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
+    },
+	  "middle_assyrian_middle": {
+      "armyName": "Middle Assyrian (Middle) - (1109 BC - 850 BC)",
+
+
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max":8
+        },
+        {
+          "id": "Chariots",
+          "name": "Cavalry and Chariots",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+        {
+          "id": "middle_assyrian_middle_king",
+          "name": "King",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "excludes": ["middle_assyrian_middle_general"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_middle_general",
+          "name": "General",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "excludes": ["middle_assyrian_middle_king"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_middle_senior_officer",
+          "name": "Senior Officer",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "middle_assyrian_middle_light_chariots",
+          "name": "Light Chariots",
+          "description": "Light chariots have a driver and one crewman armed with spear, light armour and shield. Superior Fighters. Light Chariots. The crewman may have a bow as a Superior Shooters (+3).",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Spear", "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters",
+            "Light Chariots"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": 3,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Shooters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "middle_assyrian_middle_chariot_runners",
+          "name": "Chariot Runners",
+          "description": "Chariot Runners have javelins and shield. Open Order. Escorts. May be fielded as Skirmishers at a cost of nine points per base. There may not be more units of Chariot runners than there are of Chariots.",
+          "category": "Chariots",
+          "type": "Cavalry",
+           "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "requires": {
+            "unitId": "middle_assyrian_middle_light_chariots",
+            "count": 1,
+            "name": "Chariots",
+            "perUnit": true
+          },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order", "Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },  
+
+         
+        {
+          "id": "middle_assyrian_middle_qurubuti",
+          "name": "Qurubuti",
+          "description": "Qurubuti have light armour, throwing spear and large shield. Superior Fighters. Stubborn",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 30,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Large Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order", "Superior Fighters", "Stubborn"
+          ],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "middle_assyrian_middle_asharittu",
+          "name": "Asharittu",
+          "description": "Asharittu have light armour, spear and shield. May upgrade to large shield (+2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+                        {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "middle_assyrian_middle_asharittu_cf",
+          "name": "Combined Formation Asharittu",
+          "description": "Asharittu have light armour, spear and shield. May upgrade to large shield (+2). Up to half the unit may replace spear and shield with bow (free) and form the rear rows of a combined formation.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Asharittu Missile Troops","Asharittu/Asharittu Missile Troops (Front Row)"]},
+			{"label": "50%", "disableSubProfiles": ["Asharittu/Asharittu Missile Troops (Front Row)","Asharittu/Asharittu Missile Troops (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Asharittu/Asharittu Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour","Bow"],
+              "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Asharittu",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Shield", "Spear","Light Armour"],
+          "specialRules": ["Close Order"]
+            },
+            {
+              "name": "Asharittu Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+		"minBases": 3,
+		"compareWithSubProfile": { "name": "Asharittu", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Asharittu/Asharittu Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Asharittu", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+		"minBases": 3,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour","Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Asharittu","Asharittu/Asharittu Missile Troops (Rear Row)","Asharittu/Asharittu Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+        
+        {
+          "id": "middle_assyrian_middle_hupshu",
+          "name": "Hupshu",
+          "description": "Hupshu have light armour, spear and shield. Open Order. May upgrade to large shield (+2). Without the Shield Upgrade they may be fielded as Skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+                        {
+              "name": "Large Shield",
+              "disables": "Skirmishers",            
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+                   {
+              "name": "Skirmishers",
+              "disables": "Large Shield",            
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+        {
+          "id": "middle_assyrian_middle_hupshu_cf",
+          "name": "Combined Formation Hupshu",
+          "description": "Hupshu have light armour, spear and shield. May upgrade to large shield (+2). Up to half the unit may replace spear and shield with bow or sling (free) and form the rear rows of a combined formation.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Open Order"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Hupshu Missile Troops","Hupshu/Hupshu Missile Troops (Front Row)"]},
+			{"label": "50%", "disableSubProfiles": ["Hupshu/Hupshu Missile Troops (Front Row)","Hupshu/Hupshu Missile Troops (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Hupshu/Hupshu Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour"],
+              "specialRules": ["Open Order"]
+            },
+			  {
+              "name": "Hupshu",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Shield", "Spear","Light Armour"],
+          "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Hupshu Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+		"minBases": 3,
+		"compareWithSubProfile": { "name": "Hupshu", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": [],
+              "specialRules": ["Open Order"]
+            },
+
+			  {
+              "name": "Hupshu/Hupshu Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Hupshu", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 5,
+	      "pointsPerBase": 9,
+		"minBases": 3,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Hupshu","Hupshu/Hupshu Missile Troops (Rear Row)","Hupshu/Hupshu Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+      {
+              "name": "Sling",
+		"disables": "Bow",
+"targetProfile": ["Hupshu Missile Troops","Hupshu/Hupshu Missile Troops (Rear Row)","Hupshu/Hupshu Missile Troops (Front Row)"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Bow",
+		"disables": "Sling",
+"targetProfile": ["Hupshu Missile Troops","Hupshu/Hupshu Missile Troops (Rear Row)","Hupshu/Hupshu Missile Troops (Front Row)"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+             
+        {
+          "id": "middle_assyrian_middle_archers",
+          "name": "Archers",
+          "description": "Archers have light armour and bow. ",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order"         
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_middle_mounted_archers",
+          "name": "Mounted Archers",
+          "description": "Mounted Archers have light armour and bow. They were conveyed to the battlefield on carts, and so count as Riding Horses. ",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order","Riding Horses"        
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_middle_urartians",
+          "name": "Urartians",
+          "description": "Urartians have spear and shield. Warband (rule 3 does not appply).",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield"
+          ],
+          "specialRules": [
+            "Close Order","Warband (not rule 3)"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_middle_aramaeans",
+          "name": "Aramaeans",
+          "description": "Aramaeans have javelins and shield. Open Order. May exchange javelins for bow (free). May be fielded as SKirmishers at a cost of seven points per base.",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",            
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
+    },"middle_assyrian_early": {
+      "armyName": "Middle Assyrian (Early) - (1365 BC - 1110 BC)",
+
+
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max":8
+        },
+        {
+          "id": "Chariots",
+          "name": "Cavalry and Chariots",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        }
+      ],
+      "units": [
+        {
+          "id": "middle_assyrian_early_king",
+          "name": "King",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 10,
+          "pointsPerBase": 50,
+          "excludes": ["middle_assyrian_early_general"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_early_general",
+          "name": "General",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "excludes": ["middle_assyrian_early_king"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_early_senior_officer",
+          "name": "Senior Officer",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "middle_assyrian_early_light_chariots",
+          "name": "Light Chariots",
+          "description": "Light chariots have a driver and one crewman armed with spear, light armour and shield. Superior Fighters. Light Chariots. The crewman may have a bow as a Superior Shooters (+3).",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Spear", "Shield"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters",
+            "Light Chariots"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": 3,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Shooters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "middle_assyrian_early_chariot_runners",
+          "name": "Chariot Runners",
+          "description": "Chariot Runners have javelins and shield. Open Order. Escorts. May be fielded as Skirmishers at a cost of nine points per base. There may not be more units of Chariot runners than there are of Chariots.",
+          "category": "Chariots",
+          "type": "Cavalry",
+           "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "requires": {
+            "unitId": "middle_assyrian_early_light_chariots",
+            "count": 1,
+            "name": "Chariots",
+            "perUnit": true
+          },
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order", "Escorts"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },  
+
+         
+        {
+          "id": "middle_assyrian_early_qurubuti",
+          "name": "Qurubuti",
+          "description": "Qurubuti have light armour, throwing spear and large shield. Superior Fighters. Stubborn",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 30,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Throwing Spear","Large Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order", "Superior Fighters", "Stubborn"
+          ],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "middle_assyrian_early_asharittu",
+          "name": "Asharittu",
+          "description": "Asharittu have light armour, spear and shield. May upgrade to large shield (+2).",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order"
+          ],
+          "optionalEquipment": [
+                        {
+              "name": "Large Shield",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "middle_assyrian_early_asharittu_cf",
+          "name": "Combined Formation Asharittu",
+          "description": "Asharittu have light armour, spear and shield. May upgrade to large shield (+2). Up to half the unit may replace spear and shield with bow (free) and form the rear rows of a combined formation.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Asharittu Missile Troops","Asharittu/Asharittu Missile Troops (Front Row)"]},
+			{"label": "50%", "disableSubProfiles": ["Asharittu/Asharittu Missile Troops (Front Row)","Asharittu/Asharittu Missile Troops (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Asharittu/Asharittu Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour","Bow"],
+              "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Asharittu",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Shield", "Spear","Light Armour"],
+          "specialRules": ["Close Order"]
+            },
+            {
+              "name": "Asharittu Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+		"minBases": 3,
+		"compareWithSubProfile": { "name": "Asharittu", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Asharittu/Asharittu Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Asharittu", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	      "pointsPerBase": 16,
+		"minBases": 3,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour","Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Asharittu","Asharittu/Asharittu Missile Troops (Rear Row)","Asharittu/Asharittu Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+        
+        {
+          "id": "middle_assyrian_early_hupshu",
+          "name": "Hupshu",
+          "description": "Hupshu have light armour, spear and shield. Open Order. May upgrade to large shield (+2). Without the Shield Upgrade they may be fielded as Skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Spear","Shield","Light Armour"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+                        {
+              "name": "Large Shield",
+              "disables": "Skirmishers",            
+              "pointsModifier": 2,
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+                   {
+              "name": "Skirmishers",
+              "disables": "Large Shield",            
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+        {
+          "id": "middle_assyrian_early_hupshu_cf",
+          "name": "Combined Formation Hupshu",
+          "description": "Hupshu have light armour, spear and shield. May upgrade to large shield (+2). Up to half the unit may replace spear and shield with bow or sling (free) and form the rear rows of a combined formation.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Open Order"],
+	  "combinedFormation": 
+		[
+		{ "label": "25%", "disableSubProfiles": ["Hupshu Missile Troops","Hupshu/Hupshu Missile Troops (Front Row)"]},
+			{"label": "50%", "disableSubProfiles": ["Hupshu/Hupshu Missile Troops (Front Row)","Hupshu/Hupshu Missile Troops (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Hupshu/Hupshu Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour"],
+              "specialRules": ["Open Order"]
+            },
+			  {
+              "name": "Hupshu",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Shield", "Spear","Light Armour"],
+          "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Hupshu Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+		"minBases": 3,
+		"compareWithSubProfile": { "name": "Hupshu", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": [],
+              "specialRules": ["Open Order"]
+            },
+
+			  {
+              "name": "Hupshu/Hupshu Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Hupshu", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 5,
+	      "pointsPerBase": 9,
+		"minBases": 3,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Light Armour"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Hupshu","Hupshu/Hupshu Missile Troops (Rear Row)","Hupshu/Hupshu Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+      {
+              "name": "Sling",
+		"disables": "Bow",
+"targetProfile": ["Hupshu Missile Troops","Hupshu/Hupshu Missile Troops (Rear Row)","Hupshu/Hupshu Missile Troops (Front Row)"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Bow",
+		"disables": "Sling",
+"targetProfile": ["Hupshu Missile Troops","Hupshu/Hupshu Missile Troops (Rear Row)","Hupshu/Hupshu Missile Troops (Front Row)"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+             
+        {
+          "id": "middle_assyrian_early_archers",
+          "name": "Archers",
+          "description": "Archers have light armour and bow. ",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order"         
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "middle_assyrian_early_mounted_archers",
+          "name": "Mounted Archers",
+          "description": "Mounted Archers have light armour and bow. They were conveyed to the battlefield on carts, and so count as Riding Horses. ",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow","Light Armour"
+          ],
+          "specialRules": [
+            "Close Order","Riding Horses"        
+          ],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "middle_assyrian_early_aramaeans",
+          "name": "Aramaeans",
+          "description": "Aramaeans have javelins and shield. Open Order. May exchange javelins for bow (free). May be fielded as SKirmishers at a cost of seven points per base.",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Javelins","Shield"
+          ],
+          "specialRules": [
+            "Open Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",            
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
     }
+	  
 
 
 	  
