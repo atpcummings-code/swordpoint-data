@@ -13035,7 +13035,7 @@
         {
           "id": "shang_chinese_early_general",
           "name": "General",
-          "description": "May ride in a chariot.",
+          "description": "",
           "category": "Commanders",
           "type": "General",
           "attacks": "+2",
@@ -13051,7 +13051,7 @@
         { 
           "id": "shang_chinese_early_officer",
           "name": "Officer",
-          "description": "May ride in a chariot.",
+          "description": "",
           "category": "Commanders",
           "type": "other",
           "attacks": "+2",
