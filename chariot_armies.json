@@ -11696,7 +11696,7 @@
               "cohesion": 5,
 	      "pointsPerBase": 8,
               "minBases": 4,
-              "maxBases": 6
+              "maxBases": 6,
           "baseEquipment": ["Shield", "Spear","Light Armour"],
           "specialRules": ["Open Order"]
             },
@@ -11807,7 +11807,7 @@
               "cohesion": 5,
 	      "pointsPerBase": 12,
               "minBases": 4,
-              "maxBases": 6
+              "maxBases": 6,
           "baseEquipment": ["Shield", "Spear"],
           "specialRules": ["Close Order"]
             },
@@ -12281,7 +12281,7 @@
               "cohesion": 7,
 	      "pointsPerBase": 14,
               "minBases": 4,
-              "maxBases": 6
+              "maxBases": 6,
           "baseEquipment": ["Shield", "Spear"],
           "specialRules": ["Close Order"]
             },
@@ -12404,7 +12404,7 @@
               "cohesion": 5,
 	      "pointsPerBase": 8,
               "minBases": 4,
-              "maxBases": 6
+              "maxBases": 6,
           "baseEquipment": ["Shield", "Spear","Light Armour"],
           "specialRules": ["Open Order"]
             },
@@ -12515,7 +12515,7 @@
               "cohesion": 5,
 	      "pointsPerBase": 12,
               "minBases": 4,
-              "maxBases": 6
+              "maxBases": 6,
           "baseEquipment": ["Shield", "Spear"],
           "specialRules": ["Close Order"]
             },
