@@ -12301,7 +12301,7 @@
 			  {
               "name": "Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-			  "compareWithSubProfile": { "name": "Kisir Sharruti", "expression": "lessThanOrEqual", "ratio": 1 },
+			  "compareWithSubProfile": { "name": "Kisir Sharruti", "expression": "lessThanOrEqual", "ratio": 0.67 },
               "defence": 6,
               "cohesion": 7,
 	      "pointsPerBase": 14,
