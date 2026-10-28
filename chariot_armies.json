@@ -16715,7 +16715,7 @@
               "cohesion": 7,
 	      "pointsPerBase": 14,
 		"minBases": 2,
-		"compareWithSubProfile": { "name": "Line Infantry ", "expression": "lessThanOrEqual", "ratio": 1 },
+		"compareWithSubProfile": { "name": "Line Infantry", "expression": "lessThanOrEqual", "ratio": 1 },
               "baseEquipment": ["Bow"],
               "specialRules": ["Close Order"]
             },
