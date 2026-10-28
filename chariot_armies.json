@@ -16145,7 +16145,7 @@
         {
           "id": "urartian_early_guards",
           "name": "Guards",
-          "description": "Guards have light armour, spear and large shield. Superir Fighters. Stubborn.",
+          "description": "Guards have light armour, spear and large shield. Superior Fighters. Stubborn.",
           "category": "Infantry",
           "type": "Formed",
           "defence": 4,
@@ -16651,7 +16651,7 @@
         {
           "id": "urartian_late_guards",
           "name": "Guards",
-          "description": "Guards have light armour, spear and large shield. Superir Fighters. Stubborn.",
+          "description": "Guards have light armour, spear and large shield. Superior Fighters. Stubborn.",
           "category": "Infantry",
           "type": "Formed",
           "defence": 4,
