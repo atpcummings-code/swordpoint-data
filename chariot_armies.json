@@ -15143,7 +15143,7 @@
             {
               "name": "Spear",
               "pointsModifier": 0,
-              "targetProfile": ["Warriors","Warriors/Warriors Missile Troops (Rear Row)","Warriors/Warriors Missile Troops (Front Row)"]
+              "targetProfile": ["Warriors","Warriors/Warriors Missile Troops (Rear Row)","Warriors/Warriors Missile Troops (Front Row)"],
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -15154,7 +15154,7 @@
             {
               "name": "Halberd",
               "pointsModifier": 0,
-              "targetProfile": ["Warriors","Warriors/Warriors Missile Troops (Rear Row)","Warriors/Warriors Missile Troops (Front Row)"]
+              "targetProfile": ["Warriors","Warriors/Warriors Missile Troops (Rear Row)","Warriors/Warriors Missile Troops (Front Row)"],
               "equipmentAdded": ["Halberd"],
               "equipmentRemoved": ["Shield"],
               "rulesAdded": [],
