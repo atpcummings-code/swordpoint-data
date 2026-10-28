@@ -16014,6 +16014,459 @@
         }
         
       ]
+    },
+	  "urartian_early": {
+      "armyName": "Urartian (Early) - (850 BC - 750 BC)",
+
+
+
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max":6
+        },
+        {
+          "id": "Chariots",
+          "name": "Cavalry and Chariots",
+          "constraintType": "percentage",
+          "min": 10,
+          "max": 45
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 40,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies and Mercenaries",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        }
+      ],
+      "units": [
+           {
+          "id": "urartian_early_general",
+          "name": "General",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "excludes": ["urartian_early_king"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "urartian_early_senior_officer",
+          "name": "Senior Officer",
+          "description": "May ride in a chariot.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "urartian_early_light_chariots",
+          "name": "Light_Chariots",
+          "description": "Light Chariots have a driver and one crewman armed with a bow, light armour and shield. Superior Fighters. Superior Shooters. Light chariots. May have spear (+1).",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 23,
+          "minBases": 2,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow","Light Armour","Shield"          ],
+          "specialRules": [
+            "Superior Fighters","Superior Shooters","Open Order","Light Chariots"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "urartian_early_cavalry",
+          "name": "Cavalry",
+          "description": "Cavalry have light armour and spear. Superior Fighters. May have shield +1. May have cloth barding (+1).",
+          "category": "Chariots",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 21,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Spear"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters"
+          ],
+          "optionalEquipment": [
+                         {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+                   {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Cloth Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "urartian_early_guards",
+          "name": "Guards",
+          "description": "Guards have light armour, spear and large shield. Superir Fighters. Stubborn.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Light Armour","Spear","Large Shield"
+          ],
+          "specialRules": [
+            "Close Order",
+            "Superior Fighters","Stubborn"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "urartian_early_line_infantry_cf",
+          "name": "Line Infantry (Combined Formation)",
+          "description": "Line Infantry between half and two thirds of each unit armed with spear and shield an dthe remainder armed with bow. Combined Formation. may upgrade shield to large shield (+2).",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		
+			{"label": "50%", "disableSubProfiles": ["Line Infantry/Line Infantry Missile Troops (Front Row)","Line Infantry/Line Infantry Missile Troops (Rear Row)" ]},
+          { "label": "67%", "disableSubProfiles": ["Line Infantry/Line Infantry Missile Troops (Front Row)","Line Infantry Missile Troops" ]}
+        ],
+          "subProfiles": [
+             {
+              "name": "Line Infantry/Line Infantry Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 14,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Line Infantry",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 14,
+              "minBases": 3,
+              "maxBases": 8,
+          "baseEquipment": ["Shield", "Spear"],
+          "specialRules": ["Close Order"]
+            },
+            {
+              "name": "Line Infantry Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 7,
+	      "pointsPerBase": 14,
+		"minBases": 2,
+		"compareWithSubProfile": { "name": "Line Infantry ", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Line Infantry/Line Infantry Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Line Infantry", "expression": "lessThanOrEqual", "ratio": 0.67 },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 14,
+		"minBases": 2,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Line Infantry","Line Infantry/Line Infantry Missile Troops (Rear Row)","Line Infantry/Line Infantry Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+        {
+          "id": "urartian_early_supporting_infantry_cf",
+          "name": "Supporting Infantry (Combined Formation)",
+          "description": "Line Infantry between half and two thirds of each unit armed with spear and shield an dthe remainder armed with bow. Combined Formation. may upgrade shield to large shield (+2).",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Open Order"],
+	  "combinedFormation": 
+		[
+		
+			{"label": "50%", "disableSubProfiles": ["Line Infantry/Line Infantry Missile Troops (Front Row)","Line Infantry/Line Infantry Missile Troops (Rear Row)" ]},
+          { "label": "67%", "disableSubProfiles": ["Line Infantry/Line Infantry Missile Troops (Front Row)","Line Infantry Missile Troops" ]}
+        ],
+          "subProfiles": [
+             {
+              "name": "Line Infantry/Line Infantry Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Open Order"]
+            },
+			  {
+              "name": "Line Infantry",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+              "minBases": 3,
+              "maxBases": 8,
+          "baseEquipment": ["Shield", "Spear"],
+          "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Line Infantry Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+		"minBases": 2,
+		"compareWithSubProfile": { "name": "Line Infantry ", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow"],
+              "specialRules": ["Open Order"]
+            },
+
+			  {
+              "name": "Line Infantry/Line Infantry Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Line Infantry", "expression": "lessThanOrEqual", "ratio": 0.67 },
+              "defence": 6,
+              "cohesion": 6,
+	      "pointsPerBase": 11,
+		"minBases": 2,
+              "maxBases": 6,
+              "baseEquipment": ["Shield", "Spear","Bow"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+		{
+              "name": "Large Shield",
+              "pointsModifier": 2,
+"targetProfile": ["Line Infantry","Line Infantry/Line Infantry Missile Troops (Rear Row)","Line Infantry/Line Infantry Missile Troops (Front Row)"],
+              "equipmentAdded": ["Large Shield"],
+              "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]    
+},
+{
+          "id": "urartian_early_supporting_infantry_skirmishers",
+          "name": "Supporting Infantry Skrimshers",
+          "description": "Supporting Infantry have spear and large shield. Skirmishers",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+           "Spear","Shield"
+          ],
+          "specialRules": [
+            "Skirnmishers"
+          ],
+          "optionalEquipment": []
+        },
+{
+          "id": "urartian_early_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Open Order. May be fielded as Skirmishers at a cost of five points per base.",
+          "category": "Infantry",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Opem Order"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "urartian_early_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have a sling or bow. Inferior Fighters. Skirmishers. May have shield (+1).",
+          "category": "Infantry",
+          "type": "Skirmishers",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            
+          ],
+          "specialRules": [
+            "Skirmishers"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "urartian_early_cimmerian_cavalry",
+          "name": "Cimmerian Cavalry",
+          "description": "Cimmerian Cavalry have a bow. Evade. May be fiedled as Skirmishers with Parthian Shot.",
+          "category": "Allies",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 16,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Evade"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers", "Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }  
+      ]
     }
 
 	  
