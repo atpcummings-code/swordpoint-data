@@ -11552,7 +11552,7 @@
 		[
 		
 			{"label": "50%", "disableSubProfiles": ["Kisir Sharruti/Kisir Sharruti Missile Troops (Front Row)","Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)" ]},
-          { "label": "67%", "disableSubProfiles": ["Kisir Sharruti/Kisir Sharruti Missile Troops (Rear Row)","Kisir Sharruti Missile Troops" ]}
+          { "label": "67%", "disableSubProfiles": ["Kisir Sharruti/Kisir Sharruti Missile Troops (Front Row)","Kisir Sharruti Missile Troops" ]}
         ],
           "subProfiles": [
              {
@@ -11675,7 +11675,7 @@
 		[
 		
 			{"label": "50%", "disableSubProfiles": ["Sab Sharri/Sab Sharri Missile Troops (Front Row)","Sab Sharri/Sab Sharri Missile Troops (Rear Row)" ]},
-          { "label": "67%", "disableSubProfiles": ["Sab Sharri/Sab Sharri Missile Troops (Rear Row)","Sab Sharri Missile Troops" ]}
+          { "label": "67%", "disableSubProfiles": ["Sab Sharri/Sab Sharri Missile Troops (Front Row)","Sab Sharri Missile Troops" ]}
 		],
           "subProfiles": [
              {
@@ -11786,7 +11786,7 @@
 		[
 		
 			{"label": "50%", "disableSubProfiles": ["Chaldeans/Chaldeans Missile Troops (Front Row)","Chaldeans/Chaldeans Missile Troops (Rear Row)" ]},
-          { "label": "67%", "disableSubProfiles": ["Chaldeans/Chaldeans Missile Troops (Rear Row)","Chaldeans Missile Troops"]}
+          { "label": "67%", "disableSubProfiles": ["Chaldeans/Chaldeans Missile Troops (Front Row)","Chaldeans Missile Troops"]}
 		],
           "subProfiles": [
              {
