@@ -17492,9 +17492,9 @@
           "optionalEquipment": []
         },
 {
-          "id": "sumerian_late_gutian_or_amortite_skirmishers",
-          "name": "Gutian or Amortite Skirmishers",
-          "description": "Gutian or Amortite Skirmishers have either javelins, bow or sling. Inferior Fighters. Skirmishers.",
+          "id": "sumerian_late_gutian_or_amorite_skirmishers",
+          "name": "Gutian or Amorite Skirmishers",
+          "description": "Gutian or Amorite Skirmishers have either javelins, bow or sling. Inferior Fighters. Skirmishers.",
           "category": "Allies",
           "type": "Formed",
           "defence": 7,
