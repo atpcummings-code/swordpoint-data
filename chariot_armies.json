@@ -16114,7 +16114,7 @@
         {
           "id": "urartian_early_cavalry",
           "name": "Cavalry",
-          "description": "Cavalry have light armour and spear. Superior Fighters. May have shield +1. May have cloth barding (+1).",
+          "description": "Cavalry have light armour and spear. Superior Fighters. May have cloth barding (+1).",
           "category": "Chariots",
           "type": "Formed",
           "defence": 5,
@@ -16130,16 +16130,6 @@
             "Superior Fighters"
           ],
           "optionalEquipment": [
-                         {
-              "name": "Shield",
-              "pointsModifier": 1,
-              "equipmentAdded": ["Shield"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
                    {
               "name": "Cloth Barding",
               "pointsModifier": 1,
