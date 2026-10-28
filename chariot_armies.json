@@ -15709,7 +15709,312 @@
         
       ]
     },
+"cimmerian": {
+      "armyName": "Cimmerian - (900 BC - 700 BC)",
 
+
+"armyValidation": [ 
+{ "ids": ["cimmerian_cimmerian_tribesmen"], "expression": "greaterThanOrEqual", "compareWith": ["cimmerian_cimmerian_nobles"], "countBy": "bases", "ratio": 2 }    
+],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max":6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 75,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "units": [
+           {
+          "id": "cimmerian_king",
+          "name": "King",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "excludes": ["cimmerian_king"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "cimmerian_chief",
+          "name": "Chief",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "cimmerian_dismounted_tribesmen",
+          "name": "Dismounted Tribesmen",
+          "description": "Dismounted Tribesmen have a bow. Inferior Fighters, Skirmishers.",
+          "category": "Infanrty",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Inferior Fighters","Skirmishers"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "cimmerian_cimmerian_nobles",
+          "name": "Cimmerian Nobles",
+          "description": "Cimmerian Nobles have light armour, bow and spear. Superior Fighters. Superior Shooters. Evade. May be fielded as Skirmishers at a cost of 24 points per base.",
+          "category": "Cavalry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Bow","Spear"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters","Superior Shooters",
+            "Evade"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "cimmerian_cimmerian_tribesmen",
+          "name": "Cimmerian Tribesmen",
+          "description": "Cimmerian Tribesmen have a bow. Inferior Fighters. Partian Shot. Evade. May be fielded as Skirmishers at a cost of 16 points per base.",
+          "category": "Cavalry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Inferior Fighters","Parthian Shot",
+            "Evade"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
+    },
+	  "cimmerian": {
+      "armyName": "Cimmerian - (900 BC - 700 BC)",
+
+
+"armyValidation": [ 
+{ "ids": ["scythian_scythian_tribesmen"], "expression": "greaterThanOrEqual", "compareWith": ["scythian_scythian_nobles"], "countBy": "bases", "ratio": 2 }    
+],
+      "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max":6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 75,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        }
+      ],
+      "units": [
+           {
+          "id": "scythian_king",
+          "name": "King",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "excludes": ["scythian_king"],
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "scythian_chief",
+          "name": "Chief",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "other",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "scythian_dismounted_tribesmen",
+          "name": "Dismounted Tribesmen",
+          "description": "Dismounted Tribesmen have a bow. Inferior Fighters, Skirmishers.",
+          "category": "Infanrty",
+          "type": "Formed",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Inferior Fighters","Skirmishers"
+          ],
+          "optionalEquipment": []
+        },
+        {
+          "id": "scythian_scythian_nobles",
+          "name": "Scythian Nobles",
+          "description": "Scythian Nobles have light armour, bow and spear. Superior Fighters. Superior Shooters. Nomad Cavalry. May have shield +1 May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Formed",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Light Armour","Bow","Spear"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Superior Fighters","Superior Shooters",
+            "Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "scythian_scythian_tribesmen",
+          "name": "Scythian Tribesmen",
+          "description": "Cimmerian Tribesmen have a bow. Inferior Fighters. Nomad Cavalry. May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Formed",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [
+            "Bow"
+          ],
+          "specialRules": [
+            "Open Order",
+            "Inferior Fighters","Parthian Shot",
+            "Nomad Cavalry"
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }
+        
+      ]
+    }
 
 	  
 
