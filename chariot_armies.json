@@ -15077,7 +15077,7 @@
           "specialRules": ["Close Order"],
 	  "combinedFormation": 
 		[
-		{ "label": "25%", "disableSubProfiles": ["Warriors Missile Troops","Warriors/Asharittu Missile Troops (Front Row)"]},
+		{ "label": "25%", "disableSubProfiles": ["Warriors/Warriors Missile Troops (Front Row)","Warriors Missile Troops"]},
 			{"label": "50%", "disableSubProfiles": ["Warriors/Warriors Missile Troops (Front Row)","Warriors/Warriors Missile Troops (Rear Row)" ]}
 		],
           "subProfiles": [
