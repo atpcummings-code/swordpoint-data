@@ -16256,7 +16256,7 @@
         {
           "id": "urartian_early_supporting_infantry_cf",
           "name": "Supporting Infantry (Combined Formation)",
-          "description": "Line Infantry between half and two thirds of each unit armed with spear and shield an dthe remainder armed with bow. Combined Formation. may upgrade shield to large shield (+2).",
+          "description": "Supporting Infantry between half and two thirds of each unit armed with spear and shield an dthe remainder armed with bow. Combined Formation. may upgrade shield to large shield (+2).",
     "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
@@ -16266,12 +16266,12 @@
 	  "combinedFormation": 
 		[
 		
-			{"label": "50%", "disableSubProfiles": ["Line Infantry/Line Infantry Missile Troops (Front Row)","Line Infantry/Line Infantry Missile Troops (Rear Row)" ]},
-          { "label": "67%", "disableSubProfiles": ["Line Infantry/Line Infantry Missile Troops (Front Row)","Line Infantry Missile Troops" ]}
+			{"label": "50%", "disableSubProfiles": ["Supporting Infantry/Supporting Infantry Missile Troops (Front Row)","Supporting Infantry/Supporting Infantry Missile Troops (Rear Row)" ]},
+          { "label": "67%", "disableSubProfiles": ["Supporting Infantry/Supporting Infantry Missile Troops (Front Row)","Supporting Infantry Missile Troops" ]}
         ],
           "subProfiles": [
              {
-              "name": "Line Infantry/Line Infantry Missile Troops (Front Row)",
+              "name": "Supporting Infantry/Supporting Infantry Missile Troops (Front Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 6,
               "cohesion": 6,
@@ -16282,7 +16282,7 @@
               "specialRules": ["Open Order"]
             },
 			  {
-              "name": "Line Infantry",
+              "name": "Supporting Infantry",
 		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
             	"defence": 6,
               "cohesion": 6,
@@ -16293,21 +16293,22 @@
           "specialRules": ["Open Order"]
             },
             {
-              "name": "Line Infantry Missile Troops",
+              "name": "Supporting Infantry Missile Troops",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 7,
               "cohesion": 6,
 	      "pointsPerBase": 11,
 		"minBases": 2,
-		"compareWithSubProfile": { "name": "Line Infantry ", "expression": "lessThanOrEqual", "ratio": 1 },
+			"maxBases": 6,
+		"compareWithSubProfile": { "name": "Supporting Infantry", "expression": "lessThanOrEqual", "ratio": 1 },
               "baseEquipment": ["Bow"],
               "specialRules": ["Open Order"]
             },
 
 			  {
-              "name": "Line Infantry/Line Infantry Missile Troops (Rear Row)",
+              "name": "Supporting Infantry/Supporting Infantry Missile Troops (Rear Row)",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
-			  "compareWithSubProfile": { "name": "Line Infantry", "expression": "lessThanOrEqual", "ratio": 0.67 },
+			  "compareWithSubProfile": { "name": "Supporting Infantry", "expression": "lessThanOrEqual", "ratio": 0.67 },
               "defence": 6,
               "cohesion": 6,
 	      "pointsPerBase": 11,
@@ -16322,7 +16323,7 @@
 		{
               "name": "Large Shield",
               "pointsModifier": 2,
-"targetProfile": ["Line Infantry","Line Infantry/Line Infantry Missile Troops (Rear Row)","Line Infantry/Line Infantry Missile Troops (Front Row)"],
+"targetProfile": ["Supporting Infantry","Supporting Infantry/Supporting Infantry Missile Troops (Rear Row)","Supporting Infantry/Supporting Infantry Missile Troops (Front Row)"],
               "equipmentAdded": ["Large Shield"],
               "equipmentRemoved": ["Shield"],
               "rulesAdded": [],
