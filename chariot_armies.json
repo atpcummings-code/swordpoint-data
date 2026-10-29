@@ -2168,7 +2168,7 @@
               "name": "Skirmishers",
               "disables": "Shield",
               "enableHidden": "Shield (Skirmishers)",
-              "pointsModifier": -3,
+              "pointsModifier": -4,
               "equipmentAdded": [],
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order"],
@@ -2620,7 +2620,7 @@
               "name": "Skirmishers",
               "disables": "Shield",
               "enableHidden": "Shield (Skirmishers)",
-              "pointsModifier": -3,
+              "pointsModifier": -4,
               "equipmentAdded": [],
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order"],
@@ -11419,7 +11419,7 @@
         
         {
           "id": "later_babylonian_late_heavy_chariots",
-          "name": "Light Chariots",
+          "name": "Heavy Chariots",
           "description": "Heavy Chariots have a driver and two crewman armed with spear, light armour and shield. One crewman has a bow. Superior Shooters. Heavy Chariots. They may add a third crewman for +8 points; such a unit may shoot and fight with an extra D6 for every two Chariots engaging, round up. Heavy Chariots may pay an addiitonal +4 points per Chariot and us ethe Shock Cavalry special rule, but only when charging infantry.",
           "category": "Chariots",
           "type": "Formed",
@@ -12128,7 +12128,7 @@
         
         {
           "id": "later_babylonian_early_heavy_chariots",
-          "name": "Light Chariots",
+          "name": "Heavy Chariots",
           "description": "Heavy Chariots have a driver and two crewman armed with spear, light armour and shield. One crewman has a bow. Superior Shooters. Heavy Chariots. They may add a third crewman for +8 points; such a unit may shoot and fight with an extra D6 for every two Chariots engaging, round up. Heavy Chariots may pay an addiitonal +4 points per Chariot and us ethe Shock Cavalry special rule, but only when charging infantry.",
           "category": "Chariots",
           "type": "Formed",
