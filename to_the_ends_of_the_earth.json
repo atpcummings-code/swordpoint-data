@@ -4,7 +4,7 @@
       "armyName": "Macedon (Early) -  to 359 BC",
 "armyValidation": [
 
-{ "type": "equipmentBasesCount", "left": { "unitIds": ["early_macedonian_army_skirmishers"], "equipment": ["sling"] }, "right": { "unitIds": ["early_macedonian_army_skirmishers"], "equipment": ["Bow"]}, "expression": "moreThan", "ratio": 1 }
+{ "type": "equipmentBasesCount", "left": { "unitIds": ["early_macedonian_army_skirmishers"], "equipment": ["sling"] }, "right": { "unitIds": ["early_macedonian_army_skirmishers"], "equipment": ["Bow"]}, "expression": "greaterThan", "ratio": 1 }
   ],
  	"categories": [
         {
