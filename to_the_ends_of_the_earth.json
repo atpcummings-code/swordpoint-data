@@ -1,3 +1,5 @@
+{
+  "armies": {
 "early_macedonian_army": {
       "armyName": "Macedon (Early) -  to 359 BC",
 "armyValidation": [
@@ -271,4 +273,10 @@
           ]
         }
 		  ]
-        },
+        }
+
+
+
+
+  }
+}
