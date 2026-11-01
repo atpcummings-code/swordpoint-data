@@ -1,7 +1,7 @@
 {
   "armies": {
 "early_macedonian_army": {
-      "armyName": "Macedon (Early) -  to 359 BC",
+      "armyName": "Early Macedonian Army -  to 359 BC",
 "armyValidation": [
 
 { "type": "equipmentBasesCount", "left": { "unitIds": ["early_macedonian_army_skirmishers"], "equipment": ["sling"] }, "right": { "unitIds": ["early_macedonian_army_skirmishers"], "equipment": ["Bow"]}, "expression": "greaterThan", "ratio": 1 }
