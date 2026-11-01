@@ -1693,10 +1693,14 @@
               "rulesRemoved": [],
               "defenceModifier": 1,
               "cohesionModifier": 0
-            }
+             }
           ]
+        }
+		  ]
         },
-		   "thracian_lowland_tribes": {
+		   
+		  
+		  "thracian_lowland_tribes": {
       "armyName": "Thracian - Lowland Tribes",
 
       "categories": [
