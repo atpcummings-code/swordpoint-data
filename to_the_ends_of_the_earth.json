@@ -275,7 +275,7 @@
 		  ]
         },
 	  "reformed_macedonian_army": {
-      "armyName": "Macedon -  to 359 BC",
+      "armyName": "Reformed Macedonian Army - 359 BC to 328 BC",
 
   "armyValidation": [
 { "ids": ["reformed_macedonian_army_thessalian_cavalry"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_hetairoi_companions"], "countBy": "units" },
