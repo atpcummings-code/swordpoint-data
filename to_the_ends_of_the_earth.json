@@ -1690,46 +1690,7 @@
               "cohesionModifier": 0
             }
           ]
-        },
-        {
-          "id": "thracian_highland_tribes_greek_colonist_hoplites",
-          "name": "Greek Colonist Hoplites",
-          "description": "Greek Colonist Hoplites have spear and large shield. Phalanax. May have light armour (+2). Every second unit may be upgraded to C7 Trained Phalanx (+4).",
-          "category": "Allies",
-          "type": "Infantry",
-          "defence": 5,
-          "cohesion": 6,
-          "pointsPerBase": 16,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Spear","Large Shield"],
-          "specialRules": ["Close Order","Phalanx"],
-          "optionalEquipment": [
-            {
-              "name": "Light Armour",
-              "pointsModifier": 2,
-              "equipmentAdded": ["Light Armour"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Trained Phlanx C7",
-              "pointsModifier": 4,
-              "equipmentAdded": [],
-              "equipmentRemoved": [],
-              "rulesAdded": ["Trained Phalanx"],
-              "rulesRemoved": ["Phalanx"],
-              "defenceModifier": 0,
-              "cohesionModifier": 1
-            }
-          ]
-        },
-        
-      ]
-    }
+        }
 
 	  
 
