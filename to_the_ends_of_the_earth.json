@@ -535,7 +535,7 @@
           "maxCountAllowed": 3,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": ["Light Armour",."Javelins"],
+          "baseEquipment": ["Light Armour","Javelins"],
           "specialRules": ["Open Order","Superior Shooters","Wedge"],
           "optionalEquipment": [
             {
@@ -550,7 +550,7 @@
             },
             {
               "name": "Spear",
-              "pointsModifier": -*2,
+              "pointsModifier": -2,
               "equipmentAdded": ["Spear"],
               "equipmentRemoved": ["Javelins"],
               "rulesAdded": [],
