@@ -1436,7 +1436,7 @@
 		  ]
         },
 	   "thracian_highland_tribes": {
-      "armyName": "Thracian - Highland Tribes - 500 BC to 46 BC",
+      "armyName": "Thracian - Highland Tribes",
      "armyValidation": [ { "ids": ["thracian_highland_tribes_highland_warriors"], "expression": "greaterThanOrEqual", "ratio": 2, "compareWith": ["thracian_highland_tribes_lowland_warriors"], "countBy": "units" } ],
       "categories": [
         {
