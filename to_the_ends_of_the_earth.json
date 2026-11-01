@@ -810,8 +810,8 @@
 	"minCountAllowed": 1,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [],
-          "specialRules": ["Close Order"],
+          "baseEquipment": ["Pike","Shield"],
+              "specialRules": ["Close Order", "Trained Phalanx"],
 	  "combinedFormation": 
 		[
 		
@@ -837,8 +837,8 @@
 	      "pointsPerBase": 20,
               "minBases": 3,
               "maxBases": 6,
-          "baseEquipment": [],
-          "specialRules": []
+         "baseEquipment": ["Pike","Shield"],
+              "specialRules": ["Close Order", "Trained Phalanx"]
             },
             {
               "name": "Pezhetairoi (Rear Rank)",
@@ -848,8 +848,8 @@
 	      "pointsPerBase": 20,
 		"minBases": 3,
 		"compareWithSubProfile": { "name": "Pezhetairoi (Front Rank)", "expression": "lessThanOrEqual", "ratio": 1 },
-              "baseEquipment": [],
-              "specialRules": []
+              "baseEquipment": ["Pike","Shield"],
+              "specialRules": ["Close Order", "Trained Phalanx"]
             },
 
 			  {
