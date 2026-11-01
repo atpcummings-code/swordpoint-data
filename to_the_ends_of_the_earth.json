@@ -1080,7 +1080,369 @@
           "optionalEquipment": []
         }
 		  ]
+        },
+"greek_alliance_army": {
+      "armyName": "Greek Alliance Army",
+
+
+ 	"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 10
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 80,
+          "max": 100
         }
+      ],
+      "units": [
+        
+         {
+          "id": "greek_alliance_army_chares_athens",
+          "name": "Chartes (Athens)",
+           "excludes": [
+            "greek_alliance_army_theagenes_thebes"
+          ],
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 8,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "greek_alliance_army_theagenes_thebes",
+          "name": "Theagenes (Thebes)",
+           "excludes": [
+            "greek_alliance_army_chares_athens"
+          ],
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+
+        {
+          "id": "greek_alliance_army_hipparch",
+          "name": "Hipparch",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+ {
+          "id": "greek_alliance_army_taxiarch",
+          "name": "Taxiarch",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "greek_alliance_army_greek_cavalry",
+          "name": "Greek Cavalry",
+          "description": "Greek Cavalry have heavy javelins and light armour. May have heavy armour (+1) and may exchange javelins for spear (free).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour", "Javelins"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "greek_alliance_army_theban_sacred_band",
+          "name": "Theban Sacred Band",
+          "description": "Theban Sacred Band have light armour, spear and large shield. Superior Fighters. Trained Phalnax. Drilled. Stubborn. Veteran. This is a single  compulsory unit with a maximum of six bases.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 36,
+          "maxCountAllowed": 1,
+          "minCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 6,
+          "baseEquipment": ["Spear","Large Shield","Light Armour"],
+          "specialRules": ["Close Order","Trained Phalanx","Superior Fighters", "Drilled","Stubborn","Veteran"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "greek_alliance_army_theban_hoplites",
+          "name": "Theban Hoplites",
+          "description": "Theban Hoplites have light armour, spear and large shield. Trained Phalanx. May be Veteran (+2) and may pay an extra 2 points per base to gain an extra +1 Combat Resolution for a third row of bases in a unit.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield","Light Armour"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "+1 Combat resolution/3rd Rank",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["+1 Combat resolution/3rd Rank"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+         {
+          "id": "greek_alliance_army_allied_hoplites",
+          "name": "Allied Hoplites",
+          "description": "Allied Hoplites have spear and large shield. Phalanx. Every 2nd unit may have light armour (+2). Every second unit may be upgraded to Trained Phalanx (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": ["Close Order","Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Trained Phalanx",
+              "pointsModifier": 2,
+              "enabledEvery": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Trained Phalanx"],
+              "rulesRemoved": ["Phalanx"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+               "enabledEvery": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+         {
+          "id": "greek_alliance_army_athenian_hoplites",
+          "name": "Athenian Hoplites",
+          "description": "Athenian Hoplites have spear and large shield. Phalanx. Every 2nd unit may have light armour (+2). Every third unit may be upgraded to Trained Phalanx (+2). One unit may be upgraded to C7 (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": ["Close Order","Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Trained Phalanx",
+              "pointsModifier": 2,
+              "enabledEvery": 3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Trained Phalanx"],
+              "rulesRemoved": ["Phalanx"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+               "enabledEvery": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Cohension Upgrad (C7)",
+              "pointsModifier": 2,
+              "maxUnits": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            }
+          ]
+        },
+        
+        {
+          "id": "greek_alliance_army_peltasts",
+          "name": "Peltasts",
+          "description": "Peltasts have javelins and shield. Open Order. May have spear (free). Every second unit may be Veteran (+2). May be fielded as Skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "enabledEvery": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "greek_alliance_army_psiloi",
+          "name": "Psiloi",
+          "description": "Psiloi have javelins and shield. Skirmishers. Inferior Fighters. Up to half of all Psiloi units may replace javelins with sling (free). Every other other unit may upgraded to Mercenary (C6, not Inferior Fighhters) at a cost of +2 points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "enabledEvery": 2,
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Mercenary",
+              "enabledEvery": 2,
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": ["Inferior Fighters"],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            }
+          ]
+        }
+		  ]
+        }
+
+	  
 
 
 
