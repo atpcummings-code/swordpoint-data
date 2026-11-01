@@ -281,7 +281,7 @@
 { "ids": ["reformed_macedonian_army_thessalian_cavalry"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_hetairoi_companions"], "countBy": "units" },
 { "ids": ["reformed_macedonian_army_prodromoi"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_hetairoi_companions", "reformed_macedonian_army_agema_cavalry"], "countBy": "units" },
 { "ids": ["reformed_macedonian_army_agema_infantry","reformed_macedonian_army_hypaspists"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_pezhetairoi"], "countBy": "units" },
-    { "ids": ["reformed_macedonian_army_cretans"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_agrianians"], "countBy": "bases" },
+{ "ids": ["reformed_macedonian_army_cretans"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_agrianians"], "countBy": "bases" },
 { "ids": ["reformed_macedonian_army_cretans"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_mercenaries"], "countBy": "bases" },
 { "ids": ["reformed_macedonian_army_cretans"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_skirmishers"], "countBy": "bases" } 
 ],
@@ -869,6 +869,7 @@
 	"optionalEquipment": [
 {
               "name": "Light Armour",
+			  "disables": "Light Armour (Front Rank Only)",
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
@@ -879,7 +880,8 @@
             },
 {
               "name": "Light Armour (Front Rank Only)",
-"targetProfile": ["Pezhetairoi (Front Rank)"],
+			  "disables": "Light Armour",
+		      "targetProfile": ["Pezhetairoi (Front Rank)"],
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
