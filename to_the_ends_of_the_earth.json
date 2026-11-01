@@ -273,6 +273,813 @@
           ]
         }
 		  ]
+        },
+	  "reformed_macedonian_army": {
+      "armyName": "Macedon -  to 359 BC",
+
+  "armyValidation": [
+{ "ids": ["reformed_macedonian_army_thessalian_cavalry"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_hetairoi_companions"], "countBy": "units" },
+{ "ids": ["reformed_macedonian_army_prodromoi"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_hetairoi_companions", "reformed_macedonian_army_agema_cavalry"], "countBy": "units" },
+{ "ids": ["reformed_macedonian_army_agema_infantry","reformed_macedonian_army_hypaspists"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_pezhetairoi"], "countBy": "units" },
+    { "ids": ["reformed_macedonian_army_cretans"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_agrianians"], "countBy": "bases" },
+{ "ids": ["reformed_macedonian_army_cretans"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_mercenaries"], "countBy": "bases" },
+{ "ids": ["reformed_macedonian_army_cretans"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_skirmishers"], "countBy": "bases" } 
+],
+ 	"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+			"description":"The army may take allied contingents from the Illyrian, Thracian or Later Hoplite Greek lists.",
+			"alliedArmyKeys": [
+{"key": "thracian_highland_tribes"}, 
+{"key": "later_hoplite_greek_athens"},
+{"key": "illyrians"}
+],
+"maxAlliedArmiesAllowed": 3
+        }
+      ],
+      "units": [
+        {
+          "id": "reformed_macedonian_army_philip",
+          "name": "Philip",
+          "excludes": [
+            "reformed_macedonian_army_alexander",
+            "reformed_macedonian_army_strategos"
+          ],
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "reformed_macedonian_army_alexander",
+          "name": "Alexander",
+          "excludes": [
+            "reformed_macedonian_army_philip",
+            "reformed_macedonian_army_strategos",
+            "reformed_macedonian_army_young_alexander"
+          ],
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Upgrade to C10",
+              "pointsModifier": 50,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            },
+            {
+              "name": "Stratagem",
+              "pointsModifier": 50,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stratagem"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "reformed_macedonian_army_young_alexander",
+          "name": "Young Alexander",
+          "requires": {"unitId": "reformed_macedonian_army_philip","count": 1,"name": "Philip"}, 
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": "2+",
+          "pointsPerBase": 25,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+         {
+          "id": "reformed_macedonian_army_strategos",
+          "name": "Strategos",
+           "excludes": [
+            "reformed_macedonian_army_philip",
+            "reformed_macedonian_army_alexander"
+          ],
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+
+        {
+          "id": "reformed_macedonian_army_hipparch",
+          "name": "Hipparch",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+ {
+          "id": "reformed_macedonian_army_taxiarch",
+          "name": "Taxiarch",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        }
+        {
+          "id": "reformed_macedonian_army_agema_cavalry",
+          "name": "Agema Cavalry",
+          "description": "Agema Cavalry have heavy armour and spear. Superior Fighters. Wedge. Stubborn. This unit has a maximum of four and must accompany the Alexander or Philip at all times.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 9,
+          "pointsPerBase": 28,
+          "maxCountAllowed": 1,
+          "requires": { "unitIds": ["reformed_macedonian_army_alexander","reformed_macedonian_army_philip"], "name": ["Alexander","Philip"], "countPerUnit": 1 },
+          "minBases": 3,
+          "maxBases": 4,
+          "baseEquipment": ["Heavy Armour", "Spear"],
+          "specialRules": ["Open Order", "Superior Fighters", "Wedge", "Stubborn"],
+          "optionalEquipment": [
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "requiresUnitInRoster": "reformed_macedonian_army_alexander",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "reformed_macedonian_army_hetairoi_companions",
+          "name": "Hetairoi (Companions)",
+          "description": "Hetairoi (Companions) have light armour and spear. Superior Fighters. Wedge. May have heavy armour (+1). May be upgraded to C9 (+2).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour",."Spear"],
+          "specialRules": ["Open Order","Superior Fighters","Wedge"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Upgrade to C9",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 1
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "requiresUnitInRoster": "reformed_macedonian_army_alexander",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "reformed_macedonian_army_thessalian_cavalry",
+          "name": "Thessalian Cavalry",
+          "description": "Thessalian Cavalry have light armour and javelins. Superior Shooters. Wedge. May exchange javelins for spear (-2), losing Superior Shooters.  May have heavy armour (+1). One unit may be Stubborn (+2).  There may not be more Thessalian units than Hetairoi (Companions) units..",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "maxCountAllowed": 3,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour",."Javelins"],
+          "specialRules": ["Open Order","Superior Shooters","Wedge"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": -*2,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": ["Superior Shooters"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "maxUnits": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "requiresUnitInRoster": "reformed_macedonian_army_alexander",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "reformed_macedonian_army_greek_cavalry",
+          "name": "Greek Cavalry",
+          "description": "Greek Cavalry have ligt armour and javelins.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins", "Light Armour"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "reformed_macedonian_army_prodromoi",
+          "name": "Prodromoi",
+          "description": "Prodromoi have Kontos. Wedge. There may not be more Prodromoi units than Agema and companion units in the army.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 21,
+          "maxCountAllowed": 4,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Kontos"],
+          "specialRules": ["Open Order","Wedge"],
+          "optionalEquipment": [
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "requiresUnitInRoster": "reformed_macedonian_army_alexander",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "reformed_macedonian_army_paeonians",
+          "name": "Paeonians",
+          "description": "Paeonians have javelins and shield. Evade. May be fielded as Skirmishers at a cost of 19 points per base.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 21,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins", "Shield"],
+          "specialRules": ["Open Order","Evade"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "requiresUnitInRoster": "reformed_macedonian_army_alexander",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+              {
+          "id": "reformed_macedonian_army_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins. May be fielded as Skirmishers. (These may be Greeks, Thracians or Illyrians).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "reformed_macedonian_army_agema_infantry",
+          "name": "Agema Infantry",
+          "description": "Agema Infantry have light armour, pike and shield. Superior Fighters. Trained Phalanx. Stubborn. ",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 35,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield","Light Armour"],
+          "specialRules": ["Close Order","Trained Phalanx","Superior Fighters", "Stubborn"],
+          "optionalEquipment": [
+             {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "requiresUnitInRoster": "reformed_macedonian_army_alexander",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "reformed_macedonian_army_hypaspists",
+          "name": "Hypaspists",
+          "description": "Hypaspists Infantry have pike and shield. They may have light armour (+2). Superior FIghters. Trained Phalanx. Drilled. One unit may be Stubborn (+2). Hypaspists may alternatively be fielded with spear and large shield (free), or with javelins and shield at 21 oints per base, in which case they are Drilled and Open Order but no longer Phalanx.  Troops in this last configuration may be fielded as Skirmishers at twelve points per base, losing the  Drilled rule.  There may not be more units of Agema and Hypaspists in the army than there are of Pezhetairoi.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 31,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield"],
+          "specialRules": ["Close Order","Trained Phalanx","Superior Fighters", "Drilled"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+               "maxUnits": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear and Large Shield",
+              "disables": "Javelins and Shield",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear","Large Shield"],
+              "equipmentRemoved": ["Pike","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins and Shield",
+              "enableHidden": "Skirmishers",
+              "disables": ["Spear and Large Shield","veteran"],
+              "pointsModifier": -10,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": ["Pike"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order","Trained Phalanx"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Skirmishers",
+              "disables": "Veteran",
+              "hiddenUntilEnabled": "hidden",
+              "pointsModifier": -9,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order", "Drilled"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "requiresUnitInRoster": "reformed_macedonian_army_alexander",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "reformed_macedonian_army_pezhetairoi_cf",
+          "name": "Pezhetairoi",
+          "description": "Pezhetairoi have pike and shield. Trained Phalanx. May have light armour (+2). May be drilled (+3). At least on unit of Pezhetairoi must be fielded.",
+    "category": "Infantry",      
+	"type": "Infantry",
+	"minCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Close Order"],
+	  "combinedFormation": 
+		[
+		
+			{"label": "50%", "disableSubProfiles": ["Spearmen/Spearmen Missile Troops (Front Row)","Spearmen/Spearmen Missile Troops (Rear Row)" ]}
+        ],
+          "subProfiles": [
+             {
+              "name": "Spearmen/Spearmen Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 7,
+	      "pointsPerBase": 12,
+              "minBases": 3,
+	      "maxBases": 6,
+              "baseEquipment": ["Pike","Shield"],
+              "specialRules": ["Close Order", "Trained Phalanx"]
+            },
+			  {
+              "name": "Pezhetairoi (Front Rank)",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 20,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": [],
+          "specialRules": []
+            },
+            {
+              "name": "Pezhetairoi (Rear Rank)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+	      "pointsPerBase": 20,
+		"minBases": 3,
+		"compareWithSubProfile": { "name": "Pezhetairoi (Front Rank)", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": [],
+              "specialRules": []
+            },
+
+			  {
+              "name": "Spearmen/Spearmen Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen (Front Rank)", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 7,
+              "cohesion": 7,
+	      "pointsPerBase": 12,
+		"minBases": 3,
+              "maxBases": 6,
+              "baseEquipment": ["Spear"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+{
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Light Armour (Front Rank Only)",
+"targetProfile": ["Pezhetairoi (Front Rank)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Drilled",
+              "pointsModifier": 3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+      {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "requiresUnitInRoster": "reformed_macedonian_army_alexander",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+
+]    
+},
+        {
+          "id": "reformed_macedonian_army_greek_hoplites",
+          "name": "Greek Hoplites",
+          "description": "Greek Hoplites have light armour, spear and shield. Trained Phalanx.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "requiresUnitInRoster": "reformed_macedonian_army_alexander",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "reformed_macedonian_army_greek_peltasts",
+          "name": "Greek Peltasts",
+          "description": "Greek Peltasts have javelins and shield. Open Order.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "reformed_macedonian_army_agrianians",
+          "name": "Agrianians",
+          "description": "Agrianians have javelin and shield. Skirmishers. May replace javelins with sling (free). There may be one unit of Agrianians for every two units of other Skirmishers.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 10,
+          "minBases": 2,
+          "maxBases": 6,
+          "requires": {
+            "unitId": ["reformed_macedonian_army_cretans","reformed_macedonian_army_mercenaries","reformed_macedonian_army_skirmishers"],
+            "count": 2,
+            "name": ["Cretans","Mercenaries","Skirmishers"],
+            "perUnit": true
+          },
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": [
+            {
+              "name": "Sling",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "requiresUnitInRoster": "reformed_macedonian_army_alexander",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "reformed_macedonian_army_cretans",
+          "name": "Cretans",
+          "description": "Cretans have bow and shield. Superior Shooters. Skirmishers. This unit may not be the largest unit of Skirmishers in the army.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 10,
+          "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Skirmishers","Superior Shooters"],
+          "optionalEquipment": [
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "requiresUnitInRoster": "reformed_macedonian_army_alexander",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "reformed_macedonian_army_mercenaries",
+          "name": "Mercenaries",
+          "description": "Mercenaries have javelin and shield. Skirmishers. Inferior Fighters.  Every second unit of Mercenaries may replace javelins and shield with bow (-1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "requiresUnitInRoster": "reformed_macedonian_army_alexander",
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "reformed_macedonian_army_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": []
+        }
+		  ]
         }
 
 
