@@ -1790,9 +1790,9 @@
           "cohesion": 8,
           "pointsPerBase": 22,
            "requires": {
-            "unitId": "thracian_highland_tribes_warriors",
+            "unitId": "thracian_lowland_tribes_warriors",
             "count": 1,
-            "name": "Chariots"
+            "name": "Warriors",
              "perUnit": true,
           },
           "minBases": 3,
