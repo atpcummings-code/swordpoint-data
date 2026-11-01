@@ -1113,13 +1113,10 @@
          {
           "id": "greek_alliance_army_chares_athens",
           "name": "Chartes (Athens)",
-           "excludes": [
-            "greek_alliance_army_theagenes_thebes"
-          ],
           "description": "",
           "category": "Commanders",
           "type": "General",
-          "maxCountAllowed": 1,
+          "maxCountAllowed": 3,
           "attacks": "+2",
           "cohesion": 8,
           "pointsPerBase": 0,
@@ -1131,13 +1128,10 @@
         {
           "id": "greek_alliance_army_theagenes_thebes",
           "name": "Theagenes (Thebes)",
-           "excludes": [
-            "greek_alliance_army_chares_athens"
-          ],
           "description": "",
           "category": "Commanders",
           "type": "General",
-          "maxCountAllowed": 1,
+          "maxCountAllowed": 3,
           "attacks": "+2",
           "cohesion": 9,
           "pointsPerBase": 0,
