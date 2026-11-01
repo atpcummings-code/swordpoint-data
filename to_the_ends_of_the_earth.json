@@ -846,7 +846,7 @@
               "defence": 6,
               "cohesion": 7,
 	      "pointsPerBase": 20,
-		"minBases": 3,
+		"minBases": 1,
 		"compareWithSubProfile": { "name": "Pezhetairoi (Front Rank)", "expression": "lessThanOrEqual", "ratio": 1 },
               "baseEquipment": ["Pike","Shield"],
               "specialRules": ["Close Order", "Trained Phalanx"]
