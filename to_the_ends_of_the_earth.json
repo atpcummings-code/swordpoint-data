@@ -281,9 +281,7 @@
 { "ids": ["reformed_macedonian_army_thessalian_cavalry"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_hetairoi_companions"], "countBy": "units" },
 { "ids": ["reformed_macedonian_army_prodromoi"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_hetairoi_companions", "reformed_macedonian_army_agema_cavalry"], "countBy": "units" },
 { "ids": ["reformed_macedonian_army_agema_infantry","reformed_macedonian_army_hypaspists"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_pezhetairoi_cf"], "countBy": "units"},
-{ "ids": ["reformed_macedonian_army_cretans"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_agrianians"], "countBy": "bases" },
-{ "ids": ["reformed_macedonian_army_cretans"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_mercenaries"], "countBy": "bases" },
-{ "ids": ["reformed_macedonian_army_cretans"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_skirmishers"], "countBy": "bases" } 
+{ "ids": ["reformed_macedonian_army_cretans"], "expression": "lessThanOrEqual", "compareWith": ["reformed_macedonian_army_mercenaries","reformed_macedonian_army_skirmishers","reformed_macedonian_army_agrianians"], "countBy": "bases" } 
 ],
  	"categories": [
         {
