@@ -1523,6 +1523,11 @@
           "defence": 5,
           "cohesion": 8,
           "pointsPerBase": 22,
+			 "requires": {
+            "unitId": "thracian_highland_tribes_warriors",
+            "count": 1,
+            "name": "Chariots"
+          },
           "maxCountAllowed": 1,
           "minBases": 3,
           "maxBases": 8,
