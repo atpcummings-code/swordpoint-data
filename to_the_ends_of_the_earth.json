@@ -2403,7 +2403,6 @@
 	"maxCountAllowed": 2,
 	  "combinedFormation": 
 		[
-		{ 
 		{ "label": "50%", "disableSubProfiles": ["Spearmen/Archers (Front Row)","Spearmen/Archers (Rear Row)" ]}
 		],
           "subProfiles": [
