@@ -492,7 +492,7 @@
               "name": "Heavy Armour",
               "pointsModifier": 1,
               "equipmentAdded": ["Heavy Armour"],
-              "equipmentRemoved": [],
+              "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
