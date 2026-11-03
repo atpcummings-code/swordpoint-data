@@ -4894,6 +4894,7 @@
           "description": "The mahout is unarmed; the two crewman has heavy armour and are armed with javelins or bow. An extra crewman may be purchased for +4 points. The elephant and crew are Superior Fighters.",
           "category": "Elephants",
           "type": "Elephants",
+			"minCountAllowed": 1,
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
