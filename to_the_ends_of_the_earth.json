@@ -4323,8 +4323,8 @@
             {
               "name": "Inferior Shooters, Levy",
               "pointsModifier": -2,
-              "equipmentAdded": ["Bow"],
-              "equipmentRemoved": ["Javelins","Shield"],
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
               "rulesAdded": ["Inferior Shooters", "Levy"],
               "rulesRemoved": [],
               "defenceModifier": 0,
