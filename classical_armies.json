@@ -10963,7 +10963,7 @@
         {
           "id": "classical_indian_mercenaries",
           "name": "Mercenaries",
-          "description": "Mercenaries have halberd. May have longbow (+4) or throwing spear, javelins and shield (+6). May upgrade shield to large shield (+2) and may have light armour (+2). May also exchange halberd for two-handed swords (free). One mercenary unit may be taken for every two hereditary or guildsmen units from tis section.",
+          "description": "Mercenaries have halberd. May have longbow (+4) or throwing spear, javelins and shield (+6). May upgrade shield to large shield (+2) and may have light armour (+2). May also exchange halberd for two-handed swords (free). One mercenary unit may be taken for every two hereditary or guildsmen units from thissection.",
           "category": "Infantry",
 			"type": "Infantry",
           "defence": 7,
