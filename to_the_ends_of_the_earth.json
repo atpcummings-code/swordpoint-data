@@ -3081,8 +3081,7 @@
           "constraintType": "pointsRatio",
           "pointsThreshold": 250,
           "countPerThreshold": 1,
-          "rounding": "down",
-          "countOffset": 1
+          "rounding": "down"
         }
       ],
       "units": [
