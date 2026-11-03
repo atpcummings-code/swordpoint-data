@@ -4131,7 +4131,7 @@
         {
           "id": "antigonos_army_seasoned_phalangites",
           "name": "Seasoned Phalangites",
-          "description": "Seasoned Phalangites have pike and shield. Trained Phalanx. Veteran. May be Drilled (+3) and/or Veteran (+2). They may have light amrour (+2).",
+          "description": "Seasoned Phalangites have pike and shield. Trained Phalanx. Veteran. May be Drilled (+3) and/or Veteran (+2). They may have light armour (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
