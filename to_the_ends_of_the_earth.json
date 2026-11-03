@@ -3693,12 +3693,7 @@
  "antigonos_army": {
       "armyName": "Antigonos Army",
 
-  "armyValidation": [
-
-
-
-
-],
+  "armyValidation": [],
  	"categories": [
         {
           "id": "Commanders",
@@ -4113,6 +4108,7 @@
           "defence": 5,
           "cohesion": 8,
           "pointsPerBase": 32,
+			"minCountAllowed": 1,
           "requires": { "unitIds": ["antigonos_army_seasoned_phalangites", "antigonos_army_settler_local_phalangites"], "count": 1, "name": ["Seasoned Phalangites","Settler/Local Phalangites"], "perUnit": true }, 
           "minBases": 3,
           "maxBases": 12,
@@ -4141,6 +4137,7 @@
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 20,
+			"minCountAllowed": 1,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Pike","Shield"],
@@ -4177,6 +4174,7 @@
           "defence": 6,
           "cohesion": 6,
           "pointsPerBase": 18,
+			"minCountAllowed": 1,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Pike","Shield"],
@@ -4192,6 +4190,7 @@
           "defence": 5,
           "cohesion": 6,
           "pointsPerBase": 14,
+			"minCountAllowed": 1,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Spear","Large Shield"],
@@ -4207,6 +4206,7 @@
           "defence": 5,
           "cohesion": 7,
           "pointsPerBase": 20,
+			"minCountAllowed": 1,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Spear","Large Shield"],
