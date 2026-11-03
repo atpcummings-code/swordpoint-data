@@ -3734,7 +3734,7 @@
           "type": "General",
           "maxCountAllowed": 1,
           "attacks": "+3",
-          "cohesion": 10,
+          "cohesion": 9,
           "pointsPerBase": 0,
           "minBases": 0,
           "maxBases": 1,
