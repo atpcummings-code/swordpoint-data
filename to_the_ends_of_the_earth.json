@@ -3169,7 +3169,7 @@
               },
               "pointsPerBase": 64,
               "specialRules": [
-                "Terror"
+                "Terror","Superior Fighters"
               ]
             },
             {
@@ -3178,6 +3178,8 @@
                 "D": 4,
                 "C": 7,
               },
+				 "baseEquipment": ["Heavy Armour"],
+              "specialRules": ["Superior Fighters","Superior Shooters"],
               "pointsPerBase": 0
             },
             {
