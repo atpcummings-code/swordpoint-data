@@ -4509,6 +4509,7 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
+		  ]
         },
         {
           "id": "eumenes_army_macedonian_companions",
@@ -4827,7 +4828,7 @@
           "optionalEquipment": [
             {
               "name": "Bow",
-              "disables": "Sling"
+              "disables": "Sling",
               "pointsModifier": -1,
               "enabledEvery": 2,
               "equipmentAdded": ["Bow"],
@@ -4839,7 +4840,7 @@
             },
             {
               "name": "Sling",
-              "disables": "Bow"
+              "disables": "Bow",
               "pointsModifier": -1,
               "enabledEvery": 2,
               "equipmentAdded": ["Sling"],
@@ -4852,7 +4853,7 @@
              {
               "name": "Veteran",
               "pointsModifier": 1,
-              "equipmentAdded": [",
+              "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": ["Veteran"],
               "rulesRemoved": [],
