@@ -4297,7 +4297,7 @@
              {
               "name": "Veteran",
               "pointsModifier": 2,
-              "equipmentAdded": [",
+              "equipmentAdded": [],
               "equipmentRemoved": [],
               "rulesAdded": ["Veteran"],
               "rulesRemoved": ["Inferior Fighters"],
