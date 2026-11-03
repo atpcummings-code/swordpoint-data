@@ -3662,7 +3662,30 @@
           "specialRules": [
             "Skirmishers","Inferior Fighters","Escorts"
           ],
-          "optionalEquipment": []
+          "optionalEquipment": [
+			  {
+              "name": "Chariot Escorts",
+				  "disables": "Elephant Escorts",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Chariot Escorts"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Elephant Escorts",
+				  "disables": "Chariot Escorts",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Elephant Escorts"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
         }     
       ]
     },
