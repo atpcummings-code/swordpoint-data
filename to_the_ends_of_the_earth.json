@@ -3820,7 +3820,8 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
-        },
+         ]
+ },
         {
           "id": "antigonos_army_macedonian_companions",
           "name": "Macedonian Companions",
