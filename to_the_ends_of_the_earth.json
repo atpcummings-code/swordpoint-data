@@ -3947,7 +3947,7 @@
         },
         {
           "id": "antigonos_army_greek_cavalry",
-          "name": "Bactrians",
+          "name": "Greek Cavalry",
           "description": "Greek Cavalry have light armour and javelins. May upgrade to have heavy armour (+1) and may exchange javelins for spear (free). One unit instead may have shield and be fielded as Skirmishers with Parthian Shot at a cost of 20 points per base.",
           "category": "Cavalry",
           "type": "Cavalry",
