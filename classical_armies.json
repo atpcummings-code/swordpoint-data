@@ -9920,8 +9920,8 @@
         
         {
           "id": "early_carthaginian_earlier_skirmishers",
-          "name": "Skrimishers",
-          "description": "Skrimishers have javelins. Inferior Fighters. Skirmishers. May replace javelins with bow or sling (free).",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers. May replace javelins with bow or sling (free).",
                     "category": "Mercenaries",          
 			"type": "Mercenaries",
           "defence": 7,
@@ -9933,7 +9933,7 @@
             "Javelins"
           ],
           "specialRules": [
-            "Skrimishers","Inferior Fighters"
+            "Skirmishers","Inferior Fighters"
           ],
           "optionalEquipment": [
             {
@@ -10351,8 +10351,8 @@
         },
         {
           "id": "early_carthaginian_skirmishers",
-          "name": "Skrimishers",
-          "description": "Skrimishers have javelins. Inferior Fighters. Skirmishers. May replace javelins with bow or sling (free).",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins. Inferior Fighters. Skirmishers. May replace javelins with bow or sling (free).",
                     "category": "Mercenaries",          
 			"type": "Mercenaries",
           "defence": 7,
@@ -10364,7 +10364,7 @@
             "Javelins"
           ],
           "specialRules": [
-            "Skrimishers","Inferior Fighters"
+            "Skirmishers","Inferior Fighters"
           ],
           "optionalEquipment": [
             {
@@ -10393,8 +10393,8 @@
         },
         {
           "id": "early_carthaginian_greek_skirmishers",
-          "name": "Greek Skrimishers",
-          "description": "Greek Skrimishers have javelins and shield. Skirmishers.Greek SDkirmishers may not comprise more than half of the skirmishers fielded. May replace javelins with bow or sling (free).",
+          "name": "Greek Skirmishers",
+          "description": "Greek Skirmishers have javelins and shield. Skirmishers.Greek SDkirmishers may not comprise more than half of the skirmishers fielded. May replace javelins with bow or sling (free).",
                               "category": "Mercenaries",
 			"type": "Mercenaries",
           "defence": 6,
@@ -10406,7 +10406,7 @@
             "Javelins","Shield"
           ],
           "specialRules": [
-            "Skrimishers"
+            "Skirmishers"
           ],
           "optionalEquipment": [
             {
@@ -11275,7 +11275,7 @@
             "Javelins","Shield"
           ],
           "specialRules": [
-            "Skrimishers","Inferior Fighters"
+            "Skirmishers","Inferior Fighters"
           ],
           "optionalEquipment": [
             {
@@ -11526,7 +11526,7 @@
             "Javelins"
           ],
           "specialRules": [
-            "Skrimishers","Inferior Fighters"
+            "Skirmishers","Inferior Fighters"
           ],
           "optionalEquipment": [
             {
@@ -25003,7 +25003,7 @@
             "Javelins","Shield"
           ],
           "specialRules": [
-            "Skrimishers"
+            "Skirmishers"
           ],
           "optionalEquipment": []
         },
@@ -25022,7 +25022,7 @@
             "Javelins","Shield"
           ],
           "specialRules": [
-            "Skrimishers","Inferior Fighters"
+            "Skirmishers","Inferior Fighters"
           ],
           "optionalEquipment": []
         },
@@ -25041,7 +25041,7 @@
             "Sling","Shield"
           ],
           "specialRules": [
-            "Skrimishers","Inferior Fighters"
+            "Skirmishers","Inferior Fighters"
           ],
           "optionalEquipment": []
         },
@@ -25061,7 +25061,7 @@
             "Sling","Shield"
           ],
           "specialRules": [
-            "Skrimishers","Superior Shooters"
+            "Skirmishers","Superior Shooters"
           ],
           "optionalEquipment": []
         },
@@ -25286,7 +25286,7 @@
             "Javelins","Shield"
           ],
           "specialRules": [
-            "Skrimishers","Inferior Fighters"
+            "Skirmishers","Inferior Fighters"
           ],
           "optionalEquipment": []
         },
@@ -25305,7 +25305,7 @@
             "Sling","Shield"
           ],
           "specialRules": [
-            "Skrimishers","Inferior Fighters"
+            "Skirmishers","Inferior Fighters"
           ],
           "optionalEquipment": []
         },
@@ -25325,7 +25325,7 @@
             "Sling","Shield"
           ],
           "specialRules": [
-            "Skrimishers","Superior Shooters"
+            "Skirmishers","Superior Shooters"
           ],
           "optionalEquipment": []
         },
