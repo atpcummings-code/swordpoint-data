@@ -3660,7 +3660,7 @@
             "Javelins","Shield","Halberd"
           ],
           "specialRules": [
-            "Skirmishers","Inferior Fighters","Escorts"
+            "Skirmishers","Inferior Fighters"
           ],
           "optionalEquipment": [
 			  {
