@@ -5497,7 +5497,6 @@
           "defence": 6,
           "cohesion": 5,
           "pointsPerBase": 5,
-          "requires": {"unitId": "coalition_army_elephant","count": 1,"name": "Indian Elephant"}, 
           "minBases": 2,
           "maxBases": 6,
           "baseEquipment": ["Javelins","Shield"],
