@@ -5570,7 +5570,630 @@
               "pointsPerBase": 0
             }
           ]
+        }
+
+
+
+        
+		  ]
         },
+	   "the_later_macedonian_army": {
+      "armyName": "The Later Macedonian Army",
+
+  "armyValidation": [
+
+{ "ids": ["the_later_macedonian_army_elephant"], "expression": "lessThanOrEqual", "compareWith": ["the_later_macedonian_army_escorts"], "ratio": 1, "countBy": "units" } 
+
+
+],
+ 	"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 20
+        }
+      ],
+      "units": [
+        {
+          "id": "the_later_macedonian_army_king_or_strategos",
+          "name": "King or Strategos",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "the_later_macedonian_army_hipparch",
+          "name": "Hipparch",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+ {
+          "id": "the_later_macedonian_army_taxiarch",
+          "name": "Taxiarch",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_later_macedonian_army_macedonian_agema",
+          "name": "Macedonian Agema",
+          "description": "Macedonian Agema have heavy armour and spear. Superior Fighters. Wedge.  May be Stubborn (+2). May exchange heavy armour for light armour and shield.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 9,
+          "pointsPerBase": 26,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Heavy Armour","Spear"],
+          "specialRules": ["Open Order","Superior Fighters","Wedge"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour & Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour", "Shield"],
+              "equipmentRemoved": ["Heavy Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "the_later_macedonian_army_macedonian_cavalry",
+          "name": "Macedonian Cavalry",
+          "description": "Macedonian Cavalry have heavy armour and spear. Superior Fighters. Wedge. May exchange heavy armour for light armour and shield.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Heavy Armour","Spear"],
+          "specialRules": ["Open Order","Superior Fighters","Wedge"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour & Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour", "Shield"],
+              "equipmentRemoved": ["Heavy Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "the_later_macedonian_army_thessalian_or_thracian_cavalry",
+          "name": "Thessalian or Thracian Cavalry",
+          "description": "Thessalian or Thracian Cavalry have light armour, spear or javelins. Superior Fighters. Wedge. May upgrade to heavy armour or shield (+1)",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour"],
+          "specialRules": ["Open Order","Superior Fighters", "Wedge"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "disables": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "disables": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "disables": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "the_later_macedonian_army_greek_cavalry",
+          "name": "Greek Cavalry",
+          "description": "Greek Cavalry have light armour spear or javelins. May have shield (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "disables": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        }, 
+        {
+          "id": "the_later_macedonian_army_tarentine_cavalry",
+          "name": "Tarentine Cavalry",
+          "description": "Tarentine Cavalry have javelins and shield. Skirmishers. Parthian Shot",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Parthian Shot"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_later_macedonian_army_illyrian_and_thracian_light_cavalry",
+          "name": "Illyrian and Thracian Light Cavalry",
+          "description": "Illyrian and Thracian Light Cavalry have javelins. Skirmishers. May have shield (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+              {
+          "id": "the_later_macedonian_army_greek_light_cavalry",
+          "name": "Greek Light Cavalry",
+          "description": "greek Light Cavalry have javelins. Skirmishers. May have shield (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "maxCountAllowed": 2,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "the_later_macedonian_army_phalangites",
+          "name": "Phalangites",
+          "description": "Phalangites have pike and shield. Trained Phalanx. They may have light armour (+2). One unit may be upgraded to Agema (C8, Superior Fighters) costing 28 points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Light Armour"],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "upgrade to Agema",
+              "pointsModifier": 10,
+               "maxUnits": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 2
+            }
+          ]
+        },
+        {
+          "id": "the_later_macedonian_army_thureophoroi",
+          "name": "Thureophoroi",
+          "description": "Thureophoroi have javelins, spear and shield. Open Order. They may form up as Close Order at a cost of 16 points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield","Javelins"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Close Order",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            
+          ]
+        },
+        {
+          "id": "the_later_macedonian_army_thorakitai",
+          "name": "Thorakitai",
+          "description": "Thorakitai have javelins, spear, light armour and shield. Open Order. One unit may be upgraded to Agema (C8, Superior Fighters) costing 20 points per base. They may form up as Close Order at a cost of 20 points per base, (26 points for Agema).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield","Javelins","Ligt Armour"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Close Order",
+              "pointsModifier": 6,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "upgrade to Agema",
+              "pointsModifier": 6,
+              "maxUnits": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 2
+            }
+          ]
+        },
+        {
+          "id": "the_later_macedonian_army_thracians",
+          "name": "Thracians",
+          "description": "Thracians have javelins and shield. Open Order. Warband.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order","Warband"],
+          "optionalEquipment": []
+        },
+                {
+          "id": "the_later_macedonian_army_galatians",
+          "name": "Galatians",
+          "description": "Galatians have throwing spear and shield. Warband.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Shield"],
+          "specialRules": ["Close Order","Warband"],
+          "optionalEquipment": []
+        },
+{
+          "id": "the_later_macedonian_army_cretans_c7",
+          "name": "Cretans",
+          "description": "Cretans have bow and shield. Skirmishers. Superior Shooters.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 10,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Skirmishers","Superior Shooters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_later_macedonian_army_thureophoroi",
+          "name": "Thureophoroi",
+          "description": "Thureophoroi have javelins and shield. Open Order. May have spear (free). May form up as Close Order at a cost of 16 points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield","Spear"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Spear",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Close Order",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "the_later_macedonian_army_mercenaries",
+          "name": "Mercenaries",
+          "description": "Mercenaries have javelin and shield. Skirmishers. Inferior Fighters. Every second unit of Mercenaries may replace javelins and shield with bow or sling (-1). May be upgraded to Veteran (+1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": "Bow",
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "the_later_macedonian_army_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May be fielded as Inferior Shooters, Levy (-2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Inferior Shooters, Levy",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Inferior Shooters", "Levy"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "the_later_macedonian_army_cretans_c8",
+          "name": "Cretans",
+          "description": "Cretans have bow and shield. Skirmishers. Superior Shooters.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 12,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Skirmishers","Superior Shooters"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_later_macedonian_army_agrianians_or_thracians",
+          "name": "Agrianians or Thracians",
+          "description": "Agrianians or Thracians have javelins and shield. Skirmishers",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": []
+        }
 
 
 
