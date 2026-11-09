@@ -4972,6 +4972,610 @@
 
         
 		  ]
+        },
+	   "coalition_army": {
+      "armyName": "Coalition Army",
+
+  "armyValidation": [
+
+{ "ids": ["coalition_army_elephant"], "expression": "lessThanOrEqual", "compareWith": ["coalition_army_escorts"], "ratio": 1, "countBy": "units" } 
+
+
+],
+ 	"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 40
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 40,
+          "max": 100
+        },
+        {
+          "id": "Elephants",
+          "name": "Elephants",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 200,
+          "countPerThreshold": 1,
+          "rounding": "down"
+        }
+      ],
+      "units": [
+        {
+          "id": "coalition_army_lysimachos",
+          "name": "Lysimachos",
+          "excludes": ["coalition_army_seleucos"],
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "coalition_army_seleucos",
+          "name": "Seleucos",
+          "excludes": ["coalition_army_lysimachos"],
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "coalition_army_antiochos",
+          "name": "Antiochos",
+          "description": "May ride a horse. Antiochos must be fielded in command of teh left wing cavalry.",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+1",
+          "cohesion": "+1",
+          "pointsPerBase": 15,
+          "minBases": 1,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "coalition_army_hipparch",
+          "name": "Hipparch",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+ {
+          "id": "coalition_army_taxiarch",
+          "name": "Taxiarch",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "coalition_army_macedonian_companions",
+          "name": "Macedonian Companions",
+          "description": "Macedonian Companions have light armour and spear. Superior Fighters. Wedge.  May upgrade to heavy armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "minCountAllowed": 1,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear"],
+          "specialRules": ["Open Order","Superior Fighters","Wedge"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "coalition_army_thracian_agema",
+          "name": "Thracian Agema",
+          "description": "Thracian Agema have light armour and spear. Superior Fighters. Wedge. May upgrade to heavy armour (+1). May be STubborn (+2) and must accompany Lysimachos at all times.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "requires": {"unitId": "coalition_army_lysimachos","count": 1,"name": "Lysimachos"}, 
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear"],
+          "specialRules": ["Open Order","Superior Fighters", "Wedge"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "coalition_army_colonist_cavalry",
+          "name": "Colonist Cavalry",
+          "description": "Colonist Cavalry have light armour and spear. May upgrade to have heavy armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        }, 
+        {
+          "id": "coalition_army_iranian_and_median_cavalry",
+          "name": "Iranian and Median_ Cavalry",
+          "description": "Iranian and Median_ Cavalry have light armour and spear. May upgrade to have heavy armour (+1). One unit may have half-baridng (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 19,
+          "minCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Half-barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half-barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+        {
+          "id": "coalition_army_parthians_scythians",
+          "name": "Parthians/Scythians",
+          "description": "Parthians/Scythian have javelins or bows. Skirmishers. Parthian Shot. May have spear (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "maxCountAllowed": 2,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [],
+          "specialRules": ["Skirmishers", "Parthian Shot"],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+              {
+          "id": "coalition_army_thracian_light_cavalry",
+          "name": "Thracian Light Cavalry",
+          "description": "Thracian Light Cavalry have javelins. Skirmishers. Parthian Shot. May have spear (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "maxCountAllowed": 2,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Spear"],
+          "specialRules": ["Skirmishers","Parthian Shot"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "coalition_army_scythed_chariot",
+          "name": "Scythed Chariots",
+          "description": "Driver has heavy armour. Scythed Chariot.",
+          "maxCountAllowed": 3,
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [],
+          "subProfiles": [
+            {
+              "name": "Scythed Chariot",
+              "stats": {
+                
+              },
+              "pointsPerBase": 25,
+              "specialRules": ["Scythed Chariot"]
+            },
+            {
+              "name": "Driver",
+              "stats": {
+				  "D": 3,
+                "C": 7
+              },
+				"baseEquipment": [],
+              "specialRules": [],
+              "pointsPerBase": 0
+            }
+		  ]
+        },
+        {
+          "id": "coalition_army_seasoned_mercenary_phalangites",
+          "name": "Seasoned/Mercenary Phalangites",
+          "description": "Seasoned/Mercenary Phalangites have pike and shield. Trained Phalanx. May be Drilled (+3) and/or Veteran (+2). They may have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": [
+            {
+              "name": "Drilled",
+              "pointsModifier": 3,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Drilled"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Light Armour"],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "coalition_army_settler_local_phalangites",
+          "name": "Settler/Local Phalangites",
+          "description": "Phalangites have pike and shield. Trained Phalanx.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "minCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike","Shield"],
+          "specialRules": ["Close Order","Trained Phalanx"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "coalition_army_lycians_and_pamphylians",
+          "name": "Lycians and Pamphylians",
+          "description": "Lycians and Pamphylians have spear and large shield.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 65,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Large Shield"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": []
+        },
+                
+{
+          "id": "coalition_army_anatolians",
+          "name": "Anatolians",
+          "description": "Anatolians have javelins and shield. Open Order.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "coalition_army_mercenary_peltasts",
+          "name": "Mercenary Peltasts",
+          "description": "Mercenary Peltasts have spear, javelins and shield. Open Order.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield","Spear"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+{
+          "id": "coalition_army_mercenaries",
+          "name": "Mercenaries",
+          "description": "Mercenaries have javelin and shield. Skirmishers. Inferior Fighters. Every second unit of Mercenaries may replace javelins and shield with bow or sling (-1). May be upgraded to Veteran, no longer Inferior Fighters for (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling"
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": "Bow"
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 2,
+              "equipmentAdded": [",
+              "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": ["Inferior Fighters"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "coalition_army_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May be fielded as Inferior Shooters, Levy (-2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Inferior Shooters, Levy",
+              "pointsModifier": -2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Inferior Shooters", "Levy"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "coalition_army_escorts",
+          "name": "Escorts",
+          "description": "Escorts have javelins and shield. Skirmishers. Inferior Fighters. May repalce javelins and shield with bow or sling (-1). There must be a unit of Escorts for each elephant fielded.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "requires": {"unitId": "coalition_army_elephant","count": 1,"name": "Indian Elephant"}, 
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters", "Elephant Escorts"],
+          "optionalEquipment": [
+            {
+              "name": "Bow",
+              "disables": "Sling"
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": "Bow"
+              "pointsModifier": -1,
+              "enabledEvery": 2,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": ["Javelins","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+          ]
+        },
+{
+          "id": "coalition_army_elephant",
+          "name": "Indian Elephant",
+          "description": "The mahout is unarmed; the single crewman has light armour and pike. The elephant and crew are Superior Fighters.",
+          "category": "Elephants",
+          "type": "Elephants",
+           "minCountAllowed": 1,
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [],
+          "subProfiles": [
+            {
+              "name": "Elephant",
+              "stats": {
+                "D": 3,
+                "C": 4
+              },
+              "pointsPerBase": 55,
+              "specialRules": [
+                "Terror", "Superior Fighters"
+              ]
+            },
+            {
+              "name": "Crewmen",
+              "stats": {
+                "D": 5,
+                "C": 7,
+              },
+              "baseEquipment": ["Light Armour"],
+              "specialRules": ["Superior Fighters"],
+              "pointsPerBase": 0
+            },
+            {
+              "name": "Mahout",
+              "stats": {
+                "D": 6,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+
+
+
+        
+		  ]
         }
 		  
 
