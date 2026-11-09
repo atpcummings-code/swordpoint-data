@@ -4309,7 +4309,7 @@
         {
           "id": "antigonos_army_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May be fieled as Inferior Fighters, Levy (-2).",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May be fielded as Inferior Shooters, Levy (-2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -4865,7 +4865,7 @@
         {
           "id": "eumenes_army_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May be fieled as Inferior Fighters, Levy (-2).",
+          "description": "Skirmishers have javelins and shield. Skirmishers. Inferior Fighters. May be fielded as Inferior Shooters, Levy (-2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
