@@ -5374,7 +5374,7 @@
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
-          "cohesion": 65,
+          "cohesion": 5,
           "pointsPerBase": 12,
           "minBases": 3,
           "maxBases": 12,
