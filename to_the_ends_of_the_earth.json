@@ -4978,7 +4978,7 @@
 
   "armyValidation": [
 
-{ "ids": ["coalition_army_escorts"], "expression": "lessThanOrEqual", "compareWith": ["coalition_army_elephant"], "ratio": 1, "countBy": "units" } 
+{ "ids": ["coalition_army_elephant"], "expression": "equalTo", "compareWith": ["coalition_army_escorts"], "ratio": 1, "countBy": "units" } 
 
 
 ],
