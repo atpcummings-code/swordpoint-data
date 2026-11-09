@@ -4746,8 +4746,8 @@
         },
         {
           "id": "eumenes_army_phalangites",
-          "name": "halangites",
-          "description": "halangites have pike and shield. Trained Phalanx.",
+          "name": "Phalangites",
+          "description": "Phalangites have pike and shield. Trained Phalanx.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
