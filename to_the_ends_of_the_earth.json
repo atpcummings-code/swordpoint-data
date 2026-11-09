@@ -4710,7 +4710,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Pike","Shield"],
-          "specialRules": ["Close Order","Trained Phalanx","Veteran"],
+          "specialRules": ["Close Order","Trained Phalanx"],
           "optionalEquipment": [
             {
               "name": "Drilled",
