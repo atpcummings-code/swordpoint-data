@@ -4156,9 +4156,9 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
-              "equipmentAdded": [],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
-              "rulesAdded": ["Light Armour"],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
@@ -4215,9 +4215,9 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
-              "equipmentAdded": [],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
-              "rulesAdded": ["Light Armour"],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
@@ -4725,9 +4725,9 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
-              "equipmentAdded": [],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
-              "rulesAdded": ["Light Armour"],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
@@ -5332,9 +5332,9 @@
             {
               "name": "Light Armour",
               "pointsModifier": 2,
-              "equipmentAdded": [],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
-              "rulesAdded": ["Light Armour"],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
@@ -5922,9 +5922,9 @@
              {
               "name": "Light Armour",
               "pointsModifier": 2,
-              "equipmentAdded": [],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
-              "rulesAdded": ["Light Armour"],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
@@ -6387,9 +6387,9 @@
              {
               "name": "Light Armour",
               "pointsModifier": 2,
-              "equipmentAdded": [],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
-              "rulesAdded": ["Light Armour"],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
