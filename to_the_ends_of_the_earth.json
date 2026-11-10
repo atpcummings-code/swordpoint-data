@@ -8557,7 +8557,6 @@
           "id": "seleucid_army_of_antiochos_3_in_209bc_scythed_chariot",
           "name": "Scythed Chariots",
           "description": "Driver has heavy armour. Scythed Chariot.",
-          "maxCountAllowed": 3,
           "category": "Cavalry",
           "type": "Cavalry",
           "minBases": 1,
