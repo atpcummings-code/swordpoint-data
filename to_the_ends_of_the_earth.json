@@ -6994,6 +6994,7 @@
           "defence": 6,
           "cohesion": 8,
           "pointsPerBase": 30,
+			 "maxCountAllowed": 1,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Pike","Shield"],
