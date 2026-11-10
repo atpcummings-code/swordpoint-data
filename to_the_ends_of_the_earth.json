@@ -7307,7 +7307,7 @@
 
   "armyValidation": [
 
-    { "ids": ["ptolemaic_army_post_220_phalangites", "ptolemaic_army_post_220_egyptian_phalangites"], "expression": "greaterThanOrEqual", "value": 1, "countBy": "units" } 
+{ "ids": ["ptolemaic_army_post_220_phalangites", "ptolemaic_army_post_220_egyptian_phalangites"], "expression": "greaterThanOrEqual", "value": 1, "countBy": "units", "mandatory": true } 
   ],
  	"categories": [
         {
@@ -7701,7 +7701,6 @@
           "description": "The mahout is unarmed; the two crewman has light armour and javelins. One may exchange javelins for bow and one may exchangge javleins for pike (free). The elephant is a Superior Fighter and is fitted with a Howdah.",
           "category": "Elephants",
           "type": "Elephants",
-           "minCountAllowed": 1,
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
