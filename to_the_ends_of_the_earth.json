@@ -8045,7 +8045,321 @@
         }
       ]
         },  
+"graeco_bactrian_army": {
+      "armyName": "Graeco-Bactrian Army",
 
+  "armyValidation": [
+
+  ],
+ 	"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 20,
+          "max": 100
+        }
+    ],
+      "units": [
+        {
+          "id": "graeco_bactrian_army_king_or_general",
+          "name": "King or General",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "graeco_bactrian_army_hipparch",
+          "name": "Hipparch",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+ {
+          "id": "graeco_bactrian_army_taxiarch",
+          "name": "Taxiarch",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "graeco_bactrian_army_companions",
+          "name": "Companions",
+          "description": "Companions have heavy armour, spear, bow and half-barding.. Superior Fighters. Superior Shooters. Wedge.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 9,
+          "pointsPerBase": 31,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Heavy Armour","Spear","Bow","Half-barding"],
+          "specialRules": ["Close Order","Superior Fighters","Superior Shooters","Wedge","Used to Elephants"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "graeco_bactrian_army_cleruch_cavalry",
+          "name": "Cleruch Cavalry",
+          "description": "Cleruch Cavalry have heavy armour, spear and bow. Superior Fighters. Wedge. May have half-barding (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Heavy Armour","Spear","Bow"],
+          "specialRules": ["Open Order","Superior Fighters","Wedge","Used to Elephants"],
+          "optionalEquipment": [
+            {
+              "name": "Half-barding",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Half-barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "graeco_bactrian_army_iranian_cavalry",
+          "name": "Iranian Cavalry",
+          "description": "Iranian Cavalry have light armour, spear and bow. May have heavy armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Bow"],
+          "specialRules": ["Open Order","Used to Elephants"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "graeco_bactrian_army_scythian_nobles",
+          "name": "Scythian Nobles",
+          "description": "Scythian Nobles have heavy armour, spear, bow and half-barding or barding. Superior Fighters. Superior Shooters.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 27,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Heavy Armour","Spear","Bow"],
+          "specialRules": ["Open Order", "Superior Shooters","Superior Fighters","Used to Elephants"],
+          "optionalEquipment": [
+            {
+              "name": "Half-barding",
+              "disables": "Barding",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Half-barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Barding",
+              "disables": "Half-barding",
+              "pointsModifier": 0,
+              "equipmentAdded": ["Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "graeco_bactrian_army_bactrian_cavalry",
+          "name": "Bactrian Cavalry",
+          "description": "Bactrian Cavalry have bow or javelins. Evade. May have spear (+1) and may be fielded as Skirmishers with Parthian Shot.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": [],
+          "specialRules": ["Open Order", "Used to Elephants"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers","Parthian Shot"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": "Javelins",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Javelins",
+              "disables": "Bow",
+              "pointsModifier": 0,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Spear",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Spear"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "graeco_bactrian_army_scythians",
+          "name": "Scythians",
+          "description": "Scythian have a bow. Nomad Cavalry. Skirmishers",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Skirmishers", "Used to Elephants", "Nomad Cavalry"],
+          "optionalEquipment": []
+        },
+        
+       
+{
+          "id": "graeco_bactrian_army_thureophoroi",
+          "name": "Thureophoroi",
+          "description": "Thureophoroi have javelins, spear and shield. Open Order. May form Close Order at a cost of 16 points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Spear","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Close Order",
+              "disables": "Skirmishers",
+              "pointsModifier": 4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "graeco_bactrian_army_hillmen",
+          "name": "Hillmen",
+          "description": "Hillmen have javelins and shield. Open Order. May be fielded as Skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          ]
+        }
+
+	  ]
+        },
 
 
 
