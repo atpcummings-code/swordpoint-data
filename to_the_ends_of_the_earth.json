@@ -7772,13 +7772,279 @@
             }
           ]
         }
-
-
-
-        
-		  ]
+	  ]
         },
-	  
+	"kushite_army": {
+      "armyName": "Kushite Army",
+
+  "armyValidation": [
+
+  ],
+ 	"categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+       {
+          "id": "Cavalry",
+          "name": "Cavalry",
+           "constraintType": "percentage",
+          "min": 0,
+          "max": 60
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+           "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "Elephants",
+          "name": "Elephants",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 500,
+          "countPerThreshold": 1,
+          "rounding": "down"
+        }
+      ],
+      "units": [
+        {
+          "id": "kushite_army_king",
+          "name": "King",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "kushite_army_chieftain",
+          "name": "Vhieftain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commanders",
+          "attacks": "+3",
+          "cohesion": "+1",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+ 
+        {
+          "id": "kushite_army_noble_cavalry",
+          "name": "Noble Cavalry",
+          "description": "Noble Cavalry have light armour, spear and bow. Superior Fighters. May have heavy armour (+1) and shield (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Bow"],
+          "specialRules": ["Open Order","Superior Fighters"],
+          "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Shield",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        {
+          "id": "kushite_army_kushite_cavalry",
+          "name": "Kushite Cavalry",
+          "description": "Kushite Cavalry have javelins and shield. May upgrade to light armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+            
+          ]
+        },
+        
+        {
+          "id": "kushite_army_kushite_infantry",
+          "name": "Kushite Infantry",
+          "description": "Kushite Infantry have throwing spear and shield. Open Order. Warband.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Throwing Spear","Shield"],
+          "specialRules": ["Open Order","Warband"],
+          "optionalEquipment": []
+        },
+        {
+          "id": "kushite_army_kushite_archers",
+          "name": "Kushite Archers",
+          "description": "Kushite Archers have a bow. Open Order. May be fielded as Skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 11,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order","Warband"],
+          "optionalEquipment": [
+            {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order","Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "kushite_army_nubians",
+          "name": "Nubians",
+          "description": "Nubians have javelins, sling or bow. Skirmishers.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": [],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": [
+            {
+              "name": "Javelins",
+              "disables": ["Bow", "Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Bow",
+              "disables": ["Javelins", "Sling"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "Sling",
+              "disables": ["Bow", "Javelins"],
+              "pointsModifier": 0,
+              "equipmentAdded": ["Sling"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+{
+          "id": "kushite_army_elephant",
+          "name": "African Elephant",
+          "description": "The mahout is unarmed; the two crewman have javelins. The elephant is a Superior Fighter and is fitted with a Howdah.",
+          "category": "Elephants",
+          "type": "Elephants",
+           "minCountAllowed": 1,
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [],
+          "subProfiles": [
+            {
+              "name": "Elephant",
+              "stats": {
+                "D": 3,
+                "C": 4
+              },
+              "pointsPerBase": 64,
+              "specialRules": [
+                "Terror", "Superior Fighters"
+              ]
+            },
+            {
+              "name": "Crewmen",
+              "stats": {
+                "D": 4,
+                "C": 7,
+              },
+              "baseEquipment": ["Howdah","Javelins"],
+              "specialRules": [],
+              "pointsPerBase": 0
+            },
+            {
+              "name": "Mahout",
+              "stats": {
+                "D": 6,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        }
+      ]
+        },  
 
 
 
