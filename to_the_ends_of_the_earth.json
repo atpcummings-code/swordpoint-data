@@ -7242,7 +7242,6 @@
             },
              {
               "name": "Pike",
-              "disables": "Bow",
               "applyToAllUnits": true,
               "pointsModifier": 0,
               "targetProfile": "Crewmen (2)",
