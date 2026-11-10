@@ -5492,7 +5492,7 @@
         {
           "id": "coalition_army_escorts",
           "name": "Escorts",
-          "description": "Escorts have javelins and shield. Skirmishers. Inferior Fighters. May repalce javelins and shield with bow or sling (-1). There must be a unit of Escorts for each elephant fielded.",
+          "description": "Escorts have javelins and shield. Skirmishers. Inferior Fighters. May replace javelins and shield with bow or sling (-1). There must be a unit of Escorts for each elephant fielded.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
