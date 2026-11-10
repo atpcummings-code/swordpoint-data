@@ -8,7 +8,7 @@
   ],
  	"categories": [
         {
-          "id": "Commanders",E
+          "id": "Commanders",
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
