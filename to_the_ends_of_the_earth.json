@@ -6206,7 +6206,7 @@
   "armyValidation": [
 
 { "type": "equipmentUnitCount", "left": { "unitIds": ["the_greek_army_aetolian_thureophoroi", "the_greek_army_achaean_thureophoroi"], "equipment": ["Light Armour"] }, "expression": "lessThanOrEqual", "value": 2 },
-    { "type": "equipmentUnitCount", "left": { "unitIds": ["the_greek_army_aetolian_thureophoroi", "the_greek_army_achaean_thureophoroi","the_greek_army_hoplites"], "equipment": ["Upgrade to Elite Agema"] }, "expression": "lessThanOrEqual", "value": 1 } 
+{ "type": "equipmentUnitCount", "left": { "unitIds": ["the_greek_army_aetolian_thureophoroi", "the_greek_army_achaean_thureophoroi","the_greek_army_hoplites"], "equipment": ["Upgrade to Elite Agema"] }, "expression": "lessThanOrEqual", "value": 1 } 
 
 
     
@@ -6493,10 +6493,9 @@
           "optionalEquipment": [
             {
               "name": "Light Armour",
-              "disables": "Skirmishers",
               "pointsModifier": 2,
               "maxUnits": 2,
-              "equipmentAdded": [],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -6533,10 +6532,9 @@
           "optionalEquipment": [
             {
               "name": "Light Armour",
-              "disables": "Skirmishers",
               "pointsModifier": 2,
               "maxUnits": 2,
-              "equipmentAdded": [],
+              "equipmentAdded": ["Light Armour],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
