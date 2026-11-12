@@ -1470,7 +1470,13 @@
           "name": "Allies and Mercenaries",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			"alliedArmyKeys": [
+            {"key": "illyrians", "supplement":"classical_armies"},
+{"key": "thracian_lowland_tribes"}
+	    
+
+          ],
         }
       ],
       "units": [
