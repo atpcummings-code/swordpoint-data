@@ -313,12 +313,14 @@
           "min": 0,
           "max": 25,
 			"description":"The army may take allied contingents from the Illyrian, Thracian or Later Hoplite Greek lists.",
-			"alliedArmyKeys": [
-{"key": "thracian_highland_tribes"}, 
-{"key": "later_hoplite_greek_athens"},
-{"key": "illyrians"}
-],
-"maxAlliedArmiesAllowed": 3
+			 "alliedArmyKeys": [
+            {"key": "illyrians", "supplement":"classical_armies"},
+{"key": "thracian_highland_tribes"},
+	    {"key": "later_hoplite_greek_athens", "supplement":"classical_armies"},
+	    
+
+          ],
+"maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
