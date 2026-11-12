@@ -1742,7 +1742,15 @@
           "name": "Allies and Mercenaries",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,
+			 "alliedArmyKeys": [
+           
+{"key": "thracian_highland_tribes"},
+	    {"key": "early_hoplite_greek_minor_states", "supplement":"classical_armies"},
+	    
+
+          ],
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
