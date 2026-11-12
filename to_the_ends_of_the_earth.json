@@ -5633,7 +5633,15 @@
           "name": "Allies",
            "constraintType": "percentage",
           "min": 0,
-          "max": 20
+          "max": 20,
+			"alliedArmyKeys": [
+           
+
+	    {"key": "twilight_of_greece", "excludesUnits": [ "twilight_of_greece_hoplites"], supplement":"classical_armies"}
+	    
+
+          ],
+          "maxAlliedArmiesAllowed": 1
         }
       ],
       "units": [
