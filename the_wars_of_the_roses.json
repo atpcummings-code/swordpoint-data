@@ -225,7 +225,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Longbow"],
-          "specialRules": ["Close Order""],
+          "specialRules": ["Close Order"],
           "optionalEquipment": [
             {
               "name": "Sword and Shield",
