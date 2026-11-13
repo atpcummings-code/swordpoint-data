@@ -695,7 +695,7 @@
           "description": "The army may construct ditch and bank earth works. Counting as obstacles and hard cover, a t cost of 4 points per 40mm frontage covered, up to a maximum of 360mm",
           "category": "FieldDefences",
           "type": "FieldDefences",
-          "defence": "-"0,
+          "defence": "-",
           "cohesion": "-",
           "pointsPerBase": 4,
           "minBases": 0,
