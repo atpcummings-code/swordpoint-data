@@ -2,6 +2,9 @@
   "armies": { 
 "wotr_early_lanacastrian": {
       "armyName": "WotR Early Lanacastrian 1455AD-1461AD",
+	 "armyValidation": [
+{ "type": "equipmentUnitCount", "left": { "unitIds": ["wotr_early_lanacastrian_dismounted_men_at_arms", "wotr_early_lanacastrian_knights_and_men_at_arms"], "equipment": ["Household"] }, "expression": "lessThanOrEqual", "value": 1 }     
+],
 	"categoryExcludes": [ { "categories": ["Foreigners"], "excludes": ["MilitiaandRetainers","Artillery"] } ],
 
 "categoryOverrides": [ { "trigger": "Foreigners", "overrides": [ { "categoryId": "Horse", "minPoints": 15, "maxPoints": 25 }, { "categoryId": "RetinueFoot", "minPoints": 10, "maxPoints": 25 } ] } ],
@@ -185,7 +188,6 @@
             {
               "name": "Lance",
               "pointsModifier": 1,
-				"maxUnits": 1,
 				"equipmentAdded": "Lance",
 				"equipmentRemoved": "Spear",
               "rulesAdded": [],
