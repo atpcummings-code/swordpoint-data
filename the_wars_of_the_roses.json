@@ -1119,39 +1119,8 @@
             }
           ],
           "optionalEquipment": []
-            },
-{
-          "id": "wotr_early_yorkist_wagons",
-          "name": "Wagons",
-          "description": "The army may field its guns as a battery and intersperse them with wagons to form an artillery fot (Wagon Tabor). Wagons cost 21 points and each is defended by a base of Retainer Billmen in light armour (included).",
-          "category": "FieldDefences",
-          "type": "Wagons",
-          "minBases": 0,
-          "maxBases": 4,
-          "subProfiles": [
-            {
-              "name": "Wagons",
-              "stats": {},
-              "pointsPerBase": 21,
-              "specialRules": [
-                "Wagon Tabor"
-              ]
-            },
-            {
-              "name": "Defenders",
-              "stats": {
-                "D": 6,
-                "C": 6
-              },
-              "pointsPerBase": 0,
-              "baseEquipment": [
-                "Halberd"
-              ],
-              "specialRules": []
             }
-          ],
-          "optionalEquipment": []
-            }
+
               
 		  ]
         },
