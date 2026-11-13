@@ -21099,7 +21099,7 @@
             },
 			  {
               "name": "One Crewman exchange Javelins for Bow",
-              "pointsModifier": 4,
+              "pointsModifier": 0,
               "targetProfile": "Crewmen (2)",
               "equipmentAdded": ["Bow"],
               "equipmentRemoved": ["Javelins"],
