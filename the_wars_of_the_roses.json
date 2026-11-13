@@ -689,9 +689,6 @@
           "specialRules": [],
           "optionalEquipment": []
         },
-        
-		  ]
-        },
 	  {
           "id": "wotr_early_lanacastrian_field_defences",
 		  "name": "Field Defences",
@@ -706,7 +703,7 @@
           "baseEquipment": [],
           "specialRules": ["Ditch and bank earthworks"],
           "optionalEquipment": []
-        },
+        }
         
 		  ]
         },
