@@ -48,6 +48,14 @@
           "pointsThreshold": 500,
           "countPerThreshold": 1,
           "rounding": "up"
+        },
+		   {
+          "id": "FieldDefences",
+          "name": "Field Defences",
+          "constraintType": "pointsRatio",
+          "constraintType": "count",
+          "min": 0,
+          "max": 9
         }
         
       ],
@@ -598,9 +606,8 @@
         },
 		  {
           "id": "wotr_early_lanacastrian_mercenary_gallowglass",
-			  "name": "Mercenary Gallowglass",
+		  "name": "Mercenary Gallowglass",
           "description": "Mercenary Gallowglass have light armour, bow and two-handed axe. Open Order",
-          
           "category": "Foreigners",
           "type": "Infantry",
           "defence": 6,
@@ -667,7 +674,39 @@
             }
 		  ]
         },
-
+{
+          "id": "wotr_early_lanacastrian_light_gun",
+		  "name": "Light Gun",
+          "description": "Light Gun with 3 crew.",
+          "category": "Artillery",
+          "type": "Artillery",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 25,
+          "minBases": 1,
+          "maxBases": 1,
+          "baseEquipment": ["Light Gun"],
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+		  ]
+        },
+	  {
+          "id": "wotr_early_lanacastrian_field_defences",
+		  "name": "Field Defences",
+          "description": "The army may construct ditch and bank earth works. Counting as obstacles and hard cover, a t cost of 4 points per 40mm frontage covered, up to a maximum of 360mm",
+          "category": "FieldDefences",
+          "type": "FieldDefences",
+          "defence": "-"0,
+          "cohesion": "-",
+          "pointsPerBase": 4,
+          "minBases": 0,
+          "maxBases": 9,
+          "baseEquipment": [],
+          "specialRules": [""Ditch and bank earthworks"],
+          "optionalEquipment": []
+        },
         
 		  ]
         },
