@@ -217,7 +217,7 @@
           "id": "wotr_early_lanacastrian_retinue_archers",
           "name": "Retinue Archers",
           "description": "Retinue Archers have longbow. May have sword and shield (+2) and/or Hand-and-a-half sword (+2), light armour (+2) and Stakes (+2). May be Riding Horses.",
-          "category": "Retinue",
+          "category": "RetinueFoot",
           "type": "Infantry",
           "defence": 7,
           "cohesion": 7,
