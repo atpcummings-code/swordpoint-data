@@ -531,34 +531,142 @@
 		  ]
         },
 		  {
-          "id": "wotr_early_lanacastrian_welsh_billmen",
-          "name": "Welsh Billmen have halberd. Open Order. One unit may have light armour (+2).",
-          "description": "Welsh Spearmen ",
-          "category": "Foreigners",
-          "type": "Infantry",
-          "defence": 7,
-          "cohesion": 6,
-          "pointsPerBase": 9,
+      "id": "wotr_early_lanacastrian_welsh_billmen_longbowmen_mo",
+          "name": "Mixed Order Welsh Billmen/Longbowmen",
+          "description": "Welsh Billmen have halberd. Open Order. One unit may have light armour (+2). Welsh Longbowmen have longbow. Open Order",
+    "category": "Foreigners",      
+	"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Halberd"],
+          "baseEquipment": [],
           "specialRules": ["Open Order"],
-          "optionalEquipment": [
-			   {
-              "name": "Light Armour",
+          "subProfiles": [
+             {
+              "name": "Welsh Longbowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 5,
+              "pointsPerBase": 9,
+              "minBases": 3,
+              "maxBases": 9,
+              "baseEquipment": ["Longbow"],
+              "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Welsh Billmen",
+            	"defence": 7,
+          	"cohesion": 6,
+          	"pointsPerBase": 9,
+              "minPercentage": 25,
+              "maxPercentage": 50,
+              "minBases": 1,
+              "maxBases": 6,
+          "baseEquipment": ["Halberd"],
+          "specialRules": ["Open Order"]
+            },
+            
+            ],
+	"optionalEquipment": [
+  		    {
+              "name": "Light Armour (Billmen)",
+              "targetProfile": "Welsh Billmen",
               "pointsModifier": 2,
-			  "maxUnits": 1,
+              "maxUnits": 1,
               "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-            }		  ]
+            }
+          ]
         },
-		  
-
-
+		  {
+          "id": "wotr_early_lanacastrian_welsh_longbowmen_skirmishers",
+          "name": "Welsh Longbowmen Skirmishers",
+          "description": "Welsh Longbowmen Skirmishers have longbow. Skirmishers",
+          "category": "Foreigners",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Longbow"],
+          "specialRules": ["Skirmishers"],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "wotr_early_lanacastrian_mercenary_gallowglass",
+			  "name": "Mercenary Gallowglass",
+          "description": "Mercenary Gallowglass have light armour, bow and two-handed axe. Open Order",
+          
+          "category": "Foreigners",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+		 "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Bow","Two-handed Axe"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": []
+        },
+{
+          "id": "wotr_early_lanacastrian_mercenary_kern",
+	"name": "Mercenary Kern",
+          "description": "Mercenary Kern have throwing spear and shield. Open Order. Warband. May be fielded as Skirmishers (not warband) at a cost of seven points per base.",  
+          "category": "Foreigners",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+		 "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield],
+          "specialRules": ["Open Order","Warband"],
+          "optionalEquipment": [
+			  {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order","Warband"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+{
+          "id": "wotr_early_lanacastrian_breton_men_at_arms",
+	    "name": "Breton Men at Arms",
+          "description": "reton Men at Arms have double handed weapon and full plate armour. May be Riding Horses (+1).",
+          "category": "Foreigners",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+		 "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Double handed weapon","Full Plate Armour],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": [
+			  {
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
 
         
 		  ]
