@@ -21097,6 +21097,17 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
+			  {
+              "name": "One Crewman exchange Javelins for Bow",
+              "pointsModifier": 4,
+              "targetProfile": "Crewmen (2)",
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
             {
               "name": "Barding",
               "pointsModifier": 4,
@@ -21120,7 +21131,18 @@
               "specialRules": ["Terror","Superior Fighters"]
             },
             {
-              "name": "Crewmen",
+              "name": "Crewmen (1)",
+              "stats": {
+                "D": 4,
+                "C": 7,
+                
+              },
+				"baseEquipment": ["Javelins","Light Armour"],
+              "specialRules": ["Howdah"],
+              "pointsPerBase": 0
+            },
+			  {
+              "name": "Crewmen (2)",
               "stats": {
                 "D": 4,
                 "C": 7,
