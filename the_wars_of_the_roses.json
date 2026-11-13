@@ -2,6 +2,9 @@
   "armies": { 
 "wotr_early_lanacastrian": {
       "armyName": "WotR Early Lanacastrian 1455AD-1461AD",
+	"categoryExcludes": [ { "categories": ["Foreigners"], "excludes": ["MilitiaanndRetainers"] } ],
+
+"categoryOverrides": [ { "trigger": "Foreigners", "overrides": [ { "categoryId": "Horse", "minPoints": 15, "maxPoints": 25 }, { "categoryId": "RetinueFoot", "minPoints": 10, "maxPoints": 25 },{ "categoryId": "Artillery", "maxChoices": 0 } ] } ],
       "categories": [
         {
           "id": "Commanders",
@@ -39,32 +42,24 @@
           "max": 75
         },
         {
-          "id": "Skirmishers",
-          "name": "Skirmishers",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 10
-        },
-        {
-          "id": "Allies",
-          "name": "Allies",
-          "description": "The pre-700 AD army may have allies from the Dark Age Britain and Ireland (British list) or Late Imperial Roman (Limitanei, Auxilia, Esquites and Illyrian/Sagitarii only) lists.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 20,
-       "alliedArmyKeys": [ { "key": "lir_imperial_field_army",  "excludesUnits": ["lir_imperial_field_army_foederati", "lir_imperial_field_army_catafractii_clibanarii","lir_imperial_field_army_legionaries","lir_imperial_field_army_legionaries_cf","lir_imperial_field_army_archers","lir_imperial_field_army_heavy_cavalry","lir_imperial_field_army_light_cavalry","lir_imperial_field_army_federate_infantry"] },{"key": "dabai_british"} ], 
-          "maxAlliedArmiesAllowed": 1
+          "id": "Artillery",
+          "name": "Artillery",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 500,
+          "countPerThreshold": 1,
+          "rounding": "up"
         }
+        
       ],
       "units": [
         {
-          "id": "wotr_early_lanacastrian_duke_or_king",
-          "name": "Duke or King",
-          "description": "May ride a horse.",
+          "id": "wotr_early_lanacastrian_general",
+          "name": "General",
+          "description": "Commanders may be mounted.",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
-          "attacks": "+3",
+          "attacks": "+2",
           "cohesion": 9,
           "pointsPerBase": 0,
           "minBases": 0,
@@ -73,9 +68,9 @@
           "optionalEquipment": []
         },
         {
-          "id": "wotr_early_lanacastrian_noble",
-          "name": "Noble",
-          "description": "May ride a horse.",
+          "id": "wotr_early_lanacastrian_captain",
+          "name": "Captain",
+          "description": "Commanders may be mounted.",
           "category": "Commanders",
           "type": "Commander",
           "attacks": "+2",
@@ -87,51 +82,133 @@
           "optionalEquipment": []
         },
         {
-          "id": "wotr_early_lanacastrian_minor_noble",
-          "name": "Minor Noble",
-          "description": "May ride a horse.",
-          "category": "Commanders",
-          "type": "Commander",
-          "attacks": "+3",
-          "cohesion": "+1",
-          "pointsPerBase": 20,
-          "minBases": 0,
-          "maxBases": 1,
-          "specialRules": [],
-          "optionalEquipment": []
-        },
-        {
-          "id": "wotr_early_lanacastrian_noble_cavalry",
-          "name": "Noble Cavalry",
-          "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. May be fielded as skirmishers.",
-          "category": "Cavalry",
-          "type": "Commander",
-          "defence": 4,
+          "id": "wotr_early_lanacastrian_knights_and_men_at_arms",
+          "name": "Knights and Men at Arms",
+          "description": "Knights and Men at Arms have full plate armour and lance. Shock Cavalry. One unit may have barding (+1). One unit (dismouned or mounted Kinghts and Mena t arms) may be upgraded to Household (+4) being Superior Fighters. ",
+          "category": "Horse",
+          "type": "Horse",
+          "defence": 3,
           "cohesion": 8,
-          "pointsPerBase": 23,
+          "pointsPerBase": 26,
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": [
-            "Light Armour",
-            "Spear",
-            "Javelins",
-            "Shield"
+            "Full PLate Armour",
+            "Lance"
           ],
           "specialRules": [
-            "Open Order",
-            "Superior Fighters"
+            "Open Order"
           ],
            "optionalEquipment": [
             {
-              "name": "Skirmishers",
-              "pointsModifier": 0,
-              "rulesAdded": [
-                "Skirmishers"
-              ],
-              "rulesRemoved": [
-                "Open Order"
-              ],
+              "name": "Barding",
+              "pointsModifier": 1,
+				"maxUnits": 1,
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Household",
+              "pointsModifier": 4,
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
               "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		 
+		  {
+          "id": "wotr_early_lanacastrian_dismounted_men_at_arms",
+          "name": "Dismounted Men at Arms",
+          "description": "Dismounted Men at Arms have double handed weapon and full plate armour. May be Stubborn (+2) and Riding Horses (+1).  One unit (dismouned or mounted Kinghts and Men at arms) may be upgraded to Household (+2) being Superior Fighters.",
+          "category": "Horse",
+          "type": "Horse",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Full PLate Armour","Double Handed Weapon"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+            {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Household",
+              "pointsModifier": 2,
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		   {
+          "id": "wotr_early_lanacastrian_hobilars",
+          "name": "Hobilars",
+          "description": "Hobilars have spear and heavy armour. May have lance (+1).",
+          "category": "Horse",
+          "type": "Horse",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Heavy Armour","Spear"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+            {
+              "name": "Lance",
+              "pointsModifier": 1,
+				"maxUnits": 1,
+				"equipmentAdded": "Lance",
+				"equipmentRemoved": "Spear",
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		   {
+          "id": "wotr_early_lanacastrian_border_horse",
+          "name": "Border Horse",
+          "description": "Border Horse have spear and shield. May have light armour (+1).",
+          "category": "Horse",
+          "type": "Horse",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Shield","Spear"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": "Light Armour",
+				"equipmentRemoved": "",
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
               "cohesionModifier": 0
             }
           ]
