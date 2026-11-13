@@ -4,7 +4,7 @@
       "armyName": "WotR Early Lanacastrian 1455AD-1461AD",
 	"categoryExcludes": [ { "categories": ["Foreigners"], "excludes": ["MilitiaandRetainers","Artillery"] } ],
 
-"categoryOverrides": [ { "trigger": "Foreigners", "overrides": [ { "categoryId": "Horse", "minPoints": 15, "maxPoints": 25 }, { "categoryId": "RetinueFoot", "minPoints": 10, "maxPoints": 25 },{ "categoryId": "Artillery", "maxChoices": 0 } ] } ],
+"categoryOverrides": [ { "trigger": "Foreigners", "overrides": [ { "categoryId": "Horse", "minPoints": 15, "maxPoints": 25 }, { "categoryId": "RetinueFoot", "minPoints": 10, "maxPoints": 25 } ] } ],
       "categories": [
         {
           "id": "Commanders",
