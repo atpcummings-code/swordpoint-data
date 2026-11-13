@@ -21089,7 +21089,7 @@
             {
               "name": "1 Extra Crew",
               "pointsModifier": 4,
-              "targetProfile": "Crewmen",
+              "targetProfile": "Elephant",
               "equipmentAdded": ["1 Extra Crew", "Bow"],
               "equipmentRemoved": [],
               "rulesAdded": [],
