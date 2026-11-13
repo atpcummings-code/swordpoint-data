@@ -492,6 +492,70 @@
           "specialRules": ["Close Order","Inferior Fighters"],
           "optionalEquipment": []
         },
+		  {
+          "id": "wotr_early_lanacastrian_welsh_spearmen",
+          "name": "Welsh Spearmen have spear and shield. May have javelins (+2) or exhange Spear for throwing spear (+2).",
+          "description": "Welsh Spearmen ",
+          "category": "Foreigners",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Close Order"],
+          "optionalEquipment": [
+			   {
+              "name": "Javelins",
+			"disables": "Throwing Spear",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Javelins"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Throwing Spear",
+			"disables": "Javelins",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Throwing Spear"],
+              "equipmentRemoved": ["Spear],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
+        },
+		  {
+          "id": "wotr_early_lanacastrian_welsh_billmen",
+          "name": "Welsh Billmen have halberd. Open Order. One unit may have light armour (+2).",
+          "description": "Welsh Spearmen ",
+          "category": "Foreigners",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Halberd"],
+          "specialRules": ["Open Order"],
+          "optionalEquipment": [
+			   {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+			  "maxUnits": 1,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }		  ]
+        },
 		  
 
 
