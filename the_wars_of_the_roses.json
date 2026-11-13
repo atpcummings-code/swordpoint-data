@@ -360,7 +360,7 @@
               "minBases": 1,
               "maxBases": 9,
           "baseEquipment": ["Longbow"],
-          "specialRules": ["Open Order"],
+          "specialRules": ["Open Order"]
             },
             {
               "name": "Billmen",
@@ -446,7 +446,7 @@
               "minBases": 1,
               "maxBases": 9,
           "baseEquipment": ["Longbow"],
-          "specialRules": ["Open Order", "Levy","Inferior Fighters"],
+          "specialRules": ["Open Order", "Levy","Inferior Fighters"]
             },
             {
               "name": "Billmen",
@@ -478,8 +478,5 @@
 ]
         }
 
-
-
-
-  }
+}
 }
