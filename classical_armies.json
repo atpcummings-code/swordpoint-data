@@ -21200,15 +21200,7 @@
           "min": 25,
           "max": 100
         },
-      {
-          "id": "Elephants",
-          "name": "Elephants",
-          "constraintType": "pointsRatio",
-          "pointsThreshold": 500,
-          "countPerThreshold": 1,
-          "rounding": "down",
-        },
-      {
+       {
           "id": "Allies",
           "name": "Allies and Mercenaries",
           "constraintType": "percentage",
@@ -21664,44 +21656,7 @@
           "specialRules": ["Skirmishers","Superior Shooters"],
           "optionalEquipment": []
         },
-        {
-          "id": "seleucid_successor_late_elephant_escorts",
-          "name": "Elephant Escorts",
-          "description": "Elephant Escorts have javelins and shield. Inferior Fighters. Skirmishers. May replace javelins and shield with bow or sling (-1). Escorts.",
-          "category": "Infantry",
-          "type": "Infantry",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 7,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": ["Javelins","Shield"],
-          "specialRules": ["Skirmishers", "Inferior Fighters","Escorts"],
-          "optionalEquipment": [
-            {
-              "name": "Bow",
-              "disables": "Sling",
-              "pointsModifier": -1,
-              "equipmentAdded": ["Bow"],
-              "equipmentRemoved": ["Javelins","Shield"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 1,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Sling",
-              "disables": "Bow",
-              "pointsModifier": -1,
-              "equipmentAdded": ["Sling"],
-              "equipmentRemoved": ["Javelins","Shield"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 1,
-              "cohesionModifier": 0
-            }
-          ]
-        },    
+         
         {
           "id": "seleucid_successor_late_mercenaries",
           "name": "Mercenaries",
@@ -21778,71 +21733,7 @@
             }
           ]
         }, 
-        {
-          "id": "seleucid_successor_late_elephant_late",
-          "name": "Indian Elephant (L)",
-          "description": "Unarmed mahout abd two crewmen in howdah with light armour and javelins. One crewman may exchange javelins for bow (free). May have barding (+4) and a third crewman (+4). Elephants are Superior Fighters. This elephant is taken from 290 BC and later.",
-          "category": "Elephants",
-          "type": "Elephants",
-          "minBases": 1,
-          "maxBases": 1,
-		  "excludesIf": { "unitIds": ["seleucid_successor_late_elephant_early"], "count": 1 },
-          "optionalEquipment": [
-            {
-              "name": "1 Extra Crew",
-              "pointsModifier": 4,
-              "targetProfile": "Crewmen",
-              "equipmentAdded": ["1 Extra Crew"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            {
-              "name": "Barding",
-              "pointsModifier": 4,
-              "targetProfile": "Elephant",
-              "equipmentAdded": ["Barding"],
-              "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-          ],
-          "subProfiles": [
-            {
-              "name": "Elephant",
-              "stats": {
-                "D": 3,
-                "C": 4
-              },
-              "pointsPerBase": 64,
-              "specialRules": ["Terror","Superior Fighters"]
-            },
-            {
-              "name": "Crewmen",
-              "stats": {
-                "D": 4,
-                "C": 7,
-                
-              },
-				"baseEquipment": ["Pike","Light Armour"],
-              "specialRules": ["Howdah"],
-              "pointsPerBase": 0
-            },
-			  
-            {
-              "name": "Mahout",
-              "stats": {
-                "D": 6,
-                "C": 7
-              },
-              "pointsPerBase": 0
-            }
-          ]
-        },
+        
         {
           "id": "seleucid_successor_late_scythed_chariots",
           "name": "Scythed Chariots",
