@@ -2,7 +2,7 @@
   "armies": { 
 "wotr_early_lanacastrian": {
       "armyName": "WotR Early Lanacastrian 1455AD-1461AD",
-	"categoryExcludes": [ { "categories": ["Foreigners"], "excludes": ["MilitiaanndRetainers"] } ],
+	"categoryExcludes": [ { "categories": ["Foreigners"], "excludes": ["MilitiaandRetainers"] } ],
 
 "categoryOverrides": [ { "trigger": "Foreigners", "overrides": [ { "categoryId": "Horse", "minPoints": 15, "maxPoints": 25 }, { "categoryId": "RetinueFoot", "minPoints": 10, "maxPoints": 25 },{ "categoryId": "Artillery", "maxChoices": 0 } ] } ],
       "categories": [
@@ -28,7 +28,7 @@
           "max": 33
         },
 		   {
-          "id": "MilitiaanndRetainers",
+          "id": "MilitiaandRetainers",
           "name": "Militia and Retainers",
           "constraintType": "percentage",
           "min": 0,
@@ -214,133 +214,65 @@
           ]
         },
         {
-          "id": "wotr_early_lanacastrian_light_cavalry",
-          "name": "Light Cavalry",
-          "description": "Light Cavalry have spear, javelins and shield. May be fielded as skirmishers.",
-          "category": "Cavalry",
-          "type": "Cavalry",
-          "defence": 5,
-          "cohesion": 6,
-          "pointsPerBase": 17,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": [
-            "Spear", "Javelins"
-          ],
-          "specialRules": [
-            "Open Order"
-          ],
-          "optionalEquipment": [
-            {
-              "name": "Skirmishers",
-              "pointsModifier": 0,
-              "rulesAdded": [
-                "Skirmishers"
-              ],
-              "rulesRemoved": [
-                "Open Order"
-              ],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-		  {
-          "id": "wotr_early_lanacastrian_combined_cavalry_cu",
-          "name": "Combined Unit Noble Cavalry/Light Cavalry",
-          "description": "Noble Cavalry have light armour, spear, javelins and shield. Superior Fighters. Light Cavalry have spear, javelins and shield.  Noble and Light Cavalry may form Combined Units containing up to 75% of bases of the inferior type (Light Cavalry).",
-          "category": "Cavalry",
-          "type": "Cavalry",
-          "minBases": 3,
-          "maxBases": 8,
-          "subProfiles": [
-            {
-              "name": "Noble Cavalry",
-              "defence": 4,
-              "cohesion": 8,
-              "pointsPerBase": 23,
-              "minBases": 1,
-              "maxBases": 8,
-              "baseEquipment": ["Light Armour", "Spear", "Shield", "Javelins"],
-              "specialRules": ["Open Order", "Superior Fighters"]
-            },
-            {
-              "name": "Light Cavalry",
-              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
-              "defence": 5,
-              "cohesion": 6,
-              "pointsPerBase": 17,
-              "minBases": 1,
-              "maxBases": 6,
-              "maxPercentage": 75,
-              "baseEquipment": ["Spear", "Shield", "Javelins"],
-              "specialRules": ["Open Order"]
-            }
-            
-            ],
-		"optionalEquipment": []
-            },
-        {
-          "id": "wotr_early_lanacastrian_elite_warriors",
-          "name": "Elite Warriors",
-          "description": "Elite Warriors have throwing spear and shield. Superior Fighters. Warband. May have light armour (+2) and javelins (+2). May exchange throwing spear for heavy throwing spear (+2).",
-          "category": "Infantry",
+          "id": "wotr_early_lanacastrian_retinue_archers",
+          "name": "Retinue Archers",
+          "description": "Retinue Archers have longbow. May have sword and shield (+2) and/or Hand-and-a-half sword (+2), light armour (+2) and Stakes (+2). May be Riding Horses.",
+          "category": "Retinue",
           "type": "Infantry",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 20,
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": [
-            "Throwing Spear",
-            "Shield"
-          ],
-          "specialRules": [
-            "Close Order",
-            "Superior Fighters",
-            "Warband"
-          ],
+          "baseEquipment": ["Longbow"],
+          "specialRules": ["Close Order""],
           "optionalEquipment": [
             {
-              "name": "Javelins",
+              "name": "Sword and Shield",
               "pointsModifier": 2,
-              "equipmentAdded": [
-                "Javelins"
-              ],
-              "equipmentRemoved": [],
+              "equipmentAdded": ["Sword","Shield"],
+			"equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Hand-and-a-half sword",
+              "pointsModifier": 2,
+              "equipmentAdded": ["Hand-and-a-half sword"],
+			"equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
-            {
-              "name": "Heavy Throwing Spear",
-              "disables": [
-                "Spear (mandatory Post 700AD"
-              ],
-              "pointsModifier": 2,
-              "equipmentAdded": [
-                "Heavy Throwing Spear"
-              ],
-              "equipmentRemoved": [
-                "Throwing Spear"
-              ],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-            
+            },            
             {
               "name": "Light Armour",
               "pointsModifier": 2,
-              "equipmentAdded": [
-                "Light Armour"
-              ],
+              "equipmentAdded": ["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Stakes",
+              "pointsModifier": 2,
+              "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Stakes"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
