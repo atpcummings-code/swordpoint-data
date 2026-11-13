@@ -632,7 +632,7 @@
 		 "maxCountAllowed": 2,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Spear","Shield],
+          "baseEquipment": ["Spear","Shield"],
           "specialRules": ["Open Order","Warband"],
           "optionalEquipment": [
 			  {
@@ -659,7 +659,7 @@
 		 "maxCountAllowed": 1,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Double handed weapon","Full Plate Armour],
+          "baseEquipment": ["Double handed weapon","Full Plate Armour"],
           "specialRules": ["Close Order"],
           "optionalEquipment": [
 			  {
@@ -704,7 +704,7 @@
           "minBases": 0,
           "maxBases": 9,
           "baseEquipment": [],
-          "specialRules": [""Ditch and bank earthworks"],
+          "specialRules": ["Ditch and bank earthworks"],
           "optionalEquipment": []
         },
         
