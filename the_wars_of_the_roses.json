@@ -476,14 +476,28 @@
               "cohesionModifier": 0
             }
           ]
-        }
+        },
+		  {
+          "id": "wotr_early_lanacastrian_border_foot",
+          "name": "Border Foot",
+          "description": "Border Foot have spear and shield. Inferior Fighters.",
+          "category": "MilitiaandRetainers",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Close Order","Inferior Fighters"],
+          "optionalEquipment": []
+        },
+		  
 
 
 
         
 		  ]
         },
-
-
   }
 }
