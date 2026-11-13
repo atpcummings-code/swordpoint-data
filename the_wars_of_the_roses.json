@@ -698,8 +698,8 @@
           "defence": "-",
           "cohesion": "-",
           "pointsPerBase": 4,
-          "minBases": 0,
-          "maxBases": 9,
+          "minBases": 1,
+          "maxBases": 1,
           "baseEquipment": [],
           "specialRules": ["Ditch and bank earthworks"],
           "optionalEquipment": []
