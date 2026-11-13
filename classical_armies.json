@@ -21090,7 +21090,7 @@
               "name": "1 Extra Crew",
               "pointsModifier": 4,
               "targetProfile": "Crewmen",
-              "equipmentAdded": ["1 Extra Crew"],
+              "equipmentAdded": ["1 Extra Crew", "Bow"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -21126,7 +21126,7 @@
                 "C": 7,
                 
               },
-				"baseEquipment": ["Pike","Light Armour"],
+				"baseEquipment": ["Javelins","Light Armour"],
               "specialRules": ["Howdah"],
               "pointsPerBase": 0
             },
