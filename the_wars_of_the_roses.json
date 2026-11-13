@@ -522,7 +522,7 @@
 			"disables": "Javelins",
               "pointsModifier": 2,
               "equipmentAdded": ["Throwing Spear"],
-              "equipmentRemoved": ["Spear],
+              "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
