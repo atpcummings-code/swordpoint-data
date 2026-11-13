@@ -440,7 +440,7 @@
 {
           "id": "wotr_early_lanacastrian_retainer_militia_mo",
           "name": "Mixed Order Militia Retainers (Billmen/Archers)",
-          "description": "Retainer Archers have a longbow. Open Order. Inferior Fighters. Levy. Retainer Billmen have a halberd. Open Order. May have light armour (+2). INferrior Fighters. Levy. Archers and Billmen form in Mixed Order comprising 25% to 75% Billmen.",
+          "description": "Retainer Archers have a longbow. Open Order. Inferior Fighters. Levy. Retainer Billmen have a halberd. Open Order. May have light armour (+2). Inferrior Fighters. Levy. Archers and Billmen form in Mixed Order comprising 25% to 75% Billmen.",
     "category": "MilitiaandRetainers",      
 	"type": "Infantry",
           "minBases": 3,
