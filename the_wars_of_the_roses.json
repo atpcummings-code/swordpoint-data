@@ -1095,7 +1095,7 @@
           "category": "FieldDefences",
           "type": "Wagons",
           "minBases": 0,
-          "maxBases": 4,
+          "maxBases": 1,
           "subProfiles": [
             {
               "name": "Wagons",
