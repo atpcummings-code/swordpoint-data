@@ -191,7 +191,7 @@
 				"equipmentRemoved": "Spear",
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": -1,
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
@@ -808,7 +808,7 @@
 				"equipmentRemoved": "Spear",
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": -1,
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
           ]
