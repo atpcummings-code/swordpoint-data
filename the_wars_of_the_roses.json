@@ -1130,10 +1130,7 @@
 	 "armyValidation": [
 { "type": "equipmentUnitCount", "left": { "unitIds": ["wotr_later_lanacastrian_dismounted_men_at_arms", "wotr_later_lanacastrian_knights_and_men_at_arms"], "equipment": ["Household"] }, "expression": "lessThanOrEqual", "value": 1 }     
 ],
-	"categoryExcludes": [ { "categories": ["Foreigners"], "excludes": ["MilitiaandRetainers","Artillery"] } ],
-
-"categoryOverrides": [ { "trigger": "Foreigners", "overrides": [ { "categoryId": "Horse", "minPoints": 15, "maxPoints": 25 }, { "categoryId": "RetinueFoot", "minPoints": 10, "maxPoints": 25 } ] } ],
-      "categories": [
+	      "categories": [
         {
           "id": "Commanders",
           "name": "Commanders",
