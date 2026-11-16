@@ -508,7 +508,7 @@
               "maxBases": 6,
           "baseEquipment": ["Halberd"],
           "specialRules": ["Open Order"]
-            },
+            }
             
             ],
 	"optionalEquipment": [
@@ -691,7 +691,7 @@
           "pointsThreshold": 500,
           "countPerThreshold": 1,
           "rounding": "down"
-        },
+        }
         
       ],
       "units": [
@@ -2146,10 +2146,8 @@
               "cohesionModifier": 0
             }
           ]
+        } 
         }
-  },
-
-
-	  
-  }
 }
+}
+
