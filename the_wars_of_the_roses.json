@@ -2523,7 +2523,7 @@
           "pointsPerBase": 12,
           "maxCountAllowed": 1,
           "minBases": 3,
-          "maxBases": 6,
+          "maxBases": 12,
           "baseEquipment": ["Handgun","Pavise","Light Armour"],
           "specialRules": ["Open Order"],
           "optionalEquipment": [
