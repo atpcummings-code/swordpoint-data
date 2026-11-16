@@ -1166,6 +1166,14 @@
           "pointsThreshold": 300,
           "countPerThreshold": 1,
           "rounding": "down"
+        },
+			  {
+          "id": "FieldDefences",
+          "name": "FieldDefences",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 300,
+          "countPerThreshold": 1,
+          "rounding": "down"
         }
         
       ],
