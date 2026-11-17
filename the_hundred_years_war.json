@@ -144,7 +144,7 @@
                "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": 0,E
               "cohesionModifier": 0
             },
              {
@@ -524,7 +524,7 @@
               "name": "Shield",
               "pointsModifier": 2,
 				"equipmentAdded": ["Shield"],
-              "rulesAdded": ["],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
@@ -534,7 +534,7 @@
 			"disables": "Double Handed Weapon",		
               "pointsModifier": 2,
 				"equipmentAdded": ["Halberd"],
-              "rulesAdded": ["],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -544,7 +544,7 @@
 			"disables": "Halberd",		
               "pointsModifier": 2,
 				"equipmentAdded": ["Double Handed Weapon"],
-              "rulesAdded": ["],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -713,7 +713,7 @@
 			"disables": "Double Handed Weapon",		
               "pointsModifier": 2,
 				"equipmentAdded": ["Halberd"],
-              "rulesAdded": ["],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -724,7 +724,7 @@
 			"disables": "Halberd",		
               "pointsModifier": 2,
 				"equipmentAdded": ["Double Handed Weapon"],
-              "rulesAdded": ["],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -757,7 +757,7 @@
 			"disables": "Double Handed Weapon",		
               "pointsModifier": 2,
 				"equipmentAdded": ["Halberd"],
-              "rulesAdded": ["],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -769,7 +769,7 @@
 			"disables": "Halberd",		
               "pointsModifier": 2,
 				"equipmentAdded": ["Double Handed Weapon"],
-              "rulesAdded": ["],
+              "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
