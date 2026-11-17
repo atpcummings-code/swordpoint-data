@@ -275,7 +275,7 @@
           "id": "glyndwr_rising_mounted_men_at_arms",
           "name": "Mounted Men at Arms",
           "description": "Mounted Men at Arms have light armour, spear and shield. May have heavy armour (+1). May exchange spear for lance (+1).",
-          "category": "Horse",
+          "category": "UncommonTroops",
           "type": "Horse",
           "defence": 4,
           "cohesion": 7,
