@@ -353,7 +353,7 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-            },
+            }
           ]
         },
 		   {
@@ -390,10 +390,10 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             }
-           ]
+          ]
         }
-		  }
-  },
+      ]
+    },
 "early_war_host": {
       "armyName": "Early War Host - 1337 - 1415 AD",
   
@@ -437,7 +437,7 @@
           "pointsThreshold": 1500,
           "countPerThreshold": 1,
           "rounding": "down"
-        },
+        }
         
       ],
       "units": [
@@ -507,7 +507,6 @@
           ]
         },
         {
-           {
           "id": "early_war_host_mounted_knights_retainers_cu",
           "name": "Combined Unit Mounted Knights/Retainers",
           "description": "Mounted Knights have partial plate armour, lance and shield. Superior Fighters. Impetuous. Shock Cavalry. Arrogant Pride. May have cloth barding (+1). May be Veteran (+1). Mounted Retainers have light armour, spear and shield. Impetuous. May have lance (+1). May have cloth barding (+1). May have heavy armour (+1). May exchange spear for lance (+1). Up to three quarters of teh unit may be Mounted Retainers.",
@@ -607,14 +606,14 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             }
-        ]
-            },
-        
-  
+          ]
+        }
+      ]
+    }
   
   
   
   
   
   }
-}
+  }
