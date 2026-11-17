@@ -391,8 +391,10 @@
               "cohesionModifier": 0
             }
            ]
-        },
-		  "early_war_host": {
+        }
+		  }
+  },
+"early_war_host": {
       "armyName": "Early War Host - 1337 - 1415 AD",
   
 	    "categories": [
