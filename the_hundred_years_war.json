@@ -151,7 +151,7 @@
               "name": "Light Armour",
               "pointsModifier": 2,
                "enabledEvery": 2,
-				"equipmentAdded": ["Light Armour"],
+				"equipmentAdded": ["Light Armour"],E
                "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -506,10 +506,65 @@
             }
           ]
         },
+		  {
+          "id": "early_war_host_foot_knights",
+          "name": "Foot Knights",
+          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. Riding Horses. May have have shield (+2), halberd (+2) or double handed weapon (+2). . May be Veteran (+2).",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Partial Plate Armour","Spear"],
+          "specialRules": ["Close Order","Superior Fighters","Riding Horses"],
+           "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+              "rulesAdded": ["],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Halberd",
+			"disables": "Double Handed Weapon",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"],
+              "rulesAdded": ["],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Double Handed Weapon",
+			"disables": "Halberd",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double Handed Weapon"],
+              "rulesAdded": ["],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": []
+,              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
         {
           "id": "early_war_host_mounted_knights_retainers_cu",
           "name": "Combined Unit Mounted Knights/Retainers",
-          "description": "Mounted Knights have partial plate armour, lance and shield. Superior Fighters. Impetuous. Shock Cavalry. Arrogant Pride. May have cloth barding (+1). May be Veteran (+1). Mounted Retainers have light armour, spear and shield. Impetuous. May have lance (+1). May have cloth barding (+1). May have heavy armour (+1). May exchange spear for lance (+1). Up to three quarters of teh unit may be Mounted Retainers.",
+          "description": "Mounted Knights have partial plate armour, lance and shield. Superior Fighters. Impetuous. Shock Cavalry. Arrogant Pride. May have cloth barding (+1). May be Veteran (+1). Mounted Retainers have light armour, spear and shield. Impetuous. May have lance (+1). May have cloth barding (+1). May have heavy armour (+1). May exchange spear for lance (+1). Up to three quarters of the unit may be Mounted Retainers.",
           "category": "CommonTroops",
           "type": "Cavalry",
           "minBases": 3,
@@ -603,6 +658,131 @@
 				"equipmentAdded": ["Cloth Barding"],
               "rulesAdded": ["Close Order"],
               "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		  {
+		 "id": "foot_knights_retainers_cu",
+          "name": "Combined Unit Foot Knights/Retainers",
+          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. Riding Horses. May have have shield (+2), halberd (+2) or double handed weapon (+2). . May be Veteran (+2). Foot Retainers have ligt armour and spear. Riding Horses.  May have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2) and may then have heavy armour (+2). Retainers form a Combined unit with Foot Knights. Up to three quarter sof the unit may be Foot Retainers.  ",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Foot Knights",
+              "defence": 5,
+              "cohesion": 8,
+              "pointsPerBase": 25,
+              "minBases": 2,
+              "maxBases": 7,
+              "baseEquipment": ["Partial Plate Armour","Spear"],
+          "specialRules": ["Close Order","Superior Fighters","Riding Horses"]
+            },
+            {
+              "name": "Foot Retainers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 15,
+              "minBases": 1,
+              "maxBases": 6,
+              "maxPercentage": 75,
+              "baseEquipment": ["Spear", "Light Armour"],
+              "specialRules": ["Close Order", "Riding Horses"]
+            }
+            
+            ],
+		"optionalEquipment": [
+          {
+              "name": "Shield (Knights)",
+            "targetProfile": "Foot Knights",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Halberd (Knights)",
+				 "targetProfile": "Foot Knights",
+			"disables": "Double Handed Weapon",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"],
+              "rulesAdded": ["],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Double Handed Weapon (Knights)",
+					"targetProfile": "Foot Knights",
+			"disables": "Halberd",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double Handed Weapon"],
+              "rulesAdded": ["],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			{
+              "name": "Veteran (Knights)",
+               "targetProfile": "Foot Knights",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": []
+,              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Shield (Retainers)",
+            "targetProfile": "Foot Retainers",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			{
+              "name": "Halberd (Retainers)",
+				"enables": Heavy Armour (Retainers)",
+				 "targetProfile": "Foot Retainers",
+			"disables": "Double Handed Weapon",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"],
+              "rulesAdded": ["],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Double Handed Weapon (Retainers)",
+					"enables": Heavy Armour (Retainers)",
+					"targetProfile": "Foot Retainers",
+			"disables": "Halberd",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double Handed Weapon"],
+              "rulesAdded": ["],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			{
+              "name": "Heavy Armour (Retainers)",
+				"hiddenUntilEnabled": "hidden",
+            "targetProfile": "Foot Retainers",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Heavy Armour"],
+				"equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
             }
