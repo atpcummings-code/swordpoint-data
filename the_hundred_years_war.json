@@ -541,7 +541,7 @@
             ],
 		"optionalEquipment": [
           {
-              "name": "Cloth Barding",
+              "name": "Cloth Barding (Knights)",
             "targetProfile": "Mounted Knights",
               "pointsModifier": 1,
 				"equipmentAdded": ["Cloth Barding"],
@@ -597,7 +597,7 @@
               "cohesionModifier": 0
             },
           {
-              "name": "Cloth Barding",
+              "name": "Cloth Barding (Retainers)",
             "targetProfile": "Mounted Retainers",
               "pointsModifier": 1,
 				"equipmentAdded": ["Cloth Barding"],
