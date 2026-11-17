@@ -391,7 +391,223 @@
               "cohesionModifier": 0
             }
            ]
-        }
+        },
+		  "early_war_host": {
+      "armyName": "Early War Host - 1337 - 1415 AD",
+  
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "CommonTroops",
+          "name": "Common Troops",
+          "constraintType": "percentage",
+          "min": 40,
+          "max": 100
+        },
+        {
+          "id": "UncommonTroops",
+          "name": "Uncommon Troops",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 40
+        },
+		   {
+          "id": "Allies",
+          "name": "Allies",
+         "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [{"key": "early_war_host"}],
+          "maxAlliedArmiesAllowed": 1
+        },
+          {
+          "id": "Artillery",
+          "name": "Artillery",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 1500,
+          "countPerThreshold": 1,
+          "rounding": "down"
+        },
+        
+      ],
+      "units": [
+        {
+          "id": "early_war_host_prince",
+          "name": "Prince",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "early_war_host_captain",
+          "name": "Captain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+       
+        {
+          "id": "early_war_host_mounted_knights",
+          "name": "Mounted Knights",
+          "description": "Mounted Knights have partial plate armour, lance and shield. Superior Fighters. Impetuous. Shock Cavalry. Arrogant Pride. May have cloth barding (+1). May be Veteran (+1). If the army is led by the King, then one unit may be designated as Royal Bodyguard and be made Stubborn (+2). This unit must always be led by the King and cannot be in a Combined Unit with Mounted Retainers.",
+          "category": "CommonTroops",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Partial Plate Armour","Lance","Shield"],
+          "specialRules": ["Open Order","Shock Cavalry","Superior Fighters","Arrogant Pride", "Impetuous"],
+           "optionalEquipment": [
+            {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": "Cloth Barding",
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": []
+,              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+           {
+          "id": "early_war_host_mounted_knights_retainers_cu",
+          "name": "Combined Unit Mounted Knights/Retainers",
+          "description": "Mounted Knights have partial plate armour, lance and shield. Superior Fighters. Impetuous. Shock Cavalry. Arrogant Pride. May have cloth barding (+1). May be Veteran (+1). Mounted Retainers have light armour, spear and shield. Impetuous. May have lance (+1). May have cloth barding (+1). May have heavy armour (+1). May exchange spear for lance (+1). Up to three quarters of teh unit may be Mounted Retainers.",
+          "category": "CommonTroops",
+          "type": "Cavalry",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Mounted Knights",
+              "defence": 3,
+              "cohesion": 8,
+              "pointsPerBase": 28,
+              "minBases": 2,
+              "maxBases": 7,
+              "baseEquipment": ["Partial Plate Armour","Lance","Shield"],
+          "specialRules": ["Open Order","Shock Cavalry","Superior Fighters","Arrogant Pride", "Impetuous"]
+            },
+            {
+              "name": "Mounted Retainers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 6,
+              "maxPercentage": 75,
+              "baseEquipment": ["Spear", "Shield", "Light Armour"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+		"optionalEquipment": [
+          {
+              "name": "Cloth Barding",
+            "targetProfile": "Mounted Knights",
+              "pointsModifier": 1,
+				"equipmentAdded": "Cloth Barding",
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+               "targetProfile": "Mounted Knights",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": []
+,              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Lance",
+               "targetProfile": "Mounted Retainers",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Lance"],
+               "equipmentRemoved": ["Spear"]
+,              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Heavy Armour",
+            "Disables": "Partial Plate Armour",
+               "targetProfile": "Mounted Retainers",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"]
+,              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Partial Plate Armour",
+            "Disables": "Heavy Armour",
+               "targetProfile": "Mounted Retainers",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Partial Plate Armour"],
+               "equipmentRemoved": ["Light Armour"]
+,              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+          {
+              "name": "Cloth Barding",
+            "targetProfile": "Mounted Retainers",
+              "pointsModifier": 1,
+				"equipmentAdded": "Cloth Barding",
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+        ]
+            },
+        
   
   
   
