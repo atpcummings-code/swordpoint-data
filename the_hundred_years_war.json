@@ -151,7 +151,7 @@
               "name": "Light Armour",
               "pointsModifier": 2,
                "enabledEvery": 2,
-				"equipmentAdded": ["Light Armour"],E
+				"equipmentAdded": ["Light Armour"],
                "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
