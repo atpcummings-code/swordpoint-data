@@ -544,7 +544,7 @@
               "name": "Cloth Barding",
             "targetProfile": "Mounted Knights",
               "pointsModifier": 1,
-				"equipmentAdded": ]"Cloth Barding"],
+				"equipmentAdded": ["Cloth Barding"],
               "rulesAdded": ["Close Order"],
               "rulesRemoved": ["Open Order"],
               "defenceModifier": -1,
