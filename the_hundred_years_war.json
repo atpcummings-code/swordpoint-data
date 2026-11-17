@@ -551,7 +551,7 @@
               "cohesionModifier": 0
             },
              {
-              "name": "Veteran",
+              "name": "Veteran (Knights)",
                "targetProfile": "Mounted Knights",
               "pointsModifier": 1,
 				"equipmentAdded": [],
@@ -562,7 +562,7 @@
               "cohesionModifier": 0
             },
           {
-              "name": "Lance",
+              "name": "Lance (Retainers)",
                "targetProfile": "Mounted Retainers",
               "pointsModifier": 1,
 				"equipmentAdded": ["Lance"],
@@ -573,8 +573,8 @@
               "cohesionModifier": 0
             },
           {
-              "name": "Heavy Armour",
-            "Disables": "Partial Plate Armour",
+              "name": "Heavy Armour (Retainers)",
+            "disables": "Partial Plate Armour",
                "targetProfile": "Mounted Retainers",
               "pointsModifier": 1,
 				"equipmentAdded": ["Heavy Armour"],
@@ -585,8 +585,8 @@
               "cohesionModifier": 0
             },
           {
-              "name": "Partial Plate Armour",
-            "Disables": "Heavy Armour",
+              "name": "Partial Plate Armour (Retainers)",
+            "disables": "Heavy Armour",
                "targetProfile": "Mounted Retainers",
               "pointsModifier": 1,
 				"equipmentAdded": ["Partial Plate Armour"],
