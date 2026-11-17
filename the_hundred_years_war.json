@@ -710,7 +710,7 @@
              {
               "name": "Halberd (Knights)",
 				 "targetProfile": "Foot Knights",
-			"disables": "Double Handed Weapon",		
+			"disables": "Double Handed Weapon (Knights)",		
               "pointsModifier": 2,
 				"equipmentAdded": ["Halberd"],
               "rulesAdded": [],
@@ -721,7 +721,7 @@
 			    {
               "name": "Double Handed Weapon (Knights)",
 					"targetProfile": "Foot Knights",
-			"disables": "Halberd",		
+			"disables": "Halberd (Knights)",		
               "pointsModifier": 2,
 				"equipmentAdded": ["Double Handed Weapon"],
               "rulesAdded": [],
