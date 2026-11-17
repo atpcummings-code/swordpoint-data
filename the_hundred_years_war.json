@@ -752,7 +752,7 @@
             },
 			{
               "name": "Halberd (Retainers)",
-				"enable": "Heavy Armour (Retainers)",
+				"enableHidden": "Heavy Armour (Retainers)",
 				 "targetProfile": "Foot Retainers",
 			"disables": "Double Handed Weapon (Retainers)",		
               "pointsModifier": 2,
@@ -764,7 +764,7 @@
             },
 			    {
               "name": "Double Handed Weapon (Retainers)",
-					"enable": "Heavy Armour (Retainers)",
+					"enableHidden": "Heavy Armour (Retainers)",
 					"targetProfile": "Foot Retainers",
 			"disables": "Halberd (Retainers)",		
               "pointsModifier": 2,
