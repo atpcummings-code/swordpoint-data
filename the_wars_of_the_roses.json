@@ -2946,7 +2946,7 @@
         },
         {
           "id": "wotr_yorkist_pretender_landshneckt_pikemen",
-          "name": "andshneckt Pikemen",
+          "name": "Landshneckt Pikemen",
           "description": "Landshneckt Pikemen pike and heavy armour. Massed Pike. May be Veteran (+2).",
           "category": "Foreigners",
           "type": "Infantry",
@@ -2992,7 +2992,7 @@
           "id": "wotr_yorkist_pretender_landshneckt_handgunners",
           "name": "Landshneckt Handgunners",
           "description": "Landshneckt Handgunners have light armour and crossbow. Open Order.",
-          "category": "RetainersandFrench",
+          "category": "Foreigners",
           "type": "Infantry",
           "defence": 6,
           "cohesion": 7,
