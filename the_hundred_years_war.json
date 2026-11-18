@@ -789,7 +789,464 @@
           ]
         }
       ]
-    }
+    },
+	  {
+  "armies": {
+"the_kingdom_of_navarre": {
+      "armyName": "The Kingdom of Navrre",
+  
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "CommonTroops",
+          "name": "Common Troops",
+          "constraintType": "percentage",
+          "min": 33,
+          "max": 100
+        },
+        {
+          "id": "UncommonTroops",
+          "name": "Uncommon Troops",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+          {
+          "id": "Artillery",
+          "name": "Artillery",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 1250,
+          "countPerThreshold": 1,
+          "rounding": "down"
+        },
+		   {
+          "id": "Allies",
+          "name": "Allies",
+         "description": "From the French Early War Host list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50,
+          "alliedArmyKeys": [{"key": "early_war_host"}],
+          "maxAlliedArmiesAllowed": 1
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "the_free_companies_prince",
+          "name": "Prince",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_free_companies_captain",
+          "name": "Captain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_free_companies_caballeros",
+          "name": "Caballeros",
+          "description": "Caballeros have heavy armour, spear, javelins and shield. Superior Fighters. May have cloth barding (+1). May exchange spear and javelins for lance becoming Shock Cavalry (+4).",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["HEavy Armour","Spear","Javelins","Shield"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+              {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shock Cavalry with Lance",
+              "pointsModifier": 4,
+				"equipmentAdded": ["Lance"],
+               "equipmentRemoved": ["Spear","Javelins"],
+              "rulesAdded": ["Shock Cavalry"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "the_free_companies_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have light armour, spear and shield. Close Order. May replace spear with halberd (+2).",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield","Light Armour"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+              {
+              "name": "Halberd"
+              "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        
+        {
+          "id": "the_free_companies_archers",
+          "name": "Archers",
+          "description": "Archers have light armour and bow. Open Order. Inferior Fighters. May exchange bow for crossbow (+2).",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow","Light Armour","Inferior Fighters"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             {
+              "name": "Crossbow"
+              "pointsModifier": 2,
+				"equipmentAdded": ["Crossbow"],
+              "equipmentRemoved": ["Bow"],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "the_free_companies_spearmen_archers_cf",
+          "name": "Combined Formation Spearmen/Archers",
+          "description": "Spearmen have light armour, spear and shield. Close Order. May replace spear with halberd (+2). Archers have light armour and bow. Close Order.",
+    "category": "CommonTroops",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": [],
+	  "combinedFormation": 
+		[
+		{ "label": "50%", "disableSubProfiles": ["Mixed Spear/Bowmen (Front Row)","Mixed Spear/Bowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Mixed Spear/Bowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 26,
+              "minBases": 3,
+			  "maxBases": 6,
+              "baseEquipment": ["Spara", "Spear", "Bow"],
+              "specialRules": ["Close Order","Superior Fighters","Superior Shooters"]
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+          	"cohesion": 6,
+          	"pointsPerBase": 14,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Spear", "Shield", "Light Armour"],
+          "specialRules": ["Close Order"],
+            },
+            {
+              "name": "Archers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 22,
+				"minBases": 3,
+				"maxBases": 6,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "baseEquipment": ["Bow","Light Armour"],
+              "specialRules": ["Close Order"]
+            },
+
+			  {
+              "name": "Mixed Spear/Bowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 26,
+			  "minBases": 3,
+              "maxBases": 6,
+              "baseEquipment": ["Spara", "Spear", "Bow"],
+              "specialRules": ["Close Order","Superior Fighters","Superior Shooters"]
+            }
+            
+            ],
+	"optionalEquipment": [
+  				
+         {
+              "name": "Halberd"
+              "pointsModifier": 2,
+		"targetProfile": "Spearmen",
+		"equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+]
+        },
+
+ 
+        {
+          "id": "the_free_companies_bidets",
+          "name": "Bidets",
+          "description": "Bidets have javelins and shield. Open Order.",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "the_free_companies_dismounted_caballeros",
+          "name": "Dismounted Caballeros",
+          "description": "Dismounted Caballeros Knights have heavy armour, spear and shield. Superior Fighters. May replace spear with double handed weapon (+2).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Heavy Armour","Spear","Shield"],
+          "specialRules": ["Close Order","Superior Fighters"],
+           "optionalEquipment": [
+            
+             {
+              "name": "Double Handed Weapon",
+              "pointsModifier": 2,
+				"equipmentAdded": "Double Handed Weapon",
+              "equipmentRemoved": "Spear",
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "the_free_companies_almogavars",
+          "name": "Almogavars",
+          "description": "Almogavars have javelins. Open Order. May have shield (+2). May have throwing spear (+2).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 12,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Throwing Spear",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Throwing Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "the_free_companies_mudejars",
+          "name": "Mudejars",
+          "description": "Mudejars have spear and shield. Open Order. May have light armour (+2). May replace spear and shield with either bow (free) or crossbow (+2).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+            {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Replace spear & shield with bow",
+               "disables": "Replace spear & shield with crossbow",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Bow"],
+               "equipmentRemoved": ["Spear","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Replace spear & shield with crossbow",
+               "disables": "Replace spear & shield with bow",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Crossbow"],
+               "equipmentRemoved": ["Spear","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+        
+          "id": "the_free_companies_cannon",
+          "name": "Cannon",
+          "description": "One gun and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Cannon",
+              "stats": {},
+              "pointsPerBase": 40,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        }
+        
+
+     ]
+    },
+
   
   
   
