@@ -916,7 +916,7 @@
           "specialRules": ["Close Order"],
            "optionalEquipment": [
               {
-              "name": "Halberd"
+              "name": "Halberd",
               "pointsModifier": 2,
 				"equipmentAdded": ["Halberd"],
               "equipmentRemoved": ["Spear"],  
@@ -943,7 +943,7 @@
           "specialRules": ["Open Order"],
            "optionalEquipment": [
              {
-              "name": "Crossbow"
+              "name": "Crossbow",
               "pointsModifier": 2,
 				"equipmentAdded": ["Crossbow"],
               "equipmentRemoved": ["Bow"],  
@@ -1021,7 +1021,7 @@
 	"optionalEquipment": [
   				
          {
-              "name": "Halberd"
+              "name": "Halberd",
               "pointsModifier": 2,
 		"targetProfile": "Spearmen",
 		"equipmentAdded": ["Halberd"],
