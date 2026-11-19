@@ -1375,7 +1375,7 @@
            ]
         },
         {
-"id": "the_kingdom_of_portugal_dismounted_caballeros_cf",
+"id": "the_kingdom_of_portugal_dismounted_caballeros_cu",
           "name": "Combined Formation Dismounted Caballeros",
           "description": "Dismounted Caballeros have heavy armour, spear and shield. Superior Fighters. May replace spear with double handed weapon (+2). Dismounted Caballeros de Cuantia have light armour, spear and shield. Superior Fighters. May have heavy armour (+2). May replace spear with double handed weapon (+2). Dismounted Caballeros and Dismounted Caballeros de Cuantia form a combine dunit with up to have the unit may be Dismounted Caballeros de Cuantia ",
           "category": "CommonTroops",
@@ -1485,10 +1485,10 @@
            ]
         },
         {
-          "id": "the_kingdom_of_portugal_cf",
+          "id": "the_kingdom_of_portugal_spearmen_rcherscf",
           "name": "Combined Formation Spearmen/Archers",
           "description": "Spearmen have light armour, spear and shield. Archers have light armour and bow. Inferior Fighters. Archers Close Order (+3). form combined Formation with Spearmen forming half the unit.",
-    "category": "Infantry",      
+    "category": "CommonTroops",      
 	"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
