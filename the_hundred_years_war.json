@@ -939,8 +939,8 @@
           "pointsPerBase": 9,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Bow","Light Armour","Inferior Fighters"],
-          "specialRules": ["Open Order"],
+          "baseEquipment": ["Bow","Light Armour"],
+          "specialRules": ["Open Order","Inferior Fighters"],
            "optionalEquipment": [
              {
               "name": "Crossbow",
@@ -1469,8 +1469,8 @@
           "pointsPerBase": 9,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Bow","Light Armour","Inferior Fighters"],
-          "specialRules": ["Open Order"],
+          "baseEquipment": ["Bow","Light Armour"],
+          "specialRules": ["Open Order","Inferior Fighters"],
            "optionalEquipment": [
              {
               "name": "Crossbow",
