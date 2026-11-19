@@ -1807,8 +1807,8 @@
 },
         {
           "id": "the_kingdom_of_portugal_jinetes",
-          "name": "Mudejars",
-          "description": "jinets have light armour, javelins and shield. Evade. Peninsuila Horsemen. May have spear (+1). May replace light armour with heavy armour (+1). The number of Jinete bases must be equal to or more than the number of other cavalry bases.",
+          "name": "Jinetes",
+          "description": "Jinetes have light armour, javelins and shield. Evade. Peninsuila Horsemen. May have spear (+1). May replace light armour with heavy armour (+1). The number of Jinete bases must be equal to or more than the number of other cavalry bases.",
           "category": "UncommonTroops",
           "type": "Cavalry",
           "defence": 4,
