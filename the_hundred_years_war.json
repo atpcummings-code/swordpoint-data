@@ -838,7 +838,7 @@
       ],
       "units": [
         {
-          "id": "the_free_companies_prince",
+          "id": "the_kingdom_of_navarre_prince",
           "name": "Prince",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -853,7 +853,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "the_free_companies_captain",
+          "id": "the_kingdom_of_navarre_captain",
           "name": "Captain",
           "description": "May ride a horse.",
           "category": "Commanders",
@@ -867,7 +867,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "the_free_companies_caballeros",
+          "id": "the_kingdom_of_navarre_caballeros",
           "name": "Caballeros",
           "description": "Caballeros have heavy armour, spear, javelins and shield. Superior Fighters. May have cloth barding (+1). May exchange spear and javelins for lance becoming Shock Cavalry (+4).",
           "category": "CommonTroops",
@@ -877,7 +877,7 @@
           "pointsPerBase": 24,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": ["HEavy Armour","Spear","Javelins","Shield"],
+          "baseEquipment": ["Heavy Armour","Spear","Javelins","Shield"],
           "specialRules": ["Open Order","Inferior Fighters"],
            "optionalEquipment": [
               {
@@ -902,7 +902,7 @@
            ]
         },
         {
-          "id": "the_free_companies_spearmen",
+          "id": "the_kingdom_of_navarre_spearmen",
           "name": "Spearmen",
           "description": "Spearmen have light armour, spear and shield. Close Order. May replace spear with halberd (+2).",
           "category": "CommonTroops",
@@ -929,7 +929,7 @@
         },
         
         {
-          "id": "the_free_companies_archers",
+          "id": "the_kingdom_of_navarre_archers",
           "name": "Archers",
           "description": "Archers have light armour and bow. Open Order. Inferior Fighters. May exchange bow for crossbow (+2).",
           "category": "CommonTroops",
@@ -955,7 +955,7 @@
            ]
         },
         {
-          "id": "the_free_companies_spearmen_archers_cf",
+          "id": "the_kingdom_of_navarre_archers_cf",
           "name": "Combined Formation Spearmen/Archers",
           "description": "Spearmen have light armour, spear and shield. Close Order. May replace spear with halberd (+2). Archers have light armour and bow. Close Order.",
     "category": "CommonTroops",      
@@ -1036,7 +1036,7 @@
 
  
         {
-          "id": "the_free_companies_bidets",
+          "id": "the_kingdom_of_navarre_bidets",
           "name": "Bidets",
           "description": "Bidets have javelins and shield. Open Order.",
           "category": "CommonTroops",
@@ -1051,7 +1051,7 @@
            "optionalEquipment": []
         },
         {
-          "id": "the_free_companies_dismounted_caballeros",
+          "id": "the_kingdom_of_navarre_caballeros",
           "name": "Dismounted Caballeros",
           "description": "Dismounted Caballeros Knights have heavy armour, spear and shield. Superior Fighters. May replace spear with double handed weapon (+2).",
           "category": "UncommonTroops",
@@ -1078,7 +1078,7 @@
           ]
         },
         {
-          "id": "the_free_companies_almogavars",
+          "id": "the_kingdom_of_navarre_almogavars",
           "name": "Almogavars",
           "description": "Almogavars have javelins. Open Order. May have shield (+2). May have throwing spear (+2).",
           "category": "UncommonTroops",
@@ -1114,7 +1114,7 @@
           ]
         },
         {
-          "id": "the_free_companies_mudejars",
+          "id": "the_kingdom_of_navarre_mudejars",
           "name": "Mudejars",
           "description": "Mudejars have spear and shield. Open Order. May have light armour (+2). May replace spear and shield with either bow (free) or crossbow (+2).",
           "category": "UncommonTroops",
@@ -1163,7 +1163,7 @@
         },
         {
         
-          "id": "the_free_companies_cannon",
+          "id": "the_kingdom_of_navarre_cannon",
           "name": "Cannon",
           "description": "One gun and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
