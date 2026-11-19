@@ -1882,7 +1882,7 @@
         }
      ]
     },
-	    "the_kingdom_of_aragon": {
+	     "the_kingdom_of_aragon": {
       "armyName": "The Kingdom of Aragon",
   
 	    "categories": [
@@ -2124,7 +2124,7 @@
           "id": "the_kingdom_of_aragon_spearmen_archers_cf",
           "name": "Combined Formation Spearmen/Archers",
           "description": "Spearmen have light armour, spear and shield. Archers have light armour and bow. Inferior Fighters. Archers Close Order (+3). form combined Formation with Spearmen forming half the unit.",
-    "category": "Infantry",      
+    "category": "CommonTroops",      
 	"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
@@ -2185,6 +2185,57 @@
             ],
 	"optionalEquipment": []    
 },
+        {
+          "id": "the_kingdom_of_aragon_bidets",
+          "name": "Bidets",
+          "description": "Bidets have javelins and shield. Open Order.",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "the_kingdom_of_aragon_almogavars",
+          "name": "Almogavars",
+          "description": "Almogavars have javelins. Open Order. May have shield (+2). May have throwing spear (+2).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Throwing Spear",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Throwing Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
 
  
         {
