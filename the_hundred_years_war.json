@@ -5630,7 +5630,7 @@
           "category": "UncommonTroops",
           "type": "Infantry", 
           "minBases": 3,
-          "maxBases": 2,
+          "maxBases": 12,
           "subProfiles": [
             {
               "name": "Foot Knights",
