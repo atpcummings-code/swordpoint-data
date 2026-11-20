@@ -1591,7 +1591,7 @@
              {
               "name": "Cloth Barding",
               "pointsModifier": 1,
-              "equipmentRemoved": ["Heavy Armour"],
+              "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
