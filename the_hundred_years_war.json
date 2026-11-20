@@ -5835,7 +5835,7 @@
               "pointsModifier": 10,
               "targetProfile": "Crew",
               "equipmentAdded": [
-                "1 Extra Crew"
+                "2 Extra Crew"
               ],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -5852,7 +5852,7 @@
               "pointsModifier": 15,
               "targetProfile": "Crew",
               "equipmentAdded": [
-                "1 Extra Crew"
+                "3 Extra Crew"
               ],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -5878,12 +5878,577 @@
             }
           ]
         }
-        
-        
-
      ]
     },
 
+"the_ordnance_of_charles_vii": {
+      "armyName": "The Ordnance of Charles VII 1445 -1453 AD",
+  
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "CommonTroops",
+          "name": "Common Troops",
+          "constraintType": "percentage",
+          "min": 40,
+          "max": 100
+        },
+        {
+          "id": "UncommonTroops",
+          "name": "Uncommon Troops",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33
+        },
+          {
+          "id": "Artillery",
+          "name": "Artillery",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 250,
+          "countPerThreshold": 1,
+          "rounding": "down"
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "the_ordnance_of_charles_vii_general",
+          "name": "Alderman",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_ordnance_of_charles_vii_captain",
+          "name": "Captain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_ordnance_of_charles_vii_mounted_knights",
+          "name": "Mounted Knights",
+          "description": "Mounted Knights have partial plate armour, lance and shield. Superior Fighters. Shock Cavalry. May exchange partial plate armour and shield for full plate armour. (free). May have cloth barding (+1). May be Veteran (+1).",
+          "category": "CommonTroops",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Partial Plate Armour","Lance","Shield"],
+          "specialRules": ["Open Order","Shock Cavalry","Superior Fighters"],
+           "optionalEquipment": [
+              {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Plate Armour"],
+               "equipmentRemoved": ["Partial Plate Armour","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "the_ordnance_of_charles_vii_mounted_retainers",
+          "name": "Mounted Retainers",
+          "description": "Mounted Retainers have light armour, spear and shield. May replace spear with lance (+1), or light crossbow (free). Troops without crossbow may have heavy armour (+1), or partial plate armour (+1) and cloth barding (+1).  ",
+          "category": "CommonTroops",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             {
+              "name": "Lance",
+               "disables": "Light Crossbow",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Lance"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }, 
+             {
+              "name": "Light Crossbow",
+               "disables": ["Heavy Armour", "Lance", "Partial Plate Armour"],
+              "pointsModifier": 0,
+				"equipmentAdded": ["Light Crossbow"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+               "disables": ["Light Crossbow","Partial Plate Armour"],
+              "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour",
+               "disables": ["Light Crossbow","Heavy Armour"],
+              "pointsModifier": 1,
+				"equipmentAdded": ["Partial Plate Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+"id": "the_ordnance_of_charles_vii_knights_retainers_cu",
+          "name": "Combined Unit Mounted Knights and Retainers",
+          "description": "Mounted Knights have partial plate armour, lance and shield. Superior Fighters. Shock Cavalry. May exchange partial plate armour and shield for full plate armour. (free). May have cloth barding (+1). May be Veteran (+1). Mounted Retainers have light armour, spear and shield. May replace spear with lance (+1), or light crossbow (free). Troops without crossbow may have heavy armour (+1), or partial plate armour (+1) and cloth barding (+1). Mounted Retainers form a Combined Unit with Mounted Knights.  The number of Mounted Retainers may not exceed twice the number of Mounted Knights.",
+          "category": "CommonTroops",
+          "type": "Cavalry", 
+          "minBases": 3,
+          "maxBases": 2,
+          "subProfiles": [
+            {
+              "name": "Mounted Knights",
+              "defence": 3,
+              "cohesion": 8,
+              "pointsPerBase": 26,
+              "minBases": 1,
+              "maxBases": 11,
+              "baseEquipment": ["Partial Plate Armour","Lance","Shield"],
+          "specialRules": ["Open Order","Shock Cavalry","Superior Fighters"]      },
+            {
+              "name": "Mounted Retainers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 8,
+"maxPercentage": 67,
+              "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": [
+
+{
+              "name": "Cloth Barding (Mounted Knights)",
+              "pointsModifier": 1,
+"targetProfile": "Mounted Knights",
+		"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Plate Armour  (Mounted Knights)",
+              "pointsModifier": 0,
+"targetProfile": "Mounted Knights",
+		"equipmentAdded": ["Plate Armour"],
+               "equipmentRemoved": ["Partial Plate Armour","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Lance (Mounted Retainers)",
+               "disables": "Light Crossbow",
+              "pointsModifier": 1,
+		"equipmentAdded": ["Lance"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }, 
+                          {
+              "name": "Cloth Barding (Mounted Retainers)",
+              "pointsModifier": 1,
+		"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour (Mounted Retainers)",
+               "disables": ["Partial Plate Armour (Mounted Retainers)"],
+              "pointsModifier": 1,
+		"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour (Mounted Retainers)",
+               "disables": ["Heavy Armour (Mounted Retainers)"],
+              "pointsModifier": 1,
+				"equipmentAdded": ["Partial Plate Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+ 
+]
+},
+{
+          "id": "the_ordnance_of_charles_vii_franc_archers",
+          "name": "Franc Archers",
+          "description": "Franc Archers have a bow. Open Order. Inferior Fighters. Every second unit may exchange bow for crossbow (+2).  Bow armed troops may have stakes (+2). Troops armed with Crossbow may have Pavise (+3).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Crossbow",
+               "disables": "Stakes",
+               "enableHidden": "Pavise",
+               "enabledEvery": 2,
+              "pointsModifier": 2,
+				"equipmentAdded": ["Crossbow"],
+               "equipmentRemoved": ["Bow"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stakes",
+               "disables": "Crossbow",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Stakes"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Pavise",
+               "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 3,
+				"equipmentAdded": ["Pavise"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "the_ordnance_of_charles_vii_foreign_knights",
+          "name": "Foreign Knights",
+          "description": "Foreign Knights have heavy or partial plate armour, lance and shield. Shock Cavalry. May have cloth barding (+1). Superior Fighters (+2). May alternatively may be fielded with heavy armour, spear and shield at a cost of 22 points. Spear armed troops are no longer Shock Cavalry but gain Massed Cavalry rule.",
+          "category": "UncommonTroops",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Lance","Shield"],
+          "specialRules": ["Open Order","Shock Cavalry"],
+           "optionalEquipment": [
+              {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour",
+               "disables": "Heavy Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Partial Plate Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Heavy Armour",
+               "disables": "Partial Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Superior Fighters",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Alternate Deployment",
+               "disables": ["Heavy Armour","Partial Plate Armour"],
+              "pointsModifier": -4,
+				"equipmentAdded": ["Heavy Armour","Spear"],
+               "equipmentRemoved": ["Lance"],
+              "rulesAdded": ["Massed Cavalry"],
+              "rulesRemoved": ["Shock Cavalry"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        
+       
+
+{
+          "id": "the_ordnance_of_charles_vii_breton_galeti",
+          "name": "Breton Galleti",
+          "description": "Breton Galleti have javelins. Skirmishers. Inferior Fighters. May have shield (+1) and throwing Spear (+1).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Shield",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Throwing Spear",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Throwing Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+         {
+          "id": "the_ordnance_of_charles_vii_handgunners",
+          "name": "Handgunners",
+          "description": "Handgunners have light armour and handgun. Skirmishers. Inferior Fighters. May have  heavy armour (+1).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Handgun"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "the_ordnance_of_charles_vii_mercenary_crossbowmen",
+          "name": "Mercenary Crossbowmen",
+          "description": "Mercenary Crossbowmen have crossbow and light armour. Open Order. Inferior Fighters. May have Pavise (+3).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Crossbow","Light Armour"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Pavise",
+              "pointsModifier": 3,
+				"equipmentAdded": ["Pavise"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+        
+          "id": "the_ordnance_of_charles_vii_cannon",
+          "name": "Cannon",
+          "description": "One gun and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Cannon",
+              "stats": {},
+              "pointsPerBase": 40,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        }
+     ]
+    },
+
+
+
+
+
+
+	  
 
 
 	  
