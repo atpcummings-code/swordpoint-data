@@ -2071,7 +2071,7 @@
         {
           "id": "the_kingdom_of_aragon_spearmen",
           "name": "Spearmens",
-          "description": "Spearmen have light armour, spear and shield.",
+          "description": "Spearmen have light armour, spear and shield. May replace spear with Halberd (+2).",
           "category": "CommonTroops",
           "type": "Infantry",
           "defence": 5,
