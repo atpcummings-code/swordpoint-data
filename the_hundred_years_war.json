@@ -181,7 +181,7 @@
         {
           "id": "glyndwr_rising_english_deserters",
           "name": "English Deserters",
-          "description": "English Deserters have longbowmen and light armour. Open Order. There may be one unit of english deserters for every Men at Arms unit in the army.",
+          "description": "English Deserters have longbow and light armour. Open Order. There may be one unit of english deserters for every Men at Arms unit in the army.",
           "category": "CommonTroops",
           "type": "Infantry",
           "defence": 6,
