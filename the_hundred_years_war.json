@@ -4290,6 +4290,952 @@
      ]
     },
 
+"burgundy": {
+      "armyName": "Burgundy 1364 -1460 AD",
+  
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "CommonTroops",
+          "name": "Common Troops",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 100
+        },
+        {
+          "id": "UncommonTroops",
+          "name": "Uncommon Troops",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+          {
+          "id": "Artillery",
+          "name": "Artillery",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 500,
+          "countPerThreshold": 1,
+          "rounding": "down"
+        },
+		   {
+          "id": "Allies",
+          "name": "Allies",
+         "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [{"key": "early_war_host"}],
+          "maxAlliedArmiesAllowed": 1
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "burgundy_duke",
+          "name": "Duke",
+          "description": "May ride a horse. The Duke must always lead a unit of Knights that count as his household guard, As long s the Duke is alive, and not fleeing, the unit he leads is Stubborn and may re-roll one failed Cohesion test during the game.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "excludes": ["captain_general"],
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 10,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "burgundy_captain_general",
+          "name": "Alderman",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "excludes": ["captain_duke"],
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "burgundy_noble",
+          "name": "Noble",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "burgundy_mounted_knights",
+          "name": "Mounted Knights",
+          "description": "Mounted Knights have partial plate armour, lance and shield. Impetuous. Shock Cavalry. Arrogant Pride. May have cloth barding (+1). May be Veteran (+1). If teh army is led by the Duke then one unit must be designated Household Guard and are Superior Fighters (+2) and must always be led by the Duke.",
+          "category": "CommonTroops",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Partial Plate Armour","Lance","Shield"],
+          "specialRules": ["Open Order","Impetuous", "Shock Cavalry", "Arrogant Pride"],
+           "optionalEquipment": [
+              {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+                "maxUnits": 1,
+				"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Household Guard",
+              "pointsModifier": 2,
+               "maxUnits": 1,
+               "requiresUnitInRoster": "burgundy_duke", 
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters","Stubborn","One Cohesion Re-roll"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "burgundy_foot_knights",
+          "name": "Foot Knights",
+          "description": "Foot Knights have partial armour and spear. Superior Fighters. Riding Horses. May have shield (+2), Halberd (+2) or double handed weapon (+2).",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 25,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Partial Palte Armour","Spear"],
+          "specialRules": ["Close Order","Superior Fighters","Riding Horses"],
+           "optionalEquipment": [
+             {
+              "name": "Halberd",
+               "disables": "Double Handed Weapon",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Double Handed Weapon",
+               "disables": "Halberd",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double Handed Weapon"],
+              "equipmentRemoved": ["Spear"],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+"id": "burgundy_mounted_demilances_and_coustilliers_cu",
+          "name": "Combined Formation Mounted knights with Demi-lances and Coustilliers",
+          "description": "Mounted Knights have partial plate armour, lance and shield. Impetuous. Shock Cavalry. Arrogant Pride. May have cloth barding (+1). May be Veteran (+1). If the army is led by the Duke then one unit must be designated Household Guard and are Superior Fighters (+2) and must always be led by the Duke. Mounted Demi-lances and Coustilliers have light armour and spear. Impetuous. Shock Cavalry. Arrogant Pride. May have a shield (+1), may have heavy armour (+1). May replace spear with lance (+1). They form a Combined Unit with Mounted Knights. Up to half the unit may be Mounted Demi-lances and Coustilliers.",
+          "category": "CommonTroops",
+          "type": "Infantry", 
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Mounted Knights",
+              "defence": 3,
+              "cohesion": 8,
+              "pointsPerBase": 26,
+              "minBases": 3,
+              "maxBases": 7,
+              "baseEquipment": ["Partial Plate Armour","Lance","Shield"],
+              "specialRules": ["Open Order","Impetuous", "Shock Cavalry", "Arrogant Pride"]
+            },
+            {
+              "name": "Mounted Demi-lances and Coustilliers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 21,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Spear", "Light Armour"],
+              "specialRules": ["Open Order","Impetuous", "Shock Cavalry", "Arrogant Pride"]
+            }
+            
+            ],
+"optionalEquipment": [
+            {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+	"targetProfile": "Mounted Knights",
+				"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 1,
+	"targetProfile": "Mounted Knights",
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Household Guard",
+              "pointsModifier": 2,
+	"targetProfile": "Mounted Knights",
+               "maxUnits": 1,
+               "requiresUnitInRoster": "burgundy_duke", 
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters","Stubborn","One Cohesion Re-roll"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Shield",
+              "pointsModifier": 1,
+	"targetProfile": "Mounted Demi-lances and Coustilliers",
+		"equipmentAdded": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Lance",
+              "pointsModifier": 1,
+	"targetProfile": "Mounted Demi-lances and Coustilliers",
+		"equipmentAdded": ["Lance"],
+	"equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+
+
+]
+},
+{
+"id": "burgundy_foot_demilances_and_coustilliers_cu",
+          "name": "Combined Formation Foot knights with Demi-lances and Coustilliers",
+          "description": "Foot Knights have partial armour and spear. Superior Fighters. Riding Horses. May have shield (+2), Halberd (+2) or double handed weapon (+2). Foot Demmi-lances and Coustilliers have light armour and spear. Riding Horses  May have shield +1), may have heavy armour (+1). May replace spear with halberd (+2) or double handed weapon (+2). They form a Combined Unit with Foot Kinghts with the Foot Demmi-lances and Coustilliers forming up to three quarters of the unit.",
+          "category": "CommonTroops",
+          "type": "Infantry", 
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Foot Knights",
+              "defence": 5,
+              "cohesion": 8,
+              "pointsPerBase": 25,
+              "minBases": 3,
+              "maxBases": 11,
+              "baseEquipment": ["Partial Palte Armour","Spear"],
+          "specialRules": ["Close Order","Superior Fighters","Riding Horses"]            },
+            {
+              "name": "Foot Demi-lances and Coustilliers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 15,
+              "minBases": 1,
+              "maxBases": 9,
+              "maxPercentage": 75,
+              "baseEquipment": ["Spear", "Light Armour"],
+              "specialRules": ["Close Order","Riding Horses"]
+            }
+            
+            ],
+"optionalEquipment": [
+            
+{
+              "name": "Halberd (Knights)",
+               "disables": "Double Handed Weapon (Knights)",
+              "pointsModifier": 2,
+"targetProfile": "Foot Knights",
+		"equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Double Handed Weapon (Knights)",
+               "disables": "Halberd (Knights)",
+              "pointsModifier": 2,
+"targetProfile": "Foot Knights",
+		"equipmentAdded": ["Double Handed Weapon"],
+              "equipmentRemoved": ["Spear"],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield (Knights)",
+              "pointsModifier": 2,
+"targetProfile": "Foot Knights",
+		"equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+ {
+              "name": "Shield (Demi-lances and Coustilliers)",
+              "pointsModifier": 1,
+		"targetProfile": "Foot Demi-lances and Coustilliers",
+		"equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Heavy Armour (Demi-lances and Coustilliers)",
+              "pointsModifier": 1,
+		"targetProfile": "Foot Demi-lances and Coustilliers",
+		"equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Halberd (Demi-lances and Coustilliers)",
+               "disables": "Double Handed Weapon (Demi-lances and Coustilliers)",
+              "pointsModifier": 2,
+"targetProfile": "Foot Demi-lances and Coustilliers",
+		"equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Double Handed Weapon (Demi-lances and Coustilliers)",
+               "disables": "Halberd (Demi-lances and Coustilliers)",
+              "pointsModifier": 2,
+"targetProfile": "Foot Demi-lances and Coustilliers",
+		"equipmentAdded": ["Double Handed Weapon"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+
+]
+},
+
+      
+        {
+          "id": "burgundy_mounted_mercenary_crossbowmen",
+          "name": "Mounted Mercenary Crossbowmen",
+          "description": "Mounted Mercenary Crossbowmen have light armour and light crossbow. Inferior Fighters., May have heavy armour (+2) .",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Crossbow","Light Armour"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "burgundy_foot_mercenary_crossbowmen",
+          "name": "Foot Mercenary Crossbowmen",
+          "description": "Foot Mercenary Crossbowmen have crossbow and light armour.. Inferior Fighters. Open Order., May have heavy armour (+2). May have pavise (+3). .",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Crossbow","Light Armour"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Pavise",
+              "pointsModifier": 3,
+				"equipmentAdded": ["Pavise"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+
+{
+          "id": "burgundy_flemish_pikemen",
+          "name": "Flemish Pikemen",
+          "description": "Flemish Pikemen have a pike. Medieval Phalanx. May have light armour (+2) or heavy armour (+4).",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Pike"],
+          "specialRules": ["Close Order","Medieval Phalanx"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+               "disables": "Heavy Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+               "disables": "Light Armour",
+              "pointsModifier": 4,
+				"equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+
+        
+{
+          "id": "burgundy_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Open Order. Inferior Fighters. May have light armour (+2). May replace bow with longbow (+2). May have Stakes (+2). Alternatively, units with bow and no armour may be fielded as Skirmihsers at a cost of 5 points per base. If fielded as skirmishers the unit may not take Longbow or Stakes.",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+               "disables": "Skirmishers",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Longbow",
+               "disables": "Skirmishers",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Longbow"],
+              "equipmentRemoved": ["Bow"],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Skirmishers",
+               "disables": ["Longbow","Stakes"],
+              "pointsModifier": -4,
+				"equipmentAdded": [],
+              "equipmentRemoved": [],  
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stakes",
+               "disables": ["Skirmishers"],
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+              "equipmentRemoved": [],  
+              "rulesAdded": ["Stakes"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "burgundy_mounted_crossbowmen",
+          "name": "Mounted Crossbowmen",
+          "description": "Mounted Crossbowmen have light crossbow. Inferior Fighters., May have light armour (+1) .",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Crossbow"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "burgundy_militia_crossbowmen",
+          "name": "Militia Crossbowmen",
+          "description": "Militia Crossbowmen have crossbow. Open Order. Inferior Fighters. Open Order., May have light armour (+2). May have pavise (+3). ",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Crossbow"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Pavise",
+              "pointsModifier": 3,
+				"equipmentAdded": ["Pavise"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+           ]
+        },      
+{
+          "id": "burgundy_handgunners",
+          "name": "Handgunners",
+          "description": "Handgunners have handgun. Skirmishers. Inferior Fighters. May have light armour (+1) or heavy armour (+2).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Handgun"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+               "Disables": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+               "Disables": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+
+
+{
+          "id": "burgundy_mounted_mercenary_knights",
+          "name": "Mounted Mercenary Knights",
+          "description": "Mounted Mercenary Knights have heavy armour, lance and shield. Impetuous. Shock Cavalry. May have cloth barding (+1). . May be upgraded to Superior Fighters (+2). May exchange lance for spear (-1).",
+          "category": "UncommonTroops",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Lance","Shield","Heavy Armour"],
+          "specialRules": ["Open Order","Shock Cavalry","Impetuous"],
+           "optionalEquipment": [
+             {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+               "equipmentAdded": ["Cloth Barding"],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Superior Fighters",
+              "pointsModifier": 2,
+               "equipmentAdded": [],
+              "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Spear",
+              "pointsModifier": -1,
+               "equipmentAdded": ["Spear"],
+              "equipmentRemoved": ["Lance"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "burgundy_italian_brigans",
+          "name": "Italian Brigans",
+          "description": "Italian Brigans have spear. Open Order.  May have light armour (+2). May replace spear with halberd (+2).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+            
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+               "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Halberd",
+              "pointsModifier": 2,
+               "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "burgundy_mounted_valets_darms",
+          "name": "Mounted Valets D'Arms",
+          "description": "Mounted Valets D'Arms have light armour, spear and shield. May exchange spear for lance (+1). May have heavy armour (+1).",
+          "category": "UncommonTroops",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear","Shield","Light Armour"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             {
+              "name": "Lance",
+              "pointsModifier": 1,
+               "equipmentAdded": ["Lance"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+               "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+
+        
+         {
+          "id": "burgundy_urban_militia",
+          "name": "Urban Militia",
+          "description": "Urban Militia have a spear. May have light armour (+2) or heavy armour (+4). May have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+            
+             {
+              "name": "Light Armour",
+               "disables": "Heavy Armour",
+              "pointsModifier": 1,
+               "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+               "disables": "Light Armour",
+              "pointsModifier": 1,
+               "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Shield",
+              "pointsModifier": 1,
+               "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Halberd",
+               "disables": "Double Handed Weapon",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Double Handed Weapon",
+               "disables": "Halberd",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double Handed Weapon"],
+              "equipmentRemoved": ["Spear"],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+        
+          "id": "burgundy_cannon",
+          "name": "Cannon",
+          "description": "One gun and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Cannon",
+              "stats": {},
+              "pointsPerBase": 40,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        }
+        
+        
+
+     ]
+    },
 
 
 
