@@ -4118,7 +4118,6 @@
           "cohesion": 7,
           "pointsPerBase": 14,
           "maxCountAllowed": 1,
-          "requires": { "unitIds": ["glyndwr_rising_mounted_men_at_arms", "glyndwr_rising_dismounted_men_at_arms"], "count": 1 },
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Longbow","Light Armour"],
