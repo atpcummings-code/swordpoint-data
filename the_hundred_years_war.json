@@ -4420,7 +4420,7 @@
              {
               "name": "Household Guard",
               "pointsModifier": 2,
-               "requiresUnitInRoster": "burgundy_duke" 
+               "requiresUnitInRoster": "burgundy_duke",
 				"equipmentAdded": [],
                "equipmentRemoved": [],
               "rulesAdded": ["Superior Fighters"],
