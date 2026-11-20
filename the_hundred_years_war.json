@@ -4514,7 +4514,7 @@
             ],
 "optionalEquipment": [
             {
-              "name": "Cloth Barding",
+              "name": "Cloth Barding (Knights)",
               "pointsModifier": 1,
 	"targetProfile": "Mounted Knights",
 				"equipmentAdded": ["Cloth Barding"],
@@ -4524,7 +4524,7 @@
               "cohesionModifier": 0
             },
              {
-              "name": "Veteran",
+              "name": "Veteran  (Knights)",
               "pointsModifier": 1,
 	"targetProfile": "Mounted Knights",
 				"equipmentAdded": [],
@@ -4537,7 +4537,6 @@
              {
               "name": "Household Guard",
               "pointsModifier": 2,
-	"targetProfile": "Mounted Knights",
                "maxUnits": 1,
                "requiresUnitInRoster": "burgundy_duke", 
 				"equipmentAdded": [],
@@ -4548,7 +4547,7 @@
               "cohesionModifier": 0
             },
 {
-              "name": "Shield",
+              "name": "Shield (Demi-lances and Coustilliers)",
               "pointsModifier": 1,
 	"targetProfile": "Mounted Demi-lances and Coustilliers",
 		"equipmentAdded": ["Shield"],
@@ -4558,7 +4557,7 @@
               "cohesionModifier": 0
             },
 {
-              "name": "Lance",
+              "name": "Lance (Demi-lances and Coustilliers)",
               "pointsModifier": 1,
 	"targetProfile": "Mounted Demi-lances and Coustilliers",
 		"equipmentAdded": ["Lance"],
@@ -4835,7 +4834,7 @@
             },
               {
               "name": "Skirmishers",
-               "disables": ["Longbow","Stakes"],
+               "disables": ["Longbow","Stakes","Light Armour"],
               "pointsModifier": -4,
 				"equipmentAdded": [],
               "equipmentRemoved": [],  
