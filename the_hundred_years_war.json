@@ -1592,8 +1592,8 @@
               "name": "Cloth Barding",
               "pointsModifier": 1,
               "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
+             "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
@@ -2279,8 +2279,8 @@
               "name": "Cloth Barding",
               "pointsModifier": 1,
               "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
@@ -3322,8 +3322,8 @@
               "name": "Cloth Barding",
               "pointsModifier": 1,
               "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
@@ -4189,8 +4189,8 @@
               "name": "Cloth Barding",
               "pointsModifier": 1,
               "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
