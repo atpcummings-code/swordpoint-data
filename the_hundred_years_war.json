@@ -5783,7 +5783,7 @@
           "id": "scots_common_army_levies",
           "name": "Levies",
           "description": "Levies have a spear. Open Order. Inferior Fighters.",
-          "category": "CommonTroops",
+          "category": "UncommonTroops",
           "type": "Infantry",
           "defence": 7,
           "cohesion": 5,
