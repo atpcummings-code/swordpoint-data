@@ -2298,7 +2298,7 @@
         {
           "id": "the_kingdom_of_aragon_military_order_infantry",
           "name": "Military Order Infantry",
-          "description": "Military Order Infantry have light armour, spear and shield. May replace spear with halberd (+2). May have heavy armour (+2). MAy be Stubborn (+2).",
+          "description": "Military Order Infantry have light armour, spear and shield. May replace spear with halberd (+2). May have heavy armour (+2). May be Stubborn (+2).",
           "category": "UncommonTroops",
           "type": "Infantry",
           "defence": 5,
