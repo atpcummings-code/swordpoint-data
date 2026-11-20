@@ -6155,7 +6155,7 @@
           "id": "the_ordnance_of_charles_vii_franc_archers",
           "name": "Franc Archers",
           "description": "Franc Archers have a bow. Open Order. Inferior Fighters. Every second unit may exchange bow for crossbow (+2).  Bow armed troops may have stakes (+2). Troops armed with Crossbow may have Pavise (+3).",
-          "category": "UncommonTroops",
+          "category": "CommonTroops",
           "type": "Infantry",
           "defence": 7,
           "cohesion": 6,
