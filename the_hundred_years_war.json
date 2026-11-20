@@ -5285,7 +5285,7 @@
       "units": [
         {
           "id": "scots_common_army_general",
-          "name": "Alderman",
+          "name": "General",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
