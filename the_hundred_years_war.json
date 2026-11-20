@@ -3715,7 +3715,7 @@
         },
         {
           "id": "flanders_communal_army_mounted_burghers",
-          "name": "Caballeros",
+          "name": "Mounted Burghers",
           "description": "Mounted Burghers have heavy armour, spear and shield. May exchange spear for lance (+1). One unit may have cloth barding (+1).",
           "category": "CommonTroops",
           "type": "Cavalry",
