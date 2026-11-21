@@ -7041,7 +7041,7 @@
             },
              {
               "name": "Heavy Armour & Halberd",
-              "pointsModifier": 0,
+              "pointsModifier": 2,
 				"equipmentAdded": ["Heavy Armour","Halberd"],
                "equipmentRemoved": ["Light Armour","Shield"],
               "rulesAdded": [],
