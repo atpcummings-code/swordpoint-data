@@ -427,7 +427,7 @@
           "constraintType": "pointsRatio",
           "pointsThreshold": 1250,
           "countPerThreshold": 1,
-          "rounding": "down"
+          "rounding": "up"
         },
 		   {
           "id": "Allies",
@@ -1519,7 +1519,7 @@
           "constraintType": "pointsRatio",
           "pointsThreshold": 1250,
           "countPerThreshold": 1,
-          "rounding": "down"
+          "rounding": "up"
         },
 		   {
           "id": "Allies",
@@ -2406,7 +2406,7 @@
           "constraintType": "pointsRatio",
           "pointsThreshold": 1250,
           "countPerThreshold": 1,
-          "rounding": "down"
+          "rounding": "up"
         },
 		   {
           "id": "Allies",
@@ -3274,7 +3274,7 @@
           "constraintType": "pointsRatio",
           "pointsThreshold": 750,
           "countPerThreshold": 1,
-          "rounding": "down"
+          "rounding": "up"
         },
 		   {
           "id": "Allies",
@@ -3927,7 +3927,7 @@
           "constraintType": "pointsRatio",
           "pointsThreshold": 500,
           "countPerThreshold": 1,
-          "rounding": "down"
+          "rounding": "up"
         },
 		   {
           "id": "Allies",
@@ -4873,7 +4873,7 @@
           "constraintType": "pointsRatio",
           "pointsThreshold": 1250,
           "countPerThreshold": 1,
-          "rounding": "down"
+          "rounding": "up"
         },
 		   {
           "id": "Allies",
@@ -5595,7 +5595,7 @@
           "constraintType": "pointsRatio",
           "pointsThreshold": 250,
           "countPerThreshold": 1,
-          "rounding": "down"
+          "rounding": "up"
         }
         
       ],
@@ -6156,7 +6156,7 @@
           "constraintType": "pointsRatio",
           "pointsThreshold": 1250,
           "countPerThreshold": 1,
-          "rounding": "down"
+          "rounding": "up"
         }
         
       ],
@@ -7752,7 +7752,7 @@
           "constraintType": "pointsRatio",
           "pointsThreshold": 1500,
           "countPerThreshold": 1,
-          "rounding": "down"
+          "rounding": "up"
         }
         
       ],
