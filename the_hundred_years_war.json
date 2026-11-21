@@ -8403,6 +8403,53 @@
             }
            ]
         },
+		  {
+          "id": "early_war_host_brigans",
+          "name": "Brigans",
+          "description": "Brigans have spear. Open Order.  May have light armour (+2), shield (+2). May exchange spear for halberd (+2).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+            
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+               "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+              "pointsModifier": 2,
+               "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Halberd",
+              "pointsModifier": 2,
+               "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
 {
           "id": "early_war_host_feudal_levies",
           "name": "Feudal Levies",
@@ -8428,6 +8475,22 @@
               "cohesionModifier": 0
             }
            ]
+        },
+		  {
+          "id": "early_war_host_militia_archers",
+          "name": "Militia Archers",
+          "description": "Militia Archers have a bow. Skirmishers. Inferior Fighters",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 4,
+             "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+           "optionalEquipment": []
         },
 {
           "id": "early_war_host_breton_galeti",
