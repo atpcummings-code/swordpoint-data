@@ -7752,7 +7752,7 @@
           "constraintType": "pointsRatio",
           "pointsThreshold": 1500,
           "countPerThreshold": 1,
-          "rounding": "up"
+          "rounding": "down"
         }
         
       ],
@@ -8215,8 +8215,568 @@
             }
            ]
 },  
-
-
+{
+          "id": "early_war_host_foot_mounted_sergeants",
+          "name": "Mounted Sergeants",
+          "description": "Mounted Sergeants have light armour and spear. May have shield (+1) and heavy armour (+1).",
+          "category": "UncommonTroops",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+              
+             {
+              "name": "Shield",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "early_war_host_foot_sergeants",
+          "name": "Foot Sergeants",
+          "description": "Foot Sergeants have light armour and spear. May have shield (+2). May exchange light armour and shield for heavy armour and halberd (+2)",
+          "category": "UncommonTroops",
+          "type": "Infnatry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Spear"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour & Halberd",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Heavy Armour","Halberd"],
+               "equipmentRemoved": ["Light Armour","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "early_war_host_foreign_knights",
+          "name": "Foreign Knights",
+          "description": "Foreign Knights have heavy or partial plate armour, lance and shield. Imeptuous. Shock Cavalry. May have cloth barding (+1). Superior Fighters (+2). May exchange lance for spear (-4).  Spear armed troops are no longer Shock Cavalry but gain the Massed Cavalry rule.",
+          "category": "UncommonTroops",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Lance","Shield"],
+          "specialRules": ["Open Order","Shock Cavalry"],
+           "optionalEquipment": [
+              {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Spear",
+              "pointsModifier": -4,
+				"equipmentAdded": ["Spear"],
+               "equipmentREemoved": ["Lance"],
+              "rulesAdded": ["Massed Cavalry"],
+              "rulesRemoved": ["Shock Cavalry"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour",
+               "disables": "Heavy Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Partial Plate Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Heavy Armour",
+               "disables": "Partial Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Superior Fighters",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "early_war_host_town_militia",
+          "name": "Town Militia",
+          "description": "Town Militia have spear. May exchange spear for halberd (+2) or double handed weapon (+2). May have light armour (+2), shield (+2)",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+              {
+              "name": "Halberd",
+		"disables": "Double Handed Weapon",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Halberd"],
+               "equipmentRemvoed": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Double Handed Weapon",
+		"disables": "Halberd",		
+              "pointsModifier": 2,
+		"equipmentAdded": ["Double Handed Weapon"],
+                "equipmentRemvoed": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "early_war_host_feudal_levies",
+          "name": "Feudal Levies",
+          "description": "Feudal Levies have a spear. Open Order. Inferior Fighters.Levies. May have shield (+2).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 3,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Open Order","Inferior Fighters","Levies"],
+           "optionalEquipment": [
+             {
+              "name": "Shield",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "early_war_host_breton_galeti",
+          "name": "Breton Galleti",
+          "description": "Breton Galleti have javelins. Skirmishers. Inferior Fighters. May have shield (+1). May exchange javelins for throwing Spear (free).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Shield",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Throwing Spear",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Throwing Spear"],
+               "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+       {
+          "id": "early_war_host_light_gun",
+          "name": "Light Gun",
+          "description": "One light gun and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Cannon",
+              "stats": {},
+              "pointsPerBase": 25,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+{
+          "id": "early_war_host_potdefer",
+          "name": "Pot-de-Fer",
+          "description": "Pot-de-Fer and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Pot-de-Fer",
+              "stats": {},
+              "pointsPerBase": 10,
+              "specialRules": ["Immovable","Slow Reload"]
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+              {
+          "id": "early_war_host_light_bombard",
+          "name": "Light Bombard",
+          "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Light Bombard",
+              "stats": {},
+              "pointsPerBase": 15,
+              "specialRules": ["Slow Reload"]
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+              {
+          "id": "early_war_host_medium_bombard",
+          "name": "Medium Bombard",
+          "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Medium Bombard",
+              "stats": {},
+              "pointsPerBase": 20,
+              "specialRules": ["Immovable","Slow Reload"]
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
         
         
       ]
