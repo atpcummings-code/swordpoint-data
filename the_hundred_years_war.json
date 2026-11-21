@@ -8216,7 +8216,7 @@
            ]
 },  
 {
-          "id": "early_war_host_foot_mounted_sergeants",
+          "id": "early_war_host_mounted_sergeants",
           "name": "Mounted Sergeants",
           "description": "Mounted Sergeants have light armour and spear. May have shield (+1) and heavy armour (+1).",
           "category": "UncommonTroops",
