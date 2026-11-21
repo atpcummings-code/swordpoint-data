@@ -7736,6 +7736,14 @@
           "min": 0,
           "max": 40
         },
+          {
+          "id": "Artillery",
+          "name": "Artillery",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 1500,
+          "countPerThreshold": 1,
+          "rounding": "down"
+        },
 		   {
           "id": "Allies",
           "name": "Allies",
@@ -7745,14 +7753,6 @@
           "max": 25,
           "alliedArmyKeys": [{"key": "early_war_host"}],
           "maxAlliedArmiesAllowed": 1
-        },
-          {
-          "id": "Artillery",
-          "name": "Artillery",
-          "constraintType": "pointsRatio",
-          "pointsThreshold": 1500,
-          "countPerThreshold": 1,
-          "rounding": "down"
         }
         
       ],
