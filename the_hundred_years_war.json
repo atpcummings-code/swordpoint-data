@@ -9478,33 +9478,7 @@
             }
           ]
         },
-        {
-          "id": "late_war_host_mercenary_crossbowmen",
-          "name": "Mercenary Crossbowmen",
-          "description": "Mercenary Crossbowmen have crossbow and light armour. Inferior Fighters. Open Order. May have a Pavise (+4).",
-          "category": "UncommonTroops",
-          "type": "Infantry",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 12,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Crossbow","Light Armour"],
-          "specialRules": ["Open Order","Inferior Fighters"],
-           "optionalEquipment": [
-              
-             {
-              "name": "Pavise",
-              "pointsModifier": 4,
-				"equipmentAdded": ["Pavise"],
-               "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -2,
-              "cohesionModifier": 0
-            }
-           ]
-},  
+        
 {
           "id": "late_war_host_mounted_sergeants",
           "name": "Mounted Sergeants",
@@ -9554,6 +9528,7 @@
             }
            ]
         },
+		  
 {
           "id": "late_war_host_foot_sergeants",
           "name": "Foot Sergeants",
@@ -9607,7 +9582,7 @@
         {
           "id": "late_war_host_mercenary_crossbowmen",
           "name": "Mercenary Crossbowmen",
-          "description": "Mercenary Crossbowmen have crossbow and light armour. Open Order. May have Pavise (+3).",
+          "description": "Mercenary Crossbowmen have crossbow and light armour. Open Order. May have a Pavise (+3).",
           "category": "UncommonTroops",
           "type": "Infantry",
           "defence": 6,
@@ -9618,6 +9593,7 @@
           "baseEquipment": ["Crossbow","Light Armour"],
           "specialRules": ["Open Order"],
            "optionalEquipment": [
+              
              {
               "name": "Pavise",
               "pointsModifier": 3,
@@ -9629,7 +9605,7 @@
               "cohesionModifier": 0
             }
            ]
-        },
+},  
         {
           "id": "late_war_host_foreign_knights",
           "name": "Foreign Knights",
