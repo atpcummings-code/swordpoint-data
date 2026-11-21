@@ -6442,7 +6442,1592 @@
         }
      ]
     },
+"franco_scottish_host": {
+      "armyName": "Franco Scottish Host 1415 - 1429 AD",
+  
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "CommonTroops",
+          "name": "Common Troops",
+          "constraintType": "percentage",
+          "min": 40,
+          "max": 100
+        },
+        {
+          "id": "UncommonTroops",
+          "name": "Uncommon Troops",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 40
+        },
+          {
+          "id": "Artillery",
+          "name": "Artillery",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 1250,
+          "countPerThreshold": 1,
+          "rounding": "down"
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "franco_scottish_host_general",
+          "name": "Alderman",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "franco_scottish_host_captain",
+          "name": "Captain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        
+        {
+          "id": "franco_scottish_host_foot_knights",
+          "name": "Foot Knights",
+          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. Riding Horses. May have shield (+2), halberd (+2) or double handed weapon (+2). Unis equipped with shield may replace shield and partial plate with full plate armour (free). May be Veteran (+2). May be Stubborn (+2).",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Partial Plate Armour","Spear"],
+          "specialRules": ["Close Order","Superior Fighters", "Riding Horses"],
+           "optionalEquipment": [
+              {
+              "name": "Halberd",
+              "disables": "Double Handed Weapon",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Double Handed Weapon",
+              "disables": "Halberd",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double Handed Weapon"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+              "enableHidden": "Plate Armour",
+               "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Plate Armour",
+               "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Plate Armour"],
+               "equipmentRemoved": ["Partial Plate Armour", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+		 "id": "early_war_host_foot_knights_retainers_cu",
+          "name": "Combined Unit Foot Knights/Retainers",
+          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. Riding Horses. May have shield (+2), halberd (+2) or double handed weapon (+2). Unis equipped with shield may replace shield and partial plate with full plate armour (free). May be Veteran (+2). May be Stubborn (+2). Foot Retainers have light armour and spear. Riding Horses.  May have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2) and may then have heavy armour (+2). Foot Retainers form a Combined unit with Foot Knights. Up to three quarters of the unit may be Foot Retainers.",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Foot Knights",
+              "defence": 5,
+              "cohesion": 7,
+              "pointsPerBase": 21,
+              "minBases": 2,
+              "maxBases": 11,
+          "baseEquipment": ["Partial Plate Armour","Spear"],
+          "specialRules": ["Close Order","Superior Fighters", "Riding Horses"]
+            },
+            {
+              "name": "Foot Retainers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 7,
+              "pointsPerBase": 15,
+              "minBases": 1,
+              "maxBases": 9,
+              "maxPercentage": 75,
+              "baseEquipment": ["Spear", "Light Armour"],
+              "specialRules": ["Close Order", "Riding Horses"]
+            }
+            
+            ],
+		"optionalEquipment": [
+          {
+              "name": "Halberd (Knights)",
+            "targetProfile": "Foot Knights",
+              "disables": "Double Handed Weapon (Knights)",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Double Handed Weapon (Knights)",
+               "targetProfile": "Foot Knights",
+              "disables": "Halberd (Knights)",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Double Handed Weapon"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield (Knights)",
+               "targetProfile": "Foot Knights",
+              "enableHidden": "Plate Armour (Knights)",
+               "pointsModifier": 2,
+		"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Plate Armour (Knights)",
+               "targetProfile": "Foot Knights",
+               "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 0,
+		"equipmentAdded": ["Plate Armour"],
+               "equipmentRemoved": ["Partial Plate Armour", "Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran (Knights)",
+               "targetProfile": "Foot Knights",
+              "pointsModifier": 2,
+		"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn (Knights)",
+               "targetProfile": "Foot Knights",
+              "pointsModifier": 2,
+		"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Halberd (Retainers)",
+  "targetProfile": "Foot Retainers",
+              "disables": "Double Handed Weapon (Retainers)",
+		"enableHidden": "Heavy Armour (Retainers)",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Double Handed Weapon (Retainers)",
+               "targetProfile": "Foot Retainers",
+              "disables": "Halberd (Retainers)",
+		"enableHidden": "Heavy Armour (Retainers)",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Double Handed Weapon"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield (Retainers)",
+               "targetProfile": "Foot Retainers",
+               "pointsModifier": 2,
+		"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour (Retainers)",
+               "targetProfile": "Foot Retainers",
+               "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 0,
+		"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "franco_scottish_host_mounted_militia_crossbowmen",
+          "name": "Mounted Militia Crossbowmen",
+          "description": "Mounted Militia Crossbowmen have light crossbow. Inferior Fighters. May have light armour (+1).",
+          "category": "CommonTroops",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Crossbow"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+},
 
+      {
+          "id": "franco_scottish_host_foot_militia_crossbowmen",
+          "name": "Foot Militia Crossbowmen",
+          "description": "Foot Militia Crossbowmen have crossbow. Inferior Fighters. Open Order. May have light armour (+2). May have a Pavise (+3).",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Crossbow"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+              {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Pavise",
+              "pointsModifier": 3,
+				"equipmentAdded": ["Pavise"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+           ]
+},  
+{
+          "id": "franco_scottish_host_scottish_mounted_knights",
+          "name": "Scottish Mounted Knights",
+          "description": "Scottish Mounted Knights have heavy armour, spear and shield. Superior Fighters. May have partial plate armour (free). May exchange spear for lance (+1). May be Stubborn (+2).",
+          "category": "CommonTroops",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+        "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Heavy Armour","Spear","Shield"],
+          "specialRules": ["Open Order","Superior Fighters"],
+           "optionalEquipment": [
+             
+             {
+              "name": "Partial Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Partial Plate Armour"],
+               "equipmentRemoved": ["Heavy Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Lance",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Lance"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+		"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "franco_scottish_host_scottish_foot_knights",
+          "name": "Scottish Foot Knights",
+          "description": "Scottish Foot Knights have heavy armour and spear. Superior Fighters. May have have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2). . May be Stubborn (+2). May have partial plate armour (free).",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Heavy Armour","Spear"],
+          "specialRules": ["Close Order","Superior Fighters"],
+           "optionalEquipment": [
+            {
+              "name": "Shield",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Halberd",
+			"disables": "Double Handed Weapon",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Double Handed Weapon",
+			"disables": "Halberd",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double Handed Weapon"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": []
+,              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Partial Plate Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+             {
+          "id": "franco_scottish_host_scottish_yeomen",
+          "name": "Scottish Yeomen",
+          "description": "Scottish Yeomen have a spear. May have light armour (+2) and shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2). Alternatively Scottish Yepmen may be fielded as Open Order troops equipped with a spear at a cost of 8 points. These may Not be used to form a Shciltron.",
+          "category": "CommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Halberd",
+			"disables": "Double Handed Weapon",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"],
+               "equipmentRemvoed": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Double Handed Weapon",
+			"disables": "Halberd",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double Handed Weapon"],
+                "equipmentRemvoed": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Open Order",	
+              "pointsModifier": -2,
+				"equipmentAdded": [],
+                "equipmentRemvoed": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+"id": "franco_scottish_host_schiltron_cu",
+          "name": "Schiltron (Combined Unit)",
+          "description": "Scottish Foot Knights and Scottish Yeomen form a Schiltron (+4). Scottish Foot Knights have heavy armour and spear. Superior Fighters. May have have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2). . May be Stubborn (+2). May have partial plate armour (free). Scottish Yeomen have a spear. May have light armour (+2) and shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2). Scottish Foot Knight bases may no exceed Scottish Yeomen bases in the unit.",
+          "category": "CommonTroops",
+          "type": "Infantry", 
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Scottish Foot Knights",
+              "defence": 5,
+              "cohesion": 8,
+              "pointsPerBase": 28,
+              "minBases": 1,
+              "maxBases": 6,
+		"maxPercentage": 50,
+	"baseEquipment": ["Heavy Armour","Spear"],
+          "specialRules": ["Close Order","Superior Fighters","Schiltron"]        
+},
+            {
+              "name": "Scottish Yeomen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 6,
+              "pointsPerBase": 14,
+              "minBases": 1,
+              "maxBases": 11,
+              "baseEquipment": ["Spear"],
+              "specialRules": ["Close Order","Schiltron"]
+            }
+            
+            ],
+"optionalEquipment": [
+{
+              "name": "Shield (Knights)",
+  "targetProfile": "Scottish Foot Knights",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Halberd (Knights)",
+                  "targetProfile": "Scottish Foot Knights",
+		"disables": "Double Handed Weapon (Knights)",		
+              "pointsModifier": 2,
+		"equipmentAdded": ["Halberd"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Double Handed Weapon (Knights)",
+                  "targetProfile": "Scottish Foot Knights",
+		"disables": "Halberd (Knights)",		
+              "pointsModifier": 2,
+		"equipmentAdded": ["Double Handed Weapon"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn (Knights)",
+               "targetProfile": "Scottish Foot Knights",
+              "pointsModifier": 2,
+		"equipmentAdded": [],
+               "equipmentRemoved": []
+,              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour (Knights)",
+               "targetProfile": "Scottish Foot Knights",
+              "pointsModifier": 0,
+		"equipmentAdded": ["Partial Plate Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Light Armour (Yeomen)",
+  "targetProfile": "Scottish Yeomen",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield (Yeomen)",
+               "targetProfile": "Scottish Yeomen",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Halberd (Yeomen)",
+		"disables": "Double Handed Weapon (Yeomen)",
+               "targetProfile": "Scottish Yeomen",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Halberd"],
+               "equipmentRemvoed": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Double Handed Weapon (Yeomen)",
+                  "targetProfile": "Scottish Yeomen",
+		"disables": "Halberd (Yeomen)",		
+              "pointsModifier": 2,
+		"equipmentAdded": ["Double Handed Weapon"],
+                "equipmentRemvoed": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+]
+},
+             {
+          "id": "franco_scottish_host_mounted_knights",
+          "name": "Mounted Knights",
+          "description": "Mounted Knights have partial plate armour, lance and shield. Superior Fighters. Impetuous. Shock Cavalry. Arrogant Pride. May replace partial plate armour and shield with plate armour (free). May have cloth barding (+1). May be Veteran (+1).",
+          "category": "UncommonTroops",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 28,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Partial Plate Armour","Lance","Shield"],
+          "specialRules": ["Open Order","Shock Cavalry","Superior Fighters", "Impetuous","Arrogant Pride"],
+           "optionalEquipment": [
+              {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Plate Armour"],
+               "equipmentRemoved": ["Partial Plate Armour","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+"id": "franco_scottish_host_knights_retainers_cu",
+          "name": "Combined Unit Mounted Knights and Retainers",
+          "description": "Mounted Knights have partial plate armour, lance and shield. Superior Fighters. Impetuous. Shock Cavalry. Arrogant Pride. May replace partial plate armour and shield with plate armour (free). May have cloth barding (+1). May be Veteran (+1). Mounted Retainers have light armour, spear and shield. Impetuous. May have lance (+1), may have heavy armour (+1) or partial plate armour (+1). May have cloth barding (+1)/ Mounted Retainers form a combined Unit with mounted Knights. Up to half the unit may be Mounted Retainers.",
+          "category": "UncommonTroops",
+          "type": "Cavalry", 
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Mounted Knights",
+              "defence": 3,
+              "cohesion": 7,
+              "pointsPerBase": 28,
+              "minBases": 1,
+              "maxBases": 7,
+              "baseEquipment": ["Partial Plate Armour","Lance","Shield"],
+          "specialRules": ["Open Order","Shock Cavalry","Superior Fighters", "Impetuous","Arrogant Pride"]    
+},
+            {
+              "name": "Mounted Retainers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 4,
+"maxPercentage": 50,
+              "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order","Impetuous"]
+            }
+            
+            ],
+"optionalEquipment": [
+
+{
+              "name": "Cloth Barding (Knights)",
+              "pointsModifier": 1,
+		"targetProfile": "Mounted Knights",
+		"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran (Knights)",
+              "pointsModifier": 1,		
+		"targetProfile": "Mounted Knights",
+		"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Plate Armour (Knights)",
+              "pointsModifier": 0,		
+		"targetProfile": "Mounted Knights",
+		"equipmentAdded": ["Plate Armour"],
+               "equipmentRemoved": ["Partial Plate Armour","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Cloth Barding (Retainers)",
+              "pointsModifier": 1,
+		"targetProfile": "Mounted Retainers",
+		"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Lance (Retainers)",
+              "pointsModifier": 1,
+		"targetProfile": "Mounted Retainers",
+		"equipmentAdded": ["Lance"],
+		"equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+
+{
+              "name": "Heavy Armour (Retainers)",
+		"disables":"Partial Plate Armour (Retainers)",
+              "pointsModifier": 1,
+		"targetProfile": "Mounted Retainers",
+		"equipmentAdded": ["Heavy Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Partial Plate Armour (Retainers)",
+		"disables":"Heavy Armour (Retainers)",
+              "pointsModifier": 1,
+		"targetProfile": "Mounted Retainers",
+		"equipmentAdded": ["Partial Plate Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+]
+},
+{
+          "id": "franco_scottish_host_mounted_sergeants",
+          "name": "Mounted Sergeants",
+          "description": "Mounted Sergeants have light armour, spear and shield. May exchange spear for lance (+1) or light crossbow (+1). May replace light armour and shield for heavy armour (free).",
+          "category": "UncommonTroops",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+              
+             {
+              "name": "Lance",
+               "disables": "Light Crossbow",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Lance"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Light Crossbow",
+               "disables": "Lance",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Light Crossbow"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "franco_scottish_host_foot_sergeants",
+          "name": "Foot Sergeants",
+          "description": "Foot Sergeants have light armour, spear and shield. May exchange light armour and shield for heavy armour and halberd (+2).  Units in light armour may replace spear with crossbow and be fielded as Open Order at a cost of 14 points per base. They may then have pavise (+3). ",
+          "category": "UncommonTroops",
+          "type": "Infnatry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+              
+                           {
+              "name": "Crossbow",
+               "disables": "Heavy Armour & Halberd",
+              "enableHidden": "Pavise",
+              "pointsModifier": -2,
+				"equipmentAdded": ["Crossbow"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour & Halberd",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour","Halberd"],
+               "equipmentRemoved": ["Light Armour","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Pavise",
+               "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 3,
+				"equipmentAdded": ["Pavise"],
+               "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+
+{
+          "id": "franco_scottish_host_town_militia",
+          "name": "Town Militia",
+          "description": "Town Militia have spear. May exchange spear for halberd (+2) or double handed weapon (+2). May have light armour (+2), shield (+2) or Heavy armour (+4)",
+          "category": "UncommonTroops",
+          "type": "Infnatry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+              {
+              "name": "Halberd",
+		"disables": "Double Handed Weapon",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Halberd"],
+               "equipmentRemvoed": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Double Handed Weapon",
+		"disables": "Halberd",		
+              "pointsModifier": 2,
+		"equipmentAdded": ["Double Handed Weapon"],
+                "equipmentRemvoed": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Light Armour",
+               "disables": "Heavy Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+               "disables": "Heavy Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+               "disables": ["Light Armour","Shield"],
+              "pointsModifier": 4,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "franco_scottish_host_brigans",
+          "name": "Brigans",
+          "description": "Brigans have spear. Open Order.  May have light armour (+2), shield (+2). May replace spear with halberd (+2).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+            
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+               "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+              "pointsModifier": 2,
+               "equipmentAdded": ["Shield"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Halberd",
+              "pointsModifier": 2,
+               "equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+           {
+          "id": "franco_scottish_host_militia_archers",
+          "name": "Militia Archers",
+          "description": "Militia Archers have a bow. Skirmishers. Inferior Fighters",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 4,
+             "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+           "optionalEquipment": []
+        },  
+             {
+          "id": "franco_scottish_host_handgunnerss",
+          "name": "Handgunners",
+          "description": "Handgunners have light armour and handgun. Skirmishers. Inferior Fighters. May have heavy armour (+1).",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+             "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Handgun","Light Armour"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+               "equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },  
+             {
+          "id": "franco_scottish_host_scots_archers",
+          "name": "Socts Archers",
+          "description": "Scots Archers have a bow. Skirmishers. Inferior Fighters",
+          "category": "UncommonTroops",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 5,
+             "maxCountAllowed": 1,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "franco_scottish_host_light_gun",
+          "name": "Light Gun",
+          "description": "One light gun and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Cannon",
+              "stats": {},
+              "pointsPerBase": 25,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+             {
+          "id": "franco_scottish_host_potdefer",
+          "name": "Pot-de-Fer",
+          "description": "Pot-de-Fer and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Pot-de-Fer",
+              "stats": {},
+              "pointsPerBase": 10,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+              {
+          "id": "franco_scottish_host_light_bombard",
+          "name": "Light Bombard",
+          "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Light Bombard",
+              "stats": {},
+              "pointsPerBase": 15,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+              {
+          "id": "franco_scottish_host_medium_bombard",
+          "name": "Medium Bombard",
+          "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Medium Bombard",
+              "stats": {},
+              "pointsPerBase": 20,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+             {
+          "id": "franco_scottish_host_large_bombard",
+          "name": "Large Bombard",
+          "description": "Large Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Large Bombard",
+              "stats": {},
+              "pointsPerBase": 25,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+               {
+          "id": "franco_scottish_host_serpentine",
+          "name": "Serpentine",
+          "description": "Serpentine and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Serpentine",
+              "stats": {},
+              "pointsPerBase": 15,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+     ]
+    },
 
 
 
