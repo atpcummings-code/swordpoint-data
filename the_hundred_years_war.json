@@ -666,7 +666,7 @@
 		  {
 		 "id": "early_war_host_foot_knights_retainers_cu",
           "name": "Combined Unit Foot Knights/Retainers",
-          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. Riding Horses. May have have shield (+2), halberd (+2) or double handed weapon (+2). . May be Veteran (+2). Foot Retainers have ligt armour and spear. Riding Horses.  May have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2) and may then have heavy armour (+2). Retainers form a Combined unit with Foot Knights. Up to three quarter sof the unit may be Foot Retainers.  ",
+          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. Riding Horses. May have have shield (+2), halberd (+2) or double handed weapon (+2). . May be Veteran (+2). Foot Retainers have light armour and spear. Riding Horses.  May have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2) and may then have heavy armour (+2). Retainers form a Combined unit with Foot Knights. Up to three quarter sof the unit may be Foot Retainers.  ",
           "category": "CommonTroops",
           "type": "Infantry",
           "minBases": 3,
