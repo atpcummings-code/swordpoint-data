@@ -7702,7 +7702,7 @@
               "name": "Pot-de-Fer",
               "stats": {},
               "pointsPerBase": 10,
-              "specialRules": []
+              "specialRules": ["Immovable","Slow Reload"]
             },
             {
               "name": "Crew",
@@ -7780,7 +7780,7 @@
               "name": "Light Bombard",
               "stats": {},
               "pointsPerBase": 15,
-              "specialRules": []
+              "specialRules": ["Slow Reload"]
             },
             {
               "name": "Crew",
@@ -7858,7 +7858,7 @@
               "name": "Medium Bombard",
               "stats": {},
               "pointsPerBase": 20,
-              "specialRules": []
+              "specialRules": ["Immovable","Slow Reload"]
             },
             {
               "name": "Crew",
@@ -7936,7 +7936,7 @@
               "name": "Large Bombard",
               "stats": {},
               "pointsPerBase": 25,
-              "specialRules": []
+              "specialRules": ["Immovable","Large","Intimidation"]
             },
             {
               "name": "Crew",
