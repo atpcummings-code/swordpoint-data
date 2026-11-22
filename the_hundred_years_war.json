@@ -14103,6 +14103,7 @@
 		"optionalEquipment": [
            {
               "name": "Shield (Knights)",
+			   "targetProfile": "Foot Knights",
               "pointsModifier": 2,
 				"equipmentAdded": ["Shield"],
               "equipmentRemoved": [],
@@ -14113,6 +14114,7 @@
             },
              {
               "name": "Partial Plate Armour (Knights)",
+				 "targetProfile": "Foot Knights",
               "disables": "Heavy Armour (Knights)",
               "pointsModifier": 2,
 				"equipmentAdded": ["Partial Plate Armour"],
@@ -14124,6 +14126,7 @@
             },
              {
               "name": "Heavy Armour (Knights)",
+				 "targetProfile": "Foot Knights",
               "disables": "Partial Plate Armour (Knights)",
               "pointsModifier": 2,
 				"equipmentAdded": ["Heavy Armour"],
@@ -14135,6 +14138,7 @@
             },
             {
               "name": "Hand-and-a-half Sword (Knights)",
+				"targetProfile": "Foot Knights",
 			"disables": "Double Handed Weapon (Knights)",		
               "pointsModifier": 2,
 				"equipmentAdded": ["Hand-and-a-half Sword"],
@@ -14146,6 +14150,7 @@
             },
 			    {
               "name": "Double Handed Weapon (Knights)",
+					"targetProfile": "Foot Knights",
 			"disables": "Hand-and-a-half Sword (Knights)",		
               "pointsModifier": 2,
 				"equipmentAdded": ["Double Handed Weapon"],
@@ -14157,6 +14162,7 @@
             },
              {
               "name": "Veteran (Knights)",
+				 "targetProfile": "Foot Knights",
               "pointsModifier": 2,
 				"equipmentAdded": [],
                "equipmentRemoved": [],
