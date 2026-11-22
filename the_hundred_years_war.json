@@ -14302,7 +14302,7 @@
         {
           "id": "homeland_army_early_levied_archers",
           "name": "Levied Archers",
-          "description": "Levied Archers have a longbow. Open Order. Inferior Fighters. LEvies. There must be more levied Archers in the army than Longbowmen and Reserve Archers.",
+          "description": "Levied Archers have a longbow. Open Order. Inferior Fighters. Levies. There must be more levied Archers in the army than Longbowmen and Reserve Archers.",
           "category": "CommonTroops",
           "type": "Infantry",
           "defence": 7,
@@ -15369,7 +15369,7 @@
         {
           "id": "homeland_army_late_levied_archers",
           "name": "Levied Archers",
-          "description": "Levied Archers have a longbow. Open Order. Inferior Fighters. LEvies. There must be more levied Archers in the army than Longbowmen and Reserve Archers.",
+          "description": "Levied Archers have a longbow. Open Order. Inferior Fighters. Levies. There must be more levied Archers in the army than Longbowmen and Reserve Archers.",
           "category": "CommonTroops",
           "type": "Infantry",
           "defence": 7,
@@ -15651,7 +15651,7 @@
 {
           "id": "homeland_army_late_billmen",
           "name": "Billmen",
-          "description": "Billmen Hobilars have light armour and halberd. May have heavy armour (+2).",
+          "description": "Billmen have light armour and halberd. May have heavy armour (+2).",
           "category": "UncommonTroops",
           "type": "Infantry",
           "defence": 6,
