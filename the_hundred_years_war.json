@@ -33,7 +33,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 10,
-          "alliedArmyKeys": [{"key": "early_war_host"}],
+          "alliedArmyKeys": [ { "key": "early_war_host", "excludesUnits": ["early_war_host_keeper_of_the_oriflamme"] } ],
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -11281,10 +11281,11 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 20,
-          "alliedArmyKeys": [ 
-           {"key": "the_kingdom_of_navarre"},
-           { "key": "the_duchy_of_brittany", "categoryOverrides": [ { "categoryId": "Allies", "minPoints": 25, "maxPoints": 50 }] }       
-          ], 
+        "alliedArmyKeys": [ 
+{ "key": "the_kingdom_of_navarre", "onlyCategories": ["CommonTroops"], "categoryOverrides": [ { "categoryId": "Allies", "minPoints": 0, "maxPoints": 20 }] }, 
+{ "key": "the_duchy_of_brittany", "onlyCategories": ["CommonTroops"], "categoryOverrides": [ { "categoryId": "Allies", "minPoints": 25, "maxPoints": 50 }] }
+],
+
           "maxAlliedArmiesAllowed": 1
         }
         
