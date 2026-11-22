@@ -10918,6 +10918,7 @@
             },
 			    {
               "name": "Halberd (Knights)",
+					"enableHidden": "Heavy Armour (Retainers)",
                   "targetProfile": "Foot Knights",
 			"disables": "Double Handed Weapon (Knights)",		
               "pointsModifier": 2,
@@ -10929,6 +10930,7 @@
             },
 			    {
               "name": "Double Handed Weapon (Knights)",
+					"enableHidden": "Heavy Armour (Retainers)",
                   "targetProfile": "Foot Knights",
 			"disables": "Halberd (Knights)",		
               "pointsModifier": 2,
@@ -10961,6 +10963,7 @@
             },
           {
               "name": "Heavy Armour (Retainers)",
+			  "hiddenUntilEnabled": "hidden",
             "targetProfile": "Foot Retainers",
               "pointsModifier": 0,
 				"equipmentAdded": ["Heavy Armour"],
