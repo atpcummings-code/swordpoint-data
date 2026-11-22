@@ -5350,7 +5350,7 @@
         {
           "id": "scots_common_army_ribaudaille",
           "name": "Ribaudaille",
-          "description": "Ribaudaille have a psear. Open Order. Inferior Fighters. May have a shield (+2). May exchange spear for double handed weapon (+2).",
+          "description": "Ribaudaille have a spear. Open Order. Inferior Fighters. May have a shield (+2). May exchange spear for double handed weapon (+2).",
           "category": "UncommonTroops",
           "type": "Infantry",
           "defence": 7,
@@ -18379,7 +18379,825 @@
         }
      ]
     },
+ "free_companies": {
+      "armyName": "Free Companies - 1360 - 1444 AD",
+  
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Troops",
+          "name": "Troops",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 100
+        },
+        {
+          "id": "Artillery",
+          "name": "Artillery",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 1250,
+          "countPerThreshold": 1,
+          "rounding": "up"
+        }
+  ],
 
+      "units": [
+          
+        {
+          "id": "free_companies_grand_company_captain",
+          "name": "Grand Company Captain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "free_companies_captain",
+          "name": "Captain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },  
+{
+          "id": "free_companies_mounted_knights",
+          "name": "Mounted Knights",
+          "description": "Mounted Knights have heavy or partial plate armour, spear and shield. May exchange spear for lance (_1). . May have cloth barding (+1). May be Veteran (+1). May be upgraded to Superiors Fighters (+2). Lance armed troops may be designated Shock Cavalry (+4).",
+          "category": "Troops",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+            {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Lance",
+               "enableHidden": "Shock Cavalry",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Lance"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shock Cavalry",
+               "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 4,
+				"equipmentAdded": [],
+              "rulesAdded": ["Shock Cavalry"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Superior Fighters",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour",
+               "disables": "Heavy Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Partial Plate Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+               "disables": "Partial Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+
+
+        
+{
+          "id": "free_companies_foot_knights",
+          "name": "Foot Knights",
+          "description": "Foot Knights have heavy armour or partial plate armour, spear and shield. May exchange spear for halberd (+2) or double handed weapon (+2). May be Veteran (+2). May be Stubborn (+2). May be upgraded to Superior Fighters (+2).",
+          "category": "Troops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+            
+             {
+              "name": "Partial Plate Armour",
+               "disables": "Heavy Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Partial Plate Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+               "disables": "Partial Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Halberd",
+			"disables": "Double Handed Weapon",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Double Handed Weapon",
+			"disables": "Halberd",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double Handed Weapon"],
+                  "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Superior Fighters",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Superior Fighters"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+{
+          "id": "free_companies_mounted_sergeants",
+          "name": "Mounted Sergeants",
+          "description": "Mounted Sergeants have light armour, spear and shield. May have heavy arnmour (+1). May be Veteran (+1).",
+          "category": "Troops",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear","Shield","Light Armour"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+            {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": "Light Armour",
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             
+             {
+              "name": "Veteran",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "free_companies_foot_sergeants",
+          "name": "Foot Sergeants",
+          "description": "Foot Sergeants have light armour, spear and shield. May exchange spear for halberd (+2) or double handed weapon (+2).  May be Veteran (+1). Alternatively may be fielded as Open Order with light armour and crossbow at a cost of 12 points per base.",
+          "category": "Troops",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield","Light Armour"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+            {
+              "name": "Halberd",
+			"disables": "Double Handed Weapon",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"],
+              "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			    {
+              "name": "Double Handed Weapon",
+			"disables": "Halberd",		
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double Handed Weapon"],
+                  "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             
+             {
+              "name": "Veteran",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [""],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Open Order Crossbow",
+              "pointsModifier": -2,
+				"equipmentAdded": ["Crossbow"],
+               "equipmentRemoved": ["Spear","Shield"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+       
+{
+          "id": "free_companies_longbowmen",
+          "name": "Longbowmen",
+          "description": "Longbowmen have light armour and longbow. Open Order. May have shield (+2), May be Veteran (+2). May have Stakes (+2). ",
+          "category": "Troops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Longbow","Light Armour"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             
+             {
+              "name": "Shield",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+                          {
+              "name": "Stakes",
+               "disables": "Riding Horses",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Stakes"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+             
+           ]
+        },
+{
+          "id": "free_companies_mounted_crossbowmen",
+          "name": "Mounted Crossbowmen",
+          "description": "Mounted Crossbowmen have light armour and light crossbow. Inferior Fighters., May have heavy armour (+1). May be Veteran (+1).",
+          "category": "Troops",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Crossbow","Light Armour"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+
+{
+          "id": "free_companies_foot_crossbowmen",
+          "name": "Foot Crossbowmen",
+          "description": "Foot Crossbowmen have light armour and crossbow. Open Order. Inferior Fighters. May have heavy armour (+1). May have Pavise (+3). May be Veteran (+2).",
+          "category": "Troops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Crossbow","Light Armour"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Pavise",
+              "pointsModifier": 3,
+				"equipmentAdded": ["Pavise"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        
+
+{
+          "id": "free_companies_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have javelins and shield. Skirmishers.  May replace javelins with throwing spear (free). May be Veteran (+1).",
+          "category": "Troops",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Skirmishers"],
+           "optionalEquipment": [
+             {
+              "name": "Throwing Spear",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Throwing Spear"],
+               "equipmentRemoved": ["Javelins"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+
+{
+          "id": "free_companies_cannon",
+          "name": "Cannon",
+          "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Cannon",
+              "stats": {},
+              "pointsPerBase": 40,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+
+              {
+          "id": "free_companies_light_bombard",
+          "name": "Light Bombard",
+          "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Light Bombard",
+              "stats": {},
+              "pointsPerBase": 15,
+              "specialRules": ["Slow Reload"]
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+        {
+          "id": "free_companies_light_serpentine",
+          "name": "Serpentine",
+          "description": "Serpentine and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Serpentine",
+              "stats": {},
+              "pointsPerBase": 15,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+        {
+          "id": "ree_companies_ribauldequin",
+          "name": "Ribauldequin",
+          "description": "Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Ribauldequin",
+              "stats": {},
+              "pointsPerBase": 10,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        }
+     ]
+    }
 
 	  
   }
