@@ -2170,7 +2170,7 @@
         {
           "id": "the_kingdom_of_aragon_foot_scouts",
           "name": "Foot Scouts",
-          "description": "Foot Scouts have have a javelins. Skirmishers. Inferior Fighters. May have shield (+1).",
+          "description": "Foot Scouts have a javelins. Skirmishers. Inferior Fighters. May have shield (+1).",
           "category": "UncommonTroops",
           "type": "Infantry",
           "defence": 7,
@@ -3047,7 +3047,7 @@
         {
           "id": "the_kingdom_of_castile_foot_scouts",
           "name": "Foot Scouts",
-          "description": "Foot Scouts have have a javelins. Skirmishers. Inferior Fighters. May have shield (+1).",
+          "description": "Foot Scouts have a javelins. Skirmishers. Inferior Fighters. May have shield (+1).",
           "category": "UncommonTroops",
           "type": "Infantry",
           "defence": 7,
@@ -6540,7 +6540,7 @@
 {
           "id": "franco_scottish_host_scottish_foot_knights",
           "name": "Scottish Foot Knights",
-          "description": "Scottish Foot Knights have heavy armour and spear. Superior Fighters. May have have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2). . May be Stubborn (+2). May have partial plate armour (free).",
+          "description": "Scottish Foot Knights have heavy armour and spear. Superior Fighters. May have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2). . May be Stubborn (+2). May have partial plate armour (free).",
           "category": "CommonTroops",
           "type": "Infantry",
           "defence": 5,
@@ -6672,7 +6672,7 @@
 {
 "id": "franco_scottish_host_schiltron_cu",
           "name": "Schiltron (Combined Unit)",
-          "description": "Scottish Foot Knights and Scottish Yeomen form a Schiltron (+4). Scottish Foot Knights have heavy armour and spear. Superior Fighters. May have have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2). . May be Stubborn (+2). May have partial plate armour (free). Scottish Yeomen have a spear. May have light armour (+2) and shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2). Scottish Foot Knight bases may no exceed Scottish Yeomen bases in the unit.",
+          "description": "Scottish Foot Knights and Scottish Yeomen form a Schiltron (+4). Scottish Foot Knights have heavy armour and spear. Superior Fighters. May have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2). . May be Stubborn (+2). May have partial plate armour (free). Scottish Yeomen have a spear. May have light armour (+2) and shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2). Scottish Foot Knight bases may no exceed Scottish Yeomen bases in the unit.",
           "category": "CommonTroops",
           "type": "Infantry", 
           "minBases": 3,
@@ -7857,7 +7857,7 @@
 		  {
           "id": "early_war_host_foot_knights",
           "name": "Foot Knights",
-          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. Riding Horses. May have have shield (+2), halberd (+2) or double handed weapon (+2). . May be Veteran (+2).",
+          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. Riding Horses. May have shield (+2), halberd (+2) or double handed weapon (+2). . May be Veteran (+2).",
           "category": "CommonTroops",
           "type": "Infantry",
           "defence": 5,
@@ -8014,7 +8014,7 @@
 		  {
 		 "id": "early_war_host_foot_knights_retainers_cu",
           "name": "Combined Unit Foot Knights/Retainers",
-          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. Riding Horses. May have have shield (+2), halberd (+2) or double handed weapon (+2). . May be Veteran (+2). Foot Retainers have light armour and spear. Riding Horses.  May have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2) and may then have heavy armour (+2). Retainers form a Combined unit with Foot Knights. Up to three quarter sof the unit may be Foot Retainers.  ",
+          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. Riding Horses. May have shield (+2), halberd (+2) or double handed weapon (+2). . May be Veteran (+2). Foot Retainers have light armour and spear. Riding Horses.  May have shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2) and may then have heavy armour (+2). Retainers form a Combined unit with Foot Knights. Up to three quarter sof the unit may be Foot Retainers.  ",
           "category": "CommonTroops",
           "type": "Infantry",
           "minBases": 3,
@@ -8974,7 +8974,7 @@
 		  {
           "id": "late_war_host_foot_knights",
           "name": "Foot Knights",
-          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. May have have shield (+2), halberd (+2) or double handed weapon (+2). Units equipped with shield may replace shield and partial plate armour with full plate armour (free). May be Veteran (+2). May have Riding Horses (+1).",
+          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. May have shield (+2), halberd (+2) or double handed weapon (+2). Units equipped with shield may replace shield and partial plate armour with full plate armour (free). May be Veteran (+2). May have Riding Horses (+1).",
           "category": "CommonTroops",
           "type": "Infantry",
           "defence": 5,
@@ -9052,7 +9052,7 @@
 		  {
 		 "id": "late_war_host_foot_knights_retainers_cu",
           "name": "Combined Unit Foot Knights/Retainers",
-          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. May have have shield (+2), halberd (+2) or double handed weapon (+2). Units equipped with shield may replace shield and partial plate armour with full plate armour (free). May be Veteran (+2). May have Riding Horses (+1). Foot retainers have light armour and spear. May have a shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2) and may then have heavy armour (+2). Riding Horses (+1). Foot Retainers form a Combined unit with Foot Knights with up to half the unit being Foot Retainers.",
+          "description": "Foot Knights have partial plate armour and spear. Superior Fighters. May have shield (+2), halberd (+2) or double handed weapon (+2). Units equipped with shield may replace shield and partial plate armour with full plate armour (free). May be Veteran (+2). May have Riding Horses (+1). Foot retainers have light armour and spear. May have a shield (+2). May exchange spear for halberd (+2) or double handed weapon (+2) and may then have heavy armour (+2). Riding Horses (+1). Foot Retainers form a Combined unit with Foot Knights with up to half the unit being Foot Retainers.",
           "category": "CommonTroops",
           "type": "Infantry",
           "minBases": 3,
