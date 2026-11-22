@@ -9482,7 +9482,7 @@
 {
           "id": "late_war_host_mounted_sergeants",
           "name": "Mounted Sergeants",
-          "description": "Mounted Sergeants have light armour, spear and shield. May exchange sper for lance (+1) or light crossbow (+1). May exchange light armour and shield for heavy armour (free).",
+          "description": "Mounted Sergeants have light armour, spear and shield. May exchange spear for lance (+1) or light crossbow (+1). May exchange light armour and shield for heavy armour (free).",
           "category": "UncommonTroops",
           "type": "Cavalry",
           "defence": 4,
@@ -11000,7 +11000,7 @@
 {
           "id": "the_duchy_of_brittany_mounted_sergeants",
           "name": "Mounted Sergeants",
-          "description": "Mounted Sergeants have light armour, spear and shield. May exchange sper for lance (+1). May exchange light armour and shield for heavy armour (free).",
+          "description": "Mounted Sergeants have light armour, spear and shield. May exchange spear for lance (+1). May exchange light armour and shield for heavy armour (free).",
           "category": "UncommonTroops",
           "type": "Cavalry",
           "defence": 4,
