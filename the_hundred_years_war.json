@@ -14317,7 +14317,7 @@
 {
           "id": "homeland_army_early_mounted_knights",
           "name": "Mounted Knights",
-          "description": "Mounted Knights have heavy armour or partial plate armour, lance and shield. Superior Fighters. Shock Cavalry. May replace partial plate armour and shield with plate armour (free). May have cloth barding (+1). May be Veteran (+1).",
+          "description": "Mounted Knights have heavy armour or partial plate armour, lance and shield. Superior Fighters. Shock Cavalry. May have cloth barding (+1). May be Veteran (+1).",
           "category": "UncommonTroops",
           "type": "Cavalry",
           "defence": 5,
