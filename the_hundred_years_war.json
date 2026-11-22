@@ -4783,10 +4783,9 @@
         },
         
         {
-        
           "id": "burgundy_cannon",
           "name": "Cannon",
-          "description": "One gun and three crew. Up to three additional crew may be purchased (+5 each).",
+          "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
           "type": "Commander",
           "minBases": 1,
@@ -4850,6 +4849,865 @@
               "stats": {},
               "pointsPerBase": 40,
               "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+
+              {
+          "id": "burgundy_light_bombard",
+          "name": "Light Bombard",
+          "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Light Bombard",
+              "stats": {},
+              "pointsPerBase": 15,
+              "specialRules": ["Slow Reload"]
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+ {
+          "id": "burgundy_medium_bombard",
+          "name": "Medium Bombard",
+          "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Medium Bombard",
+              "stats": {},
+              "pointsPerBase": 20,
+              "specialRules": ["Immovable","Slow Reload"]
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+{
+          "id": "burgundy_large_bombard",
+          "name": "Large Bombard",
+          "description": "Large Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Large Bombard",
+              "stats": {},
+              "pointsPerBase": 25,
+              "specialRules": ["Immovable","Large","Intimidation"]
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+        {
+          "id": "burgundy_serpentine",
+          "name": "Serpentine",
+          "description": "Serpentine and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Serpentine",
+              "stats": {},
+              "pointsPerBase": 15,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+{
+          "id": "burgundy_culverin",
+          "name": "Culverin",
+          "description": "Culverin and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Culverin",
+              "stats": {},
+              "pointsPerBase": 25,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+{
+          "id": "burgundy_crapaudeau",
+          "name": "Crapaudeau",
+          "description": "Crapaudeau and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Crapaudeau",
+              "stats": {},
+              "pointsPerBase": 30,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+{
+          "id": "burgundy_veuglaire",
+          "name": "Veuglaire",
+          "description": "Veuglaire and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Veuglaire",
+              "stats": {},
+              "pointsPerBase": 40,
+              "specialRules": ["Large","Intimidation"]
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+        {
+          "id": "burgundy_ribauldequin",
+          "name": "Ribauldequin",
+          "description": "Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Ribauldequin",
+              "stats": {},
+              "pointsPerBase": 10,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+{
+          "id": "burgundy_large_ribauldequin",
+          "name": "Large Ribauldequin",
+          "description": "Large Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Large Ribauldequin",
+              "stats": {},
+              "pointsPerBase": 20,
+              "specialRules": ["Immovable","Slow Reload", "Intimidation"]
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+{
+          "id": "burgundy_mortar",
+          "name": "Mortar",
+          "description": "Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Mortar",
+              "stats": {},
+              "pointsPerBase": 10,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+{
+          "id": "burgundy_large_mortar",
+          "name": "Large Mortar",
+          "description": "Large Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Large Mortar",
+              "stats": {},
+              "pointsPerBase": 25,
+              "specialRules": ["Immovable","Large"]
             },
             {
               "name": "Crew",
