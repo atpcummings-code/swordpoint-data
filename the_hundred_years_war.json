@@ -844,6 +844,84 @@
               "pointsPerBase": 0
             }
           ]
+        },
+		  {
+          "id": "the_kingdom_of_castile_light_bombard",
+          "name": "Light Bombard",
+          "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Light Bombard",
+              "stats": {},
+              "pointsPerBase": 15,
+              "specialRules": ["Slow Reload"]
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
         }
         
 
@@ -2381,6 +2459,84 @@
               "pointsPerBase": 0
             }
           ]
+        },
+		  {
+          "id": "the_kingdom_of_castile_light_bombard",
+          "name": "Light Bombard",
+          "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Light Bombard",
+              "stats": {},
+              "pointsPerBase": 15,
+              "specialRules": ["Slow Reload"]
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
         }
         
         
@@ -3245,6 +3401,84 @@
               "stats": {},
               "pointsPerBase": 40,
               "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+		  {
+          "id": "the_kingdom_of_castile_light_bombard",
+          "name": "Light Bombard",
+          "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Light Bombard",
+              "stats": {},
+              "pointsPerBase": 15,
+              "specialRules": ["Slow Reload"]
             },
             {
               "name": "Crew",
