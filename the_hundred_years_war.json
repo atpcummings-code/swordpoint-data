@@ -11632,8 +11632,9 @@
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-             {
+            {
               "name": "Stakes",
+               "disables": "Riding Horses",
               "pointsModifier": 2,
 				"equipmentAdded": ["Stakes"],
                "equipmentRemoved": [],
@@ -11654,6 +11655,7 @@
             },
              {
               "name": "Riding Horses",
+               "disables": "Stakes",
               "pointsModifier": 1,
 				"equipmentAdded": [],
                "equipmentRemoved": [],
