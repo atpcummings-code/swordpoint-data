@@ -11591,7 +11591,7 @@
 {
           "id": "early_chevauchee_army_longbowmen",
           "name": "Longbowmen",
-          "description": "Longbowmen have a longbow. Open Order. English Archers (+5 per unit). They may have light armour (+2), shield (+2), Maul (+1). May be Riding Horses (+1) or have Stakes (+2). May be Veteran (+2).",
+          "description": "Longbowmen have a longbow. Open Order. English Archery (+5 per unit). They may have light armour (+2), shield (+2), Maul (+1). May be Riding Horses (+1) or have Stakes (+2). May be Veteran (+2).",
           "category": "CommonTroops",
           "type": "Infantry",
           "defence": 7,
