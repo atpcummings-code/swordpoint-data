@@ -12741,7 +12741,7 @@
           "id": "late_chevauchee_army_mounted_knights",
           "name": "Mounted Knights",
           "description": "Mounted Knights have partial plate armour, lance and shield. Superior Fighters. Shock Cavalry. May replace partial plate armour and shield with plate armour (free). May have cloth barding (+1). May be Veteran (+1). One unit may be designated Royal Household (+2). They are Superior Fighters and may be made Stubborn (+2).",
-          "category": "UnommonTroops",
+          "category": "UncommonTroops",
           "type": "Cavalry",
           "defence": 3,
           "cohesion": 8,
