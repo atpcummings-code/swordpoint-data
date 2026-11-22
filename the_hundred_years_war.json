@@ -12477,9 +12477,10 @@
           "min": 0,
           "max": 25,
           "alliedArmyKeys": [ 
-           {"key": "burgundy"},
-           { "key": "the_duchy_of_brittany"}   
-          ], 
+{ "key": "burgundy", "onlyCategories": ["CommonTroops"]}, 
+{ "key": "the_duchy_of_brittany", "onlyCategories": ["CommonTroops"]}
+],
+
           "maxAlliedArmiesAllowed": 2
         }
   ],
