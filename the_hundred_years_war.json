@@ -14369,17 +14369,6 @@
               "rulesRemoved": [],
               "defenceModifier": -2,
               "cohesionModifier": 0
-            },
-             {
-              "name": "Stubborn",
-               "hiddenUntilEnabled": "hidden",
-              "pointsModifier": 2,
-				"equipmentAdded": [],
-               "equipmentRemoved": []
-,              "rulesAdded": ["Veteran"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
             }
           ]
         },
