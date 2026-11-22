@@ -882,7 +882,13 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [{"key": "early_war_host"}],
+          "alliedArmyKeys": [
+
+{ "key": "early_chevauchee_army", "onlyCategories": ["CommonTroops"]},
+{ "key": "late_chevauchee_army", "onlyCategories": ["CommonTroops"]}
+
+],
+
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -1528,7 +1534,14 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
-          "alliedArmyKeys": [{"key": "early_war_host"}],
+          "alliedArmyKeys": [
+
+{ "key": "early_chevauchee_army", "onlyCategories": ["CommonTroops"]},
+{ "key": "free_companies", "onlyCategories": ["Troops"]}
+
+
+],
+
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -2415,7 +2428,14 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
-          "alliedArmyKeys": [{"key": "early_war_host"}],
+          "alliedArmyKeys": [
+
+{ "key": "early_war_host", "onlyCategories": ["CommonTroops"]},
+{ "key": "free_companies", "onlyCategories": ["Troops"]}
+
+
+],
+
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -3283,7 +3303,10 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 10,
-          "alliedArmyKeys": [{"key": "early_war_host"}],
+          "alliedArmyKeys": [ 
+{ "key": "early_chevauchee_army"},{ "key": "late_chevauchee_army"}, 
+],
+
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -3936,7 +3959,10 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [{"key": "early_war_host"}],
+          "alliedArmyKeys": [ 
+{ "key": "early_war_host"},{ "key": "late_chevauchee_army"}, 
+],
+
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -4882,7 +4908,10 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 20,
-          "alliedArmyKeys": [{"key": "early_war_host"}],
+          "alliedArmyKeys": [ 
+{ "key": "early_war_host", "onlyCategories": ["CommonTroops"], "categoryOverrides": [ { "categoryId": "Allies", "maxPoints": 20 } ]}
+],
+
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -7755,7 +7784,10 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [{"key": "early_war_host"}],
+          "alliedArmyKeys": [ 
+{ "key": "scots_common_army", "onlyCategories": ["CommonTroops"]}
+],
+
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -8891,7 +8923,10 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [{"key": "late_war_host"}],
+          "alliedArmyKeys": [ 
+{ "key": "scots_common_army", "onlyCategories": ["CommonTroops"]}
+],
+
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -10477,10 +10512,15 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
-          "alliedArmyKeys": [ 
-           {"key": "early_war_host"},{"key": "free_companies"},
-           { "key": "early_chevauchee_army", "categoryOverrides": [ { "categoryId": "Allies", "minPoints": 25, "maxPoints": 100 }] }       
-          ], 
+          "alliedArmyKeys": [
+
+{ "key": "early_war_host", "onlyCategories": ["CommonTroops"], "categoryOverrides": [ { "categoryId": "Allies", "minPoints": 0, "maxPoints": 50 }] },
+{ "key": "early_chevauchee_army", "onlyCategories": ["CommonTroops"], "categoryOverrides": [ { "categoryId": "Allies", "minPoints": 25, "maxPoints": 100 }] },
+{ "key": "free_companies", "onlyCategories": ["Troops"], "categoryOverrides": [ { "categoryId": "Allies", "minPoints": 0, "maxPoints": 50 }] }
+
+
+],
+
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -11283,6 +11323,7 @@
           "max": 20,
         "alliedArmyKeys": [ 
 { "key": "the_kingdom_of_navarre", "onlyCategories": ["CommonTroops"], "categoryOverrides": [ { "categoryId": "Allies", "minPoints": 0, "maxPoints": 20 }] }, 
+{ "key": "flanders_communal_army", "onlyCategories": ["CommonTroops"], "categoryOverrides": [ { "categoryId": "Allies", "minPoints": 0, "maxPoints": 20 }] },
 { "key": "the_duchy_of_brittany", "onlyCategories": ["CommonTroops"], "categoryOverrides": [ { "categoryId": "Allies", "minPoints": 25, "maxPoints": 50 }] }
 ],
 
@@ -13951,8 +13992,9 @@
           "min": 0,
           "max": 10,
           "alliedArmyKeys": [ 
-           {"key": "scots_common_army"}  
-          ], 
+{ "key": "scots_common_army", "onlyCategories": ["CommonTroops"]}
+],
+
           "maxAlliedArmiesAllowed": 1
         }
   ],
@@ -15052,8 +15094,9 @@
           "min": 0,
           "max": 10,
           "alliedArmyKeys": [ 
-           {"key": "scots_common_army"}  
-          ], 
+{ "key": "scots_common_army", "onlyCategories": ["CommonTroops"]}
+],
+
           "maxAlliedArmiesAllowed": 1
         }
   ],
@@ -16232,8 +16275,9 @@
           "min": 0,
           "max": 50,
           "alliedArmyKeys": [ 
-           {"key": "free_companies"}  
-          ], 
+{ "key": "free_companies", "onlyCategories": ["Troops"]}
+],
+
           "maxAlliedArmiesAllowed": 1
         }
   ],
@@ -17303,8 +17347,9 @@
           "min": 0,
           "max": 50,
           "alliedArmyKeys": [ 
-           {"key": "free_companies"}  
-          ], 
+{ "key": "free_companies", "onlyCategories": ["Troops"]}
+],
+
           "maxAlliedArmiesAllowed": 1
         }
   ],
