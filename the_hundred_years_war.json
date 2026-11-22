@@ -11088,7 +11088,7 @@
 },  
 {
           "id": "the_duchy_of_brittany_crossbowmen",
-          "name": "rossbowmen",
+          "name": "Crossbowmen",
           "description": "Crossbowmen have crossbow. Inferior Fighters. Open Order. May have a Pavise (+3).",
           "category": "UncommonTroops",
           "type": "Infantry",
@@ -11154,7 +11154,7 @@
           "id": "the_duchy_of_brittany_town_militia",
           "name": "Town Militia",
           "description": "Town Militia have spear. May exchange spear for halberd (+2) or double handed weapon (+2). May have light armour (+2), shield (+2)",
-          "category": "CommonTroops",
+          "category": "UncommonTroops",
           "type": "Infantry",
           "defence": 7,
           "cohesion": 6,
