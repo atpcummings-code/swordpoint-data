@@ -13355,7 +13355,7 @@
            "optionalEquipment": []
         },
 {
-          "id": "early_war_host_cannon",
+          "id": "late_chevauchee_army_cannon",
           "name": "Cannon",
           "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
@@ -13435,7 +13435,7 @@
 
               
               {
-          "id": "early_war_host_medium_bombard",
+          "id": "late_chevauchee_army_medium_bombard",
           "name": "Medium Bombard",
           "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
@@ -13513,7 +13513,7 @@
           ]
         },
         {
-          "id": "early_war_host_large_bombard",
+          "id": "late_chevauchee_army_large_bombard",
           "name": "Large Bombard",
           "description": "Large Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
@@ -13591,7 +13591,7 @@
           ]
         },
 {
-          "id": "early_war_host_serpentine",
+          "id": "late_chevauchee_army_serpentine",
           "name": "Serpentine",
           "description": "Serpentine and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
@@ -13671,7 +13671,7 @@
 
         
 {
-          "id": "early_war_host_ribauldequin",
+          "id": "late_chevauchee_army_ribauldequin",
           "name": "Ribauldequin",
           "description": "Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
@@ -13749,7 +13749,7 @@
           ]
         },
         {
-          "id": "early_war_host_mortar",
+          "id": "late_chevauchee_army_mortar",
           "name": "Mortar",
           "description": "Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
@@ -13827,7 +13827,7 @@
           ]
         },
         {
-          "id": "early_war_host_large_mortar",
+          "id": "late_chevauchee_army_large_mortar",
           "name": "Large Mortar",
           "description": "Large Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
