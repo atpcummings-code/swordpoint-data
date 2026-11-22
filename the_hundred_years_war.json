@@ -14422,6 +14422,7 @@
 		"optionalEquipment": [
           {
               "name": "Cloth Barding (Knights)",
+			   "targetProfile": "Mounted Knights",
               "pointsModifier": 1,
 				"equipmentAdded": ["Cloth Barding"],
               "rulesAdded": ["Close Order"],
@@ -14432,6 +14433,7 @@
              
              {
               "name": "Veteran (Knights)",
+				  "targetProfile": "Mounted Knights",
               "pointsModifier": 1,
 				"equipmentAdded": [],
                "equipmentRemoved": []
@@ -14442,6 +14444,7 @@
             },
              {
               "name": "Partial Plate Armour (Knights)",
+				  "targetProfile": "Mounted Knights",
                "disables": "Heavy Armour (Knights)",
               "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
@@ -14453,6 +14456,7 @@
             },
              {
               "name": "Heavy Armour (Knights)",
+				  "targetProfile": "Mounted Knights",
                "disables": "Partial Plate Armour (Knights)",
               "pointsModifier": 0,
 				"equipmentAdded": ["Heavy Armour"],
@@ -14465,6 +14469,7 @@
              
              {
               "name": "Stubborn (Knights)",
+				 "targetProfile": "Mounted Knights",
                "hiddenUntilEnabled": "hidden",
               "pointsModifier": 2,
 				"equipmentAdded": [],
