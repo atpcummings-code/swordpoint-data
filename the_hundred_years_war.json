@@ -594,7 +594,7 @@
               "minBases": 3,
               "maxBases": 6,
           "baseEquipment": ["Spear", "Shield", "Light Armour"],
-          "specialRules": ["Close Order"],
+          "specialRules": ["Close Order"]
             },
             {
               "name": "Archers",
@@ -7707,9 +7707,13 @@
               "pointsPerBase": 0
             }
           ]
-        },
+        }
+        
+        
+
      ]
     },
+
 "early_war_host": {
       "armyName": "Early War Host - 1337 - 1415 AD",
   
@@ -8839,10 +8843,11 @@
               "pointsPerBase": 0
             }
           ]
-        },
+        }
         
         
-      ]
+
+     ]
     },
 
 "late_war_host": {
@@ -10432,10 +10437,11 @@
               "pointsPerBase": 0
             }
           ]
-        },
+        }
+        
+        
 
-
-      ]
+     ]
     },
 "the_duchy_of_brittany": {
       "armyName": "The Duchy of Brittany - 1341 - 1365 AD",
@@ -12423,6 +12429,11 @@
               "pointsPerBase": 0
             }
           ]
-        },
+        }
+        
+        
+
+     ]
+    }
   }
 }
