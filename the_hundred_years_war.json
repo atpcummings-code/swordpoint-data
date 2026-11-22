@@ -15007,6 +15007,7 @@
      ]
     },
 
+  
   "homeland_army_late": {
       "armyName": "Homeland Army (Late) - 1332 - 1448 AD",
   
@@ -15795,9 +15796,9 @@
           ]
         },
 {
-          "id": "homeland_army_late_potdefer",
-          "name": "Pot-de-Fer",
-          "description": "Pot-de-Fer and three crew. Up to three additional crew may be purchased (+5 each).",
+          "id": "homeland_army_late_medium_bombard",
+          "name": "Medium Bombard",
+          "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
           "type": "Commander",
           "minBases": 1,
@@ -15857,9 +15858,9 @@
           ],
           "subProfiles": [
             {
-              "name": "Pot-de-Fer",
+              "name": "Medium Bombard",
               "stats": {},
-              "pointsPerBase": 10,
+              "pointsPerBase": 20,
               "specialRules": ["Immovable","Slow Reload"]
             },
             {
@@ -15872,10 +15873,10 @@
             }
           ]
         },
-{
-          "id": "homeland_army_late_light_bombard",
-          "name": "Light Bombard",
-          "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
+        {
+          "id": "homeland_army_late_large_bombard",
+          "name": "Large Bombard",
+          "description": "Large Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
           "type": "Commander",
           "minBases": 1,
@@ -15935,10 +15936,10 @@
           ],
           "subProfiles": [
             {
-              "name": "Light Bombard",
+              "name": "Large Bombard",
               "stats": {},
-              "pointsPerBase": 15,
-              "specialRules": ["Slow Reload"]
+              "pointsPerBase": 25,
+              "specialRules": ["Immovable","Large","Intimidation"]
             },
             {
               "name": "Crew",
@@ -15950,14 +15951,10 @@
             }
           ]
         },
-
-              
-             
-        
-{
-          "id": "homeland_army_late_serpentine",
-          "name": "Serpentine",
-          "description": "Serpentine and three crew. Up to three additional crew may be purchased (+5 each).",
+        {
+          "id": "homeland_army_late_ribauldequin",
+          "name": "Ribauldequin",
+          "description": "Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
           "type": "Commander",
           "minBases": 1,
@@ -16017,9 +16014,165 @@
           ],
           "subProfiles": [
             {
-              "name": "Serpentine",
+              "name": "Ribauldequin",
               "stats": {},
-              "pointsPerBase": 15,
+              "pointsPerBase": 10,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+{
+          "id": "homeland_army_late_mortar",
+          "name": "Mortar",
+          "description": "Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Mortar",
+              "stats": {},
+              "pointsPerBase": 10,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
+{
+          "id": "homeland_army_late_large_mortar",
+          "name": "Large Mortar",
+          "description": "Large Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",
+          "type": "Commander",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Large Mortar",
+              "stats": {},
+              "pointsPerBase": 25,
               "specialRules": []
             },
             {
