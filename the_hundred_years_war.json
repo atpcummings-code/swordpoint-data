@@ -2344,7 +2344,7 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": ["Light Armour","Spear","Shield"],
-          "specialRules": ["Open Order","Evade"],
+          "specialRules": ["Open Order","Evade","Peninsula Horsemen"],
            "optionalEquipment": [
               {
               "name": "Javelins",
