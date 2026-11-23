@@ -15193,7 +15193,7 @@
 {
           "id": "late_chevauchee_army_mounted_false_french_knights",
           "name": "Mounted False French Knights",
-          "description": "Mounted False French Knights have partial plate armour, lance and shield. Superior Fighters. Shock Cavalry. Impetuous. May have full plate armour (+1). May have cloth barding (+1).",
+          "description": "Mounted False French Knights have partial plate armour, lance and shield. Superior Fighters. Shock Cavalry. Impetuous. May replace partial plate armour and shield with plat armour (free). May have cloth barding (+1).",
           "category": "UncommonTroops",
           "type": "Cavalry",
           "defence": 3,
@@ -15215,9 +15215,9 @@
             },
              {
               "name": "Plate Armour",
-              "pointsModifier": 1,
+              "pointsModifier": 0,
 				"equipmentAdded": ["Plate Armour"],
-               "equipmentRemoved": ["Partial Plate Armour"],
+               "equipmentRemoved": ["Partial Plate Armour","Shield"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
