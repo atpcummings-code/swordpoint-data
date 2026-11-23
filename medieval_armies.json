@@ -67,6 +67,80 @@
           "specialRules": [],
           "optionalEquipment": []
         },
+		  {
+          "id": "medieval_wales_commons_cavalry",
+          "name": "Commons Cavalry",
+          "description": "Commons Cavalry have spear and shield . Evade. May have light armour (+1). May be fielded without armour as skirmishers at 16 points per base.",
+          "category": "Commons",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+            {
+              "name": "Light Armour",
+				"disables": "Skirmishers",
+              "pointsModifier": 1,
+				"equipmentAdded": [Light Armour],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+				 "disables": "Light Armour",
+              "pointsModifier": -2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		  {
+          "id": "medieval_wales_foot_spearmen",
+          "name": "Foot Spearmen",
+          "description": "Foot Spearmen have a spear and shield. Open Order. Up to two units may have light armour (+2). May be Riding Horses (+1).",
+          "category": "Commons",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+               "maxUnits": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
         {
           "id": "medieval_wales_foot_archers",
           "name": "Foot Archers",
@@ -102,37 +176,78 @@
             }
            ]
         },
-        {
-          "id": "medieval_wales_welsh_spearmen",
-          "name": "Welsh Spearmen",
-          "description": "Welsh Spearmen have a spear and shield. Open Order. May exchange spear for javelins (+2) or throwing spear (+2). Every second unit may have light amrour (+2). May be given Evade (+2). Ambush (+2).",
-          "category": "Commons",
-          "type": "Infantry",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 9,
+		  {
+          "id": "medieval_wales_household_cavalry",
+          "name": "Mounted Household Knights",
+          "description": "Household Cavalry have heavy armour, spear and shield. Superior Fighters. May have lance (+1). May be Shock Cavalry (+4).",
+          "category": "Household",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "maxCountAllowed": 1,
           "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Spear","Shield"],
-          "specialRules": ["Open Order"],
+          "maxBases": 8,
+          "baseEquipment": ["Heavy Armour","Spear","Shield"],
+          "specialRules": ["Open Order""Superior Fighters"],
            "optionalEquipment": [
-              {
-              "name": "Javelins",
-              "disables": "Throwing Spear",
-              "pointsModifier": 2,
-			"equipmentAdded": ["Javelins"],
-              "equipmentRemoved": ["Spear"],  
+			{
+              "name": "Lance",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Lance"],
+               "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
-             {
+			   {
+              "name": "Shock Cavalry",
+              "pointsModifier": 4,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Shock Cavalry"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+		   {
+          "id": "medieval_wales_mounted_archers",
+          "name": "Mounted Archers",
+          "description": "Mounted Archers have light armour and longbow. Open Order. Riding Horses.",
+          "category": "Household",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+			   "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Longbow"],
+          "specialRules": ["Open Order","Riding Horses"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "medieval_wales_household_foot",
+          "name": "Household Foot",
+          "description": "Household Foot have spear and shield. Superior Fighters. May have light armour (+2) or heavy armour (+4). May exchange spear for throwing spear (+2). May be Riding Horses (+1).",
+          "category": "Household",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order","Superior Fighters"],
+           "optionalEquipment": [
+            {
               "name": "Throwing Spear",
-              "disables": "Javelins",
               "pointsModifier": 2,
 				"equipmentAdded": ["Throwing Spear"],
-               "equipmentRemoved": ["Spear"],
+              "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -140,248 +255,52 @@
             },
              {
               "name": "Light Armour",
+				 "disables": "Heavy Armour",
               "pointsModifier": 2,
-               "enabledEvery": 2,
-				"equipmentAdded": ["Light Armour"],
-               "equipmentRemoved": [],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Evade",
-              "pointsModifier": 2,
-				"equipmentAdded": [],
-              "rulesAdded": ["Evade"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Ambush",
-              "pointsModifier": 2,
-				"equipmentAdded":["Ambush"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-           ]
-        },
-        {
-          "id": "medieval_wales_english_deserters",
-          "name": "English Deserters",
-          "description": "English Deserters have longbow and light armour. Open Order. There may be one unit of english deserters for every Men at Arms unit in the army.",
-          "category": "Commons",
-          "type": "Infantry",
-          "defence": 6,
-          "cohesion": 7,
-          "pointsPerBase": 14,
-          "requires": { "unitIds": ["medieval_wales_mounted_men_at_arms", "medieval_wales_dismounted_men_at_arms"], "count": 1 },
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Longbow","Light Armour"],
-          "specialRules": ["Open Order"],
-           "optionalEquipment": []
-        },
-        {
-          "id": "medieval_wales_mounted_household_knights",
-          "name": "Mounted Household Knights",
-          "description": "Mounted Household Knights have heavy armour, spear and shield. Superior Fighters. Shock Cavalry. May have cloth barding (+1). May exchange spear for lance (+1).",
-          "category": "UnCommons",
-          "type": "Cavalry",
-          "defence": 3,
-          "cohesion": 8,
-          "pointsPerBase": 27,
-          "maxCountAllowed": 1,
-           "excludesUnits": ["medieval_wales_dismounted_household_knights"],
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": ["Heavy Armour","Spear","Shield"],
-          "specialRules": ["Open Order","Shock Cavalry","Superior Fighters"],
-           "optionalEquipment": [
-            {
-              "name": "Cloth Barding",
-              "pointsModifier": 1,
-				"equipmentAdded": ["Cloth Barding"],
-              "rulesAdded": ["Close Order"],
-              "rulesRemoved": ["Open Order"],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Lance",
-              "pointsModifier": 1,
-				"equipmentAdded": ["Lance"],
-               "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "medieval_wales_dismounted_household_knights",
-          "name": "Dismounted Household Knights",
-          "description": "Dismounted Household Knights have heavy armour, spear and shield. Superior Fighters. May exchange spear for halberd (+2) or double handed weapon (+2).",
-          "category": "UnCommons",
-          "type": "Infantry",
-          "defence": 4,
-          "cohesion": 8,
-          "pointsPerBase": 26,
-          "maxCountAllowed": 1,
-          "excludesUnits": ["medieval_wales_mounted_household_knights"],
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Heavy Armour","Spear","Shield"],
-          "specialRules": ["Close Order","Superior Fighters"],
-           "optionalEquipment": [
-            {
-              "name": "Halberd",
-              "disables": ["Double Handed Weapon"],
-              "pointsModifier": 2,
-				"equipmentAdded": ["Halberd"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Double Handed Weapon",
-              "disables": "Halberd",
-              "pointsModifier": 2,
-				"equipmentAdded":["Double Handed Weapon"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-        {
-          "id": "medieval_wales_mounted_men_at_arms",
-          "name": "Mounted Men at Arms",
-          "description": "Mounted Men at Arms have light armour, spear and shield. May have heavy armour (+1). May exchange spear for lance (+1).",
-          "category": "UnCommons",
-          "type": "Horse",
-          "defence": 4,
-          "cohesion": 7,
-          "pointsPerBase": 18,
-          "minBases": 3,
-          "maxBases": 8,
-          "baseEquipment": ["Light Armour","Spear","Shield"],
-          "specialRules": ["Open Order"],
-           "optionalEquipment": [
-            {
-              "name": "Heavy Armour",
-              "pointsModifier": 1,
-				"equipmentAdded": ["Heavy Armour"],
-               "equipmentRemoved": ["Light Armour"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Lance",
-              "pointsModifier": 1,
-				"equipmentAdded": ["Lance"],
-               "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-		 
-		  {
-          "id": "medieval_wales_dismounted_men_at_arms",
-          "name": "Dismounted Men at Arms",
-          "description": "Dismounted Men at Arms have light armour, spear and shield. May have heavy armour (+2). May exchange spear for halberd (+2) or double handed weapon (+2).",
-          "category": "UnCommons",
-          "type": "Infantry",
-          "defence": 5,
-          "cohesion": 7,
-          "pointsPerBase": 16,
-          "minBases": 3,
-          "maxBases": 12,
-          "baseEquipment": ["Light Armour","Spear","Shield"],
-          "specialRules": ["Close Order"],
-           "optionalEquipment": [
-              {
-              "name": "Halberd",
-              "disables": "Double Handed Weapon",
-              "pointsModifier": 2,
-				"equipmentAdded": ["Halberd"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Double Handed Weapon",
-              "disables": "Halberd",
-              "pointsModifier": 2,
-				"equipmentAdded": ["Double Handed Weapon"],
-              "equipmentRemoved": ["Spear"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Heavy Armour",
-              "pointsModifier": 2,
-				"equipmentAdded": ["Heavy Armour"],
-               "equipmentRemoved": ["Light Armour"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            }
-          ]
-        },
-		   {
-          "id": "medieval_wales_skirmishers",
-          "name": "Skirmishers",
-          "description": "Skirmishers have a javelin. Skirmishers. May have a shield (+1). May exchange javelins for bow (free).",
-          "category": "UnCommons",
-          "type": "Infantry",
-          "defence": 7,
-          "cohesion": 5,
-          "pointsPerBase": 5,
-          "minBases": 2,
-          "maxBases": 6,
-          "baseEquipment": ["Javelins"],
-          "specialRules": ["Skirmishers"],
-           "optionalEquipment": [
-             {
-              "name": "Bow",
-              "pointsModifier": 0,
-				"equipmentAdded": ["Bow"],
-              "equipmentRemoved": ["Javelins"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            },
-             {
-              "name": "Shield",
-              "pointsModifier": 1,
-				"equipmentAdded": ["Shield"],
+				"equipmentAdded":["Light Armour"],
               "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
+            },
+			   {
+              "name": "Heavy Armour",
+				   "disables": "Light Armour",
+              "pointsModifier": 4,
+				"equipmentAdded":["Heavy Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
           ]
+        },
+        
+		   {
+          "id": "medieval_wales_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have a javelin and shield. Skirmishers.Inferior Fighters",
+          "category": "Skirmishers",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+           "optionalEquipment": []
         }
       ]
     },
