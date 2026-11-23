@@ -86,7 +86,7 @@
               "name": "Light Armour",
 				"disables": "Skirmishers",
               "pointsModifier": 1,
-				"equipmentAdded": [Light Armour],
+				"equipmentAdded": ["Light Armour"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -1,
@@ -189,7 +189,7 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": ["Heavy Armour","Spear","Shield"],
-          "specialRules": ["Open Order""Superior Fighters"],
+          "specialRules": ["Open Order","Superior Fighters"],
            "optionalEquipment": [
 			{
               "name": "Lance",
@@ -303,7 +303,7 @@
            "optionalEquipment": []
         }
       ]
-    },
+    }
 
   }
 }
