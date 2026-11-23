@@ -168,9 +168,9 @@
              {
               "name": "Skirmishers",
               "pointsModifier": -4,
-				"equipmentAdded":["Ambush"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
+				"equipmentAdded":[],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
