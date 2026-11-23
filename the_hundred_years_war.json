@@ -399,7 +399,12 @@
 
 "the_kingdom_of_navarre": {
       "armyName": "The Kingdom of Navarre 1351 - 1469 AD",
-  
+   "alliedArmyKeys": [
+
+{ "key": "the_army_of_aquitaine_early", "onlyCategories": ["CommonTroops"]},
+{ "key": "free_companies", "onlyCategories": ["Troops"]}
+
+],
 	    "categories": [
         {
           "id": "Commanders",
