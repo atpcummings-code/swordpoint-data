@@ -6119,7 +6119,9 @@
 
 "scots_common_army": {
       "armyName": "Scots Common Army 1333 -1453 AD",
-  
+  "armyValidation": [ 
+{ "ids": ["scots_common_army_foot_knights"], "expression": "lessThanOrEqual", "compareWith": ["scots_common_army_schiltron_cu"], "ratio": 3, "countBy": "units" } 
+ ],
 	    "categories": [
         {
           "id": "Commanders",
@@ -8186,7 +8188,9 @@
     },
 "franco_scottish_host": {
       "armyName": "Franco Scottish Host 1415 - 1429 AD",
-  
+ "armyValidation": [ 
+{ "ids": ["franco_scottish_host_scottish_foot_knights"], "expression": "lessThanOrEqual", "compareWith": ["franco_scottish_host_schiltron_cu"], "countBy": "units" } 
+ ],
 	    "categories": [
         {
           "id": "Commanders",
