@@ -709,7 +709,7 @@
           "optionalEquipment": []
         },
         {
-          "id": "duchy_of_achaia_sub_captain",
+          "id": "duchy_of_achaia_captain",
           "name": "Captain",
           "description": "May ride a horse.",
           "category": "Commanders",
