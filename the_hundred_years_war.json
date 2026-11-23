@@ -2739,7 +2739,7 @@
         {
           "id": "the_kingdom_of_castile_jinetes",
           "name": "Mudejars",
-          "description": "Jinetes have light armour, javelins and shield. Evade. Peninsula Horsemen. May have spear (+1). May replace light armour with heavy armour (+1). The number of Jinetes must be equal to or more than the number of other cavalry bases.",
+          "description": "Jinetes have light armour, javelins and shield. Evade. Peninsula Horsemen. May have spear (+1). May replace light armour with heavy armour (+1). The number of Jinetes must be equal to or more than the number of other cavalry bases (across the army).",
           "category": "CommonTroops",
           "type": "Cavalry",
           "defence": 4,
@@ -2747,6 +2747,7 @@
           "pointsPerBase": 20,
           "minBases": 3,
           "maxBases": 8,
+		  "basesComparison": { "compareWith": ["the_kingdom_of_castile_caballeros", "the_kingdom_of_castile_caballeros_de_cuantia", "the_kingdom_of_castile_caballeros_cf","the_kingdom_of_castile_military_order_knights","the_kingdom_of_castile_hermandades_cavalry","the_kingdom_of_castile_mounted_scouts"], "expression": "greaterThanOrEqual" },
           "baseEquipment": ["Javelins","Light Armour","Shield"],
           "specialRules": ["Open Order","Evade","Peninsula Horsemen"],
            "optionalEquipment": [
@@ -3199,7 +3200,7 @@
           "name": "Mounted Scouts",
           "description": "Mounted Scouts have a javelins. Skirmishers. Inferior Fighters. May have shield (+1).",
           "category": "UncommonTroops",
-          "type": "Infantry",
+          "type": "Cavalry",
           "defence": 6,
           "cohesion": 6,
           "pointsPerBase": 14,
