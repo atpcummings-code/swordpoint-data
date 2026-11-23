@@ -778,8 +778,7 @@
           "id": "the_kingdom_of_navarre_cannon",
           "name": "Cannon",
           "description": "One gun and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -856,8 +855,7 @@
           "id": "the_kingdom_of_navarre_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -2394,8 +2392,7 @@
           "id": "the_kingdom_of_aragon_cannon",
           "name": "Cannon",
           "description": "One gun and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -2472,8 +2469,7 @@
           "id": "the_kingdom_of_aragon_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -3349,8 +3345,7 @@
           "id": "the_kingdom_of_castile_cannon",
           "name": "Cannon",
           "description": "One gun and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -3427,8 +3422,7 @@
           "id": "the_kingdom_of_castile_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -4082,8 +4076,7 @@
           "id": "flanders_communal_army_cannon",
           "name": "Cannon",
           "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -4161,8 +4154,7 @@
           "id": "flanders_communal_army_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -4239,8 +4231,7 @@
           "id": "flanders_communal_army_medium_bombard",
           "name": "Medium Bombard",
           "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -5187,8 +5178,7 @@
           "id": "burgundy_cannon",
           "name": "Cannon",
           "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -5266,8 +5256,7 @@
           "id": "burgundy_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -5344,8 +5333,7 @@
           "id": "burgundy_medium_bombard",
           "name": "Medium Bombard",
           "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -5422,8 +5410,7 @@
           "id": "burgundy_large_bombard",
           "name": "Large Bombard",
           "description": "Large Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -5500,8 +5487,7 @@
           "id": "burgundy_serpentine",
           "name": "Serpentine",
           "description": "Serpentine and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -5578,8 +5564,7 @@
           "id": "burgundy_culverin",
           "name": "Culverin",
           "description": "Culverin and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -5656,8 +5641,7 @@
           "id": "burgundy_crapaudeau",
           "name": "Crapaudeau",
           "description": "Crapaudeau and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -5734,8 +5718,7 @@
           "id": "burgundy_veuglaire",
           "name": "Veuglaire",
           "description": "Veuglaire and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -5812,8 +5795,7 @@
           "id": "burgundy_ribauldequin",
           "name": "Ribauldequin",
           "description": "Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -5890,8 +5872,7 @@
           "id": "burgundy_large_ribauldequin",
           "name": "Large Ribauldequin",
           "description": "Large Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -5968,8 +5949,7 @@
           "id": "burgundy_mortar",
           "name": "Mortar",
           "description": "Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -6046,8 +6026,7 @@
           "id": "burgundy_large_mortar",
           "name": "Large Mortar",
           "description": "Large Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -6702,8 +6681,7 @@
           "id": "scots_common_army_cannon",
           "name": "Cannon",
           "description": "One gun and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -6780,8 +6758,7 @@
           "id": "scots_common_army_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -7341,8 +7318,7 @@
           "id": "the_ordnance_of_charles_vii_cannon",
           "name": "Cannon",
           "description": "One gun and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -7420,8 +7396,7 @@
           "id": "the_ordnance_of_charles_vii_medium_bombard",
           "name": "Medium Bombard",
           "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -7498,8 +7473,7 @@
           "id": "the_ordnance_of_charles_vii_large_bombard",
           "name": "Large Bombard",
           "description": "Large Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -7576,8 +7550,7 @@
           "id": "the_ordnance_of_charles_vii_serpentine",
           "name": "Serpentine",
           "description": "Serpentine and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -7654,8 +7627,7 @@
           "id": "the_ordnance_of_charles_vii_culverin",
           "name": "Culverin",
           "description": "Culverin and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -7732,8 +7704,7 @@
           "id": "the_ordnance_of_charles_vii_crapaudeau",
           "name": "Crapaudeau",
           "description": "Crapaudeau and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -7810,8 +7781,7 @@
           "id": "the_ordnance_of_charles_vii_veuglaire",
           "name": "Veuglaire",
           "description": "Veuglaire and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -7888,8 +7858,7 @@
           "id": "the_ordnance_of_charles_vii_ribauldequin",
           "name": "Ribauldequin",
           "description": "Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -7966,8 +7935,7 @@
           "id": "the_ordnance_of_charles_vii_large_ribauldequin",
           "name": "Large Ribauldequin",
           "description": "Large Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -8044,8 +8012,7 @@
           "id": "the_ordnance_of_charles_vii_mortar",
           "name": "Mortar",
           "description": "Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -8122,8 +8089,7 @@
           "id": "the_ordnance_of_charles_vii_large_mortar",
           "name": "Large Mortar",
           "description": "Large Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -9320,8 +9286,7 @@
           "id": "franco_scottish_host_light_gun",
           "name": "Light Gun",
           "description": "One light gun and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -9398,8 +9363,7 @@
           "id": "franco_scottish_host_potdefer",
           "name": "Pot-de-Fer",
           "description": "Pot-de-Fer and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -9476,8 +9440,7 @@
           "id": "franco_scottish_host_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -9554,8 +9517,7 @@
           "id": "franco_scottish_host_medium_bombard",
           "name": "Medium Bombard",
           "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -9632,8 +9594,7 @@
           "id": "franco_scottish_host_large_bombard",
           "name": "Large Bombard",
           "description": "Large Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -9710,8 +9671,7 @@
           "id": "franco_scottish_host_serpentine",
           "name": "Serpentine",
           "description": "Serpentine and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -10615,8 +10575,7 @@
           "id": "early_war_host_light_gun",
           "name": "Light Gun",
           "description": "One light gun and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -10693,8 +10652,7 @@
           "id": "early_war_host_potdefer",
           "name": "Pot-de-Fer",
           "description": "Pot-de-Fer and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -10771,8 +10729,7 @@
           "id": "early_war_host_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -10849,8 +10806,7 @@
           "id": "early_war_host_medium_bombard",
           "name": "Medium Bombard",
           "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -11899,8 +11855,7 @@
           "id": "late_war_host_light_gun",
           "name": "Light Gun",
           "description": "One light gun and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -11978,8 +11933,7 @@
           "id": "late_war_host_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -12056,8 +12010,7 @@
           "id": "late_war_host_medium_bombard",
           "name": "Medium Bombard",
           "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -12134,8 +12087,7 @@
           "id": "late_war_host_medium_bombard",
           "name": "Medium Bombard",
           "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -12212,8 +12164,7 @@
           "id": "late_war_host_serpentine",
           "name": "Serpentine",
           "description": "Serpentine and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -12290,8 +12241,7 @@
           "id": "late_war_host_culverin",
           "name": "Culverin",
           "description": "Culverin and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -12368,8 +12318,7 @@
           "id": "late_war_host_veuglaire",
           "name": "Veuglaire",
           "description": "Veuglaire and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -12446,8 +12395,7 @@
           "id": "late_war_host_ribauldequin",
           "name": "Ribauldequin",
           "description": "Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -14135,8 +14083,7 @@
           "id": "early_war_host_cannon",
           "name": "Cannon",
           "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -14213,8 +14160,7 @@
           "id": "early_war_host_potdefer",
           "name": "Pot-de-Fer",
           "description": "Pot-de-Fer and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -14291,8 +14237,7 @@
           "id": "early_war_host_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -14369,8 +14314,7 @@
           "id": "early_war_host_medium_bombard",
           "name": "Medium Bombard",
           "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -14447,8 +14391,7 @@
           "id": "early_war_host_ribauldequin",
           "name": "Ribauldequin",
           "description": "Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -15448,8 +15391,7 @@
           "id": "late_chevauchee_army_cannon",
           "name": "Cannon",
           "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -15528,8 +15470,7 @@
           "id": "late_chevauchee_army_medium_bombard",
           "name": "Medium Bombard",
           "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -15606,8 +15547,7 @@
           "id": "late_chevauchee_army_large_bombard",
           "name": "Large Bombard",
           "description": "Large Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -15684,8 +15624,7 @@
           "id": "late_chevauchee_army_serpentine",
           "name": "Serpentine",
           "description": "Serpentine and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -15764,8 +15703,7 @@
           "id": "late_chevauchee_army_ribauldequin",
           "name": "Ribauldequin",
           "description": "Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -15842,8 +15780,7 @@
           "id": "late_chevauchee_army_mortar",
           "name": "Mortar",
           "description": "Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -15920,8 +15857,7 @@
           "id": "late_chevauchee_army_large_mortar",
           "name": "Large Mortar",
           "description": "Large Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -16783,8 +16719,7 @@
           "id": "homeland_army_early_cannon",
           "name": "Cannon",
           "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -16861,8 +16796,7 @@
           "id": "homeland_army_early_potdefer",
           "name": "Pot-de-Fer",
           "description": "Pot-de-Fer and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -16939,8 +16873,7 @@
           "id": "homeland_army_early_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -17021,8 +16954,7 @@
           "id": "homeland_army_early_serpentine",
           "name": "Serpentine",
           "description": "Serpentine and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -17813,8 +17745,7 @@
           "id": "homeland_army_late_cannon",
           "name": "Cannon",
           "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -17891,8 +17822,7 @@
           "id": "homeland_army_late_medium_bombard",
           "name": "Medium Bombard",
           "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -17969,8 +17899,7 @@
           "id": "homeland_army_late_large_bombard",
           "name": "Large Bombard",
           "description": "Large Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -18047,8 +17976,7 @@
           "id": "homeland_army_late_ribauldequin",
           "name": "Ribauldequin",
           "description": "Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -18125,8 +18053,7 @@
           "id": "homeland_army_late_mortar",
           "name": "Mortar",
           "description": "Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -18203,8 +18130,7 @@
           "id": "homeland_army_late_large_mortar",
           "name": "Large Mortar",
           "description": "Large Mortar and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -19119,8 +19045,7 @@
           "id": "the_army_of_aquitaine_late_cannon",
           "name": "Cannon",
           "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -19197,8 +19122,7 @@
           "id": "the_army_of_aquitaine_late_medium_bombard",
           "name": "Medium Bombard",
           "description": "Medium Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -19275,8 +19199,7 @@
           "id": "the_army_of_aquitaine_late_large_bombard",
           "name": "Large Bombard",
           "description": "Large Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -20241,8 +20164,7 @@
           "id": "the_army_of_aquitaine_early_cannon",
           "name": "Cannon",
           "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -20319,8 +20241,7 @@
           "id": "the_army_of_aquitaine_early_potdefer",
           "name": "Pot-de-Fer",
           "description": "Pot-de-Fer and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -20397,8 +20318,7 @@
           "id": "the_army_of_aquitaine_early_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -20982,7 +20902,7 @@
           "name": "Cannon",
           "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
-          "type": "Commander",
+          "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -21061,7 +20981,7 @@
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
-          "type": "Commander",
+          "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -21139,7 +21059,7 @@
           "name": "Serpentine",
           "description": "Serpentine and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
-          "type": "Commander",
+          "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
@@ -21216,8 +21136,7 @@
           "id": "ree_companies_ribauldequin",
           "name": "Ribauldequin",
           "description": "Ribauldequin and three crew. Up to three additional crew may be purchased (+5 each).",
-          "category": "Artillery",
-          "type": "Commander",
+          "category": "Artillery",           "type": "Artillery",
           "minBases": 1,
           "maxBases": 1,
           "optionalEquipment": [
