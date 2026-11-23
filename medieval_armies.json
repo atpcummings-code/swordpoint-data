@@ -25,7 +25,7 @@
           "description": "",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 80
         },
         {
           "id": "Skirmishers",
