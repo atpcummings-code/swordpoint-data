@@ -497,7 +497,161 @@
            "optionalEquipment": []
         }	  
       ]
-    }
+    },
+	  "kingdom_of_cilicia": {
+      "armyName": "Kingdom of Cilicia- 1198 - 1375 AD",
+  "armyValidation": [ 
+ ],
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 35
+        },
+        {
+          "id": "Infantry",
+          "name": "Infnatry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 75
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+         "description": "The army may have allies frm teh Christian Crusader list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [ { "key": "christian_crusader"} ],
+          "maxAlliedArmiesAllowed": 1
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "kingdom_of_cilicia_general",
+          "name": "General",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "kingdom_of_cilicia_sub_general",
+          "name": "Sub-General",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "kingdom_of_cilicia_knights",
+          "name": "Knights",
+          "description": "Knights have heavy armour, lance and shield. Superior Fighters. Shock Cavalry",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Heavy Armour","Lance","Shield"],
+          "specialRules": ["Open Order","Superior Fighters","Shock Cavalry"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "kingdom_of_cilicia_heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have light armour, spear and shield. Superior Fighters. May have heavy armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order","Superior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+		  {
+          "id": "kingdom_of_cilicia_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have javelins and shield. Open Order. May be fielded as Skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+        
+			   {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+				"equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },        
+		   {
+          "id": "kingdom_of_cilicia_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have a bow. Skirmishers.Inferior Fighters",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 5,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+           "optionalEquipment": []
+        }
+      ]
+    },
 
 
 
