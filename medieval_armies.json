@@ -653,6 +653,364 @@
       ]
     },
 
+"duchy_of_achaia": {
+      "armyName": "Duchy of Achaia 1204 - 1311 AD",
+  "armyValidation": [ 
+ ],
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 75
+        },
+        {
+          "id": "Infantry",
+          "name": "Infnatry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+         "description": "The army may have allies from the Medieval Bulgarian, later Italian States (Venice) and Medieval Byzantine lists. It may also select horse archers from the Turcoman list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50,
+          "alliedArmyKeys": [ { "key": ""} ],
+          "maxAlliedArmiesAllowed": 1
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "duchy_of_achaia_general",
+          "name": "General",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "duchy_of_achaia_sub_captain",
+          "name": "Captain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "duchy_of_achaia_knights",
+          "name": "Knights",
+          "description": "Knights have spear, shield and heavy or partial plate armour. Superior Fighters. Impetuous. Shock Cavalry. Veteran. May have cloth barding (+1). May have lance (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order","Superior Fighters","Impetuous","Shock Cavalry","Veteran"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+               "disables": "Partial Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour",
+               "disables": "Heavy Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Partial Plate Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Cloth Barding",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Lance",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Lance"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "duchy_of_achaia_sergeants",
+          "name": "Sergeants",
+          "description": "Sergeants have light armour, spear and shield. May form a Combined Formation with Knights.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": []
+        },
+{
+          "id": "duchy_of_achaia_knights_sergeants_cf",
+          "name": "Combined Formation Knights/Sergeants",
+          "description": "Knights have spear, shield and heavy or partial plate armour. Superior Fighters. Impetuous. Shock Cavalry. Veteran. May have cloth barding (+1). May have lance (+1). Sergeants have light armour, spear and shield. May form a Combined Formation with Knights.",
+          "category": "Cavalry",
+          "type": "Commander",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Knights",
+              "defence": 5,
+              "cohesion": 8,
+              "pointsPerBase": 28,
+              "minBases": 3,
+              "maxBases": 7,
+              "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order","Superior Fighters","Impetuous","Shock Cavalry","Veteran"]
+            },
+            {
+              "name": "Sergeants",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": [
+           {
+              "name": "Heavy Armour (Knights)",
+             "targetProfile": "Knights",
+               "disables": "Partial Plate Armour (Knights)",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour (Knights)",
+               "targetProfile": "Knights",
+               "disables": "Heavy Armour (Knights)",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Partial Plate Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Cloth Barding (Knights)",
+               "targetProfile": "Knights",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Lance (Knights)",
+               "targetProfile": "Knights",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Lance"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+            ]
+            }, 
+
+        
+		  {
+          "id": "duchy_of_achaia_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have light armour, spear and shield.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": []
+        }, 
+        {
+          "id": "duchy_of_achaia_crossbowmen",
+          "name": "Crossbowmen",
+          "description": "Crossbowmen have light armour and crossbow.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Crossbow"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": []
+        },
+{
+          "id": "duchy_of_achaia_spearmen_crossbowmen_mo",
+          "name": "Mixed Order Spearmen/Crossbowmen",
+          "description": "Spearmen have light armour, spear and shield. Crossbowmen have light armour and crossbow. Crossbowmen form up to 50% of a Mixed Order unit with Spearmen.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Spearmen",
+            	"defence": 5,
+          	"cohesion": 7,
+          	"pointsPerBase": 16,
+              "minBases": 2,
+              "maxBases": 12,
+          "baseEquipment": ["Light Armour","Spear", "Shield"],
+          "specialRules": ["Close Order"]
+            },
+            {
+              "name": "Crossbowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 16,
+              "minBases": 1,
+              "maxBases": 6,
+              "maxPercentage": 50,
+              "baseEquipment": ["Crossbow","Light Armour"],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": []
+        },
+
+{
+          "id": "duchy_of_achaia_greek_archers",
+          "name": "Greek Archers",
+          "description": "Greek Archers have a bow. Open Order. Inferior Fighters. May be fielded as Skirmisherss at a cost of four points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 6,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "duchy_of_achaia_hillmen",
+          "name": "Hillmen",
+          "description": "Hillmen have javelins and shield. Open Order. May have throwing spear (+2), or alternatively may be fielded as Skirmishers  at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Skirmishers"],
+           "optionalEquipment": [
+             {
+              "name": "Skirmishers",
+               "disables": "Throwing Spear",
+              "pointsModifier": -4,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Throwing Spear",
+               "disables": "Skirmishers",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Throwing Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        }
+      ]
+    },
 
 
 
