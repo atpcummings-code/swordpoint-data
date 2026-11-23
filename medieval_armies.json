@@ -2221,6 +2221,269 @@
       ]
     },
 
+"aztec_triple_alliance": {
+      "armyName": "Aztec Triple Alliance 1428 - 1522 AD",
+  "armyValidation": [ 
+ ],
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "description": "The total of Warrior and Subject Contingent bases must be at least twice the numberof Noble Warrior bases.",
+          "constraintType": "percentage",
+          "min": 85,
+          "max": 100
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "aztec_triple_alliance_general",
+          "name": "General",
+          "description": "",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "aztec_triple_alliance_commander",
+          "name": "Commander",
+          "description": "",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "aztec_triple_alliance_quachicquelt",
+          "name": "Quachicquelt Eagle/Jaguar Knights",
+          "description": "Quachicquelt Eagle/Jaguar Knights have a shield. Superior Fighters.  May have a double-handed weapon (+2) and atlatl (+2). May be Veteran (+2) and Stubborn (+2)..",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 23,
+          "maxCountAllowed": 3,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Shield"],
+          "specialRules": ["Close Order","Superior Fighters","Stamina"],
+           "optionalEquipment": [
+            {
+              "name": "Double-handed Weapon",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double-handed Weapon"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Atlatl",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Atlatl"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Open Order",
+              "pointsModifier": -5,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "aztec_triple_alliance_otontin",
+          "name": "Otontin",
+          "description": "Quachicquelt Eagle/Jaguar Knights have a shield. Superior Fighters. Veteran. Stubborn. May have a double-handed weapon (+2) and atlatl (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 9,
+          "pointsPerBase": 29,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Shield"],
+          "specialRules": ["Close Order","Superior Fighters","Veteran","stubborn","Stamina"],
+           "optionalEquipment": [
+            {
+              "name": "Double-handed Weapon",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double-handed Weapon"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Atlatl",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Atlatl"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Open Order",
+              "pointsModifier": -7,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        
+        {
+          "id": "aztec_triple_alliance_warriors",
+          "name": "Warriors",
+          "description": "Warriors have a shield. Close Order. May have atlatl (+2) or pike (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Shield"],
+          "specialRules": ["Close Order","Stamina"],
+           "optionalEquipment": [
+            {
+              "name": "Pike",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Pike"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Atlatl",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Atlatl"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Open Order",
+              "pointsModifier": -3,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+        },
+        {
+          "id": "aztec_triple_alliance_archers",
+          "name": "Archers",
+          "description": "Archers have bow and shield. Open Order. May be fielded as Skirmishers at a cost of seven points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "maxCountAllowed": 2,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+				"equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "aztec_triple_alliance_slingers",
+          "name": "Slingers",
+          "description": "Slingers have a sling and shield. Open Order. May be fielded as Skirmishers at a cost of seven points per base.There should be more slinger bases in the army than archer bases.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 11,
+          "minCountAllowed": 1,
+          "maxCountAllowed": 4,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Shield","Sling"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+				"equipmentAdded": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+           
+      ]
+    },
 
 
 	  
