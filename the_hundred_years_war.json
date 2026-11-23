@@ -1435,7 +1435,7 @@
            "optionalEquipment": []
         },
         {
-"id": "the_kingdom_of_portugal_caballeros_cf",
+"id": "the_kingdom_of_portugal_caballeros_cu",
           "name": "Combined Formation Caballeros",
           "description": "Caballeros have heavy armour, spear, javelins and shield. Superior Fighters. May have cloth barding (+1). May exchange spear and javelins for lance becoming Shock Cavalry (+4). Caballeros de Cuantia have light armour, spear, javelins and shield. Superior Fighters. Caballeros de Cuantia form a Combined Unit with Caballeros with up to half the unit being Caballeros de Cuantia.",
           "category": "UncommonTroops",
@@ -1503,6 +1503,7 @@
           "defence": 4,
           "cohesion": 7,
           "pointsPerBase": 20,
+			"basesComparison": { "compareWith": ["the_kingdom_of_portugal_military_order_knights","the_kingdom_of_portugal_caballeros","the_kingdom_of_portugal_caballeros_de_cuantia","the_kingdom_of_portugal_caballeros_cu"], "expression": "greaterThanOrEqual" },
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": ["Javelins","Light Armour","Shield"],
