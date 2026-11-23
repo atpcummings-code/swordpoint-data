@@ -10257,15 +10257,15 @@
 {
           "id": "early_war_host_foot_militia_crossbowmen",
           "name": "Foot Militia Crossbowmen",
-          "description": "Foot Militia Crossbowmen have light crossbow. Inferior Fighters. Open Order. May have light armour (+2). May have a Pavise (+3). Foot Militia Croissbowmen may not outnumber Mercenary Crossbowmen",
+          "description": "Foot Militia Crossbowmen have crossbow. Inferior Fighters. Open Order. May have light armour (+2). May have a Pavise (+3). Foot Militia Croissbowmen may not outnumber Mercenary Crossbowmen",
           "category": "CommonTroops",
           "type": "Infantry",
           "defence": 7,
           "cohesion": 6,
-          "pointsPerBase": 8,
+          "pointsPerBase": 9,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Light Crossbow"],
+          "baseEquipment": ["Crossbow"],
           "specialRules": ["Open Order","Inferior Fighters"],
            "optionalEquipment": [
               {
