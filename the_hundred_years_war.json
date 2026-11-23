@@ -2050,7 +2050,7 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": ["Javelins","Light Armour","Shield"],
-          "specialRules": ["Open Order","Evade"],
+          "specialRules": ["Open Order","Evade","Peninsula Horsemen"],
            "optionalEquipment": [
             {
               "name": "Spear",
@@ -2461,7 +2461,7 @@
           ]
         },
 		  {
-          "id": "the_kingdom_of_castile_light_bombard",
+          "id": "the_kingdom_of_aragon_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
@@ -2748,7 +2748,7 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": ["Javelins","Light Armour","Shield"],
-          "specialRules": ["Open Order","Evade"],
+          "specialRules": ["Open Order","Evade","Peninsula Horsemen"],
            "optionalEquipment": [
             {
               "name": "Spear",
