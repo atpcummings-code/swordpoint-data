@@ -6453,7 +6453,6 @@
 "id": "scots_common_army_mounted_knights_retainers_cu",
           "name": "Combined Unit Mounted Knights and Retainers",
           "description": "Mounted Knights have partial plate armour, spear and shield. Superior Fighters. Shock Cavalry. May exchange spear for lance (+1). May have cloth barding (+1). Mounted Retainers have light armour, spear and shield. May have heavy armour (+1). Mounted Retainers form up to half of a Combined Unit with Mounted Knights. ",
-          "category": "UncommonTroops",
           "type": "Cavalry", 
           "minBases": 3,
           "maxBases": 8,
@@ -6462,6 +6461,7 @@
           "subProfiles": [
             {
               "name": "Mounted Knights",
+			"pointsCategory": "CommonTroops",
               "defence": 3,
               "cohesion": 8,
               "pointsPerBase": 27,
@@ -6472,6 +6472,7 @@
           "specialRules": ["Open Order","Shock Cavalry","Superior Fighters"]         },
             {
               "name": "Mounted Retainers",
+				"pointsCategory": "UncommonTroops",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
               "defence": 4,
               "cohesion": 7,
@@ -6529,6 +6530,7 @@
           "subProfiles": [
             {
               "name": "Foot Knights",
+				"pointsCategory": "CommonTroops",
               "defence": 4,
               "cohesion": 8,
               "pointsPerBase": 26,
@@ -6538,6 +6540,7 @@
           "specialRules": ["Close Order","Superior Fighters"]         },
             {
               "name": "Foot Retainers",
+				"pointsCategory": "UncommonTroops",
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Units", "target": "all" } ] },
               "defence": 6,
               "cohesion": 7,
@@ -18785,7 +18788,7 @@
 {
           "id": "the_army_of_aquitaine_late_mounted_knights",
           "name": "Mounted Knights",
-          "description": "Mounted Knights have partial plate armour, lance and shield. Superior Fighters.Shock Cavalry. May replace partial plate armour and shield with plate armour (free). May have cloth barding (+1). May be Veteran (+1).",
+          "description": "Mounted Knights have partial plate armourE, lance and shield. Superior Fighters. Shock Cavalry. May replace partial plate armour and shield with plate armour (free). May have cloth barding (+1). May be Veteran (+1).",
           "category": "UncommonTroops",
           "type": "Cavalry",
           "defence": 3,
