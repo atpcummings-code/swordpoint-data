@@ -321,8 +321,8 @@
           "name": "Infantry",
           "description": "The total of Warrior and Subject Contingent bases must be at least twice the numberof Noble Warrior bases.",
           "constraintType": "percentage",
-          "min": 0,
-          "max": 85
+          "min": 85,
+          "max": 100
         }
         
       ],
