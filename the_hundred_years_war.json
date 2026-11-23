@@ -846,7 +846,7 @@
           ]
         },
 		  {
-          "id": "the_kingdom_of_castile_light_bombard",
+          "id": "the_kingdom_of_navarre_light_bombard",
           "name": "Light Bombard",
           "description": "Light Bombard and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",
@@ -2738,7 +2738,7 @@
 },
         {
           "id": "the_kingdom_of_castile_jinetes",
-          "name": "Mudejars",
+          "name": "Jinetes",
           "description": "Jinetes have light armour, javelins and shield. Evade. Peninsula Horsemen. May have spear (+1). May replace light armour with heavy armour (+1). The number of Jinetes must be equal to or more than the number of other cavalry bases (across the army).",
           "category": "CommonTroops",
           "type": "Cavalry",
