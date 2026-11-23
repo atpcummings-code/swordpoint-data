@@ -1266,7 +1266,7 @@
            "optionalEquipment": [
              {
               "name": "Halberd",
-               "disabels": "Two-handed Weapon",
+               "disables": "Two-handed Weapon",
               "pointsModifier": 2,
 				"equipmentAdded": ["Halberd"],
                "equipmentRemoved": [],
@@ -1277,7 +1277,7 @@
             },
              {
               "name": "Two-handed Weapon",
-               "disabels": "Halberd",
+               "disables": "Halberd",
               "pointsModifier": 2,
 				"equipmentAdded": ["Two-handed Weapon"],
                "equipmentRemoved": [],
