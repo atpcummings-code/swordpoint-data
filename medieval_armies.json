@@ -1,9 +1,8 @@
 {
   "armies": {
-"glyndwr_rising": {
-      "armyName": "Glyndwr Rising - 1400 - 1415 AD",
+"medieval_wales": {
+      "armyName": "Medieval Wales - 1064 - 1420 AD",
   "armyValidation": [ 
-{ "ids": ["glyndwr_rising_english_deserters"], "expression": "lessThanOrEqual", "compareWith": ["glyndwr_rising_mounted_men_at_arms", "glyndwr_rising_dismounted_men_at_arms"], "ratio": 1, "countBy": "units" }  
  ],
 	    "categories": [
         {
@@ -11,44 +10,42 @@
           "name": "Commanders",
           "constraintType": "count",
           "min": 0,
-          "max": 6
+          "max": 8
         },
         {
-          "id": "CommonTroops",
-          "name": "Common Troops",
+          "id": "Household",
+          "name": "Household",
           "constraintType": "percentage",
-          "min": 50,
-          "max": 100
+          "min": 0,
+          "max": 33
         },
         {
-          "id": "UncommonTroops",
-          "name": "Uncommon Troops",
-          "description": "There may only be one unit of Household Knights. Up to two units may be upgraded to be given the Ambush special rule.",
+          "id": "Commons",
+          "name": "Commons",
+          "description": "",
           "constraintType": "percentage",
           "min": 0,
           "max": 25
         },
-		   {
-          "id": "Allies",
-          "name": "Allies",
-         "description": "From the French Early War Host list.",
+        {
+          "id": "Skirmishers",
+          "name": "Skirmishers",
+          "description": "",
           "constraintType": "percentage",
           "min": 0,
-          "max": 10,
-          "alliedArmyKeys": [ { "key": "early_war_host", "excludesUnits": ["early_war_host_keeper_of_the_oriflamme"] } ],
-          "maxAlliedArmiesAllowed": 1
+          "max": 10
         }
         
       ],
       "units": [
         {
-          "id": "glyndwr_rising_prince",
+          "id": "medieval_wales_prince",
           "name": "Prince",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
-          "attacks": "+2",
+          "attacks": "+3",
           "cohesion": 9,
           "pointsPerBase": 0,
           "minBases": 0,
@@ -57,8 +54,8 @@
           "optionalEquipment": []
         },
         {
-          "id": "glyndwr_rising_captain",
-          "name": "Captain",
+          "id": "medieval_wales_noble",
+          "name": "Noble",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "Commander",
@@ -71,40 +68,32 @@
           "optionalEquipment": []
         },
         {
-          "id": "glyndwr_rising_welsh_archers",
-          "name": "Welsh Archers",
-          "description": "Welsh Archers have longbowmen. Open Order. Inferior Fighters. May have shield (+2). May be given Evade (+2). Ambush (+2).",
-          "category": "CommonTroops",
+          "id": "medieval_wales_foot_archers",
+          "name": "Foot Archers",
+          "description": "Foot Archers have longbowmen. Open Order. May be fieled as Skirmishers at seven points per base. May be Riding Horses (+1).",
+          "category": "Commons",
           "type": "Infantry",
           "defence": 7,
           "cohesion": 6,
-          "pointsPerBase": 9,
+          "pointsPerBase": 11,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Longbow"],
-          "specialRules": ["Open Order","Inferior Fighters"],
+          "specialRules": ["Open Order"],
            "optionalEquipment": [
-              {
-              "name": "Shield",
-              "pointsModifier": 2,
-				"equipmentAdded": ["Shield"],
-              "rulesAdded": [],
-              "rulesRemoved": [],
-              "defenceModifier": -1,
-              "cohesionModifier": 0
-            },
+              
              {
-              "name": "Evade",
-              "pointsModifier": 2,
+              "name": "Riding Horses",
+              "pointsModifier": 1,
 				"equipmentAdded": [],
-              "rulesAdded": ["Evade"],
+              "rulesAdded": ["Riding Horses"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
              {
-              "name": "Ambush",
-              "pointsModifier": 2,
+              "name": "Skirmishers",
+              "pointsModifier": -4,
 				"equipmentAdded":["Ambush"],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -114,10 +103,10 @@
            ]
         },
         {
-          "id": "glyndwr_rising_welsh_spearmen",
+          "id": "medieval_wales_welsh_spearmen",
           "name": "Welsh Spearmen",
           "description": "Welsh Spearmen have a spear and shield. Open Order. May exchange spear for javelins (+2) or throwing spear (+2). Every second unit may have light amrour (+2). May be given Evade (+2). Ambush (+2).",
-          "category": "CommonTroops",
+          "category": "Commons",
           "type": "Infantry",
           "defence": 6,
           "cohesion": 6,
@@ -181,15 +170,15 @@
            ]
         },
         {
-          "id": "glyndwr_rising_english_deserters",
+          "id": "medieval_wales_english_deserters",
           "name": "English Deserters",
           "description": "English Deserters have longbow and light armour. Open Order. There may be one unit of english deserters for every Men at Arms unit in the army.",
-          "category": "CommonTroops",
+          "category": "Commons",
           "type": "Infantry",
           "defence": 6,
           "cohesion": 7,
           "pointsPerBase": 14,
-          "requires": { "unitIds": ["glyndwr_rising_mounted_men_at_arms", "glyndwr_rising_dismounted_men_at_arms"], "count": 1 },
+          "requires": { "unitIds": ["medieval_wales_mounted_men_at_arms", "medieval_wales_dismounted_men_at_arms"], "count": 1 },
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Longbow","Light Armour"],
@@ -197,16 +186,16 @@
            "optionalEquipment": []
         },
         {
-          "id": "glyndwr_rising_mounted_household_knights",
+          "id": "medieval_wales_mounted_household_knights",
           "name": "Mounted Household Knights",
           "description": "Mounted Household Knights have heavy armour, spear and shield. Superior Fighters. Shock Cavalry. May have cloth barding (+1). May exchange spear for lance (+1).",
-          "category": "UncommonTroops",
+          "category": "UnCommons",
           "type": "Cavalry",
           "defence": 3,
           "cohesion": 8,
           "pointsPerBase": 27,
           "maxCountAllowed": 1,
-           "excludesUnits": ["glyndwr_rising_dismounted_household_knights"],
+           "excludesUnits": ["medieval_wales_dismounted_household_knights"],
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": ["Heavy Armour","Spear","Shield"],
@@ -234,16 +223,16 @@
           ]
         },
         {
-          "id": "glyndwr_rising_dismounted_household_knights",
+          "id": "medieval_wales_dismounted_household_knights",
           "name": "Dismounted Household Knights",
           "description": "Dismounted Household Knights have heavy armour, spear and shield. Superior Fighters. May exchange spear for halberd (+2) or double handed weapon (+2).",
-          "category": "UncommonTroops",
+          "category": "UnCommons",
           "type": "Infantry",
           "defence": 4,
           "cohesion": 8,
           "pointsPerBase": 26,
           "maxCountAllowed": 1,
-          "excludesUnits": ["glyndwr_rising_mounted_household_knights"],
+          "excludesUnits": ["medieval_wales_mounted_household_knights"],
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Heavy Armour","Spear","Shield"],
@@ -274,10 +263,10 @@
           ]
         },
         {
-          "id": "glyndwr_rising_mounted_men_at_arms",
+          "id": "medieval_wales_mounted_men_at_arms",
           "name": "Mounted Men at Arms",
           "description": "Mounted Men at Arms have light armour, spear and shield. May have heavy armour (+1). May exchange spear for lance (+1).",
-          "category": "UncommonTroops",
+          "category": "UnCommons",
           "type": "Horse",
           "defence": 4,
           "cohesion": 7,
@@ -311,10 +300,10 @@
         },
 		 
 		  {
-          "id": "glyndwr_rising_dismounted_men_at_arms",
+          "id": "medieval_wales_dismounted_men_at_arms",
           "name": "Dismounted Men at Arms",
           "description": "Dismounted Men at Arms have light armour, spear and shield. May have heavy armour (+2). May exchange spear for halberd (+2) or double handed weapon (+2).",
-          "category": "UncommonTroops",
+          "category": "UnCommons",
           "type": "Infantry",
           "defence": 5,
           "cohesion": 7,
@@ -359,10 +348,10 @@
           ]
         },
 		   {
-          "id": "glyndwr_rising_skirmishers",
+          "id": "medieval_wales_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have a javelin. Skirmishers. May have a shield (+1). May exchange javelins for bow (free).",
-          "category": "UncommonTroops",
+          "category": "UnCommons",
           "type": "Infantry",
           "defence": 7,
           "cohesion": 5,
