@@ -105,8 +105,8 @@
              {
               "name": "Ambush",
               "pointsModifier": 2,
-				"equipmentAdded":["Ambush"],
-              "rulesAdded": [],
+				"equipmentAdded":[],
+              "rulesAdded": ["Ambush"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
@@ -172,8 +172,8 @@
              {
               "name": "Ambush",
               "pointsModifier": 2,
-				"equipmentAdded":["Ambush"],
-              "rulesAdded": [],
+				"equipmentAdded":[],
+              "rulesAdded": ["Ambush"],
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
