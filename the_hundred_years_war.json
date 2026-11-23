@@ -2,7 +2,9 @@
   "armies": {
 "glyndwr_rising": {
       "armyName": "Glyndwr Rising - 1400 - 1415 AD",
-  
+  "armyValidation": [ 
+{ "ids": ["glyndwr_rising_english_deserters"], "expression": "lessThanOrEqual", "compareWith": ["glyndwr_rising_mounted_men_at_arms", "glyndwr_rising_dismounted_men_at_arms"], "ratio": 1, "countBy": "units" }  
+ ],
 	    "categories": [
         {
           "id": "Commanders",
