@@ -760,7 +760,7 @@
             },
              {
               "name": "Cloth Barding",
-              "pointsModifier": 0,
+              "pointsModifier": 1,
 				"equipmentAdded": ["Cloth Barding"],
                "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
@@ -856,7 +856,7 @@
              {
               "name": "Cloth Barding (Knights)",
                "targetProfile": "Knights",
-              "pointsModifier": 0,
+              "pointsModifier": 1,
 				"equipmentAdded": ["Cloth Barding"],
                "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
