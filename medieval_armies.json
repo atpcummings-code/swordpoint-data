@@ -1,7 +1,7 @@
 {
   "armies": {
 "medieval_wales": {
-      "armyName": "Medieval Wales - 1064 - 1420 AD",
+      "armyName": "Medieval Wales 1064 - 1420 AD",
   "armyValidation": [ 
  ],
 	    "categories": [
@@ -305,7 +305,7 @@
       ]
     },
 "inca_empire": {
-      "armyName": "Inca Empire - 1438 - 1533 AD",
+      "armyName": "Inca Empire 1438 - 1533 AD",
   "armyValidation": [ 
  ],
 	    "categories": [
@@ -499,7 +499,7 @@
       ]
     },
 	  "kingdom_of_cilicia": {
-      "armyName": "Kingdom of Cilicia- 1198 - 1375 AD",
+      "armyName": "Kingdom of Cilicia 1198 - 1375 AD",
   "armyValidation": [ 
  ],
 	    "categories": [
