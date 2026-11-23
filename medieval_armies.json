@@ -178,7 +178,7 @@
         },
 		  {
           "id": "medieval_wales_household_cavalry",
-          "name": "Mounted Household Knights",
+          "name": "Household Cavalry",
           "description": "Household Cavalry have heavy armour, spear and shield. Superior Fighters. May have lance (+1). May be Shock Cavalry (+4).",
           "category": "Household",
           "type": "Cavalry",
