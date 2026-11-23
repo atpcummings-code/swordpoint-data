@@ -4596,7 +4596,7 @@
 {
 "id": "burgundy_foot_demilances_and_coustilliers_cu",
           "name": "Combined Formation Foot knights with Demi-lances and Coustilliers",
-          "description": "Foot Knights have partial armour and spear. Superior Fighters. Riding Horses. May have shield (+2), Halberd (+2) or double handed weapon (+2). Foot Demmi-lances and Coustilliers have light armour and spear. Riding Horses  May have shield +1), may have heavy armour (+1). May replace spear with halberd (+2) or double handed weapon (+2). They form a Combined Unit with Foot Kinghts with the Foot Demmi-lances and Coustilliers forming up to three quarters of the unit.",
+          "description": "Foot Knights have partial armour and spear. Superior Fighters. Riding Horses. May have shield (+2), Halberd (+2) or double handed weapon (+2). Foot Demmi-lances and Coustilliers have light armour and spear. Riding Horses  May have shield +2), may have heavy armour (+2). May replace spear with halberd (+2) or double handed weapon (+2). They form a Combined Unit with Foot Kinghts with the Foot Demmi-lances and Coustilliers forming up to three quarters of the unit.",
           "category": "CommonTroops",
           "type": "Infantry", 
           "minBases": 3,
@@ -4664,7 +4664,7 @@
             },
  {
               "name": "Shield (Demi-lances and Coustilliers)",
-              "pointsModifier": 1,
+              "pointsModifier": 2,
 		"targetProfile": "Foot Demi-lances and Coustilliers",
 		"equipmentAdded": ["Shield"],
               "equipmentRemoved": [],
@@ -4675,7 +4675,7 @@
             },
 {
               "name": "Heavy Armour (Demi-lances and Coustilliers)",
-              "pointsModifier": 1,
+              "pointsModifier": 2,
 		"targetProfile": "Foot Demi-lances and Coustilliers",
 		"equipmentAdded": ["Heavy Armour"],
               "equipmentRemoved": ["Light Armour"],
