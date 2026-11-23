@@ -2548,7 +2548,9 @@
     },
    "the_kingdom_of_castile": {
       "armyName": "The Kingdom of Castile 1351 - 1469 AD",
-  
+  "armyValidation": [ 
+{ "ids": ["the_kingdom_of_castile_military_order_infantry"], "expression": "lessThanOrEqual", "compareWith": ["the_kingdom_of_castile_military_order_knights"], "ratio": 1, "countBy": "units" } 
+ ],
 	    "categories": [
         {
           "id": "Commanders",
