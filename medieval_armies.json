@@ -5606,7 +5606,841 @@
 
               
 		  ]
+        },
+
+"crusading_military_orders": {
+      "armyName": "Crusading Military Orders (Early Crusades) 1096 - 1291 AD",
+"armyValidation": [ 
+ 
+],
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 33,
+          "max": 100
+        },
+          
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+         "description": "May have Christian Crusaders: Late Crusades allies ",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33,
+          "alliedArmyKeys": [ { "key": "christian_crusaders_late"} ],
+          "maxAlliedArmiesAllowed": 1
         }
+        
+      ],
+      "units": [
+        {
+          "id": "crusading_military_orders_early_general",
+          "name": "General",
+          "description": "May Ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Upgrade to C10",
+              "pointsModifier": 50,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -0,
+              "cohesionModifier": 1
+            }
+          ]
+        },
+        {
+          "id": "crusading_military_orders_early_captain",
+          "name": "Captain",
+          "description": "May Ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+2",
+          "pointsPerBase": 25,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "crusading_military_orders_early_bishop",
+          "name": "Bishop",
+          "description": "May Ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 30,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": ["Re-roll Failed Cohesion Tests"],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "crusading_military_orders_early_brother_knights",
+          "name": "Brother Knights",
+          "description": "Brother Knights have lance, heavy armour and shield. Superior Fighters. Shock Cavalry. Impetuous. Stubborn. Veteran. Brother Knights fail their Impetuous roll on a throw of one or two rather than one as normal.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 9,
+          "pointsPerBase": 33,
+            "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8, 
+          "baseEquipment": ["Heavy Armour","Lance","Shield"],
+          "specialRules": ["Open Order","Superior Fighters","Shock Cavalry","Impetuous","Stubborn","Veteran"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "crusading_military_orders_early_lay_knights",
+          "name": "Royal Banderium",
+          "description": "Lay Knights have lance, heavy armour and shield. Superior Fighters. Shock Cavalry. Impetuous.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Lance","Shield","Heavy Armour"],
+          "specialRules": ["Open Order","Superior Fighters","Shock Cavalry","Impetuous"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "crusading_military_orders_early_order_sergeants",
+          "name": "Order Sergeants",
+          "description": "Order Sergeants have spear, light armour and shield.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "crusading_military_orders_early_lay_sergeants",
+          "name": "Lay Sergeants",
+          "description": "Order Sergeants have spear, light armour and shield.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "crusading_military_orders_early_sergeants_cf",
+          "name": "Combined Formation Order Sergeants/Lay Sergeants",
+          "description": "Order Sergeants and Lay Sergeants both have spear, light armour and shield. Lay Sergeants form up to 50% of a Combined Formation with Order Sergeants",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Order Sergeants",
+              "defence": 4,
+              "cohesion": 8,
+              "pointsPerBase": 20,
+              "minBases": 3,
+              "maxBases": 7,
+              "baseEquipment": ["Spear","Shield","Light Armour"],
+          "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Lay Sergeants",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Spear","Shield","Light Armour"],
+          "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": []
+            }, 
+        {
+          "id": "crusading_military_orders_early_turcopoles",
+          "name": "Turcopoles",
+          "description": "Turcopoles have spear, light armour, bow and shield. May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow","Spear","Light Armour","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+         {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+  },
+ 
+        {
+          "id": "crusading_military_orders_early_foot_lay_knights",
+          "name": "Foot Lay Knights",
+          "description": "Foot Lay Knights have light armour, spear and shield. Superior Fighters. May exchange spear for two-handed weapon (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour", "Spear", "Shield"],
+          "specialRules": ["Close Order","Superior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Two-handed Weapon",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Two-handed Weapon"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Stubborn",
+              "pointsModifier": 2,
+		"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+
+		  {
+          "id": "crusading_military_orders_early_sergeants",
+          "name": "Sergeants",
+          "description": "Sergeants have spear and shield. They may exchange spear and shield for bow (free) or Crossbow (+2). They may have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+             {
+              "name": "Bow",
+               "disables": "Crossbow",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Bow"],
+               "equipmentRemoved": ["Spear","Shield"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Crossbow",
+               "disables": "Bow",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Crossbow"],
+               "equipmentRemoved": ["Spear","Shield"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Stubborn",
+              "pointsModifier": 2,
+		"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        }, 
+         
+{
+          "id": "crusading_military_orders_early_sergeants_mo",
+          "name": "Mixed Order Sergeants",
+          "description": "Sergeants have spear and shield. May have light armour (+2). Missile Troops have bow (free) or Crossbow (+2). Missile  troops form up to 50% of a Mixed Order unit with spear armed Sergeants",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Spearmen",
+            	"defence": 6,
+          	"cohesion": 7,
+          	"pointsPerBase": 14,
+              "minBases": 3,
+              "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Close Order"]
+            },
+            {
+              "name": "Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 7,
+              "pointsPerBase": 14,
+              "minBases": 1,
+              "maxBases": 6,
+              "maxPercentage": 50,
+              "baseEquipment": [],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+{
+              "name": "Bow",
+               "disables": "Crossbow",
+		"targetProfile": "Missile Troops",
+              "pointsModifier": 0,
+		"equipmentAdded": ["Bow"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Crossbow",
+               "disables": "Bow",
+		"targetProfile": "Missile Troops",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Crossbow"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Stubborn",
+              "pointsModifier": 2,
+		"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+]
+        }
+        
+  
+
+              
+		  ]
+        },
+
+
+        
+        
+      ]
+    },
+	
+"crusading_military_orders_late": {
+      "armyName": "Crusading Military Orders (Later Crusades) 1096 - 1291 AD",
+"armyValidation": [ 
+ 
+],
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 33,
+          "max": 100
+        },
+          
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+         "description": "May have Christian Crusaders: Late Crusades allies ",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 33,
+          "alliedArmyKeys": [ { "key": "christian_crusaders_late"} ],
+          "maxAlliedArmiesAllowed": 1
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "crusading_military_orders_late_general",
+          "name": "General",
+          "description": "May Ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": [
+            {
+              "name": "Upgrade to C10",
+              "pointsModifier": 50,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -0,
+              "cohesionModifier": 1
+            }
+          ]
+        },
+        {
+          "id": "crusading_military_orders_late_captain",
+          "name": "Captain",
+          "description": "May Ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+2",
+          "pointsPerBase": 25,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "crusading_military_orders_late_bishop",
+          "name": "Bishop",
+          "description": "May Ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 30,
+          "maxCountAllowed": 1,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": ["Re-roll Failed Cohesion Tests"],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "crusading_military_orders_late_brother_knights",
+          "name": "Brother Knights",
+          "description": "Brother Knights have lance, heavy armour and shield. Superior Fighters. Shock Cavalry. Impetuous. Stubborn. Veteran. Brother Knights fail their Impetuous roll on a throw of one or two rather than one as normal.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 9,
+          "pointsPerBase": 33,
+            "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8, 
+          "baseEquipment": ["Heavy Armour","Lance","Shield"],
+          "specialRules": ["Open Order","Superior Fighters","Shock Cavalry","Impetuous","Stubborn","Veteran"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "crusading_military_orders_late_lay_knights",
+          "name": "Lay Knights",
+          "description": "Lay Knights have lance, heavy armour and shield. Superior Fighters. Shock Cavalry. Impetuous.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Lance","Shield","Heavy Armour"],
+          "specialRules": ["Open Order","Superior Fighters","Shock Cavalry","Impetuous"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "crusading_military_orders_late_order_sergeants",
+          "name": "Order Sergeants",
+          "description": "Order Sergeants have spear, light armour and shield.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "crusading_military_orders_late_lay_sergeants",
+          "name": "Lay Sergeants",
+          "description": "Order Sergeants have spear, light armour and shield.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "crusading_military_orders_late_sergeants_cf",
+          "name": "Combined Formation Order Sergeants/Lay Sergeants",
+          "description": "Order Sergeants and Lay Sergeants both have spear, light armour and shield. Lay Sergeants form up to 50% of a Combined Formation with Order Sergeants",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Order Sergeants",
+              "defence": 4,
+              "cohesion": 8,
+              "pointsPerBase": 20,
+              "minBases": 3,
+              "maxBases": 7,
+              "baseEquipment": ["Spear","Shield","Light Armour"],
+          "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Lay Sergeants",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 18,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Spear","Shield","Light Armour"],
+          "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": []
+            }, 
+        {
+          "id": "crusading_military_orders_late_turcopoles",
+          "name": "Turcopoles",
+          "description": "Turcopoles have spear, light armour, bow and shield. May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow","Spear","Light Armour","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+         {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+  },
+ 
+        {
+          "id": "crusading_military_orders_late_foot_lay_knights",
+          "name": "Foot Lay Knights",
+          "description": "Foot Lay Knights have light armour, spear and shield. Superior Fighters. May exchange spear for two-handed weapon (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour", "Spear", "Shield"],
+          "specialRules": ["Close Order","Superior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Two-handed Weapon",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Two-handed Weapon"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Stubborn",
+              "pointsModifier": 2,
+		"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+           ]
+        },
+
+		  {
+          "id": "crusading_military_orders_late_sergeants",
+          "name": "Sergeants",
+          "description": "Sergeants have spear and shield. They may exchange spear and shield for bow (free) or Crossbow (+2). They may have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+             {
+              "name": "Bow",
+               "disables": "Crossbow",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Bow"],
+               "equipmentRemoved": ["Spear","Shield"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Crossbow",
+               "disables": "Bow",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Crossbow"],
+               "equipmentRemoved": ["Spear","Shield"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Stubborn",
+              "pointsModifier": 2,
+		"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        }, 
+         
+{
+          "id": "crusading_military_orders_late_sergeants_mo",
+          "name": "Mixed Order Sergeants",
+          "description": "Sergeants have spear and shield. May have light armour (+2). Missile Troops have bow (free) or Crossbow (+2). Missile  troops form up to 50% of a Mixed Order unit with spear armed Sergeants",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+          "subProfiles": [
+            {
+              "name": "Spearmen",
+            	"defence": 6,
+          	"cohesion": 7,
+          	"pointsPerBase": 14,
+              "minBases": 3,
+              "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Close Order"]
+            },
+            {
+              "name": "Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 7,
+              "cohesion": 7,
+              "pointsPerBase": 14,
+              "minBases": 1,
+              "maxBases": 6,
+              "maxPercentage": 50,
+              "baseEquipment": [],
+              "specialRules": ["Close Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+{
+              "name": "Bow",
+               "disables": "Crossbow",
+		"targetProfile": "Missile Troops",
+              "pointsModifier": 0,
+		"equipmentAdded": ["Bow"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Crossbow",
+               "disables": "Bow",
+		"targetProfile": "Missile Troops",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Crossbow"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+		"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Stubborn",
+              "pointsModifier": 2,
+		"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+]
+        }
+        
+  
+
+              
+		  ]
+        }
+
+
+        
+        
+      ]
+    },
+
+	  
       
 
 	  
