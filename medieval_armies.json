@@ -1908,7 +1908,7 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
+            }
           ]
         },
         {
@@ -2482,7 +2482,7 @@
               "cohesionModifier": 0
             }
            ]
-        },
+        }
            
       ]
     },
@@ -3520,7 +3520,7 @@
               "cohesionModifier": 0
             }
            ]
-        },
+        }
         
       ]
     },
@@ -4008,7 +4008,7 @@
               "cohesionModifier": 0
             }
            ]
-        },
+        }
         
       ]
     },
@@ -4507,7 +4507,7 @@
               "cohesionModifier": 0
             }
            ]
-        },
+        }
         
       ]
     },
