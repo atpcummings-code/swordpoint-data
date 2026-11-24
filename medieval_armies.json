@@ -5552,7 +5552,7 @@
           "id": "later_medieval_hungarian_wagons",
           "name": "Wagons",
           "description": "One War Wagon with a single base of defenders equipped with any or all of: Crossbow, Handgun or Halberd",
-          "category": "FieldDefences",
+          "category": "WarWagons",
           "type": "Wagons",
           "minBases": 0,
           "maxBases": 1,
