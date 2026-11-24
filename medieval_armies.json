@@ -5755,7 +5755,7 @@
         {
           "id": "crusading_military_orders_early_lay_sergeants",
           "name": "Lay Sergeants",
-          "description": "Order Sergeants have spear, light armour and shield.",
+          "description": "Lay Sergeants have spear, light armour and shield.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 4,
