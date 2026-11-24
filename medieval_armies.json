@@ -2505,7 +2505,7 @@
           "description": "Retainer units cannot outnumber Noble units.",
           "constraintType": "percentage",
           "min": 50,
-          "max": 10
+          "max": 100
         },
         {
           "id": "Infantry",
