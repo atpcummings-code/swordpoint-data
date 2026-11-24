@@ -6430,18 +6430,47 @@
 	  
 "later_medieval_french_early": {
       "armyName": "Later Medieval_French (Early) 1445 - 1495 AD",
-"armyValidation": [ 
- { "ids": ["later_medieval_french_early_foot_soldiers"], "expression": "lessThanOrEqual", "compareWith": ["later_medieval_french_early_franc_archers"], "countBy": "bases" },
-
-{ "ids": ["later_medieval_french_early_retainers", "later_medieval_french_early_dismounted_retainers", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"], "subProfileId": "Retainers", "expression": "greaterThanOrEqual", "compareWith": ["later_medieval_french_early_knights", "later_medieval_french_early_dismounted_knights", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"], "compareWithSubProfileId": "Knights", "countBy": "bases" },
-
-{ "ids": ["later_medieval_french_early_archers", "later_medieval_french_early_dismounted_archers"], "expression": "greaterThanOrEqual", "compareWith": ["later_medieval_french_early_knights", "later_medieval_french_early_dismounted_knights", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"], "compareWithSubProfileId": "Knights", "ratio": 2, "countBy": "bases" },
-
-{ "ids": ["later_medieval_french_early_retainers", "later_medieval_french_early_dismounted_retainers", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"], "subProfileId": "Retainers", "expression": "lessThanOrEqual", "compareWith": ["later_medieval_french_early_knights", "later_medieval_french_early_dismounted_knights", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"], "compareWithSubProfileId": "Knights", "ratio": 2, "countBy": "bases" } ,
-
-{ "ids": ["later_medieval_french_early_archers", "later_medieval_french_early_dismounted_archers"], "expression": "lessThanOrEqual", "compareWith": ["later_medieval_french_early_knights", "later_medieval_french_early_dismounted_knights", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"], "compareWithSubProfileId": "Knights", "ratio": 3, "countBy": "bases" } 
-
-],
+"armyValidation": [
+{
+"ids": ["later_medieval_french_early_foot_soldiers"],
+"expression": "lessThanOrEqual",
+"compareWith": ["later_medieval_french_early_franc_archers"],
+"countBy": "bases"
+},
+{
+"ids": ["later_medieval_french_early_retainers", "later_medieval_french_early_dismounted_retainers", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"],
+"subProfileId": ["Retainers", "Dismounted Retainers"],
+"expression": "greaterThanOrEqual",
+"compareWith": ["later_medieval_french_early_knights", "later_medieval_french_early_dismounted_knights", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"],
+"compareWithSubProfileId": ["Knights", "Dismounted Knights"],
+"countBy": "bases"
+},
+{
+"ids": ["later_medieval_french_early_archers", "later_medieval_french_early_dismounted_archers"],
+"expression": "greaterThanOrEqual",
+"compareWith": ["later_medieval_french_early_knights", "later_medieval_french_early_dismounted_knights", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"],
+"compareWithSubProfileId": ["Knights", "Dismounted Knights"],
+"ratio": 2,
+"countBy": "bases"
+},
+{
+"ids": ["later_medieval_french_early_retainers", "later_medieval_french_early_dismounted_retainers", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"],
+"subProfileId": ["Retainers", "Dismounted Retainers"],
+"expression": "lessThanOrEqual",
+"compareWith": ["later_medieval_french_early_knights", "later_medieval_french_early_dismounted_knights", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"],
+"compareWithSubProfileId": ["Knights", "Dismounted Knights"],
+"ratio": 2,
+"countBy": "bases"
+},
+{
+"ids": ["later_medieval_french_early_archers", "later_medieval_french_early_dismounted_archers"],
+"expression": "lessThanOrEqual",
+"compareWith": ["later_medieval_french_early_knights", "later_medieval_french_early_dismounted_knights", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"],
+"compareWithSubProfileId": ["Knights", "Dismounted Knights"],
+"ratio": 3,
+"countBy": "bases"
+}
+]
 	    "categories": [
         {
           "id": "Commanders",
@@ -6993,18 +7022,47 @@
 	  
 "later_medieval_french_late": {
       "armyName": "Later Medieval_French (Late) 1445 - 1495 AD",
-"armyValidation": [ 
- { "ids": ["later_medieval_french_late_foot_soldiers"], "expression": "lessThanOrEqual", "compareWith": ["later_medieval_french_late_franc_archers"], "countBy": "bases" },
-
-{ "ids": ["later_medieval_french_late_retainers", "later_medieval_french_late_dismounted_retainers", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"], "subProfileId": "Retainers", "expression": "greaterThanOrEqual", "compareWith": ["later_medieval_french_late_knights", "later_medieval_french_late_dismounted_knights", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"], "compareWithSubProfileId": "Knights", "countBy": "bases" },
-
-{ "ids": ["later_medieval_french_late_archers", "later_medieval_french_late_dismounted_archers"], "expression": "greaterThanOrEqual", "compareWith": ["later_medieval_french_late_knights", "later_medieval_french_late_dismounted_knights", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"], "compareWithSubProfileId": "Knights", "ratio": 2, "countBy": "bases" },
-
-{ "ids": ["later_medieval_french_late_retainers", "later_medieval_french_late_dismounted_retainers", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"], "subProfileId": "Retainers", "expression": "lessThanOrEqual", "compareWith": ["later_medieval_french_late_knights", "later_medieval_french_late_dismounted_knights", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"], "compareWithSubProfileId": "Knights", "ratio": 2, "countBy": "bases" } ,
-
-{ "ids": ["later_medieval_french_late_archers", "later_medieval_french_late_dismounted_archers"], "expression": "lessThanOrEqual", "compareWith": ["later_medieval_french_late_knights", "later_medieval_french_late_dismounted_knights", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"], "compareWithSubProfileId": "Knights", "ratio": 3, "countBy": "bases" } 
-
-],
+"armyValidation": [
+{
+"ids": ["later_medieval_french_late_foot_soldiers"],
+"expression": "lessThanOrEqual",
+"compareWith": ["later_medieval_french_late_franc_archers"],
+"countBy": "bases"
+},
+{
+"ids": ["later_medieval_french_late_retainers", "later_medieval_french_late_dismounted_retainers", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"],
+"subProfileId": ["Retainers", "Dismounted Retainers"],
+"expression": "greaterThanOrEqual",
+"compareWith": ["later_medieval_french_late_knights", "later_medieval_french_late_dismounted_knights", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"],
+"compareWithSubProfileId": ["Knights", "Dismounted Knights"],
+"countBy": "bases"
+},
+{
+"ids": ["later_medieval_french_late_archers", "later_medieval_french_late_dismounted_archers"],
+"expression": "greaterThanOrEqual",
+"compareWith": ["later_medieval_french_late_knights", "later_medieval_french_late_dismounted_knights", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"],
+"compareWithSubProfileId": ["Knights", "Dismounted Knights"],
+"ratio": 2,
+"countBy": "bases"
+},
+{
+"ids": ["later_medieval_french_late_retainers", "later_medieval_french_late_dismounted_retainers", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"],
+"subProfileId": ["Retainers", "Dismounted Retainers"],
+"expression": "lessThanOrEqual",
+"compareWith": ["later_medieval_french_late_knights", "later_medieval_french_late_dismounted_knights", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"],
+"compareWithSubProfileId": ["Knights", "Dismounted Knights"],
+"ratio": 2,
+"countBy": "bases"
+},
+{
+"ids": ["later_medieval_french_late_archers", "later_medieval_french_late_dismounted_archers"],
+"expression": "lessThanOrEqual",
+"compareWith": ["later_medieval_french_late_knights", "later_medieval_french_late_dismounted_knights", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"],
+"compareWithSubProfileId": ["Knights", "Dismounted Knights"],
+"ratio": 3,
+"countBy": "bases"
+}
+]
 	    "categories": [
         {
           "id": "Commanders",
