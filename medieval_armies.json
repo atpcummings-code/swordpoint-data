@@ -5015,7 +5015,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 25,
@@ -5116,7 +5116,6 @@
           "cohesion": 9,
           "pointsPerBase": 33,
           "maxCountAllowed": 1,
-          "requires": {"unitId": "later_medieval_hungarian_general","count": 1,"name": "General"}, 
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": ["Lance","Shield"],
