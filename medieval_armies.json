@@ -5115,6 +5115,7 @@
           "defence": 5,
           "cohesion": 9,
           "pointsPerBase": 33,
+		"requires": {"unitId": "later_medieval_hungarian_general","count": 1,"name": "General"}, 
           "maxCountAllowed": 1,
           "minBases": 3,
           "maxBases": 8,
