@@ -6654,7 +6654,7 @@
           "category": "OrdnanceLances",
           "type": "Infantry",
           "minBases": 3,
-          "maxBases": 2,
+          "maxBases": 12,
           "subProfiles": [
             {
               "name": "Dismounted Knights",
@@ -7206,7 +7206,7 @@
           "category": "OrdnanceLances",
           "type": "Infantry",
           "minBases": 3,
-          "maxBases": 2,
+          "maxBases": 12,
           "subProfiles": [
             {
               "name": "Dismounted Knights",
