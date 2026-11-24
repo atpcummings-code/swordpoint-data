@@ -6013,12 +6013,6 @@
 		  ]
         },
 
-
-        
-        
-      ]
-    },
-	
 "crusading_military_orders_late": {
       "armyName": "Crusading Military Orders (Later Crusades) 1096 - 1291 AD",
 "armyValidation": [ 
@@ -6283,7 +6277,7 @@
               "rulesRemoved": [],
               "defenceModifier": -1,
               "cohesionModifier": 0
-            },
+            }
            ]
         },
 
@@ -6434,11 +6428,6 @@
 		  ]
         }
 
-
-        
-        
-      ]
-    },
 
 	  
       
