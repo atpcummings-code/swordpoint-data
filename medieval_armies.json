@@ -3059,6 +3059,471 @@
       ]
     },
 
+"medieval_serbia_early": {
+      "armyName": "Medieval Serbia 1217 - 1340 AD",
+  "armyValidation": [ 
+ ],
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "description": "Retainer units cannot outnumber Noble units.",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 50
+        },
+        {
+          "id": "Infantry",
+          "name": "Infnatry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+        {
+          "id": "Allies",
+          "name": "Allies & Mercenaries",
+         "description": "The army may take allies from the the following lists: Medieval Albania (1371-1459), Medieval Bulgaria  (until 1396), Medieval Byzantine (to 1340), Ottoman Turks (not Janissaries), Medieval Moldavia and Walachia (from 1330).",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [ { "key": ""} ],
+          "maxAlliedArmiesAllowed": 1
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "medieval_serbia_early_general",
+          "name": "General",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "medieval_serbia_early_captain",
+          "name": "Captain",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "medieval_serbia_early_nobles",
+          "name": "Nobles",
+          "description": "Nobles have heavy armour and shield. Superior Fighters. Superior Shooters. May have bow (+1).  Alternatively, may have spear (+1), or lance (+6, become Shock Cavalry), and half barding or cloth barding (+1). One unit may be Stubborn (+2).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Heavy Armour","Shield"],
+          "specialRules": ["Open Order","Superior Fighters","Superior Shooters"],
+           "optionalEquipment": [
+             {
+              "name": "Half Barding",
+               "disables": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Half Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Cloth Barding",
+               "disables": "Half Barding",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Bow",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Bow"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Spear",
+                "disables": "Lance (Shock Cavalry)",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Lance (Shock Cavalry)",
+               "disables": "Spear",
+              "pointsModifier": 6,
+				"equipmentAdded": ["Lance"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Shock Cavalry"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn",
+               "maxUnits": 1,
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_serbia_early_retainers",
+          "name": "Retainers",
+          "description": "Retainers have light armour, spear and shield. May have heavy armour (+1) or lance (+3, become Shock Cavalry).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Shield", "Spear"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+           {
+              "name": "Lance (Shock Cavalry)",
+             "disables": "Heavy Armour",
+              "pointsModifier": 3,
+				"equipmentAdded": ["Lance"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Shock Cavalry"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+               "disables": "Lance (Shock Cavalry)",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+  },
+ {
+          "id": "medieval_serbia_early_horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Archers have spear, bow and shield. Evade. Open Order. May have light armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow","spear", "Shield"],
+          "specialRules": ["Open Order","Evade"],
+           "optionalEquipment": [
+           
+             {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+
+        
+		  {
+          "id": "medieval_serbia_early_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have light armour, spear and shield. May have heavy armour (+1). May exchange spear for halberd (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Halberd",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Halberd"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        }, 
+{
+          "id": "medieval_serbia_early_archers",
+          "name": "Archers",
+          "description": "Archers have a bow and shield. Open Order. Inferior Fighters. May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 11,
+          "minCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        
+        
+{
+          "id": "medieval_serbia_early_poor_archers",
+          "name": "Poor Archers",
+          "description": "Poor Archers have a bow and shield. Open Order. Inferior Fighters. ",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": []
+        },
+{
+          "id": "medieval_serbia_early_skirmishers",
+          "name": "Skirmishers",
+          "description": "Skirmishers have a bow and shield. Skirmishers. Inferior Fighters. May exchange bow for javelins (free). ",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Skirmishers","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Javelins",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+
+        {
+          "id": "medieval_serbia_early_men_at_arms",
+          "name": "Men at Arms",
+          "description": "Men at Arms have heavy or partial plate armour, lance and shield. Superior Fighters. Shock Cavalry. May exchange partial plate and shield for plate mail (free) and cloth barding or barding (+1)",
+          "category": "Allies",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Lance","Shield"],
+          "specialRules": ["Open Order","Superior Fighters","Shock Cavalry"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+               "disables": "Partial Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour",
+               "disables": "Heavy Armour",
+               "enablesHidden": "Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Partial Plate Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Cloth Barding",
+               "disables": "Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Barding",
+               "disables": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Plate Armour",
+               "hiddenUntilEnabled": "hidden",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Plate Armour"],
+               "equipmentRemoved": ["Partial Plate Armour","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_serbia_early_dismounted_men_at_arms",
+          "name": "Dismounted Men at Arms",
+          "description": "Men at Arms have heavy or partial plate armour, two-handed weapon and shield. Superior Fighters.",
+          "category": "Allies",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Two-handed Weapon","Shield"],
+          "specialRules": ["Close Order","Superior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+               "disables": "Partial Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour",
+               "disables": "Heavy Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Partial Plate Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_serbia_early_horse_archers_allies",
+          "name": "Horse Archers (Allies)",
+          "description": "Horse Archers (Allies) have spear, bow and shield. Evade. Open Order. May have light armour (+1).",
+          "category": "Allies",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 6,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow","spear", "Shield"],
+          "specialRules": ["Open Order","Evade"],
+           "optionalEquipment": [
+           
+             {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        
+      ]
+    },
 	  
 
 
