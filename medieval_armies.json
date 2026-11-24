@@ -6431,7 +6431,7 @@
 "later_medieval_french_early": {
       "armyName": "Later Medieval_French (Early) 1445 - 1495 AD",
 "armyValidation": [ 
- 
+ { "ids": ["later_medieval_french_early_foot_soldiers"], "expression": "lessThanOrEqual", "compareWith": ["later_medieval_french_early_franc_archers"], "countBy": "bases" } 
 ],
 	    "categories": [
         {
@@ -6905,7 +6905,7 @@
 "later_medieval_french_late": {
       "armyName": "Later Medieval_French (Late) 1445 - 1495 AD",
 "armyValidation": [ 
- 
+ { "ids": ["later_medieval_french_late_foot_soldiers"], "expression": "lessThanOrEqual", "compareWith": ["later_medieval_french_late_franc_archers"], "countBy": "bases" } 
 ],
 	    "categories": [
         {
