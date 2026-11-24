@@ -2438,8 +2438,8 @@
           "cohesion": 6,
           "pointsPerBase": 11,
           "maxCountAllowed": 2,
-          "minBases": 2,
-          "maxBases": 6,
+          "minBases": 3,
+          "maxBases": 12,
           "baseEquipment": ["Bow","Shield"],
           "specialRules": ["Open Order"],
            "optionalEquipment": [
