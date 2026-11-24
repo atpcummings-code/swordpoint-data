@@ -3090,7 +3090,7 @@
         {
           "id": "Allies",
           "name": "Allies & Mercenaries",
-         "description": "The army may take allies from the the following lists: Medieval Albania (1371-1459), Medieval Bulgaria  (until 1396), Medieval Byzantine (to 1340), Ottoman Turks (not Janissaries), Medieval Moldavia and Walachia (from 1330).",
+         "description": "The army may take allies from the the following lists: Medieval Bulgaria  (until 1396), Medieval Byzantine (to 1340), Ottoman Turks (not Janissaries), Medieval Moldavia and Walachia (from 1330).",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
