@@ -4512,6 +4512,202 @@
       ]
     },
 
+"the_baltic_pagans_baltic_peoples": {
+      "armyName": "The Baltic Pagans: Baltic Peoples 1193 - 1295 AD",
+  "armyValidation": [ 
+ ],
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 8
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Infantry",
+          "name": "Infnatry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+        {
+          "id": "Allies",
+          "name": "Allies & Mercenaries",
+         "description": "May have Medieval Russian (Early Russian) allies.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [ { "key": ""} ],
+          "maxAlliedArmiesAllowed": 1
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "the_baltic_pagans_baltic_peoples_general",
+          "name": "General",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_baltic_pagans_baltic_peoples_chieftain",
+          "name": "Chieftain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "the_baltic_pagans_baltic_peoples_heavy_cavalry",
+          "name": "Heavy Cavalry",
+          "description": "Heavy Cavalry have light armour, javelins and spear. Superior Fighters. May have shield (+1) and heavy armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 22,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Javelins","Spear"],
+          "specialRules": ["Open Order","Superior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Shield",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+             
+           ]
+        },
+        {
+          "id": "the_baltic_pagans_baltic_peoples_light_cavalry",
+          "name": "Light Cavalry",
+          "description": "Light Cavalry have javelins and spear. Inferior Fighters. Evade.  May be fielded as Skirmishers at a cost of 15 points per base. ",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Javelins", "Spear"],
+          "specialRules": ["Open Order","Inferior Fighters", "Evade"],
+           "optionalEquipment": [
+         {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+  },
+ 
+
+        
+		  {
+          "id": "the_baltic_pagans_baltic_peoples_wariors",
+          "name": "Warriors",
+          "description": "Warriors have throwing spear and shield. Open Order. Warband. Every third unit may have light armour (+2) as upper class warriors.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order","Warband"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+               "enabledEvery": 3,
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        }, 
+{
+          "id": "the_baltic_pagans_baltic_peoples_archers",
+          "name": "Archers",
+          "description": "Archers have a bow. Open Order. Inferior Fighters. Warband (rules 1 & 2). May be fieldeed as Skirmishers at a cost of five points per base (no longer warband).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order","Inferior Fighters", "Warband (rules 1 & 2)"],
+           "optionalEquipment": [
+             {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        }
+        
+      ]
+    },
+
+
+
+	  
 
 
 	  
