@@ -2487,6 +2487,577 @@
       ]
     },
 
+"medieval_bulgaria": {
+      "armyName": "Medieval Bulgaria 1185 - 1396 AD",
+  "armyValidation": [ 
+ ],
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "description": "Retainer units cannot outnumber Noble units.",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 10
+        },
+        {
+          "id": "Infantry",
+          "name": "Infnatry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Allies",
+          "name": "Allies & Mercenaries",
+         "description": "The army may take allies from the Medieval Serbia, Medieval Moldova & Walachia and Medieval Byzantine lists",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [ { "key": ""} ],
+          "maxAlliedArmiesAllowed": 3
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "medieval_bulgaria_general",
+          "name": "General",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "medieval_bulgaria_captain",
+          "name": "Captain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "medieval_bulgaria_nobles",
+          "name": "Nobles",
+          "description": "Nobles have heavy armour and shield. Superior Fighters. Superior Shooters.They may have bow (+1) or spear (+1) but not both and half barding or cloth barding (+1). One unit may be Stubborn (+2).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 24,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Heavy Armour","Shield"],
+          "specialRules": ["Open Order","Superior Fighters","Superior Shooters"],
+           "optionalEquipment": [
+             {
+              "name": "Half Barding",
+               "disables": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Half Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Cloth Barding",
+               "disables": "Half Barding",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Bow",
+               "disables": "Spear",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Bow"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Spear",
+               "disables": "Bow",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn",
+               "maxUnits": 1,
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_bulgaria_retainers",
+          "name": "Retainers",
+          "description": "Retainers have light armour and shield. May have spear (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+           {
+              "name": "Spear",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+  },
+ {
+          "id": "medieval_bulgaria_horse_archers",
+          "name": "Horse Archers",
+          "description": "Horse Archers have a bow. Inferior Fighters. Skirmishers. Nomad cavalry. May have shield (+1) and spear (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 18,
+           "minCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Skirmishers","Inferior Fighters","Nomad Cavalry"],
+           "optionalEquipment": [
+           {
+              "name": "Spear",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+
+        
+		  {
+          "id": "medieval_bulgaria_spearmen",
+          "name": "Spearmen",
+          "description": "Spearmen have light armour, spear and shield.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": []
+        }, 
+{
+          "id": "medieval_bulgaria_archers",
+          "name": "Archers",
+          "description": "Archers have a bow and shield. Open Order. Inferior Fighters. May have light armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_bulgaria_spearmen_archers_cf",
+          "name": "Combined Formation Spearmen/Archers",
+          "description": "Spearmen have light armour, spear and shield. Archers have a bow and shield. Open Order. Inferior Fighters. May have light armour (+2). Archers forming up to 50% of the Combined Formation.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+{ "label": "25%", "disableSubProfiles": ["Archers","Spearmen/Archers (Front Row)"]},		
+{ "label": "50%", "disableSubProfiles": ["Spearmen/Archers (Front Row)","Spearmen/Archers (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Spearmen/Archers (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 3,
+	"maxBases": 6,
+          "baseEquipment": ["Spear", "Shield","Bow","Light Armour"],
+          "specialRules": ["Close Order"]
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 5,
+          	"cohesion": 7,
+          	"pointsPerBase": 16,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Spear", "Shield","Light Armour"],
+          "specialRules": ["Close Order"]
+            },
+            {
+              "name": "Archers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "minBases": 1,
+		"maxBases": 6,
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 9,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Open Order","Inferior Fighters"]
+            },
+
+			  {
+              "name": "Spearmen/Archers (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 1,
+    	"maxBases": 6,
+          "baseEquipment": ["Spear", "Shield","Bow","Light Armour"],
+          "specialRules": ["Close Order"]
+            }
+
+            ],
+	"optionalEquipment": [
+{
+              "name": "Light Armour",
+		"targetProfile": ["Archers"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]
+        },
+        {
+          "id": "medieval_bulgaria_peasants",
+          "name": "Peasants",
+          "description": "Peasants have shield. Inferior Fighters. Open Order. May have light armour (+2), javelins (+2) and spear (free).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Shield"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Javelins"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Spear",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "medieval_bulgaria_poor_archers",
+          "name": "Poor Archers",
+          "description": "Poor Archers have a bow and shield. Open Order. Inferior Fighters. May be fielded as Skirmishers at a cost of five points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 5,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Skirmishers",
+              "pointsModifier": -3,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "medieval_bulgaria_peasants_poor_archers_cf",
+          "name": "Combined Formation Peasants/Poor Poor Archers",
+          "description": "Peasants have shield. Inferior Fighters. Open Order. May have light armour (+2), javelins (+2) and spear (free). Poor Archers have a bow and shield. Open Order. Inferior Fighters. Poor Archers forming up to 50% of the Combined Formation.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+{ "label": "25%", "disableSubProfiles": ["Poor Archers","Peasants/Poor Archers (Front Row)"]},		
+{ "label": "50%", "disableSubProfiles": ["Peasants/Poor Archers (Front Row)","Peasants/Poor Archers (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Peasants/Poor Archers (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 8,
+              "minBases": 3,
+	"maxBases": 6,
+          "baseEquipment": ["Shield","Bow"],
+          "specialRules": ["Open Order","Inferior Fighters"]
+            },
+			  {
+              "name": "Peasants",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 6,
+          	"pointsPerBase": 8,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Shield"],
+          "specialRules": ["Open Order","Inferior Fighters"]
+            },
+            {
+              "name": "Poor Archers",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "minBases": 1,
+		"maxBases": 6,
+              "defence": 6,
+              "cohesion": 5,
+              "pointsPerBase": 8,
+		      "compareWithSubProfile": { "name": "Peasants", "expression": "lessThanOrEqual", "ratio": 1 },
+          "baseEquipment": ["Bow","Shield"],
+          "specialRules": ["Open Order","Inferior Fighters"]
+            },
+
+			  {
+              "name": "Peasants/Poor Archers (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Peasants", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 5,
+              "cohesion": 7,
+	          "pointsPerBase": 16,
+              "minBases": 1,
+	"maxBases": 6,
+          "baseEquipment": ["Shield","Bow"],
+          "specialRules": ["Open Order","Inferior Fighters"]
+            }
+            
+            ],
+	"optionalEquipment": [
+{
+              "name": "Light Armour",
+		"targetProfile": ["Peasants","Peasants/Poor Archers (Rear Row)","Peasants/Poor Archers (Front Row)"],
+              "pointsModifier": 2,
+		"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Javelins",
+		"targetProfile": ["Peasants","Peasants/Poor Archers (Rear Row)","Peasants/Poor Archers (Front Row)"],
+              "pointsModifier": 2,
+				"equipmentAdded": ["Javelins"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Spear",
+		"targetProfile": ["Peasants","Peasants/Poor Archers (Rear Row)","Peasants/Poor Archers (Front Row)"],
+              "pointsModifier": 0,
+				"equipmentAdded": ["Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+]
+        },
+
+        {
+          "id": "medieval_bulgaria_tartars",
+          "name": "Tartars",
+          "description": "Tartars have light armour and bow. Evade. May have shield (+1) and spear (+1).",
+          "category": "Allies",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 19,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light armour","Bow"],
+          "specialRules": ["Open Order","Evade"],
+           "optionalEquipment": [
+             {
+              "name": "Shield",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Spear",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_bulgaria_tartar_skirmishers",
+          "name": "Tartar Skirmishers",
+          "description": "Tartars Skirmishers have a bow. Skirmishers. Nomad cavalry. May have shield (+1) and spear (+1).",
+          "category": "Allies",
+          "type": "Cavalry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 20,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Skirmishers","Nomad Cavalry"],
+           "optionalEquipment": [
+             {
+              "name": "Shield",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Spear",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        }
+      ]
+    },
 
 	  
 
