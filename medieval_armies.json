@@ -2799,7 +2799,7 @@
             ],
 	"optionalEquipment": [
 {
-              "name": "Light Armour",
+              "name": "Light Armour (Archers)",
 		"targetProfile": ["Archers"],
               "pointsModifier": 2,
               "equipmentAdded": ["Light Armour"],
@@ -2949,7 +2949,7 @@
             ],
 	"optionalEquipment": [
 {
-              "name": "Light Armour",
+              "name": "Light Armour (Peasants)",
 		"targetProfile": ["Peasants","Peasants/Poor Archers (Rear Row)","Peasants/Poor Archers (Front Row)"],
               "pointsModifier": 2,
 		"equipmentAdded": ["Light Armour"],
@@ -2960,7 +2960,7 @@
               "cohesionModifier": 0
             },
              {
-              "name": "Javelins",
+              "name": "Javelins (Peasants)",
 		"targetProfile": ["Peasants","Peasants/Poor Archers (Rear Row)","Peasants/Poor Archers (Front Row)"],
               "pointsModifier": 2,
 				"equipmentAdded": ["Javelins"],
@@ -2971,7 +2971,7 @@
               "cohesionModifier": 0
             },
              {
-              "name": "Spear",
+              "name": "Spear (Peasants)",
 		"targetProfile": ["Peasants","Peasants/Poor Archers (Rear Row)","Peasants/Poor Archers (Front Row)"],
               "pointsModifier": 0,
 				"equipmentAdded": ["Spear"],
