@@ -6738,7 +6738,7 @@
           "cohesion": 7,
           "pointsPerBase": 21,
           "minBases": 3,
-          "maxBases": 8,
+          "maxBases": 12,
           "baseEquipment": ["Longbow","Heavy Armour"],
           "specialRules": ["Close Order","Riding Horses"],
            "optionalEquipment": []
@@ -7299,7 +7299,7 @@
           "cohesion": 7,
           "pointsPerBase": 21,
           "minBases": 3,
-          "maxBases": 8,
+          "maxBases": 12,
           "baseEquipment": ["Longbow","Heavy Armour"],
           "specialRules": ["Close Order","Riding Horses"],
            "optionalEquipment": []
