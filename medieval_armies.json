@@ -7891,7 +7891,7 @@
 "medieval_english": {
 	"armyName": 	  "Medieval English 1296 - 1453 AD",
   "armyValidation": [ 
-    { "ids": ["medieval_english_foot_soldiers", "medieval_english_foot_knights"], "expression": "greaterThanOrEqual", "compareWith": ["medieval_english_longbowmen", "medieval_english_seasoned_archers", "medieval_english_mounted_seasoned_archers", "medieval_english_levy_archers"], "ratio": 3, "countBy": "bases" } 
+    { "ids": ["medieval_english_longbowmen", "medieval_english_seasoned_archers", "medieval_english_mounted_seasoned_archers", "medieval_english_levy_archers"], "expression": "greaterThanOrEqual", "compareWith": ["medieval_english_foot_soldiers", "medieval_english_foot_knights"], "ratio": 3, "countBy": "bases" } 
  ],
 "categoryExcludes": [ { "triggerUnitId": "medieval_english_levy_archers", "excludedCategory": "Allies" } ] ,
 "allyExcludes": [ { "triggerUnitIds": ["medieval_english_mounted_gascon_knights", "medieval_english_gascon_brigans", "medieval_english_skirmishers"], "excludedAllyKey": "low_countries" } ], 	    
@@ -8488,7 +8488,7 @@
     ]
     },
 	  "low_countries": {
-      "armyName": "Low COuntries 1312 - 1453 AD",
+      "armyName": "Low Countries 1312 - 1453 AD",
   "armyValidation": [ 
  ],
 	    "categories": [
