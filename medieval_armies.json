@@ -519,7 +519,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 25,
@@ -674,7 +674,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 0,
@@ -1033,7 +1033,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 25,
@@ -1501,7 +1501,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 0,
@@ -1866,7 +1866,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 0,
@@ -2509,7 +2509,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 0,
@@ -3081,7 +3081,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 0,
@@ -3547,7 +3547,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 0,
@@ -4035,7 +4035,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 0,
@@ -4534,7 +4534,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 50,
@@ -4727,7 +4727,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 0,
@@ -4869,7 +4869,7 @@
           "name": "Dismounted Heavy Cavalry",
           "description": "Dismounted Heavy Cavalry have light armour, bow and shield. Superior Fighters. May have heavy armour (+2). May be fieled as Skirmishers at a cost of 13 points per base.",
           "category": "Cavalry",
-          "type": "Infnatry",
+          "type": "Infantry",
           "defence": 5,
           "cohesion": 8,
           "pointsPerBase": 26,
@@ -7616,7 +7616,7 @@
         },
         {
           "id": "Infantry",
-          "name": "Infnatry",
+          "name": "Infantry",
           "description": "",
           "constraintType": "percentage",
           "min": 25,
