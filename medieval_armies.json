@@ -7629,7 +7629,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [ { "key": ""} ],
+          "alliedArmyKeys": [ { "key": ""},{"key": "alans", "supplement":"classical_armies"}  ],
           "maxAlliedArmiesAllowed": 1
         }
         
