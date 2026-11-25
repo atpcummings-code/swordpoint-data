@@ -7775,7 +7775,7 @@
             ],
 "optionalEquipment": [
            {
-              "name": "Heavy Armour",
+              "name": "Heavy Armour (Knights)",
              "targetProfile": "Knights",
               "pointsModifier": 1,
 				"equipmentAdded": ["Heavy Armour"],
@@ -7786,7 +7786,7 @@
               "cohesionModifier": 0
             },
              {
-              "name": "Cloth Barding",
+              "name": "Cloth Barding (Knights)",
                 "targetProfile": "Knights",
               "pointsModifier": 1,
 				"equipmentAdded": ["Cloth Barding"],
