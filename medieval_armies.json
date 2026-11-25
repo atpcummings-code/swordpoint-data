@@ -8334,7 +8334,7 @@
           "id": "medieval_english_levy_archers",
           "name": "Levy Archers",
           "description": "Levy Archers have a longbow. Inferior Fighters. Levies. If the army includes Levy Archers it may not include Seasoned Archers or any Allies & Mercenaries.",
-          "category": "Infantry",
+          "category": "Archers",
           "type": "Infantry",
           "defence": 7,
           "cohesion": 5,
