@@ -7889,7 +7889,7 @@
       ]
     },
 	  
-"medieval_english": "Medieval Englishg 1296 - 1453 AD",
+"armyName": "medieval_english": "Medieval Englishg 1296 - 1453 AD",
   "armyValidation": [ 
     { "ids": ["medieval_english_foot_soldiers", "medieval_english_foot_knights"], "expression": "greaterThanOrEqual", "compareWith": ["medieval_english_longbowmen", "medieval_english_seasoned_archers", "medieval_english_mounted_seasoned_archers", "medieval_english_levy_archers"], "ratio": 3, "countBy": "bases" } 
  ],
