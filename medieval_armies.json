@@ -7889,8 +7889,8 @@
       ]
     },	  
 "medieval_english": {
-	"armyName": 	  "Medieval English 1296 - 1453 AD",
-  "armyValidation": [ 
+"armyName": "Medieval English 1296 - 1453 AD",
+ "armyValidation": [ 
    {
 "ids": ["medieval_english_foot_soldiers", "medieval_english_foot_knights"],
 "expression": "greaterThanOrEqual",
@@ -7900,7 +7900,7 @@
 "perN": true
 } 
  ],
-	"categoryExcludes": [{"triggerUnitIds": ["medieval_english_levy_archers"],"excludedCategory": "Allies"}],
+"categoryExcludes": [{"triggerUnitIds": ["medieval_english_levy_archers"],"excludedCategory": "Allies"}],
 "allyExcludes": [ { "triggerUnitIds": ["medieval_english_mounted_gascon_knights", "medieval_english_gascon_brigans", "medieval_english_skirmishers"], "excludedAllyKey": "low_countries" } ], 	    
 "categories": [
         {
@@ -8151,7 +8151,7 @@
            "optionalEquipment": [
              {
               "name": "Halberd",
-               "enablesHidden": "Heavy Armour",
+               "enableHidden": "Heavy Armour",
               "pointsModifier": 2,
 				"equipmentAdded": ["Halberd"],
                "equipmentRemoved": ["Spear"],
@@ -8170,9 +8170,20 @@
               "defenceModifier": -1,
               "cohesionModifier": 0
             },
+			   {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
              {
               "name": "Heavy Armour",
                "hiddenUntilEnabled": "hidden",
+				 "disables": "Light Armour",
               "pointsModifier": 4,
 				"equipmentAdded": ["Heavy Armour"],
                "equipmentRemoved": [],
