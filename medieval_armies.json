@@ -8452,7 +8452,7 @@
         {
           "id": "medieval_english_gascon_brigans",
           "name": "Gascon Brigans",
-          "description": "Gascon Brigans have shield and light armour. Open Order.  They may have spear (free) or halberd (=2).",
+          "description": "Gascon Brigans have shield and light armour. Open Order.  They may have spear (free) or halberd (+2).",
           "category": "Allies",
           "type": "Infantry",
           "defence": 5,
