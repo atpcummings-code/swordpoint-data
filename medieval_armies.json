@@ -7594,7 +7594,298 @@
       ]
     }
 ]
-    }
+    },
+	  "the_catalan_company": {
+      "armyName": "The Catalan Company 1302 - 1388 AD",
+  "armyValidation": [ 
+ ],
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Infantry",
+          "name": "Infnatry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 25,
+          "max": 75
+        },
+        {
+          "id": "Allies",
+          "name": "Allies",
+         "description": "The army may have allies from the Alan (Dark Ages Supplement) and Medieval Byzantine. It may also select Stradiots from the Medieval Albanian list.",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25,
+          "alliedArmyKeys": [ { "key": ""} ],
+          "maxAlliedArmiesAllowed": 1
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "the_catalan_company_general",
+          "name": "General",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_catalan_company_captain",
+          "name": "Captain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "the_catalan_company_almughavar_adalil",
+          "name": "Almughavar Adalil",
+          "description": "May only command Almughavars.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+3",
+          "cohesion": "+2",
+          "pointsPerBase": 25,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "the_catalan_company_knights",
+          "name": "Knights",
+          "description": "Knights have light armour, lance and shield. Superior Fighters. Shock Cavalry. Veteran. May have heavy armour (+1). May have cloth barding (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Lance","Shield"],
+          "specialRules": ["Open Order","Superior Fighters","Shock Cavalry","Veteran"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "the_catalan_company_jinetes",
+          "name": "Jinetes",
+          "description": "Jinetes have a spear, javelins, light armour and shield. Evade. May be fielded as Skirmishers at a cost of 19 points per base.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 21,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Javelins","Shield"],
+          "specialRules": ["Open Order","Evade"],
+           "optionalEquipment": [
+             {
+              "name": "Skirmishers",
+              "pointsModifier": -2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "the_catalan_company_knights_jinetes_cf",
+          "name": "Combined Formation Knights/Jinetes",
+          "description": "Knights have light armour, lance and shield. Superior Fighters. Shock Cavalry. Veteran. May have heavy armour (+1). May have cloth barding (+1). Jinetes have a spear, javelins, light armour and shield. Evade. Jinetes form up to 50% of a Combined Formation with Knights",
+          "category": "Cavalry",
+          "type": "Commander",
+          "minBases": 3,
+          "maxBases": 8,
+          "subProfiles": [
+            {
+              "name": "Knights",
+              "defence": 4,
+              "cohesion": 8,
+              "pointsPerBase": 28,
+              "minBases": 3,
+              "maxBases": 7,
+              "baseEquipment": ["Light Armour","Lance","Shield"],
+          "specialRules": ["Open Order","Superior Fighters","Shock Cavalry","Veteran"]
+            },
+            {
+              "name": "Jinetes",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 4,
+              "cohesion": 7,
+              "pointsPerBase": 19,
+              "minBases": 1,
+              "maxBases": 4,
+              "maxPercentage": 50,
+              "baseEquipment": ["Light Armour","Spear","Javelins","Shield"],
+          "specialRules": ["Open Order"]
+            }
+            
+            ],
+"optionalEquipment": [
+           {
+              "name": "Heavy Armour",
+             "targetProfile": "Knights",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Cloth Barding",
+                "targetProfile": "Knights",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+            ]
+            }, 
+
+        
+		  {
+          "id": "the_catalan_company_almughavars",
+          "name": "Almughavars",
+          "description": "Almughavars have heavy throwing spear, halberd and javelins. Open Order. Evade.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 17,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Heavy Throwing Spear","Javelins", "Halberd"],
+          "specialRules": ["Open Order","Evade"],
+           "optionalEquipment": []
+        }, 
+        {
+          "id": "the_catalan_company_sailors",
+          "name": "Sailors",
+          "description": "Sailors have light armour and crossbow. Open Order. May have heavy armour (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "maxCountAllowed": 1,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Crossbow"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+{
+          "id": "the_catalan_company_greek_archers",
+          "name": "Greek Archers",
+          "description": "Greek Archers have a bow. Open Order. Inferior Fighters. Inferior Shooters",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 5,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Bow"],
+          "specialRules": ["Open Order","Inferior Fighters","Inferior Shooters"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "the_catalan_company_almughavars_skirmishers",
+          "name": "Almughavars Skirmishers",
+          "description": "Almughavars Skirmishers have throwing spear and javelins. Skirmishers. May be Riding Horses (+1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 8,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Throwing Spear","Javelins"],
+          "specialRules": ["Skirmishers"],
+           "optionalEquipment": [
+             {
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        }
+        
+      ]
+    },
 
 
 
