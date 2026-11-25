@@ -7900,7 +7900,7 @@
 "perN": true
 } 
  ],
-"categoryExcludes": [ { "triggerUnitId": "medieval_english_levy_archers", "excludedCategory": "Allies" } ] ,
+	"categoryExcludes": [{"triggerUnitIds": ["medieval_english_levy_archers"],"excludedCategory": "Allies"}],
 "allyExcludes": [ { "triggerUnitIds": ["medieval_english_mounted_gascon_knights", "medieval_english_gascon_brigans", "medieval_english_skirmishers"], "excludedAllyKey": "low_countries" } ], 	    
 "categories": [
         {
