@@ -6430,44 +6430,44 @@
 		  ]
         },
 	  
-"later_medieval_french_early": {
+"late_medieval_french_early": {
       "armyName": "Later Medieval_French (Early) 1445 - 1495 AD",
 "armyValidation": [
 {
-"ids": ["later_medieval_french_early_foot_soldiers"],
+"ids": ["late_medieval_french_early_foot_soldiers"],
 "expression": "lessThanOrEqual",
-"compareWith": ["later_medieval_french_early_franc_archers"],
+"compareWith": ["late_medieval_french_early_franc_archers"],
 "countBy": "bases"
 },
 {
-"ids": ["later_medieval_french_early_retainers", "later_medieval_french_early_dismounted_retainers", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"],
+"ids": ["late_medieval_french_early_retainers", "late_medieval_french_early_dismounted_retainers", "late_medieval_french_early_knights_retainers_cf", "late_medieval_french_early_dismounted_knights_retainers_cf"],
 "subProfileId": ["Retainers", "Dismounted Retainers"],
 "expression": "greaterThanOrEqual",
-"compareWith": ["later_medieval_french_early_knights", "later_medieval_french_early_dismounted_knights", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"],
+"compareWith": ["late_medieval_french_early_knights", "late_medieval_french_early_dismounted_knights", "late_medieval_french_early_knights_retainers_cf", "late_medieval_french_early_dismounted_knights_retainers_cf"],
 "compareWithSubProfileId": ["Knights", "Dismounted Knights"],
 "countBy": "bases"
 },
 {
-"ids": ["later_medieval_french_early_archers", "later_medieval_french_early_dismounted_archers"],
+"ids": ["late_medieval_french_early_archers", "late_medieval_french_early_dismounted_archers"],
 "expression": "greaterThanOrEqual",
-"compareWith": ["later_medieval_french_early_knights", "later_medieval_french_early_dismounted_knights", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"],
+"compareWith": ["late_medieval_french_early_knights", "late_medieval_french_early_dismounted_knights", "late_medieval_french_early_knights_retainers_cf", "late_medieval_french_early_dismounted_knights_retainers_cf"],
 "compareWithSubProfileId": ["Knights", "Dismounted Knights"],
 "ratio": 2,
 "countBy": "bases"
 },
 {
-"ids": ["later_medieval_french_early_retainers", "later_medieval_french_early_dismounted_retainers", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"],
+"ids": ["late_medieval_french_early_retainers", "late_medieval_french_early_dismounted_retainers", "late_medieval_french_early_knights_retainers_cf", "late_medieval_french_early_dismounted_knights_retainers_cf"],
 "subProfileId": ["Retainers", "Dismounted Retainers"],
 "expression": "lessThanOrEqual",
-"compareWith": ["later_medieval_french_early_knights", "later_medieval_french_early_dismounted_knights", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"],
+"compareWith": ["late_medieval_french_early_knights", "late_medieval_french_early_dismounted_knights", "late_medieval_french_early_knights_retainers_cf", "late_medieval_french_early_dismounted_knights_retainers_cf"],
 "compareWithSubProfileId": ["Knights", "Dismounted Knights"],
 "ratio": 2,
 "countBy": "bases"
 },
 {
-"ids": ["later_medieval_french_early_archers", "later_medieval_french_early_dismounted_archers"],
+"ids": ["late_medieval_french_early_archers", "late_medieval_french_early_dismounted_archers"],
 "expression": "lessThanOrEqual",
-"compareWith": ["later_medieval_french_early_knights", "later_medieval_french_early_dismounted_knights", "later_medieval_french_early_knights_retainers_cf", "later_medieval_french_early_dismounted_knights_retainers_cf"],
+"compareWith": ["late_medieval_french_early_knights", "late_medieval_french_early_dismounted_knights", "late_medieval_french_early_knights_retainers_cf", "late_medieval_french_early_dismounted_knights_retainers_cf"],
 "compareWithSubProfileId": ["Knights", "Dismounted Knights"],
 "ratio": 3,
 "countBy": "bases"
@@ -6519,7 +6519,7 @@
       ],
       "units": [
         {
-          "id": "later_medieval_french_early_general",
+          "id": "late_medieval_french_early_general",
           "name": "General",
           "description": "May Ride a horse.",
           "category": "Commanders",
@@ -6534,7 +6534,7 @@
 
         },
         {
-          "id": "later_medieval_french_early_captain",
+          "id": "late_medieval_french_early_captain",
           "name": "Captain",
           "description": "May Ride a horse.",
           "category": "Commanders",
@@ -6548,7 +6548,7 @@
           "optionalEquipment": []
         },
 		  {
-          "id": "later_medieval_french_early_knights",
+          "id": "late_medieval_french_early_knights",
           "name": "Knights",
           "description": "Knights have full plate armur and lance. Superior Fighters. Shock Cavalry. Veteran. May have barding (+1).",
           "category": "OrdnanceLances",
@@ -6574,7 +6574,7 @@
            ]
         },
         {
-          "id": "later_medieval_french_early_dismounted_knights",
+          "id": "late_medieval_french_early_dismounted_knights",
           "name": "Dismounted Knights",
           "description": "Dismounted Knights have full plate armour and spear. Superior Fighters. Veteran. May have two-handed weapon (+2) amd may be riding horses (+1).",
           "category": "OrdnanceLances",
@@ -6611,7 +6611,7 @@
            ]
         },
         {
-          "id": "later_medieval_french_early_retainers",
+          "id": "late_medieval_french_early_retainers",
           "name": "Retainers",
           "description": "Retainers have lance and partial plate armour.",
           "category": "OrdnanceLances",
@@ -6626,7 +6626,7 @@
            "optionalEquipment": []
         },
         {
-          "id": "later_medieval_french_early_dismounted_retainers",
+          "id": "late_medieval_french_early_dismounted_retainers",
           "name": "Dismounted Retainers",
           "description": "Dismounted Retainers have partial plate armour and a spear. .",
           "category": "OrdnanceLances",
@@ -6641,7 +6641,7 @@
            "optionalEquipment": []
         },
         {
-          "id": "later_medieval_french_early_knights_retainers_cf",
+          "id": "late_medieval_french_early_knights_retainers_cf",
           "name": "Combined Formation Knights/Retainers",
           "description": "Knights have full plate armur and lance. Superior Fighters. Shock Cavalry. Veteran. May have barding (+1). Retainers have lance and partial plate armour.  Retainers form up to 50% of a Combined Formation with Knights.",
           "category": "OrdnanceLances",
@@ -6688,7 +6688,7 @@
 ]
             }, 
 		  {
-          "id": "later_medieval_french_early_dismounted_knights_retainers_cf",
+          "id": "late_medieval_french_early_dismounted_knights_retainers_cf",
           "name": "Combined Formation Dismounted Knights/Retainers",
           "description": "Dismounted Knights have full plate armour and spear. Superior Fighters. Veteran. May have two-handed weapon (+2) and may be riding horses (+1). Dismounted Retainers have partial plate armour and a spear.  Retainers form up to 50% of a Combined Formation with Knights.",
           "category": "OrdnanceLances",
@@ -6745,7 +6745,7 @@
 ]
             },
         {
-          "id": "later_medieval_french_early_archers",
+          "id": "late_medieval_french_early_archers",
           "name": "Archers",
           "description": "Archers have bow and heavy armour.",
           "category": "OrdnanceLances",
@@ -6760,9 +6760,9 @@
            "optionalEquipment": []
   },
              {
-          "id": "later_medieval_french_early_dismounted_archers",
+          "id": "late_medieval_french_early_dismounted_archers",
           "name": "Dismounted Archers",
-          "description": "Dismounted Archers have longbow and heavy armour. Riding Horses.",
+          "description": "Dismounted Archers have spear, longbow and heavy armour. Riding Horses.",
           "category": "OrdnanceLances",
           "type": "Infantry",
           "defence": 5,
@@ -6770,12 +6770,12 @@
           "pointsPerBase": 21,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Longbow","Heavy Armour"],
+          "baseEquipment": ["Spear", "Longbow","Heavy Armour"],
           "specialRules": ["Close Order","Riding Horses"],
            "optionalEquipment": []
   },
    {
-          "id": "later_medieval_french_early_feudal_horse",
+          "id": "late_medieval_french_early_feudal_horse",
           "name": "Feudal Horse",
           "description": "Feudal Horse have partial plate armour, lance and shield. Superior Fighters. Shock Cavalry. Impetuous.",
           "category": "OrdnanceLances",
@@ -6790,7 +6790,7 @@
            "optionalEquipment": []
   },
         {
-          "id": "later_medieval_french_early_foot_soldiers",
+          "id": "late_medieval_french_early_foot_soldiers",
           "name": "Foot Soldiers",
           "description": "Foot Soldiers have heavy armour and halberd. They may have partial plate armour (free). Foot Soldier bases may not outnumber Franc Archer bases.",
           "category": "Infantry",
@@ -6816,7 +6816,7 @@
            ]
         },
         {
-          "id": "later_medieval_french_early_franc_archers",
+          "id": "late_medieval_french_early_franc_archers",
           "name": "France Archers",
           "description": "France Archers have a bow. Inferior Fighters. Open Order. Levies. Every second unit may exchange bow for crossbow (+2).",
           "category": "Infantry",
@@ -6843,7 +6843,7 @@
            ]
         },
 {
-          "id": "later_medieval_french_early_handgunners",
+          "id": "late_medieval_french_early_handgunners",
           "name": "Handgunners",
           "description": "Handgunners have light armour and handgun. Inferior Fighters. Skirmishers. There may be no more than half as many handgunnes bases as Franc Archer bases.",
           "category": "Infantry",
@@ -6858,7 +6858,7 @@
            "optionalEquipment": []
         },
         {
-          "id": "later_medieval_french_early_bidets",
+          "id": "late_medieval_french_early_bidets",
           "name": "Bidets",
           "description": "Bidets have throwing spear, javelins and shield. Inferior Fighters. Skirmishers",
           "category": "Infantry",
@@ -6873,7 +6873,7 @@
            "optionalEquipment": []
         },
         {
-          "id": "later_medieval_french_early_scots_guards",
+          "id": "late_medieval_french_early_scots_guards",
           "name": "Scots Guards",
           "description": "Scots Guards have hand-and-a-half sword (counts as Halberd). Shield, Partial Plate Armopur and longbow. Veteran. Riding Horses. Open Order. May be Stubborn (+2). The unit may not exceed three bases.",
           "category": "UncommonTroops",
@@ -6901,7 +6901,7 @@
         },
 		  {
         
-          "id": "later_medieval_french_early_cannon",
+          "id": "late_medieval_french_early_cannon",
           "name": "Cannon",
           "description": "One cannon and three crew. Up to two additional crew may be purchased (+5 each).",
           "category": "Artillery",           
@@ -6961,7 +6961,7 @@
     },
         {
         
-          "id": "later_medieval_french_early_organ_gun",
+          "id": "late_medieval_french_early_organ_gun",
           "name": "Organ Gun",
           "description": "One Organ Gun and three crew. Up to two additional crew may be purchased (+5 each).",
           "category": "Artillery",           
@@ -7022,44 +7022,44 @@
 ]
     },
 	  
-"later_medieval_french_late": {
-      "armyName": "Later Medieval_French (Late) 1445 - 1495 AD",
+"late_medieval_french_late": {
+      "armyName": "Late Medieval_French (Late) 1445 - 1495 AD",
 "armyValidation": [
 {
-"ids": ["later_medieval_french_late_foot_soldiers"],
+"ids": ["late_medieval_french_late_foot_soldiers"],
 "expression": "lessThanOrEqual",
-"compareWith": ["later_medieval_french_late_franc_archers"],
+"compareWith": ["late_medieval_french_late_franc_archers"],
 "countBy": "bases"
 },
 {
-"ids": ["later_medieval_french_late_retainers", "later_medieval_french_late_dismounted_retainers", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"],
+"ids": ["late_medieval_french_late_retainers", "late_medieval_french_late_dismounted_retainers", "late_medieval_french_late_knights_retainers_cf", "late_medieval_french_late_dismounted_knights_retainers_cf"],
 "subProfileId": ["Retainers", "Dismounted Retainers"],
 "expression": "greaterThanOrEqual",
-"compareWith": ["later_medieval_french_late_knights", "later_medieval_french_late_dismounted_knights", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"],
+"compareWith": ["late_medieval_french_late_knights", "late_medieval_french_late_dismounted_knights", "late_medieval_french_late_knights_retainers_cf", "late_medieval_french_late_dismounted_knights_retainers_cf"],
 "compareWithSubProfileId": ["Knights", "Dismounted Knights"],
 "countBy": "bases"
 },
 {
-"ids": ["later_medieval_french_late_archers", "later_medieval_french_late_dismounted_archers"],
+"ids": ["late_medieval_french_late_archers", "late_medieval_french_late_dismounted_archers"],
 "expression": "greaterThanOrEqual",
-"compareWith": ["later_medieval_french_late_knights", "later_medieval_french_late_dismounted_knights", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"],
+"compareWith": ["late_medieval_french_late_knights", "late_medieval_french_late_dismounted_knights", "late_medieval_french_late_knights_retainers_cf", "late_medieval_french_late_dismounted_knights_retainers_cf"],
 "compareWithSubProfileId": ["Knights", "Dismounted Knights"],
 "ratio": 2,
 "countBy": "bases"
 },
 {
-"ids": ["later_medieval_french_late_retainers", "later_medieval_french_late_dismounted_retainers", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"],
+"ids": ["late_medieval_french_late_retainers", "late_medieval_french_late_dismounted_retainers", "late_medieval_french_late_knights_retainers_cf", "late_medieval_french_late_dismounted_knights_retainers_cf"],
 "subProfileId": ["Retainers", "Dismounted Retainers"],
 "expression": "lessThanOrEqual",
-"compareWith": ["later_medieval_french_late_knights", "later_medieval_french_late_dismounted_knights", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"],
+"compareWith": ["late_medieval_french_late_knights", "late_medieval_french_late_dismounted_knights", "late_medieval_french_late_knights_retainers_cf", "late_medieval_french_late_dismounted_knights_retainers_cf"],
 "compareWithSubProfileId": ["Knights", "Dismounted Knights"],
 "ratio": 2,
 "countBy": "bases"
 },
 {
-"ids": ["later_medieval_french_late_archers", "later_medieval_french_late_dismounted_archers"],
+"ids": ["late_medieval_french_late_archers", "late_medieval_french_late_dismounted_archers"],
 "expression": "lessThanOrEqual",
-"compareWith": ["later_medieval_french_late_knights", "later_medieval_french_late_dismounted_knights", "later_medieval_french_late_knights_retainers_cf", "later_medieval_french_late_dismounted_knights_retainers_cf"],
+"compareWith": ["late_medieval_french_late_knights", "late_medieval_french_late_dismounted_knights", "late_medieval_french_late_knights_retainers_cf", "late_medieval_french_late_dismounted_knights_retainers_cf"],
 "compareWithSubProfileId": ["Knights", "Dismounted Knights"],
 "ratio": 3,
 "countBy": "bases"
@@ -7110,7 +7110,7 @@
       ],
       "units": [
         {
-          "id": "later_medieval_french_late_general",
+          "id": "late_medieval_french_late_general",
           "name": "General",
           "description": "May Ride a horse.",
           "category": "Commanders",
@@ -7125,7 +7125,7 @@
 
         },
         {
-          "id": "later_medieval_french_late_captain",
+          "id": "late_medieval_french_late_captain",
           "name": "Captain",
           "description": "May Ride a horse.",
           "category": "Commanders",
@@ -7139,7 +7139,7 @@
           "optionalEquipment": []
         },
 		  {
-          "id": "later_medieval_french_late_knights",
+          "id": "late_medieval_french_late_knights",
           "name": "Knights",
           "description": "Knights have full plate armur and lance. Superior Fighters. Shock Cavalry. Veteran. May have barding (+1).",
           "category": "OrdnanceLances",
@@ -7165,7 +7165,7 @@
            ]
         },
         {
-          "id": "later_medieval_french_late_dismounted_knights",
+          "id": "late_medieval_french_late_dismounted_knights",
           "name": "Dismounted Knights",
           "description": "Dismounted Knights have full plate armour and spear. Superior Fighters. Veteran. May have two-handed weapon (+2) amd may be riding horses (+1).",
           "category": "OrdnanceLances",
@@ -7201,7 +7201,7 @@
            ]
         },
         {
-          "id": "later_medieval_french_late_retainers",
+          "id": "late_medieval_french_late_retainers",
           "name": "Retainers",
           "description": "Retainers have lance and partial plate armour.",
           "category": "OrdnanceLances",
@@ -7216,7 +7216,7 @@
            "optionalEquipment": []
         },
         {
-          "id": "later_medieval_french_late_dismounted_retainers",
+          "id": "late_medieval_french_late_dismounted_retainers",
           "name": "Dismounted Retainers",
           "description": "Dismounted Retainers have partial plate armour and a spear.",
           "category": "OrdnanceLances",
@@ -7231,7 +7231,7 @@
            "optionalEquipment": []
         },
         {
-          "id": "later_medieval_french_late_knights_retainers_cf",
+          "id": "late_medieval_french_late_knights_retainers_cf",
           "name": "Combined Formation Knights/Retainers",
           "description": "Knights have full plate armur and lance. Superior Fighters. Shock Cavalry. Veteran. May have barding (+1). Retainers have lance and partial plate armour.  Retainers form up to 50% of a Combined Formation with Knights.",
           "category": "OrdnanceLances",
@@ -7278,7 +7278,7 @@
 ]
             }, 
 		  {
-          "id": "later_medieval_french_late_dismounted_knights_retainers_cf",
+          "id": "late_medieval_french_late_dismounted_knights_retainers_cf",
           "name": "Combined Formation Dismounted Knights/Retainers",
           "description": "Dismounted Knights have full plate armour and spear. Superior Fighters. Veteran. May have two-handed weapon (+2) and may be riding horses (+1). Dismounted Retainers have partial plate armour and a spear.  Retainers form up to 50% of a Combined Formation with Knights.",
           "category": "OrdnanceLances",
@@ -7335,7 +7335,7 @@
 ]
             }, 
         {
-          "id": "later_medieval_french_late_archers",
+          "id": "late_medieval_french_late_archers",
           "name": "Archers",
           "description": "Archers have bow and heavy armour.",
           "category": "OrdnanceLances",
@@ -7350,9 +7350,9 @@
            "optionalEquipment": []
   },
              {
-          "id": "later_medieval_french_late_dismounted_archers",
+          "id": "late_medieval_french_late_dismounted_archers",
           "name": "Dismounted Archers",
-          "description": "Dismounted Archers have longbow and heavy armour. Riding Horses.",
+          "description": "Dismounted Archers have spear, longbow and heavy armour. Riding Horses.",
           "category": "OrdnanceLances",
           "type": "Infantry",
           "defence": 5,
@@ -7360,13 +7360,13 @@
           "pointsPerBase": 21,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Longbow","Heavy Armour"],
+          "baseEquipment": ["Spear","Longbow","Heavy Armour"],
           "specialRules": ["Close Order","Riding Horses"],
            "optionalEquipment": []
   },
    
         {
-          "id": "later_medieval_french_late_foot_soldiers",
+          "id": "late_medieval_french_late_foot_soldiers",
           "name": "Foot Soldiers",
           "description": "Foot Soldiers have heavy armour and halberd. They may have partial plate armour (free). Foot Soldier bases may not outnumber Franc Archer bases.",
           "category": "Infantry",
@@ -7392,7 +7392,7 @@
            ]
         },
         {
-          "id": "later_medieval_french_late_franc_archers",
+          "id": "late_medieval_french_late_franc_archers",
           "name": "France Archers",
           "description": "France Archers have a bow. Inferior Fighters. Open Order. Levies. Every second unit may exchange bow for crossbow (+2).",
           "category": "Infantry",
@@ -7419,7 +7419,7 @@
            ]
         },
 {
-          "id": "later_medieval_french_late_handgunners",
+          "id": "late_medieval_french_late_handgunners",
           "name": "Handgunners",
           "description": "Handgunners have light armour and handgun. Inferior Fighters. Skirmishers. There may be no more than half as many handgunnes bases as Franc Archer bases.",
           "category": "Infantry",
@@ -7434,7 +7434,7 @@
            "optionalEquipment": []
         },
         {
-          "id": "later_medieval_french_late_bidets",
+          "id": "late_medieval_french_late_bidets",
           "name": "Bidets",
           "description": "Bidets have throwing spear, javelins and shield. Inferior Fighters. Skirmishers",
           "category": "Infantry",
@@ -7449,7 +7449,7 @@
            "optionalEquipment": []
         },
         {
-          "id": "later_medieval_french_late_scots_guards",
+          "id": "late_medieval_french_late_scots_guards",
           "name": "Scots Guards",
           "description": "Scots Guards have hand-and-a-half sword (counts as Halberd). Shield, Partial Plate Armopur and longbow. Veteran. Riding Horses. Open Order. May be Stubborn (+2). The unit may not exceed three bases.",
           "category": "UncommonTroops",
@@ -7477,7 +7477,7 @@
         },
 		  {
         
-          "id": "later_medieval_french_late_cannon",
+          "id": "late_medieval_french_late_cannon",
           "name": "Cannon",
           "description": "One cannon and three crew. Up to two additional crew may be purchased (+5 each).",
           "category": "Artillery",           
@@ -7537,7 +7537,7 @@
     },
         {
         
-          "id": "later_medieval_french_late_organ_gun",
+          "id": "late_medieval_french_late_organ_gun",
           "name": "Organ Gun",
           "description": "One Organ Gun and three crew. Up to two additional crew may be purchased (+5 each).",
           "category": "Artillery",           
