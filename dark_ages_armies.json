@@ -36013,7 +36013,7 @@
         {
           "id": "nab_italo_norman_norman_archers",
           "name": "Norman Archers",
-          "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fielded as skirmishers at a cost of six points per base (archers) or sven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
+          "description": "Norman Archers have a bow. Open Order. May exchange bow for crossbow (+2). May be fielded as skirmishers at a cost of six points per base (archers) or seven points per base (crossbowmen). There may not be more armed with crossbow than bows.",
           "category": "Infantry",
           "type": "Commander",
           "defence": 7,
@@ -36042,7 +36042,7 @@
             },
              {
               "name": "Skirmishers",
-              "pointsModifier": 2,
+              "pointsModifier": -3,
               "equipmentAdded": [
                 "Bow"
               ],
