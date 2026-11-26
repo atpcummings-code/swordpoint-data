@@ -1846,7 +1846,7 @@
       ]
     },
 	  
-"medieval_albania_skanderberg": {
+"medieval_albania_skanderberg_skanderberg": {
       "armyName": "Medieval Albania - Skanderberg Campaign 1443 - 1468 AD",
   "armyValidation": [ 
  ],
@@ -1887,7 +1887,7 @@
       ],
       "units": [
         {
-          "id": "medieval_albania_general",
+          "id": "medieval_albania_skanderberg_general",
           "name": "General",
           "description": "Rides a horse. May have Stratagem (+50).",
           "category": "Commanders",
@@ -1913,7 +1913,7 @@
           ]
         },
         {
-          "id": "medieval_albania_captain",
+          "id": "medieval_albania_skanderberg_captain",
           "name": "Captain",
           "description": "Rides a horse.",
           "category": "Commanders",
@@ -1927,7 +1927,7 @@
           "optionalEquipment": []
         },
 		  {
-          "id": "medieval_albania_stradiots",
+          "id": "medieval_albania_skanderberg_stradiots",
           "name": "Stradiots",
           "description": "Stradiots have light armour bow or light crossbow, Spear and shield. Superior Fighters. Evade.  May have lance (+1).",
           "category": "Cavalry",
@@ -1975,7 +1975,7 @@
            ]
         },
 {
-          "id": "medieval_albania_stradiot_skirmishers",
+          "id": "medieval_albania_skanderberg_stradiot_skirmishers",
           "name": "Stradiot Skirmishers",
           "description": "Stradiots Skirmishers have bow or light crossbow, Spear and shield. Superior Fighters. Skirmishers.",
           "category": "Cavalry",
@@ -2016,7 +2016,7 @@
         
         
 		  {
-          "id": "medieval_albania_spearmen",
+          "id": "medieval_albania_skanderberg_spearmen",
           "name": "Spearmen",
           "description": "Spearmen have Light armour, spear and shield. May exchange spear for halberd (+2).",
           "category": "Infantry",
@@ -2042,7 +2042,7 @@
            ]
         }, 
         {
-          "id": "medieval_albania_archers",
+          "id": "medieval_albania_skanderberg_archers",
           "name": "Archers",
           "description": "Archers have a bow and shield. Inferior Fighters. Open Order. May have light armour (+2). May exchange bow for crossbow or handgun (+2).",
           "category": "Infantry",
@@ -2091,7 +2091,7 @@
            ]
         },
         {
-          "id": "medieval_albania_poor_archers",
+          "id": "medieval_albania_skanderberg_poor_archers",
           "name": "Poor Archers",
           "description": "Poor Archers have a bow and shield. Inferior Fighters. Open Order.",
           "category": "Infantry",
@@ -2106,7 +2106,7 @@
            "optionalEquipment": []
         },
         {
-          "id": "medieval_albania_skirmishers",
+          "id": "medieval_albania_skanderberg_skirmishers",
           "name": "Skirmishers",
           "description": "Skirmishers have javelins and shield. Inferior Fighters. Skirmishers.",
           "category": "Infantry",
@@ -2121,7 +2121,7 @@
            "optionalEquipment": []
         },
         {
-          "id": "medieval_albania_men_at_arms",
+          "id": "medieval_albania_skanderberg_men_at_arms",
           "name": "Men-at-Arms",
           "description": "Men-at-Arms have heavy armour or partial plate armour, lance and shield. Superior Fighters. Shock Cavalry. May exchange partial plate and shield for full plate (free) and cloth barding (+1). ",
           "category": "Allies",
@@ -2181,7 +2181,7 @@
            ]
         }, 
         {
-          "id": "medieval_albania_dismounted_men_at_arms",
+          "id": "medieval_albania_skanderberg_dismounted_men_at_arms",
           "name": "Dismounted Men-at-Arms",
           "description": "Dismounted Men-at-Arms have heavy armour or partial plate armour, two-handed weapon and shield. Superior Fighters.",
           "category": "Allies",
