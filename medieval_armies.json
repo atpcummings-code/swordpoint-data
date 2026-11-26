@@ -688,7 +688,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
-          "alliedArmyKeys": [ { "key": ""} ],
+          "alliedArmyKeys": [ { "key": "medieval_bulgaria"}, { "key": "medieval_byzantine"},{ "key": "later_italian_city_states_venice"} ],
           "maxAlliedArmiesAllowed": 1
         }
         
