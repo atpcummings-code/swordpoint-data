@@ -9737,7 +9737,7 @@
 "medieval_scandinavia_early": {
       "armyName": "Medieval Scandinavia (Early) 1200 - 1390 AD",
 "armyValidation": [
-{ "ids": ["medieval_scandinavia_early_spearmen_cf","medieval_scandinavia_early_spearmen_mo"], "expression": "lessThanOrEqual", "compareWith": ["medieval_scandinavia_early_leidangr"], "ratio": 3, "countBy": "units", "perN": true } 
+{ "ids": ["medieval_scandinavia_early_spearmen_cf", "medieval_scandinavia_early_spearmen_mo"], "expression": "lessThanOrEqual", "compareWith": ["medieval_scandinavia_early_leidangr"], "ratio": 3, "countBy": "units", "perN": true } 
 	
 ],
 	    "categories": [
