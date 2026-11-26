@@ -9033,16 +9033,7 @@
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [
-            {
-              "name": ["Oriflamme"],
-              "pointsModifier": 0,
-				"equipmentAdded": [],
-               "equipmentRemoved": [],
-              "rulesAdded": ["Oriflamme"],
-              "rulesRemoved": [],
-              "defenceModifier": 0,
-              "cohesionModifier": 0
-            }
+           
           ]
 
         },
