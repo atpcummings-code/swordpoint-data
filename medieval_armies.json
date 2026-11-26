@@ -3215,7 +3215,7 @@
         {
           "id": "medieval_serbia_early_retainers",
           "name": "Retainers",
-          "description": "Retainers have light armour, spear and shield. May have heavy armour (+1) or lance (+3, become Shock Cavalry).",
+          "description": "Retainers have light armour, spear and shield. May have heavy armour (+1) or lance (+3), become Shock Cavalry).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 4,
@@ -3240,7 +3240,7 @@
              {
               "name": "Heavy Armour",
                "disables": "Lance (Shock Cavalry)",
-              "pointsModifier": 0,
+              "pointsModifier": 1,
 				"equipmentAdded": ["Heavy Armour"],
                "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
@@ -3706,7 +3706,7 @@
              {
               "name": "Heavy Armour",
                "disables": "Lance (Shock Cavalry)",
-              "pointsModifier": 0,
+              "pointsModifier": 1,
 				"equipmentAdded": ["Heavy Armour"],
                "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
@@ -4205,7 +4205,7 @@
              {
               "name": "Heavy Armour",
                "disables": "Lance (Shock Cavalry)",
-              "pointsModifier": 0,
+              "pointsModifier": 1,
 				"equipmentAdded": ["Heavy Armour"],
                "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
