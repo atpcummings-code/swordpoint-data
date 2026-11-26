@@ -9734,6 +9734,499 @@
 ]
     },
 	  
+"medieval_scandinavia_early": {
+      "armyName": "Medieval Scandinavia (Early) 1200 - 1390 AD",
+"armyValidation": [
+{ "ids": ["medieval_scandinavia_early_spearmen_cf","medieval_scandinavia_early_spearmen_mo"], "expression": "lessThanOrEqual", "compareWith": ["medieval_scandinavia_early_leidangr"], "ratio": 3, "countBy": "bases", "perN": true } 
+  
+],
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 10,
+          "max": 35
+        },
+          
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "medieval_scandinavia_early_king_or_general",
+          "name": "king or General",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+3",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": []
+
+        },
+        {
+          "id": "medieval_scandinavia_early_subgeneral",
+          "name": "Sub-General",
+          "description": "Rides a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "medieval_scandinavia_early_royal_knights",
+          "name": "Royal Knights",
+          "description": "Royal Knights have heavy armour, lance and shield. Superior Fighters. Shock Cavalry. May exchange heavy armour for partial plate armour (free). May have cloth barding (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+            "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8, 
+          "baseEquipment": ["Heavy Armour","Shield","Lance"],
+          "specialRules": ["Open Order","Superior Fighters","Shock Cavalry"],
+           "optionalEquipment": [
+             {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Partial Plate Armour"],
+               "equipmentRemoved": ["Heavy Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_scandinavia_early_royal_sergeants",
+          "name": "Royal Sergeants",
+          "description": "Royal Sergeants have light armour, spear and shield. May have heavy armour (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8, 
+          "baseEquipment": ["Light Armour","Shield","Spear"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_scandinavia_early_germanl_knights",
+          "name": "German Knights",
+          "description": "German Knights have heavy armour, lance and shield. Superior Fighters. Shock Cavalry. May exchange heavy armour for partial plate armour (free). May have cloth barding (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 7,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 8, 
+          "baseEquipment": ["Heavy Armour","Shield","Lance"],
+          "specialRules": ["Open Order","Superior Fighters","Shock Cavalry"],
+           "optionalEquipment": [
+             {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Partial Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Partial Plate Armour"],
+               "equipmentRemoved": ["Heavy Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_scandinavia_early_royal_foot",
+          "name": "Royal Foot",
+          "description": "Royal Foot light armour and crossbow. Open Order. May be Riding Horses (+1). May be fielded as skirmishers at a cost of nine points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 14,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Crossbow"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             {
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Skirmishers",
+              "pointsModifier": -5,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_scandinavia_early_leidangr",
+          "name": "Liedangr",
+          "description": "Liedangr have spear and shield. Open Order. May have javelins (+2). Every second unit may have light armour (+2). One unit in every four may exchange spear for bow (+2) or crossbow (+4). These troops may then me used in Combined Formation or Mixed Order with the spearmen.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             {
+              "name": "Javelins",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Javelins"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Light Armour",
+               "enabledEvery": 2,
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        
+{
+          "id": "medieval_scandinavia_early_spearmen_cf",
+          "name": "Combined Formation Spearmen/Missile Troops",
+          "description": "Liedangr have spear and shield. Open Order. May have javelins (+2). Every second unit may have light armour (+2). One unit in every four may exchange spear for bow (+2) or crossbow (+4). These troops may then me used in Combined Formation or Mixed Order with the spearmen.",
+    "category": "Commoners",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	"excludesUnits": ["medieval_scandinavia_early_spearmen_mo"],
+	  "combinedFormation": 
+		[
+{ "label": "25%", "disableSubProfiles": ["Missile Troops","Spearmen/Missile Troops (Front Row)"]},		
+{ "label": "50%", "disableSubProfiles": ["Spearmen/Missile Troops (Front Row)","Spearmen/Missile Troops (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Spearmen/Missile Troops (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 9,
+              "minBases": 3,
+	"maxBases": 6,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Open Order"]
+            },
+			  {
+              "name": "Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 6,
+          	"pointsPerBase": 9,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "minBases": 1,
+		"maxBases": 6,
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 9,
+		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+          "baseEquipment": ["Shield"],
+          "specialRules": ["Open Order"]
+            },
+
+			  {
+              "name": "Spearmen/Missile Troops (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 9,
+              "minBases": 1,
+    	"maxBases": 6,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Open Order"]
+            }
+
+            ],
+	"optionalEquipment": [
+{
+              "name": "Light Armour",
+              "pointsModifier": 2,
+		"enabledEvery": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Bow",
+		"disables": "Crossbow",
+		"targetProfile": ["Spearmen/Missile Troops (Rear Row)","Missile Troops","Spearmen/Missile Troops (Front Row)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Crossbow",
+		"disables": "Bow",
+		"targetProfile": ["Spearmen/Missile Troops (Rear Row)","Missile Troops","Spearmen/Missile Troops (Front Row)"],
+              "pointsModifier": 4,
+              "equipmentAdded": ["Crossbow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+]
+        },
+        {
+          "id": "medieval_scandinavia_early_spearmen_mo",
+          "name": "Mixed Order Spearmen/Missile Troops",
+          "description": "Liedangr have spear and shield. Open Order. May have javelins (+2). Every second unit may have light armour (+2). One unit in every four may exchange spear for bow (+2) or crossbow (+4). These troops may then me used in Combined Formation or Mixed Order with the spearmen.",
+    "category": "Infantry",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+"excludesUnits": ["medieval_scandinavia_early_spearmen_cf"],
+          "subProfiles": [
+            {
+              "name": "Spearmen",
+            	"defence": 6,
+          	"cohesion": 6,
+          	"pointsPerBase": 9,
+              "minBases": 2,
+              "maxBases": 12,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Open Order"]
+            },
+            {
+              "name": "Missile Troops",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Mixed Order", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+              "pointsPerBase": 9,
+              "minBases": 1,
+              "maxBases": 6,
+              "maxPercentage": 50,
+              "baseEquipment": ["Shield"],
+              "specialRules": ["Open Order"]
+            }
+            
+            ],
+	"optionalEquipment": [
+{
+              "name": "Light Armour",
+              "pointsModifier": 2,
+		"enabledEvery": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Bow",
+		"disables": "Crossbow",
+		"targetProfile": ["Missile Troops"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Bow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+{
+              "name": "Crossbow",
+		"disables": "Bow",
+		"targetProfile": ["Missile Troops"],
+              "pointsModifier": 4,
+              "equipmentAdded": ["Crossbow"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+]
+        },
+
+        
+		  {
+        
+          "id": "medieval_scandinavia_early_cannon",
+          "name": "Cannon",
+          "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",           
+          "type": "Artillery",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew","3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew","3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew","2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Cannon",
+              "stats": {},
+              "pointsPerBase": 40,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 8
+              },
+              "pointsPerBase": 0
+             }
+      ]
+    }
+]
+    },
 
 	  
   }
