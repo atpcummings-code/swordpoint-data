@@ -6909,7 +6909,7 @@
         
           "id": "late_medieval_french_early_cannon",
           "name": "Cannon",
-          "description": "One cannon and three crew. Up to two additional crew may be purchased (+5 each).",
+          "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",           
           "type": "Artillery",
           "minBases": 1,
@@ -6918,7 +6918,7 @@
             {
               "name": "1 Extra Crew",
               "disables": [
-                "2 Extra Crew"
+                "2 Extra Crew","3 Extra Crew"
               ],
               "pointsModifier": 5,
               "targetProfile": "Crew",
@@ -6934,12 +6934,28 @@
             {
               "name": "2 Extra Crew",
               "disables": [
-                "1 Extra Crew"
+                "1 Extra Crew","3 Extra Crew"
               ],
               "pointsModifier": 10,
               "targetProfile": "Crew",
               "equipmentAdded": [
                 "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew","2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
               ],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -6978,7 +6994,7 @@
             {
               "name": "1 Extra Crew",
               "disables": [
-                "2 Extra Crew"
+                "2 Extra Crew","3 Extra Crew"
               ],
               "pointsModifier": 5,
               "targetProfile": "Crew",
@@ -6994,12 +7010,28 @@
             {
               "name": "2 Extra Crew",
               "disables": [
-                "1 Extra Crew"
+                "1 Extra Crew","3 Extra Crew"
               ],
               "pointsModifier": 10,
               "targetProfile": "Crew",
               "equipmentAdded": [
                 "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew","2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
               ],
               "equipmentRemoved": [],
               "rulesAdded": [],
