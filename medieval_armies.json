@@ -2504,7 +2504,7 @@
         {
           "id": "Cavalry",
           "name": "Cavalry",
-          "description": "Retainer units cannot outnumber Noble units.",
+          "description": "",
           "constraintType": "percentage",
           "min": 50,
           "max": 100
@@ -3076,7 +3076,7 @@
         {
           "id": "Cavalry",
           "name": "Cavalry",
-          "description": "Retainer units cannot outnumber Noble units.",
+          "description": "",
           "constraintType": "percentage",
           "min": 25,
           "max": 50
@@ -3305,7 +3305,7 @@
             },
              {
               "name": "Halberd",
-              "pointsModifier": 1,
+              "pointsModifier": 2,
 				"equipmentAdded": ["Halberd"],
                "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
@@ -3542,7 +3542,7 @@
         {
           "id": "Cavalry",
           "name": "Cavalry",
-          "description": "Retainer units cannot outnumber Noble units.",
+          "description": "",
           "constraintType": "percentage",
           "min": 25,
           "max": 50
@@ -3771,7 +3771,7 @@
             },
              {
               "name": "Halberd",
-              "pointsModifier": 1,
+              "pointsModifier": 2,
 				"equipmentAdded": ["Halberd"],
                "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
@@ -4030,7 +4030,7 @@
         {
           "id": "Cavalry",
           "name": "Cavalry",
-          "description": "Retainer units cannot outnumber Noble units.",
+          "description": "",
           "constraintType": "percentage",
           "min": 25,
           "max": 50
@@ -4270,7 +4270,7 @@
             },
              {
               "name": "Halberd",
-              "pointsModifier": 1,
+              "pointsModifier": 2,
 				"equipmentAdded": ["Halberd"],
                "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
