@@ -3412,7 +3412,7 @@
              {
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
-               "enablesHidden": "Plate Armour",
+               "enableHidden": "Plate Armour",
               "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
@@ -3900,7 +3900,7 @@
              {
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
-               "enablesHidden": "Plate Armour",
+               "enableHidden": "Plate Armour",
               "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
@@ -4399,7 +4399,7 @@
              {
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
-               "enablesHidden": "Plate Armour",
+               "enableHidden": "Plate Armour",
               "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
