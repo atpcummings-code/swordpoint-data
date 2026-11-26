@@ -1602,7 +1602,7 @@
           "name": "Stradiot Skirmishers",
           "description": "Stradiots Skirmishers have bow or light crossbow, Spear and shield. Superior Fighters. Skirmishers.",
           "category": "Cavalry",
-          "type": "Skirmishers",
+          "type": "Cavalry",
           "defence": 5,
           "cohesion": 8,
           "pointsPerBase": 22,
