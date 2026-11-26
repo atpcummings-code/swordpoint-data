@@ -6441,7 +6441,7 @@
         },
 	  
 "late_medieval_french_early": {
-      "armyName": "Late Medieval French (Early) 1445 - 1495 AD",
+      "armyName": "Late Medieval French (Early) 1445 - 1450 AD",
 "armyValidation": [
 {
 "ids": ["late_medieval_french_early_foot_soldiers"],
@@ -6507,16 +6507,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 50
-        },
-          {
-          "id": "Mercenaries",
-          "name": "Mercenaries",
-          "description": "May take Swiss Allies.",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 50
-        },
-			
+        },			
         {
           "id": "Artillery",
           "name": "Artillery",
@@ -6524,6 +6515,15 @@
           "pointsThreshold": 250,
           "countPerThreshold": 1,
           "rounding": "up"
+        }
+          {
+          "id": "Allies",
+          "name": "Mercenaries",
+          "description": "May take Swiss Allies.",
+          "constraintType": "percentage",
+			  "alliedArmyKeys": [ { "key": "swiss"}  ],
+          "min": 0,
+          "max": 50
         }
         
       ],
@@ -7067,7 +7067,7 @@
     },
 	  
 "late_medieval_french_late": {
-      "armyName": "Late Medieval French (Late) 1445 - 1495 AD",
+      "armyName": "Late Medieval French (Late) 1451 - 1495 AD",
 "armyValidation": [
 {
 "ids": ["late_medieval_french_late_foot_soldiers"],
@@ -7134,22 +7134,24 @@
           "min": 0,
           "max": 50
         },
-          {
-          "id": "Mercenaries",
-          "name": "Mercenaries",
-          "description": "",
-          "constraintType": "percentage",
-          "min": 0,
-          "max": 50
-        },
-        {
+			{
           "id": "Artillery",
           "name": "Artillery",
           "constraintType": "pointsRatio",
           "pointsThreshold": 250,
           "countPerThreshold": 1,
           "rounding": "up"
+        },
+          {
+          "id": "Allies",
+          "name": "Mercenaries",
+          "description": "",
+          "constraintType": "percentage",
+			  "alliedArmyKeys": [ { "key": "swiss"}  ],
+          "min": 0,
+          "max": 50
         }
+        
         
       ],
       "units": [
