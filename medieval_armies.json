@@ -1,4 +1,4 @@
-E{
+{
   "armies": {
 "medieval_wales": {
       "armyName": "Medieval Wales 1064 - 1420 AD",
@@ -2343,7 +2343,7 @@ E{
         {
           "id": "aztec_triple_alliance_otontin",
           "name": "Otontin",
-          "description": "Quachicquelt Eagle/Jaguar Knights have a shield. Superior Fighters. Veteran. Stubborn. May have a double-handed weapon (+2) and atlatl (+2).",
+          "description": "Otontin have a shield. Superior Fighters. Veteran. Stubborn. May have a double-handed weapon (+2) and atlatl (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
