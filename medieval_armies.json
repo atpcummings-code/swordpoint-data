@@ -2738,7 +2738,7 @@
         {
           "id": "medieval_bulgaria_spearmen_archers_cf",
           "name": "Combined Formation Spearmen/Archers",
-          "description": "Spearmen have light armour, spear and shield. Archers have a bow and shield. Open Order. Inferior Fighters. May have light armour (+2). Archers forming up to 50% of the Combined Formation.",
+          "description": "Spearmen have light armour, spear and shield. Archers have a bow and shield. Close Order (+3). Inferior Fighters. May have light armour (+2). Archers forming up to 50% of the Combined Formation.",
     "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
@@ -2778,7 +2778,7 @@
 		"maxBases": 6,
               "defence": 6,
               "cohesion": 6,
-              "pointsPerBase": 9,
+              "pointsPerBase": 12,
 		      "compareWithSubProfile": { "name": "Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
           "baseEquipment": ["Bow","Shield"],
           "specialRules": ["Open Order","Inferior Fighters"]
@@ -2888,7 +2888,7 @@
 {
           "id": "medieval_bulgaria_peasants_poor_archers_cf",
           "name": "Combined Formation Peasants/Poor Archers",
-          "description": "Peasants have shield. Inferior Fighters. Open Order. May have light armour (+2), javelins (+2) and spear (free). Poor Archers have a bow and shield. Open Order. Inferior Fighters. Poor Archers forming up to 50% of the Combined Formation.",
+          "description": "Peasants have shield. Inferior Fighters. Open Order. May have light armour (+2), javelins (+2) and spear (free). Poor Archers have a bow and shield. Close Order (+2). Inferior Fighters. Poor Archers forming up to 50% of the Combined Formation.",
     "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
@@ -2928,7 +2928,7 @@
 		"maxBases": 6,
               "defence": 6,
               "cohesion": 5,
-              "pointsPerBase": 8,
+              "pointsPerBase": 10,
 		      "compareWithSubProfile": { "name": "Peasants", "expression": "lessThanOrEqual", "ratio": 1 },
           "baseEquipment": ["Bow","Shield"],
           "specialRules": ["Open Order","Inferior Fighters"]
