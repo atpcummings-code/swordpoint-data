@@ -3281,7 +3281,7 @@
 		  {
           "id": "medieval_serbia_early_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have light armour, spear and shield. May have heavy armour (+1). May exchange spear for halberd (+2).",
+          "description": "Spearmen have light armour, spear and shield. May have heavy armour (+2). May exchange spear for halberd (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -3294,7 +3294,7 @@
            "optionalEquipment": [
              {
               "name": "Heavy Armour",
-              "pointsModifier": 1,
+              "pointsModifier": 2,
 				"equipmentAdded": ["Heavy Armour"],
                "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
@@ -3747,7 +3747,7 @@
 		  {
           "id": "medieval_serbia_mid_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have light armour, spear and shield. May have heavy armour (+1). May exchange spear for halberd (+2).",
+          "description": "Spearmen have light armour, spear and shield. May have heavy armour (+2). May exchange spear for halberd (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -3760,7 +3760,7 @@
            "optionalEquipment": [
              {
               "name": "Heavy Armour",
-              "pointsModifier": 1,
+              "pointsModifier": 2,
 				"equipmentAdded": ["Heavy Armour"],
                "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
@@ -4248,7 +4248,7 @@
 		  {
           "id": "medieval_serbia_late_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have light armour, spear and shield. May have heavy armour (+1). May exchange spear for halberd (+2).",
+          "description": "Spearmen have light armour, spear and shield. May have heavy armour (+2). May exchange spear for halberd (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -4261,7 +4261,7 @@
            "optionalEquipment": [
              {
               "name": "Heavy Armour",
-              "pointsModifier": 1,
+              "pointsModifier": 2,
 				"equipmentAdded": ["Heavy Armour"],
                "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
@@ -4552,7 +4552,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [ { "key": ""} ],
+          "alliedArmyKeys": [ { "key": "medieval_russian_early"}, { "key": "medieval_russian_post_mongol"} ],
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -4872,7 +4872,7 @@
 {
           "id": "the_baltic_pagans_lithuanian_dismounted_heavy_cavalry",
           "name": "Dismounted Heavy Cavalry",
-          "description": "Dismounted Heavy Cavalry have light armour, bow and shield. Superior Fighters. May have heavy armour (+2). May be fielded as Skirmishers at a cost of 13 points per base.",
+          "description": "Dismounted Heavy Cavalry have light armour, bow and shield. Superior Fighters. May have heavy armour (+2). May have spear (+2). May be fielded as Skirmishers at a cost of 13 points per base.",
           "category": "Cavalry",
           "type": "Infantry",
           "defence": 5,
@@ -4902,6 +4902,16 @@
               "rulesRemoved": ["Close Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
+            },
+			    {
+              "name": "Spear",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
             }
              
            ]
@@ -4909,7 +4919,7 @@
         {
           "id": "the_baltic_pagans_lithuanian_lithuanian_dismounted_lithuanian_light_cavalry",
           "name": "Dismounted Lithuanian Light Cavalry",
-          "description": "Dismounted Lithuanian Light Cavalry have a bow and shield. Open Order. May be fielded as Skirmishers at a cost of eight points per base. ",
+          "description": "Dismounted Lithuanian Light Cavalry have a bow and shield. Open Order. May have spear (+2). May be fielded as Skirmishers at a cost of eight points per base. ",
           "category": "Cavalry",
           "type": "Infantry",
           "defence": 6,
@@ -4927,6 +4937,16 @@
                "equipmentRemoved": [],
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Spear",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
