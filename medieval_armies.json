@@ -8925,7 +8925,772 @@
         }
       ]
     },
+"late_medieval_french_early": {
+      "armyName": "Medieval French 1328 - 1444 AD",
+"armyValidation": [
+{"key": "medieval_scottish", "onlyUnits": ["medieval_scottish_dismounted_maa", "lmedieval_scottish_archers"]},
+  { "ids": ["medieval_french_militia_handgunners"], "expression": "lessThanOrEqual", "compareWith": ["medieval_french_militia_crossbowmen", "medieval_french_militia_cf"], "compareWithSubProfileId": ["Militia Spearmen/Militia Crossbowmen (Front Row)", "Militia Crossbowmen", "Militia Spearmen/Militia Crossbowmen (Rear Row)"], "countBy": "bases" } 
 
+
+  
+],
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "NoblesAndRetainers",
+          "name": "Nobles and Retainers",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 100
+        },
+          
+        {
+          "id": "Commoners",
+          "name": "Commoners",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+          {
+          "id": "Mercenaries",
+          "name": "Mercenaries",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50
+        },
+			
+        {
+          "id": "Artillery",
+          "name": "Artillery",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 333,
+          "countPerThreshold": 1,
+          "rounding": "up"
+        },
+          {
+          "id": "Allies",
+          "name": "Allies",
+         "description": "The army may have allies from the Medieval Scootish List (Schiltrons, Archers and Dismounted Men-at-Arms only)",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 50,
+          "alliedArmyKeys": [ { "key": ""},{"key": "alans", "supplement":"classical_armies"}  ],
+          "maxAlliedArmiesAllowed": 1
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "medieval_french_general",
+          "name": "General",
+          "description": "May Ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [
+            {
+              "name": "Oriflamme",
+              "pointsModifier": 0,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Oriflamme"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ]
+
+        },
+        {
+          "id": "medieval_french_captain",
+          "name": "Captain",
+          "description": "May Ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "medieval_french_mounted_knights",
+          "name": "Mounted Knights",
+          "description": "Mounted Knights have shield and partial plate armour. Superior Fighters. Impetuous. Shock Cavalry. Veteran. May have full plate armour (free). May have cloth barding (+1). May have lance (+2).",
+          "category": "NoblesAndRetainers",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 27,
+          "minBases": 3,
+          "maxBases": 8, 
+          "baseEquipment": ["Partial Plate Armour","Shield"],
+          "specialRules": ["Open Order","Superior Fighters","Shock Cavalry","Impetuous","Veteran"],
+           "optionalEquipment": [
+             {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Full Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Full Plate Armour"],
+               "equipmentRemoved": ["Partial Plate Armour"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Lance",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Lance"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+           ]
+        },
+        {
+          "id": "medieval_french_dismounted_knights",
+          "name": "Dismounted Knights",
+          "description": "Dismounted Knights have shield and partial plate armour and spear. Superior Fighters. Veteran. Riding Horses. May replace shield and partial plate armour with full plate armour (free) and  have two-handed weapon (+2).",
+          "category": "NoblesAndRetainers",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 29,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Partial Plate Armour","Spear"],
+          "specialRules": ["Close Order","Superior Fighters","Veteran","Riding Horses"],
+           "optionalEquipment": [
+             {
+              "name": "Two-handed Weapon",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Two-handed Weapon"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Full Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Full Plate Armour"],
+               "equipmentRemoved": ["Partial Plate Armour","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+
+           ]
+        },
+        {
+          "id": "medieval_french_mounted_sergeants",
+          "name": "Mounted Sergeants",
+          "description": "Mounted Sergeants have spear, light armour and shield. May exchange light armour and shield for heavy armour (free) and spear for either lance (+1) or light crossbow (free).",
+          "category": "NoblesAndRetainers",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Lance",
+               "disables": "Light Crossbow",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Lance"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Light Crossbow",
+               "disables": "Lance",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Light Crossbow"],
+               "equipmentRemoved": ["Spear"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_french_dismounted_sergeants",
+          "name": "Dismounted Sergeants",
+          "description": "Dismounted Sergeants have spear, light armour and shield. May exchange spear, shield and light armour for heavy armour and halberd (+2).",
+          "category": "NoblesAndRetainers",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour & Halberd",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Heavy Armour","Halberd"],
+               "equipmentRemoved": ["Light Armour","Spear","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_french_sergeant_crossbowmen",
+          "name": "Sergeant Crossbowmen",
+          "description": "Sergeant Crossbowmen light armour, shield and crossbow. May have pavise (+4).",
+          "category": "NoblesAndRetainers",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 15,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Crossbow","Shield"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+             {
+              "name": "Pavise",
+              "pointsModifier": 4,
+				"equipmentAdded": ["Pavise"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        
+        {
+          "id": "medieval_french_militia_spearmen",
+          "name": "Militia Spearmen",
+          "description": "Militia Spearmen have spear and shield. Inferior Fighters. May have light armour (+2) and may exchange shield for pavise (+2).",
+          "category": "Commoners",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 10,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Shield", "Spear"],
+          "specialRules": ["Close Order","Inferior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Pavise",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Pavise"],
+               "equipmentRemoved": ["Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_french_militia_crossbowmen",
+          "name": "Militia Crossbowmen",
+          "description": "Militia Crossbowmen have a crossbowmen. Inferior Fighters. Open Order.",
+          "category": "Commoners",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 9,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Crossbow"],
+          "specialRules": ["Open Order","Inferior Fighters"],
+           "optionalEquipment": []
+        },
+{
+          "id": "medieval_french_militia_cf",
+          "name": "Combined Formation Militia Spearmen/Militia Crossbowmen",
+          "description": "Militia Spearmen have spear and pavise. Inferior Fighters. May have light armour (+2). Militia Crossbowmen have a crossbowmen. Inferior Fighters. Up to 50% Militia Crossbowmen in Combined Formation.",
+    "category": "Commoners",      
+	"type": "Infantry",
+          "minBases": 3,
+          "maxBases": 12,
+	  "combinedFormation": 
+		[
+{ "label": "25%", "disableSubProfiles": ["Militia Crossbowmen","Militia Spearmen/Militia Crossbowmen (Front Row)"]},		
+{ "label": "50%", "disableSubProfiles": ["Militia Spearmen/Militia Crossbowmen (Front Row)","Militia Spearmen/Militia Crossbowmen (Rear Row)" ]}
+		],
+          "subProfiles": [
+             {
+              "name": "Militia Spearmen/Militia Crossbowmen (Front Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 12,
+              "minBases": 3,
+	"maxBases": 6,
+          "baseEquipment": ["Spear", "Shield","Crossbow"],
+          "specialRules": ["Close Order","Inferior Fighters"]
+            },
+			  {
+              "name": "Militia Spearmen",
+		"onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+            	"defence": 6,
+          	"cohesion": 6,
+          	"pointsPerBase": 12,
+              "minBases": 3,
+              "maxBases": 6,
+          "baseEquipment": ["Spear", "Shield"],
+          "specialRules": ["Close Order","Inferior Fighters"]
+            },
+            {
+              "name": "Militia Crossbowmen",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+              "minBases": 1,
+		"maxBases": 6,
+              "defence": 7,
+              "cohesion": 6,
+              "pointsPerBase": 12,
+		      "compareWithSubProfile": { "name": "Militia Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+          "baseEquipment": ["Crossbow"],
+          "specialRules": ["Close Order","Inferior Fighters"]
+            },
+
+			  {
+              "name": "Militia Spearmen/Militia Crossbowmen (Rear Row)",
+              "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
+			  "compareWithSubProfile": { "name": "Militia Spearmen", "expression": "lessThanOrEqual", "ratio": 1 },
+              "defence": 6,
+              "cohesion": 6,
+	          "pointsPerBase": 12,
+              "minBases": 1,
+    	"maxBases": 6,
+          "baseEquipment": ["Spear", "Shield","Crossbow"],
+          "specialRules": ["Close Order","Inferior Fighters"]
+            }
+
+            ],
+	"optionalEquipment": [
+{
+              "name": "Light Armour (Militia Spearmen)",
+		"targetProfile": ["Militia Spearmen","Militia Spearmen/Militia Crossbowmen (Front Row)","Militia Spearmen/Militia Crossbowmen (Rear Row)"],
+              "pointsModifier": 2,
+              "equipmentAdded": ["Light Armour"],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+
+]
+        },
+{
+          "id": "medieval_french_militia_handgunners",
+          "name": "Militia Handgunners",
+          "description": "Militia Handgunners have handgun. Inferior Fighters. Skirmishers. The number of handgunners may not esceed the number of crossbowmen.",
+          "category": "commoners",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Handgun","Light Armour"],
+          "specialRules": ["Inferior Fighters","Skirmishers"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "medieval_french_brigans",
+          "name": "Brigans",
+          "description": "Brigans are Open Order. May have light armour (+2), halberd (=2), spear (free) and shield (+2).",
+          "category": "Commoners",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 6,
+          "pointsPerBase": 8,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             {
+              "name": "Light Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Halberd",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Halberd"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Spear",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_french_bidets",
+          "name": "Bidets",
+          "description": "Bidets have shield and javelins. Inferior Fighters. Skirmishers. May have throwing spear (+1).",
+          "category": "Commoners",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 6,
+          "pointsPerBase": 6,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Inferior Fighters","Skirmishers"],
+           "optionalEquipment": [
+             {
+              "name": "Throwing Spear",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Throwing Spear"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            
+           ]
+        },
+        {
+          "id": "medieval_french_ribauds",
+          "name": "Ribauds",
+          "description": "Ribauds are Open Order. Levies. Inferior Fighters.",
+          "category": "Commoners",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 4,
+          "pointsPerBase": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": [],
+          "specialRules": ["Open Order","Levies","Inferior Fighters"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "medieval_french_ribaud_bowmen",
+          "name": "Ribaud Bowmen",
+          "description": "Ribaud Bowmen have a bow. Skimrishers. Levies. Inferior Fighters. Inferior Shooters.",
+          "category": "Commoners",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 4,
+          "pointsPerBase": 2,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["JBow"],
+          "specialRules": ["Inferior Fighters","Inferior Shooters","Levies","Skirmishers"],
+           "optionalEquipment": []
+        },
+        
+		  {
+        
+          "id": "medieval_french_cannon",
+          "name": "Cannon",
+          "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",           
+          "type": "Artillery",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew","3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew","3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew","2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Cannon",
+              "stats": {},
+              "pointsPerBase": 40,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 8
+              },
+              "pointsPerBase": 0
+             }
+      ]
+    },
+        {
+        
+          "id": "medieval_french_organ_gun",
+          "name": "Organ Gun",
+          "description": "One Organ Gun and three crew. Up to two additional crew may be purchased (+5 each).",
+          "category": "Artillery",           
+          "type": "Artillery",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew","3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew","3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew","2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Organ Gun",
+              "stats": {},
+              "pointsPerBase": 40,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 8
+              },
+              "pointsPerBase": 0
+             }
+      ]
+    },
+        {
+          "id": "medieval_french_mercenary_crossbowmen",
+          "name": "Mercenary Crossbowmen",
+          "description": "Mercenary Crossbowmen have crossbow. Open Order., May have heavy armour (+4). May have pavise (+4).",
+          "category": "Mercenaries",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Crossbow"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 4,
+				"equipmentAdded": ["Heavy Armour"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Pavise",
+              "pointsModifier": 4,
+				"equipmentAdded": ["Pavise"],
+              "equipmentRemoved": [],  
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -2,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "medieval_french_mercenary_skirmishers",
+          "name": "Mercenary Skirmishers",
+          "description": "Mercenary Skirmishers have a light crossbow. Skirmishers.",
+          "category": "Mercenaries",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 7,
+          "minBases": 2,
+          "maxBases": 6,
+          "baseEquipment": ["Light Crossbow"],
+          "specialRules": ["Skirmishers"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "medieval_french_mercenary_knights",
+          "name": "Mercenary Knights",
+          "description": "Mercenary Knights have lance, partial plate armour and shield. Superior Fighters. Shock Cavalry. Veteran. May have cloth barding (+1).",
+          "category": "Mercenaries",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 29,
+          "minBases": 3,
+          "maxBases": 8, 
+          "baseEquipment": ["Partial Plate Armour","Shield","Lance"],
+          "specialRules": ["Open Order","Superior Fighters","Shock Cavalry","Veteran"],
+           "optionalEquipment": [
+             {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+]
+    },
 	  
 
 	  
