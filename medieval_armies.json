@@ -9737,8 +9737,8 @@
 "medieval_scandinavia_early": {
       "armyName": "Medieval Scandinavia (Early) 1200 - 1390 AD",
 "armyValidation": [
-{ "ids": ["medieval_scandinavia_early_spearmen_cf","medieval_scandinavia_early_spearmen_mo"], "expression": "lessThanOrEqual", "compareWith": ["medieval_scandinavia_early_leidangr"], "ratio": 3, "countBy": "bases", "perN": true } 
-  
+{ "ids": [""medieval_scandinavia_early_spearmen_cf","medieval_scandinavia_early_spearmen_mo""], "expression": "lessThanOrEqual", "compareWith": ["medieval_scandinavia_early_leidangr"], "ratio": 3, "countBy": "units", "perN": true } 
+	
 ],
 	    "categories": [
         {
@@ -9976,7 +9976,7 @@
           "id": "medieval_scandinavia_early_spearmen_cf",
           "name": "Combined Formation Spearmen/Missile Troops",
           "description": "Liedangr have spear and shield. Open Order. May have javelins (+2). Every second unit may have light armour (+2). One unit in every four may exchange spear for bow (+2) or crossbow (+4). These troops may then me used in Combined Formation or Mixed Order with the spearmen.",
-    "category": "Commoners",      
+    "category": "Infantry",      
 	"type": "Infantry",
           "minBases": 3,
           "maxBases": 12,
