@@ -4991,7 +4991,7 @@
     },
 
 "later_medieval_hungarian": {
-      "armyName": "Later Medieval Hungarian 1310 - 1516 AD",
+      "armyName": "Late Medieval Hungarian 1310 - 1516 AD",
 "armyValidation": [ 
 { "ids": ["later_medieval_hungarian_royal_banderium"], "expression": "lessThan", "compareWith": ["later_medieval_hungarian_knights_and_nobles","later_medieval_hungarian_german_bohemian_mercenary_knights"], "countBy": "bases" } 
 ],
@@ -6437,7 +6437,7 @@
         },
 	  
 "late_medieval_french_early": {
-      "armyName": "Later Medieval French (Early) 1445 - 1495 AD",
+      "armyName": "Late Medieval French (Early) 1445 - 1495 AD",
 "armyValidation": [
 {
 "ids": ["late_medieval_french_early_foot_soldiers"],
