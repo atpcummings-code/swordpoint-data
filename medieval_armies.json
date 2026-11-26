@@ -8,7 +8,7 @@
         {
           "id": "Commanders",
           "name": "Commanders",
-          "constraintType": "coEunt",
+          "constraintType": "count",
           "min": 0,
           "max": 8
         },
@@ -225,7 +225,7 @@
 			   "maxCountAllowed": 1,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Longbow"],
+          "baseEquipment": ["Longbow","Light Armour"],
           "specialRules": ["Open Order","Riding Horses"],
            "optionalEquipment": []
         },
@@ -533,7 +533,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [ { "key": "christian_crusader"} ],
+          "alliedArmyKeys": [ { "key": "christian_crusaders"} ],
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -1154,7 +1154,7 @@
         {
           "id": "medieval_scottish_sergeants",
           "name": "Sergeants",
-          "description": "Sergeants have spear and shield. May have light armour (+1),. May have heavy armour (+2) and may exchange spear for lance (+1) or javelins (free).",
+          "description": "Sergeants have spear and shield. May have light armour (+1). May have heavy armour (+2) and may exchange spear for lance (+1) or javelins (free).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 5,
@@ -1821,7 +1821,7 @@
              {
               "name": "Heavy Armour",
                "disables": "Partial Plate Armour",
-              "pointsModifier": 2,
+              "pointsModifier": 0,
 				"equipmentAdded": ["Heavy Armour"],
                "equipmentRemoved": [],
               "rulesAdded": [],
@@ -1832,8 +1832,7 @@
              {
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
-               "enableHidden": "Full Plate Armour",
-              "pointsModifier": 2,
+              "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
               "rulesAdded": [],
@@ -1846,7 +1845,7 @@
       ]
     },
 	  
-"medieval_albania_skanderberg": {
+"medieval_albania_skanderbeg": {
       "armyName": "Medieval Albania - Skanderbeg Campaign 1443 - 1468 AD",
   "armyValidation": [ 
  ],
@@ -1966,7 +1965,7 @@
               "name": "Lance",
               "pointsModifier": 1,
 				"equipmentAdded": ["Lance"],
-               "equipmentRemoved": [],
+               "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1979,7 +1978,7 @@
           "name": "Stradiot Skirmishers",
           "description": "Stradiots Skirmishers have bow or light crossbow, Spear and shield. Superior Fighters. Skirmishers.",
           "category": "Cavalry",
-          "type": "Skirmishers",
+          "type": "Cavalry",
           "defence": 5,
           "cohesion": 8,
           "pointsPerBase": 22,
@@ -2137,7 +2136,7 @@
              {
               "name": "Heavy Armour",
                "disables": "Partial Plate Armour",
-              "pointsModifier": 2,
+              "pointsModifier": 0,
 				"equipmentAdded": ["Heavy Armour"],
                "equipmentRemoved": [],
               "rulesAdded": [],
@@ -2149,7 +2148,7 @@
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
                "enableHidden": "Full Plate Armour",
-              "pointsModifier": 2,
+              "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
               "rulesAdded": [],
@@ -2160,7 +2159,7 @@
              {
               "name": "Full Plate Armour",
                "hiddenUntilEnabled": "hidden",
-              "pointsModifier": 2,
+              "pointsModifier": 0,
 				"equipmentAdded": ["Full Plate Armour"],
                "equipmentRemoved": ["Partial Plate Armour","Shield"],
               "rulesAdded": [],
@@ -2197,7 +2196,7 @@
              {
               "name": "Heavy Armour",
                "disables": "Partial Plate Armour",
-              "pointsModifier": 2,
+              "pointsModifier": 0,
 				"equipmentAdded": ["Heavy Armour"],
                "equipmentRemoved": [],
               "rulesAdded": [],
@@ -2208,8 +2207,7 @@
              {
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
-               "enableHidden": "Full Plate Armour",
-              "pointsModifier": 2,
+              "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
               "rulesAdded": [],
@@ -2238,7 +2236,7 @@
         {
           "id": "Infantry",
           "name": "Infantry",
-          "description": "The total of Warrior and Subject Contingent bases must be at least twice the number of Noble Warrior bases.",
+          "description": "",
           "constraintType": "percentage",
           "min": 85,
           "max": 100
@@ -2276,9 +2274,9 @@
           "optionalEquipment": []
         },
 		  {
-          "id": "aztec_triple_alliance_quachicquelt",
-          "name": "Quachicquelt Eagle/Jaguar Knights",
-          "description": "Quachicquelt Eagle/Jaguar Knights have a shield. Superior Fighters.  May have a double-handed weapon (+2) and atlatl (+2). May be Veteran (+2) and Stubborn (+2)..",
+          "id": "aztec_triple_alliance_Quachicqueh",
+          "name": "Quachicqueh Eagle/Jaguar Knights",
+          "description": "Quachicqueh Eagle/Jaguar Knights have a shield. Superior Fighters.  May have a double-handed weapon (+2) and atlatl (+2). May be Veteran (+2) and Stubborn (+2)..",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -2452,7 +2450,7 @@
               "pointsModifier": -4,
 				"equipmentAdded": [],
               "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": [],
+              "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             }
@@ -2461,7 +2459,7 @@
         {
           "id": "aztec_triple_alliance_slingers",
           "name": "Slingers",
-          "description": "Slingers have a sling and shield. Open Order. May be fielded as Skirmishers at a cost of seven points per base.There should be more slinger bases in the army than archer bases.",
+          "description": "Slingers have a sling and shield. Open Order. May be fielded as Skirmishers at a cost of seven points per base. There should be more slinger bases in the army than archer bases.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -2492,6 +2490,7 @@
 "medieval_bulgaria": {
       "armyName": "Medieval Bulgaria 1185 - 1396 AD",
   "armyValidation": [ 
+	  { "ids": ["medieval_bulgaria_retainers"], "expression": "lessThanOrEqual", "compareWith": ["medieval_bulgaria_nobles"], "countBy": "bases" } 
  ],
 	    "categories": [
         {
@@ -2504,7 +2503,7 @@
         {
           "id": "Cavalry",
           "name": "Cavalry",
-          "description": "",
+          "description": "Retainer units cannot ounumber Noble units.",
           "constraintType": "percentage",
           "min": 50,
           "max": 100
@@ -3866,7 +3865,7 @@
              {
               "name": "Javelins",
               "pointsModifier": 0,
-				"equipmentAdded": ["Light Armour"],
+				"equipmentAdded": ["Javelins"],
                "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -4367,7 +4366,7 @@
              {
               "name": "Javelins",
               "pointsModifier": 0,
-				"equipmentAdded": ["Light Armour"],
+				"equipmentAdded": ["Javelins"],
                "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -4939,9 +4938,9 @@
           "description": "Warriors have throwing spear and shield. Open Order. Warband. Every third unit may have light armour (+2) as upper class warriors.",
           "category": "Infantry",
           "type": "Infantry",
-          "defence": 5,
+          "defence": 6,
           "cohesion": 7,
-          "pointsPerBase": 16,
+          "pointsPerBase": 14,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Throwing Spear","Shield"],
@@ -5337,7 +5336,7 @@
         {
           "id": "later_medieval_hungarian_archers",
           "name": "Archers",
-          "description": "Archers have a bow. Open Order. Inferior Fighters. Open Order. May be fielded as Skirmishers at a cost of five points per base.",
+          "description": "Archers have a bow. Open Order. Inferior Fighters. May be fielded as Skirmishers at a cost of five points per base.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -6985,7 +6984,7 @@
         
           "id": "late_medieval_french_early_organ_gun",
           "name": "Organ Gun",
-          "description": "One Organ Gun and three crew. Up to two additional crew may be purchased (+5 each).",
+          "description": "One Organ Gun and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",           
           "type": "Artillery",
           "minBases": 1,
@@ -7061,7 +7060,7 @@
     },
 	  
 "late_medieval_french_late": {
-      "armyName": "Late Medieval_French (Late) 1445 - 1495 AD",
+      "armyName": "Late Medieval French (Late) 1445 - 1495 AD",
 "armyValidation": [
 {
 "ids": ["late_medieval_french_late_foot_soldiers"],
@@ -7517,7 +7516,7 @@
         
           "id": "late_medieval_french_late_cannon",
           "name": "Cannon",
-          "description": "One cannon and three crew. Up to two additional crew may be purchased (+5 each).",
+          "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",           
           "type": "Artillery",
           "minBases": 1,
@@ -7526,7 +7525,7 @@
             {
               "name": "1 Extra Crew",
               "disables": [
-                "2 Extra Crew"
+                "2 Extra Crew","3 Extra Crew"
               ],
               "pointsModifier": 5,
               "targetProfile": "Crew",
@@ -7542,12 +7541,28 @@
             {
               "name": "2 Extra Crew",
               "disables": [
-                "1 Extra Crew"
+                "1 Extra Crew","3 Extra Crew"
               ],
               "pointsModifier": 10,
               "targetProfile": "Crew",
               "equipmentAdded": [
                 "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew","2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
               ],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -7577,7 +7592,7 @@
         
           "id": "late_medieval_french_late_organ_gun",
           "name": "Organ Gun",
-          "description": "One Organ Gun and three crew. Up to two additional crew may be purchased (+5 each).",
+          "description": "One Organ Gun and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",           
           "type": "Artillery",
           "minBases": 1,
@@ -7586,7 +7601,7 @@
             {
               "name": "1 Extra Crew",
               "disables": [
-                "2 Extra Crew"
+                "2 Extra Crew","3 Extra Crew"
               ],
               "pointsModifier": 5,
               "targetProfile": "Crew",
@@ -7602,12 +7617,28 @@
             {
               "name": "2 Extra Crew",
               "disables": [
-                "1 Extra Crew"
+                "1 Extra Crew","3 Extra Crew"
               ],
               "pointsModifier": 10,
               "targetProfile": "Crew",
               "equipmentAdded": [
                 "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			  {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew","2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
               ],
               "equipmentRemoved": [],
               "rulesAdded": [],
@@ -7804,7 +7835,7 @@
               "onBaseAdded": { "trigger": "oneOrMore", "apply": [ { "type": "specialRule", "name": "Combined Formation", "target": "all" } ] },
               "defence": 4,
               "cohesion": 7,
-              "pointsPerBase": 19,
+              "pointsPerBase": 21,
               "minBases": 1,
               "maxBases": 4,
               "maxPercentage": 50,
@@ -8026,7 +8057,7 @@
           "category": "Commanders",
           "type": "General",
           "maxCountAllowed": 1,
-          "excludesUnits": ["medieval_english_King"],
+          "excludesUnits": ["medieval_english_king"],
           "attacks": "+3",
           "cohesion": 9,
           "pointsPerBase": 0,
@@ -8416,7 +8447,7 @@
         
           "id": "medieval_english_cannon",
           "name": "Cannon",
-          "description": "One cannon and three crew. Up to two additional crew may be purchased (+5 each).",
+          "description": "One cannon and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",           
           "type": "Artillery",
           "minBases": 1,
@@ -8928,7 +8959,7 @@
 "medieval_french": {
       "armyName": "Medieval French 1328 - 1444 AD",
 "armyValidation": [
-{"key": "medieval_scottish", "onlyUnits": ["medieval_scottish_dismounted_maa", "lmedieval_scottish_archers"]},
+{"key": "medieval_scottish", "onlyUnits": ["medieval_scottish_dismounted_maa", "medieval_scottish_archers"]},
   { "ids": ["medieval_french_militia_handgunners"], "expression": "lessThanOrEqual", "compareWith": ["medieval_french_militia_crossbowmen", "medieval_french_militia_cf"], "compareWithSubProfileId": ["Militia Spearmen/Militia Crossbowmen (Front Row)", "Militia Crossbowmen", "Militia Spearmen/Militia Crossbowmen (Rear Row)"], "countBy": "bases" } 
 
 
@@ -8979,7 +9010,7 @@
           {
           "id": "Allies",
           "name": "Allies",
-         "description": "The army may have allies from the Medieval Scootish List (Schiltrons, Archers and Dismounted Men-at-Arms only)",
+         "description": "The army may have allies from the Medieval Scottish List (Schiltrons, Archers and Dismounted Men-at-Arms only)",
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
@@ -9003,7 +9034,7 @@
           "maxBases": 1,
           "specialRules": [
             {
-              "name": "Oriflamme",
+              "name": ["Oriflamme"],
               "pointsModifier": 0,
 				"equipmentAdded": [],
                "equipmentRemoved": [],
@@ -9072,7 +9103,7 @@
               "rulesRemoved": [],
               "defenceModifier": 0,
               "cohesionModifier": 0
-            },
+            }
            ]
         },
         {
@@ -9346,7 +9377,7 @@
           "id": "medieval_french_militia_handgunners",
           "name": "Militia Handgunners",
           "description": "Militia Handgunners have handgun. Inferior Fighters. Skirmishers. The number of handgunners may not esceed the number of crossbowmen.",
-          "category": "commoners",
+          "category": "Commoners",
           "type": "Infantry",
           "defence": 7,
           "cohesion": 6,
@@ -9360,7 +9391,7 @@
         {
           "id": "medieval_french_brigans",
           "name": "Brigans",
-          "description": "Brigans are Open Order. May have light armour (+2), halberd (=2), spear (free) and shield (+2).",
+          "description": "Brigans are Open Order. May have light armour (+2), halberd (+2), spear (free) and shield (+2).",
           "category": "Commoners",
           "type": "Infantry",
           "defence": 7,
@@ -9368,7 +9399,7 @@
           "pointsPerBase": 8,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Light Armour"],
+          "baseEquipment": [],
           "specialRules": ["Open Order"],
            "optionalEquipment": [
              {
@@ -9447,7 +9478,7 @@
         {
           "id": "medieval_french_ribaud_bowmen",
           "name": "Ribaud Bowmen",
-          "description": "Ribaud Bowmen have a bow. Skimrishers. Levies. Inferior Fighters. Inferior Shooters.",
+          "description": "Ribaud Bowmen have a bow. Skirmishers. Levies. Inferior Fighters. Inferior Shooters.",
           "category": "Commoners",
           "type": "Infantry",
           "defence": 7,
@@ -9455,7 +9486,7 @@
           "pointsPerBase": 2,
           "minBases": 2,
           "maxBases": 6,
-          "baseEquipment": ["JBow"],
+          "baseEquipment": ["Bow"],
           "specialRules": ["Inferior Fighters","Inferior Shooters","Levies","Skirmishers"],
            "optionalEquipment": []
         },
@@ -9540,7 +9571,7 @@
         
           "id": "medieval_french_organ_gun",
           "name": "Organ Gun",
-          "description": "One Organ Gun and three crew. Up to two additional crew may be purchased (+5 each).",
+          "description": "One Organ Gun and three crew. Up to three additional crew may be purchased (+5 each).",
           "category": "Artillery",           
           "type": "Artillery",
           "minBases": 1,
@@ -9615,7 +9646,7 @@
         {
           "id": "medieval_french_mercenary_crossbowmen",
           "name": "Mercenary Crossbowmen",
-          "description": "Mercenary Crossbowmen have crossbow. Open Order., May have heavy armour (+4). May have pavise (+4).",
+          "description": "Mercenary Crossbowmen have crossbow. Open Order. May have heavy armour (+4). May have pavise (+4).",
           "category": "Mercenaries",
           "type": "Infantry",
           "defence": 7,
@@ -9688,7 +9719,7 @@
               "cohesionModifier": 0
             }
            ]
-        },
+        }
 ]
     },
 	  
