@@ -6515,7 +6515,7 @@
           "pointsThreshold": 250,
           "countPerThreshold": 1,
           "rounding": "up"
-        }
+        },
           {
           "id": "Allies",
           "name": "Mercenaries",
