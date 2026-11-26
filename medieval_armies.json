@@ -144,7 +144,7 @@
         {
           "id": "medieval_wales_foot_archers",
           "name": "Foot Archers",
-          "description": "Foot Archers have longbowmen. Open Order. May be fieled as Skirmishers at seven points per base. May be Riding Horses (+1).",
+          "description": "Foot Archers have longbowmen. Open Order. May be fielded as Skirmishers at seven points per base. May be Riding Horses (+1).",
           "category": "Commons",
           "type": "Infantry",
           "defence": 7,
@@ -290,7 +290,7 @@
 		   {
           "id": "medieval_wales_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have a javelin and shield. Skirmishers.Inferior Fighters",
+          "description": "Skirmishers have a javelin and shield. Skirmishers. Inferior Fighters",
           "category": "Skirmishers",
           "type": "Infantry",
           "defence": 6,
@@ -320,7 +320,7 @@
         {
           "id": "Infantry",
           "name": "Infantry",
-          "description": "The total of Warrior and Subject Contingent bases must be at least twice the numberof Noble Warrior bases.",
+          "description": "The total of Warrior and Subject Contingent bases must be at least twice the number of Noble Warrior bases.",
           "constraintType": "percentage",
           "min": 85,
           "max": 100
@@ -360,7 +360,7 @@
 		  {
           "id": "incan_empire_noble_warriors",
           "name": "Noble Warriors",
-          "description": "Noble Warriors have spear and shield. Superior Fighters. Open Order. May have javelins (+2). May be Veteran (=2) and Stubborn (+2).",
+          "description": "Noble Warriors have spear and shield. Superior Fighters. Open Order. May have javelins (+2). May be Veteran (+2) and Stubborn (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -410,8 +410,8 @@
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
-          "cohesion": 8,
-          "pointsPerBase": 17,
+          "cohesion": 7,
+          "pointsPerBase": 11,
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Spear","Shield"],
@@ -529,7 +529,7 @@
         {
           "id": "Allies",
           "name": "Allies",
-         "description": "The army may have allies frm teh Christian Crusader list.",
+         "description": "The army may have allies from the Christian Crusader list.",
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
@@ -639,7 +639,7 @@
 		   {
           "id": "kingdom_of_cilicia_skirmishers",
           "name": "Skirmishers",
-          "description": "Skirmishers have a bow. Skirmishers.Inferior Fighters",
+          "description": "Skirmishers have a bow. Skirmishers. Inferior Fighters",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -949,7 +949,7 @@
 {
           "id": "duchy_of_achaia_greek_archers",
           "name": "Greek Archers",
-          "description": "Greek Archers have a bow. Open Order. Inferior Fighters. May be fielded as Skirmisherss at a cost of four points per base.",
+          "description": "Greek Archers have a bow. Open Order. Inferior Fighters. May be fielded as Skirmishers at a cost of four points per base.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -1093,7 +1093,7 @@
 		  {
           "id": "medieval_scottish_knights_and_maa",
           "name": "Knights and Men-at-Arms",
-          "description": "Knights and Men-at-Arms have heavy armour, lance and shield. Superior Fighters. Shock Cavalry. May have cloth barding (+1). May upgrade to partial plate armour (free) or to plate armour, discarding shiel;d (free). May have metal barding (+1).",
+          "description": "Knights and Men-at-Arms have heavy armour, lance and shield. Superior Fighters. Shock Cavalry. May have cloth barding (+1). May upgrade to partial plate armour (free) or to plate armour, discarding shield (free). May have metal barding (+1).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 3,
@@ -1216,7 +1216,7 @@
 		  {
           "id": "medieval_scottish_common_folk",
           "name": "Common Folk",
-          "description": "Common Folk have spear and shield. Every second unit mayhave light armour (+2). May be Riding Horses (+1).",
+          "description": "Common Folk have spear and shield. Every second unit may have light armour (+2). May be Riding Horses (+1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -1292,7 +1292,7 @@
 {
           "id": "medieval_scottish_archers",
           "name": "Archers",
-          "description": "Archers have a bow. Open Order. May be fielded as Skirmisherss at a cost of six points per base.",
+          "description": "Archers have a bow. Open Order. May be fielded as Skirmishers at a cost of six points per base.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -1355,7 +1355,7 @@
 {
           "id": "medieval_scottish_highlanders",
           "name": "Highlanders",
-          "description": "Highlanders have javelins. Open Order. Warband. May have shield (+2) or two-handed weapon ((+2). One unit may have light armour (+1) or heavy armour (+2) as galloglaich equivalent Islemen.",
+          "description": "Highlanders have javelins. Open Order. Warband. May have shield (+2) or two-handed weapon (+2). One unit may have light armour (+1) or heavy armour (+2) as galloglaich equivalent Islemen.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -1590,7 +1590,7 @@
               "name": "Lance",
               "pointsModifier": 1,
 				"equipmentAdded": ["Lance"],
-               "equipmentRemoved": [],
+               "equipmentRemoved": ["Spear"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1642,7 +1642,7 @@
 		  {
           "id": "medieval_albania_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have Light armour, spear and shield. May exchange spear for halberd (+2).",
+          "description": "Spearmen have light armour, spear and shield. May exchange spear for halberd (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -2018,7 +2018,7 @@
 		  {
           "id": "medieval_albania_skanderberg_spearmen",
           "name": "Spearmen",
-          "description": "Spearmen have Light armour, spear and shield. May exchange spear for halberd (+2).",
+          "description": "Spearmen have light armour, spear and shield. May exchange spear for halberd (+2).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 5,
@@ -2238,7 +2238,7 @@
         {
           "id": "Infantry",
           "name": "Infantry",
-          "description": "The total of Warrior and Subject Contingent bases must be at least twice the numberof Noble Warrior bases.",
+          "description": "The total of Warrior and Subject Contingent bases must be at least twice the number of Noble Warrior bases.",
           "constraintType": "percentage",
           "min": 85,
           "max": 100
@@ -2353,7 +2353,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Shield"],
-          "specialRules": ["Close Order","Superior Fighters","Veteran","stubborn","Stamina"],
+          "specialRules": ["Close Order","Superior Fighters","Veteran","Stubborn","Stamina"],
            "optionalEquipment": [
             {
               "name": "Double-handed Weapon",
@@ -2587,7 +2587,7 @@
              {
               "name": "Cloth Barding",
                "disables": "Half Barding",
-              "pointsModifier": 0,
+              "pointsModifier": 1,
 				"equipmentAdded": ["Cloth Barding"],
                "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
@@ -2888,7 +2888,7 @@
         },
 {
           "id": "medieval_bulgaria_peasants_poor_archers_cf",
-          "name": "Combined Formation Peasants/Poor Poor Archers",
+          "name": "Combined Formation Peasants/Poor Archers",
           "description": "Peasants have shield. Inferior Fighters. Open Order. May have light armour (+2), javelins (+2) and spear (free). Poor Archers have a bow and shield. Open Order. Inferior Fighters. Poor Archers forming up to 50% of the Combined Formation.",
     "category": "Infantry",      
 	"type": "Infantry",
@@ -2997,7 +2997,7 @@
           "pointsPerBase": 19,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": ["Light armour","Bow"],
+          "baseEquipment": ["Light Armour","Bow"],
           "specialRules": ["Open Order","Evade"],
            "optionalEquipment": [
              {
@@ -3159,7 +3159,7 @@
              {
               "name": "Cloth Barding",
                "disables": "Half Barding",
-              "pointsModifier": 0,
+              "pointsModifier": 1,
 				"equipmentAdded": ["Cloth Barding"],
                "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
@@ -3261,7 +3261,7 @@
           "pointsPerBase": 19,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": ["Bow","spear", "Shield"],
+          "baseEquipment": ["Bow","Spear", "Shield"],
           "specialRules": ["Open Order","Evade"],
            "optionalEquipment": [
            
@@ -3507,7 +3507,7 @@
           "pointsPerBase": 19,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": ["Bow","spear", "Shield"],
+          "baseEquipment": ["Bow","Spear", "Shield"],
           "specialRules": ["Open Order","Evade"],
            "optionalEquipment": [
            
@@ -3625,7 +3625,7 @@
              {
               "name": "Cloth Barding",
                "disables": "Half Barding",
-              "pointsModifier": 0,
+              "pointsModifier": 1,
 				"equipmentAdded": ["Cloth Barding"],
                "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
@@ -3727,7 +3727,7 @@
           "pointsPerBase": 19,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": ["Bow","spear", "Shield"],
+          "baseEquipment": ["Bow","Spear", "Shield"],
           "specialRules": ["Open Order","Evade"],
            "optionalEquipment": [
            
@@ -3997,7 +3997,7 @@
           "pointsPerBase": 19,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": ["Bow","spear", "Shield"],
+          "baseEquipment": ["Bow","Spear", "Shield"],
           "specialRules": ["Open Order","Evade"],
            "optionalEquipment": [
            
@@ -4115,7 +4115,7 @@
              {
               "name": "Cloth Barding",
               "disables": ["Half Barding","Metal Barding"],
-              "pointsModifier": 0,
+              "pointsModifier": 1,
 				"equipmentAdded": ["Cloth Barding"],
                "equipmentRemoved": [],
               "rulesAdded": ["Close Order"],
@@ -4228,7 +4228,7 @@
           "pointsPerBase": 19,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": ["Bow","spear", "Shield"],
+          "baseEquipment": ["Bow","Spear", "Shield"],
           "specialRules": ["Open Order","Evade"],
            "optionalEquipment": [
            
@@ -4498,7 +4498,7 @@
           "pointsPerBase": 19,
           "minBases": 3,
           "maxBases": 8,
-          "baseEquipment": ["Bow","spear", "Shield"],
+          "baseEquipment": ["Bow","Spear", "Shield"],
           "specialRules": ["Open Order","Evade"],
            "optionalEquipment": [
            
@@ -4655,7 +4655,7 @@
 
         
 		  {
-          "id": "the_baltic_pagans_baltic_peoples_wariors",
+          "id": "the_baltic_pagans_baltic_peoples_warriors",
           "name": "Warriors",
           "description": "Warriors have throwing spear and shield. Open Order. Warband. Every third unit may have light armour (+2) as upper class warriors.",
           "category": "Infantry",
@@ -4684,7 +4684,7 @@
 {
           "id": "the_baltic_pagans_baltic_peoples_archers",
           "name": "Archers",
-          "description": "Archers have a bow. Open Order. Inferior Fighters. Warband (rules 1 & 2). May be fieldeed as Skirmishers at a cost of five points per base (no longer warband).",
+          "description": "Archers have a bow. Open Order. Inferior Fighters. Warband (rules 1 & 2). May be fielded as Skirmishers at a cost of five points per base (no longer warband).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -4873,7 +4873,7 @@
 {
           "id": "the_baltic_pagans_lithuanian_dismounted_heavy_cavalry",
           "name": "Dismounted Heavy Cavalry",
-          "description": "Dismounted Heavy Cavalry have light armour, bow and shield. Superior Fighters. May have heavy armour (+2). May be fieled as Skirmishers at a cost of 13 points per base.",
+          "description": "Dismounted Heavy Cavalry have light armour, bow and shield. Superior Fighters. May have heavy armour (+2). May be fielded as Skirmishers at a cost of 13 points per base.",
           "category": "Cavalry",
           "type": "Infantry",
           "defence": 5,
@@ -4934,7 +4934,7 @@
            ]
   },
 		  {
-          "id": "the_baltic_pagans_lithuanian_wariors",
+          "id": "the_baltic_pagans_lithuanian_warriors",
           "name": "Warriors",
           "description": "Warriors have throwing spear and shield. Open Order. Warband. Every third unit may have light armour (+2) as upper class warriors.",
           "category": "Infantry",
@@ -4963,7 +4963,7 @@
 {
           "id": "the_baltic_pagans_lithuanian_archers",
           "name": "Archers",
-          "description": "Archers have a bow. Open Order. Inferior Fighters. Warband (rules 1 & 2). May be fieldeed as Skirmishers at a cost of five points per base (no longer warband).",
+          "description": "Archers have a bow. Open Order. Inferior Fighters. Warband (rules 1 & 2). May be fielded as Skirmishers at a cost of five points per base (no longer warband).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -5264,8 +5264,8 @@
   },
         {
           "id": "later_medieval_hungarian_szekler_skirmishers",
-          "name": "Szekler Skrmishers",
-          "description": "Szekler Skrmishers have a bow. Skirmishers. Nomad Cavalry.  May have spear (+1) and shield (+1).",
+          "name": "Szekler Skirmishers",
+          "description": "Szekler Skirmishers have a bow. Skirmishers. Nomad Cavalry.  May have spear (+1) and shield (+1).",
           "category": "Light Cavalry",
           "type": "Cavalry",
           "defence": 6,
@@ -5313,7 +5313,7 @@
           "specialRules": ["Open Order"],
            "optionalEquipment": [
          {
-              "name": "bow",
+              "name": "Bow",
               "pointsModifier": 1,
 				"equipmentAdded": ["Bow"],
                "equipmentRemoved": [],
@@ -5337,7 +5337,7 @@
         {
           "id": "later_medieval_hungarian_archers",
           "name": "Archers",
-          "description": "Archers have a bow. Open Order. Inferior Fighters. Open Order. May be fieldeed as Skirmishers at a cost of five points per base.",
+          "description": "Archers have a bow. Open Order. Inferior Fighters. Open Order. May be fielded as Skirmishers at a cost of five points per base.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -5473,7 +5473,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Spear","Shield"],
-          "specialRules": ["Open Order","Inferior Fighters","Levy"],
+          "specialRules": ["Open Order","Inferior Fighters","Levies"],
            "optionalEquipment": []
         }, 
         {
@@ -6437,7 +6437,7 @@
         },
 	  
 "late_medieval_french_early": {
-      "armyName": "Later Medieval_French (Early) 1445 - 1495 AD",
+      "armyName": "Later Medieval French (Early) 1445 - 1495 AD",
 "armyValidation": [
 {
 "ids": ["late_medieval_french_early_foot_soldiers"],
@@ -6851,7 +6851,7 @@
 {
           "id": "late_medieval_french_early_handgunners",
           "name": "Handgunners",
-          "description": "Handgunners have light armour and handgun. Inferior Fighters. Skirmishers. There may be no more than half as many handgunnes bases as Franc Archer bases.",
+          "description": "Handgunners have light armour and handgun. Inferior Fighters. Skirmishers. There may be no more than half as many handguns bases as Franc Archer bases.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -6881,7 +6881,7 @@
         {
           "id": "late_medieval_french_early_scots_guards",
           "name": "Scots Guards",
-          "description": "Scots Guards have hand-and-a-half sword (counts as Halberd). Shield, Partial Plate Armopur and longbow. Veteran. Riding Horses. Open Order. May be Stubborn (+2). The unit may not exceed three bases.",
+          "description": "Scots Guards have hand-and-a-half sword (counts as Halberd). Shield, Partial Plate Armour and longbow. Veteran. Riding Horses. Open Order. May be Stubborn (+2). The unit may not exceed three bases.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 4,
@@ -7427,7 +7427,7 @@
 {
           "id": "late_medieval_french_late_handgunners",
           "name": "Handgunners",
-          "description": "Handgunners have light armour and handgun. Inferior Fighters. Skirmishers. There may be no more than half as many handgunnes bases as Franc Archer bases.",
+          "description": "Handgunners have light armour and handgun. Inferior Fighters. Skirmishers. There may be no more than half as many handguns bases as Franc Archer bases.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 6,
@@ -7457,7 +7457,7 @@
         {
           "id": "late_medieval_french_late_scots_guards",
           "name": "Scots Guards",
-          "description": "Scots Guards have hand-and-a-half sword (counts as Halberd). Shield, Partial Plate Armopur and longbow. Veteran. Riding Horses. Open Order. May be Stubborn (+2). The unit may not exceed three bases.",
+          "description": "Scots Guards have hand-and-a-half sword (counts as Halberd). Shield, Partial Plate Armour and longbow. Veteran. Riding Horses. Open Order. May be Stubborn (+2). The unit may not exceed three bases.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 4,
@@ -7961,7 +7961,7 @@
       ],
       "units": [
         {
-          "id": "medieval_english_King",
+          "id": "medieval_english_king",
           "name": "King",
           "description": "May ride a horse. May have Stratagem (+50).",
           "category": "Commanders",
@@ -8224,7 +8224,7 @@
         {
           "id": "medieval_english_longbowmen",
           "name": "Longbowmen",
-          "description": "Longbowmen have have a longbow. Open Order. They may have a hand-and-a-half sword (+2), counts as halberd), Shield (+2) and light armour (+2).  May be Riding Horses (+1) or have Stakes (+2).",
+          "description": "Longbowmen have  a longbow. Open Order. They may have a hand-and-a-half sword (+2), counts as halberd), Shield (+2) and light armour (+2).  May be Riding Horses (+1) or have Stakes (+2).",
           "category": "Archers",
           "type": "Infantry",
           "defence": 7,
@@ -8529,7 +8529,7 @@
           "pointsPerBase": 6,
           "minBases": 2,
           "maxBases": 6,
-          "baseEquipment": ["light Crossbow"],
+          "baseEquipment": ["Light Crossbow"],
           "specialRules": ["Skirmishers"],
            "optionalEquipment": []
         }
@@ -8830,7 +8830,7 @@
 {
           "id": "low_countries_greek_archers",
           "name": "Greek Archers",
-          "description": "Greek Archers have a bow. Open Order. Inferior Fighters. May be fielded as Skirmisherss at a cost of four points per base.",
+          "description": "Greek Archers have a bow. Open Order. Inferior Fighters. May be fielded as Skirmishers at a cost of four points per base.",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
