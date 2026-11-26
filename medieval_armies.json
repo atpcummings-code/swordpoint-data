@@ -306,7 +306,8 @@
     },
 "incan_empire": {
       "armyName": "Incan Empire 1438 - 1533 AD",
-  "armyValidation": [ 
+  "armyValidation": [
+	   {"ids": ["incan_empire_warriors", "incan_empire_subject_contingents"], "expression": "greaterThanOrEqual", "compareWith": ["incan_empire_noble_warriors"], "ratio": 2, "countBy": "bases" } 
  ],
 	    "categories": [
         {
@@ -2224,6 +2225,7 @@
 "aztec_triple_alliance": {
       "armyName": "Aztec Triple Alliance 1428 - 1522 AD",
   "armyValidation": [ 
+	{ "ids": ["aztec_triple_alliance_slingers"], "expression": "greaterThan", "compareWith": ["aztec_triple_alliance_archers"], "countBy": "bases" }   
  ],
 	    "categories": [
         {
