@@ -8983,7 +8983,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 50,
-          "alliedArmyKeys": [ { "key": ""},{"key": "alans", "supplement":"classical_armies"}  ],
+          "alliedArmyKeys": [ { "key": "medieval_scottish", "onlyUnits": ["medieval_scottish_dismounted_maa", "medieval_scottish_archers"] }  ],
           "maxAlliedArmiesAllowed": 1
         }
         
