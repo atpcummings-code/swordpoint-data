@@ -7974,7 +7974,18 @@
           "minBases": 0,
           "maxBases": 1,
           "specialRules": [],
-          "optionalEquipment": []
+          "optionalEquipment": [
+			  {
+              "name": "Stratagem",
+              "pointsModifier": 50,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stratagem"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
         },
         {
           "id": "medieval_english_general",
@@ -8101,6 +8112,16 @@
               "rulesAdded": ["Skirmishers"],
               "rulesRemoved": ["Open Order"],
               "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Light Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
               "cohesionModifier": 0
             }
            ]
