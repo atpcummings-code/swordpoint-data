@@ -6643,7 +6643,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Partial Plate Armour","Spear"],
-          "specialRules": ["Open Order"],
+          "specialRules": ["Close Order"],
            "optionalEquipment": []
         },
         {
