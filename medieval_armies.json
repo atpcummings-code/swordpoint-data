@@ -8,7 +8,7 @@
         {
           "id": "Commanders",
           "name": "Commanders",
-          "constraintType": "count",
+          "constraintType": "count",E
           "min": 0,
           "max": 8
         },
@@ -9023,19 +9023,28 @@
         {
           "id": "medieval_french_general",
           "name": "General",
-          "description": "May Ride a horse.",
+          "description": "May Ride a horse. May be Accompanied by the Oriflamme (free).",
           "category": "Commanders",
           "type": "General",
-          "maxCountAllowed": 1,
           "attacks": "+2",
           "cohesion": 9,
           "pointsPerBase": 0,
+			"maxCountAllowed": 1,
           "minBases": 0,
           "maxBases": 1,
-          "specialRules": [
-           
-          ]
-
+          "specialRules": [],
+          "optionalEquipment": [
+			  {
+              "name": "Oriflamme",
+              "pointsModifier": 0,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Oriflamme"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+		  ]
         },
         {
           "id": "medieval_french_captain",
