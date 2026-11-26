@@ -6653,7 +6653,7 @@
         {
           "id": "late_medieval_french_early_knights_retainers_cf",
           "name": "Combined Formation Knights/Retainers",
-          "description": "Knights have full plate armur and lance. Superior Fighters. Shock Cavalry. Veteran. May have barding (+1). Retainers have lance and partial plate armour.  Retainers form up to 50% of a Combined Formation with Knights.",
+          "description": "Knights have full plate armur and lance. Superior Fighters. Shock Cavalry. Veteran. May have barding (+1). Retainers have lance and partial plate armour.  Retainers form 50% to 66% of a Combined Formation with Knights.",
           "category": "OrdnanceLances",
           "type": "Cavalry",
           "minBases": 3,
@@ -6676,8 +6676,9 @@
               "cohesion": 7,
               "pointsPerBase": 19,
               "minBases": 1,
-              "maxBases": 4,
-              "maxPercentage": 50,
+              "maxBases": 6,
+              "minPercentage": 50,
+				"maxPercentage": 66,
               "baseEquipment": ["Partial Plate Armour","Lance"],
           "specialRules": ["Open Order"]
             }
@@ -6700,7 +6701,7 @@
 		  {
           "id": "late_medieval_french_early_dismounted_knights_retainers_cf",
           "name": "Combined Formation Dismounted Knights/Retainers",
-          "description": "Dismounted Knights have full plate armour and spear. Superior Fighters. Veteran. May have two-handed weapon (+2) and may be riding horses (+1). Dismounted Retainers have partial plate armour and a spear.  Retainers form up to 50% of a Combined Formation with Knights.",
+          "description": "Dismounted Knights have full plate armour and spear. Superior Fighters. Veteran. May have two-handed weapon (+2) and may be riding horses (+1). Dismounted Retainers have partial plate armour and a spear.  Retainers form 50% to 66% of a Combined Formation with Knights.",
           "category": "OrdnanceLances",
           "type": "Infantry",
           "minBases": 3,
@@ -6712,7 +6713,7 @@
               "cohesion": 8,
               "pointsPerBase": 28,
               "minBases": 3,
-              "maxBases": 11,
+              "maxBases": 6,
               "baseEquipment": ["Full Plate Armour","Spear"],
           "specialRules": ["Close Order","Superior Fighters","Veteran"]
             },
@@ -6722,9 +6723,10 @@
               "defence": 5,
               "cohesion": 7,
               "pointsPerBase": 16,
-              "minBases": 1,
-              "maxBases": 6,
-              "maxPercentage": 50,
+              "minBases": 3,
+              "maxBases": 9,
+              "minPercentage": 50,
+				"maxPercentage": 50,
               "baseEquipment": ["Partial Plate Armour","Spear"],
           "specialRules": ["Close Order"]
             }
@@ -7275,7 +7277,7 @@
         {
           "id": "late_medieval_french_late_knights_retainers_cf",
           "name": "Combined Formation Knights/Retainers",
-          "description": "Knights have full plate armur and lance. Superior Fighters. Shock Cavalry. Veteran. May have barding (+1). Retainers have lance and partial plate armour.  Retainers form up to 50% of a Combined Formation with Knights.",
+          "description": "Knights have full plate armur and lance. Superior Fighters. Shock Cavalry. Veteran. May have barding (+1). Retainers have lance and partial plate armour.  Retainers form 50% to 66% of a Combined Formation with Knights.",
           "category": "OrdnanceLances",
           "type": "Cavalry",
           "minBases": 3,
@@ -7287,7 +7289,7 @@
               "cohesion": 8,
               "pointsPerBase": 29,
               "minBases": 3,
-              "maxBases": 7,
+              "maxBases": 4,
               "baseEquipment": ["Full Plate Armour","Lance"],
           "specialRules": ["Open Order","Superior Fighters","Shock Cavalry","Veteran"]
             },
@@ -7298,8 +7300,9 @@
               "cohesion": 7,
               "pointsPerBase": 19,
               "minBases": 1,
-              "maxBases": 4,
-              "maxPercentage": 50,
+              "maxBases": 6,
+              "minPercentage": 50,
+				"maxPercentage": 66,
               "baseEquipment": ["Partial Plate Armour","Lance"],
           "specialRules": ["Open Order"]
             }
@@ -7322,7 +7325,7 @@
 		  {
           "id": "late_medieval_french_late_dismounted_knights_retainers_cf",
           "name": "Combined Formation Dismounted Knights/Retainers",
-          "description": "Dismounted Knights have full plate armour and spear. Superior Fighters. Veteran. May have two-handed weapon (+2) and may be riding horses (+1). Dismounted Retainers have partial plate armour and a spear.  Retainers form up to 50% of a Combined Formation with Knights.",
+          "description": "Dismounted Knights have full plate armour and spear. Superior Fighters. Veteran. May have two-handed weapon (+2) and may be riding horses (+1). Dismounted Retainers have partial plate armour and a spear.  Retainers form 50% to 66% of a Combined Formation with Knights.",
           "category": "OrdnanceLances",
           "type": "Infantry",
           "minBases": 3,
@@ -7334,7 +7337,7 @@
               "cohesion": 8,
               "pointsPerBase": 28,
               "minBases": 3,
-              "maxBases": 11,
+              "maxBases": 6,
               "baseEquipment": ["Full Plate Armour","Spear"],
           "specialRules": ["Close Order","Superior Fighters","Veteran"]
             },
@@ -7344,9 +7347,10 @@
               "defence": 5,
               "cohesion": 7,
               "pointsPerBase": 16,
-              "minBases": 1,
-              "maxBases": 6,
-              "maxPercentage": 50,
+              "minBases": 3,
+              "maxBases": 9,
+              "minPercentage": 50,
+				"maxPercentage": 66,
               "baseEquipment": ["Partial Plate Armour","Spear"],
           "specialRules": ["Close Order"]
             }
