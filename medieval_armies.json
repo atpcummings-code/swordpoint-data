@@ -8925,7 +8925,7 @@
         }
       ]
     },
-"late_medieval_french_early": {
+"medieval_french": {
       "armyName": "Medieval French 1328 - 1444 AD",
 "armyValidation": [
 {"key": "medieval_scottish", "onlyUnits": ["medieval_scottish_dismounted_maa", "lmedieval_scottish_archers"]},
