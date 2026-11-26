@@ -6582,7 +6582,7 @@
         {
           "id": "late_medieval_french_early_dismounted_knights",
           "name": "Dismounted Knights",
-          "description": "Dismounted Knights have full plate armour and spear. Superior Fighters. Veteran. May have two-handed weapon (+2) amd may be riding horses (+1).",
+          "description": "Dismounted Knights have full plate armour and spear. Superior Fighters. Veteran. May have two-handed weapon (+2) and  may be riding horses (+1).",
           "category": "OrdnanceLances",
           "type": "Infantry",
           "defence": 4,
@@ -7173,7 +7173,7 @@
         {
           "id": "late_medieval_french_late_dismounted_knights",
           "name": "Dismounted Knights",
-          "description": "Dismounted Knights have full plate armour and spear. Superior Fighters. Veteran. May have two-handed weapon (+2) amd may be riding horses (+1).",
+          "description": "Dismounted Knights have full plate armour and spear. Superior Fighters. Veteran. May have two-handed weapon (+2) and  may be riding horses (+1).",
           "category": "OrdnanceLances",
           "type": "Infantry",
           "defence": 4,
