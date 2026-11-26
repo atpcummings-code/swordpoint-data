@@ -80,7 +80,7 @@
           "minBases": 3,
           "maxBases": 8,
           "baseEquipment": ["Spear","Shield"],
-          "specialRules": ["Open Order"],
+          "specialRules": ["Open Order","Evade"],
            "optionalEquipment": [
             {
               "name": "Light Armour",
@@ -298,7 +298,7 @@
           "pointsPerBase": 5,
           "minBases": 2,
           "maxBases": 6,
-          "baseEquipment": ["Javelins"],
+          "baseEquipment": ["Javelins","Shield"],
           "specialRules": ["Skirmishers","Inferior Fighters"],
            "optionalEquipment": []
         }
@@ -1677,7 +1677,7 @@
           "minCountAllowed": 2,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Bow"],
+          "baseEquipment": ["Bow","Shield"],
           "specialRules": ["Open Order","Inferior Fighters"],
            "optionalEquipment": [
              {
@@ -1695,7 +1695,7 @@
                "disables": "Handgun",
               "pointsModifier": 2,
 				"equipmentAdded": ["Crossbow"],
-               "equipmentRemoved": [],
+               "equipmentRemoved": ["Bow"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1706,7 +1706,7 @@
                "disables": "Crossbow",
               "pointsModifier": 2,
 				"equipmentAdded": ["Handgun"],
-               "equipmentRemoved": [],
+               "equipmentRemoved": ["Bow"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -1725,7 +1725,7 @@
           "pointsPerBase": 8,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Bow"],
+          "baseEquipment": ["Bow","Shield"],
           "specialRules": ["Open Order","Inferior Fighters"],
            "optionalEquipment": []
         },
@@ -1761,7 +1761,7 @@
              {
               "name": "Heavy Armour",
                "disables": "Partial Plate Armour",
-              "pointsModifier": 2,
+              "pointsModifier": 0,
 				"equipmentAdded": ["Heavy Armour"],
                "equipmentRemoved": [],
               "rulesAdded": [],
@@ -1773,7 +1773,7 @@
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
                "enableHidden": "Plate Armour",
-              "pointsModifier": 2,
+              "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
               "rulesAdded": [],
@@ -7702,7 +7702,7 @@
            "optionalEquipment": [
              {
               "name": "Heavy Armour",
-              "pointsModifier": 0,
+              "pointsModifier": 1,
 				"equipmentAdded": ["Heavy Armour"],
                "equipmentRemoved": ["Light Armour"],
               "rulesAdded": [],
@@ -7836,7 +7836,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Light Armour","Crossbow"],
-          "specialRules": ["Close Order"],
+          "specialRules": ["Open Order"],
            "optionalEquipment": [
              {
               "name": "Heavy Armour",
