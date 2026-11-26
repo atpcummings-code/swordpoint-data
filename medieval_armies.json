@@ -1,4 +1,4 @@
-{
+E{
   "armies": {
 "medieval_wales": {
       "armyName": "Medieval Wales 1064 - 1420 AD",
@@ -6167,7 +6167,7 @@
         {
           "id": "crusading_military_orders_late_lay_sergeants",
           "name": "Lay Sergeants",
-          "description": "Order Sergeants have spear, light armour and shield.",
+          "description": "Lay Sergeants have spear, light armour and shield.",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 4,
