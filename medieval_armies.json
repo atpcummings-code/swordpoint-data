@@ -1093,7 +1093,7 @@
 		  {
           "id": "medieval_scottish_knights_and_maa",
           "name": "Knights and Men-at-Arms",
-          "description": "Knights and Men-at-Arms have heavy armour, lance and shield. Superior Fighters. Shock Cavalry. May have cloth barding (+1). May upgrade to partial plate armour (free) or to plate armour, discarding shield (free). May have metal barding (+1).",
+          "description": "Knights and Men-at-Arms have heavy armour, lance and shield. Superior Fighters. Shock Cavalry. May have cloth barding (+1). May upgrade to partial plate armour (free) or to full plate armour, discarding shield (free). May have metal barding (+1).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 3,
@@ -1107,7 +1107,7 @@
            "optionalEquipment": [
              {
               "name": "Partial Plate Armour",
-               "disables": "Plate Armour",
+               "disables": "Full Plate Armour",
               "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": ["Heavy Armour"],
@@ -1117,10 +1117,10 @@
               "cohesionModifier": 0
             },
              {
-              "name": "Plate Armour",
+              "name": "Full Plate Armour",
                "disables": "Partial Plate Armour",
               "pointsModifier": 0,
-				"equipmentAdded": ["Plate Armour"],
+				"equipmentAdded": ["Full Plate Armour"],
                "equipmentRemoved": ["Heavy Armour","Shield"],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -1772,7 +1772,7 @@
              {
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
-               "enableHidden": "Plate Armour",
+               "enableHidden": "Full Plate Armour",
               "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
@@ -1782,10 +1782,10 @@
               "cohesionModifier": 0
             },
              {
-              "name": "Plate Armour",
+              "name": "Full Plate Armour",
                "hiddenUntilEnabled": "hidden",
               "pointsModifier": 2,
-				"equipmentAdded": ["Plate Armour"],
+				"equipmentAdded": ["Full Plate Armour"],
                "equipmentRemoved": ["Partial Plate Armour","Shield"],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -1832,7 +1832,7 @@
              {
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
-               "enableHidden": "Plate Armour",
+               "enableHidden": "Full Plate Armour",
               "pointsModifier": 2,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
@@ -2148,7 +2148,7 @@
              {
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
-               "enableHidden": "Plate Armour",
+               "enableHidden": "Full Plate Armour",
               "pointsModifier": 2,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
@@ -2158,10 +2158,10 @@
               "cohesionModifier": 0
             },
              {
-              "name": "Plate Armour",
+              "name": "Full Plate Armour",
                "hiddenUntilEnabled": "hidden",
               "pointsModifier": 2,
-				"equipmentAdded": ["Plate Armour"],
+				"equipmentAdded": ["Full Plate Armour"],
                "equipmentRemoved": ["Partial Plate Armour","Shield"],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -2208,7 +2208,7 @@
              {
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
-               "enableHidden": "Plate Armour",
+               "enableHidden": "Full Plate Armour",
               "pointsModifier": 2,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
@@ -3414,7 +3414,7 @@
              {
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
-               "enableHidden": "Plate Armour",
+               "enableHidden": "Full Plate Armour",
               "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
@@ -3446,10 +3446,10 @@
               "cohesionModifier": 0
             },
              {
-              "name": "Plate Armour",
+              "name": "Full Plate Armour",
                "hiddenUntilEnabled": "hidden",
               "pointsModifier": 0,
-				"equipmentAdded": ["Plate Armour"],
+				"equipmentAdded": ["Full Plate Armour"],
                "equipmentRemoved": ["Partial Plate Armour","Shield"],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -3904,7 +3904,7 @@
              {
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
-               "enableHidden": "Plate Armour",
+               "enableHidden": "Full Plate Armour",
               "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
@@ -3936,10 +3936,10 @@
               "cohesionModifier": 0
             },
              {
-              "name": "Plate Armour",
+              "name": "Full Plate Armour",
                "hiddenUntilEnabled": "hidden",
               "pointsModifier": 0,
-				"equipmentAdded": ["Plate Armour"],
+				"equipmentAdded": ["Full Plate Armour"],
                "equipmentRemoved": ["Partial Plate Armour","Shield"],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -4405,7 +4405,7 @@
              {
               "name": "Partial Plate Armour",
                "disables": "Heavy Armour",
-               "enableHidden": "Plate Armour",
+               "enableHidden": "Full Plate Armour",
               "pointsModifier": 0,
 				"equipmentAdded": ["Partial Plate Armour"],
                "equipmentRemoved": [],
@@ -4437,10 +4437,10 @@
               "cohesionModifier": 0
             },
              {
-              "name": "Plate Armour",
+              "name": "Full Plate Armour",
                "hiddenUntilEnabled": "hidden",
               "pointsModifier": 0,
-				"equipmentAdded": ["Plate Armour"],
+				"equipmentAdded": ["Full Plate Armour"],
                "equipmentRemoved": ["Partial Plate Armour","Shield"],
               "rulesAdded": [],
               "rulesRemoved": [],
@@ -5130,7 +5130,7 @@
            "optionalEquipment": [
              {
               "name": "Partial Plate Armour",
-               "disables": "Plate Armour",
+               "disables": "Full Plate Armour",
               "pointsModifier": 0,
                "equipmentAdded": ["Partial Plate Armour"],
               "equipmentRemoved": ["Heavy Armour"],
@@ -5140,10 +5140,10 @@
               "cohesionModifier": 0
             },
              {
-              "name": "Plate Armour",
+              "name": "Full Plate Armour",
                "disables": "Partial Plate Armour",
               "pointsModifier": 0,
-               "equipmentAdded": ["Plate Armour"],
+               "equipmentAdded": ["Full Plate Armour"],
               "equipmentRemoved": ["Heavy Armour"],
               "rulesAdded": [],
               "rulesRemoved": [],
