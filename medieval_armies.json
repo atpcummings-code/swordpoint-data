@@ -5448,7 +5448,6 @@
            "optionalEquipment": [
              {
               "name": "Handgun",
-               "disables": "Pavise",
               "pointsModifier": 0,
 				"equipmentAdded": ["Handgun"],
                "equipmentRemoved": ["Crossbow"],
@@ -5459,7 +5458,6 @@
             },
              {
               "name": "Pavise",
-               "disables": "Handgun",
               "pointsModifier": 4,
 				"equipmentAdded": ["Pavise"],
                "equipmentRemoved": [],
@@ -5577,7 +5575,7 @@
 {
           "id": "later_medieval_hungarian_wagons",
           "name": "Wagons",
-          "description": "One War Wagon with a single base of defenders equipped with any or all of: Crossbow, Handgun or Halberd",
+          "description": "One War Wagon with a single base of defenders equipped with Crossbow and Halberd. May exchange Crossbow for Handgun (free).",
           "category": "WarWagons",
           "type": "Wagons",
           "minBases": 0,
@@ -5609,22 +5607,9 @@
               "name": "Handgun",
                "targetProfile": "Crew",
               "pointsModifier": 0,
-		"equipmentAdded": ["Handgun"]
+		"equipmentAdded": ["Handgun"],
+	"equipmentRemoved": ["Crossbow"],
                
-            },
-{
-              "name": "Crossbow",
-               "targetProfile": "Crew",
-              "pointsModifier": 0,
-		"equipmentAdded": ["Crossbow"]
- 
-            },
-{
-              "name": "Halberd",
-               "targetProfile": "Crew",
-              "pointsModifier": 0,
-		"equipmentAdded": ["Halberd"]
- 
             }
 ]
             }
