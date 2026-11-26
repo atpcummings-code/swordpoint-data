@@ -9737,7 +9737,7 @@
 "medieval_scandinavia_early": {
       "armyName": "Medieval Scandinavia (Early) 1200 - 1390 AD",
 "armyValidation": [
-{ "ids": ["medieval_scandinavia_early_spearmen_cf", "medieval_scandinavia_early_spearmen_mo"], "expression": "lessThanOrEqual", "compareWith": ["medieval_scandinavia_early_leidangr"], "ratio": 3, "countBy": "units" } 
+{ "ids": ["medieval_scandinavia_early_spearmen_cf", "medieval_scandinavia_early_spearmen_mo"], "expression": "lessThanOrEqual", "compareWith": ["medieval_scandinavia_early_leidangr"], "ratio": 3, "countBy": "units", "perN": true } 
 	
 ],
 	    "categories": [
@@ -9799,7 +9799,7 @@
         },
 		  {
           "id": "medieval_scandinavia_early_royal_knights",
-          "name": "Royal Knights X",
+          "name": "Royal Knights",
           "description": "Royal Knights have heavy armour, lance and shield. Superior Fighters. Shock Cavalry. May exchange heavy armour for partial plate armour (free). May have cloth barding (+1).",
           "category": "Cavalry",
           "type": "Cavalry",
