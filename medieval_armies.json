@@ -800,7 +800,7 @@
           "name": "Combined Formation Knights/Sergeants",
           "description": "Knights have spear, shield and heavy or partial plate armour. Superior Fighters. Impetuous. Shock Cavalry. Veteran. May have cloth barding (+1). May have lance (+1). Sergeants have light armour, spear and shield. May form a Combined Formation with Knights.",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "minBases": 3,
           "maxBases": 8,
           "subProfiles": [
@@ -983,7 +983,7 @@
           "minBases": 3,
           "maxBases": 12,
           "baseEquipment": ["Javelins","Shield"],
-          "specialRules": ["Skirmishers"],
+          "specialRules": ["Open Order"],
            "optionalEquipment": [
              {
               "name": "Skirmishers",
@@ -3374,8 +3374,8 @@
              {
               "name": "Javelins",
               "pointsModifier": 0,
-				"equipmentAdded": ["Light Armour"],
-               "equipmentRemoved": [],
+				"equipmentAdded": ["Javelins"],
+               "equipmentRemoved": ["Bow"],
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": 0,
@@ -7747,7 +7747,7 @@
           "name": "Combined Formation Knights/Jinetes",
           "description": "Knights have light armour, lance and shield. Superior Fighters. Shock Cavalry. Veteran. May have heavy armour (+1). May have cloth barding (+1). Jinetes have a spear, javelins, light armour and shield. Evade. Jinetes form up to 50% of a Combined Formation with Knights",
           "category": "Cavalry",
-          "type": "Commander",
+          "type": "Cavalry",
           "minBases": 3,
           "maxBases": 8,
           "subProfiles": [
