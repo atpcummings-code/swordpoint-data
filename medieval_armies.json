@@ -4665,7 +4665,7 @@
           "pointsPerBase": 14,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "baseEquipment": ["Throwing Spear","Shield"],
           "specialRules": ["Open Order","Warband"],
            "optionalEquipment": [
              {
@@ -4944,7 +4944,7 @@
           "pointsPerBase": 16,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Light Armour","Spear","Shield"],
+          "baseEquipment": ["Throwing Spear","Shield"],
           "specialRules": ["Open Order","Warband"],
            "optionalEquipment": [
              {
