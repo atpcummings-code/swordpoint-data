@@ -3809,6 +3809,7 @@
              {
               "name": "Crossbow",
                "disables": "Handgun",
+				 "enabledEvery": 2,
               "pointsModifier": 2,
 				"equipmentAdded": ["Crossbow"],
                "equipmentRemoved": ["Bow"],
@@ -3820,6 +3821,7 @@
              {
               "name": "Handgun",
                "disables": "Crossbow",
+				 "enabledEvery": 2,
               "pointsModifier": 2,
 				"equipmentAdded": ["Handgun"],
                "equipmentRemoved": ["Bow"],
@@ -4308,6 +4310,7 @@
              {
               "name": "Crossbow",
                "disables": "Handgun",
+				 "enabledEvery": 2,
               "pointsModifier": 2,
 				"equipmentAdded": ["Crossbow"],
                "equipmentRemoved": ["Bow"],
@@ -4319,6 +4322,7 @@
              {
               "name": "Handgun",
                "disables": "Crossbow",
+				 "enabledEvery": 2,
               "pointsModifier": 2,
 				"equipmentAdded": ["Handgun"],
                "equipmentRemoved": ["Bow"],
