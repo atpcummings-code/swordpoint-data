@@ -3095,7 +3095,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [ { "key": ""} ],
+          "alliedArmyKeys": [ { "key": "medieval_bulgaria"} ,{ "key": "medieval_byzantine"},{ "key": "ottoman_turks_early"},{ "key": "medieval_moldavia_and_walachia"} ],
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -3561,7 +3561,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [ { "key": ""} ],
+          "alliedArmyKeys": [ { "key": "medieval_albania"},{ "key": "medieval_bulgaria"} ,{ "key": "ottoman_turks_early"},{ "key": "medieval_moldavia_and_walachia"} ],
           "maxAlliedArmiesAllowed": 1
         }
         
@@ -4051,7 +4051,7 @@
           "constraintType": "percentage",
           "min": 0,
           "max": 25,
-          "alliedArmyKeys": [ { "key": ""} ],
+          "alliedArmyKeys": [ { "key": "medieval_albania"},{ "key": "ottoman_turks_early"},{ "key": "medieval_moldavia_and_walachia"} ],
           "maxAlliedArmiesAllowed": 1
         }
         
