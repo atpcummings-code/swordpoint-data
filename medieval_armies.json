@@ -3133,7 +3133,7 @@
 		  {
           "id": "medieval_serbia_early_nobles",
           "name": "Nobles",
-          "description": "Nobles have heavy armour and shield. Superior Fighters. Superior Shooters. May have bow (+1).  Alternatively, may have spear (+1), or lance (+6, become Shock Cavalry), and half barding or cloth barding (+1). One unit may be Stubborn (+2).",
+          "description": "Nobles have heavy armour and shield. Superior Fighters. Superior Shooters. May have bow (+3).  Alternatively, may have spear (+1), or lance (+6, become Shock Cavalry), and half barding or cloth barding (+1). One unit may be Stubborn (+2).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 3,
@@ -3168,7 +3168,7 @@
             },
              {
               "name": "Bow",
-              "pointsModifier": 1,
+              "pointsModifier": 3,
 				"equipmentAdded": ["Bow"],
                "equipmentRemoved": [],
               "rulesAdded": [],
@@ -3214,7 +3214,7 @@
         {
           "id": "medieval_serbia_early_retainers",
           "name": "Retainers",
-          "description": "Retainers have light armour, spear and shield. May have heavy armour (+1) or lance (+3), become Shock Cavalry).",
+          "description": "Retainers have light armour, spear and shield. May have heavy armour (+1) or lance (+5), become Shock Cavalry).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 4,
@@ -3228,7 +3228,7 @@
            {
               "name": "Lance (Shock Cavalry)",
              "disables": "Heavy Armour",
-              "pointsModifier": 3,
+              "pointsModifier": 5,
 				"equipmentAdded": ["Lance"],
                "equipmentRemoved": [],
               "rulesAdded": ["Shock Cavalry"],
@@ -3599,7 +3599,7 @@
 		  {
           "id": "medieval_serbia_mid_nobles",
           "name": "Nobles",
-          "description": "Nobles have heavy armour and shield. Superior Fighters. Superior Shooters. May have bow (+1).  Alternatively, may have spear (+1), or lance (+6, become Shock Cavalry), and half barding or cloth barding (+1). One unit may be Stubborn (+2).",
+          "description": "Nobles have heavy armour and shield. Superior Fighters. Superior Shooters. May have bow (+3).  Alternatively, may have spear (+1), or lance (+6, become Shock Cavalry), and half barding or cloth barding (+1). One unit may be Stubborn (+2).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 3,
@@ -3634,7 +3634,7 @@
             },
              {
               "name": "Bow",
-              "pointsModifier": 1,
+              "pointsModifier": 3,
 				"equipmentAdded": ["Bow"],
                "equipmentRemoved": [],
               "rulesAdded": [],
@@ -3680,7 +3680,7 @@
         {
           "id": "medieval_serbia_mid_retainers",
           "name": "Retainers",
-          "description": "Retainers have light armour, spear and shield. May have heavy armour (+1) or lance (+3, become Shock Cavalry).",
+          "description": "Retainers have light armour, spear and shield. May have heavy armour (+1) or lance (+5, become Shock Cavalry).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 4,
@@ -3694,7 +3694,7 @@
            {
               "name": "Lance (Shock Cavalry)",
              "disables": "Heavy Armour",
-              "pointsModifier": 3,
+              "pointsModifier": 5,
 				"equipmentAdded": ["Lance"],
                "equipmentRemoved": [],
               "rulesAdded": ["Shock Cavalry"],
@@ -4089,7 +4089,7 @@
 		  {
           "id": "medieval_serbia_late_nobles",
           "name": "Nobles",
-          "description": "Nobles have heavy armour and shield. Superior Fighters. Superior Shooters. May have bow (+1).  Alternatively, may have spear (+1), or lance (+6, become Shock Cavalry), and half barding or cloth barding (+1). One unit may be Stubborn (+2).",
+          "description": "Nobles have heavy armour and shield. Superior Fighters. Superior Shooters. May have bow (+3).  Alternatively, may have spear (+1), or lance (+6, become Shock Cavalry), and half barding or cloth barding (+1). One unit may be Stubborn (+2).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 3,
@@ -4135,7 +4135,7 @@
             },
              {
               "name": "Bow",
-              "pointsModifier": 1,
+              "pointsModifier": 3,
 				"equipmentAdded": ["Bow"],
                "equipmentRemoved": [],
               "rulesAdded": [],
@@ -4181,7 +4181,7 @@
         {
           "id": "medieval_serbia_late_retainers",
           "name": "Retainers",
-          "description": "Retainers have light armour, spear and shield. May have heavy armour (+1) or lance (+3, become Shock Cavalry).",
+          "description": "Retainers have light armour, spear and shield. May have heavy armour (+1) or lance (+5, become Shock Cavalry).",
           "category": "Cavalry",
           "type": "Cavalry",
           "defence": 4,
@@ -4195,7 +4195,7 @@
            {
               "name": "Lance (Shock Cavalry)",
              "disables": "Heavy Armour",
-              "pointsModifier": 3,
+              "pointsModifier": 5,
 				"equipmentAdded": ["Lance"],
                "equipmentRemoved": [],
               "rulesAdded": ["Shock Cavalry"],
