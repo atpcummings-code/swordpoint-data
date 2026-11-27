@@ -11352,7 +11352,7 @@
                "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": -2,
               "cohesionModifier": 0
             }
            ]
@@ -11378,7 +11378,7 @@
                "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": -2,
               "cohesionModifier": 0
             }
            ]
@@ -11436,7 +11436,7 @@
 		"targetProfile": "Crossbowmen",
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": -2,
               "cohesionModifier": 0
             }
 ]
@@ -11494,7 +11494,7 @@
 		"targetProfile": "Crossbowmen",
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": -2,
               "cohesionModifier": 0
             }
 ]
