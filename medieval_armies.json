@@ -11408,7 +11408,7 @@
             ],
 	"optionalEquipment": [
 {
-              "name": "Light Armour",
+              "name": "Light Armour (Spearmen)",
 		"targetProfile": "Spearmen",
               "pointsModifier": 2,
 	"equipmentAdded": ["Light Armour"],
@@ -11419,7 +11419,7 @@
               "cohesionModifier": 0
             },
 {
-              "name": "Pavise",
+              "name": "Pavise (Crossbowmen)",
               "pointsModifier": 4,
 		"equipmentAdded": ["Pavise"],
                "equipmentRemoved": [],
@@ -11466,7 +11466,7 @@
             ],
 	"optionalEquipment": [
 {
-              "name": "Light Armour",
+              "name": "Light Armour (Halberdiers)",
 		"targetProfile": "Halberdiers",
               "pointsModifier": 2,
 	"equipmentAdded": ["Light Armour"],
@@ -11477,7 +11477,7 @@
               "cohesionModifier": 0
             },
 {
-              "name": "Pavise",
+              "name": "Pavise (Crossbowmen)",
               "pointsModifier": 4,
 		"equipmentAdded": ["Pavise"],
                "equipmentRemoved": [],
@@ -11565,7 +11565,7 @@
               "cohesionModifier": 0
             },
 {
-              "name": "Light Armour",
+              "name": "Light Armour (Spearmen)",
 	      "targetProfile": ["Spearmen","Spearmen/Archers (Rear Row)","Spearmen/Archers (Front Row)"],
               "pointsModifier": 2,
 	"equipmentAdded": ["Light Armour"],
@@ -11654,7 +11654,7 @@
               "cohesionModifier": 0
             },
 {
-              "name": "Light Armour",
+              "name": "Light Armour (Halberdiers)",
 	      "targetProfile": ["Halberdiers","Halberdiers/Archers (Rear Row)","Halberdiers/Archers (Front Row)"],
               "pointsModifier": 2,
 	"equipmentAdded": ["Light Armour"],
