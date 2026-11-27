@@ -10544,7 +10544,7 @@
           "pointsPerBase": 6,
           "minBases": 2,
           "maxBases": 6,
-          "baseEquipment": ["Bow"],
+          "baseEquipment": ["Handgun"],
           "specialRules": ["Skirmishers","Inferior Fighters"],
            "optionalEquipment": [
              {
