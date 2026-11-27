@@ -10264,7 +10264,7 @@
       "units": [
         {
           "id": "low_countries_general",
-          "name": "General X",
+          "name": "General",
           "description": "May ride a horse.",
           "category": "Commanders",
           "type": "General",
