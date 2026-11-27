@@ -10752,7 +10752,10 @@
          "description": "The army may take allies from the following lists: Medieval Bulgaria, Later Medieval Hungarian, Later Polish, Ottoman Turks, Medieval Serbia",
           "constraintType": "percentage",
           "min": 0,
-          "max": 25
+          "max": 25,"alliedArmyKeys": [ 
+{ "key": "medieval_bulgaria"},{ "key": "later_medieval_hungarian"} ,{ "key": "medieval_polish"},{ "key": "ottoman_turks"},{ "key": "medieval_serbia_mid"},{ "key": "medieval_serbia_late"}
+],
+          "maxAlliedArmiesAllowed": 1
         }
         
       ],
