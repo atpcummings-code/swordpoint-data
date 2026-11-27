@@ -11564,7 +11564,7 @@
               "defenceModifier": -2,
               "cohesionModifier": 0
             },
-
+{
               "name": "Light Armour",
 	      "targetProfile": ["Spearmen","Spearmen/Archers (Rear Row)","Spearmen/Archers (Front Row)"],
               "pointsModifier": 2,
