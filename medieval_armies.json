@@ -11745,13 +11745,491 @@
             }
           ]
         },
-      
-      
-      
-      
+      ]
+    },
+"white_company": {
+      "armyName": "White Company 1361 - 1388 AD",
+  "armyValidation": [ 
+
+ ],
+	    "categories": [
+        {
+          "id": "Commanders",
+          "name": "Commanders",
+          "constraintType": "count",
+          "min": 0,
+          "max": 6
+        },
+        {
+          "id": "Cavalry",
+          "name": "Cavalry",
+          "constraintType": "percentage",
+          "min": 0,
+          "max": 25
+        },
+        {
+          "id": "Infantry",
+          "name": "Infantry",
+          "description": "",
+          "constraintType": "percentage",
+          "min": 50,
+          "max": 100
+        },
+          
+        {
+          "id": "Artillery",
+          "name": "Artillery",
+          "constraintType": "pointsRatio",
+          "pointsThreshold": 1000,
+          "countPerThreshold": 1,
+          "rounding": "up"
+        }
+        
+      ],
+      "units": [
+        {
+          "id": "white_company_captain",
+          "name": "Captain",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "General",
+          "maxCountAllowed": 1,
+          "attacks": "+2",
+          "cohesion": 9,
+          "pointsPerBase": 0,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+        {
+          "id": "white_company_corporal",
+          "name": "Corporal",
+          "description": "May ride a horse.",
+          "category": "Commanders",
+          "type": "Commander",
+          "attacks": "+2",
+          "cohesion": "+2",
+          "pointsPerBase": 20,
+          "minBases": 0,
+          "maxBases": 1,
+          "specialRules": [],
+          "optionalEquipment": []
+        },
+		  {
+          "id": "white_company_mounted_knights",
+          "name": "Mounted Knights",
+          "description": "Mounted Knights have partial plate armour, lance and shield. Shock Cavalry. May have cloth barding (+1). May be Veteran (+1).",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+            "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Partial Plate Armour","Shield","Lance"],
+          "specialRules": ["Open Order","Shock Cavalry"],
+           "optionalEquipment": [
+             {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Veteran",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "white_company_hobilars",
+          "name": "Hobilars",
+          "description": "Hobilars have light armour, spear and shield. May have heavy armour (+1). May be Veteran (+1). May be fielded as Skirmishers.",
+          "category": "Cavalry",
+          "type": "Cavalry",
+          "defence": 4,
+          "cohesion": 6,
+          "pointsPerBase": 16,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Shield","Spear"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+             {
+              "name": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": ["Light Armour",
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Veteran",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+              "pointsModifier": 0,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        
+        {
+          "id": "white_company_foot_knights",
+          "name": "Foot Knights",
+          "description": "Foot Knights have a shield and partial plate armour. Superior Fighters. May have double handed weapon (+2) and replace shield and partial plate armour with full plate armour (free). May be Veteran (+2) and Stubborn (+2). May be Riding Horses (+1).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 4,
+          "cohesion": 8,
+          "pointsPerBase": 26,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Partial Plate Armour","Shield"],
+          "specialRules": ["Close Order","Superior Fighters"],
+           "optionalEquipment": [
+             
+             {
+              "name": "Double Handed Weapon",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Double Handed Weapon"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Full Plate Armour",
+              "pointsModifier": 0,
+				"equipmentAdded": ["Full Plate  Armour"],
+               "equipmentRemoved": ["Partial Plate Armour","Shield"],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Veteran",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Riding Horses",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        
+        {
+          "id": "white_company_archers",
+          "name": "Archers",
+          "description": "Archers have light armour and longbow. Open Order. Veteran. They may have a hand-and-a-half sword (+2, counts as halberd) and shield (+2). May have heavy armour (+2). May be Stubborn (+2). May be Riding Horses (+1), or have stakes (+2).",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 8,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Light Armour","Longbow"],
+          "specialRules": ["Open Order","Veteran"],
+           "optionalEquipment": [
+             {
+              "name": "Hand-and-a-half Sword",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Hand-and-a-half Sword"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Shield",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Shield"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Heavy Armour",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Heavy Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Stubborn",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stubborn"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Riding Horses",
+               "disables": "Stakes",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Riding Horses"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+              {
+              "name": "Stakes",
+               "disables": "Riding Horses",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Stakes"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "white_company_mounted_archers",
+          "name": "Mounted Archers",
+          "description": "Mounted Archers have light armour and spear. Veteran.",
+          "category": "Infantry",
+          "type": "Cavalry",
+          "defence": 5,
+          "cohesion": 8,
+          "pointsPerBase": 20,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Light Armour","Spear"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": []
+        },
+        {
+          "id": "white_company_bidets",
+          "name": "Bidets",
+          "description": "Bidets have javelins and shield. Open Order. May be Veteran (+2). May be fielded as Skirmishers at a  cost of eight points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 6,
+          "cohesion": 7,
+          "pointsPerBase": 12,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Javelins","Shield"],
+          "specialRules": ["Open Order"],
+           "optionalEquipment": [
+              {
+              "name": "Veteran",
+              "pointsModifier": 2,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Veteran"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+              "pointsModifier": -4,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+          "id": "white_company_crossbowmen",
+          "name": "Crossbowmen",
+          "description": "Crossbowmen have a crossbow. May be fielded in Open Order at twelve points per base. May have light armour (+2). If unarmoured may be fielded as Skirmishers at a cost of eight points per base.",
+          "category": "Infantry",
+          "type": "Infantry",
+          "defence": 7,
+          "cohesion": 7,
+          "pointsPerBase": 16,
+          "maxCountAllowed": 2,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Crossbow"],
+          "specialRules": ["Close Order"],
+           "optionalEquipment": [
+              {
+              "name": "Light Armour",
+                "disables": "Skirmishers",
+              "pointsModifier": 2,
+				"equipmentAdded": ["Light Armour"],
+               "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Open Order",
+               "disables": "Skirmishers",
+              "pointsModifier": -4,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+             {
+              "name": "Skirmishers",
+               "disables": ["Open Order","Light Armour"],
+              "pointsModifier": -8,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Skirmishers"],
+              "rulesRemoved": ["Close Order"],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+        
+          "id": "white_company_cannon",
+          "name": "Cannon",
+          "description": "One gun and three crew. Up to three additional crew may be purchased (+5 each).",
+          "category": "Artillery",           
+          "type": "Artillery",
+          "minBases": 1,
+          "maxBases": 1,
+          "optionalEquipment": [
+            {
+              "name": "1 Extra Crew",
+              "disables": [
+                "2 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 5,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "1 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "2 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "3 Extra Crew"
+              ],
+              "pointsModifier": 10,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "2 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            },
+            {
+              "name": "3 Extra Crew",
+              "disables": [
+                "1 Extra Crew",
+                "2 Extra Crew"
+              ],
+              "pointsModifier": 15,
+              "targetProfile": "Crew",
+              "equipmentAdded": [
+                "3 Extra Crew"
+              ],
+              "equipmentRemoved": [],
+              "rulesAdded": [],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
+              "cohesionModifier": 0
+            }
+          ],
+          "subProfiles": [
+            {
+              "name": "Cannon",
+              "stats": {},
+              "pointsPerBase": 40,
+              "specialRules": []
+            },
+            {
+              "name": "Crew",
+              "stats": {
+                "D": 7,
+                "C": 7
+              },
+              "pointsPerBase": 0
+            }
+          ]
+        },
       ]
     },
 
+	  
 
 	  
 
