@@ -10533,7 +10533,6 @@
             }
            ]
         },
-
 {
           "id": "low_countries_handgunners",
           "name": "Handgunners",
@@ -10583,43 +10582,132 @@
            ]
         },
         {
-          "id": "low_countries_hillmen",
-          "name": "Hillmen",
-          "description": "Hillmen have javelins and shield. Open Order. May have throwing spear (+2), or alternatively may be fielded as Skirmishers  at a cost of seven points per base.",
+          "id": "low_countries_white_hoods",
+          "name": "White Hoods",
+          "description": "White Hoods have a halberd. Inferior Fighters. Warband. They may have light armour (+2).  May be fielded in Open Order at a cost of eight points per base.",
           "category": "Infantry",
           "type": "Infantry",
-          "defence": 6,
-          "cohesion": 6,
-          "pointsPerBase": 11,
+          "defence": 7,
+          "cohesion": 5,
+          "pointsPerBase": 10,
           "minBases": 3,
           "maxBases": 12,
-          "baseEquipment": ["Javelins","Shield"],
-          "specialRules": ["Skirmishers"],
+          "baseEquipment": ["Halberd"],
+          "specialRules": ["Close Order","Inferior Fighters","Warband"],
            "optionalEquipment": [
              {
-              "name": "Skirmishers",
-               "disables": "Throwing Spear",
-              "pointsModifier": -4,
+              "name": "Open Order",
+              "pointsModifier": -2,
 				"equipmentAdded": [],
                "equipmentRemoved": [],
-              "rulesAdded": ["Skirmishers"],
-              "rulesRemoved": ["Open Order"],
+              "rulesAdded": ["Open Order"],
+              "rulesRemoved": ["close Order"],
               "defenceModifier": 0,
               "cohesionModifier": 0
             },
              {
-              "name": "Throwing Spear",
-               "disables": "Skirmishers",
-              "pointsModifier": 2,
-				"equipmentAdded": ["Throwing Spear"],
+              "name": "Light Armour",
+               "disables": "Heavy Armour",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Light Armour"],
                "equipmentRemoved": [],
               "rulesAdded": [],
               "rulesRemoved": [],
-              "defenceModifier": 0,
+              "defenceModifier": -1,
+              "cohesionModifier": 0
+            }
+           ]
+        },
+        {
+         "id": "low_countries_wagons",
+          "name": "Wagons",
+          "description": "Wagons form a Wagon Tabor/ There is one base of defenders (Open Order) per wagon in the Tabor. Defenders have bow and shield. Inferior Fighters. May exchange bow for a crossbow (+2).",
+          "category": "Infantry",
+          "type": "Wagons",
+          "minBases": 0,
+          "maxBases": 5,
+          "subProfiles": [
+            {
+              "name": "Wagons",
+              "stats": {},
+              "pointsPerBase": 10,
+              "specialRules": [
+                "Wagon Tabor"
+              ]
+            },
+            {
+              "name": "Defenders",
+              "stats": {
+                "D": 4,
+                "C": 7
+              },
+              "pointsPerBase": 18,
+              "baseEquipment": [
+                "Bow",
+                "Shield"
+              ],
+              "specialRules": [
+                "Inferior Fighters"
+              ]
+            }
+          ],
+          "optionalEquipment": [
+            {
+              "name": "Crossbow",
+              "pointsPerBase": 2,
+              "targetProfile": "Defenders",
+              "equipmentAdded": [
+                "Crossbow"
+              ],
+              "equipmentRemoved": []
+            }
+          ]
+        },
+        {
+          "id": "low_countries_english_archers",
+          "name": "English Archers",
+          "description": "English Archers have light armour, longbow, hand-and-a-half sword (counts as halberd) and shield. Veteran. Open Order.",
+          "category": "Mercenaries",
+          "type": "Infantry",
+          "defence": 5,
+          "cohesion": 7,
+          "pointsPerBase": 18,
+          "minBases": 3,
+          "maxBases": 12,
+          "baseEquipment": ["Longbow", "Light Armour","Shield","Hand-and-a-half Sword"],
+          "specialRules": ["Open Order","Veteran"],
+           "optionalEquipment": []
+        },
+{
+          "id": "low_countries_mercenary_knights",
+          "name": "Mercenary Knights",
+          "description": "Mercenary Knights have lance, partial plate armour and shield. Superior Fighters. Shock Cavalry. May have cloth barding (+1).",
+          "category": "Mercenaries",
+          "type": "Cavalry",
+          "defence": 3,
+          "cohesion": 8,
+          "pointsPerBase": 28,
+          "minBases": 3,
+          "maxBases": 8,
+          "baseEquipment": ["Partial Plate Armour","Shield","Lance"],
+          "specialRules": ["Open Order","Shock Cavalry","Superior Fighters"],
+           "optionalEquipment": [
+             {
+              "name": "Cloth Barding",
+              "pointsModifier": 1,
+				"equipmentAdded": ["Cloth Barding"],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Close Order"],
+              "rulesRemoved": ["Open Order"],
+              "defenceModifier": -1,
               "cohesionModifier": 0
             }
            ]
         }
+      
+      
+      
+      
       ]
     },
 
