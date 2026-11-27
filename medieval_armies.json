@@ -10226,7 +10226,7 @@
 "low_countries": {
       "armyName": "Low Countries 1312 - 1453 AD",
   "armyValidation": [ 
-{ "type": "equipmentUnitCount", "left": { "unitIds": ["low_countries_handgunners"], "equipment": ["Handgun"] }, "right": { "unitIds": ["low_countries_crossbowmen"], "equipment": ["Crossbow"] }, "expression": "lessThanOrEqual" } 
+{ "type": "equipmentUnitCount", "expression": "lessThanOrEqual", "left": { "unitIds": ["low_countries_handgunners"], "equipment": ["Handgun"] }, "right": { "unitIds": ["low_countries_crossbowmen"], "equipment": ["Crossbow"] } } 
  ],
 	    "categories": [
         {
