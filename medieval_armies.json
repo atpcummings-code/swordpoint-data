@@ -10412,7 +10412,7 @@
 		  {
           "id": "low_countries_pikemen",
           "name": "Pikemen",
-          "description": "Pikemen have a pike. They may have light armour (+2), or heavy armour (+4).",
+          "description": "Pikemen have a pike. They may have light armour (+2), or heavy armour (+4). May be Massed Pike (+1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -10443,6 +10443,16 @@
               "rulesAdded": [],
               "rulesRemoved": [],
               "defenceModifier": -2,
+              "cohesionModifier": 0
+            },
+			   {
+              "name": "Massed Pike",
+              "pointsModifier": 1,
+				"equipmentAdded": [],
+               "equipmentRemoved": [],
+              "rulesAdded": ["Massed Pike"],
+              "rulesRemoved": [],
+              "defenceModifier": 0,
               "cohesionModifier": 0
             }
            ]
@@ -10536,7 +10546,7 @@
 {
           "id": "low_countries_handgunners",
           "name": "Handgunners",
-          "description": "Handgunners have a handgun. Inferior Fighters. Skirmishers. May have light armour (+1) or heavy armour (+2). There may be no more handgun units than there are crossbow units.  Handgunner units may donwgrade from handgun to bow (-2).",
+          "description": "Handgunners have a handgun. Inferior Fighters. Skirmishers. May have light armour (+1) or heavy armour (+2). There may be no more handgun units than there are crossbow units.  Handgunner units may donwgrade from handgun to bow (-1).",
           "category": "Infantry",
           "type": "Infantry",
           "defence": 7,
@@ -10549,7 +10559,7 @@
            "optionalEquipment": [
              {
               "name": "Bow",
-              "pointsModifier": -2,
+              "pointsModifier": -1,
 				"equipmentAdded": ["Bow"],
                "equipmentRemoved": ["Handgun"],
               "rulesAdded": [],
