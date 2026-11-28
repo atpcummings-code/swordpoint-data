@@ -12563,7 +12563,7 @@
               "minBases": 3,
 	"maxBases": 6,
           "baseEquipment": ["Spear", "Shield","Bow"],
-          "specialRules": ["Close Order","Inferior Fighters","Levies","Inferior Shooters]
+          "specialRules": ["Close Order","Inferior Fighters","Levies","Inferior Shooters"]
             },
 			  {
               "name": "Smerd",
@@ -12599,7 +12599,7 @@
               "minBases": 1,
     	"maxBases": 6,
           "baseEquipment": ["Spear", "Shield","Bow"],
-          "specialRules": ["Close Order","Inferior Fighters","Levies","Inferior Shooters]
+          "specialRules": ["Close Order","Inferior Fighters","Levies","Inferior Shooters"]
             }
 
             ],
