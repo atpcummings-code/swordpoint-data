@@ -12247,8 +12247,8 @@
           "id": "Druzhina",
           "name": "Druzhina",
           "constraintType": "percentage",
-          "min": 0,
-          "max": 25
+          "min": 33,
+          "max": 100
         },
         {
           "id": "Infantry",
