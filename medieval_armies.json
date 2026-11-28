@@ -10631,7 +10631,7 @@
         {
          "id": "low_countries_wagons",
           "name": "Wagons",
-          "description": "Wagons form a Wagon Tabor/ There is one base of defenders (Open Order) per wagon in the Tabor. Defenders have bow and shield. Inferior Fighters. May exchange bow for a crossbow (+2).",
+          "description": "Wagons form a Wagon Tabor. There is one base of defenders (Open Order) per wagon in the Tabor. Defenders have bow and shield. Inferior Fighters. May exchange bow for a crossbow (+2).",
           "category": "Infantry",
           "type": "Wagons",
           "minBases": 0,
